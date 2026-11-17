@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>실시간 보안뉴스 — 2026년 11월 18일 브리핑</title>
+    <style>
+      :root {
+        --bg: #fbfbfd;
+        --card: #ffffff;
+        --card-2: #f5f5f7;
+        --ink: #1d1d1f;
+        --ink-2: #515154;
+        --ink-3: #86868b;
+        --line: #e4e4e7;
+        --line-soft: #eeeeF1;
+        --link: #0066cc;
+        --red: #d70015;
+        --red-bg: #fff4f4;
+        --red-line: #f3c2c2;
+        --amber: #b25e09;
+        --amber-bg: #fdf6ec;
+        --amber-line: #ecd9b8;
+        --green: #0a7d4f;
+        --green-bg: #effaf4;
+        --green-line: #bfe6d2;
+        --chip-bg: #f5f5f7;
+        --radius: 20px;
+        --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --card: #1c1c1e;
+          --card-2: #2c2c2e;
+          --ink: #f5f5f7;
+          --ink-2: #c7c7cc;
+          --ink-3: #98989f;
+          --line: #38383a;
+          --line-soft: #2c2c2e;
+          --link: #2997ff;
+          --red: #ff6961;
+          --red-bg: #2a1215;
+          --red-line: #5c2327;
+          --amber: #ffb340;
+          --amber-bg: #2a2010;
+          --amber-line: #57451c;
+          --green: #30d18f;
+          --green-bg: #0f2a1f;
+          --green-line: #1d4d38;
+          --chip-bg: #2c2c2e;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0; background: var(--bg); color: var(--ink);
+        font-family: var(--sans); font-size: 16px; line-height: 1.65;
+        -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+      }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      button { font-family: inherit; cursor: pointer; min-height: 2.75rem; }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 0 22px 80px; }
+
+      /* ---------- Masthead ---------- */
+      .masthead { padding: 56px 0 8px; text-align: left; }
+      .mast-date { font-size: 14px; color: var(--ink-3); font-weight: 500; letter-spacing: .01em; }
+      h1 { margin: 10px 0 14px; font-size: clamp(34px, 6vw, 52px); font-weight: 700; letter-spacing: -.025em; line-height: 1.12; }
+      .mast-sub { margin: 0; color: var(--ink-2); font-size: 17px; line-height: 1.6; max-width: 680px; }
+      .mast-meta { margin-top: 18px; font-size: 13px; color: var(--ink-3); }
+
+      /* ---------- Alert ---------- */
+      .alert { margin-top: 36px; background: var(--red-bg); border: 1px solid var(--red-line); border-radius: var(--radius); padding: 26px 28px; }
+      .alert-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .alert-tag { color: var(--red); font-weight: 700; font-size: 13px; letter-spacing: .02em; }
+      .alert-counts { margin-left: auto; font-size: 13px; color: var(--ink-2); }
+      .alert-counts b { color: var(--ink); font-weight: 700; }
+      .alert h2 { margin: 12px 0 8px; font-size: 21px; font-weight: 700; letter-spacing: -.015em; line-height: 1.4; }
+      .alert p { margin: 0; color: var(--ink-2); font-size: 15px; }
+      .alert p strong { color: var(--ink); }
+      .mono { font-family: var(--mono); font-size: .92em; }
+
+      /* ---------- Stats ---------- */
+      .stats { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 40px; padding: 28px 0 4px; border-top: 1px solid var(--line); }
+      .stat { padding: 0 18px; border-left: 1px solid var(--line); }
+      .stat:first-child { padding-left: 0; border-left: none; }
+      .stat b { display: block; font-size: 38px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+      .stat span { display: block; margin-top: 6px; font-size: 13px; color: var(--ink-3); line-height: 1.5; }
+      @media (max-width: 760px) {
+        .stats { grid-template-columns: repeat(2, 1fr); gap: 26px 0; }
+        .stat { border-left: none; padding: 0 12px 0 0; }
+      }
+
+      /* ---------- Sections ---------- */
+      section { margin-top: 72px; }
+      .sec-head { margin-bottom: 22px; }
+      .sec-head h2 { margin: 0; font-size: 27px; font-weight: 700; letter-spacing: -.02em; }
+      .sec-head p { margin: 6px 0 0; font-size: 14px; color: var(--ink-3); }
+
+      /* ---------- Live feed ---------- */
+      .feed { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 28px; }
+      .feed-item { display: grid; grid-template-columns: 118px 1fr auto; gap: 4px 20px; padding: 15px 0; border-bottom: 1px solid var(--line-soft); align-items: baseline; }
+      .feed-item:last-child { border-bottom: none; }
+      .feed-time { font-family: var(--mono); font-size: 12.5px; color: var(--ink-3); white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .feed-item h3 { margin: 0; font-size: 15.5px; font-weight: 600; line-height: 1.5; }
+      .feed-item h3 a { color: var(--ink); }
+      .feed-item h3 a:hover { color: var(--link); text-decoration: none; }
+      .feed-src { font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
+      .feed-tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 8px; border-radius: 999px; background: var(--chip-bg); color: var(--ink-2); margin-right: 8px; vertical-align: 1px; }
+      .feed-tag.hot { background: var(--red-bg); color: var(--red); }
+      @media (max-width: 640px) {
+        .feed { padding: 6px 20px; }
+        .feed-item { grid-template-columns: 1fr; gap: 2px; }
+        .feed-src { white-space: normal; }
+      }
+
+      /* ---------- Incident tabs ---------- */
+      .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+      .tab-btn {
+        background: var(--card); color: var(--ink-2); border: 1px solid var(--line);
+        border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 500; min-height: 2.75rem;
+      }
+      .tab-btn:hover { border-color: var(--ink-3); }
+      .tab-btn[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+      .tab-panel { display: none; margin-top: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 32px; }
+      .tab-panel.active { display: block; }
+      .tab-panel h3 { margin: 0; font-size: 21px; font-weight: 700; letter-spacing: -.015em; line-height: 1.4; }
+      .status-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 16px; }
+      .chip { font-size: 12px; font-weight: 600; padding: 4px 11px; border-radius: 999px; background: var(--chip-bg); color: var(--ink-2); }
+      .chip.ongoing { background: var(--red-bg); color: var(--red); }
+      .chip.contained { background: var(--green-bg); color: var(--green); }
+      .chip.reg { background: var(--amber-bg); color: var(--amber); }
+      .tab-panel p { margin: 0 0 14px; color: var(--ink-2); font-size: 15.5px; }
+      .tab-panel p strong { color: var(--ink); }
+      .src-link { font-size: 14px; font-weight: 500; }
+      @media (max-width: 640px) { .tab-panel { padding: 24px 22px; } }
+
+      /* ---------- KISA ---------- */
+      .kisa-list { display: grid; gap: 12px; }
+      .kisa-item { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 26px; display: grid; grid-template-columns: 64px 1fr; gap: 4px 18px; }
+      .kisa-date { font-size: 13px; color: var(--ink-3); font-weight: 600; padding-top: 3px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+      .kisa-item h3 { margin: 0; font-size: 16.5px; font-weight: 700; letter-spacing: -.01em; }
+      .kisa-item h3 a { color: var(--ink); }
+      .kisa-item h3 a:hover { color: var(--link); text-decoration: none; }
+      .kisa-body { grid-column: 2; color: var(--ink-2); font-size: 14.5px; margin-top: 4px; }
+      .kisa-body .mono { color: var(--ink-3); word-break: break-all; }
+      .kisa-body .fix { color: var(--ink); font-weight: 500; }
+      @media (max-width: 560px) { .kisa-item { grid-template-columns: 1fr; padding: 20px 22px; } .kisa-body { grid-column: 1; } }
+
+      /* ---------- CVE ---------- */
+      .seg { display: inline-flex; flex-wrap: wrap; gap: 4px; background: var(--card-2); border-radius: 999px; padding: 4px; margin-bottom: 20px; }
+      .seg button { background: transparent; border: none; border-radius: 999px; padding: 7px 18px; font-size: 14px; font-weight: 500; color: var(--ink-2); min-height: 2.5rem; }
+      .seg button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+      .cve-list { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 6px 28px; }
+      .cve-row { display: grid; grid-template-columns: 76px 1fr auto; gap: 4px 22px; padding: 20px 0; border-bottom: 1px solid var(--line-soft); align-items: start; }
+      .cve-row:last-child { border-bottom: none; }
+      .cve-row.hidden { display: none; }
+      .score { font-size: 30px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; text-align: center; font-variant-numeric: tabular-nums; }
+      .score small { display: block; font-size: 10.5px; font-weight: 500; color: var(--ink-3); margin-top: 3px; letter-spacing: .02em; }
+      .score.crit { color: var(--red); }
+      .score.high { color: var(--amber); }
+      .cve-main h3 { margin: 0; font-size: 16px; font-weight: 700; letter-spacing: -.01em; line-height: 1.45; }
+      .cve-main h3 .mono { color: var(--link); font-weight: 600; font-size: 14.5px; }
+      .cve-main p { margin: 5px 0 0; font-size: 14.5px; color: var(--ink-2); }
+      .cve-tags { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+      .tag { font-size: 11.5px; font-weight: 600; padding: 3px 10px; border-radius: 999px; white-space: nowrap; background: var(--chip-bg); color: var(--ink-2); }
+      .tag.new { background: var(--green-bg); color: var(--green); }
+      .tag.kev { background: var(--red-bg); color: var(--red); }
+      .tag.warn { background: var(--amber-bg); color: var(--amber); }
+      @media (max-width: 640px) {
+        .cve-list { padding: 4px 20px; }
+        .cve-row { grid-template-columns: 58px 1fr; gap: 4px 16px; }
+        .score { font-size: 24px; }
+        .cve-tags { grid-column: 2; flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+      }
+      .note { margin-top: 16px; font-size: 13.5px; color: var(--ink-3); line-height: 1.6; }
+      .note strong { color: var(--ink-2); }
+
+      /* ---------- News ---------- */
+      .news-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; }
+      @media (max-width: 860px) { .news-grid { grid-template-columns: 1fr; gap: 56px 0; } }
+      .news-col h2 { font-size: 27px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
+      .news-col .col-note { font-size: 14px; color: var(--ink-3); margin: 6px 0 10px; }
+      .news-item { padding: 18px 0; border-bottom: 1px solid var(--line-soft); }
+      .news-item h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; line-height: 1.5; letter-spacing: -.01em; }
+      .news-item h3 a { color: var(--ink); }
+      .news-item h3 a:hover { color: var(--link); text-decoration: none; }
+      .news-item p { margin: 0 0 8px; font-size: 14.5px; color: var(--ink-2); }
+      .news-meta { font-size: 12.5px; color: var(--ink-3); }
+
+      /* ---------- Leak ---------- */
+      .leak-summary { display: flex; flex-wrap: wrap; gap: 10px 30px; margin-bottom: 22px; font-size: 14.5px; color: var(--ink-2); }
+      .leak-summary b { color: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+      .leak-table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; font-size: 14.5px; }
+      .leak-table th { text-align: left; font-size: 12.5px; color: var(--ink-3); font-weight: 500; padding: 14px 20px; border-bottom: 1px solid var(--line); background: var(--card-2); }
+      .leak-table td { padding: 14px 20px; border-bottom: 1px solid var(--line-soft); vertical-align: top; color: var(--ink-2); }
+      .leak-table tr:last-child td { border-bottom: none; }
+      .leak-table tr.hidden { display: none; }
+      .leak-table .victim { font-weight: 600; color: var(--ink); }
+      .leak-table .grp { font-family: var(--mono); font-size: 13px; color: var(--amber); }
+      .leak-table .cc { font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; }
+      @media (max-width: 640px) {
+        .leak-table thead { display: none; }
+        .leak-table, .leak-table tbody, .leak-table tr, .leak-table td { display: block; width: 100%; }
+        .leak-table tr { padding: 12px 0; border-bottom: 1px solid var(--line-soft); }
+        .leak-table tr.hidden { display: none; }
+        .leak-table tr:last-child { border-bottom: none; }
+        .leak-table td { border: none; padding: 2px 20px; }
+        .leak-table td::before { content: attr(data-label); display: inline-block; width: 58px; font-size: 11.5px; color: var(--ink-3); }
+      }
+
+      /* ---------- Archive / sources / footer ---------- */
+      .archive-empty { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px 32px; color: var(--ink-2); font-size: 15.5px; }
+      .archive-empty strong { color: var(--ink); }
+      .sources { columns: 2; column-gap: 40px; font-size: 14.5px; }
+      @media (max-width: 640px) { .sources { columns: 1; } }
+      .sources ul { margin: 0; padding-left: 18px; color: var(--ink-2); }
+      .sources li { margin-bottom: 9px; break-inside: avoid; }
+      footer { margin-top: 72px; border-top: 1px solid var(--line); padding-top: 22px; font-size: 13px; color: var(--ink-3); line-height: 1.7; }
+      footer p { margin: 0 0 8px; }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+
+      <!-- ===================== Masthead ===================== -->
+      <header class="masthead">
+        <p class="mast-date">2026년 11월 18일 수요일 · KST</p>
+        <h1>오늘의 보안 브리핑</h1>
+        <p class="mast-sub">11월 17~18일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격입니다.</p>
+        <p class="mast-meta">수집 기준 2026년 11월 18일 오전 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+      </header>
+
+      <!-- ===================== 1. 경고 배너 ===================== -->
+      <div class="alert" role="alert">
+        <div class="alert-head">
+          <span class="alert-tag">긴급 경보</span>
+          <span class="alert-counts">오늘 KISA 보안공지 <b>7건</b> · CVSS 9.0 이상 CVE <b>12건</b> (신규 보고 4건 포함)</span>
+        </div>
+        <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
+        <p><strong class="mono">CVE-2026-114938</strong> (CVSS 4.0 <strong>9.2</strong>) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
+      </div>
+
+      <!-- ===================== 2. 실시간 뉴스 ===================== -->
+      <section aria-labelledby="h-feed">
+        <div class="sec-head">
+          <h2 id="h-feed">실시간 뉴스</h2>
+          <p>시간순 피드 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+        </div>
+        <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/18</span>
+            <h3><span class="feed-tag hot">KISA 공지</span><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72313" target="_blank" rel="noopener">Oracle 제품 보안 업데이트 권고 게시 — Java4Shell 포함 6건</a></h3>
+            <span class="feed-src">보호나라</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 07:05</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147325" target="_blank" rel="noopener">PHP 이어 ‘자바’(Java)도 뚫렸다... 대기업·공공기관 핵심 서버 ‘보안 경보’</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 00:07</span>
+            <h3><a href="https://www.dailysecu.com/news/articleList.html?sc_area=I&amp;sc_word=mkgil&amp;view_type=sm" target="_blank" rel="noopener">전북교육청 통학차량 관리시스템 해킹…학생·학부모 개인정보 유출 확인</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 22:19</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209577" target="_blank" rel="noopener">영남대학교 도서관·취업 홈페이지 해킹…학생 개인정보 유출</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 21:16</span>
+            <h3><a href="https://www.yna.co.kr/amp/view/AKR20261117170500062" target="_blank" rel="noopener">한림대 연구행정통합시스템 해킹…사용자 생년월일 등 947건 유출</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 19:45</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147316" target="_blank" rel="noopener">프로젝트 끝나고 안 지운 키... 바라쿠다 클라우드, AI 해킹 도구에 44시간 뚫려</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:24</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147326" target="_blank" rel="noopener">28개 대학 연쇄해킹 충격... 아르텍스 활용해 ‘rERP’ 집중 타격했다</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:23</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">메가커피 고객센터 위탁업체 해킹…상담 고객 30명 연락처 유출</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 15:55</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147332" target="_blank" rel="noopener">레고랜드·씨라이프 부산 개인정보 유출 가능성... 입장객 예약 시스템 ‘액세소’ 해킹</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:51</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147323" target="_blank" rel="noopener">그룹웨어 ‘다우오피스’ PC 메신저 업데이트 보안 사고... 계정 정보 유출 가능성↑</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:13</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209566" target="_blank" rel="noopener">동의대학교 연구비관리시스템 해킹…개인정보 530명 유출</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 12:11</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261117088100004" target="_blank" rel="noopener">시민단체, 금융권 해킹 개인정보 유출 규탄…"보안체계 점검"</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 10:21</span>
+            <h3><a href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">잇단 해킹에…금감원, 전자금융·온투업 274개사 불러 점검</a></h3>
+            <span class="feed-src">노컷뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17</span>
+            <h3><span class="feed-tag hot">CISA KEV</span><a href="https://www.itsecuritynews.info/cisa-adds-one-known-exploited-vulnerability-to-catalog-84/" target="_blank" rel="noopener">Puppet Enterprise CVE-2026-115731 (9.4) KEV 등재 — 적용 마감 12월 1일</a></h3>
+            <span class="feed-src">CISA</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/" target="_blank" rel="noopener">Japan takes Fugaku supercomputer offline after cyberattack</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17</span>
+            <h3><a href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs</a></h3>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================== 3. 지표 요약 ===================== -->
+      <div class="stats" aria-label="지표 요약">
+        <div class="stat"><b>8</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
+        <div class="stat"><b>12</b><span>국내 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>12</b><span>해외 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>12</b><span>CVE·취약점 — CVSS 9.0 이상</span></div>
+        <div class="stat"><b>57</b><span>다크웹 유출 — 최근 24시간 건수 (+19%)</span></div>
+      </div>
+
+      <!-- ===================== 4. 핵심 이슈 ===================== -->
+      <section aria-labelledby="h-incidents">
+        <div class="sec-head">
+          <h2 id="h-incidents">핵심 이슈</h2>
+          <p>진행 중인 대형 사건 8건 · 탭을 눌러 사건별 현황을 확인하세요</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="핵심 이슈 목록">
+          <button class="tab-btn" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">국내 대학 rERP 연쇄 해킹</button>
+          <button class="tab-btn" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false">메타엠 공급망 침해</button>
+          <button class="tab-btn" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false">Optimizely 공급망 공격</button>
+          <button class="tab-btn" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false">후가쿠 슈퍼컴퓨터 침해</button>
+          <button class="tab-btn" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false">N-able N-central 공격</button>
+          <button class="tab-btn" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false">Tor 네트워크 DDoS</button>
+          <button class="tab-btn" role="tab" id="tab-7" aria-controls="panel-7" aria-selected="false">국내 금융권 해킹 대응</button>
+          <button class="tab-btn" role="tab" id="tab-8" aria-controls="panel-8" aria-selected="false">Check Point PHP2Shell</button>
+        </div>
+
+        <div class="tab-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+          <h3>국내 대학 연구행정시스템(rERP) 연쇄 해킹 — ‘KimJEN’ 주장</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>한림대·강원대·동의대·영남대·숙명여대(1,359건) 등에서 11월 14~17일 침해가 확인됐습니다. 공격자는 <strong>28~31개 대학</strong>의 데이터를 탈취했다고 주장하며 압축파일 31개를 유포했고, 11월 19일 수능 지원자 데이터 공개까지 거론한 것으로 전해집니다. 대학 공통 연구행정시스템 rERP를 집중 타격한 정황이 있으나, 전체 사건의 연관성과 rERP 공급업체와의 관계는 아직 확인되지 않았습니다. 데일리시큐는 공격자로 지목된 해커와의 단독 인터뷰(‘No KR No FUN’)를 11월 17일 보도했는데, 국내 30여 개 대학 해킹 주장과 달리 경찰청 해킹 주장은 하위 도메인 수준으로 <strong>미확인</strong> 상태입니다.</p>
+          <a class="src-link" href="https://www.boannews.com/news/articleView.html?idxno=147326" target="_blank" rel="noopener">보안뉴스 — 28개 대학 연쇄해킹</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.dailysecu.com/news/articleView.html?idxno=209555" target="_blank" rel="noopener">데일리시큐 — 해커 단독 인터뷰</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2">
+          <h3>AI 콜센터 위탁업체 ‘메타엠’ 공급망 침해 — 코인원·번개장터·메가커피</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중 · 추가 공지 가능</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>메타엠 이용사는 약 150곳. 11월 12일 공격, 13일 03:44 KISA 신고 이후 확인된 유출 공지는 코인원, 번개장터(전화번호 49건, 11/16 최종), 메가커피(상담 고객 전화번호 30건, 11/17) 순입니다. 성명·결제 정보 유출은 확인되지 않았지만, 다른 위탁사의 추가 공지가 이어질 수 있습니다.</p>
+          <a class="src-link" href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">연합뉴스 — 메가커피 고객센터 위탁업체 해킹</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3">
+          <h3>Optimizely 공급망 공격 ‘OPTIMJACK’ — CNN·BBC·Zoom 등 178개 조직</h3>
+          <div class="status-row"><span class="chip contained">수습 완료 · 모니터링 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>공격자가 Optimizely Experimentation 계정 가입 취약점을 악용해 <strong>188개 스크립트(178개 조직)</strong>에 악성 JavaScript를 주입했습니다. 카드 스키머, 암호화폐 주소 바꿔치기, Coruna·DarkSword iOS 익스플로잇 킷이 함께 실렸고 추적된 암호화폐 피해는 약 7,000달러입니다. 감염 파일은 11월 16일 23:11 UTC 기준 전부 정리됐고, 방문자 피해 규모는 계속 평가 중입니다.</p>
+          <a class="src-link" href="https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/" target="_blank" rel="noopener">SecurityWeek — Optimizely vulnerability exploited</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4">
+          <h3>일본 슈퍼컴퓨터 ‘후가쿠(Fugaku)’ 침해 — 가동 중단</h3>
+          <div class="status-row"><span class="chip ongoing">오프라인 · 조사 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>이화학연구소(RIKEN)는 11월 10~13일 공개 상태 대시보드를 통한 비인가 접근으로 내부 서버 여러 대가 침해되자 11월 14일 후가쿠를 오프라인으로 전환했습니다. 로그인 키는 비활성화됐고, 안전이 확인될 때까지 재가동하지 않으며 재개 시점은 11월 17일 현재 제시되지 않았습니다.</p>
+          <a class="src-link" href="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/" target="_blank" rel="noopener">BleepingComputer — Japan takes Fugaku offline</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5">
+          <h3>N-able N-central ‘4EverAble2Shell’ — 실제 공격 진행 중</h3>
+          <div class="status-row"><span class="chip ongoing">실제 공격 중 · 패치 진행</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>Apache Axis 취약점 <strong>CVE-2026-90436 (9.8)</strong>의 PoC 공개 몇 시간 만에 공격자들이 코인 마이너를 심기 시작했습니다. N-able은 11월 16일 Hotfix 3로 신규 취약점 17건(CVE-2026-129271~129287)을 패치하고 레거시 API를 영구 차단했습니다. Rapid7은 11월 13일 Atlassian Confluence 대상 익스플로잇도 탐지했습니다.</p>
+          <a class="src-link" href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">The Hacker News — N-able patches 17 flaws</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6">
+          <h3>Tor 네트워크 대규모 DDoS — 긴급 업데이트 배포</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>클라이언트 회로를 폭주시키는 DDoS가 이어지는 가운데 Tor 0.4.9.17이 릴레이 방어 강화를 위해 긴급 배포됐습니다. 대부분의 릴레이 운영자가 영향을 받고 있으며, 공격 주체와 시작 시점은 공개되지 않았습니다.</p>
+          <a class="src-link" href="https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/" target="_blank" rel="noopener">BleepingComputer — Tor emergency update</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-7" aria-labelledby="tab-7">
+          <h3>국내 금융권 연쇄 해킹 — 금감원, 274개사 소집 점검</h3>
+          <div class="status-row"><span class="chip reg">규제 대응 진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>9월 이후 금융회사 19곳·20건·피해 11만 건 이상이 누적되자 금융감독원이 11월 17일 전자금융업자 227개사·온투업자 47개사의 CISO와 보안 담당자를 소집해 점검했습니다. 스푼(약 1만8천 명 유출), 줌펀드(예치금 약 3억 원 유출) 사례가 언급됐고, 시민단체 5곳도 같은 날 보안체계 점검을 촉구했습니다.</p>
+          <a class="src-link" href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">노컷뉴스 — 금감원 274개사 소집 점검</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-8" aria-labelledby="tab-8">
+          <h3>Check Point 방화벽 ‘PHP2Shell’ 체인 — KEV 마감 경과</h3>
+          <div class="status-row"><span class="chip ongoing">패치·침해 점검 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>Gaia DynamicCLI 권한 누락 취약점 CVE-2026-123039가 PHP2Shell(CVE-2026-109618/109619, 9.2)과 연계돼 루트 권한 탈취로 이어지는 체인입니다. 10월 30일~11월 4일 미패치 게이트웨이 수십 대가 실제 공격을 받았고, CISA KEV 적용 마감(11월 16일)이 이미 지났습니다.</p>
+          <a class="src-link" href="https://hol.org/blog/cve-2026-123039-check-point-firewall-root-cisa-kev" target="_blank" rel="noopener">hol.org — CVE-2026-123039 분석</a>
+        </div>
+      </section>
+
+      <!-- ===================== 5. KISA 공지 ===================== -->
+      <section aria-labelledby="h-kisa">
+        <div class="sec-head">
+          <h2 id="h-kisa">KISA 공지</h2>
+          <p>보호나라(boho.or.kr) 공식 보안공지 최근 3일 · 7건 · CVSS는 벤더·2차 출처 표기 (KISA 공지에는 점수가 기재돼 있지 않음)</p>
+        </div>
+        <div class="kisa-list">
+          <article class="kisa-item">
+            <span class="kisa-date">11/18</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72313" target="_blank" rel="noopener">Oracle 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">Oracle Java SE / JavaFX / GraalVM — <span class="mono">CVE-2026-86144</span>(libxml2 XXE/SSRF), <span class="mono">CVE-2026-114938</span>(Java4Shell) 외 4건. <span class="fix">수정 버전: 8u513, 17.0.21.1, 21.0.13.1, 25.0.5.1, 27.0.1.1</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72312" target="_blank" rel="noopener">Citrix 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">NetScaler ADC/Gateway, NetScaler Console, Secure Access Client — CVE 11건(최고 9.5). <span class="fix">수정 버전: 14.1-73.57 / 13.1-64.39, Console 14.1-74.34</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">Check Point 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">Force Firewall / Management / Log / Multi-Domain / Maestro — <span class="mono">CVE-2026-123039</span> (Gaia DynamicCLI 권한 누락, 7.8). CISA KEV 등재, 적용 마감 11/16 경과.</div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">PostgreSQL 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">취약점 52건, 대표 <span class="mono">CVE-2026-6460</span>(타입 혼동, 인증 후 RCE), 최고 CVSS 8.8(52건 중 32건). <span class="fix">수정 버전: 18.7, 17.12, 16.16, 15.20, 14.25 (11/12)</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">MongoDB 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">MongoDB Server 레플리카셋 — <span class="mono">CVE-2026-118383</span>(use-after-free, CVSS v4.0 9.5 / NVD 10.0). <span class="fix">수정 버전: 9.0.7, 8.3.16, 8.0.37, 7.0.48, 6.0.30, 5.0.35, 4.4.32</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/16</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">Fortinet 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">FortiManager / FortiAnalyzer / FortiOS — <span class="mono">CVE-2026-126170</span>(9.8), <span class="mono">CVE-2026-126262</span>(9.3) 외 3건(각 9.0).</div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/16</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">Git 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">취약점 6건, 대표 <span class="mono">CVE-2026-111760</span>(재귀 클론 시 RCE, 8.0). <span class="fix">수정 버전: 2.56.1 (백포트 2.55.1~2.50.2)</span></div>
+          </article>
+        </div>
+        <p class="note">그 이전 공지: Vates (11/13), Apache·WordPress 플러그인 (11/12). Check Point·PostgreSQL·MongoDB·Fortinet·Git 공지는 개별 원문 URL이 확인되지 않아 공지 목록으로 연결했습니다.</p>
+      </section>
+
+      <!-- ===================== 6. CVE 목록 ===================== -->
+      <section aria-labelledby="h-cve">
+        <div class="sec-head">
+          <h2 id="h-cve">CVE 목록</h2>
+          <p>CVSS 9.0 이상 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준</p>
+        </div>
+        <div class="seg" role="group" aria-label="CVE 필터">
+          <button data-filter="all" aria-pressed="true">전체 12건</button>
+          <button data-filter="new" aria-pressed="false">11/16~18 신규 보고</button>
+          <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
+        </div>
+        <div class="cve-list" id="cveList">
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-126170</span> · Fortinet FortiManager / FortiAnalyzer / FortiOS</h3>
+              <p>Fortinet 제품군 치명적 취약점. 11월 10일 공개, KISA 권고 11월 16일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/10 공개</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.5<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-118383</span> · MongoDB Server</h3>
+              <p>레플리카셋 primary 동기화 과정의 use-after-free. NVD 평가는 10.0. 공개 PoC는 충돌 수준, 실제 악용 미확인. 11월 10일 공개, KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/10 공개</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.5<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-107412</span> · Citrix NetScaler ADC / Gateway</h3>
+              <p>Citrix 11월 12일 보안 공지로 공개된 치명적 취약점. KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/12 공지</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev surfaced">
+            <div class="score crit">9.4<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-115731</span> · Perforce Puppet Enterprise</h3>
+              <p>조작된 에이전트 리포트의 역직렬화로 인한 RCE — 서명된 에이전트 인증서만 있으면 공격 가능. 11월 3일 수정 버전 배포(2023.8.13 / 2025.12.1 / 2026.0.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 11/17 등재 · 마감 12/1</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.4<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-120869</span> · Citrix NetScaler</h3>
+              <p>Citrix 11월 12일 공지 묶음 중 하나. KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/12 공지</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.3<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-120868</span> · Citrix NetScaler</h3>
+              <p>Citrix 11월 12일 공지 묶음 중 하나. KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/12 공지</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-129272</span> · N-able N-central</h3>
+              <p>11월 16일 Hotfix 3에서 패치된 신규 취약점 17건 중 하나(인증 우회·누락·RCE). 17건 전부 PoC가 공개됐으나, 해당 17건 자체의 실제 악용은 Huntress 기준 미관측.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/16</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-129280</span> · N-able N-central</h3>
+              <p>Hotfix 3 패치 묶음(CVE-2026-129271~129287) 중 하나.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/16</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-126262</span> · Fortinet</h3>
+              <p>11월 10일 공개, KISA 권고 11월 16일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/10 공개</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.2<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114938</span> · OpenJDK / Oracle Java SE — ‘Java4Shell’</h3>
+              <p>AVX-512 Base64 디코더의 메모리 손상. x86-64 + AVX-512 VBMI, OpenJDK 17.0.6 이상에서 사전 인증 RCE가 보고됐으나, 일부 분석가는 JVM 충돌 수준으로 평가 — RCE 여부는 논란 중. CVE 레코드는 11월 17일 기준 예약(reserved) 상태, 실제 악용·공개 PoC 미보고.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17 보고</span><span class="tag warn">RCE 주장 논란</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.2<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-129286</span> · N-able N-central</h3>
+              <p>Hotfix 3 패치 묶음 중 하나.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/16</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score high">9.0<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-115732</span> · Perforce Puppet Enterprise</h3>
+              <p>CVE-2026-115731의 형제 취약점. KEV에는 등재되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">KEV 미등재</span></div>
+          </article>
+        </div>
+        <p class="note">11월 16~18일 <strong>처음 공개</strong>된 CVSS 9.0 이상 취약점은 Java4Shell과 N-able 묶음뿐입니다. 나머지는 11월 10~12일 공개분이 KISA 권고·CISA KEV 등재로 이번 주 다시 부상한 것으로, 공개일을 함께 표기했습니다.</p>
+      </section>
+
+      <!-- ===================== 국내·해외 동향 ===================== -->
+      <section aria-label="국내외 동향">
+        <div class="news-grid">
+          <div class="news-col">
+            <h2>국내 동향</h2>
+            <p class="col-note">12건 · 2026년 11월 17~18일 보도</p>
+
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147325" target="_blank" rel="noopener">PHP 이어 ‘자바’(Java)도 뚫렸다... 대기업·공공기관 핵심 서버 ‘보안 경보’</a></h3>
+              <p>Java 메모리 손상 취약점 Java4Shell(CVE-2026-114938, CVSS 4.0 9.2)으로 인증 없이 원격 코드 실행이 가능하다는 보고. OpenJDK 17.0.6 이상 영향, 패치는 18일 오전 6시 50분께 공개.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-18 07:05</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleList.html?sc_area=I&amp;sc_word=mkgil&amp;view_type=sm" target="_blank" rel="noopener">전북교육청 통학차량 관리시스템 해킹…학생·학부모 개인정보 유출 확인</a></h3>
+              <p>학생 이름·집 주소, 학부모 연락처, 통학버스 차량번호·운행 노선 유출 확인. 11월 15일 18:46 교육부 사이버안전센터 통보로 인지. (개별 기사 URL 미확인 — 목록 페이지로 연결)</p>
+              <span class="news-meta">데일리시큐 · 2026-11-18 00:07</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209577" target="_blank" rel="noopener">영남대학교 도서관·취업 홈페이지 해킹…학생 개인정보 유출</a></h3>
+              <p>11월 16일 10:00~12:00 도서관 전자책·취업 홈페이지 해킹으로 학번·성명·휴대폰번호·(전자책)비밀번호 등 유출. 피해 인원은 조사 중.</p>
+              <span class="news-meta">데일리시큐 · 2026-11-17 22:19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/amp/view/AKR20261117170500062" target="_blank" rel="noopener">한림대 연구행정통합시스템 해킹…사용자 생년월일 등 947건 유출</a></h3>
+              <p>한림대는 11월 14일 오전 4시께 위탁관리업체 서버 불법 접근으로 생년월일 83건 포함 총 947건 유출. 강원대도 같은 날 06:22 사용자 27명·18건 유출.</p>
+              <span class="news-meta">연합뉴스 · 2026-11-17 21:16</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147316" target="_blank" rel="noopener">프로젝트 끝나고 안 지운 키... 바라쿠다 클라우드, AI 해킹 도구에 44시간 뚫려</a></h3>
+              <p>훔친 클라우드 접속 키로 11월 1~2일 44시간 동안 클라우드 계정 10개가량 접근. AI 침투 테스트 도구 ARTEX 사용, 침입은 11월 4일 발견.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 19:45</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">메가커피 고객센터 위탁업체 해킹…상담 고객 30명 연락처 유출</a></h3>
+              <p>위탁업체 메타엠 서버가 11월 12일 해킹돼 상담 고객 휴대전화번호 30건 유출 확인. 성명·결제 정보는 유출되지 않았고, 코인원·번개장터에 이은 세 번째 메타엠 위탁사 피해.</p>
+              <span class="news-meta">연합뉴스 · 2026-11-17 16:23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147326" target="_blank" rel="noopener">28개 대학 연쇄해킹 충격... 아르텍스 활용해 ‘rERP’ 집중 타격했다</a></h3>
+              <p>공격자 ‘KimJEN’이 28개 대학 데이터 탈취를 주장하며 압축파일 31개 유포. 대학 공통 연구행정시스템 rERP 집중 타격 정황과 ARTEX 사용 가능성이 포착됐다.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 16:24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147332" target="_blank" rel="noopener">레고랜드·씨라이프 부산 개인정보 유출 가능성... 입장객 예약 시스템 ‘액세소’ 해킹</a></h3>
+              <p>액세소 티켓팅 시스템 침해(11월 14일)로 연간이용권 고객의 성명·생년월일(암호화)·주소·이메일·전화번호·바코드 유출 가능성. 카드·계좌 정보 유출 증거는 없음.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 15:55</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147323" target="_blank" rel="noopener">그룹웨어 ‘다우오피스’ PC 메신저 업데이트 보안 사고... 계정 정보 유출 가능성↑</a></h3>
+              <p>11월 15일 오후~16일 오전 윈도우 PC메신저 자동 업데이트 과정에 악성 파일이 삽입돼 브라우저 저장 아이디·비밀번호와 다우오피스 계정 유출 가능성. 정상 버전 Ver.4.5.12 배포.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 14:51</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209566" target="_blank" rel="noopener">동의대학교 연구비관리시스템 해킹…개인정보 530명 유출</a></h3>
+              <p>11월 14일 10:40부터 침투해 연구자·교직원 530명의 직번·이름·부서·직위·생년월일 유출. 11월 17일 사과문 게시.</p>
+              <span class="news-meta">데일리시큐 · 2026-11-17 14:13</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261117088100004" target="_blank" rel="noopener">시민단체, 금융권 해킹 개인정보 유출 규탄…"보안체계 점검"</a></h3>
+              <p>경실련 등 5개 단체가 11월 17일 금감원 앞 기자회견에서 9월 이후 금융회사 19곳·20건·피해 11만 건 이상을 지적하고 금융보안원 유출도 언급했다.</p>
+              <span class="news-meta">연합뉴스 · 2026-11-17 12:11</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">잇단 해킹에…금감원, 전자금융·온투업 274개사 불러 점검</a></h3>
+              <p>금감원이 11월 17일 전자금융업자 227개사·온투업자 47개사 CISO·보안 담당자를 소집 점검. 스푼(약 1만8천 명 유출)·줌펀드(예치금 약 3억 원 유출) 사례가 언급됐다.</p>
+              <span class="news-meta">연합뉴스(노컷뉴스) · 2026-11-17 10:21</span>
+            </article>
+          </div>
+
+          <div class="news-col">
+            <h2>해외 동향</h2>
+            <p class="col-note">12건 · November 17–18, 2026</p>
+
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/" target="_blank" rel="noopener">Optimizely supply-chain attack delivers malware to CNN, Fox News, BBC, Salesforce sites</a></h3>
+              <p>Attackers abused an Experimentation account-signup flaw to inject JavaScript into 188 scripts of 178 organisations — card skimmer, crypto swapper and iOS exploit kits; all files clean by Nov 16 23:11 UTC.</p>
+              <span class="news-meta">BleepingComputer · Nov 16 (reported Nov 17)</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html" target="_blank" rel="noopener">Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE Report Emerges</a></h3>
+              <p>Oracle's Nov 17 Java SE update covers 11 flaws (max CVSS 3.1 8.1, all remotely exploitable without auth); the separately reported Java4Shell (CVE-2026-114938, CVSS 4.0 9.2) remains unconfirmed and disputed.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/" target="_blank" rel="noopener">Japan takes Fugaku supercomputer offline after cyberattack</a></h3>
+              <p>RIKEN shut Fugaku down on Nov 14 after unauthorised access Nov 10–13 via the public status dashboard reached multiple internal servers; login keys disabled, restart only when safe.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/" target="_blank" rel="noopener">Uber notifies drivers of data breach affecting nearly 150,000 people</a></h3>
+              <p>149,346 drivers' names, licence numbers, dates of birth and addresses were exposed after attackers breached AI provider Fireworks in early October and used compromised credentials to reach Uber's account.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/" target="_blank" rel="noopener">Researchers hijack Hugging Face account for popular Kokoro AI model</a></h3>
+              <p>Missing ownership verification let researchers take over the Kokoro TTS account by re-registering its domain and resetting the password, then poison model weights in 87 seconds; ~13M monthly downloads.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners</a></h3>
+              <p>Hotfix 3 patches CVE-2026-129271 to -129287 and permanently blocks legacy APIs, closing the 4EverAble2Shell chain (CVE-2026-90436) used within hours of PoC release to deploy miners.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/" target="_blank" rel="noopener">Tor releases emergency update amid ongoing DDoS attack</a></h3>
+              <p>Tor 0.4.9.17 strengthens relay defences against an ongoing DDoS flood of client circuits overwhelming most relay operators.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/" target="_blank" rel="noopener">Cloud keys leaked in Docker Hub images are stolen within seconds</a></h3>
+              <p>Stony Brook honeypot study: planted AWS keys were used as fast as 7.86 seconds after publication; 300 honeypot images were pulled 75,000+ times, drawing 140,000+ API calls from 5,000 IPs.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/" target="_blank" rel="noopener">Ransomware affiliate suspect extradited to US, faces 27 years in prison</a></h3>
+              <p>Kazakh national Roman Khlynovskiy, arrested in Italy in July 2025, was extradited over alleged INC Ransom / Lynx attacks on US schools, hospitals and healthcare entities.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html" target="_blank" rel="noopener">Google finds hackers using AI agents to fully automate vulnerability discovery and exploitation</a></h3>
+              <p>GTIG/Mandiant's AI Threat Tracker (Nov 16) reports the first observed fully autonomous "exploit_agent" framework, alongside ARTEX, CAIRN, CyberStrikeAI and PentAGI in multi-stage intrusions at machine speed.</p>
+              <span class="news-meta">The Hacker News · Nov 16–17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html" target="_blank" rel="noopener">Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers</a></h3>
+              <p>Industrialised campaign impersonating ~50 brands via fake recruitment, conference and package-tracking lures plus trojanised repos, deploying infostealers and the Overlord RAT; assessed similar to DPRK-linked Kimsuky / UNK_DeadDrop.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html" target="_blank" rel="noopener">New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels</a></h3>
+              <p>Kaspersky's Operation ShadowCloud targets government sectors in Asia and Africa, abusing MeshAgent to drop backdoors that hide command-and-control inside GitHub and SharePoint.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.ifin.network/i/?a=normal&amp;get=f_64&amp;sort=id&amp;order=DESC" target="_blank" rel="noopener">Lithuanian Customs restoring services after November 10 attack</a></h3>
+              <p>Also reported by The Record on Nov 17, alongside the Kazakh extradition and Google's AI-agent report.</p>
+              <span class="news-meta">The Record · Nov 17, 2026</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 7. 다크웹 유출 ===================== -->
+      <section aria-labelledby="h-leak">
+        <div class="sec-head">
+          <h2 id="h-leak">다크웹 유출</h2>
+          <p>랜섬웨어 유출 사이트 최신 10건 · ransomware.live · 2026년 11월 18일 08:08 KST 확인 · 전부 11월 17일 게시</p>
+        </div>
+        <div class="leak-summary">
+          <span>최근 24시간 <b>57건</b> (+19%)</span>
+          <span>7일 <b>289건</b></span>
+          <span>30일 <b>1,066건</b></span>
+          <span>활발한 그룹(7일): incransom <b>57</b> · thegentlemen <b>39</b> · qilin <b>25</b></span>
+        </div>
+        <div class="seg" role="group" aria-label="국가별 필터">
+          <button data-cc="all" aria-pressed="true">전체 10건</button>
+          <button data-cc="US" aria-pressed="false">미국 6</button>
+          <button data-cc="DE" aria-pressed="false">독일 2</button>
+          <button data-cc="AE" aria-pressed="false">UAE 1</button>
+          <button data-cc="AU" aria-pressed="false">호주 1</button>
+        </div>
+        <table class="leak-table">
+          <thead>
+            <tr><th scope="col">피해 조직</th><th scope="col">분야</th><th scope="col">국가</th><th scope="col">랜섬웨어 그룹</th><th scope="col">게시 시각 (UTC, 11/17)</th></tr>
+          </thead>
+          <tbody id="leakBody">
+            <tr data-cc="US"><td data-label="조직" class="victim">Drive Medical — 레코드 1,442,814건 주장</td><td data-label="분야">의료</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="시각" class="cc">23:08</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Sonoco</td><td data-label="분야">제조</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Helix</td><td data-label="시각" class="cc">19:22</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">West-Com Nurse Call Systems, Inc</td><td data-label="분야">의료</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">EndZone</td><td data-label="시각" class="cc">19:21</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">examinetics.com</td><td data-label="분야">의료</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Curious Worm</td><td data-label="시각" class="cc">18:24</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">intelligentaudit.com</td><td data-label="분야">전문 서비스</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">BrainCipher</td><td data-label="시각" class="cc">18:23</td></tr>
+            <tr data-cc="DE"><td data-label="조직" class="victim">roedentallab.com</td><td data-label="분야">의료</td><td data-label="국가" class="cc">DE</td><td data-label="그룹" class="grp">BrainCipher</td><td data-label="시각" class="cc">18:22</td></tr>
+            <tr data-cc="AE"><td data-label="조직" class="victim">edi-uae.com</td><td data-label="분야">전문 서비스</td><td data-label="국가" class="cc">AE</td><td data-label="그룹" class="grp">BrainCipher</td><td data-label="시각" class="cc">18:22</td></tr>
+            <tr data-cc="AU"><td data-label="조직" class="victim">havingbabies.com</td><td data-label="분야">의료</td><td data-label="국가" class="cc">AU</td><td data-label="그룹" class="grp">BrainCipher</td><td data-label="시각" class="cc">18:21</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Esco Optics</td><td data-label="분야">제조</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Aoqin</td><td data-label="시각" class="cc">18:20</td></tr>
+            <tr data-cc="DE"><td data-label="조직" class="victim">WWGlas</td><td data-label="분야">제조</td><td data-label="국가" class="cc">DE</td><td data-label="그룹" class="grp">payload</td><td data-label="시각" class="cc">17:59</td></tr>
+          </tbody>
+        </table>
+        <p class="note"><strong>주의:</strong> 유출 목록은 랜섬웨어 그룹의 일방적 주장으로, 독립적으로 검증된 사실이 아닙니다. 같은 날 오전 Inception 그룹은 PepsiCo·Paychex·Henry Schein·AMD·Cigna를, Vortex는 Molex(16,448,279건 주장)·Castle Biosciences·Caris Life Sciences·Owens-Minor를 추가로 주장했으나, ransomware.live 자체가 Inception을 신생 그룹으로 주의 표기하고 AMD 건은 중복 가능성을 지적해 위 표에서는 제외했습니다.</p>
+      </section>
+
+      <!-- ===================== 8. 지난 브리핑 ===================== -->
+      <section aria-labelledby="h-archive">
+        <div class="sec-head">
+          <h2 id="h-archive">지난 브리핑</h2>
+          <p>이전 날짜의 브리핑 아카이브</p>
+        </div>
+        <div class="archive-empty">
+          <strong>이전 브리핑 없음.</strong> 2026년 11월 18일 브리핑이 이 페이지의 첫 발행입니다. 지난 브리핑이 쌓이면 이곳에 날짜별로 정리됩니다.
+        </div>
+      </section>
+
+      <!-- ===================== 9. 출처 목록 ===================== -->
+      <section aria-labelledby="h-sources">
+        <div class="sec-head">
+          <h2 id="h-sources">출처 목록</h2>
+          <p>본문에 인용된 모든 출처</p>
+        </div>
+        <div class="sources">
+          <ul>
+            <li><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">KISA 보호나라 — 보안공지 목록</a></li>
+            <li><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72313" target="_blank" rel="noopener">KISA — Oracle 제품 보안 업데이트 권고 (11/18)</a></li>
+            <li><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72312" target="_blank" rel="noopener">KISA — Citrix 제품 보안 업데이트 권고 (11/17)</a></li>
+            <li><a href="https://www.boannews.com/news/articleView.html?idxno=147325" target="_blank" rel="noopener">보안뉴스</a> · <a href="https://www.dailysecu.com/news/articleView.html?idxno=209577" target="_blank" rel="noopener">데일리시큐</a> · <a href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">연합뉴스</a> · <a href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">노컷뉴스</a></li>
+            <li><a href="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/" target="_blank" rel="noopener">BleepingComputer</a> · <a href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">The Hacker News</a> · <a href="https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/" target="_blank" rel="noopener">SecurityWeek</a> · <a href="https://news.ifin.network/i/?a=normal&amp;get=f_64&amp;sort=id&amp;order=DESC" target="_blank" rel="noopener">The Record (피드)</a></li>
+            <li><a href="https://www.ransomware.live/" target="_blank" rel="noopener">ransomware.live</a> — 유출 현황 (2026-11-18 08:08 KST 직접 확인) · <a href="https://thrunt.me/corpus/ransomware/" target="_blank" rel="noopener">게시 인덱스 미러</a></li>
+            <li><a href="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk" target="_blank" rel="noopener">Wiz — Java4Shell 분석</a> · <a href="https://securityonline.info/java4shell-cve-2026-114938/" target="_blank" rel="noopener">SecurityOnline — Java4Shell</a></li>
+            <li><a href="https://corgea.com/research/cve-2026-115731-115732-puppet-openvox-report-deserialization-rce-kev-november-2026" target="_blank" rel="noopener">Corgea — Puppet KEV 분석</a> · <a href="https://www.itsecuritynews.info/cisa-adds-one-known-exploited-vulnerability-to-catalog-84/" target="_blank" rel="noopener">CISA KEV 등재 보도</a></li>
+            <li><a href="https://securitylabs.datadoghq.com/articles/cve-2026-118383-mongodb-server-use-after-free/" target="_blank" rel="noopener">Datadog Security Labs — MongoDB CVE 분석</a> · <a href="https://cybersecuritynews.com/critical-fortinet-flaws-patched/" target="_blank" rel="noopener">Fortinet 취약점 보도</a></li>
+            <li><a href="https://hol.org/blog/cve-2026-123039-check-point-firewall-root-cisa-kev" target="_blank" rel="noopener">hol.org — Check Point PHP2Shell 체인 분석</a> · <a href="https://www.safet2ship.com/news/2026-11-13-n-able-n-central-4everable2shell-exploited-hotfix-2-legacy-api/" target="_blank" rel="noopener">N-able CVSS 집계</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        <p>이 브리핑은 2026년 11월 18일 오전(KST) 수집한 공개 보도를 정리한 것입니다. 모든 뉴스·숫자·CVE·날짜는 수집 당시 원문에서 확인된 내용만 실었고, 확인되지 않은 항목은 본문에 ‘미확인’으로 표기했습니다.</p>
+        <p>KISA 공지에는 CVSS 점수가 기재돼 있지 않아 본문의 점수는 벤더 및 2차 분석 출처 기준입니다. Java4Shell의 RCE 여부와 랜섬웨어 유출 목록은 각 섹션의 주의 표기와 같이 검증이 끝나지 않은 내용이 포함돼 있습니다.</p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        // 핵심 이슈 탭
+        var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+        function selectTab(btn) {
+          tabs.forEach(function (t) {
+            var on = t === btn;
+            t.setAttribute('aria-selected', on ? 'true' : 'false');
+            document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
+          });
+        }
+        tabs.forEach(function (btn, i) {
+          btn.addEventListener('click', function () { selectTab(btn); });
+          btn.addEventListener('keydown', function (e) {
+            var next = null;
+            if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+            if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+            if (next) { selectTab(next); next.focus(); }
+          });
+        });
+
+        // 세그먼트 필터 (CVE 목록 / 다크웹 국가별) 공용
+        function wireSeg(group, apply) {
+          var btns = Array.prototype.slice.call(group.querySelectorAll('button'));
+          btns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              btns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+              apply(btn);
+            });
+          });
+        }
+        var cveSeg = document.querySelector('[aria-label="CVE 필터"]');
+        if (cveSeg) wireSeg(cveSeg, function (btn) {
+          var f = btn.getAttribute('data-filter');
+          Array.prototype.forEach.call(document.querySelectorAll('.cve-row'), function (row) {
+            var kinds = (row.getAttribute('data-kind') || '').split(' ');
+            row.classList.toggle('hidden', f !== 'all' && kinds.indexOf(f) === -1);
+          });
+        });
+        var ccSeg = document.querySelector('[aria-label="국가별 필터"]');
+        if (ccSeg) wireSeg(ccSeg, function (btn) {
+          var cc = btn.getAttribute('data-cc');
+          Array.prototype.forEach.call(document.querySelectorAll('#leakBody tr'), function (row) {
+            row.classList.toggle('hidden', cc !== 'all' && row.getAttribute('data-cc') !== cc);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
