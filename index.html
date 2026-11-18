@@ -235,11 +235,21 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 71건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 73건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/18 11:00</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261118069800017" target="_blank" rel="noopener">기업도 모르는 '숨은 AI'까지…AI스페라, 보안 사각지대 찾는다</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 10:53</span>
+            <h3><a href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener">CVE-2026-114938: Critical vulnerability in OpenJDK JAVA</a></h3>
+            <span class="feed-src">Cisco Talos</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/18 10:32</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147346" target="_blank" rel="noopener">[카드뉴스] 시험장 뚫은 초소형 카메라 'AI 커닝' 실태....청와대·민관군 'AI 위협' 총력전</a></h3>
@@ -603,9 +613,9 @@
 
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
-        <div class="stat"><b>10</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>57</b><span>국내 동향 — 11/17~18 보도</span></div>
-        <div class="stat"><b>66</b><span>해외 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>11</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
+        <div class="stat"><b>58</b><span>국내 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>67</b><span>해외 동향 — 11/17~18 보도</span></div>
         <div class="stat"><b>31</b><span>CVE·취약점 — CVSS 9.0 이상 27건 포함</span></div>
         <div class="stat"><b>57</b><span>다크웹 유출 — 최근 24시간 건수 (+19%)</span></div>
       </div>
@@ -614,7 +624,7 @@
       <section aria-labelledby="h-incidents" id="sec-incidents">
         <div class="sec-head">
           <h2 id="h-incidents"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-incidents"><span>핵심 이슈</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>진행 중인 대형 사건 10건 · 탭을 눌러 사건별 현황을 확인하세요</p>
+          <p>진행 중인 대형 사건 11건 · 탭을 눌러 사건별 현황을 확인하세요</p>
         </div>
         <div class="sec-body" id="body-incidents">
           <div class="sec-inner">
@@ -629,6 +639,7 @@
           <button class="tab-btn" role="tab" id="tab-8" aria-controls="panel-8" aria-selected="false">Check Point PHP2Shell</button>
           <button class="tab-btn" role="tab" id="tab-9" aria-controls="panel-9" aria-selected="false">ConnectWise ScreenConnect 공격 지속</button>
           <button class="tab-btn" role="tab" id="tab-10" aria-controls="panel-10" aria-selected="false">Hugging Face 침해 → OpenAI 소송</button>
+          <button class="tab-btn" role="tab" id="tab-11" aria-controls="panel-11" aria-selected="false">Java4Shell — OpenJDK 원격 코드 실행</button>
         </div>
 
         <div class="tab-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
@@ -711,6 +722,13 @@
           <a class="src-link" href="https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/" target="_blank" rel="noopener">SecurityWeek — California sues OpenAI</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges" target="_blank" rel="noopener">Malwarebytes — OpenAI lost control of AI agents</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-11" aria-labelledby="tab-11">
+          <h3>Java4Shell — OpenJDK 원격 코드 실행 주장 (CVE-2026-114938)</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-18</span></div>
+          <p><strong class="mono">CVE-2026-114938</strong> (CVSS 4.0 <strong>9.2</strong>) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. Cisco Talos도 11월 18일 관련 분석 글을 게시했습니다. 단, 일부 분석가는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다.</p>
+          <a class="src-link" href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener">Cisco Talos — CVE-2026-114938: Critical vulnerability in OpenJDK JAVA</a>
         </div>
           </div>
         </div>
@@ -1072,15 +1090,19 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 57건 · 해외 66건 · 2026년 11월 17~18일 보도</p>
+          <p>국내 58건 · 해외 67건 · 2026년 11월 17~18일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">57건 · 2026년 11월 17~18일 보도</p>
+            <p class="col-note">58건 · 2026년 11월 17~18일 보도</p>
 
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261118069800017" target="_blank" rel="noopener">기업도 모르는 '숨은 AI'까지…AI스페라, 보안 사각지대 찾는다</a></h3>
+              <span class="news-meta">연합뉴스 · 2026-11-18</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147346" target="_blank" rel="noopener">[카드뉴스] 시험장 뚫은 초소형 카메라 'AI 커닝' 실태....청와대·민관군 'AI 위협' 총력전</a></h3>
               <span class="news-meta">보안뉴스 · 2026-11-18</span>
@@ -1327,8 +1349,12 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">66건 · November 17–18, 2026</p>
+            <p class="col-note">67건 · November 17–18, 2026</p>
 
+            <article class="news-item">
+              <h3><a href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener">CVE-2026-114938: Critical vulnerability in OpenJDK JAVA</a></h3>
+              <span class="news-meta">Cisco Talos · Nov 18, 2026</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html" target="_blank" rel="noopener">Optimizely confirms massive cyberattack on customer websites injected stealer malware</a></h3>
               <span class="news-meta">CSO Online · Nov 18, 2026</span>
