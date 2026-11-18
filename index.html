@@ -218,14 +218,14 @@
         <p class="mast-date">2026년 11월 18일 수요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <p class="mast-sub">11월 17~18일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 18일 23:36 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 19일 06:36 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">오늘 KISA 보안공지 <b>15건</b> · CVE·취약점 <b>45건</b> (CVSS 9.0 이상 41건 포함)</span>
+          <span class="alert-counts">오늘 KISA 보안공지 <b>15건</b> · CVE·취약점 <b>56건</b> (CVSS 9.0 이상 42건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong class="mono">CVE-2026-114938</strong> (CVSS 4.0 <strong>9.2</strong>) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -235,11 +235,86 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 222건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 237건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:34</span>
+            <h3><a href="https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/" target="_blank" rel="noopener">Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’</a></h3>
+            <span class="feed-src">TechCrunch</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:18</span>
+            <h3><a href="https://github.com/advisories/GHSA-jw3m-8q7m-f35r" target="_blank" rel="noopener">CVE-2026-68903 — LLMKube: Arbitrary Host File Read via Model.spec.source hostPath Injection</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:17</span>
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132139" target="_blank" rel="noopener">CVE-2026-132139 (CVSS 9.9) — A weakness has been identified in DrayTek Vigor2960 up to 1.5.1.6. Affected is the function setSWMProfile of the file /cgi-bin/mainfunction.cgi. Executing a man…</a></h3>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:17</span>
+            <h3><a href="https://github.com/advisories/GHSA-88q3-gch3-5396" target="_blank" rel="noopener">CVE-2026-73864 — install-artifact-from-github loads downloaded native artifacts without integrity verification</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:16</span>
+            <h3><a href="https://github.com/advisories/GHSA-wq26-3j2m-4hvv" target="_blank" rel="noopener">CVE-2026-71861 — Chainguard SDK: AWS SigV4 token replay in auth/aws.VerifyToken — Chainguard-Audience/Chainguard-Identity binding headers not required in SignedHeaders</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:11</span>
+            <h3><a href="https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887" target="_blank" rel="noopener">AI found more critical bugs in another widely used technology running 225M websites</a></h3>
+            <span class="feed-src">The Register</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:08</span>
+            <h3><a href="https://databreaches.net/2026/11/18/uk-transport-for-london-photocard-breach-exposes-265000-customers/" target="_blank" rel="noopener">UK: Transport for London photocard breach exposes 265,000 customers</a></h3>
+            <span class="feed-src">DataBreaches.Net</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 05:48</span>
+            <h3><a href="https://github.com/advisories/GHSA-82w8-65qw-gch6" target="_blank" rel="noopener">CVE-2026-71481 — ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 05:42</span>
+            <h3><a href="https://github.com/advisories/GHSA-ff87-73jp-f3v4" target="_blank" rel="noopener">CVE-2026-69158 — Atomic Server: Unauthenticated full-response SSRF in Atomic-Server /bookmark endpoint</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 05:42</span>
+            <h3><a href="https://github.com/advisories/GHSA-pfwx-xjp4-qxcj" target="_blank" rel="noopener">CVE-2026-69157 — Atomic Server: Unauthenticated `/setup` invite grants write access to the entire Drive</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 05:42</span>
+            <h3><a href="https://github.com/advisories/GHSA-8vc4-8hjq-988p" target="_blank" rel="noopener">CVE-2026-69156 — Atomic Server: Arbitrary file read via user-controlled `internalId` in the `/download` handler (leaks root agent private key)</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 05:41</span>
+            <h3><a href="https://github.com/advisories/GHSA-x277-3wcg-g9r2" target="_blank" rel="noopener">CVE-2026-69155 — Atomic Server: Stored XSS via uploaded files served inline (same-origin) on `/download` → account takeover</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 04:07</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9153-1" target="_blank" rel="noopener">USN-9153-1: cloud-init vulnerability</a></h3>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 01:28</span>
+            <h3><a href="https://github.com/advisories/GHSA-5hrj-7fc3-cmx9" target="_blank" rel="noopener">CVE-2026-130001 — Mustache for Ruby: RCE using built-in method access</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 01:15</span>
+            <h3><a href="https://github.com/advisories/GHSA-xvcc-vqjv-phqh" target="_blank" rel="noopener">CVE-2026-63496 — augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`</a></h3>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/18 23:24</span>
             <h3><a href="https://hackread.com/armornet-debuts-ai-security-for-the-code-and-vendors-companies-trust/" target="_blank" rel="noopener">Armornet Debuts AI Security for the Code and Vendors Companies Trust</a></h3>
@@ -1360,8 +1435,8 @@
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>12</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
         <div class="stat"><b>132</b><span>국내 동향 — 11/17~18 보도</span></div>
-        <div class="stat"><b>123</b><span>해외 동향 — 11/17~18 보도</span></div>
-        <div class="stat"><b>45</b><span>CVE·취약점 — CVSS 9.0 이상 41건 포함</span></div>
+        <div class="stat"><b>126</b><span>해외 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>56</b><span>CVE·취약점 — CVSS 9.0 이상 42건 포함</span></div>
         <div class="stat"><b>57</b><span>다크웹 유출 — 최근 24시간 건수 (+19%)</span></div>
       </div>
 
@@ -1609,13 +1684,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 45건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준</p>
+          <p>CVSS 9.0 이상 중심 · 56건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 45건</button>
+          <button data-filter="all" aria-pressed="true">전체 56건</button>
           <button data-filter="new" aria-pressed="false">11/16~18 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -1691,6 +1766,14 @@
               <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132139" target="_blank" rel="noopener"><span class="mono">CVE-2026-132139</span></a> · DrayTek Vigor2960</h3>
+              <p>DrayTek Vigor2960 1.5.1.6 이하, setSWMProfile 함수 취약점.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
           </article>
           <article class="cve-row" data-kind="surfaced">
             <div class="score crit">9.8<small>CVSS</small></div>
@@ -1949,6 +2032,86 @@
             <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
           </article>
           <article class="cve-row" data-kind="new">
+            <div class="score crit">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-69157</span> · Atomic Server</h3>
+              <p>인증 없는 /setup 초대로 Drive 전체 쓰기 권한 획득.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-130001</span> · Mustache for Ruby</h3>
+              <p>내장 메서드 접근을 이용한 RCE.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-68903</span> · LLMKube</h3>
+              <p>LLMKube hostPath 주입을 통한 임의 호스트 파일 읽기.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-73864</span> · install-artifact-from-github</h3>
+              <p>다운로드한 네이티브 아티팩트를 무결성 검증 없이 로드.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-71861</span> · Chainguard SDK</h3>
+              <p>AWS SigV4 토큰 재사용, 바인딩 헤더 미요구.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-71481</span> · ALTCHA PHP</h3>
+              <p>챌린지 서명이 없을 때 HMAC 서명 검증 우회.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-69158</span> · Atomic Server</h3>
+              <p>/bookmark 엔드포인트 인증 없는 전체 응답 SSRF.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-69156</span> · Atomic Server</h3>
+              <p>/download 핸들러의 internalId를 통한 임의 파일 읽기(루트 에이전트 비공개 키 유출).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-69155</span> · Atomic Server</h3>
+              <p>인라인 제공되는 업로드 파일을 통한 저장 XSS, 계정 탈취로 이어짐.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-63496</span> · augment-virShell</h3>
+              <p>grep()의 미검증 searchPattern을 통한 명령 주입.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
             <div class="score high">GHSA<small>GitHub Advisory</small></div>
             <div class="cve-main">
               <h3><span class="mono">CVE-2026-14265</span> · AWS Advanced JDBC Wrapper</h3>
@@ -1991,7 +2154,7 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 132건 · 해외 123건 · 2026년 11월 17~18일 보도</p>
+          <p>국내 132건 · 해외 126건 · 2026년 11월 17~18일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
@@ -2546,8 +2709,20 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">123건 · November 17–18, 2026</p>
+            <p class="col-note">126건 · November 17–18, 2026</p>
 
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887" target="_blank" rel="noopener">AI found more critical bugs in another widely used technology running 225M websites</a></h3>
+              <span class="news-meta">The Register · Nov 18, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://databreaches.net/2026/11/18/uk-transport-for-london-photocard-breach-exposes-265000-customers/" target="_blank" rel="noopener">UK: Transport for London photocard breach exposes 265,000 customers</a></h3>
+              <span class="news-meta">DataBreaches.Net · Nov 18, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/" target="_blank" rel="noopener">Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’</a></h3>
+              <span class="news-meta">TechCrunch · Nov 18, 2026</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://hackread.com/armornet-debuts-ai-security-for-the-code-and-vendors-companies-trust/" target="_blank" rel="noopener">Armornet Debuts AI Security for the Code and Vendors Companies Trust</a></h3>
               <span class="news-meta">HackRead · Nov 18, 2026</span>
