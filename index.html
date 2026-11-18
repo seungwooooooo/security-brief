@@ -218,14 +218,14 @@
         <p class="mast-date">2026년 11월 18일 수요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <p class="mast-sub">11월 17~18일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 19일 07:06 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 19일 07:36 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">오늘 KISA 보안공지 <b>15건</b> · CVE·취약점 <b>56건</b> (CVSS 9.0 이상 42건 포함)</span>
+          <span class="alert-counts">오늘 KISA 보안공지 <b>15건</b> · CVE·취약점 <b>61건</b> (CVSS 9.0 이상 45건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong class="mono">CVE-2026-114938</strong> (CVSS 4.0 <strong>9.2</strong>) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -235,11 +235,46 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 240건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 249건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/19 07:28</span>
+            <h3><a href="https://aws.amazon.com/blogs/security/detecting-cross-cloud-lateral-movement-with-aws-security-hub/" target="_blank" rel="noopener">Detecting cross-cloud lateral movement with AWS Security Hub</a></h3>
+            <span class="feed-src">AWS Security Blog</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 07:17</span>
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132141" target="_blank" rel="noopener">CVE-2026-132141 (CVSS 9.9) — A vulnerability was detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this issue is the function json_load_lock of the file /cgi-bin/mainfunction.cgi of…</a></h3>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 07:17</span>
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132142" target="_blank" rel="noopener">CVE-2026-132142 (CVSS 9.1) — A flaw has been found in DrayTek Vigor2960 up to 1.5.1.6. This affects the function dataflowstatus of the file /cgi-bin/mainfunction.cgi of the component CGI Pr…</a></h3>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 07:17</span>
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132143" target="_blank" rel="noopener">CVE-2026-132143 (CVSS 9.9) — A vulnerability has been found in DrayTek Vigor2960 up to 1.5.1.6. This vulnerability affects the function doWebBackup of the file /cgi-bin/mainfunction.cgi of…</a></h3>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 07:07</span>
+            <h3><a href="https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps" target="_blank" rel="noopener">Outage or attack? Don’t let social media fill in the gaps</a></h3>
+            <span class="feed-src">Malwarebytes</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 07:06</span>
+            <h3><a href="https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto" target="_blank" rel="noopener">GTA 6 scams could cost you your account, money, or crypto</a></h3>
+            <span class="feed-src">Malwarebytes</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:59</span>
+            <h3><a href="https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another" target="_blank" rel="noopener">Cold Relic Turns One Cloud Breach Into Another</a></h3>
+            <span class="feed-src">Dark Reading</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/19 06:47</span>
             <h3><a href="https://www.wordfence.com/blog/2026/11/nginx-http2-vulnerabilities-wordpress/" target="_blank" rel="noopener">PSA: Critical NGINX HTTP/2 Vulnerabilities: What WordPress Site Owners Should Know</a></h3>
@@ -291,6 +326,11 @@
             <span class="feed-src">Security Boulevard</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 05:58</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9037-2" target="_blank" rel="noopener">USN-9037-2: HPLIP regression</a></h3>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 05:48</span>
             <h3><a href="https://github.com/advisories/GHSA-82w8-65qw-gch6" target="_blank" rel="noopener">CVE-2026-71481 — ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent</a></h3>
             <span class="feed-src">GitHub Advisories</span>
@@ -324,6 +364,11 @@
             <span class="feed-time">11/19 01:28</span>
             <h3><a href="https://github.com/advisories/GHSA-5hrj-7fc3-cmx9" target="_blank" rel="noopener">CVE-2026-130001 — Mustache for Ruby: RCE using built-in method access</a></h3>
             <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 01:24</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9152-1" target="_blank" rel="noopener">USN-9152-1: GStreamer vulnerability</a></h3>
+            <span class="feed-src">Ubuntu Security Notices</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 01:15</span>
@@ -1450,8 +1495,8 @@
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>12</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
         <div class="stat"><b>132</b><span>국내 동향 — 11/17~18 보도</span></div>
-        <div class="stat"><b>128</b><span>해외 동향 — 11/17~18 보도</span></div>
-        <div class="stat"><b>56</b><span>CVE·취약점 — CVSS 9.0 이상 42건 포함</span></div>
+        <div class="stat"><b>132</b><span>해외 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>61</b><span>CVE·취약점 — CVSS 9.0 이상 45건 포함</span></div>
         <div class="stat"><b>57</b><span>다크웹 유출 — 최근 24시간 건수 (+19%)</span></div>
       </div>
 
@@ -1700,13 +1745,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 56건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준</p>
+          <p>CVSS 9.0 이상 중심 · 61건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 56건</button>
+          <button data-filter="all" aria-pressed="true">전체 61건</button>
           <button data-filter="new" aria-pressed="false">11/16~18 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -1788,6 +1833,22 @@
             <div class="cve-main">
               <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132139" target="_blank" rel="noopener"><span class="mono">CVE-2026-132139</span></a> · DrayTek Vigor2960</h3>
               <p>DrayTek Vigor2960 1.5.1.6 이하, setSWMProfile 함수 취약점.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132141" target="_blank" rel="noopener"><span class="mono">CVE-2026-132141</span></a> · DrayTek Vigor2960</h3>
+              <p>DrayTek Vigor2960 1.5.1.6 이하, json_load_lock 함수 취약점.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132143" target="_blank" rel="noopener"><span class="mono">CVE-2026-132143</span></a> · DrayTek Vigor2960</h3>
+              <p>DrayTek Vigor2960 1.5.1.6 이하, doWebBackup 함수 취약점.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
           </article>
@@ -2015,6 +2076,14 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
           </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132142" target="_blank" rel="noopener"><span class="mono">CVE-2026-132142</span></a> · DrayTek Vigor2960</h3>
+              <p>DrayTek Vigor2960 1.5.1.6 이하, dataflowstatus 함수 취약점.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
           <article class="cve-row" data-kind="surfaced">
             <div class="score high">9.0<small>CVSS v4.0</small></div>
             <div class="cve-main">
@@ -2159,7 +2228,23 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
           </article>
-        
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9037-2" target="_blank" rel="noopener"><span class="mono">USN-9037-2</span></a> · HPLIP</h3>
+              <p>HPLIP regression — Ubuntu 보안 공지. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9152-1" target="_blank" rel="noopener"><span class="mono">USN-9152-1</span></a> · GStreamer</h3>
+              <p>GStreamer vulnerability — Ubuntu 보안 공지. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+
         </div>
         <p class="note">Oracle 2026년 11월 CPU(11/17)와 Java4Shell·N-able 묶음은 11월 16~17일 <strong>처음 공개·보고</strong>된 항목입니다. 나머지는 11월 10~12일 공개분이 KISA 권고·CISA KEV 등재로 이번 주 다시 부상한 것으로, 공개일을 함께 표기했습니다.</p>
           </div>
@@ -2170,7 +2255,7 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 132건 · 해외 128건 · 2026년 11월 17~18일 보도</p>
+          <p>국내 132건 · 해외 132건 · 2026년 11월 17~18일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
@@ -2725,8 +2810,24 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">128건 · November 17–18, 2026</p>
+            <p class="col-note">132건 · November 17–18, 2026</p>
 
+            <article class="news-item">
+              <h3><a href="https://aws.amazon.com/blogs/security/detecting-cross-cloud-lateral-movement-with-aws-security-hub/" target="_blank" rel="noopener">Detecting cross-cloud lateral movement with AWS Security Hub</a></h3>
+              <span class="news-meta">AWS Security Blog · Nov 18, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.malwarebytes.com/blog/ai/2026/11/outage-or-attack-dont-let-social-media-fill-in-the-gaps" target="_blank" rel="noopener">Outage or attack? Don’t let social media fill in the gaps</a></h3>
+              <span class="news-meta">Malwarebytes · Nov 18, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.malwarebytes.com/blog/scams/2026/11/gta-6-scams-could-cost-you-your-account-money-or-crypto" target="_blank" rel="noopener">GTA 6 scams could cost you your account, money, or crypto</a></h3>
+              <span class="news-meta">Malwarebytes · Nov 18, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another" target="_blank" rel="noopener">Cold Relic Turns One Cloud Breach Into Another</a></h3>
+              <span class="news-meta">Dark Reading · Nov 18, 2026</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887" target="_blank" rel="noopener">AI found more critical bugs in another widely used technology running 225M websites</a></h3>
               <span class="news-meta">The Register · Nov 18, 2026</span>
