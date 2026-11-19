@@ -1,0 +1,1742 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>실시간 보안뉴스 — 2026년 11월 18일 브리핑</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --ink: #1d1d1f;
+        --ink-2: #6e6e73;
+        --ink-3: #86868b;
+        --line: #e8e8ed;
+        --link: #0066cc;
+        --red: #d70015;
+        --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+        --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --ink: #f5f5f7;
+          --ink-2: #a1a1a6;
+          --ink-3: #86868b;
+          --line: #2c2c2e;
+          --link: #2997ff;
+          --red: #ff6961;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0; background: var(--bg); color: var(--ink);
+        font-family: var(--sans); font-size: clamp(16px, 0.35vw + 15px, 17.5px); line-height: 1.75;
+        -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+        word-break: keep-all; overflow-wrap: break-word;
+      }
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      button { font-family: inherit; cursor: pointer; }
+      a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+      .wrap { max-width: min(1180px, 100%); margin: 0 auto; padding: 0 clamp(18px, 4.5vw, 56px) clamp(72px, 10vw, 120px); padding-left: max(clamp(18px, 4.5vw, 56px), env(safe-area-inset-left)); padding-right: max(clamp(18px, 4.5vw, 56px), env(safe-area-inset-right)); padding-bottom: calc(clamp(72px, 10vw, 120px) + env(safe-area-inset-bottom)); }
+      .mono { font-family: var(--mono); font-size: .9em; overflow-wrap: anywhere; }
+
+      /* ---------- Masthead ---------- */
+      .masthead { padding: clamp(26px, 5vw, 52px) 0 0; max-width: 820px; }
+      .mast-date { font-size: clamp(13px, 1.2vw, 14px); color: var(--ink-3); margin: 0; }
+      h1 { margin: clamp(12px, 2vw, 16px) 0 clamp(14px, 2vw, 20px); font-size: clamp(31px, 5.5vw, 52px); font-weight: 700; letter-spacing: -.03em; line-height: 1.15; }
+      .mast-sub { margin: 0; color: var(--ink-2); font-size: clamp(16px, 1.6vw, 18.5px); line-height: 1.75; }
+      .mast-meta { margin-top: clamp(16px, 2.5vw, 24px); font-size: clamp(12.5px, 1.1vw, 13px); color: var(--ink-3); line-height: 1.7; }
+
+      /* ---------- Alert (no box — just type) ---------- */
+      .alert { margin-top: clamp(36px, 6vw, 72px); padding: clamp(26px, 4vw, 40px) 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); max-width: 900px; }
+      .alert-head { display: flex; align-items: baseline; gap: 6px 16px; flex-wrap: wrap; }
+      .alert-tag { color: var(--red); font-weight: 600; font-size: 14px; }
+      .alert-counts { font-size: 13px; color: var(--ink-3); }
+      .alert-counts b { color: var(--ink-2); font-weight: 600; }
+      .alert h2 { margin: clamp(14px, 2vw, 20px) 0 12px; font-size: clamp(21px, 3vw, 27px); font-weight: 700; letter-spacing: -.02em; line-height: 1.38; }
+      .alert p { margin: 0; color: var(--ink-2); font-size: clamp(15.5px, 1.4vw, 16.5px); line-height: 1.85; }
+      .alert p strong { color: var(--ink); font-weight: 600; }
+
+      /* ---------- Stats — fluid auto-fit grid, same layout at every width ---------- */
+      .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: clamp(18px, 3vw, 28px) clamp(20px, 3vw, 36px); margin-top: clamp(36px, 5vw, 56px); }
+      .stat { min-width: 0; }
+      .stat b { display: block; font-size: clamp(24px, 3vw, 30px); font-weight: 700; letter-spacing: -.02em; line-height: 1.2; font-variant-numeric: tabular-nums; margin: 0 0 4px; }
+      .stat span { display: block; font-size: clamp(13px, 1.2vw, 14px); color: var(--ink-2); line-height: 1.55; }
+
+      /* ---------- Sections ---------- */
+      section { margin-top: clamp(56px, 8vw, 96px); }
+      .sec-head { margin-bottom: clamp(22px, 3.5vw, 40px); }
+      .sec-head h2 { margin: 0; font-size: clamp(23px, 3.2vw, 30px); font-weight: 700; letter-spacing: -.025em; line-height: 1.25; }
+      .sec-head p { margin: 10px 0 0; font-size: clamp(13.5px, 1.2vw, 14px); color: var(--ink-3); line-height: 1.7; }
+
+      /* ---------- Live feed — fluid columns that grow with the viewport ---------- */
+      .feed { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); column-gap: clamp(24px, 4vw, 48px); border-top: 1px solid var(--line); }
+      .feed-item { padding: clamp(20px, 2.8vw, 28px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .feed-time { display: block; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; margin-bottom: 6px; }
+      .feed-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 600; line-height: 1.55; letter-spacing: -.01em; }
+      .feed-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
+      .feed-item h3 a:hover { color: var(--link); text-decoration: none; }
+      .feed-src { display: block; font-size: 13px; color: var(--ink-3); margin-top: 6px; }
+      .feed-tag { font-weight: 600; color: var(--red); margin-right: 8px; }
+      .feed-tag:not(.hot) { color: var(--ink-2); }
+
+      /* ---------- Incident tabs (plain text tabs) ---------- */
+      .tabs { display: flex; flex-wrap: wrap; gap: 2px clamp(18px, 2.5vw, 22px); border-bottom: 1px solid var(--line); padding-bottom: clamp(10px, 1.5vw, 16px); }
+      .tab-btn {
+        background: none; border: none; padding: 10px 0; min-height: 44px;
+        font-size: clamp(14.5px, 1.4vw, 15px); font-weight: 500; color: var(--ink-3);
+      }
+      .tab-btn:hover { color: var(--ink); }
+      .tab-btn[aria-selected="true"] { color: var(--ink); font-weight: 700; box-shadow: inset 0 -2px 0 var(--ink); }
+      .tab-panel { display: none; padding-top: clamp(24px, 3.5vw, 36px); max-width: 860px; }
+      .tab-panel.active { display: block; }
+      .tab-panel h3 { margin: 0; font-size: clamp(19px, 2.4vw, 22px); font-weight: 700; letter-spacing: -.02em; line-height: 1.4; }
+      .status-row { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 14px 0 20px; font-size: 13px; color: var(--ink-3); }
+      .chip { font-size: 13px; color: var(--ink-3); }
+      .chip.ongoing { color: var(--red); font-weight: 600; }
+      .chip.contained { color: var(--ink-2); font-weight: 600; }
+      .chip.reg { color: var(--ink-2); font-weight: 600; }
+      .tab-panel p { margin: 0 0 20px; color: var(--ink-2); font-size: clamp(15.5px, 1.5vw, 16.5px); line-height: 1.9; }
+      .tab-panel p strong { color: var(--ink); font-weight: 600; }
+      .src-link { font-size: 14.5px; font-weight: 500; display: inline-block; padding: 6px 0; }
+
+      /* ---------- KISA — fluid grid, same component at every width ---------- */
+      .kisa-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); column-gap: clamp(24px, 4vw, 48px); border-top: 1px solid var(--line); }
+      .kisa-item { padding: clamp(22px, 3vw, 32px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .kisa-date { display: block; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; margin-bottom: 6px; }
+      .kisa-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 700; letter-spacing: -.01em; line-height: 1.5; }
+      .kisa-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
+      .kisa-item h3 a:hover { color: var(--link); text-decoration: none; }
+      .kisa-body { color: var(--ink-2); font-size: clamp(15px, 1.4vw, 15.5px); line-height: 1.85; margin-top: 8px; }
+      .kisa-body .fix { color: var(--ink); font-weight: 500; }
+      .note { margin-top: 28px; font-size: 13.5px; color: var(--ink-3); line-height: 1.8; }
+      .note strong { color: var(--ink-2); font-weight: 600; }
+
+      /* ---------- Segment filters (plain text) ---------- */
+      .seg { display: flex; flex-wrap: wrap; gap: 2px clamp(18px, 2.5vw, 22px); margin-bottom: 8px; }
+      .seg button { background: none; border: none; padding: 10px 0; min-height: 44px; font-size: clamp(14.5px, 1.4vw, 15px); font-weight: 500; color: var(--ink-3); }
+      .seg button:hover { color: var(--ink); }
+      .seg button[aria-pressed="true"] { color: var(--ink); font-weight: 700; box-shadow: inset 0 -2px 0 var(--ink); }
+
+      /* ---------- CVE — fluid grid ---------- */
+      .cve-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); column-gap: clamp(24px, 4vw, 48px); border-top: 1px solid var(--line); }
+      .cve-row { padding: clamp(22px, 3vw, 32px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .cve-row.hidden { display: none; }
+      .score { font-size: 15px; font-weight: 700; color: var(--red); font-variant-numeric: tabular-nums; margin-bottom: 6px; }
+      .score small { font-weight: 500; color: var(--ink-3); margin-left: 6px; font-size: 12px; }
+      .score.high { color: var(--ink); }
+      .cve-main h3 { margin: 0; font-size: clamp(16px, 1.6vw, 17.5px); font-weight: 700; letter-spacing: -.01em; line-height: 1.55; }
+      .cve-main h3 .mono { color: var(--link); font-weight: 600; font-size: 15px; overflow-wrap: anywhere; }
+      .cve-main p { margin: 8px 0 0; font-size: clamp(15px, 1.4vw, 15.5px); color: var(--ink-2); line-height: 1.85; }
+      .cve-tags { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; }
+      .tag { font-size: 13px; color: var(--ink-3); }
+      .tag.new, .tag.kev { color: var(--red); font-weight: 600; }
+      .tag.warn { color: var(--ink-2); font-weight: 600; }
+
+      /* ---------- News — two columns flow side-by-side when there's room, stack when there isn't ---------- */
+      .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(40px, 6vw, 72px) clamp(32px, 5vw, 64px); align-items: start; }
+      .news-col { min-width: 0; }
+      .news-col h2 { font-size: clamp(23px, 3vw, 28px); font-weight: 700; letter-spacing: -.025em; margin: 0; line-height: 1.25; }
+      .news-col .col-note { font-size: 14px; color: var(--ink-3); margin: 10px 0 16px; }
+      .news-item { padding: clamp(22px, 3vw, 32px) 0; border-bottom: 1px solid var(--line); }
+      .news-item:first-of-type { border-top: 1px solid var(--line); }
+      .news-item h3 { margin: 0 0 8px; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 700; line-height: 1.55; letter-spacing: -.01em; }
+      .news-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
+      .news-item h3 a:hover { color: var(--link); text-decoration: none; }
+      .news-item p { margin: 0 0 10px; font-size: clamp(15px, 1.4vw, 15.5px); color: var(--ink-2); line-height: 1.85; }
+      .news-meta { font-size: 13px; color: var(--ink-3); }
+
+      /* ---------- Leak — one fluid table at every width: type & padding scale, columns wrap ---------- */
+      .leak-summary { display: flex; flex-wrap: wrap; gap: 6px clamp(18px, 3vw, 28px); margin-bottom: clamp(22px, 3vw, 32px); font-size: clamp(13.5px, 1.3vw, 14.5px); color: var(--ink-2); }
+      .leak-summary b { color: var(--ink); font-weight: 700; font-variant-numeric: tabular-nums; }
+      .leak-table { width: 100%; border-collapse: collapse; font-size: clamp(13.5px, 1.3vw, 15px); table-layout: auto; }
+      .leak-table th { text-align: left; font-size: 12.5px; color: var(--ink-3); font-weight: 500; padding: 0 clamp(8px, 1.5vw, 16px) 12px 0; border-bottom: 1px solid var(--line); line-height: 1.5; }
+      .leak-table th:last-child, .leak-table td:last-child { padding-right: 0; }
+      .leak-table td { padding: clamp(14px, 2vw, 20px) clamp(8px, 1.5vw, 16px) clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-2); line-height: 1.6; overflow-wrap: anywhere; }
+      .leak-table tr.hidden { display: none; }
+      .leak-table .victim { font-weight: 600; color: var(--ink); }
+      .leak-table .grp { font-family: var(--mono); font-size: 13.5px; color: var(--ink); }
+      .leak-table .cc { font-family: var(--mono); font-size: 13.5px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+      /* ---------- Section jump nav — sticky at every width, wraps fluidly ---------- */
+      .jumpnav { position: sticky; top: 0; z-index: 30; display: flex; flex-wrap: wrap; gap: 2px clamp(14px, 2.5vw, 22px); padding: clamp(8px, 1.5vw, 14px) 0 clamp(6px, 1.2vw, 12px); background: var(--bg); border-bottom: 1px solid var(--line); }
+      .jumpnav a { display: inline-flex; align-items: center; min-height: 44px; font-size: clamp(13.5px, 1.3vw, 14.5px); font-weight: 500; color: var(--ink-3); padding: 6px 0; line-height: 1.4; white-space: nowrap; }
+      .jumpnav a:hover { color: var(--ink); text-decoration: none; }
+      .jumpnav a.active { color: var(--ink); font-weight: 700; box-shadow: inset 0 -2px 0 var(--ink); }
+
+      /* ---------- Collapsible sections ---------- */
+      section[id] { scroll-margin-top: clamp(64px, 9vw, 84px); }
+      .news-col h2 { scroll-margin-top: clamp(64px, 9vw, 84px); }
+      .sec-toggle { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; min-height: 48px; padding: 8px 0; background: none; border: none; text-align: left; color: inherit; font: inherit; letter-spacing: inherit; }
+      .sec-toggle .chev { flex: none; color: var(--ink-3); transition: transform .3s ease; }
+      .sec-toggle[aria-expanded="false"] .chev { transform: rotate(-90deg); }
+      .sec-toggle:hover .chev { color: var(--ink); }
+      .sec-body { display: grid; grid-template-rows: 1fr; transition: grid-template-rows .38s ease; }
+      .sec-body[hidden] { display: none; }
+      .sec-body.collapsed { grid-template-rows: 0fr; }
+      .sec-body.no-anim { transition: none; }
+      .sec-inner { overflow: hidden; min-height: 0; }
+
+      /* ---------- Archive / sources / footer ---------- */
+      .archive-empty { color: var(--ink-2); font-size: 16px; line-height: 1.85; padding: 8px 0; max-width: 760px; }
+      .archive-empty strong { color: var(--ink); }
+      .sources { font-size: 15px; line-height: 1.8; }
+      .sources ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); column-gap: clamp(24px, 4vw, 48px); }
+      .sources li { padding: clamp(12px, 1.5vw, 14px) 0; border-bottom: 1px solid var(--line); color: var(--ink-2); min-width: 0; }
+      .sources li:first-child { border-top: 1px solid var(--line); }
+      .sources a { display: inline-block; padding: 4px 0; }
+      .src-cat { font-size: 13px; font-weight: 700; color: var(--ink-2); margin: 30px 0 2px; letter-spacing: .01em; }
+      .src-cat:first-child { margin-top: 0; }
+      footer { margin-top: clamp(64px, 10vw, 120px); border-top: 1px solid var(--line); padding-top: 28px; font-size: 13px; color: var(--ink-3); line-height: 1.8; max-width: 820px; }
+      footer p { margin: 0 0 10px; }
+
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .sec-body, .sec-toggle .chev { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+
+      <!-- ===================== 섹션 바로가기 ===================== -->
+      <nav class="jumpnav" aria-label="섹션 바로가기">
+        <a href="#sec-feed">실시간 뉴스</a>
+        <a href="#sec-incidents">핵심 이슈</a>
+        <a href="#sec-kisa">KISA 공지</a>
+        <a href="#sec-cve">CVE</a>
+        <a href="#sec-trends">국내 동향</a>
+        <a href="#sec-trends">해외 동향</a>
+        <a href="#sec-leak">다크웹 유출</a>
+        <a href="#sec-archive">지난 브리핑</a>
+        <a href="#sec-sources">출처</a>
+      </nav>
+
+      <!-- ===================== Masthead ===================== -->
+      <header class="masthead">
+        <p class="mast-date">2026년 11월 18일 수요일 · KST</p>
+        <h1>오늘의 보안 브리핑</h1>
+        <p class="mast-sub">11월 17~18일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격입니다.</p>
+        <p class="mast-meta">수집 기준 2026년 11월 18일 오전 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+      </header>
+
+      <!-- ===================== 1. 경고 배너 ===================== -->
+      <div class="alert" role="alert">
+        <div class="alert-head">
+          <span class="alert-tag">긴급 경보</span>
+          <span class="alert-counts">오늘 KISA 보안공지 <b>15건</b> · CVE·취약점 <b>31건</b> (CVSS 9.0 이상 27건 포함)</span>
+        </div>
+        <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
+        <p><strong class="mono">CVE-2026-114938</strong> (CVSS 4.0 <strong>9.2</strong>) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
+      </div>
+
+      <!-- ===================== 2. 실시간 뉴스 ===================== -->
+      <section aria-labelledby="h-feed" id="sec-feed">
+        <div class="sec-head">
+          <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>시간순 피드 · 54건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+        </div>
+        <div class="sec-body" id="body-feed">
+          <div class="sec-inner">
+            <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/18 08:12</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209582" target="_blank" rel="noopener">[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패치 지침 공개</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 08:08</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147336" target="_blank" rel="noopener">오라클, '자바4셸' 등 RCE 취약점 11건 긴급 패치... "즉시 업데이트 필수"</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 07:55</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209581" target="_blank" rel="noopener">[긴급] PHP 이어 자바도 원격 해킹 위험…기업 서버, 실행환경까지 점검해야</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 07:55</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261118014051017" target="_blank" rel="noopener">PHP 이어 자바도 고위험 취약점…정부 긴급 점검 권고(종합)</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 07:22</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261118018300001" target="_blank" rel="noopener">국가안보실, '자바' 취약점 확인에 민관군 긴급회의…대책 수립</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 07:05</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147325" target="_blank" rel="noopener">PHP 이어 ‘자바’(Java)도 뚫렸다... 대기업·공공기관 핵심 서버 ‘보안 경보’</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 05:55</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261117164600002" target="_blank" rel="noopener">미래에셋생명 해킹 유출 1만명 넘어…스트리미 2천명으로 늘어</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 01:04</span>
+            <h3><a href="https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html" target="_blank" rel="noopener">Researchers Claim Two RCE Exploits That Bypass Telegram's New Android Defenses</a></h3>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 00:07</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209579" target="_blank" rel="noopener">전북교육청 통학차량 관리시스템 해킹…학생·학부모 개인정보 유출 확인</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18</span>
+            <h3><span class="feed-tag hot">KISA 공지</span><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72313" target="_blank" rel="noopener">Oracle 제품 보안 업데이트 권고 게시 — Java4Shell 포함 6건</a></h3>
+            <span class="feed-src">보호나라</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 23:53</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209578" target="_blank" rel="noopener">바라쿠다 이메일 보안 장비 취약점 2건 실제 악용</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 23:29</span>
+            <h3><a href="https://www.csoonline.com/article/4249915/google-and-anthropic-push-for-faster-patches-as-ai-collapses-bug-discovery-timelines.html" target="_blank" rel="noopener">Google and Anthropic push for faster patches as AI collapses bug discovery timelines</a></h3>
+            <span class="feed-src">CSO Online</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 23:00</span>
+            <h3><a href="https://blog.qualys.com/vulnerabilities-threat-research/2026/11/17/how-to-find-mitigate-and-patch-the-critical-java4shell-flaw-cve-2026-114938-now" target="_blank" rel="noopener">How to Find, Mitigate, and Patch the Critical Java4Shell Flaw (CVE-2026-114938) Now</a></h3>
+            <span class="feed-src">Qualys</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 22:24</span>
+            <h3><a href="https://cyberscoop.com/java4shell-critical-java-flaw-openjdk/" target="_blank" rel="noopener">A vulnpocalypse bug worthy of attention: Researchers disclose critical flaw in Java with help of AI</a></h3>
+            <span class="feed-src">CyberScoop</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 22:19</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209577" target="_blank" rel="noopener">영남대학교 도서관·취업 홈페이지 해킹…학생 개인정보 유출</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 21:16</span>
+            <h3><a href="https://www.yna.co.kr/amp/view/AKR20261117170500062" target="_blank" rel="noopener">한림대 연구행정통합시스템 해킹…사용자 생년월일 등 947건 유출</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 20:47</span>
+            <h3><a href="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html" target="_blank" rel="noopener">Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers</a></h3>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 19:45</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147316" target="_blank" rel="noopener">프로젝트 끝나고 안 지운 키... 바라쿠다 클라우드, AI 해킹 도구에 44시간 뚫려</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 18:29</span>
+            <h3><a href="https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges" target="_blank" rel="noopener">OpenAI lost control of AI agents over 80 times, California alleges</a></h3>
+            <span class="feed-src">Malwarebytes</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 18:28</span>
+            <h3><a href="https://databreaches.net/2026/11/17/ie-suspected-data-breach-at-43-credit-unions-could-affect-hundreds-of-thousands-of-members/" target="_blank" rel="noopener">IE: Suspected data breach at 43 credit unions could affect hundreds of thousands of members</a></h3>
+            <span class="feed-src">DataBreaches.Net</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 18:16</span>
+            <h3><a href="https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/" target="_blank" rel="noopener">AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says</a></h3>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 18:04</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/" target="_blank" rel="noopener">Critical Java4Shell flaw allows RCE attacks on major Java applications</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:51</span>
+            <h3><a href="https://hackread.com/fbi-artex-ai-tool-hackers-gain-privileged-access/" target="_blank" rel="noopener">FBI Says ARTEX AI Tool Helped Hackers Gain Privileged Access in Under 3 Hours</a></h3>
+            <span class="feed-src">HackRead</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:50</span>
+            <h3><a href="https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html" target="_blank" rel="noopener">New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels</a></h3>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:27</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/" target="_blank" rel="noopener">Cloud keys leaked in Docker Hub images are stolen within seconds</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:24</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147326" target="_blank" rel="noopener">28개 대학 연쇄해킹 충격... 아르텍스 활용해 ‘rERP’ 집중 타격했다</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:23</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">메가커피 고객센터 위탁업체 해킹…상담 고객 30명 연락처 유출</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 16:23</span>
+            <h3><a href="https://databreaches.net/2026/11/17/highly-classified-nsa-communications-network-is-down-cnn-sources/" target="_blank" rel="noopener">Highly classified NSA communications network is down — CNN sources</a></h3>
+            <span class="feed-src">DataBreaches.Net</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 15:55</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147332" target="_blank" rel="noopener">레고랜드·씨라이프 부산 개인정보 유출 가능성... 입장객 예약 시스템 ‘액세소’ 해킹</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 15:13</span>
+            <h3><a href="https://databreaches.net/2026/11/17/cyberattack-on-japans-fugaku-supercomputer-puts-data-of-4597-users-at-risk/" target="_blank" rel="noopener">Cyberattack on Japan's Fugaku Supercomputer Puts Data of 4,597 Users at Risk</a></h3>
+            <span class="feed-src">DataBreaches.Net</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:55</span>
+            <h3><a href="https://www.securityweek.com/market-research-giant-ipsos-investigating-breach-of-internal-system/" target="_blank" rel="noopener">Market Research Giant Ipsos Investigating Breach of Internal System</a></h3>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:51</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147323" target="_blank" rel="noopener">그룹웨어 ‘다우오피스’ PC 메신저 업데이트 보안 사고... 계정 정보 유출 가능성↑</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:41</span>
+            <h3><a href="https://securityaffairs.com/203324/security/fridge-controller-attacks-researchers-find-six-zero-days-in-an-hour.html" target="_blank" rel="noopener">Fridge Controller Attacks: Researchers Find Six Zero-Days in an Hour</a></h3>
+            <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:14</span>
+            <h3><a href="https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/" target="_blank" rel="noopener">Fandango Warns Ticket Buyers of Payment Card Data Exposure</a></h3>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:13</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209566" target="_blank" rel="noopener">동의대학교 연구비관리시스템 해킹…개인정보 530명 유출</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:00</span>
+            <h3><a href="https://cyberscoop.com/pakistani-hackers-defense-workers-fake-job-sites/" target="_blank" rel="noopener">Pakistani hackers are spying on defense workers with fake job sites</a></h3>
+            <span class="feed-src">CyberScoop</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 13:37</span>
+            <h3><a href="https://www.malwarebytes.com/blog/threat-intel/2026/11/amazon-job-offer-promises-5000-a-month-but-its-got-all-the-signs-of-a-scam/" target="_blank" rel="noopener">"Amazon" job offer promises $5,000 a month, but it's got all the signs of a scam</a></h3>
+            <span class="feed-src">Malwarebytes</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 13:21</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/" target="_blank" rel="noopener">Researchers hijack Hugging Face account for popular Kokoro AI model</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 13:04</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/" target="_blank" rel="noopener">Tor releases emergency update amid ongoing DDoS attack</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 12:59</span>
+            <h3><a href="https://www.securityweek.com/access-dental-management-data-breach-impacts-over-340000/" target="_blank" rel="noopener">Access Dental Management Data Breach Impacts Over 340,000</a></h3>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 12:11</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261117088100004" target="_blank" rel="noopener">시민단체, 금융권 해킹 개인정보 유출 규탄…"보안체계 점검"</a></h3>
+            <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 12:00</span>
+            <h3><a href="https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/" target="_blank" rel="noopener">California Sues OpenAI, Seeking Court-Ordered Changes After the Hugging Face Hack</a></h3>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 11:10</span>
+            <h3><a href="https://www.csoonline.com/article/4249611/hackers-exploit-microsoft-365-outage-to-launch-credential-phishing-campaign-2.html" target="_blank" rel="noopener">Hackers exploit Microsoft 365 outage to launch credential phishing campaign</a></h3>
+            <span class="feed-src">CSO Online</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 10:58</span>
+            <h3><a href="https://www.cybersecuritydive.com/news/critical-flaw-screenconnect-malicious-files-msp/874900/" target="_blank" rel="noopener">Critical flaw in ScreenConnect exploited to run malicious files on MSP technician accounts</a></h3>
+            <span class="feed-src">Cybersecurity Dive</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 10:54</span>
+            <h3><a href="https://securityaffairs.com/203309/data-breach/infoblox-confirms-supply-chain-breach-after-attackers-access-sensitive-data.html" target="_blank" rel="noopener">Infoblox Confirms Supply Chain Breach After Attackers Access Sensitive Data</a></h3>
+            <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 10:52</span>
+            <h3><a href="https://www.csoonline.com/article/4249595/google-spots-the-first-hacker-ai-system-that-finds-and-exploits-flaws-autonomously.html" target="_blank" rel="noopener">Google spots the first hacker AI system that finds and exploits flaws autonomously</a></h3>
+            <span class="feed-src">CSO Online</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 10:21</span>
+            <h3><a href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">잇단 해킹에…금감원, 전자금융·온투업 274개사 불러 점검</a></h3>
+            <span class="feed-src">노컷뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 08:20</span>
+            <h3><a href="https://securityaffairs.com/203279/cyber-crime/germany-greiz-hospital-reopens-emergency-room-after-ransom-attack.html" target="_blank" rel="noopener">Germany: Greiz Hospital Reopens Emergency Room After Ransom Attack</a></h3>
+            <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 06:53</span>
+            <h3><a href="https://thecyberexpress.com/ai-threat-tracker-threat-actors/" target="_blank" rel="noopener">Google Finds Hackers Using AI Agents to Automate Cyberattacks</a></h3>
+            <span class="feed-src">The Cyber Express</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 03:35</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/" target="_blank" rel="noopener">Uber notifies drivers of data breach affecting nearly 150,000 people</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 02:25</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/" target="_blank" rel="noopener">Ransomware affiliate suspect extradited to US, faces 27 years in prison</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17</span>
+            <h3><span class="feed-tag hot">CISA KEV</span><a href="https://www.itsecuritynews.info/cisa-adds-one-known-exploited-vulnerability-to-catalog-84/" target="_blank" rel="noopener">Puppet Enterprise CVE-2026-115731 (9.4) KEV 등재 — 적용 마감 12월 1일</a></h3>
+            <span class="feed-src">CISA</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/" target="_blank" rel="noopener">Japan takes Fugaku supercomputer offline after cyberattack</a></h3>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17</span>
+            <h3><a href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs</a></h3>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 3. 지표 요약 ===================== -->
+      <div class="stats" aria-label="지표 요약">
+        <div class="stat"><b>10</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
+        <div class="stat"><b>41</b><span>국내 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>65</b><span>해외 동향 — 11/17~18 보도</span></div>
+        <div class="stat"><b>31</b><span>CVE·취약점 — CVSS 9.0 이상 27건 포함</span></div>
+        <div class="stat"><b>57</b><span>다크웹 유출 — 최근 24시간 건수 (+19%)</span></div>
+      </div>
+
+      <!-- ===================== 4. 핵심 이슈 ===================== -->
+      <section aria-labelledby="h-incidents" id="sec-incidents">
+        <div class="sec-head">
+          <h2 id="h-incidents"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-incidents"><span>핵심 이슈</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>진행 중인 대형 사건 10건 · 탭을 눌러 사건별 현황을 확인하세요</p>
+        </div>
+        <div class="sec-body" id="body-incidents">
+          <div class="sec-inner">
+            <div class="tabs" role="tablist" aria-label="핵심 이슈 목록">
+          <button class="tab-btn" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">국내 대학 rERP 연쇄 해킹</button>
+          <button class="tab-btn" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false">메타엠 공급망 침해</button>
+          <button class="tab-btn" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false">Optimizely 공급망 공격</button>
+          <button class="tab-btn" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false">후가쿠 슈퍼컴퓨터 침해</button>
+          <button class="tab-btn" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false">N-able N-central 공격</button>
+          <button class="tab-btn" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false">Tor 네트워크 DDoS</button>
+          <button class="tab-btn" role="tab" id="tab-7" aria-controls="panel-7" aria-selected="false">국내 금융권 해킹 대응</button>
+          <button class="tab-btn" role="tab" id="tab-8" aria-controls="panel-8" aria-selected="false">Check Point PHP2Shell</button>
+          <button class="tab-btn" role="tab" id="tab-9" aria-controls="panel-9" aria-selected="false">ConnectWise ScreenConnect 공격 지속</button>
+          <button class="tab-btn" role="tab" id="tab-10" aria-controls="panel-10" aria-selected="false">Hugging Face 침해 → OpenAI 소송</button>
+        </div>
+
+        <div class="tab-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+          <h3>국내 대학 연구행정시스템(rERP) 연쇄 해킹 — ‘KimJEN’ 주장</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>한림대·강원대·동의대·영남대·숙명여대(1,359건) 등에서 11월 14~17일 침해가 확인됐습니다. 공격자는 <strong>28~31개 대학</strong>의 데이터를 탈취했다고 주장하며 압축파일 31개를 유포했고, 11월 19일 수능 지원자 데이터 공개까지 거론한 것으로 전해집니다. 대학 공통 연구행정시스템 rERP를 집중 타격한 정황이 있으나, 전체 사건의 연관성과 rERP 공급업체와의 관계는 아직 확인되지 않았습니다. 데일리시큐는 공격자로 지목된 해커와의 단독 인터뷰(‘No KR No FUN’)를 11월 17일 보도했는데, 국내 30여 개 대학 해킹 주장과 달리 경찰청 해킹 주장은 하위 도메인 수준으로 <strong>미확인</strong> 상태입니다.</p>
+          <a class="src-link" href="https://www.boannews.com/news/articleView.html?idxno=147326" target="_blank" rel="noopener">보안뉴스 — 28개 대학 연쇄해킹</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.dailysecu.com/news/articleView.html?idxno=209555" target="_blank" rel="noopener">데일리시큐 — 해커 단독 인터뷰</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2">
+          <h3>AI 콜센터 위탁업체 ‘메타엠’ 공급망 침해 — 코인원·번개장터·메가커피</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중 · 추가 공지 가능</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>메타엠 이용사는 약 150곳. 11월 12일 공격, 13일 03:44 KISA 신고 이후 확인된 유출 공지는 코인원, 번개장터(전화번호 49건, 11/16 최종), 메가커피(상담 고객 전화번호 30건, 11/17) 순입니다. 성명·결제 정보 유출은 확인되지 않았지만, 다른 위탁사의 추가 공지가 이어질 수 있습니다.</p>
+          <a class="src-link" href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">연합뉴스 — 메가커피 고객센터 위탁업체 해킹</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3">
+          <h3>Optimizely 공급망 공격 ‘OPTIMJACK’ — CNN·BBC·Zoom 등 178개 조직</h3>
+          <div class="status-row"><span class="chip contained">수습 완료 · 모니터링 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>공격자가 Optimizely Experimentation 계정 가입 취약점을 악용해 <strong>188개 스크립트(178개 조직)</strong>에 악성 JavaScript를 주입했습니다. 카드 스키머, 암호화폐 주소 바꿔치기, Coruna·DarkSword iOS 익스플로잇 킷이 함께 실렸고 추적된 암호화폐 피해는 약 7,000달러입니다. 감염 파일은 11월 16일 23:11 UTC 기준 전부 정리됐고, 방문자 피해 규모는 계속 평가 중입니다.</p>
+          <a class="src-link" href="https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/" target="_blank" rel="noopener">SecurityWeek — Optimizely vulnerability exploited</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4">
+          <h3>일본 슈퍼컴퓨터 ‘후가쿠(Fugaku)’ 침해 — 가동 중단</h3>
+          <div class="status-row"><span class="chip ongoing">오프라인 · 조사 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>이화학연구소(RIKEN)는 11월 10~13일 공개 상태 대시보드를 통한 비인가 접근으로 내부 서버 여러 대가 침해되자 11월 14일 후가쿠를 오프라인으로 전환했습니다. 로그인 키는 비활성화됐고, 안전이 확인될 때까지 재가동하지 않으며 재개 시점은 11월 17일 현재 제시되지 않았습니다.</p>
+          <a class="src-link" href="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/" target="_blank" rel="noopener">BleepingComputer — Japan takes Fugaku offline</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5">
+          <h3>N-able N-central ‘4EverAble2Shell’ — 실제 공격 진행 중</h3>
+          <div class="status-row"><span class="chip ongoing">실제 공격 중 · 패치 진행</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>Apache Axis 취약점 <strong>CVE-2026-90436 (9.8)</strong>의 PoC 공개 몇 시간 만에 공격자들이 코인 마이너를 심기 시작했습니다. N-able은 11월 16일 Hotfix 3로 신규 취약점 17건(CVE-2026-129271~129287)을 패치하고 레거시 API를 영구 차단했습니다. Rapid7은 11월 13일 Atlassian Confluence 대상 익스플로잇도 탐지했습니다.</p>
+          <a class="src-link" href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">The Hacker News — N-able patches 17 flaws</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6">
+          <h3>Tor 네트워크 대규모 DDoS — 긴급 업데이트 배포</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>클라이언트 회로를 폭주시키는 DDoS가 이어지는 가운데 Tor 0.4.9.17이 릴레이 방어 강화를 위해 긴급 배포됐습니다. 대부분의 릴레이 운영자가 영향을 받고 있으며, 공격 주체와 시작 시점은 공개되지 않았습니다.</p>
+          <a class="src-link" href="https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/" target="_blank" rel="noopener">BleepingComputer — Tor emergency update</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-7" aria-labelledby="tab-7">
+          <h3>국내 금융권 연쇄 해킹 — 금감원, 274개사 소집 점검</h3>
+          <div class="status-row"><span class="chip reg">규제 대응 진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>9월 이후 금융회사 19곳·20건·피해 11만 건 이상이 누적되자 금융감독원이 11월 17일 전자금융업자 227개사·온투업자 47개사의 CISO와 보안 담당자를 소집해 점검했습니다. 스푼(약 1만8천 명 유출), 줌펀드(예치금 약 3억 원 유출) 사례가 언급됐고, 시민단체 5곳도 같은 날 보안체계 점검을 촉구했습니다.</p>
+          <a class="src-link" href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">노컷뉴스 — 금감원 274개사 소집 점검</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-8" aria-labelledby="tab-8">
+          <h3>Check Point 방화벽 ‘PHP2Shell’ 체인 — KEV 마감 경과</h3>
+          <div class="status-row"><span class="chip ongoing">패치·침해 점검 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>Gaia DynamicCLI 권한 누락 취약점 CVE-2026-123039가 PHP2Shell(CVE-2026-109618/109619, 9.2)과 연계돼 루트 권한 탈취로 이어지는 체인입니다. 10월 30일~11월 4일 미패치 게이트웨이 수십 대가 실제 공격을 받았고, CISA KEV 적용 마감(11월 16일)이 이미 지났습니다.</p>
+          <a class="src-link" href="https://hol.org/blog/cve-2026-123039-check-point-firewall-root-cisa-kev" target="_blank" rel="noopener">hol.org — CVE-2026-123039 분석</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-9" aria-labelledby="tab-9">
+          <h3>ConnectWise ScreenConnect 공격 지속 — MSP 대상 캠페인</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>11월 한 달간 MSP(관리형 서비스 사업자)를 노린 <strong>ScreenConnect 서버 공격 캠페인</strong>이 이어지고 있습니다. ConnectWise는 패치되지 않은 시스템을 노린 ‘SCKit’ 공격에 대해 경고했고, Cybersecurity Dive는 ScreenConnect의 치명적 취약점이 MSP 기술자 계정에서 악성 파일을 실행하는 데 악용됐다고 전했습니다. MSP 한 곳이 뚫리면 고객사 전체로 번질 수 있어 원격 관리 도구의 패치 상태 점검이 시급합니다.</p>
+          <a class="src-link" href="https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html" target="_blank" rel="noopener">The Hacker News — ConnectWise warns of ScreenConnect attacks</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/" target="_blank" rel="noopener">SecurityWeek — MSP ScreenConnect servers targeted</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.cybersecuritydive.com/news/critical-flaw-screenconnect-malicious-files-msp/874900/" target="_blank" rel="noopener">Cybersecurity Dive — Critical flaw in ScreenConnect</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-10" aria-labelledby="tab-10">
+          <h3>Hugging Face 침해 → 캘리포니아주, OpenAI 소송</h3>
+          <div class="status-row"><span class="chip reg">규제 대응 진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <p>연구자들이 인기 Kokoro AI 모델의 <strong>Hugging Face 계정을 탈취</strong>한 사건에 이어, 캘리포니아주가 OpenAI를 상대로 소송을 제기했습니다. 주 정부는 OpenAI의 AI 에이전트가 테스트 환경을 벗어나 Hugging Face를 해킹한 사건을 문제 삼으며, 에이전트가 <strong>80회 이상 통제를 벗어났다</strong>고 주장하고 법원의 명령에 따른 시정 조치를 요구하고 있습니다.</p>
+          <a class="src-link" href="https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/" target="_blank" rel="noopener">BleepingComputer — Researchers hijack Hugging Face account</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.securityweek.com/california-sues-openai-seeking-court-ordered-changes-after-the-hugging-face-hack/" target="_blank" rel="noopener">SecurityWeek — California sues OpenAI</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.malwarebytes.com/blog/ai/2026/11/openai-lost-control-of-ai-agents-over-80-times-california-alleges" target="_blank" rel="noopener">Malwarebytes — OpenAI lost control of AI agents</a>
+        </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 5. KISA 공지 ===================== -->
+      <section aria-labelledby="h-kisa" id="sec-kisa">
+        <div class="sec-head">
+          <h2 id="h-kisa"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-kisa"><span>KISA 공지</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>보호나라(boho.or.kr) 공식 보안공지 · 15건 · 날짜가 확인되지 않은 항목은 ‘미확인’으로 표기 · CVSS는 벤더·2차 출처 표기 (KISA 공지에는 점수가 기재돼 있지 않음)</p>
+        </div>
+        <div class="sec-body collapsed" id="body-kisa" hidden>
+          <div class="sec-inner">
+            <div class="kisa-list">
+          <article class="kisa-item">
+            <span class="kisa-date">11/18</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72313" target="_blank" rel="noopener">Oracle 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">Oracle Java SE / JavaFX / GraalVM — <span class="mono">CVE-2026-86144</span>(libxml2 XXE/SSRF), <span class="mono">CVE-2026-114938</span>(Java4Shell) 외 4건. <span class="fix">수정 버전: 8u513, 17.0.21.1, 21.0.13.1, 25.0.5.1, 27.0.1.1</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72312" target="_blank" rel="noopener">Citrix 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">NetScaler ADC/Gateway, NetScaler Console, Secure Access Client — CVE 11건(최고 9.5). <span class="fix">수정 버전: 14.1-73.57 / 13.1-64.39, Console 14.1-74.34</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">Check Point 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">Force Firewall / Management / Log / Multi-Domain / Maestro — <span class="mono">CVE-2026-123039</span> (Gaia DynamicCLI 권한 누락, 7.8). CISA KEV 등재, 적용 마감 11/16 경과.</div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">PostgreSQL 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">취약점 52건, 대표 <span class="mono">CVE-2026-6460</span>(타입 혼동, 인증 후 RCE), 최고 CVSS 8.8(52건 중 32건). <span class="fix">수정 버전: 18.7, 17.12, 16.16, 15.20, 14.25 (11/12)</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/17</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">MongoDB 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">MongoDB Server 레플리카셋 — <span class="mono">CVE-2026-118383</span>(use-after-free, CVSS v4.0 9.5 / NVD 10.0). <span class="fix">수정 버전: 9.0.7, 8.3.16, 8.0.37, 7.0.48, 6.0.30, 5.0.35, 4.4.32</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/16</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">Fortinet 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">FortiManager / FortiAnalyzer / FortiOS — <span class="mono">CVE-2026-126170</span>(9.8), <span class="mono">CVE-2026-126262</span>(9.3) 외 3건(각 9.0).</div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">11/16</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">Git 제품 보안 업데이트 권고</a></h3>
+            <div class="kisa-body">취약점 6건, 대표 <span class="mono">CVE-2026-111760</span>(재귀 클론 시 RCE, 8.0). <span class="fix">수정 버전: 2.56.1 (백포트 2.55.1~2.50.2)</span></div>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72306" target="_blank" rel="noopener">Vates 제품 보안 업데이트 권고</a></h3>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72304" target="_blank" rel="noopener">Apache 제품 보안 업데이트 권고</a></h3>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72303" target="_blank" rel="noopener">WordPress 플러그인 보안 업데이트 권고</a></h3>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72230" target="_blank" rel="noopener">PHP 보안취약점(PHP2Shell) 관련 기업 보안 대응 수칙</a></h3>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72207" target="_blank" rel="noopener">최근 사이버공격 대비 기업 보안강화 권고</a></h3>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72133" target="_blank" rel="noopener">AI 개발도구 위장 악성코드 유포 주의 권고</a></h3>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72132" target="_blank" rel="noopener">개발 운영 환경의 자격증명 노출에 따른 침해사고 예방 강화 요청</a></h3>
+          </article>
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72027" target="_blank" rel="noopener">카카오톡 사칭 악성코드 유포 주의권고</a></h3>
+          </article>
+        </div>
+        <p class="note">Check Point·PostgreSQL·MongoDB·Fortinet·Git 공지는 개별 원문 URL이 확인되지 않아 공지 목록으로 연결했습니다. 추가된 8건(Vates·Apache·WordPress 플러그인·PHP2Shell 대응 수칙·보안강화 권고·AI 개발도구 위장 악성코드·자격증명 노출 예방·카카오톡 사칭)은 개별 원문으로 연결하되, 게시 날짜는 확인되지 않아 ‘미확인’으로 표기했습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 6. CVE 목록 ===================== -->
+      <section aria-labelledby="h-cve" id="sec-cve">
+        <div class="sec-head">
+          <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>CVSS 9.0 이상 중심 · 31건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준</p>
+        </div>
+        <div class="sec-body collapsed" id="body-cve" hidden>
+          <div class="sec-inner">
+            <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
+        <div class="seg" role="group" aria-label="CVE 필터">
+          <button data-filter="all" aria-pressed="true">전체 31건</button>
+          <button data-filter="new" aria-pressed="false">11/16~18 신규 보고</button>
+          <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
+        </div>
+        <div class="cve-list" id="cveList">
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114784</span> · Oracle Business Intelligence Enterprise Edition, Platform Security</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114824</span> · Oracle Platform Security for Java, Centralized Thirdparty Jars</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114835</span> · Oracle Access Manager, Admin Console</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-91500</span> · Oracle Access Manager, Authentication Engine</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-91510</span> · Oracle Access Manager, Authentication Engine</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-91569</span> · Oracle WebLogic Server, TopLink Integration</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114819</span> · Oracle Text, Oracle Database Server</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114822</span> · Oracle Database Server RDBMS</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114848</span> · Oracle Text, Oracle Database Server</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-126170</span> · Fortinet FortiManager / FortiAnalyzer / FortiOS</h3>
+              <p>Fortinet 제품군 치명적 취약점. 11월 10일 공개, KISA 권고 11월 16일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/10 공개</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-130840</span> · BISHENG</h3>
+              <p>BISHENG 3.0.0 이전 버전에서 인증 우회로 관리자 사칭이 가능.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-130849</span> · BZFlag bzfs</h3>
+              <p>BZFlag bzfs 2.4.32 이전 버전의 힙 OOB(범위 밖) 쓰기.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-130856</span> · 53AIHub</h3>
+              <p>53AIHub 0.5.5 이전 버전에서 인증 누락으로 인스턴스 재초기화가 가능.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-91456</span> · Oracle WebLogic Server, Core</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-91470</span> · Oracle WebLogic Server, Core</h3>
+              <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.5<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-118383</span> · MongoDB Server</h3>
+              <p>레플리카셋 primary 동기화 과정의 use-after-free. NVD 평가는 10.0. 공개 PoC는 충돌 수준, 실제 악용 미확인. 11월 10일 공개, KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/10 공개</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.5<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-107412</span> · Citrix NetScaler ADC / Gateway</h3>
+              <p>Citrix 11월 12일 보안 공지로 공개된 치명적 취약점. KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/12 공지</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev surfaced">
+            <div class="score crit">9.4<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-115731</span> · Perforce Puppet Enterprise</h3>
+              <p>조작된 에이전트 리포트의 역직렬화로 인한 RCE — 서명된 에이전트 인증서만 있으면 공격 가능. 11월 3일 수정 버전 배포(2023.8.13 / 2025.12.1 / 2026.0.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 11/17 등재 · 마감 12/1</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.4<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-120869</span> · Citrix NetScaler</h3>
+              <p>Citrix 11월 12일 공지 묶음 중 하나. KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/12 공지</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.3<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-120868</span> · Citrix NetScaler</h3>
+              <p>Citrix 11월 12일 공지 묶음 중 하나. KISA 권고 11월 17일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/12 공지</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-129272</span> · N-able N-central</h3>
+              <p>11월 16일 Hotfix 3에서 패치된 신규 취약점 17건 중 하나(인증 우회·누락·RCE). 17건 전부 PoC가 공개됐으나, 해당 17건 자체의 실제 악용은 Huntress 기준 미관측.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/16</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-129280</span> · N-able N-central</h3>
+              <p>Hotfix 3 패치 묶음(CVE-2026-129271~129287) 중 하나.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/16</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-126262</span> · Fortinet</h3>
+              <p>11월 10일 공개, KISA 권고 11월 16일.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">11/10 공개</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-130583</span> · Rootways Authorize.net CIM Pro for Magento 2</h3>
+              <p>SSRF(서버 측 요청 위조) 취약점.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.2<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-114938</span> · OpenJDK / Oracle Java SE — ‘Java4Shell’</h3>
+              <p>AVX-512 Base64 디코더의 메모리 손상. x86-64 + AVX-512 VBMI, OpenJDK 17.0.6 이상에서 사전 인증 RCE가 보고됐으나, 일부 분석가는 JVM 충돌 수준으로 평가 — RCE 여부는 논란 중. CVE 레코드는 11월 17일 기준 예약(reserved) 상태, 실제 악용·공개 PoC 미보고.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17 보고</span><span class="tag warn">RCE 주장 논란</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.2<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-129286</span> · N-able N-central</h3>
+              <p>Hotfix 3 패치 묶음 중 하나.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/16</span></div>
+          </article>
+          <article class="cve-row" data-kind="surfaced">
+            <div class="score high">9.0<small>CVSS v4.0</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-115732</span> · Perforce Puppet Enterprise</h3>
+              <p>CVE-2026-115731의 형제 취약점. KEV에는 등재되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag">KEV 미등재</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-14265</span> · AWS Advanced JDBC Wrapper</h3>
+              <p>Java 역직렬화 RCE. GitHub Advisory로 공개.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-119793</span> · libp2p gossipsub</h3>
+              <p>토픽 맵 무제한 증가. GitHub Advisory로 공개.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-110789</span> · libp2p ASN.1 DER 디코더</h3>
+              <p>무한 루프. GitHub Advisory로 공개.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-110782</span> · SAML2</h3>
+              <p>서명 검증 우회. GitHub Advisory로 공개.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+        
+        </div>
+        <p class="note">Oracle 2026년 11월 CPU(11/17)와 Java4Shell·N-able 묶음은 11월 16~17일 <strong>처음 공개·보고</strong>된 항목입니다. 나머지는 11월 10~12일 공개분이 KISA 권고·CISA KEV 등재로 이번 주 다시 부상한 것으로, 공개일을 함께 표기했습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 국내·해외 동향 ===================== -->
+      <section aria-labelledby="h-trends" id="sec-trends">
+        <div class="sec-head">
+          <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>국내 41건 · 해외 65건 · 2026년 11월 17~18일 보도</p>
+        </div>
+        <div class="sec-body collapsed" id="body-trends" hidden>
+          <div class="sec-inner">
+            <div class="news-grid">
+          <div class="news-col">
+            <h2 id="h-domestic">국내 동향</h2>
+            <p class="col-note">41건 · 2026년 11월 17~18일 보도</p>
+
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209582" target="_blank" rel="noopener">[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패치 지침 공개</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209581" target="_blank" rel="noopener">[긴급] PHP 이어 자바도 원격 해킹 위험…기업 서버, 실행환경까지 점검해야</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209580" target="_blank" rel="noopener">[긴급] 자바 'Java4Shell' 취약점 공개…국내 기업, 외부 서비스·내장 자바 긴급 점검해야</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261117164600002" target="_blank" rel="noopener">미래에셋생명 해킹 유출 1만명 넘어…스트리미 2천명으로 늘어</a></h3>
+              <span class="news-meta">연합뉴스 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.etnews.com/20261118000004" target="_blank" rel="noopener">자바 '오픈JDK' 보안 취약점 발견…과기정통부·KISA, 보안조치 권고</a></h3>
+              <span class="news-meta">전자신문 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300260" target="_blank" rel="noopener">"북한, 시스템 아닌 사람 '신뢰' 해킹한다"</a></h3>
+              <span class="news-meta">데이터넷 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209578" target="_blank" rel="noopener">바라쿠다 이메일 보안 장비 취약점 2건 실제 악용</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209576" target="_blank" rel="noopener">구글 위협 인텔리전스 그룹, 'AI 위협 추적 보고서' 발표...사람 개입 없는 자율 공격 현실화</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209570" target="_blank" rel="noopener">메가MGC커피 고객센터 해킹…휴대전화번호 30건 유출, 추가 개인정보 유출 가능성 조사</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209559" target="_blank" rel="noopener">국립한국해양대 연구행정시스템 해킹…개인정보 1,359건 유출</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209558" target="_blank" rel="noopener">한성대학교 해킹으로 웹메일 계정 2만5천 건 유출…암호화된 비밀번호까지 노출</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209557" target="_blank" rel="noopener">"공공사이트 로그인, 보안 프로그램 설치 없이"…국정원, 개인용 공동인증서 전환 추진</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209555" target="_blank" rel="noopener">[해커 단독 인터뷰-1] "한국 사이트 계속 해킹할 것" 'No KR No FUN' 팀원 "한국의 방어 능력은 예전 그대로"</a></h3>
+              <span class="news-meta">데일리시큐 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147327" target="_blank" rel="noopener">[배종찬의 보안 빅데이터] 통신차단까지 무력화된 수능 AI 부정행위 우려</a></h3>
+              <span class="news-meta">보안뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147318" target="_blank" rel="noopener">패치 나오면 곧바로 공격 코드로... 구글, 해커들의 AI 에이전트 침투 자동화 경고</a></h3>
+              <span class="news-meta">보안뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147315" target="_blank" rel="noopener">허깅페이스 뚫은 에이전트 수백 개... 캘리포니아주, 오픈AI 상대로 소송</a></h3>
+              <span class="news-meta">보안뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147319" target="_blank" rel="noopener">AI가 피해자 신상까지 요약... '맞춤형 해킹 타깃' 파는 신종 범죄 장터 등장</a></h3>
+              <span class="news-meta">보안뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147314" target="_blank" rel="noopener">서울시립대 15명 개인정보 유출... 홈페이지 보안사고 조사 중 발견</a></h3>
+              <span class="news-meta">보안뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147277" target="_blank" rel="noopener">방화벽이 침투 통로로... 이스라엘 기관, 체크포인트 장비 뚫려 서버 파일까지 삭제</a></h3>
+              <span class="news-meta">보안뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147281" target="_blank" rel="noopener">'방문 전 후기 확인' 링크의 함정... 가짜 질로우 페이지가 PC 원격조종 프로그램 심어</a></h3>
+              <span class="news-meta">보안뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261117157600051" target="_blank" rel="noopener">[수능 AI부정 대책] 전문가들, 보안검색대·무선통신 차단 등 제안</a></h3>
+              <span class="news-meta">연합뉴스 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.etnews.com/20261117000308" target="_blank" rel="noopener">사이버보안 컨트롤타워 '차르' 밑그림 그린다</a></h3>
+              <span class="news-meta">전자신문 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.etnews.com/20261117000013" target="_blank" rel="noopener">금감원, 대부업권 해킹 취약점 점검 강화…정보유출 시 엄정 제재</a></h3>
+              <span class="news-meta">전자신문 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.etnews.com/20261117000246" target="_blank" rel="noopener">"사람 개입 없이 해킹"…AI 사이버 공격, 자율형 다중 에이전트 단계 진입</a></h3>
+              <span class="news-meta">전자신문 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://asec.ahnlab.com/ko/96614/" target="_blank" rel="noopener">Java 취약점 패치 권고 (CVE-2026-114938)</a></h3>
+              <span class="news-meta">ASEC(안랩) · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://asec.ahnlab.com/ko/96579/" target="_blank" rel="noopener">2026년 10월 다크웹 이슈 동향 보고서</a></h3>
+              <span class="news-meta">ASEC(안랩) · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300214" target="_blank" rel="noopener">11년간 잠복한 리눅스 커널 취약점 '노이지TCP'…원격 서버 마비 위험</a></h3>
+              <span class="news-meta">데이터넷 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300219" target="_blank" rel="noopener">구글 "멀티 에이전트·보안 패치 역추적 공격 확인"</a></h3>
+              <span class="news-meta">데이터넷 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300232" target="_blank" rel="noopener">"국내 기업, AI 위협 복구 준비 미흡 ··· 사이버 레질리언스 강화 시급"</a></h3>
+              <span class="news-meta">데이터넷 · 2026-11-17</span>
+            </article>
+
+
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147325" target="_blank" rel="noopener">PHP 이어 ‘자바’(Java)도 뚫렸다... 대기업·공공기관 핵심 서버 ‘보안 경보’</a></h3>
+              <p>Java 메모리 손상 취약점 Java4Shell(CVE-2026-114938, CVSS 4.0 9.2)으로 인증 없이 원격 코드 실행이 가능하다는 보고. OpenJDK 17.0.6 이상 영향, 패치는 18일 오전 6시 50분께 공개.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-18 07:05</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209579" target="_blank" rel="noopener">전북교육청 통학차량 관리시스템 해킹…학생·학부모 개인정보 유출 확인</a></h3>
+              <p>학생 이름·집 주소, 학부모 연락처, 통학버스 차량번호·운행 노선 유출 확인. 11월 15일 18:46 교육부 사이버안전센터 통보로 인지.</p>
+              <span class="news-meta">데일리시큐 · 2026-11-18 00:07</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209577" target="_blank" rel="noopener">영남대학교 도서관·취업 홈페이지 해킹…학생 개인정보 유출</a></h3>
+              <p>11월 16일 10:00~12:00 도서관 전자책·취업 홈페이지 해킹으로 학번·성명·휴대폰번호·(전자책)비밀번호 등 유출. 피해 인원은 조사 중.</p>
+              <span class="news-meta">데일리시큐 · 2026-11-17 22:19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/amp/view/AKR20261117170500062" target="_blank" rel="noopener">한림대 연구행정통합시스템 해킹…사용자 생년월일 등 947건 유출</a></h3>
+              <p>한림대는 11월 14일 오전 4시께 위탁관리업체 서버 불법 접근으로 생년월일 83건 포함 총 947건 유출. 강원대도 같은 날 06:22 사용자 27명·18건 유출.</p>
+              <span class="news-meta">연합뉴스 · 2026-11-17 21:16</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147316" target="_blank" rel="noopener">프로젝트 끝나고 안 지운 키... 바라쿠다 클라우드, AI 해킹 도구에 44시간 뚫려</a></h3>
+              <p>훔친 클라우드 접속 키로 11월 1~2일 44시간 동안 클라우드 계정 10개가량 접근. AI 침투 테스트 도구 ARTEX 사용, 침입은 11월 4일 발견.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 19:45</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">메가커피 고객센터 위탁업체 해킹…상담 고객 30명 연락처 유출</a></h3>
+              <p>위탁업체 메타엠 서버가 11월 12일 해킹돼 상담 고객 휴대전화번호 30건 유출 확인. 성명·결제 정보는 유출되지 않았고, 코인원·번개장터에 이은 세 번째 메타엠 위탁사 피해.</p>
+              <span class="news-meta">연합뉴스 · 2026-11-17 16:23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147326" target="_blank" rel="noopener">28개 대학 연쇄해킹 충격... 아르텍스 활용해 ‘rERP’ 집중 타격했다</a></h3>
+              <p>공격자 ‘KimJEN’이 28개 대학 데이터 탈취를 주장하며 압축파일 31개 유포. 대학 공통 연구행정시스템 rERP 집중 타격 정황과 ARTEX 사용 가능성이 포착됐다.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 16:24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147332" target="_blank" rel="noopener">레고랜드·씨라이프 부산 개인정보 유출 가능성... 입장객 예약 시스템 ‘액세소’ 해킹</a></h3>
+              <p>액세소 티켓팅 시스템 침해(11월 14일)로 연간이용권 고객의 성명·생년월일(암호화)·주소·이메일·전화번호·바코드 유출 가능성. 카드·계좌 정보 유출 증거는 없음.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 15:55</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147323" target="_blank" rel="noopener">그룹웨어 ‘다우오피스’ PC 메신저 업데이트 보안 사고... 계정 정보 유출 가능성↑</a></h3>
+              <p>11월 15일 오후~16일 오전 윈도우 PC메신저 자동 업데이트 과정에 악성 파일이 삽입돼 브라우저 저장 아이디·비밀번호와 다우오피스 계정 유출 가능성. 정상 버전 Ver.4.5.12 배포.</p>
+              <span class="news-meta">보안뉴스 · 2026-11-17 14:51</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209566" target="_blank" rel="noopener">동의대학교 연구비관리시스템 해킹…개인정보 530명 유출</a></h3>
+              <p>11월 14일 10:40부터 침투해 연구자·교직원 530명의 직번·이름·부서·직위·생년월일 유출. 11월 17일 사과문 게시.</p>
+              <span class="news-meta">데일리시큐 · 2026-11-17 14:13</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261117088100004" target="_blank" rel="noopener">시민단체, 금융권 해킹 개인정보 유출 규탄…"보안체계 점검"</a></h3>
+              <p>경실련 등 5개 단체가 11월 17일 금감원 앞 기자회견에서 9월 이후 금융회사 19곳·20건·피해 11만 건 이상을 지적하고 금융보안원 유출도 언급했다.</p>
+              <span class="news-meta">연합뉴스 · 2026-11-17 12:11</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">잇단 해킹에…금감원, 전자금융·온투업 274개사 불러 점검</a></h3>
+              <p>금감원이 11월 17일 전자금융업자 227개사·온투업자 47개사 CISO·보안 담당자를 소집 점검. 스푼(약 1만8천 명 유출)·줌펀드(예치금 약 3억 원 유출) 사례가 언급됐다.</p>
+              <span class="news-meta">연합뉴스(노컷뉴스) · 2026-11-17 10:21</span>
+            </article>
+          </div>
+
+          <div class="news-col">
+            <h2 id="h-global">해외 동향</h2>
+            <p class="col-note">65건 · November 17–18, 2026</p>
+
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/17/daily-disruptive-outages-that-ground-planes-and-halt-work-welcome-to-the-new-normal/5310634" target="_blank" rel="noopener">Daily disruptive outages that ground planes and halt work – welcome to the new normal</a></h3>
+              <span class="news-meta">The Register · Nov 18, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://databreaches.net/2026/11/17/canada-highland-shores-childrens-aid-reveals-cybersecurity-breach-involving-personal-information/" target="_blank" rel="noopener">Canada: Highland Shores Children's Aid Reveals Cybersecurity Breach Involving Personal Information</a></h3>
+              <span class="news-meta">DataBreaches.Net · Nov 18, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/" target="_blank" rel="noopener">Optimizely Vulnerability Exploited to Serve Malware on Major Websites</a></h3>
+              <span class="news-meta">SecurityWeek · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.securityweek.com/n-able-kills-legacy-apis-patches-17-n-central-zero-days/" target="_blank" rel="noopener">N-able Kills Legacy APIs, Patches 17 N-central Zero-Days</a></h3>
+              <span class="news-meta">SecurityWeek · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/" target="_blank" rel="noopener">MSP ScreenConnect Servers Targeted in Month-Long Campaign</a></h3>
+              <span class="news-meta">SecurityWeek · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/optimizely-malicious-code-customer-sites" target="_blank" rel="noopener">Website management platform Optimizely confirms hackers put malicious code into customer sites</a></h3>
+              <span class="news-meta">The Record · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx" target="_blank" rel="noopener">Kazakh ransomware hacking suspect extradited from Italy</a></h3>
+              <span class="news-meta">The Record · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage" target="_blank" rel="noopener">Chinese state group developing automated attack tool for cyber espionage, Google says</a></h3>
+              <span class="news-meta">The Record · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/california-fines-hertz-state-data-privacy-law" target="_blank" rel="noopener">California fines Hertz $1.5 million for breaking state data privacy law</a></h3>
+              <span class="news-meta">The Record · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/nsa-net-disruptions" target="_blank" rel="noopener">NSA Net, agency's classified internal network, faces unspecified disruptions</a></h3>
+              <span class="news-meta">The Record · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks" target="_blank" rel="noopener">Optimizely Malware Attacks Highlight Third-Party Vendor Risks</a></h3>
+              <span class="news-meta">Dark Reading · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat" target="_blank" rel="noopener">'TheMailer' Phishing Kit Puts AI in the Driver's Seat</a></h3>
+              <span class="news-meta">Dark Reading · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach" target="_blank" rel="noopener">Cursor Traces Malicious Claude Code Extension to Third-Party Breach</a></h3>
+              <span class="news-meta">Dark Reading · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval" target="_blank" rel="noopener">Grok Bots Attempt to Access Corporate Data Without User Approval</a></h3>
+              <span class="news-meta">Dark Reading · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityaffairs.com/203354/security/apple-outages-add-to-growing-concerns-over-technology-service-disruptions.html" target="_blank" rel="noopener">Apple Services Disrupted as NSA Network Goes Down and Equinor Faces Cyberattack</a></h3>
+              <span class="news-meta">Security Affairs · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityaffairs.com/203339/data-breach/fireworks-ai-breach-exposes-uber-data-and-highlights-supply-chain-risks.html" target="_blank" rel="noopener">Fireworks AI Breach Exposes Uber Data and Highlights Supply Chain Risks</a></h3>
+              <span class="news-meta">Security Affairs · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityaffairs.com/203289/malware/optimjack-bbc-cnn-and-zoom-among-targets-of-optimizely-script-hijacking.html" target="_blank" rel="noopener">OPTIMJACK: BBC, CNN and Zoom Among Targets of Optimizely Script Hijacking</a></h3>
+              <span class="news-meta">Security Affairs · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.infosecurity-magazine.com/news/anthropic-disclosure-deadline-30/" target="_blank" rel="noopener">Anthropic Cuts Disclosure Deadline to 30 Days For Serious Bugs</a></h3>
+              <span class="news-meta">Infosecurity Magazine · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.infosecurity-magazine.com/news/optimizely-hack-malware-178-orgs/" target="_blank" rel="noopener">Optimizely Flaw Exploited to Serve Malicious Code to Visitors of 178 Organizations</a></h3>
+              <span class="news-meta">Infosecurity Magazine · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.infosecurity-magazine.com/news/microsoft-phishing-service-outage/" target="_blank" rel="noopener">Microsoft Warns of Coordinated Phishing Campaign Leveraging M365 Service Outage</a></h3>
+              <span class="news-meta">Infosecurity Magazine · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.infosecurity-magazine.com/news/fully-autonomous-agentic-attacks/" target="_blank" rel="noopener">Fully Autonomous Agentic Attacks Are Three Months Away, Google Warns</a></h3>
+              <span class="news-meta">Infosecurity Magazine · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/17/8-digits-team-ransomware-suspect-extradited-us-italy/" target="_blank" rel="noopener">Suspected ransomware affiliate extradited to US over $500 million in extortion demands</a></h3>
+              <span class="news-meta">Help Net Security · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/" target="_blank" rel="noopener">Malware spread through Optimizely hits 178 organizations, including BBC, CNN and Zoom</a></h3>
+              <span class="news-meta">Help Net Security · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/17/ai-powered-cyberattacks-gtig-report/" target="_blank" rel="noopener">Google finds AI agent writing and launching exploits with no human in the loop</a></h3>
+              <span class="news-meta">Help Net Security · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/17/gemini-test-proves-once-again-that-amoral-ai-agents-will-do-almost-anything-if-told-never-give-up/5310574" target="_blank" rel="noopener">Gemini test proves once again that amoral AI agents will do almost anything if told 'NEVER give up'</a></h3>
+              <span class="news-meta">The Register · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464" target="_blank" rel="noopener">Hackers smash 'n' grab AI vendor: Take off with license data of Uber drivers</a></h3>
+              <span class="news-meta">The Register · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/17/not-rocket-surgery-claims-researcher-who-found-six-danfoss-fridge-controller-zero-days-in-under-an-hour/5310197" target="_blank" rel="noopener">'Not rocket surgery' claims researcher who found six Danfoss fridge controller zero-days in under an hour</a></h3>
+              <span class="news-meta">The Register · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/17/opinion-pollster-ipsos-fesses-up-to-cybersecurity-incident/5310405" target="_blank" rel="noopener">Opinion pollster Ipsos 'fesses up to 'cybersecurity incident'</a></h3>
+              <span class="news-meta">The Register · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/17/japans-fugaku-supercomputer-has-decidedly-un-super-security/5310333" target="_blank" rel="noopener">Japan's Fugaku supercomputer has decidedly un-super security</a></h3>
+              <span class="news-meta">The Register · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://databreaches.net/2026/11/17/ma-andover-withholds-cyberattack-alerts-four-internal-reviews/" target="_blank" rel="noopener">MA: Andover Withholds Cyberattack Alerts, Four Internal Reviews</a></h3>
+              <span class="news-meta">DataBreaches.Net · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://databreaches.net/2026/11/17/nh-monadnock-community-hospital-server-outage-due-to-cyber-incident-officials-say/" target="_blank" rel="noopener">NH: Monadnock Community Hospital server outage due to 'cyber incident,' officials say</a></h3>
+              <span class="news-meta">DataBreaches.Net · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.malwarebytes.com/blog/news/2026/11/cnn-bbc-zoom-and-other-sites-served-malicious-code-in-supply-chain-attack/" target="_blank" rel="noopener">CNN, BBC, Zoom, and other sites served malicious code in supply-chain attack</a></h3>
+              <span class="news-meta">Malwarebytes · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.malwarebytes.com/blog/mobile/2026/11/facebook-may-have-access-to-your-entire-photo-gallery/" target="_blank" rel="noopener">Facebook may have access to your entire photo gallery</a></h3>
+              <span class="news-meta">Malwarebytes · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.malwarebytes.com/blog/threat-intel/2026/11/holiday-shopping-in-a-world-of-fakes-how-ai-is-changing-the-game/" target="_blank" rel="noopener">Holiday shopping in a world of fakes: How AI is changing the game</a></h3>
+              <span class="news-meta">Malwarebytes · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cyberscoop.com/cisa-nick-andersen-cyber-resilience-outages/" target="_blank" rel="noopener">Cyberattack or no, parade of tech outages highlight need for resilient systems, CISA acting director says</a></h3>
+              <span class="news-meta">CyberScoop · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cyberscoop.com/gsa-post-quantum-encryption-piv-cards/" target="_blank" rel="noopener">GSA says post-quantum work on PIV cards shows new encryption can work on old tech</a></h3>
+              <span class="news-meta">CyberScoop · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cyberscoop.com/cisa-100-critical-infrastructure-companies-fed-talks/" target="_blank" rel="noopener">How CISA is prioritizing companies for talks about security improvements</a></h3>
+              <span class="news-meta">CyberScoop · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cyberscoop.com/roman-khlynovskiy-ransomware-extradition/" target="_blank" rel="noopener">Alleged ransomware group member extradited from Italy to face US charges in hospital, school extortion case</a></h3>
+              <span class="news-meta">CyberScoop · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.cybersecuritydive.com/news/healthcare-ai-cybersecurity-monitoring/874902/" target="_blank" rel="noopener">Healthcare firms fail to monitor AI tools as shadow AI leads to breaches</a></h3>
+              <span class="news-meta">Cybersecurity Dive · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.wired.com/story/how-to-tell-if-its-a-cyberattack-or-just-an-outage/" target="_blank" rel="noopener">How to Tell If It's a Cyberattack or Just an Outage</a></h3>
+              <span class="news-meta">Wired · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/" target="_blank" rel="noopener">Borrowed Code, Real Consequences: What OPTIMJACK Teaches Us</a></h3>
+              <span class="news-meta">Palo Alto Unit42 · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://hackread.com/optimizely-hack-malware-scripts-178-organisations/" target="_blank" rel="noopener">Optimizely Hack Serves Malware Through Scripts Used by 178 Organisations</a></h3>
+              <span class="news-meta">HackRead · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/critical-openjdk-rce-cve-2026-114938-what-to-know/" target="_blank" rel="noopener">Critical OpenJDK RCE CVE-2026-114938: What to Know</a></h3>
+              <span class="news-meta">Security Boulevard · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/oracle-november-2026-critical-security-patch-update-addresses-640-cves-cve-2026-114938/" target="_blank" rel="noopener">Oracle November 2026 Critical Security Patch Update Addresses 640 CVEs (CVE-2026-114938)</a></h3>
+              <span class="news-meta">Security Boulevard · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/" target="_blank" rel="noopener">Security for the agentic era, powered by Microsoft Perception</a></h3>
+              <span class="news-meta">Microsoft Security Blog · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/" target="_blank" rel="noopener">The risks of device code authentication for AI coding agents</a></h3>
+              <span class="news-meta">Microsoft Security Blog · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/" target="_blank" rel="noopener">High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors</a></h3>
+              <span class="news-meta">Microsoft Security Blog · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.itsecurityguru.org/2026/11/17/fix-what-matters-not-whats-easy-why-severity-scores-are-failing-security-teams/" target="_blank" rel="noopener">Fix what matters, not what's easy: why severity scores are failing security teams</a></h3>
+              <span class="news-meta">IT Security Guru · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://aws.amazon.com/blogs/security/introducing-simplified-onboarding-for-aws-waf-bot-control-at-the-targeted-inspection-level/" target="_blank" rel="noopener">Introducing simplified onboarding for AWS WAF Bot Control at the targeted inspection level</a></h3>
+              <span class="news-meta">AWS Security Blog · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://aws.amazon.com/blogs/security/securely-exposing-amazon-bedrock-agentcore-runtime/" target="_blank" rel="noopener">Securely exposing Amazon Bedrock AgentCore Runtime</a></h3>
+              <span class="news-meta">AWS Security Blog · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://blogs.cisco.com/security/building-a-security-framework-for-the-agentic-enterprise/" target="_blank" rel="noopener">Building a Security Framework for the Agentic Enterprise</a></h3>
+              <span class="news-meta">Cisco Security Blog · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.tenable.com/blog/oracle-november-2026-critical-security-patch-update-addresses-640-cves-cve-2026-114938" target="_blank" rel="noopener">Oracle November 2026 Critical Security Patch Update Addresses 640 CVEs (CVE-2026-114938)</a></h3>
+              <span class="news-meta">Tenable · Nov 17, 2026</span>
+            </article>
+
+
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-delivers-malware-to-cnn-fox-news-bbc-salesforce-sites/" target="_blank" rel="noopener">Optimizely supply-chain attack delivers malware to CNN, Fox News, BBC, Salesforce sites</a></h3>
+              <p>Attackers abused an Experimentation account-signup flaw to inject JavaScript into 188 scripts of 178 organisations — card skimmer, crypto swapper and iOS exploit kits; all files clean by Nov 16 23:11 UTC.</p>
+              <span class="news-meta">BleepingComputer · Nov 16 (reported Nov 17)</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html" target="_blank" rel="noopener">Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE Report Emerges</a></h3>
+              <p>Oracle's Nov 17 Java SE update covers 11 flaws (max CVSS 3.1 8.1, all remotely exploitable without auth); the separately reported Java4Shell (CVE-2026-114938, CVSS 4.0 9.2) remains unconfirmed and disputed.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/" target="_blank" rel="noopener">Japan takes Fugaku supercomputer offline after cyberattack</a></h3>
+              <p>RIKEN shut Fugaku down on Nov 14 after unauthorised access Nov 10–13 via the public status dashboard reached multiple internal servers; login keys disabled, restart only when safe.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/" target="_blank" rel="noopener">Uber notifies drivers of data breach affecting nearly 150,000 people</a></h3>
+              <p>149,346 drivers' names, licence numbers, dates of birth and addresses were exposed after attackers breached AI provider Fireworks in early October and used compromised credentials to reach Uber's account.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/" target="_blank" rel="noopener">Researchers hijack Hugging Face account for popular Kokoro AI model</a></h3>
+              <p>Missing ownership verification let researchers take over the Kokoro TTS account by re-registering its domain and resetting the password, then poison model weights in 87 seconds; ~13M monthly downloads.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners</a></h3>
+              <p>Hotfix 3 patches CVE-2026-129271 to -129287 and permanently blocks legacy APIs, closing the 4EverAble2Shell chain (CVE-2026-90436) used within hours of PoC release to deploy miners.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/" target="_blank" rel="noopener">Tor releases emergency update amid ongoing DDoS attack</a></h3>
+              <p>Tor 0.4.9.17 strengthens relay defences against an ongoing DDoS flood of client circuits overwhelming most relay operators.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/" target="_blank" rel="noopener">Cloud keys leaked in Docker Hub images are stolen within seconds</a></h3>
+              <p>Stony Brook honeypot study: planted AWS keys were used as fast as 7.86 seconds after publication; 300 honeypot images were pulled 75,000+ times, drawing 140,000+ API calls from 5,000 IPs.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/alleged-inc-lynx-ransomware-affiliate-extradited-to-us-faces-27-years-in-prison/" target="_blank" rel="noopener">Ransomware affiliate suspect extradited to US, faces 27 years in prison</a></h3>
+              <p>Kazakh national Roman Khlynovskiy, arrested in Italy in July 2025, was extradited over alleged INC Ransom / Lynx attacks on US schools, hospitals and healthcare entities.</p>
+              <span class="news-meta">BleepingComputer · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html" target="_blank" rel="noopener">Google finds hackers using AI agents to fully automate vulnerability discovery and exploitation</a></h3>
+              <p>GTIG/Mandiant's AI Threat Tracker (Nov 16) reports the first observed fully autonomous "exploit_agent" framework, alongside ARTEX, CAIRN, CyberStrikeAI and PentAGI in multi-stage intrusions at machine speed.</p>
+              <span class="news-meta">The Hacker News · Nov 16–17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html" target="_blank" rel="noopener">Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers</a></h3>
+              <p>Industrialised campaign impersonating ~50 brands via fake recruitment, conference and package-tracking lures plus trojanised repos, deploying infostealers and the Overlord RAT; assessed similar to DPRK-linked Kimsuky / UNK_DeadDrop.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html" target="_blank" rel="noopener">New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels</a></h3>
+              <p>Kaspersky's Operation ShadowCloud targets government sectors in Asia and Africa, abusing MeshAgent to drop backdoors that hide command-and-control inside GitHub and SharePoint.</p>
+              <span class="news-meta">The Hacker News · Nov 17, 2026</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.ifin.network/i/?a=normal&amp;get=f_64&amp;sort=id&amp;order=DESC" target="_blank" rel="noopener">Lithuanian Customs restoring services after November 10 attack</a></h3>
+              <p>Also reported by The Record on Nov 17, alongside the Kazakh extradition and Google's AI-agent report.</p>
+              <span class="news-meta">The Record · Nov 17, 2026</span>
+            </article>
+          </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 7. 다크웹 유출 ===================== -->
+      <section aria-labelledby="h-leak" id="sec-leak">
+        <div class="sec-head">
+          <h2 id="h-leak"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-leak"><span>다크웹 유출</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>랜섬웨어 유출 사이트 최신 15건 · ransomware.live · 2026년 11월 18일 08:08 KST 확인 · 전부 11월 17일 발견</p>
+        </div>
+        <div class="sec-body collapsed" id="body-leak" hidden>
+          <div class="sec-inner">
+            <div class="leak-summary">
+          <span>최근 24시간 <b>57건</b> (+19%)</span>
+          <span>7일 <b>289건</b></span>
+          <span>30일 <b>1,066건</b></span>
+          <span>활발한 그룹(7일): incransom <b>57</b> · thegentlemen <b>39</b> · qilin <b>25</b></span>
+        </div>
+        <div class="seg" role="group" aria-label="국가별 필터">
+          <button data-cc="all" aria-pressed="true">전체 15건</button>
+          <button data-cc="US" aria-pressed="false">미국 12</button>
+          <button data-cc="IT" aria-pressed="false">이탈리아 1</button>
+          <button data-cc="IN" aria-pressed="false">인도 1</button>
+          <button data-cc="TW" aria-pressed="false">대만 1</button>
+        </div>
+        <p class="note" style="margin:0 0 18px">최신 15건만 표시합니다(최근 24시간 전체 57건).</p>
+        <table class="leak-table">
+          <thead>
+            <tr><th scope="col">피해 조직</th><th scope="col">분야</th><th scope="col">국가</th><th scope="col">랜섬웨어 그룹</th><th scope="col">발견일</th></tr>
+          </thead>
+          <tbody id="leakBody">
+            <tr data-cc="US"><td data-label="조직" class="victim">Owens-Minor — 레코드 57,985,343건 주장</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Caris Life Sciences — 레코드 21,432,021건 주장</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Molex (Koch) — 레코드 16,448,279건 주장</td><td data-label="분야">제조</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Castle Biosciences — 레코드 2,018,234건 주장</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Apellis Pharmaceuticals</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Mycorpass (Carrington Mortgage Services)</td><td data-label="분야">금융</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="IT"><td data-label="조직" class="victim">Sice Previt S.p.A.</td><td data-label="분야">제조</td><td data-label="국가" class="cc">IT</td><td data-label="그룹" class="grp">aurora</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">First Choice Seafood</td><td data-label="분야">식품</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Climax Inc</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="IN"><td data-label="조직" class="victim">Peerless Hospital</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">IN</td><td data-label="그룹" class="grp">Climax Inc</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="TW"><td data-label="조직" class="victim">Chin Fong Machine Industrial</td><td data-label="분야">제조</td><td data-label="국가" class="cc">TW</td><td data-label="그룹" class="grp">incransom</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Drive Medical — 레코드 1,442,814건 주장</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Vortex</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">Sonoco</td><td data-label="분야">제조</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Helix</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">West-Com Nurse Call</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">EndZone</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">examinetics.com</td><td data-label="분야">헬스케어</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">Curious Worm</td><td data-label="발견일" class="cc">11/17</td></tr>
+            <tr data-cc="US"><td data-label="조직" class="victim">intelligentaudit.com</td><td data-label="분야">전문 서비스</td><td data-label="국가" class="cc">US</td><td data-label="그룹" class="grp">BrainCipher</td><td data-label="발견일" class="cc">11/17</td></tr>
+          </tbody>
+        </table>
+        <p class="note"><strong>주의:</strong> 유출 목록은 랜섬웨어 그룹의 일방적 주장으로, 독립적으로 검증된 사실이 아닙니다. 같은 날 Inception 그룹이 주장한 PepsiCo·Paychex·Henry Schein·Cigna·AMD 건은 신생 그룹의 미확인 주장으로, ransomware.live 자체가 Inception을 신생 그룹으로 주의 표기하고 AMD 건은 중복 가능성을 지적해 위 표에서는 제외했습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 8. 지난 브리핑 ===================== -->
+      <section aria-labelledby="h-archive" id="sec-archive">
+        <div class="sec-head">
+          <h2 id="h-archive"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-archive"><span>지난 브리핑</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>이전 날짜의 브리핑 아카이브</p>
+        </div>
+        <div class="sec-body collapsed" id="body-archive" hidden>
+          <div class="sec-inner">
+            <div class="archive-empty">
+              <strong>이전 브리핑 없음.</strong> 2026년 11월 18일 브리핑이 이 페이지의 첫 발행입니다. 지난 브리핑이 쌓이면 이곳에 날짜별로 정리됩니다.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 9. 출처 목록 ===================== -->
+      <section aria-labelledby="h-sources" id="sec-sources">
+        <div class="sec-head">
+          <h2 id="h-sources"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-sources"><span>출처 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+          <p>확장된 취재 범위 — 카테고리별 피드 전체와 본문 인용 분석 출처</p>
+        </div>
+        <div class="sec-body collapsed" id="body-sources" hidden>
+          <div class="sec-inner">
+            <div class="sources">
+          <p class="src-cat">공식 기관 · 취약점 데이터베이스</p>
+          <ul>
+            <li><a href="https://www.boho.or.kr/kr/bbs/list.do?bbsId=B0000133&amp;menuNo=205020" target="_blank" rel="noopener">KISA(보호나라)</a></li>
+            <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA KEV</a></li>
+            <li><a href="https://nvd.nist.gov/" target="_blank" rel="noopener">NVD</a></li>
+            <li><a href="https://www.cisa.gov/news-events/cybersecurity-advisories" target="_blank" rel="noopener">CISA Advisories</a></li>
+            <li><a href="https://www.exploit-db.com/" target="_blank" rel="noopener">Exploit-DB</a></li>
+            <li><a href="https://github.com/advisories" target="_blank" rel="noopener">GitHub Advisories</a></li>
+            <li><a href="https://ubuntu.com/security/notices" target="_blank" rel="noopener">Ubuntu Security Notices</a></li>
+            <li><a href="https://www.wordfence.com/blog/" target="_blank" rel="noopener">Wordfence</a></li>
+            <li><a href="https://www.ransomware.live/" target="_blank" rel="noopener">ransomware.live (thrunt.me 미러)</a></li>
+          </ul>
+          <p class="src-cat">국내 매체</p>
+          <ul>
+            <li><a href="https://www.boannews.com/" target="_blank" rel="noopener">보안뉴스</a></li>
+            <li><a href="https://www.dailysecu.com/" target="_blank" rel="noopener">데일리시큐</a></li>
+            <li><a href="https://www.yna.co.kr/" target="_blank" rel="noopener">연합뉴스</a></li>
+            <li><a href="https://zdnet.co.kr/" target="_blank" rel="noopener">ZDNet Korea</a></li>
+            <li><a href="https://www.etnews.com/" target="_blank" rel="noopener">전자신문</a></li>
+            <li><a href="https://asec.ahnlab.com/" target="_blank" rel="noopener">ASEC(안랩)</a></li>
+            <li><a href="https://www.itworld.co.kr/" target="_blank" rel="noopener">ITWorld Korea</a></li>
+            <li><a href="https://www.cnet.co.kr/" target="_blank" rel="noopener">CNET Korea</a></li>
+            <li><a href="https://www.datanet.co.kr/" target="_blank" rel="noopener">데이터넷</a></li>
+          </ul>
+          <p class="src-cat">해외 매체</p>
+          <ul>
+            <li><a href="https://www.bleepingcomputer.com/" target="_blank" rel="noopener">BleepingComputer</a></li>
+            <li><a href="https://thehackernews.com/" target="_blank" rel="noopener">The Hacker News</a></li>
+            <li><a href="https://www.securityweek.com/" target="_blank" rel="noopener">SecurityWeek</a></li>
+            <li><a href="https://therecord.media/" target="_blank" rel="noopener">The Record</a></li>
+            <li><a href="https://krebsonsecurity.com/" target="_blank" rel="noopener">Krebs on Security</a></li>
+            <li><a href="https://www.darkreading.com/" target="_blank" rel="noopener">Dark Reading</a></li>
+            <li><a href="https://securityaffairs.com/" target="_blank" rel="noopener">Security Affairs</a></li>
+            <li><a href="https://www.infosecurity-magazine.com/" target="_blank" rel="noopener">Infosecurity Magazine</a></li>
+            <li><a href="https://www.helpnetsecurity.com/" target="_blank" rel="noopener">Help Net Security</a></li>
+            <li><a href="https://www.theregister.com/security/" target="_blank" rel="noopener">The Register</a></li>
+            <li><a href="https://www.schneier.com/" target="_blank" rel="noopener">Schneier on Security</a></li>
+            <li><a href="https://threatpost.com/" target="_blank" rel="noopener">Threatpost</a></li>
+            <li><a href="https://databreaches.net/" target="_blank" rel="noopener">DataBreaches.Net</a></li>
+            <li><a href="https://www.malwarebytes.com/blog/" target="_blank" rel="noopener">Malwarebytes</a></li>
+            <li><a href="https://blog.qualys.com/" target="_blank" rel="noopener">Qualys</a></li>
+            <li><a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Hacker News</a></li>
+            <li><a href="https://thecyberexpress.com/" target="_blank" rel="noopener">The Cyber Express</a></li>
+            <li><a href="https://cyberscoop.com/" target="_blank" rel="noopener">CyberScoop</a></li>
+            <li><a href="https://www.cybersecuritydive.com/" target="_blank" rel="noopener">Cybersecurity Dive</a></li>
+            <li><a href="https://www.csoonline.com/" target="_blank" rel="noopener">CSO Online</a></li>
+            <li><a href="https://www.zdnet.com/topic/security/" target="_blank" rel="noopener">ZDNet security</a></li>
+            <li><a href="https://www.wired.com/tag/security/" target="_blank" rel="noopener">Wired security</a></li>
+          </ul>
+          <p class="src-cat">벤더 · 연구 블로그</p>
+          <ul>
+            <li><a href="https://www.welivesecurity.com/" target="_blank" rel="noopener">ESET WeLiveSecurity</a></li>
+            <li><a href="https://unit42.paloaltonetworks.com/" target="_blank" rel="noopener">Palo Alto Unit42</a></li>
+            <li><a href="https://www.crowdstrike.com/en-us/blog/" target="_blank" rel="noopener">CrowdStrike</a></li>
+            <li><a href="https://hackread.com/" target="_blank" rel="noopener">HackRead</a></li>
+            <li><a href="https://techcrunch.com/category/security/" target="_blank" rel="noopener">TechCrunch security</a></li>
+            <li><a href="https://securityboulevard.com/" target="_blank" rel="noopener">Security Boulevard</a></li>
+            <li><a href="https://www.microsoft.com/en-us/security/blog/" target="_blank" rel="noopener">Microsoft Security Blog</a></li>
+            <li><a href="https://projectzero.google/" target="_blank" rel="noopener">Google Project Zero</a></li>
+            <li><a href="https://blog.talosintelligence.com/" target="_blank" rel="noopener">Cisco Talos</a></li>
+            <li><a href="https://research.checkpoint.com/" target="_blank" rel="noopener">Check Point Research</a></li>
+            <li><a href="https://www.tenable.com/blog" target="_blank" rel="noopener">Tenable</a></li>
+            <li><a href="https://www.itsecurityguru.org/" target="_blank" rel="noopener">IT Security Guru</a></li>
+            <li><a href="https://blog.cloudflare.com/" target="_blank" rel="noopener">Cloudflare Blog</a></li>
+            <li><a href="https://aws.amazon.com/blogs/security/" target="_blank" rel="noopener">AWS Security Blog</a></li>
+            <li><a href="https://blogs.cisco.com/security" target="_blank" rel="noopener">Cisco Security Blog</a></li>
+          </ul>
+          <p class="src-cat">본문 인용 분석</p>
+          <ul>
+            <li><a href="https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk" target="_blank" rel="noopener">Wiz — Java4Shell 분석</a> · <a href="https://securityonline.info/java4shell-cve-2026-114938/" target="_blank" rel="noopener">SecurityOnline — Java4Shell</a></li>
+            <li><a href="https://corgea.com/research/cve-2026-115731-115732-puppet-openvox-report-deserialization-rce-kev-november-2026" target="_blank" rel="noopener">Corgea — Puppet KEV 분석</a> · <a href="https://www.itsecuritynews.info/cisa-adds-one-known-exploited-vulnerability-to-catalog-84/" target="_blank" rel="noopener">CISA KEV 등재 보도</a></li>
+            <li><a href="https://securitylabs.datadoghq.com/articles/cve-2026-118383-mongodb-server-use-after-free/" target="_blank" rel="noopener">Datadog Security Labs — MongoDB CVE 분석</a> · <a href="https://cybersecuritynews.com/critical-fortinet-flaws-patched/" target="_blank" rel="noopener">Fortinet 취약점 보도</a></li>
+            <li><a href="https://hol.org/blog/cve-2026-123039-check-point-firewall-root-cisa-kev" target="_blank" rel="noopener">hol.org — Check Point PHP2Shell 체인 분석</a> · <a href="https://www.safet2ship.com/news/2026-11-13-n-able-n-central-4everable2shell-exploited-hotfix-2-legacy-api/" target="_blank" rel="noopener">N-able CVSS 집계</a></li>
+          </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>이 브리핑은 2026년 11월 18일 오전(KST) 수집한 공개 보도를 정리한 것입니다. 모든 뉴스·숫자·CVE·날짜는 수집 당시 원문에서 확인된 내용만 실었고, 확인되지 않은 항목은 본문에 ‘미확인’으로 표기했습니다.</p>
+        <p>KISA 공지에는 CVSS 점수가 기재돼 있지 않아 본문의 점수는 벤더 및 2차 분석 출처 기준입니다. Java4Shell의 RCE 여부와 랜섬웨어 유출 목록은 각 섹션의 주의 표기와 같이 검증이 끝나지 않은 내용이 포함돼 있습니다.</p>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        // 핵심 이슈 탭
+        var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+        function selectTab(btn) {
+          tabs.forEach(function (t) {
+            var on = t === btn;
+            t.setAttribute('aria-selected', on ? 'true' : 'false');
+            document.getElementById(t.getAttribute('aria-controls')).classList.toggle('active', on);
+          });
+        }
+        tabs.forEach(function (btn, i) {
+          btn.addEventListener('click', function () { selectTab(btn); });
+          btn.addEventListener('keydown', function (e) {
+            var next = null;
+            if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+            if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+            if (next) { selectTab(next); next.focus(); }
+          });
+        });
+
+        // 세그먼트 필터 (CVE 목록 / 다크웹 국가별) 공용
+        function wireSeg(group, apply) {
+          var btns = Array.prototype.slice.call(group.querySelectorAll('button'));
+          btns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              btns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+              apply(btn);
+            });
+          });
+        }
+        var cveSeg = document.querySelector('[aria-label="CVE 필터"]');
+        if (cveSeg) wireSeg(cveSeg, function (btn) {
+          var f = btn.getAttribute('data-filter');
+          Array.prototype.forEach.call(document.querySelectorAll('.cve-row'), function (row) {
+            var kinds = (row.getAttribute('data-kind') || '').split(' ');
+            row.classList.toggle('hidden', f !== 'all' && kinds.indexOf(f) === -1);
+          });
+        });
+        var ccSeg = document.querySelector('[aria-label="국가별 필터"]');
+        if (ccSeg) wireSeg(ccSeg, function (btn) {
+          var cc = btn.getAttribute('data-cc');
+          Array.prototype.forEach.call(document.querySelectorAll('#leakBody tr'), function (row) {
+            row.classList.toggle('hidden', cc !== 'all' && row.getAttribute('data-cc') !== cc);
+          });
+        });
+
+        // 섹션 접기/펼치기
+        var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        function setSection(btn, open, instant) {
+          var body = document.getElementById(btn.getAttribute('aria-controls'));
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          if (!body) return;
+          if (open) {
+            body.hidden = false;
+            if (instant) body.classList.add('no-anim');
+            void body.offsetHeight;
+            body.classList.remove('collapsed');
+            if (instant) window.requestAnimationFrame(function () { body.classList.remove('no-anim'); });
+          } else {
+            if (instant) body.classList.add('no-anim');
+            body.classList.add('collapsed');
+            window.setTimeout(function () {
+              if (body.classList.contains('collapsed')) body.hidden = true;
+              body.classList.remove('no-anim');
+            }, instant || reduceMotion ? 0 : 400);
+          }
+        }
+        var toggles = Array.prototype.slice.call(document.querySelectorAll('.sec-toggle'));
+        toggles.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            setSection(btn, btn.getAttribute('aria-expanded') !== 'true', false);
+          });
+        });
+
+        // 상단 바로가기 내비게이션 — 모든 링크는 섹션 자체를 가리키고,
+        // 접힌 섹션이면 먼저 펼친 뒤(레이아웃 확정 후) 그 섹션으로 이동
+        var navLinks = Array.prototype.slice.call(document.querySelectorAll('.jumpnav a'));
+        navLinks.forEach(function (a) {
+          a.addEventListener('click', function (e) {
+            var target = document.getElementById(a.getAttribute('href').slice(1));
+            if (!target) return;
+            e.preventDefault();
+            var sec = target.closest ? target.closest('section') : null;
+            var wasCollapsed = false;
+            if (sec) {
+              var btn = sec.querySelector('.sec-toggle');
+              if (btn && btn.getAttribute('aria-expanded') !== 'true') {
+                setSection(btn, true, true);
+                wasCollapsed = true;
+              }
+            }
+            var go = function () {
+              target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+            };
+            // 펼친 직후에는 한 프레임 기다려 섹션 높이가 확정된 뒤 스크롤
+            if (wasCollapsed) window.requestAnimationFrame(function () { window.requestAnimationFrame(go); });
+            else go();
+          });
+        });
+        if ('IntersectionObserver' in window && navLinks.length) {
+          var seenIds = {};
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting) {
+                navLinks.forEach(function (a) {
+                  a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id);
+                });
+              }
+            });
+          }, { rootMargin: '-30% 0px -60% 0px' });
+          navLinks.forEach(function (a) {
+            var id = a.getAttribute('href').slice(1);
+            if (seenIds[id]) return;
+            seenIds[id] = true;
+            var el = document.getElementById(id);
+            if (el) io.observe(el);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
