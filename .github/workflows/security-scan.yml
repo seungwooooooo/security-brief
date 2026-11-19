@@ -68,6 +68,7 @@ jobs:
           .gitignore
           README.md
           index.html
+          watcher/README.md
           EOF
           )
           actual=$(git ls-files | sort)
