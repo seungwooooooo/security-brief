@@ -228,14 +228,14 @@
         <p class="mast-date">2026년 11월 19일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <p class="mast-sub">11월 16~19일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 19일 19:15 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 19일 19:30 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>17건</b> · CVE·취약점 <b>69건</b> (CVSS 9.0 이상 46건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>17건</b> · CVE·취약점 <b>70건</b> (CVSS 9.0 이상 47건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -245,17 +245,45 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 592건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 597건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:26</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">nginx</span><a href="https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/" target="_blank" rel="noopener">F5, PoC 익스플로잇 공개에 NGINX2Root 치명적 결함 패치</a></h3>
+            <span class="feed-orig">F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public</span>
+            <p class="feed-sum">F5가 PoC 익스플로잇이 공개되자 NGINX2Root 치명적 결함에 대한 패치를 발표했다.</p>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:17</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14492" target="_blank" rel="noopener">CVE-2026-14492 (CVSS 9.8) — WP Duplicate 워드프레스 마이그레이션 플러그인 1.1.11 이하 버전에서 원격 코드 실행 취약점</a></h3>
+            <span class="feed-orig">CVE-2026-14492 (CVSS 9.8) — The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the s</span>
+            <p class="feed-sum">WP Duplicate – WordPress Migration Plugin 1.1.11 이하 모든 버전에서 원격 코드 실행이 가능한 취약점이 보고됐다(CVSS 9.8).</p>
+            <span class="feed-src">NVD</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/19 18:21</span>
             <h3><span class="feed-tag hot">속보</span><span class="feed-tag">nginx</span><a href="https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html" target="_blank" rel="noopener">NGINX2Root: AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로 발견</a></h3>
             <span class="feed-orig">nginx2root:AI Discovers Five Critical nginx Flaws and a Path to Root</span>
             <p class="feed-sum">AI가 5건의 치명적 nginx 취약점과 루트 권한으로 이어지는 경로를 발견했다는 소식이다.</p>
             <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:30</span>
+            <h3><a href="https://www.infosecurity-magazine.com/news/fifth-uk-employees-share-passwords/" target="_blank" rel="noopener">영국 직원 5명 중 1명, AI와 비밀번호 공유</a></h3>
+            <span class="feed-orig">A Fifth of UK Employees Share Passwords with AI</span>
+            <p class="feed-sum">영국 직원의 5분의 1이 AI와 비밀번호를 공유하는 것으로 나타났다.</p>
+            <span class="feed-src">Infosecurity Magazine</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:23</span>
+            <h3><a href="https://www.helpnetsecurity.com/2026/11/19/palo-alto-networks-acquires-applied-compute/" target="_blank" rel="noopener">팔로알토 네트웍스, 어플라이드 컴퓨트 45억 달러에 인수</a></h3>
+            <span class="feed-orig">Palo Alto Networks to acquire Applied Compute for $4.5 billion</span>
+            <p class="feed-sum">팔로알토 네트웍스가 어플라이드 컴퓨트를 45억 달러에 인수한다.</p>
+            <span class="feed-src">Help Net Security</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 19:15</span>
@@ -374,6 +402,11 @@
             <span class="feed-time">11/19 17:55</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE81Vi01amhVbTkydG9PaXNObkVQTlZZaVZWQkdDTThpcW1zZkhtNGstdDFRM1JpT09IYW91QzVyLTJDLVVyY0lBWDNDaWViVF9GTWtRTmdyR2VpYW91Sll6VQ?oc=5" target="_blank" rel="noopener">[기자수첩] 매년 터지는 개인 정보 유출, '옵트아웃 집단소송제' 이제는 도입해야</a></h3>
             <span class="feed-src">조세금융신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 17:43</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YWlVrWlNOUGIxNjU3ZGgyXzJKQ1dzOGhYY2NLUVJ4Ync5RFdSMEpMdkFIV2lOdVNWX2NsOEZMaTBBRkNtNzFSZzQyTFlhMG5IZDNxbUY0cnUtejAtWkl5bzBVOFl2dUHSAWtBVV95cUxNcHM2VXhxR1A5X3BwZkpwWU10cjFzQXE2cnREY2x4ZjVQSXhCblVLZEFUWENPMEhXOU1kTDE5YkI5S3ZBWkNZSWJRR0M1Y0hiay1XcUpBSnZlRklGNFhwS2FiUEYyNi00V1dfMA?oc=5" target="_blank" rel="noopener">개인정보 유출 기업 과징금 7000억 달하는데…정부 기관 유출 책임은?</a></h3>
+            <span class="feed-src">SR타임스</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 17:41</span>
@@ -3729,9 +3762,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>13</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>337</b><span>국내 동향 — 11/16~19 보도</span></div>
-        <div class="stat"><b>255</b><span>해외 동향 — 11/16~19 보도</span></div>
-        <div class="stat"><b>69</b><span>CVE·취약점 — CVSS 9.0 이상 46건 포함</span></div>
+        <div class="stat"><b>338</b><span>국내 동향 — 11/16~19 보도</span></div>
+        <div class="stat"><b>259</b><span>해외 동향 — 11/16~19 보도</span></div>
+        <div class="stat"><b>70</b><span>CVE·취약점 — CVSS 9.0 이상 47건 포함</span></div>
         <div class="stat"><b>57</b><span>다크웹 유출 — 11/18 08:08 확인 기준 24시간 건수 (+19%)</span></div>
       </div>
 
@@ -3962,7 +3995,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13">
           <h3>NGINX2Root — nginx 치명적 취약점 5건 (CVE-2026-123007)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
-          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다. 동아일보는 11월 19일 전 세계 웹사이트의 30%가 사용하는 엔진엑스에서 치명적 보안 취약점 5건이 발견됐다고 보도했다. 이투데이는 11월 19일 티오리가 웹 서버 엔진엑스에서 치명적 취약점을 발견해 원격으로 악성 코드를 실행할 수 있다고 보도했다. KBS 뉴스는 11월 19일 웹서버 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 발견했다고 보도했다. 아이티데일리는 11월 19일 엔진엑스에서도 고위험 취약점이 발견돼 한국 웹사이트 58%가 영향권에 있다고 보도했다. Security Affairs는 11월 19일 AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로를 발견했다고 보도했다.</p>
+          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다. 동아일보는 11월 19일 전 세계 웹사이트의 30%가 사용하는 엔진엑스에서 치명적 보안 취약점 5건이 발견됐다고 보도했다. 이투데이는 11월 19일 티오리가 웹 서버 엔진엑스에서 치명적 취약점을 발견해 원격으로 악성 코드를 실행할 수 있다고 보도했다. KBS 뉴스는 11월 19일 웹서버 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 발견했다고 보도했다. 아이티데일리는 11월 19일 엔진엑스에서도 고위험 취약점이 발견돼 한국 웹사이트 58%가 영향권에 있다고 보도했다. Security Affairs는 11월 19일 AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로를 발견했다고 보도했다. F5는 11월 19일 PoC 익스플로잇이 공개되자 NGINX2Root 치명적 결함에 대한 패치를 발표했다.</p>
           <a class="src-link" href="https://blog.qualys.com/product-tech/patch-management/2026/11/18/nginx2root-five-nginx-flaws-led-by-cve-2026-123007-how-to-find-mitigate-and-patch-now" target="_blank" rel="noopener">Qualys — NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityboulevard.com/2026/11/nginx2root-cve-2026-123007-and-four-more-unauthenticated-remote-code-execution-in-nginx/" target="_blank" rel="noopener">Security Boulevard — NGINX2Root (CVE-2026-123007 and four more)</a>
@@ -4006,6 +4039,8 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE13ZTZXUDZneTJSam42SnBfZ3Nib3IwLXctUzFhOTFOV3YxV1YtWUNuR01tcmNLV0lyTUhCV0x6U05KUUwtVDFCWDlGTFFJRVlaeUFyNWxBakxUSDI5cXJvSkFwX05EUnVu?oc=5" target="_blank" rel="noopener">아이티데일리 — 웹서버 ‘엔진엑스’서도 고위험 취약점…한국 웹사이트 58% 영향권</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html" target="_blank" rel="noopener">Security Affairs — nginx2root: AI Discovers Five Critical nginx Flaws and a Path to Root</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/" target="_blank" rel="noopener">SecurityWeek — F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public</a>
         </div>
 
           </div>
@@ -4106,13 +4141,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 69건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 23건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 70건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 23건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 69건</button>
+          <button data-filter="all" aria-pressed="true">전체 70건</button>
           <button data-filter="new" aria-pressed="false">11/16~19 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -4308,6 +4343,14 @@
               <p>Oracle 2026년 11월 Critical Patch Update 포함 항목.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14492" target="_blank" rel="noopener"><span class="mono">CVE-2026-14492</span></a> · WP Duplicate – WordPress Migration Plugin</h3>
+              <p>WP Duplicate – WordPress Migration Plugin 1.1.11 이하 모든 버전에서 원격 코드 실행 가능.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">9.6<small>CVSS</small></div>
@@ -4680,15 +4723,19 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 337건 · 해외 255건 · 2026년 11월 16~19일 보도</p>
+          <p>국내 338건 · 해외 259건 · 2026년 11월 16~19일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">337건 · 2026년 11월 16~19일 보도</p>
+            <p class="col-note">338건 · 2026년 11월 16~19일 보도</p>
 
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YWlVrWlNOUGIxNjU3ZGgyXzJKQ1dzOGhYY2NLUVJ4Ync5RFdSMEpMdkFIV2lOdVNWX2NsOEZMaTBBRkNtNzFSZzQyTFlhMG5IZDNxbUY0cnUtejAtWkl5bzBVOFl2dUHSAWtBVV95cUxNcHM2VXhxR1A5X3BwZkpwWU10cjFzQXE2cnREY2x4ZjVQSXhCblVLZEFUWENPMEhXOU1kTDE5YkI5S3ZBWkNZSWJRR0M1Y0hiay1XcUpBSnZlRklGNFhwS2FiUEYyNi00V1dfMA?oc=5" target="_blank" rel="noopener">개인정보 유출 기업 과징금 7000억 달하는데…정부 기관 유출 책임은?</a></h3>
+              <span class="news-meta">SR타임스 · 2026-11-19</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE95Sm84WWlJQm1HWFQxVDdfLVo3SUZYR2RwNUVQRDF5dDRYSDBRQklyUUR5bVdVRnVxTHBsZXZzd09VX09RaHlJcU9vVnhwMThTVU9sVVBxLTZMT2NEM29NeG1oYlpuWFlwa3pld1JB?oc=5" target="_blank" rel="noopener">보안 패치 나와도 적용할 곳 몰라…‘자바포셸’ 대응 사각지대</a></h3>
               <span class="news-meta">충청투데이 · 2026-11-19</span>
@@ -6041,8 +6088,32 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">255건 · November 16–19, 2026</p>
+            <p class="col-note">259건 · November 16–19, 2026</p>
 
+            <article class="news-item">
+              <h3><a href="https://www.infosecurity-magazine.com/news/fifth-uk-employees-share-passwords/" target="_blank" rel="noopener">영국 직원 5명 중 1명, AI와 비밀번호 공유</a></h3>
+              <span class="news-orig">A Fifth of UK Employees Share Passwords with AI</span>
+              <p class="news-sum">영국 직원의 5분의 1이 AI와 비밀번호를 공유하는 것으로 나타났다.</p>
+              <span class="news-meta">Infosecurity Magazine · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/" target="_blank" rel="noopener">F5, PoC 익스플로잇 공개에 NGINX2Root 치명적 결함 패치</a></h3>
+              <span class="news-orig">F5 Patches Critical NGINX2Root Flaws as PoC Exploits Go Public</span>
+              <p class="news-sum">F5가 PoC 익스플로잇이 공개되자 NGINX2Root 치명적 결함에 대한 패치를 발표했다.</p>
+              <span class="news-meta">SecurityWeek · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/19/palo-alto-networks-acquires-applied-compute/" target="_blank" rel="noopener">팔로알토 네트웍스, 어플라이드 컴퓨트 45억 달러에 인수</a></h3>
+              <span class="news-orig">Palo Alto Networks to acquire Applied Compute for $4.5 billion</span>
+              <p class="news-sum">팔로알토 네트웍스가 어플라이드 컴퓨트를 45억 달러에 인수한다.</p>
+              <span class="news-meta">Help Net Security · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14492" target="_blank" rel="noopener">CVE-2026-14492 (CVSS 9.8) — WP Duplicate 워드프레스 마이그레이션 플러그인 1.1.11 이하 버전에서 원격 코드 실행 취약점</a></h3>
+              <span class="news-orig">CVE-2026-14492 (CVSS 9.8) — The WP Duplicate – WordPress Migration Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.1.11 via the s</span>
+              <p class="news-sum">WP Duplicate – WordPress Migration Plugin 1.1.11 이하 모든 버전에서 원격 코드 실행이 가능한 취약점이 보고됐다(CVSS 9.8).</p>
+              <span class="news-meta">NVD · 2026-11-19</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.theregister.com/security/2026/11/19/sticky-note-on-monitor-provided-keys-to-the-companys-kingdom/5310908" target="_blank" rel="noopener">모니터에 붙인 메모지, 회사 전산망의 열쇠를 내줬다</a></h3>
               <span class="news-orig">Sticky note on monitor provided keys to the company's kingdom</span>
