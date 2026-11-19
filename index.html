@@ -227,15 +227,15 @@
       <header class="masthead">
         <p class="mast-date">2026년 11월 19일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
-        <p class="mast-sub">11월 16~19일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 19일 13:10 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-sub">11월 16~19일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다.</p>
+        <p class="mast-meta">수집 기준 2026년 11월 19일 14:25 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>15건</b> · CVE·취약점 <b>66건</b> (CVSS 9.0 이상 45건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>16건</b> · CVE·취약점 <b>67건</b> (CVSS 9.0 이상 46건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -245,15 +245,136 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 379건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 455건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
           <article class="feed-item">
+            <span class="feed-time">11/19 14:24</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFA2eUhicXhSSE4zSVNMQkdpbmJpcFMzSUlocE0zV05hNEFrc3BDYW5pNkFIc0xNaUpkUDJtamg3SHJCdmpyRnJlVWZxNGYxeHBCb2tYOUFsUzUtZDlZb3ZaS0tsWlM4OUoyZDhj?oc=5" target="_blank" rel="noopener">삼성화재, 인공지능 데이터센터 화재·해킹 대비…보험 역할 논의</a></h3>
+            <span class="feed-src">뉴스저널리즘</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 14:02</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5tZ3lTQ2dwZ0w2Z0xSV0xVMjA2aUo0NGdvbjVUUHdZWW8xTTdhUlZHUm9GdElsZkhJMDdDUml6eDVKbGxocEd3ejZVTDVEbFlZS1RvT3R0UTU0eUpDYnFYVGxrNVZndjRlbkRZ?oc=5" target="_blank" rel="noopener">대학가 사이버 보안 위험하다…대전·충남 지역 대학도 ‘홍역’</a></h3>
+            <span class="feed-src">충청뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 14:02</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1RUWgxX0Z5aTc5VHRUaHVxbG9PaExNUzVZMmwzeHZzeVFaWHlnSTdHSl9QR0c2QkpTMndwRG5pNFk0QWxQVlBRYzVvR0F1dS1GT0E?oc=5" target="_blank" rel="noopener">‘해킹 금융사에 매출 3% 과징금’ 전금법 개정안, 내주 정무위서 논의</a></h3>
+            <span class="feed-src">매일경제 마켓</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 14:00</span>
+            <h3><a href="https://www.helpnetsecurity.com/2026/11/19/ai-agents-employee-credentials-nudge-security-report/" target="_blank" rel="noopener">AI 에이전트가 직원 접근 권한을 그대로 물려받는데, 그 사용 실태를 감시하는 곳이 없다</a></h3>
+            <span class="feed-orig">AI agents inherit employee access, and nobody’s watching how they use it</span>
+            <p class="feed-sum">AI 에이전트가 직원의 접근 권한을 그대로 이어받고 있지만, 그 권한 사용 방식을 감시·통제하지 못하고 있다는 보고서 내용이다.</p>
+            <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:57</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nOHVucFFqaGRWbzA5V2hwUHhjSWt6TWN0dzJNcWdGcXdmYWJ6OC03a284YWl6QjhXZzdqaks4VFJ2SkU4RVc4akhmYXdXalluMjRwQjg1Mzg5d9IBWEFVX3lxTE52T09Ja3pKS1NwZGE1ZzdrZWhKTWtWNnNnQ2l5WnpmOS0xQmx1SlY0M1RJQklya2ZTSjJKNlUzOEFWa1R6bUI1ZVBWdS1ZOVEzREZpcEJzMTU?oc=5" target="_blank" rel="noopener">공공기관 개인정보 유출시 기관장도 징계…최소기준 감봉으로 강화</a></h3>
+            <span class="feed-src">아주경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:56</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">nginx</span><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5HTHFVM3VWYW0zdWszNlp5Znd6MzJnN2tiNE9qLXBISlBrU3BfMllDZjdmUjFhV0hvbGtrSXpZRmkyWk5LaGhfZ2QtMHphemp0S1prRlhVOHA0eEd0am1yTGRxdE5kNVRIS0QtMERn0gFzQVVfeXFMT3hBc1Fzem4zT3lxMkJ2T3lwTE9Pb3VjYk1jaE9mOW1hN0JjTXg0MGhJNGhYelhfNzBndjJxZTZoblhKVUxlTjMyUXdsOUh6WW1fZENuT3dJRWkzS1d0NEE3TkF1Q1dzNzVWTG5CeGNCQmthNA?oc=5" target="_blank" rel="noopener">웹사이트 30%가 쓰는 '엔진엑스'서 치명적 취약점 5건... 4건은 AI가 발견</a></h3>
+            <span class="feed-src">한국일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:54</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">gs네오텍</span><a href="https://www.etnews.com/20261119000264" target="_blank" rel="noopener">PHP 취약점 대응한다…GS네오텍, 선제적 클라우드 방어 체계 제시</a></h3>
+            <span class="feed-src">전자신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:54</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">nginx</span><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1sR2xXOWVVV3NYcWJuSkNnem1ZNmw4NFpEYXNEUjdSOHE1c185SXdtTmFuQTRWUlVPUWo1cTA5Z2dNc2ZpTzJvdF9KQUpMcU9fRzEyRnI5ZjM0OHl4bnZpSXVGS0RHbXU2X3c?oc=5" target="_blank" rel="noopener">국내 웹사이트 절반 넘게 쓰는 '엔진엑스' 비상…AI가 11년 숨은 취약점 찾아</a></h3>
+            <span class="feed-src">콕스뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:50</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vejhOaUxyNWI0aXFlaUswSVhHbVpXNTkxd3l6QTRSeVM4b1kwMElXU0J3T2wycndIUmk0eVExYTlzVkVWenZ6UW42VjA3dThmS09kVldnMDhqWURPd0E?oc=5" target="_blank" rel="noopener">개인정보 유출 2차 피해 최소화 ‘총력’</a></h3>
+            <span class="feed-src">한국방송뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:45</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5KdXVUVUVydlY2WFZ5cmo3UjlKMEJ4LTNHRDNZSGNlYXpJMmtsaU9zWldQdUEzdV9wZlVlZDJGTWVydkREN1lTZThjMktQSW5adkZPSUQxVDFUQ3ZFZThEOG50U3JXSXpRXzRjcw?oc=5" target="_blank" rel="noopener">외부 교육사이트 해킹에 저축은행 직원 정보 유출…중앙회 "직원 사칭 사기 주의"</a></h3>
+            <span class="feed-src">와이드경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:43</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1ZTW1Md1JJN3lqLXl1UFJRZFV4M2N1cHVOdGJsZEotc3NHN1dNVXBic2gtMWU1UTNwT0dJTFkxaXdDWXhfYWFUY2pVZ3JyWkl6SlFGTHV4WHdjendrSVd3YWx4NF9oU29rWVdObUxhVXJveGM?oc=5" target="_blank" rel="noopener">美 NSA 내부망 먹통, AI가 찾은 PHP 취약점 긴급 패치 때문</a></h3>
+            <span class="feed-src">디지털투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:41</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209618" target="_blank" rel="noopener">실무자부터 화이트해커까지 한자리에...'OWASP Korea Day 2026' 열린다</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:40</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBCQ3ZNZzJGaVFDcWpteWU0Wm9lcmlIbHR1OFd3b0o2cnFveGhsZUpjQUhYMGxEWTNvM1ZmSGpwNVV3RnQyV2laSWk4UmxQeGpNcEpibDdGZVhlLUU?oc=5" target="_blank" rel="noopener">대구경북권 대학서 해킹 피해 잇따라…영남대서도 개인정보 유출</a></h3>
+            <span class="feed-src">KBS 뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:40</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE51Z1VOTEFhTktVc1Vsa3N4cVhfcGZXZWI5NDR1T3o4N2ZEM09penlqTnVDSzVCU05QdkZTOU5DV2JodkxMbG1NQVFiZl8zcEUyeUZFZ0VlSTRvN0E?oc=5" target="_blank" rel="noopener">부산대 등 대학가 해킹 잇따라…개인정보 1천여 건 유출</a></h3>
+            <span class="feed-src">KBS 뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:37</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261119092400017" target="_blank" rel="noopener">다우오피스 또 보안 사고…PC메신저 업데이트에 악성코드</a></h3>
+            <span class="feed-src">Yonhap news</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:33</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html" target="_blank" rel="noopener">PHP, 지원되는 모든 버전의 치명적 보안 결함 경고… 11월 19일 수정판 배포 예정</a></h3>
+            <span class="feed-orig">PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19</span>
+            <p class="feed-sum">PHP가 지원되는 모든 버전에서 치명적 보안 결함을 확인하고 11월 19일 수정 버전을 배포할 예정이라고 경고했다.</p>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:30</span>
+            <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147385" target="_blank" rel="noopener">라온피플, GPU 서버 없는 VLM 영상관제 ‘오딘 AI 엣지’ 출시</a></h3>
+            <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:25</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFAyN2hRLXZRa1d4clNzVXk3cUxFWDRkdkFuSEh3VGU1OXZVX3c4U3JHaS1CMjBWLWhQa1hJd1VzYWRRdTNqekZlcFV2ZFM4ZVNQWlc4aXNZQWpiRlVpSk9KcElZZnhSZlQ2SmZn0gFvQVVfeXFMTWgzWkxKMFVtZldMRWFVNUdIYlJadjJ6U2F4c2p6NTVzLTF4bjhwUk1BWWIydG5BMXFlaW5YZ3BVb3RVeW1fdk50a2l3UUlhRVM3YU5MRW9TUDVFWFQ5OVRxWjNWeHo2MzRQNXhDVllF?oc=5" target="_blank" rel="noopener">정부기관 개인정보 유출, 기관장까지 징계 추진…최소 징계도 ‘감봉’으로</a></h3>
+            <span class="feed-src">더퍼블릭</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:22</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">PHP2Shell</span><span class="feed-tag">gs네오텍</span><a href="https://www.dailysecu.com/news/articleView.html?idxno=209617" target="_blank" rel="noopener">'PHP2Shell' 등 고위험 취약점 선제 대응...GS네오텍 '시큐리티 렌즈' 활용</a></h3>
+            <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:17</span>
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132622" target="_blank" rel="noopener">CVE-2026-132622 (CVSS 9.1) — GearUP Hyperev 20261020 이하에서 취약점 발견, ld/utils.lua의 get_wlan_sitesurvey 함수에 영향… 원격 OS 명령 주입 가능</a></h3>
+            <span class="feed-orig">A vulnerability was found in GearUP Hyperev up to 20261020. This impacts the function get_wlan_sitesurvey of the file ld/utils.lua of the component WLAN Site Survey. Performing a manipulation of the argument line results in os command injection. The attack is possible to be carried out remotely.</span>
+            <p class="feed-sum">GearUP Hyperev의 WLAN 사이트 조사 기능에서 발견된 CVSS 9.1 OS 명령 주입 취약점 CVE-2026-132622에 대한 NVD 공지</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:15</span>
+            <h3><a href="https://zdnet.co.kr/view/?no=20261119131456" target="_blank" rel="noopener">이세영 뤼튼 "AI 캐릭터·스토리 플랫폼 크랙 IP, 게임·웹툰·영화 등 확장"</a></h3>
+            <span class="feed-src">ZDNet Korea</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:11</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">NGINX2Root</span><a href="https://www.yna.co.kr/view/AKR20261119000251017" target="_blank" rel="noopener">세계 웹사이트 30% 쓰는 엔진엑스 '보안 비상'…정부 긴급 권고(종합)</a></h3>
+            <span class="feed-src">Yonhap news</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 12:56</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261119088100017" target="_blank" rel="noopener">[만나보니] 지스타 찾은 뤼튼 대표 "크랙 속 IP, 국경·형식 넘어 확장"</a></h3>
             <span class="feed-src">Yonhap news</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:55</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5ETm8wZkI1UHVkWW5KWWhadXA5cXdKUXEtRUs3NG4zcC1famU1Y1RmTDdkUS1CMDNmS1pCcUVKdHpFX0liUlNJRzBoczlUdUVmRDEzR3NBOWs2TDl1X3o4QndBUVNWSE1wZUZMR25ZUWE?oc=5" target="_blank" rel="noopener">전북교육청 통학차량시스템 해킹…9천924명 정보 유출</a></h3>
+            <span class="feed-src">SK브로드밴드 회사소개</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 12:48</span>
@@ -298,6 +419,21 @@
             <span class="feed-src">연합뉴스</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 12:06</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5SVnU1VHVKZndZUFhlNklTd2pPUjVQYlFKUjFyQzJUeG1vRG12TjZlVnVGUmgyUTkyOE5TNHV4Y193OFpZNDc2Z3ZBakFMRWdET00yYUhHTTNvcjRrLTNNLVpVUXN0WWs3ZWhBN2VhMA?oc=5" target="_blank" rel="noopener">개인정보 유출 감독자·기관장 책임 강화 추진…인사처, 최소 징계 ‘견책→감봉’ 개정안 입법예고</a></h3>
+            <span class="feed-src">월드장애인사랑뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:01</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE11Tl9uQk9xcjVVdzVueU9UdGFXUW5kU1pBalFQVGJramNGRy1LeE5PMFBLUlBGaXM2ck8tcHFweVhCYmlCU3diNUFvTjRrRGtzVjVwU29sVmo4SjdqOHZFSw?oc=5" target="_blank" rel="noopener">공공부문 개인정보 유출 땐 기관장 '책임·징계' 강화</a></h3>
+            <span class="feed-src">아시아경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:01</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KVjRBYjZST3d3UHFtR0drRW9XYjNDaG5FZjZnU080TENkSU1pdFl2YlYxdkJXV0dFWl8wQkxhZXIyTjFLSG15eFpvaDlqemRkQkpCdmN2b0RJdw?oc=5" target="_blank" rel="noopener">정부 기관 정보 유출하면 기관장도 문책…최소 징계 ‘감봉’ 강화</a></h3>
+            <span class="feed-src">브릿지경제</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 12:00</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261119024900001" target="_blank" rel="noopener">정부기관서 개인정보 유출시 기관장도 책임…징계기준도 강화</a></h3>
             <span class="feed-src">연합뉴스</span>
@@ -306,6 +442,36 @@
             <span class="feed-time">11/19 12:00</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261119052800004" target="_blank" rel="noopener">경찰, 사이버도박 6천310명 검거…사이트 제작·분양조직도 적발</a></h3>
             <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBEWjBGLV9jTHFoQ1habWNYMGVxSkxpMHkwZ011VzZnVUtVMEloNmVYdEpUaTJQaG5rOWtORUJ3MGlVZTYyRVFPc2pSeHBjdjZiYnc4UWJJX1NESzZJV2hFZVU3aGFkRkJnM0dqMld30gFzQVVfeXFMUG0yNy1INGxJWkJQNTkzQThIQnA1U201dS1YNGZJT2ZWZDFLZURGbDB0NHJmNkQ4dUZaN2ZOdGVqM29jUkZVMy03Q2NRQjZaTXRRN3NzRmEzQmpUS2tXZkVNVTYwRWtZQnNnTEtFSGh5dDM3cw?oc=5" target="_blank" rel="noopener">공무원 정보 유출 땐 기관장도 문책… 최소 징계 '견책→감봉'</a></h3>
+            <span class="feed-src">한국일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBfeDRfUmlkSXRoWm44d0lxNUctZThjaHJMTzZLMXV4czRNV0JwQVFMZUNhLS1TbExEWkx2WEJlRnhRVWZna1VKRnNMUzRPSGxTcnBwWjlFUkxlOGV0QktTYlFrRnduVWRrTnRCZk1TdTB5a1JqeDVB0gF8QVVfeXFMTTlwSWIzLXpuZGZMZ3RNVmptRFB0c3JmR2lKSlBTNDR0cnpPUXBjTUNOMXJISlh6Y3VuUU5kbUFzMnJtQk9qdkxKX3F0RG5kUFFEYVU5aWlsd2d6cHNSSFJYaTMxTDVFdGhYeEdYZFhpb0wtaGNvaE1uajU0Ug?oc=5" target="_blank" rel="noopener">정부 개인정보 유출 땐 기관장도 문책…최소 징계 '감봉' 강화 - 머니투데이</a></h3>
+            <span class="feed-src">머니투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GQjBQT28tOVlFQkF1NHpyaUlGNFl5N1Nrb2JTeEYzcEZ5MlpsUzh0a2VQN1U5MDg4TTFEUW1jUThjbkRTUjlZd1FEN3N5NUpJN20yS0JYS1dlMzRGdkZ2a9IBeEFVX3lxTE1PbDU0VHR3TFI4RTVyYjgyaUUtNHNETGw3RUlIOTdMZENKSF9xZzhxSW9XMlpyZGozSkNBSUpQeDVZZ05MVlQ0RUl5QjZ1c3oxSmllWU9RZDRTS2hjazNjZjdtY0w5SDFLTXpQaVNJT2U1cWt5WExjUQ?oc=5" target="_blank" rel="noopener">정부기관 개인정보 유출 땐 기관장도 문책…최소 징계 '감봉'으로</a></h3>
+            <span class="feed-src">뉴시스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE8wZG93OWU4Q2ZQVTNnRWxYczZRM2Q5TVh2eE5lVkxORnl2aURQaGZERUExNlp4aFdkZXFreFU5MTJ2NnVSWVcxWlVaektBWV9MVTJ6a0xNSEZNWGlpUkE?oc=5" target="_blank" rel="noopener">정부기관 정보 유출 땐 기관장까지 문책…최소 징계 견책→감봉</a></h3>
+            <span class="feed-src">뉴스1</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 12:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RR0tiamh1OWtaVHZzenRLSWlCZnNZckFGWng5dmI0alRoSjNFQTlxUlgycmtSaldTRFZHSTZRNXdqajk4dTVCSTVjOVI3NmVuMEE?oc=5" target="_blank" rel="noopener">공공기관 개인정보 유출, 기관장도 징계…징계 기준도 강화</a></h3>
+            <span class="feed-src">노컷뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 11:56</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9XZlVwZkMxWG1QWFRiRmo3STYwcFY0TklGVC1faElVcTBaSDBHTFAxVWRvTDBHenA3M29uU1g0ZzZ6ck56bHhnbkpLZ0ZjQkVF?oc=5" target="_blank" rel="noopener">정보유출 사고 2.3배 늘었는데… 조사관은 달랑 6명 증원</a></h3>
+            <span class="feed-src">문화일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 11:53</span>
@@ -360,6 +526,11 @@
             <span class="feed-src">보안뉴스</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 11:05</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5kYkNqazRVTG9HbEJaemFnalNITnNESGYzSGdPbFNtV3drTERId1FrUE5SSG16MmtvMGZKcFhpUWVhN0lYV0F6NU1rMjk4RnpNWUdWVUZ4cnNMTFF3akFtQ0FrOVhhczhhSURYZ0hCWTFNaUNCVUxmWlNXN3NmTUk?oc=5" target="_blank" rel="noopener">10명 중 6명 "개인정보 유출 불안"...사회 안전 인식 개선</a></h3>
+            <span class="feed-src">YTN 사이언스</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 11:04</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261119072300065" target="_blank" rel="noopener">인천공항 보안검색 노동자 500여명 '직접고용' 패소에 상고</a></h3>
             <span class="feed-src">연합뉴스</span>
@@ -389,9 +560,24 @@
             <span class="feed-src">ZDNet Korea</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 10:45</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNMWl4VWNwbGhfWENrSTRpeDV6Y2NzM3ZpMUZ4TVhTVlhBZGZubGItSzF2NmxFS0pwZjNRVXQ4NTdtUkVOZXVpWXYwS3kzdnE2clcyS3Jrc2NpUDQ1WnpQZU9uOVppeU5wOGROdC0yTGhiNWp4a2F4b2E2dlU2eloxX2VFM1piUElWUUxVUQ?oc=5" target="_blank" rel="noopener">이번 개인정보 유출 사고는 「모두의 창업」 공식 플랫폼을 통해 발생한 것이 아닙니다.</a></h3>
+            <span class="feed-src">대한민국 정책브리핑</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 10:29</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMi6AJBVV95cUxPWEdzMk1wc0tPNWk2Ri1FeEtRWDk3SUxScGNyLXgyd2xYd2dMSTd1STNjUmRpaWY3T2F3bWRodjJKUE1Va09NakphTUZsNVpZLWwxeW9VQUlBRWxYdXN2bVBTdnpfREs1LWNNNkJKUzZNQjd0bFZib1llZ3ZvdF9wZ0I1eHZjOUNpcC1qX1lIT3Y0SkJ4SFNvdDkwU0Zkd0NGeWhydGY0OUt2ZE5NZW05dGxoN0xiMWg3YjR2Wll6ZnNEeHJNbGI2TTR4Qng1dHFyUmVHbHRvNENTWU1LV3YxT25mSFlrTWhEVHQwV2M0cXVveS02OVJoczRndkxUbzBsVHNUUmZsRXdvLXZtakl4TEtPMkNncVNKckRMZk80NVpreGhwMnlwVlc3TERTVFZ1OF9HRTV4MThLMVFRaGE2ZnBkcjlCTlBVT1ZXMGY3RVJtQkFPdklPbkhTY3hZV3A2Wk1QQmJreUY?oc=5" target="_blank" rel="noopener">저축은행 교육관리 사이트 해킹…임직원 개인정보 유출</a></h3>
+            <span class="feed-src">중앙신문</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 10:27</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147382" target="_blank" rel="noopener">[더존비즈온 사태] 11월19일 현황... 한국전자인증 등 4곳 추가 발견</a></h3>
             <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 10:26</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBlT2ctNEFVMHU1bl80andJa2h3eG5BZUl3ZTQyTWhCcmtFNDJTYjl2S2dhTGhxeUF6d2IzVnAyZF8tQ19mMjZXZG5LS2N0aDl6a056MF8zSFlrYklvUUFnZmlubDhIalZfaFVz0gFUQVVfeXFMTkl6V0RjYVJyS1Fac1FIOTZhRGZ5VkZGcXlJaUt3RWR4S21vbjBrM3dPUkdyaEtNTXlRVlo2aGk5SW9UMGRjWUxsVm82am55ZW41N3pq?oc=5" target="_blank" rel="noopener">전주대·전북교육청서 잇달아 개인정보 19만건 유출</a></h3>
+            <span class="feed-src">세계일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 10:20</span>
@@ -426,6 +612,11 @@
             <span class="feed-src">Security Boulevard</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 09:42</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">Java4Shell</span><span class="feed-tag">gs네오텍</span><span class="feed-tag">nginx</span><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBXbUdhSzBJRlJ3Q1ktVnQtYmhTVHBlN0ttTUw1TmdXYnlPenMtUnFzY3lHZ3hsLTJQekhWSERMX1V6Wnd4RUxSUl9RZ1hmb0ZGOTE3Z296MVJOT0czclFQUU9LOU5tOWdvdjEwa0tqQdIBc0FVX3lxTE5sMENidEM3bms5d3ZKcUZaejFiaDVoQXdGTk9iS0ZRaHFTeDROaDhHRjhmX2w3TFJjbDlhV1JPMWxxRVk3WjE3c2tKS0htTGJ3VF9xbFk1VXdkNk5LN0djWWVFU3BQMmhpaEhleHlPRE16T0U?oc=5" target="_blank" rel="noopener">[시큐리티 포커스] ADT캡스 수험생 이동 지원·티오리 nginx 취약점 발견·GS네오텍 선제적 클라우드 방어·개보위 Java4Shell 유출 예방 당부</a></h3>
+            <span class="feed-src">뉴스웍스</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 09:23</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147367" target="_blank" rel="noopener">파이썬 켤 때마다 작동... 마이크로소프트 AI 에이전트 개발 패키지에 계정 탈취 코드</a></h3>
             <span class="feed-src">보안뉴스</span>
@@ -455,6 +646,11 @@
             <span class="feed-src">Help Net Security</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 09:05</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFA1T3E4VFpEdEUxeTEtLWJtQk5rZ3ZyT3g0aHY3RVo5OVE3SDhtRGt1Z2FoRlhSUFFLeDIzUjQybk90dGZSaUFXSUZHZEg0YjlxaTJFcGhFT25USndCWFJqdlpGVlNXb3UzSE5PRkdtZEI?oc=5" target="_blank" rel="noopener">충남도, 지역화폐 ‘착’ 개인정보 유출에 2차 피해 예방 총력</a></h3>
+            <span class="feed-src">신아일보</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 09:00</span>
             <h3><span class="feed-tag">Java4Shell</span><a href="https://www.etnews.com/20261119000023" target="_blank" rel="noopener">엔키화이트햇, 자바 보안 취약점 'Java4Shell' 점검 도구 배포</a></h3>
             <span class="feed-src">전자신문</span>
@@ -475,6 +671,11 @@
             <span class="feed-time">11/19 08:51</span>
             <h3><a href="https://www.etnews.com/20261119000015" target="_blank" rel="noopener">美 국토안보부 “AI 활용 사이버 공격 확대…핵심 인프라 위협”</a></h3>
             <span class="feed-src">전자신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 08:51</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiugJBVV95cUxNRDlIUlVWSms0QllleWtBbXJPdkJkbGl4bm9HOVB2bVQtRV9pbmlRN0VpcTRja2N1dmxsQWJIRG83bHo4aWE3a09qSlRGekV1VXNfd0hwdENOVkl5LXJRQ3dnNFMzZG9UY01ibjFsdTNFcmdDZGtMSU1OLUNZLWR4Yjh4dGpoYkJVeUdCb1hFWHNoLXptNjV3blY5dEFqcUxyYUdVdkkxZ1FKek13TGV2dzAwQkc5VXNfbkJTT1ZNb3JWWjhEV2NZX1o5eVRlanZ5RmNPUVNMYzEyaUJBbjE5dEY4dTlZS3A2YXVFV0RPeWZCUVZ5RmxIN0lCeEkySHZNWnkyaUtfRWRyak9xQnA0V29Ma3g1cmJXSGhsUTJadnlDRnUtY2VJRnBrMjNUZlpBckh4bUdUTDhLQQ?oc=5" target="_blank" rel="noopener">"내 개인정보는 이미 공공정보"...노란우산 36만명 유출로 본 반복 사고의 공식</a></h3>
+            <span class="feed-src">테크42</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 08:50</span>
@@ -513,6 +714,11 @@
             <span class="feed-orig">Ransomware access brokers are moving their deals off public forums</span>
             <p class="feed-sum">랜섬웨어 초기 접근 브로커들이 공개 포럼 밖으로 거래 무대를 옮기고 있다는 분석</p>
             <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 08:22</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOdHV0bUdLaEcwNGNVcVRsb2R5R0NsOVZ1RkpoVnV3R0hKajlYQnUwSWVPMEVwRVgwTnB5RTB4MzVYdHhZYUpjdU9aSGFUMHFmMTQ2WE9VOFJ4QTNxT2JrdjNPLWxEejJLNzQ4VVJ5RnpISU44TnNzMWlzdUVyUmRTX3V0aWljYUd2OUtFVjFB?oc=5" target="_blank" rel="noopener">디지털 거래 늘며 개인정보 유출 위험… ‘소비자가 체감할 수 있는 보호’ 필요</a></h3>
+            <span class="feed-src">조선일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 08:21</span>
@@ -632,6 +838,11 @@
             <span class="feed-src">Chrome Releases</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 07:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE1Ib3lQR3B2bXkyVVd0dGlPejRBaWxXdktJSUZWTkNEc1pwUF93Mng5WmVDajB0YU1MVmFSd1RUel9FU0QtVjlRS25pUWU4VFNFekhIcFh4WVN1X0pFZHV6ZGRBaG8?oc=5" target="_blank" rel="noopener">레고랜드도 뚫렸다… 고객 개인정보 유출</a></h3>
+            <span class="feed-src">주간동아</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 06:59</span>
             <h3><a href="https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another" target="_blank" rel="noopener">Cold Relic, 한 번의 클라우드 침해를 또 다른 침해로 연결하다</a></h3>
             <span class="feed-orig">Cold Relic Turns One Cloud Breach Into Another</span>
@@ -658,6 +869,11 @@
             <span class="feed-orig">Java4Shell (CVE-2026-114938): What You Need to Know and How Imperva Protects You</span>
             <p class="feed-sum">Java4Shell 취약점의 개요와 Imperva의 대응·보호 방안을 정리한 글</p>
             <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 06:37</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5Q3VCZUd6a2hVdUdob0J5QVFKV2pEQ1Y2R0x0Yjl5OVRCdGY2RjU5ZlVpTVp4Q193bmpkVHNGeGNtd05GRGd2LWg2SEo3dVl1WXduZmlJejh5UnFW?oc=5" target="_blank" rel="noopener">충남 지역화폐 '착' 이용자 566명 개인정보 유출…2차 피해 우려</a></h3>
+            <span class="feed-src">티제이비</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 06:34</span>
@@ -765,11 +981,26 @@
             <span class="feed-src">Ars Technica</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 05:05</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBKeXE3cTVMbkZHdkptU0pIVnk5SWJIRkpCSHAzbWJhSHRrNU5iX0ExdFEyc0M0Q1QxNjJ6MGNmWHB3ejlyTDhsRGtnOXd0UGl5SktQbg?oc=5" target="_blank" rel="noopener">강원 대학·공공기관 곳곳서 개인정보 유출…"보안 분야 투자 확대해야"</a></h3>
+            <span class="feed-src">뉴스1</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 04:58</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE44RHVDb09OYkFpZXJURXZFNGpPVUk0NVBOM1BWUEZ6NXJycmp3Y1J0d3pXQ1J5V3VqeWNPRW4tUXFhUXA0aFZZNGRDX1FwVHdJMGdjUXdocGJCYXVZaTlQcXl3MlZpNkE?oc=5" target="_blank" rel="noopener">노란우산 개인정보 36만2천명 유출…소상공인 5명 중 1명 정보 노출</a></h3>
+            <span class="feed-src">지이코노미</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 04:54</span>
             <h3><a href="https://isc.sans.edu/diary/rss/33532" target="_blank" rel="noopener">Java4Shell, NGINX2Shell 등: 아직 ‘옐로’ 단계가 아닌 이유 (11월 18일 수요일)</a></h3>
             <span class="feed-orig">Java4Shell, NGINX2Shell and more: Why we are not at "Yellow", (Wed, Nov 18th)</span>
             <p class="feed-sum">SANS ISC가 Java4Shell과 NGINX2Shell 등에도 경보 단계를 올리지 않는 이유를 설명한 글</p>
             <span class="feed-src">SANS ISC</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 04:39</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1NcnhCLS1IaEt6NDIzYldOTEljZ25mdW53NmQ0amZMeVhVUHpWT1FMM2xnV0tGOThHbnNzalBycnJ4TVdjbTJWN0Izdw?oc=5" target="_blank" rel="noopener">영남대도 해킹 피해…전자책·취업 홈페이지 개인정보 유출 : 사회</a></h3>
+            <span class="feed-src">재경일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 04:07</span>
@@ -854,6 +1085,11 @@
             <span class="feed-orig">Arctic Wolf Named a Visionary Leader in Frost Radar™ for AI Security Operations Centers</span>
             <p class="feed-sum">Arctic Wolf가 Frost Radar AI 보안 운영 센터 부문에서 비저너리 리더로 선정됐다는 소식</p>
             <span class="feed-src">Arctic Wolf</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19</span>
+            <h3><span class="feed-tag hot">KISA 공지</span><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72315" target="_blank" rel="noopener">Oracle 제품 보안 업데이트 권고</a></h3>
+            <span class="feed-src">KISA(보호나라)</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 23:24</span>
@@ -1088,11 +1324,21 @@
             <span class="feed-src">The Hacker News</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 19:55</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5sckIzRFR0WXFCUWQ4ajVrLVAzWVJpN1FCR1lOYml0ZHJwUVViV1VkTExNUGdCclJCS3RETjZkdUtaaXAwRmRSVlB5QUJxTEUyNER5QlQzV1A4TW5kY1JHdG9SZG4?oc=5" target="_blank" rel="noopener">CJ대한통운, 개인정보 유출 의심 정황…'오네' 챗봇 비정상 접근</a></h3>
+            <span class="feed-src">매일일보</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 19:45</span>
             <h3><span class="feed-tag">Java4Shell</span><a href="https://securityaffairs.com/203387/hacking/65-characters-to-rce-inside-the-java4shell-vulnerability.html" target="_blank" rel="noopener">65자에서 RCE로: Java4Shell 취약점의 내부</a></h3>
             <span class="feed-orig">65 Characters to RCE: Inside the Java4Shell Vulnerability</span>
             <p class="feed-sum">65자 입력으로 원격 코드 실행에 이르는 Java4Shell 취약점을 파헤친 분석</p>
             <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 19:39</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1CVVhBOE1QODg3WGRDamtJaTZsci1kX1JCcktidm9MdDNvMFVOWTBrMVBaM1pkWTVpelk3cUpWUDBJamZVaTdqZEROZHRFWTZpdnMyekNRNHZkdzhoWU80YlJhZzR3VkxHMldCVlRlMNIBc0FVX3lxTE5QNzM0a3NGbU1yd0dUV3lyX1V5eFdjQXRGZDFoUkFDTFA4SlJhb2cyang1OUFtQnRIS2ptVThaSUxDa3BSeHhlTVY2Q19ac0I4NkhuYklQXzhlR0lfMG9mclpfTm96TTM0U2ptTWZycURKZlU?oc=5" target="_blank" rel="noopener">CJ대한통운 챗봇서 개인정보 유출 의심 정황</a></h3>
+            <span class="feed-src">세이프타임즈</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 19:27</span>
@@ -1171,6 +1417,11 @@
             <span class="feed-src">보안뉴스</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 18:14</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1YZ2plekQxZkJYUUdvejZ2QWhHT3VmaVpKZm5oZWgzTnZXRjlNNTN2c1ctWUJTVWZOWnJIeHZtUUdtMHEtLU4wRUdCbDhaZE11Y2FVMmdyMWEtSGtZeXNlTnFaNlV3aG5N?oc=5" target="_blank" rel="noopener">노란우산 36만명 개인정보 유출…개정법상 '대표자 책임' 적용되나</a></h3>
+            <span class="feed-src">녹색경제신문</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 18:10</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147366" target="_blank" rel="noopener">한국첨단안전산업협회, ‘2026 힐링&소통 워크숍’ 통해 회원사 결속·기술 교류 다져</a></h3>
             <span class="feed-src">보안뉴스</span>
@@ -1191,6 +1442,16 @@
             <span class="feed-time">11/18 18:00</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147361" target="_blank" rel="noopener">“세무사 수석도 우리가 도왔다”... 텔레그램 ‘AI 부정행위’ 유혹 만연</a></h3>
             <span class="feed-src">보안뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 17:49</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBucnA1YTBPcVlxZy1PaWppUThEU0gxZjdraDVGUTNGQ21VODF5UEFHWEJkX2llRG5hVWw1bHRCMmhnM1JoVkp1c1EzM1R3QWlidC1aZi1CTWxEbVVrdlJ4SFdMdXVDUTRYcFY3aUdGdw?oc=5" target="_blank" rel="noopener">금융권 개인정보 유출 잇따라…미래에셋생명 피해 1만명 넘어</a></h3>
+            <span class="feed-src">비즈니스리포트</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 17:49</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1xNVF3cU5yMFA0NnJaY3dGN05VVnhnd0VMcmtnWTIyc1o0UWl1MktFWmZpWWE4U0lTajB5clB5OHp2ZXZJWTBBc3hTVVp2Um41WUUwaTllR1VVXzlJ?oc=5" target="_blank" rel="noopener">노란우산 개인정보 유출 36만여 건으로 늘어…전체 가입자 19%</a></h3>
+            <span class="feed-src">뉴스핌</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 17:48</span>
@@ -1214,6 +1475,11 @@
             <span class="feed-src">Help Net Security</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 17:47</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBoUmdiM1E0ZkRXRDJ6NjV2RmJFNjlmdDBNeTV2dkw4YUxRVVI4WHNFQV9HdUVEcGRPRVRhNnF0R3RjbGEzQktENk1MZGlPVWxUa0Vza1Fvd1FMWGktM1duM2M3VldzQXhqVURfcTBldUVtZw?oc=5" target="_blank" rel="noopener">개인정보 유출 신고 폭증…개보위, 175건 1년째 미처리 “대형 사건 우선 처리 탓”</a></h3>
+            <span class="feed-src">한양경제</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 17:41</span>
             <h3><span class="feed-tag hot">CISA KEV</span><a href="https://securityaffairs.com/203377/hacking/u-s-cisa-adds-perforce-puppet-enterprise-flaw-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" rel="noopener">미국 CISA, Perforce Puppet Enterprise 결함을 악용 확인 취약점(KEV) 카탈로그에 추가</a></h3>
             <span class="feed-orig">U.S. CISA adds Perforce Puppet Enterprise flaw to its Known Exploited Vulnerabilities catalog</span>
@@ -1221,9 +1487,19 @@
             <span class="feed-src">Security Affairs</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 17:41</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KODV4bV9BRGtkMkJPMFJMaE5ReTUtb3VNX0FOWnhFS2FObUVyYkVjcE1zUjNLdjJ5YV9Ib0NuQVNUb3ItWUU3bV9weTN1QkdrT1dhdmp3?oc=5" target="_blank" rel="noopener">노란우산 개인정보 36만2000명 유출</a></h3>
+            <span class="feed-src">매일경제</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 17:36</span>
             <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209607" target="_blank" rel="noopener">수능장 안경 매 교시 확인…AI 부정행위에 감독인력 8,400명 추가</a></h3>
             <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 17:35</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNdkU1VUJCUHBrUElxSl9BbVNxZFZwYU1KX0FFaEdHbERSMl96ZXJwdERMRnVEaHgydFFYbkhlMDY1a3B1YkczMHJncjdjMmUxemNzVE5UWkdadXJ3TEcwWEhrREZEUm1JNk5UZDREcTl1dUFFdEY4dDBxVkVqYV9xbWxjdmN2a1pySUtNb1Rn?oc=5" target="_blank" rel="noopener">노란우산 개인정보 유출 36만여 명…192만 명 가입자 5명 중 1명꼴</a></h3>
+            <span class="feed-src">국제신문</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 17:32</span>
@@ -1248,6 +1524,16 @@
             <span class="feed-orig">British Scattered Spider hacker sentenced to 6 years in prison</span>
             <p class="feed-sum">영국 출신 Scattered Spider 해커가 징역 6년을 선고받았다는 소식</p>
             <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 17:23</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE0yTFFKbTl2TnF3anBJbTFybWZNYVNnNmNhanRHdDV5c01IbHVMWGdZUDVEZ1hMUmdBSHBEVVZrdGt1eU82V2hSemJ2WkJYVkotNE8tUnIzdXBlY25kaXZqRWVub1ZiejdpN085OA?oc=5" target="_blank" rel="noopener">노란우산 개인정보 유출 의심 36만명…피해 규모 확대</a></h3>
+            <span class="feed-src">스페셜경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 17:21</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE11RGRDeUMteEdmVzdnX2tTV0F6ODVxTXFnSVdGemI5Z2ZCZnl6aEV3cndmY3hBVkNndDZ4ZmMyZVQ5RDhKYl8wUG9ucElYbG9Hb2RiZTV3UnhKNzNlc0s1WFJScmR4eW9rUDNV?oc=5" target="_blank" rel="noopener">"우리 사회 안전하다" 38%, 10년새 최고…10명 중 6명은 개인정보 유출 우려</a></h3>
+            <span class="feed-src">한국부동산뉴스</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 17:17</span>
@@ -1282,6 +1568,11 @@
             <span class="feed-time">11/18 17:08</span>
             <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209603" target="_blank" rel="noopener">데일리시큐, 2027년 웨비나 및 C레벨 보안 행사 확대…조찬세미나부터 마스터즈까지</a></h3>
             <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 16:55</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE00cVhZdFZTNmdfSnFjVklzZVdTN0hWUjFZSk9JQ3pHM3ZyVmU1cy13NnV1emlpY0RtenJLOGhlWUhiVUJqVzQ3QU1wSEFNTi1IcTR5T0dKYTdYT0Y2ejZXNk02M1k?oc=5" target="_blank" rel="noopener">노란우산 개인정보 36만건 유출 확인…계좌번호까지 노출</a></h3>
+            <span class="feed-src">매일일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 16:50</span>
@@ -1345,6 +1636,11 @@
             <span class="feed-src">데일리시큐</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 16:05</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE8tV1dKX2ppUllYM3JsOGhfRUlRazZsN00zTGlUTlZhb24tczZaQzllR1ByZlJ2ZXo4NmxTNzQtT1VaOGl2QkdjekpLdHktM1Y3b3ZxOTZaOUtSZ3V5VWNmUA?oc=5" target="_blank" rel="noopener">미래에셋생명 해킹 피해 `눈덩이`…개인정보 유출 1만명 넘어</a></h3>
+            <span class="feed-src">마이데일리</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 16:01</span>
             <h3><a href="https://zdnet.co.kr/view/?no=20261118125141" target="_blank" rel="noopener">불면증 고민 끝…렘수면 늘려주는 초음파 패치 나왔다</a></h3>
             <span class="feed-src">ZDNet Korea</span>
@@ -1384,6 +1680,11 @@
             <span class="feed-src">보안뉴스</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 15:46</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9fT3hDVko4eHZTSTI2Yklzb0QtU3ZyNlkxLVJmUGdsNExGRHhSU1ZIaUhnbjhRQUR4eVFoODJWZVl3MHZudTF6cHR3cW80MVJfY2lreWVlSFFtZElUT0VZZ3ZQTmYtcTlYamNCSU1VRDVKTmc?oc=5" target="_blank" rel="noopener">국민 10명 중 6명 개인정보 유출 불안... 정보 보안 우려 ‘여전’</a></h3>
+            <span class="feed-src">충남일보</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 15:45</span>
             <h3><a href="https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html" target="_blank" rel="noopener">공격자들, Microsoft의 Agent Framework PyPI 패키지를 침해해 클라우드 자격증명을 탈취</a></h3>
             <span class="feed-orig">Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials</span>
@@ -1416,6 +1717,11 @@
             <span class="feed-orig">TapMap: Free, open-source network map</span>
             <p class="feed-sum">무료 오픈소스 네트워크 맵 도구 TapMap을 소개한 글</p>
             <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 15:28</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE40TkdIaG5BZk4xVUN1Q2dnNU9nOERFREFtcWd1VmNlNzVIb3Q2OGJqOXB3SVJiWWZ2Rmg4VUVnNkxSbmpUNFdPUGZ3WmRyVGYwNTFJT3FScUVuMXJOSE1qV0NfZkhhbmo3dGw4?oc=5" target="_blank" rel="noopener">국민 10명 중 6명 개인정보 유출 불안…사회 안전 인식은 개선</a></h3>
+            <span class="feed-src">애드뉴스인천</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 15:23</span>
@@ -1488,6 +1794,11 @@
             <span class="feed-src">The Hacker News</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 14:58</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBVTlQwUkd6aEpYRTQ5aDRWZGVpa2xxRzA2ODlyMVBkRjZMZDMyUl9Xc1hrRUcyNEhWeWNBZ0c0QWt5RnlPTWs1RHIxYWtCR2Q1RFk3WFVRSy0tRlVUUkVzd0thbXpocUd6WFRWNXRkSznSAXRBVV95cUxNU0UxZUFlMFlfM2FBSWdkUFVqY0tLUEp2c29ILVgzWG5aaXMyM2d4OVRqV1J1SldjbE9NM2JydUxfcFQ4SXFTTHJuY3pXX04zekVyY0NoTTFLYndGNXQyR2dqemVOT1h4bWhnNzFPQks5eTdpZg?oc=5" target="_blank" rel="noopener">잇단 해킹에 보안팀 비상…AI스페라 "AITEM으로 부담 던다"</a></h3>
+            <span class="feed-src">IT조선</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 14:56</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147355" target="_blank" rel="noopener">노란우산 개인정보 유출 규모 특정... 20만명 넘었다</a></h3>
             <span class="feed-src">보안뉴스</span>
@@ -1523,6 +1834,16 @@
             <span class="feed-time">11/18 14:16</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261118113600017" target="_blank" rel="noopener">자바 취약점, 패치만으론 부족…내부망·위탁 서비스도 점검해야</a></h3>
             <span class="feed-src">연합뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 14:09</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBSa2xaZmRXT0x6U2UyZFRTV3k5UU80Uzg1N3NWNFNJWHZkTVJJMjZ6VndCOWZiMzJ2OXp6N1JOb1htcE5FS3JZRlViSkJwQ3cxajliVjd2eXVtLU9rVkRWNndYRkw5M3NGcGZFazVvWjFPUQ?oc=5" target="_blank" rel="noopener">모바일 지역사랑상품권 앱 개인정보 유출…"피해 최소화 총력"</a></h3>
+            <span class="feed-src">LG헬로비전</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 14:08</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFByWkozcHVUdGV0VlFMX3dPWlRha2FBelFmbmpja3ZiY1duQzlhSjNibDVxVllaT29mQ1Ryb1AtQVo5QmhHVnNoOURjZk05N1R6aDZxbXFpMTB2ZU5mMlV1ejFESTI5SUtsYkFkb3BzMGs?oc=5" target="_blank" rel="noopener">노란우산 개인정보 유출 36만2천명으로 눈덩이…가입자 5명 중 1명 피해</a></h3>
+            <span class="feed-src">비즈중앙</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 14:00</span>
@@ -1681,6 +2002,11 @@
             <span class="feed-src">전자신문</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 11:16</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFAycU5xd1NubGFkZzkzUjdSUGxUaWNHcDBpNUlCaG9heUZRZUNCN044cUMtRXRXaEF2SzFWbE5fakhZbzViMTZMY01RU0NaOVNEajBvMHF5STJkR3htaXlxZ0ZmQnjSAWhBVV95cUxPYklWc21YSWV3UmtLblVsaTNnYnFtS1NHZGtpdjNlT2lwa3R5OHM1MjlXTXhtLU1aYjFoeHF5cUJSeklIVVgtRWZINW1LQmJIRlJqTVZXajF0elcxNXJUWHBBV2VYTFl2RA?oc=5" target="_blank" rel="noopener">중기중앙회 노란우산 해킹, 20.5만명 개인정보 유출</a></h3>
+            <span class="feed-src">법치뉴스</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 11:15</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261118059800004" target="_blank" rel="noopener">청년 아이디어로 서울의 밤을 바꾼다…'야간경제 활성화 해커톤'</a></h3>
             <span class="feed-src">연합뉴스</span>
@@ -1740,6 +2066,11 @@
             <span class="feed-time">11/18 10:35</span>
             <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300276" target="_blank" rel="noopener">자바포셸 비상…OpenJDK 취약점에 원격 코드 실행 위험</a></h3>
             <span class="feed-src">데이터넷</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 10:34</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNSDJRWGE2SllsVjN0QVY3Vk90U3R0SWUzd1BaX1Rxd2xFWUNGU0hfR2QydEZYZGdfWWtTRnJORl83QzhuMHh1THY3UWt0MW95UWxtazJTZ2Zqd3ZmeTVURTVITmIzNTc1T3lYZFV5dlBncUszX2Rva0dlMW5IQjJCXw?oc=5" target="_blank" rel="noopener">대구·경북 대학 잇단 해킹… 영남대도 구성원 개인정보 유출</a></h3>
+            <span class="feed-src">Tbc.co.kr</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 10:32</span>
@@ -1802,6 +2133,11 @@
             <span class="feed-src">연합뉴스</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 09:48</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBBNjY0UTYtVDJyUVZMU3ROR2pJZEJLQXFKcVVUTDZwVW5zTkJzYW16Y0hmdERWUnI1dE93VmJtR2RVMWpOVFFRQ2x6NWJpWmNhNmlmZFZWN3VnamFuSFRBdVNWT0duaE43MUx4TW1VY9IBc0FVX3lxTE11VmNhQzMzS0twaGV6dlVIcWVqdjZoTzlKM0NfdXQ3VXVvVW42d3hrN2Y2bU5SMWU2Q3lsWTl4WVkzYlpVVnIwdkJTLXJSdGJpdFI0d25xSnVCWVZYY2I2REg4aTRiYU5YOS1MYzFYdTVJdms?oc=5" target="_blank" rel="noopener">미래에셋생명 개인정보 유출 피해 '1만명' 넘었다</a></h3>
+            <span class="feed-src">세이프타임즈</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 09:45</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261118046000073" target="_blank" rel="noopener">"日, 방위장비 수출 원칙서 '비핵 3원칙' 삭제 검토"</a></h3>
             <span class="feed-src">연합뉴스</span>
@@ -1820,6 +2156,11 @@
             <span class="feed-time">11/18 09:27</span>
             <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300263" target="_blank" rel="noopener">인크로스, 광고·커머스 보안 신뢰성 강화 … ‘ISMS-P’ 인증 취득</a></h3>
             <span class="feed-src">데이터넷</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 09:24</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9HM01RcnlqUnktZHktZHZXLXhfa2dUS2c2MUliWG5Eb1VEaG9tQWFGLW95OWlMQTZDb0ZRTTV2YjNrd05jY0VUWFFtUkJGYUZrZVN5OEJ0UmctNlpjTmJhbWQtY2NmQ21MMFE?oc=5" target="_blank" rel="noopener">미래에셋생명, 개인정보 유출 1만명 돌파</a></h3>
+            <span class="feed-src">서울파이낸스</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 09:18</span>
@@ -1860,6 +2201,11 @@
             <span class="feed-orig">Java4Shell (CVE-2026-114938): Pre-auth RCE in OpenJDK, and the challenge of image and feature bloat</span>
             <p class="feed-sum">Sysdig가 Java4Shell의 OpenJDK 사전 인증 RCE와 이미지 비대화 문제를 분석한 글</p>
             <span class="feed-src">Sysdig</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 08:47</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBRZWhidC1wOXQ0U3VtMkxOdXdmWnBFSlMtV0hCb1dJVUp6dEJFSnFxa3FIWWZWbHpna3I3M0dqamg2b3YyUDIxQzBIT3B1eXY4LU5yYUdWSFh0MzRnM2dwbUpqel9jODBNbGtIWWpVOFdxZkxadU1r0gFmQVVfeXFMUFpLMmE2OFFWbnZXb29NYmZwRXNmYjMxVDA5OTc5VDNXVWhFRE1GMGVja281elhoVFhvcVNKdTN4SkpSaUQwZEVaXzRlc2g4eU55WV8wR0p3dExyQzNKUTRINUVLY0Zn?oc=5" target="_blank" rel="noopener">‘자바’ 취약점 확인에…靑, 민관군 긴급 대책회의 개최</a></h3>
+            <span class="feed-src">동아일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 08:15</span>
@@ -2207,6 +2553,11 @@
             <span class="feed-src">The Hacker News</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/17 20:47</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZWWIyS05fYnlzVlBOS3VYYmtTSF8zWjRLZlBKNFRtazZtYkJGQjVyTFVFYXZUdkhtN1c5TVpEdEJuZGJyMGo5Mko1RmUwOWcya3Flb2JiNkxGRFdyNm1QRE1uVERIdzNRbHc?oc=5" target="_blank" rel="noopener">외부에 맡긴 업무가 보안 구멍으로…기업·공공기관 연쇄 '개인정보 유출'</a></h3>
+            <span class="feed-src">뉴스버스</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/17 19:56</span>
             <h3><a href="https://isc.sans.edu/diary/rss/33526" target="_blank" rel="noopener">MX 레코드에 관심을 보이는 피싱 페이지 (11월 17일 화요일)</a></h3>
             <span class="feed-orig">A phishing page interested in MX records, (Tue, Nov 17th)</span>
@@ -2245,6 +2596,16 @@
             <span class="feed-orig">Critical Java4Shell flaw allows RCE attacks on major Java applications</span>
             <p class="feed-sum">Java4Shell 취약점으로 주요 Java 애플리케이션에 대한 원격 코드 실행 공격이 가능하다는 보도</p>
             <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 17:21</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE5pWWJiazdjdU9lNkU5Nk84bUNoSHh6eDROc0U2dHViRmQzZExoTExnNld6U2dlR3p2WThVT1A5MFZPZ1JLazRoQjFfYU5haEZwcjJKSl9vVmRQb1JpeFBhRGN3?oc=5" target="_blank" rel="noopener">영남대도 해킹 발생… 학번·성명 등 개인정보 유출 "정확한 피해 규모 파악 중"</a></h3>
+            <span class="feed-src">매일신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 17:17</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBWbWpQc0J4c1RlaGc2aERiUE5LNXVjcEZkRGlGREhyVm5UcVNoMzNmSXFjZUtyaGVWNVNqLTk5MDBxN1Zuak05QThsaDdsVHlWd3NNUExhU2laYVdMbzl2UURzcWZONjZTd2c?oc=5" target="_blank" rel="noopener">레고랜드서 개인정보 유출 사태...연간회원 정보 털려</a></h3>
+            <span class="feed-src">금융소비자뉴스</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/17 17:00</span>
@@ -2304,6 +2665,11 @@
             <span class="feed-src">보안뉴스</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/17 15:45</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFBRRVVudmh0Q2wtalJYeVJUTDQ2bDNQNE9TWGJLU2QtaEtJaDNTVTNnWHgwUjI5WThsN3V0b0kxMGUwQy14cDNSOFJaVQ?oc=5" target="_blank" rel="noopener">강원대 이어 한림대도 연구시스템 해킹.. 개인정보 유출 &gt; 뉴스데스크</a></h3>
+            <span class="feed-src">MBC 강원영동</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/17 15:13</span>
             <h3><a href="https://databreaches.net/2026/11/17/cyberattack-on-japans-fugaku-supercomputer-puts-data-of-4597-users-at-risk/" target="_blank" rel="noopener">일본 Fugaku 슈퍼컴퓨터에 대한 사이버 공격으로 사용자 4,597명의 데이터가 위험에</a></h3>
             <span class="feed-orig">Cyberattack on Japan's Fugaku Supercomputer Puts Data of 4,597 Users at Risk</span>
@@ -2340,6 +2706,11 @@
             <span class="feed-time">11/17 14:13</span>
             <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209566" target="_blank" rel="noopener">동의대학교 연구비관리시스템 해킹…개인정보 530명 유출</a></h3>
             <span class="feed-src">데일리시큐</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 14:07</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdEpLRVVNeEpLUHFtVTdySWtTZVlnVlNqU3FySkxMeE1IRXRrTTZqRXB1TlVZb2YzZElhcFlFc2RXakRuXzI4ZDVWclJWdXBtbVBVZFdDTlVFUnY3N3Z0cG5rUFVnSlFjUVJpS1dyNkxFOV9Cc2lFaDBQRnBpbVotUzJmaXc3RUZU?oc=5" target="_blank" rel="noopener">AI 해킹 시대, 금융권 개인정보 유출 사태 규탄 및 대책 촉구 기자회견</a></h3>
+            <span class="feed-src">참여연대</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/17 14:00</span>
@@ -2401,6 +2772,11 @@
             <span class="feed-orig">ISC Stormcast For Tuesday, November 17th, 2026</span>
             <p class="feed-sum">SANS ISC의 11월 17일자 스톰캐스트 방송</p>
             <span class="feed-src">SANS ISC</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 11:05</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxQeWdBWW1uR05YV3FXdktwb3Brd2UwWUZZTlZjQjlVTnhlYktJVXdVZHVrRS1vbEJyQS1qaHlaa0c5WFZyMUFta0ZJajRRYmR3NHRGa0FucWJaZEhGdzhEMjVtcllTRzZvSnU4WGd0dnRrV1RrTUw3LXFzVVhWWTZLRl9tS1R4TkFJanfSAZ4BQVVfeXFMTXQzcThmd0VIVmpkbUJOaXZtRGpfeHRCR2FTZEpzWXdPcmY5WnJIZFJaZm4zckVmUVpzVXVHZVFYUVV5dE9FeEtsOHloOXpMYm1aRHE2dTlEdzhqbGRwenVrUnZyUWQ4d1F0OVBqVzFJby1CN3ZxaGpDQy11Z0xlWnFrQm4wNVFTdHFjclhzVWYycms5bFZWazNDOFo0T2c?oc=5" target="_blank" rel="noopener">레고랜드서 고객 개인정보 유출 사태… 연간권 바코드까지 털려</a></h3>
+            <span class="feed-src">Chosunbiz</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/17 10:58</span>
@@ -2576,6 +2952,11 @@
             <span class="feed-src">Heimdal</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/16 18:46</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTFB0V1VKeTg5cW9VVWtDWkdTRDZXeFRwdlhlQWw5WWZnQ2lvMzBHWlNYdFR1QWlKdUh3aVBtZUttNm5tY2pIc1k4?oc=5" target="_blank" rel="noopener">[공동기자회견] AI 해킹 시대, 금융권 개인정보 유출 사태 규탄 및 대책 촉구 기자회견</a></h3>
+            <span class="feed-src">경제정의실천시민연합</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/16 16:00</span>
             <h3><a href="https://securelist.com/retadup-delivers-coffeeloader/121908/" target="_blank" rel="noopener">USB 웜의 두 번째 삶: CoffeeLoader를 퍼뜨리는 Retadup</a></h3>
             <span class="feed-orig">A USB worm’s second life: Retadup spreading CoffeeLoader</span>
@@ -2603,6 +2984,11 @@
             <p class="feed-sum">SANS ISC의 11월 16일자 스톰캐스트 방송</p>
             <span class="feed-src">SANS ISC</span>
           </article>
+          <article class="feed-item">
+            <span class="feed-time">11/16 10:18</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPVDZFX2lyNUxKaHBuZEJDc0RZTjF5alJtQmxpdEV1UVNqMXZmMXdsNDVUb3ZheW4yOFVNdGtKR0lpT09aeW4yNzVDRjN0NmxyZ1F6X1FUM3ItM2s?oc=5" target="_blank" rel="noopener">강원대 산학협력단 해킹에 개인정보 유출</a></h3>
+            <span class="feed-src">강원일보</span>
+          </article>
             
             </div>
           </div>
@@ -2612,9 +2998,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>13</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>149</b><span>국내 동향 — 11/17~19 보도</span></div>
-        <div class="stat"><b>229</b><span>해외 동향 — 11/16~19 보도</span></div>
-        <div class="stat"><b>66</b><span>CVE·취약점 — CVSS 9.0 이상 45건 포함</span></div>
+        <div class="stat"><b>222</b><span>국내 동향 — 11/16~19 보도</span></div>
+        <div class="stat"><b>231</b><span>해외 동향 — 11/16~19 보도</span></div>
+        <div class="stat"><b>67</b><span>CVE·취약점 — CVSS 9.0 이상 46건 포함</span></div>
         <div class="stat"><b>57</b><span>다크웹 유출 — 11/18 08:08 확인 기준 24시간 건수 (+19%)</span></div>
       </div>
 
@@ -2708,10 +3094,18 @@
         <div class="tab-panel" role="tabpanel" id="panel-8" aria-labelledby="tab-8">
           <h3>Check Point 방화벽 ‘PHP2Shell’ 체인 — KEV 마감 경과</h3>
           <div class="status-row"><span class="chip ongoing">패치·침해 점검 중</span><span class="chip">최근 동향 2026-11-19</span></div>
-          <p>Gaia DynamicCLI 권한 누락 취약점 CVE-2026-123039가 PHP2Shell(CVE-2026-109618/109619, 9.2)과 연계돼 루트 권한 탈취로 이어지는 체인입니다. 10월 30일~11월 4일 미패치 게이트웨이 수십 대가 실제 공격을 받았고, CISA KEV 적용 마감(11월 16일)이 이미 지났습니다. 데이터넷은 11월 19일 PHP2Shell에 이어 자바포셸(Java4Shell)까지 이어지는 흐름을 짚으며, AI가 촉발한 ‘제로데이 양산 시대’를 다룬 후속 분석을 보도했습니다.</p>
+          <p>Gaia DynamicCLI 권한 누락 취약점 CVE-2026-123039가 PHP2Shell(CVE-2026-109618/109619, 9.2)과 연계돼 루트 권한 탈취로 이어지는 체인입니다. 10월 30일~11월 4일 미패치 게이트웨이 수십 대가 실제 공격을 받았고, CISA KEV 적용 마감(11월 16일)이 이미 지났습니다. 데이터넷은 11월 19일 PHP2Shell에 이어 자바포셸(Java4Shell)까지 이어지는 흐름을 짚으며, AI가 촉발한 ‘제로데이 양산 시대’를 다룬 후속 분석을 보도했습니다. 데일리시큐는 11월 19일 GS네오텍이 '시큐리티 렌즈'를 활용해 PHP2Shell 등 고위험 취약점에 선제 대응한다고 보도했고, 이티뉴스도 GS네오텍의 선제적 클라우드 방어 체계 제시를 전했다. The Hacker News는 11월 19일 PHP가 지원되는 모든 버전의 치명적 보안 결함을 경고하고 당일 수정판 배포를 예고했다고 전했으며, 디지털투데이는 미 NSA 내부망 장애가 AI가 찾은 PHP 취약점의 긴급 패치 때문이라고 보도했다.</p>
           <a class="src-link" href="https://hol.org/blog/cve-2026-123039-check-point-firewall-root-cisa-kev" target="_blank" rel="noopener">hol.org — CVE-2026-123039 분석</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.datanet.co.kr/news/articleView.html?idxno=300312" target="_blank" rel="noopener">데이터넷 — PHP2Shell 이어 자바포셸 ··· AI가 촉발한 ‘제로데이 양산 시대’</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.dailysecu.com/news/articleView.html?idxno=209617" target="_blank" rel="noopener">데일리시큐 — 'PHP2Shell' 등 고위험 취약점 선제 대응...GS네오텍 '시큐리티 렌즈' 활용</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.etnews.com/20261119000264" target="_blank" rel="noopener">전자신문 — PHP 취약점 대응한다…GS네오텍, 선제적 클라우드 방어 체계 제시</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html" target="_blank" rel="noopener">The Hacker News — PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1ZTW1Md1JJN3lqLXl1UFJRZFV4M2N1cHVOdGJsZEotc3NHN1dNVXBic2gtMWU1UTNwT0dJTFkxaXdDWXhfYWFUY2pVZ3JyWkl6SlFGTHV4WHdjendrSVd3YWx4NF9oU29rWVdObUxhVXJveGM?oc=5" target="_blank" rel="noopener">디지털투데이 — 美 NSA 내부망 먹통, AI가 찾은 PHP 취약점 긴급 패치 때문</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-9" aria-labelledby="tab-9">
@@ -2739,7 +3133,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-11" aria-labelledby="tab-11">
           <h3>Java4Shell — OpenJDK 원격 코드 실행 주장 (CVE-2026-114938)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
-          <p><strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. Cisco Talos도 11월 18일 관련 분석 글을 게시했습니다. 단, 일부 분석가는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. The Hacker News는 11월 18일 Java4Shell이 Java 17 이상 AVX-512 VBMI 서버에서 Jira·Jenkins·Keycloak의 사전 인증 원격 코드 실행을 가능하게 한다고 보도했다. SecurityWeek는 Java4Shell이 다수 엔터프라이즈 애플리케이션을 탈취 위험에 빠뜨린다고 보도했고, 에버스핀은 에버세이프 웹으로 Java4Shell을 차단한다고 밝혔다. 펜타시큐리티도 Java4Shell 방어 지원을 위해 웹방화벽 탐지 규칙을 제공한다고 밝혔다. The Record는 11월 18일 CISA가 Java4Shell 경고를 발령했으며, AI가 발견한 이 Java 버그가 Fortune 500 대다수 기업에 영향을 미친다고 보도했다. CISA는 11월 18일 Java4Shell 취약점의 즉시 패치를 촉구했다. Security Affairs는 11월 18일 Java4Shell 취약점을 ‘65자에서 원격 코드 실행으로’ 이어지는 구조로 분석했고, Help Net Security는 같은 날 실제 악용이 까다로우며 특정 CPU 조건에 달려 있다고 전했다. Malwarebytes는 11월 18일 이 결함을 치명적이지만 영향 범위가 좁은 취약점으로 평가했다. 11월 19일에는 엔키화이트햇이 Java4Shell 점검 도구를 배포했고, 데이터넷은 공공 시스템의 71%가 자바 기반이라며 보안 기업들의 무료 점검 도구 배포를 전했다. 11월 19일 데일리시큐 보도에 따르면 엔키화이트햇이 Java4Shell 내부 점검 도구를 배포했다. Security Boulevard는 11월 19일 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell)을 다룬 글을 게시했다. SANS ISC와 Elastic, Sysdig, SentinelOne, Orca Security, Aqua Security의 Java4Shell 분석·대응 기사도 새로 들어왔다.</p>
+          <p><strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. Cisco Talos도 11월 18일 관련 분석 글을 게시했습니다. 단, 일부 분석가는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. The Hacker News는 11월 18일 Java4Shell이 Java 17 이상 AVX-512 VBMI 서버에서 Jira·Jenkins·Keycloak의 사전 인증 원격 코드 실행을 가능하게 한다고 보도했다. SecurityWeek는 Java4Shell이 다수 엔터프라이즈 애플리케이션을 탈취 위험에 빠뜨린다고 보도했고, 에버스핀은 에버세이프 웹으로 Java4Shell을 차단한다고 밝혔다. 펜타시큐리티도 Java4Shell 방어 지원을 위해 웹방화벽 탐지 규칙을 제공한다고 밝혔다. The Record는 11월 18일 CISA가 Java4Shell 경고를 발령했으며, AI가 발견한 이 Java 버그가 Fortune 500 대다수 기업에 영향을 미친다고 보도했다. CISA는 11월 18일 Java4Shell 취약점의 즉시 패치를 촉구했다. Security Affairs는 11월 18일 Java4Shell 취약점을 ‘65자에서 원격 코드 실행으로’ 이어지는 구조로 분석했고, Help Net Security는 같은 날 실제 악용이 까다로우며 특정 CPU 조건에 달려 있다고 전했다. Malwarebytes는 11월 18일 이 결함을 치명적이지만 영향 범위가 좁은 취약점으로 평가했다. 11월 19일에는 엔키화이트햇이 Java4Shell 점검 도구를 배포했고, 데이터넷은 공공 시스템의 71%가 자바 기반이라며 보안 기업들의 무료 점검 도구 배포를 전했다. 11월 19일 데일리시큐 보도에 따르면 엔키화이트햇이 Java4Shell 내부 점검 도구를 배포했다. Security Boulevard는 11월 19일 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell)을 다룬 글을 게시했다. SANS ISC와 Elastic, Sysdig, SentinelOne, Orca Security, Aqua Security의 Java4Shell 분석·대응 기사도 새로 들어왔다. 동아일보는 11월 19일 '자바' 취약점 확인에 따라 청와대에서 민관군 긴급 대책회의가 열렸다고 보도했고, 뉴스웍스는 개보위가 Java4Shell 관련 유출 예방을 당부했다고 전했다.</p>
           <a class="src-link" href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener">Cisco Talos — CVE-2026-114938: Critical vulnerability in OpenJDK JAVA</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability" target="_blank" rel="noopener">Tenable — Java4Shell (CVE-2026-114938) FAQ</a>
@@ -2792,6 +3186,10 @@
           <a class="src-link" href="https://orca.security/resources/research/java4shell-critical-openjdk-base64-decoder-flaw-could-allow-unauthenticated-remote-code-execution/" target="_blank" rel="noopener">Orca Security — “Java4Shell”: Critical OpenJDK Base64 Decoder Flaw</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.aquasec.com/blog/java4shell-vulnerability-how-should-security-teams-identify-and-reduce-exposure/" target="_blank" rel="noopener">Aqua Security — Java4Shell Vulnerability: How Should Security Teams Identify and Reduce Exposure?</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBRZWhidC1wOXQ0U3VtMkxOdXdmWnBFSlMtV0hCb1dJVUp6dEJFSnFxa3FIWWZWbHpna3I3M0dqamg2b3YyUDIxQzBIT3B1eXY4LU5yYUdWSFh0MzRnM2dwbUpqel9jODBNbGtIWWpVOFdxZkxadU1r0gFmQVVfeXFMUFpLMmE2OFFWbnZXb29NYmZwRXNmYjMxVDA5OTc5VDNXVWhFRE1GMGVja281elhoVFhvcVNKdTN4SkpSaUQwZEVaXzRlc2g4eU55WV8wR0p3dExyQzNKUTRINUVLY0Zn?oc=5" target="_blank" rel="noopener">동아일보 — ‘자바’ 취약점 확인에…靑, 민관군 긴급 대책회의 개최</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBXbUdhSzBJRlJ3Q1ktVnQtYmhTVHBlN0ttTUw1TmdXYnlPenMtUnFzY3lHZ3hsLTJQekhWSERMX1V6Wnd4RUxSUl9RZ1hmb0ZGOTE3Z296MVJOT0czclFQUU9LOU5tOWdvdjEwa0tqQdIBc0FVX3lxTE5sMENidEM3bms5d3ZKcUZaejFiaDVoQXdGTk9iS0ZRaHFTeDROaDhHRjhmX2w3TFJjbDlhV1JPMWxxRVk3WjE3c2tKS0htTGJ3VF9xbFk1VXdkNk5LN0djWWVFU3BQMmhpaEhleHlPRE16T0U?oc=5" target="_blank" rel="noopener">뉴스웍스 — [시큐리티 포커스] ADT캡스 수험생 이동 지원·티오리 nginx 취약점 발견·GS네오텍 선제적 클라우드 방어·개보위 Java4Shell 유출 예방 당부</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-12" aria-labelledby="tab-12">
@@ -2807,7 +3205,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13">
           <h3>NGINX2Root — nginx 치명적 취약점 5건 (CVE-2026-123007)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
-          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다.</p>
+          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다.</p>
           <a class="src-link" href="https://blog.qualys.com/product-tech/patch-management/2026/11/18/nginx2root-five-nginx-flaws-led-by-cve-2026-123007-how-to-find-mitigate-and-patch-now" target="_blank" rel="noopener">Qualys — NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityboulevard.com/2026/11/nginx2root-cve-2026-123007-and-four-more-unauthenticated-remote-code-execution-in-nginx/" target="_blank" rel="noopener">Security Boulevard — NGINX2Root (CVE-2026-123007 and four more)</a>
@@ -2823,6 +3221,14 @@
           <a class="src-link" href="https://orca.security/resources/research/two-critical-nginx-http-2-flaws-could-allow-unauthenticated-remote-code-execution/" target="_blank" rel="noopener">Orca Security — Two Critical NGINX HTTP/2 Flaws Could Allow Unauthenticated Remote Code Execution</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.aquasec.com/blog/nginx-http2-vulnerabilities-affected-images/" target="_blank" rel="noopener">Aqua Security — NGINX HTTP/2 Vulnerabilities: How to Identify Affected Images and Apply Security Updates</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.yna.co.kr/view/AKR20261119000251017" target="_blank" rel="noopener">연합뉴스 — 세계 웹사이트 30% 쓰는 엔진엑스 '보안 비상'…정부 긴급 권고(종합)</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5HTHFVM3VWYW0zdWszNlp5Znd6MzJnN2tiNE9qLXBISlBrU3BfMllDZjdmUjFhV0hvbGtrSXpZRmkyWk5LaGhfZ2QtMHphemp0S1prRlhVOHA0eEd0am1yTGRxdE5kNVRIS0QtMERn0gFzQVVfeXFMT3hBc1Fzem4zT3lxMkJ2T3lwTE9Pb3VjYk1jaE9mOW1hN0JjTXg0MGhJNGhYelhfNzBndjJxZTZoblhKVUxlTjMyUXdsOUh6WW1fZENuT3dJRWkzS1d0NEE3TkF1Q1dzNzVWTG5CeGNCQmthNA?oc=5" target="_blank" rel="noopener">한국일보 — 웹사이트 30%가 쓰는 '엔진엑스'서 치명적 취약점 5건... 4건은 AI가 발견</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1sR2xXOWVVV3NYcWJuSkNnem1ZNmw4NFpEYXNEUjdSOHE1c185SXdtTmFuQTRWUlVPUWo1cTA5Z2dNc2ZpTzJvdF9KQUpMcU9fRzEyRnI5ZjM0OHl4bnZpSXVGS0RHbXU2X3c?oc=5" target="_blank" rel="noopener">콕스뉴스 — 국내 웹사이트 절반 넘게 쓰는 '엔진엑스' 비상…AI가 11년 숨은 취약점 찾아</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBXbUdhSzBJRlJ3Q1ktVnQtYmhTVHBlN0ttTUw1TmdXYnlPenMtUnFzY3lHZ3hsLTJQekhWSERMX1V6Wnd4RUxSUl9RZ1hmb0ZGOTE3Z296MVJOT0czclFQUU9LOU5tOWdvdjEwa0tqQdIBc0FVX3lxTE5sMENidEM3bms5d3ZKcUZaejFiaDVoQXdGTk9iS0ZRaHFTeDROaDhHRjhmX2w3TFJjbDlhV1JPMWxxRVk3WjE3c2tKS0htTGJ3VF9xbFk1VXdkNk5LN0djWWVFU3BQMmhpaEhleHlPRE16T0U?oc=5" target="_blank" rel="noopener">뉴스웍스 — [시큐리티 포커스] ADT캡스 수험생 이동 지원·티오리 nginx 취약점 발견·GS네오텍 선제적 클라우드 방어·개보위 Java4Shell 유출 예방 당부</a>
         </div>
 
           </div>
@@ -2833,11 +3239,15 @@
       <section aria-labelledby="h-kisa" id="sec-kisa">
         <div class="sec-head">
           <h2 id="h-kisa"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-kisa"><span>KISA 공지</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>보호나라(boho.or.kr) 공식 보안공지 · 15건 · 날짜가 확인되지 않은 항목은 ‘미확인’으로 표기 · CVSS는 벤더·2차 출처 표기 (KISA 공지에는 점수가 기재돼 있지 않음)</p>
+          <p>보호나라(boho.or.kr) 공식 보안공지 · 16건 · 날짜가 확인되지 않은 항목은 ‘미확인’으로 표기 · CVSS는 벤더·2차 출처 표기 (KISA 공지에는 점수가 기재돼 있지 않음)</p>
         </div>
         <div class="sec-body collapsed" id="body-kisa" hidden>
           <div class="sec-inner">
             <div class="kisa-list">
+          <article class="kisa-item">
+            <span class="kisa-date">미확인</span>
+            <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72315" target="_blank" rel="noopener">Oracle 제품 보안 업데이트 권고</a></h3>
+          </article>
           <article class="kisa-item">
             <span class="kisa-date">11/18</span>
             <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72313" target="_blank" rel="noopener">Oracle 제품 보안 업데이트 권고</a></h3>
@@ -2915,13 +3325,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 66건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 21건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 67건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 21건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 66건</button>
+          <button data-filter="all" aria-pressed="true">전체 67건</button>
           <button data-filter="new" aria-pressed="false">11/16~19 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -3254,6 +3664,14 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
           </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132622" target="_blank" rel="noopener"><span class="mono">CVE-2026-132622</span></a> · GearUP Hyperev</h3>
+              <p>GearUP Hyperev 20261020 이하, WLAN Site Survey 컴포넌트의 get_wlan_sitesurvey 함수에서 원격 OS 명령 주입 가능.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
+          </article>
           <article class="cve-row" data-kind="surfaced">
             <div class="score high">9.0<small>CVSS v4.0</small></div>
             <div class="cve-main">
@@ -3465,7 +3883,7 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 150건 · 해외 229건 · 2026년 11월 16~19일 보도</p>
+          <p>국내 151건 · 해외 229건 · 2026년 11월 16~19일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
