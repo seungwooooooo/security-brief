@@ -228,14 +228,14 @@
         <p class="mast-date">2026년 11월 19일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <p class="mast-sub">11월 16~19일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 19일 15:40 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 19일 15:55 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>16건</b> · CVE·취약점 <b>67건</b> (CVSS 9.0 이상 46건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>16건</b> · CVE·취약점 <b>68건</b> (CVSS 9.0 이상 46건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -245,11 +245,18 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 493건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 498건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/19 14:21</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">nginx</span><a href="https://ubuntu.com/security/notices/USN-9159-1" target="_blank" rel="noopener">USN-9159-1: nginx 취약점</a></h3>
+            <span class="feed-orig">USN-9159-1: nginx vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 nginx의 취약점에 대해 발행한 보안 공지</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/19 13:40</span>
             <h3><span class="feed-tag hot">속보</span><span class="feed-tag">NGINX2Root</span><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aMk9WZlVlLUlZM1dVVko0VEdyNkRxTGpJbXRyOHdwQlpuaFpRZlNidWVpOVotVVlDa2syeFkzNzltSVBuZ1pJclVzaG9saWVyTjBlQzhuTXFYbkFiZm5Wc3dlYnBIWXc?oc=5" target="_blank" rel="noopener">NGINX서 치명적 보안 취약점 발견...정부, 긴급 업데이트 권고</a></h3>
@@ -276,6 +283,16 @@
             <span class="feed-src">SBS</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/19 15:50</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9KaFhVbEpYanJwSWxzSHZOSElVcUtxQ1VyUFZCRmEzRUpXLVlDSmRmdnJPYzVPVlV3OEFUOEloWFQ1NEc2U2Y2R3FwNUxJMTBrRVBMOHN5RDd2Qng2dlh4bmdCUGItVTdodEE0?oc=5" target="_blank" rel="noopener">부산 대학 3곳 연구비 시스템 해킹...대학가 해킹 잇따라</a></h3>
+            <span class="feed-src">BBS불교방송</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 15:41</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBZbEk0eDh5R3V0UW56NHNPRFM2d1ZSWkp4eDM2cnItS0hsb3pOakpndzAzUi1NbkFlTDhhQjJENWF6aWtsNkZ3eVMtcTJhazVrcWNZZkhUcGhMbkxUNTlxaEUtOTRiT25TeWc?oc=5" target="_blank" rel="noopener">‘자바 취약점’ 발견에 금융당국, 전 금융권 패치 작업 지시</a></h3>
+            <span class="feed-src">천지일보</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/19 15:31</span>
             <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209621" target="_blank" rel="noopener">더존비즈온, 공공솔루션마켓서 폐쇄망 기반 AI 에이전트 전략 공개</a></h3>
             <span class="feed-src">Dailysecu</span>
@@ -289,6 +306,11 @@
             <span class="feed-time">11/19 15:26</span>
             <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209620" target="_blank" rel="noopener">엔피코어, '2026년 중소기업 R&D 우수성과 50선' 공공혁신 부문 선정</a></h3>
             <span class="feed-src">Dailysecu</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 15:22</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9fUGhVeWFnamdxRl9HbFlOTFFYVnZUR0ZzWm9TaGdqZFpzTW9RNGdWcmxoWTZhOXBGOWlBVUdqLTY0dzdJeG5yTmF0NDBCek5tNzRFRWFuRThYay1aT1Vub2NaMU1WdC0xb1JJUQ?oc=5" target="_blank" rel="noopener">저축은행 교육관리 사이트 해킹…직원 1만244명 정보 유출</a></h3>
+            <span class="feed-src">뉴시안</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 15:17</span>
@@ -351,6 +373,11 @@
             <span class="feed-time">11/19 14:54</span>
             <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9Za2hWbnRJcy1uYVVvZEg0c0JIdlp5VTJPMG01d3ZsSlplaWRKSTR4ZDRrckRDdllZUHdaVUJrcjdFSnNrWUQ1VGp1TnRiSU9MZTJjek5DRlFBZHJmRXhoNDR4S3ZrXzNyRjM2MENB?oc=5" target="_blank" rel="noopener">[EZ 시선] 기자수첩_이유라/ "개인정보 털린 것도 억울한데"…티빙·쿠팡, 보상마저 기업 편의주의</a></h3>
             <span class="feed-src">이지경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 14:54</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNLTVpU0pVTlN0YXpZd3RkN3FGc0tyMExTMlg5VW9BT000VDdYU0t1OEZaSEhFdjlnbmJ6MTRuT29GaXVqVXM4WHlMWDhWSnBmWmpCUXhGck0xYWc5aW8wWEZpZkJSVmtzU3JHZ0QySXFxMEZCMFJ2Rllyb0FuVF9zMHpsT2UzZw?oc=5" target="_blank" rel="noopener">전주대학교·전북특별자치도교육청 잇단 해킹⋯개인정보 유출에 피싱 우려</a></h3>
+            <span class="feed-src">전북도민일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 14:51</span>
@@ -3194,9 +3221,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>13</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>257</b><span>국내 동향 — 11/16~19 보도</span></div>
+        <div class="stat"><b>261</b><span>국내 동향 — 11/16~19 보도</span></div>
         <div class="stat"><b>233</b><span>해외 동향 — 11/16~19 보도</span></div>
-        <div class="stat"><b>67</b><span>CVE·취약점 — CVSS 9.0 이상 46건 포함</span></div>
+        <div class="stat"><b>68</b><span>CVE·취약점 — CVSS 9.0 이상 46건 포함</span></div>
         <div class="stat"><b>57</b><span>다크웹 유출 — 11/18 08:08 확인 기준 24시간 건수 (+19%)</span></div>
       </div>
 
@@ -3226,11 +3253,15 @@
 
         <div class="tab-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
           <h3>국내 대학 연구행정시스템(rERP) 연쇄 해킹 — ‘KimJEN’ 주장</h3>
-          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-17</span></div>
-          <p>한림대·강원대·동의대·영남대·숙명여대(1,359건) 등에서 11월 14~17일 침해가 확인됐습니다. 공격자는 <strong>28~31개 대학</strong>의 데이터를 탈취했다고 주장하며 압축파일 31개를 유포했고, 11월 19일 수능 지원자 데이터 공개까지 거론한 것으로 전해집니다. 대학 공통 연구행정시스템 rERP를 집중 타격한 정황이 있으나, 전체 사건의 연관성과 rERP 공급업체와의 관계는 아직 확인되지 않았습니다. 데일리시큐는 공격자로 지목된 해커와의 단독 인터뷰(‘No KR No FUN’)를 11월 17일 보도했는데, 국내 30여 개 대학 해킹 주장과 달리 경찰청 해킹 주장은 하위 도메인 수준으로 <strong>미확인</strong> 상태입니다.</p>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
+          <p>한림대·강원대·동의대·영남대·숙명여대(1,359건) 등에서 11월 14~17일 침해가 확인됐습니다. 공격자는 <strong>28~31개 대학</strong>의 데이터를 탈취했다고 주장하며 압축파일 31개를 유포했고, 11월 19일 수능 지원자 데이터 공개까지 거론한 것으로 전해집니다. 대학 공통 연구행정시스템 rERP를 집중 타격한 정황이 있으나, 전체 사건의 연관성과 rERP 공급업체와의 관계는 아직 확인되지 않았습니다. 데일리시큐는 공격자로 지목된 해커와의 단독 인터뷰(‘No KR No FUN’)를 11월 17일 보도했는데, 국내 30여 개 대학 해킹 주장과 달리 경찰청 해킹 주장은 하위 도메인 수준으로 <strong>미확인</strong> 상태입니다. 11월 19일에는 부산 대학 3곳의 연구비 시스템 해킹과 전주대학교·전북특별자치도교육청의 잇단 해킹이 추가로 보도됐다.</p>
           <a class="src-link" href="https://www.boannews.com/news/articleView.html?idxno=147326" target="_blank" rel="noopener">보안뉴스 — 28개 대학 연쇄해킹</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.dailysecu.com/news/articleView.html?idxno=209555" target="_blank" rel="noopener">데일리시큐 — 해커 단독 인터뷰</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9KaFhVbEpYanJwSWxzSHZOSElVcUtxQ1VyUFZCRmEzRUpXLVlDSmRmdnJPYzVPVlV3OEFUOEloWFQ1NEc2U2Y2R3FwNUxJMTBrRVBMOHN5RDd2Qng2dlh4bmdCUGItVTdodEE0?oc=5" target="_blank" rel="noopener">BBS불교방송 — 부산 대학 3곳 연구비 시스템 해킹...대학가 해킹 잇따라</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNLTVpU0pVTlN0YXpZd3RkN3FGc0tyMExTMlg5VW9BT000VDdYU0t1OEZaSEhFdjlnbmJ6MTRuT29GaXVqVXM4WHlMWDhWSnBmWmpCUXhGck0xYWc5aW8wWEZpZkJSVmtzU3JHZ0QySXFxMEZCMFJ2Rllyb0FuVF9zMHpsT2UzZw?oc=5" target="_blank" rel="noopener">전북도민일보 — 전주대학교·전북특별자치도교육청 잇단 해킹⋯개인정보 유출에 피싱 우려</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2">
@@ -3413,7 +3444,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13">
           <h3>NGINX2Root — nginx 치명적 취약점 5건 (CVE-2026-123007)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
-          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다.</p>
+          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다.</p>
           <a class="src-link" href="https://blog.qualys.com/product-tech/patch-management/2026/11/18/nginx2root-five-nginx-flaws-led-by-cve-2026-123007-how-to-find-mitigate-and-patch-now" target="_blank" rel="noopener">Qualys — NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityboulevard.com/2026/11/nginx2root-cve-2026-123007-and-four-more-unauthenticated-remote-code-execution-in-nginx/" target="_blank" rel="noopener">Security Boulevard — NGINX2Root (CVE-2026-123007 and four more)</a>
@@ -3445,6 +3476,8 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmbWQ2UVNoanVlLWVGMGR2UXpMR0N6OWJMNnV4WWZFdTRvV0h0eUlwOGtxMHVvaXBBUDd5a1JCa1c5UXRsRkJJdVc1cXFqVmN3MnpJQTJUSWpGVnVxT2xTS9IBeEFVX3lxTE5oX3FST1RUX3ZwVzlJT0V4YmxwZmY5RlZ0NzM0NjdPUmllYzRCWkozdzQ5bThWVElGSE5BeDlNOGFrSmZwTnBsV093bnZvcU55UmNKM0o4VDNFR1loM2FQTmVTenhRSUJwSkJsSkkybkE2VkFYaVZkdg?oc=5" target="_blank" rel="noopener">뉴시스 — 전세계 3분의 1 쓰는 '엔진엑스' 취약점 발견…KISA, 업데이트 권고(종합)</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1aMk9WZlVlLUlZM1dVVko0VEdyNkRxTGpJbXRyOHdwQlpuaFpRZlNidWVpOVotVVlDa2syeFkzNzltSVBuZ1pJclVzaG9saWVyTjBlQzhuTXFYbkFiZm5Wc3dlYnBIWXc?oc=5" target="_blank" rel="noopener">M이코노미뉴스 — NGINX서 치명적 보안 취약점 발견...정부, 긴급 업데이트 권고</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://ubuntu.com/security/notices/USN-9159-1" target="_blank" rel="noopener">Ubuntu Security Notices — USN-9159-1: nginx vulnerabilities</a>
         </div>
 
           </div>
@@ -3541,13 +3574,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 67건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 21건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 68건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 22건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 67건</button>
+          <button data-filter="all" aria-pressed="true">전체 68건</button>
           <button data-filter="new" aria-pressed="false">11/16~19 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -4085,6 +4118,14 @@
             <div class="cve-main">
               <h3><a href="https://ubuntu.com/security/notices/USN-9158-1" target="_blank" rel="noopener"><span class="mono">USN-9158-1</span></a> · OpenJDK 27 vulnerabilities</h3>
               <p>OpenJDK 27 vulnerabilities — Ubuntu 보안 공지. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9159-1" target="_blank" rel="noopener"><span class="mono">USN-9159-1</span></a> · nginx vulnerabilities</h3>
+              <p>nginx vulnerabilities — Ubuntu 보안 공지. CVSS 점수는 표기되지 않았습니다.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
           </article>
