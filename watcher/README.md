@@ -69,7 +69,9 @@ while Java4Shell articles in the same batch got 2 tags. The fix:
    Acunetix. No working domestic (Korean) feeds were found — NoCut News,
    IT Chosun, Digital Daily, iNews24 all failed (malformed XML or 403);
    domestic stays at 10. Feed counts now: total 82 (kisa 1, cve 9,
-   domestic 10, intl 61, ransomware 1).
+   domestic 10, intl 61, ransomware 1). (Later the same day, 4 Google
+   News RSS feeds were added for domestic coverage — see "Google News
+   RSS feeds" below — bringing the total to 86 with domestic 14.)
 5. **Polling 30 → 15 min**: hook `security-brief-watch`
    `poll_interval_secs` 1800 → 900 (06:00–24:00 KST window unchanged,
    enforced by the hook script).
@@ -86,7 +88,10 @@ tags). Task-required 6-title test: 5/6 NGINX2Root titles auto-tagged
 (`nginx`); the 6th (The Register, title contains no NGINX/CVE token)
 is flagged breaking but cannot be grouped by title alone. All 6 are
 breaking. A poll now takes ~70–130 s wall clock (sequential network
-waits; CPU < 2 s).
+waits; CPU < 2 s). After the Google News expansion later the same day:
+**86/86 feeds OK, 0 failed** (full run, ~97 s), 200 new items (all
+domestic Google News, 0 from already-covered outlets — the
+`exclude_sources` filter works).
 
 ## Usage
 
@@ -118,8 +123,8 @@ takes ~60–95 s wall clock (sequential network waits; CPU < 1 s).
 
 ## Feed inventory (all verified live 2026-11-19)
 
-82 feeds, 5 categories (KISA 1, CVE 9, domestic 10, international 61, ransomware 1). Every URL below was fetched with curl and returned
-real content; nothing here is guessed. The table below lists the original 56 feeds from the 2026-11-18 expansion; the 26 feeds added in the 2026-11-19 expansion (all international) are defined in `check_feeds.py` (verified 2026-11-19: 82/82 feeds OK, 0 failed).
+86 feeds, 5 categories (KISA 1, CVE 9, domestic 14, international 61, ransomware 1). Every URL below was fetched with curl and returned
+real content; nothing here is guessed. The table below lists the original 56 feeds from the 2026-11-18 expansion; the 26 feeds added in the 2026-11-19 expansion (all international) and the 4 Google News feeds added later the same day (domestic) are defined in `check_feeds.py` (verified 2026-11-19: 86/86 feeds OK, 0 failed).
 
 ### KISA / KrCERT — 1 feed (no RSS; HTML list scrape)
 | Source | URL | Notes |
@@ -137,7 +142,7 @@ real content; nothing here is guessed. The table below lists the original 56 fee
 | Ubuntu Security Notices **(new)** | https://ubuntu.com/security/notices/rss.xml | 10 items. Ubuntu CVE fix notices (USN). |
 | Wordfence **(new)** | https://www.wordfence.com/blog/feed/ | 10 items. WordPress vulnerability reports. Feed is large (~3.8 MB full fetch) — conditional GET keeps repeat polls cheap. Latest 2026-11-12 at verification. |
 
-### Korean domestic — 10 feeds
+### Korean domestic — 14 feeds
 | Source | URL | Notes |
 |---|---|---|
 | Boannews (보안뉴스) | https://cdn.boannews.com/rss/gn_rss_allArticle.xml | Dedicated security outlet. |
@@ -150,6 +155,47 @@ real content; nothing here is guessed. The table below lists the original 56 fee
 | ITWorld Korea **(new)** | https://www.itworld.co.kr/feed/ | Keyword-filtered (general IT). 20 items, recent. |
 | CNET Korea **(new)** | https://www.cnet.co.kr/feed/ | Keyword-filtered (general IT). 15 items, recent — but 0/15 matched security keywords at verification (games/gadgets/promos). Long-tail safety net for big security stories; near-zero yield most days. |
 | Datanet **(new)** | https://www.datanet.co.kr/rss/allArticle.xml | Keyword-filtered (general IT). 50 items, recent; 8 matched at verification. |
+| Google News 보안 취약점 **(new 2026-11-19)** | https://news.google.com/rss/search?q=%EB%B3%B4%EC%95%88%20%EC%B7%A8%EC%95%BD%EC%A0%90&hl=ko&gl=KR&ceid=KR:ko | Keyword-filtered. Google News keyword search (보안 취약점). See "Google News RSS feeds" below. |
+| Google News 해킹 **(new 2026-11-19)** | https://news.google.com/rss/search?q=%ED%95%B4%ED%82%B9&hl=ko&gl=KR&ceid=KR:ko | Keyword-filtered. Google News keyword search (해킹). |
+| Google News 랜섬웨어 **(new 2026-11-19)** | https://news.google.com/rss/search?q=%EB%9E%9C%EC%84%AC%EC%9B%A8%EC%96%B4&hl=ko&gl=KR&ceid=KR:ko | Keyword-filtered. Google News keyword search (랜섬웨어). |
+| Google News 개인정보 유출 **(new 2026-11-19)** | https://news.google.com/rss/search?q=%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C&hl=ko&gl=KR&ceid=KR:ko | Keyword-filtered. Google News keyword search (개인정보 유출). |
+
+### Google News RSS feeds (domestic) — added 2026-11-19
+
+Four Google News keyword-search RSS feeds were added to cover Korean
+outlets whose own RSS feeds failed (NoCut News, IT Chosun, Digital
+Daily, iNews24 all returned malformed XML or 403). Google News
+aggregates articles from those outlets plus ~100 other Korean outlets
+(Newsis, News1, MBC, KBS, Kyunghyang, Dong-A, IT Chosun, Digital
+Daily, NoCut News, …) that the direct feeds do not poll. Verified
+2026-11-19: all 4 return HTTP 200 valid RSS; per-feed recent (≤3d)
+items: 보안 취약점 99, 해킹 98, 랜섬웨어 12, 개인정보 유출 93.
+The query `사이버 공격` was tested and rejected (87 recent but
+geopolitical noise; `개인정보 유출` is more consistently security
+relevant). A fifth candidate query is not needed — the 4 queries
+cover vulnerabilities, hacking, ransomware, and breaches.
+
+Two Google News quirks, both handled in `check_feeds.py`:
+- **Links are Google redirect URLs** (`news.google.com/rss/articles/CBMi…`),
+  not direct article URLs. URL dedup therefore cannot catch the same
+  article arriving via both a direct feed and Google News. To prevent
+  duplicates, each Google News feed carries `exclude_sources` — the
+  outlets already polled directly (보안뉴스, 데일리시큐, 연합뉴스,
+  연합뉴스TV, 지디넷코리아, 전자신문, 데이터넷). Items from those
+  outlets are dropped; Google News only surfaces outlets we do not
+  poll directly. Measured on the first run: 74 of 273 Google News
+  items (27%) were from already-covered outlets and were excluded;
+  199 were genuine new coverage.
+- **Source attribution**: Google News puts the real outlet in the RSS
+  `<source>` element and appends ` - <outlet>` to the title.
+  `parse_rss()` uses `<source>` as the item source and strips the
+  suffix, so items read like normal feed items (real outlet as source,
+  clean title). Feeds without a `<source>` element are unaffected.
+
+Cost: Google News RSS is plain HTTP RSS, same as any other feed — no
+browser, no LLM, no new dependency. A full poll takes ~97 s wall
+clock with 86 feeds (was ~70–130 s with 82), still well inside the
+15-min polling interval. No agent usage increase.
 
 ### International — 61 feeds
 | Source | URL | Notes |
@@ -316,7 +362,7 @@ Notes on the rebuild step:
 
 | Step | Cost |
 |---|---|
-| One poll (73×/day) | ~0 agent usage. A plain Python script: ~70–130 s wall clock with 82 feeds (sequential network waits), <2 s CPU, ~8–10 MB download on a full fetch, far less when feeds return 304. No LLM, no browser, no credits. |
+| One poll (73×/day) | ~0 agent usage. A plain Python script: ~70–130 s wall clock with 86 feeds (sequential network waits), <2 s CPU, ~8–10 MB download on a full fetch, far less when feeds return 304. No LLM, no browser, no credits. |
 | One rebuild (only when new items exist) | The expensive step: a research + page-build cycle. A few per day at most, vs 72 if rebuilt on a fixed schedule. This is the whole point of the watcher: **poll cheap, rebuild only on change**. |
 | Overnight | Nothing runs 00:00–06:00. |
 
