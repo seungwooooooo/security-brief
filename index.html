@@ -188,6 +188,12 @@
       /* ---------- Archive / sources / footer ---------- */
       .archive-empty { color: var(--ink-2); font-size: 16px; line-height: 1.85; padding: 8px 0; max-width: 760px; }
       .archive-empty strong { color: var(--ink); }
+      .archive-list { border-top: 1px solid var(--line); }
+      .archive-item { padding: clamp(20px, 2.8vw, 28px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .archive-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 600; line-height: 1.55; letter-spacing: -.01em; }
+      .archive-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
+      .archive-item h3 a:hover { color: var(--link); text-decoration: none; }
+      .archive-desc { margin: 6px 0 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
       .sources { font-size: 15px; line-height: 1.8; }
       .sources ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); column-gap: clamp(24px, 4vw, 48px); }
       .sources li { padding: clamp(12px, 1.5vw, 14px) 0; border-bottom: 1px solid var(--line); color: var(--ink-2); min-width: 0; }
@@ -4351,8 +4357,11 @@
         </div>
         <div class="sec-body collapsed" id="body-archive" hidden>
           <div class="sec-inner">
-            <div class="archive-empty">
-              <strong>이전 브리핑 없음.</strong> 2026년 11월 18일 브리핑이 이 페이지의 첫 발행입니다. 지난 브리핑이 쌓이면 이곳에 날짜별로 정리됩니다.
+            <div class="archive-list">
+              <article class="archive-item">
+                <h3><a href="archive/2026-11-18.html">2026년 11월 18일 수요일 브리핑</a></h3>
+                <p class="archive-desc">실시간 뉴스 54건 · KISA 보안공지 15건 · CVE 31건 · 핵심 이슈 10건 · 피드 56개</p>
+              </article>
             </div>
           </div>
         </div>
