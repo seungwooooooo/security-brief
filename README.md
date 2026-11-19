@@ -1,1 +1,3 @@
 # security-brief
+
+Daily security-news briefing page (Korean). A single-page, Apple-like clean briefing aggregating real-time security news, KISA notices, CVEs, and dark-web leak reports from 82 RSS/JSON/HTML feeds, rebuilt only when new items arrive. Live at https://seungwooooooo.github.io/security-brief/ — past daily briefings are archived under `archive/` (YYYY-MM-DD.html). The watcher lives in `watcher/` (see `watcher/README.md`).
