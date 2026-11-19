@@ -228,14 +228,14 @@
         <p class="mast-date">2026년 11월 19일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <p class="mast-sub">11월 16~19일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 19일 19:00 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 19일 19:15 KST · 랜섬웨어 유출 현황은 11월 18일 08:08 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>17건</b> · CVE·취약점 <b>68건</b> (CVSS 9.0 이상 46건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>17건</b> · CVE·취약점 <b>69건</b> (CVSS 9.0 이상 46건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -245,11 +245,51 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 582건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 592건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/19 18:21</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">nginx</span><a href="https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html" target="_blank" rel="noopener">NGINX2Root: AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로 발견</a></h3>
+            <span class="feed-orig">nginx2root:AI Discovers Five Critical nginx Flaws and a Path to Root</span>
+            <p class="feed-sum">AI가 5건의 치명적 nginx 취약점과 루트 권한으로 이어지는 경로를 발견했다는 소식이다.</p>
+            <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:15</span>
+            <h3><a href="https://www.theregister.com/security/2026/11/19/sticky-note-on-monitor-provided-keys-to-the-companys-kingdom/5310908" target="_blank" rel="noopener">모니터에 붙인 메모지, 회사 전산망의 열쇠를 내줬다</a></h3>
+            <span class="feed-orig">Sticky note on monitor provided keys to the company's kingdom</span>
+            <p class="feed-sum">모니터에 붙여둔 메모지가 회사 시스템 접근의 열쇠가 됐다는 일화다.</p>
+            <span class="feed-src">The Register security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:09</span>
+            <h3><a href="https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/" target="_blank" rel="noopener">GTA 6 사칭 사기, 구글 비밀번호·돈·암호화폐 지갑 노린다</a></h3>
+            <span class="feed-orig">GTA 6 scams are after your Google password, money, and crypto wallet</span>
+            <p class="feed-sum">GTA 6를 미끼로 한 사기 행각이 구글 비밀번호와 돈, 암호화폐 지갑을 노리고 있다는 소식이다.</p>
+            <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:07</span>
+            <h3><a href="https://www.helpnetsecurity.com/2026/11/19/ukraine-ransomware-gang-arrests-fake-it-support-calls/" target="_blank" rel="noopener">우크라이나, IT 지원 사칭해 4,050만 달러 갈취한 랜섬웨어 조직 핵심 일원 체포</a></h3>
+            <span class="feed-orig">Ukraine arrests key members of ransomware gang that posed as IT support to extort $40.5 million</span>
+            <p class="feed-sum">우크라이나 당국이 IT 지원을 사칭해 4,050만 달러를 갈취한 랜섬웨어 조직의 핵심 일원을 체포했다.</p>
+            <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 19:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE95Sm84WWlJQm1HWFQxVDdfLVo3SUZYR2RwNUVQRDF5dDRYSDBRQklyUUR5bVdVRnVxTHBsZXZzd09VX09RaHlJcU9vVnhwMThTVU9sVVBxLTZMT2NEM29NeG1oYlpuWFlwa3pld1JB?oc=5" target="_blank" rel="noopener">보안 패치 나와도 적용할 곳 몰라…‘자바포셸’ 대응 사각지대</a></h3>
+            <span class="feed-src">충청투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 18:58</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9160-1" target="_blank" rel="noopener">USN-9160-1: Linux 커널(Azure) 취약점</a></h3>
+            <span class="feed-orig">USN-9160-1: Linux kernel (Azure) vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 Linux 커널(Azure)의 취약점에 대해 발행한 보안 공지</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/19 18:45</span>
             <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBYQU9oQmh5bXhLUVNUWFpWZ0pPRHlLZHNMY0s0c0FNeWdiclk4X2ZLbTNDUjdRbm0zVVBRVXJiSC1XR2NQbmdkdG9CcldmR3hoNTRvT2hjRllTTnNXSWsxMTFmaGtFdUloU3FR?oc=5" target="_blank" rel="noopener">저축은행 직원 개인정보 유출…중앙회, 직원 사칭 주의 당부</a></h3>
@@ -268,6 +308,18 @@
             <span class="feed-orig">Four Days Early: Why AI-Found Vulnerabilities Demand Protection That's Already On</span>
             <p class="feed-sum">AI가 취약점을 조기에 발견하는 시대에는 보호 조치가 사전에 이미 적용되어 있어야 한다는 내용이다.</p>
             <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 18:31</span>
+            <h3><span class="feed-tag">N-able</span><a href="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html" target="_blank" rel="noopener">해커들, N-able 클라우드 서버 침해…3개 지역에서 이메일 보안 관리 중단</a></h3>
+            <span class="feed-orig">Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions</span>
+            <p class="feed-sum">해커들이 N-able 클라우드 서버를 침해해 3개 지역에서 이메일 보안 관리가 중단됐다.</p>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 18:30</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9SRmJDRzRlMEhwUC1WZEhZVENRbWY4d3FCWkE5NG9Lb0o4VDB3SGNIeWVBLWNnOVg1bDI2ZlFxdUFlSDE0N2FlVkpPX1hrcWFWa2s1WnVXU0ZtaTRVY0l4NEtyUm1waFF2MzlvWlZn0gFwQVVfeXFMTTFwTFNnc0xmNERuMzRHNFhVamxGcXNoSS1UWFJDUlVHUW8zd1lOcktuSnlXWDRNOWF4blBIRE05cGFhT0lmOE43dTJEVENORm9yaTY3S1gxdTBsV2xrbEJ2UFlsU2dhUnhNWDRDVzNNNw?oc=5" target="_blank" rel="noopener">전북 교육기관 개인정보 줄유출···2년 전 '전북대 해킹' 잊었나</a></h3>
+            <span class="feed-src">전라일보</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 18:30</span>
@@ -332,6 +384,13 @@
             <span class="feed-time">11/19 17:18</span>
             <h3><a href="https://zdnet.co.kr/view/?no=20261119164513" target="_blank" rel="noopener">다우오피스HR, 윈도우 메신저 보안 사고…자동 업데이트로 악성 파일 설치</a></h3>
             <span class="feed-src">ZDNet Korea</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 17:00</span>
+            <h3><a href="https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html" target="_blank" rel="noopener">CISA, 랜섬웨어·암호화폐 채굴·LLMjacking 공격과 연계된 악용 취약점 4건 경고</a></h3>
+            <span class="feed-orig">CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks</span>
+            <p class="feed-sum">CISA가 랜섬웨어, 암호화폐 채굴, LLMjacking 공격과 연계돼 악용되고 있는 취약점 4건을 경고했다.</p>
+            <span class="feed-src">The Hacker News</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/18 07:30</span>
@@ -3495,6 +3554,11 @@
             <span class="feed-src">Security Affairs</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/17 07:37</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wQ1hkQjJvMnIxbWdqR2FxbGRqVzV1Z3RMTVpkbGJwNVlaUzlNbjZLTjFjSGFNVVJtWEV4UGw2bm1WVHB5RGM3aEhrT1V3WnVjdFpXcW16Zll1UkxrelE?oc=5" target="_blank" rel="noopener">정부 행정 메일 300여 개 해킹...기밀 유출 가능성도</a></h3>
+            <span class="feed-src">YTN</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/17 07:01</span>
             <h3><a href="https://flashpoint.io/blog/ai-threat-report-monthly/" target="_blank" rel="noopener">AI 위협 보고서: 불법 커뮤니티 전반에서 인공지능이 활용되는 방식</a></h3>
             <span class="feed-orig">AI Threat Report: How Artificial Intelligence Is Used Across Illicit Communities</span>
@@ -3665,9 +3729,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>13</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>334</b><span>국내 동향 — 11/16~19 보도</span></div>
-        <div class="stat"><b>248</b><span>해외 동향 — 11/16~19 보도</span></div>
-        <div class="stat"><b>68</b><span>CVE·취약점 — CVSS 9.0 이상 46건 포함</span></div>
+        <div class="stat"><b>337</b><span>국내 동향 — 11/16~19 보도</span></div>
+        <div class="stat"><b>255</b><span>해외 동향 — 11/16~19 보도</span></div>
+        <div class="stat"><b>69</b><span>CVE·취약점 — CVSS 9.0 이상 46건 포함</span></div>
         <div class="stat"><b>57</b><span>다크웹 유출 — 11/18 08:08 확인 기준 24시간 건수 (+19%)</span></div>
       </div>
 
@@ -3743,9 +3807,11 @@
 
         <div class="tab-panel" role="tabpanel" id="panel-5" aria-labelledby="tab-5">
           <h3>N-able N-central ‘4EverAble2Shell’ — 실제 공격 진행 중</h3>
-          <div class="status-row"><span class="chip ongoing">실제 공격 중 · 패치 진행</span><span class="chip">최근 동향 2026-11-17</span></div>
-          <p>Apache Axis 취약점 <strong>CVE-2026-90436 (9.8)</strong>의 PoC 공개 몇 시간 만에 공격자들이 코인 마이너를 심기 시작했습니다. N-able은 11월 16일 Hotfix 3로 신규 취약점 17건(CVE-2026-129271~129287)을 패치하고 레거시 API를 영구 차단했습니다. Rapid7은 11월 13일 Atlassian Confluence 대상 익스플로잇도 탐지했습니다.</p>
+          <div class="status-row"><span class="chip ongoing">실제 공격 중 · 패치 진행</span><span class="chip">최근 동향 2026-11-19</span></div>
+          <p>Apache Axis 취약점 <strong>CVE-2026-90436 (9.8)</strong>의 PoC 공개 몇 시간 만에 공격자들이 코인 마이너를 심기 시작했습니다. N-able은 11월 16일 Hotfix 3로 신규 취약점 17건(CVE-2026-129271~129287)을 패치하고 레거시 API를 영구 차단했습니다. Rapid7은 11월 13일 Atlassian Confluence 대상 익스플로잇도 탐지했습니다. 11월 19일에는 The Hacker News가 해커들이 N-able 클라우드 서버를 침해해 3개 지역에서 이메일 보안 관리가 중단됐다고 보도했다.</p>
           <a class="src-link" href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">The Hacker News — N-able patches 17 flaws</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html" target="_blank" rel="noopener">The Hacker News — Hackers Breach N-able Cloud Server</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6">
@@ -3896,7 +3962,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13">
           <h3>NGINX2Root — nginx 치명적 취약점 5건 (CVE-2026-123007)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
-          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다. 동아일보는 11월 19일 전 세계 웹사이트의 30%가 사용하는 엔진엑스에서 치명적 보안 취약점 5건이 발견됐다고 보도했다. 이투데이는 11월 19일 티오리가 웹 서버 엔진엑스에서 치명적 취약점을 발견해 원격으로 악성 코드를 실행할 수 있다고 보도했다. KBS 뉴스는 11월 19일 웹서버 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 발견했다고 보도했다. 아이티데일리는 11월 19일 엔진엑스에서도 고위험 취약점이 발견돼 한국 웹사이트 58%가 영향권에 있다고 보도했다.</p>
+          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다. 동아일보는 11월 19일 전 세계 웹사이트의 30%가 사용하는 엔진엑스에서 치명적 보안 취약점 5건이 발견됐다고 보도했다. 이투데이는 11월 19일 티오리가 웹 서버 엔진엑스에서 치명적 취약점을 발견해 원격으로 악성 코드를 실행할 수 있다고 보도했다. KBS 뉴스는 11월 19일 웹서버 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 발견했다고 보도했다. 아이티데일리는 11월 19일 엔진엑스에서도 고위험 취약점이 발견돼 한국 웹사이트 58%가 영향권에 있다고 보도했다. Security Affairs는 11월 19일 AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로를 발견했다고 보도했다.</p>
           <a class="src-link" href="https://blog.qualys.com/product-tech/patch-management/2026/11/18/nginx2root-five-nginx-flaws-led-by-cve-2026-123007-how-to-find-mitigate-and-patch-now" target="_blank" rel="noopener">Qualys — NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityboulevard.com/2026/11/nginx2root-cve-2026-123007-and-four-more-unauthenticated-remote-code-execution-in-nginx/" target="_blank" rel="noopener">Security Boulevard — NGINX2Root (CVE-2026-123007 and four more)</a>
@@ -3938,6 +4004,8 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBicWx6QWRKVmsyZWdWVFFHVFljczN5eVY5bmtVUjFsdGxCRHBSaXVxYVMxakFvQVdBYm9aSEN3YkpNN0tybTRSdjVxa1RkREpvMklOdmhnR3B6Tm8?oc=5" target="_blank" rel="noopener">KBS 뉴스 — 웹서버 ‘엔진엑스’서 치명적 취약점 5건…4건은 AI가 발견</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE13ZTZXUDZneTJSam42SnBfZ3Nib3IwLXctUzFhOTFOV3YxV1YtWUNuR01tcmNLV0lyTUhCV0x6U05KUUwtVDFCWDlGTFFJRVlaeUFyNWxBakxUSDI5cXJvSkFwX05EUnVu?oc=5" target="_blank" rel="noopener">아이티데일리 — 웹서버 ‘엔진엑스’서도 고위험 취약점…한국 웹사이트 58% 영향권</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html" target="_blank" rel="noopener">Security Affairs — nginx2root: AI Discovers Five Critical nginx Flaws and a Path to Root</a>
         </div>
 
           </div>
@@ -4038,13 +4106,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 68건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 22건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 69건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 23건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 68건</button>
+          <button data-filter="all" aria-pressed="true">전체 69건</button>
           <button data-filter="new" aria-pressed="false">11/16~19 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -4593,6 +4661,14 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
           </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9160-1" target="_blank" rel="noopener"><span class="mono">USN-9160-1</span></a> · Linux kernel (Azure) vulnerabilities</h3>
+              <p>Linux kernel (Azure) vulnerabilities — Ubuntu 보안 공지. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
+          </article>
 
         </div>
         <p class="note">Oracle 2026년 11월 CPU(11/17)와 Java4Shell·N-able 묶음은 11월 16~17일 <strong>처음 공개·보고</strong>된 항목입니다. 나머지는 11월 10~12일 공개분이 KISA 권고·CISA KEV 등재로 이번 주 다시 부상한 것으로, 공개일을 함께 표기했습니다.</p>
@@ -4604,15 +4680,23 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 334건 · 해외 248건 · 2026년 11월 16~19일 보도</p>
+          <p>국내 337건 · 해외 255건 · 2026년 11월 16~19일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">334건 · 2026년 11월 16~19일 보도</p>
+            <p class="col-note">337건 · 2026년 11월 16~19일 보도</p>
 
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE95Sm84WWlJQm1HWFQxVDdfLVo3SUZYR2RwNUVQRDF5dDRYSDBRQklyUUR5bVdVRnVxTHBsZXZzd09VX09RaHlJcU9vVnhwMThTVU9sVVBxLTZMT2NEM29NeG1oYlpuWFlwa3pld1JB?oc=5" target="_blank" rel="noopener">보안 패치 나와도 적용할 곳 몰라…‘자바포셸’ 대응 사각지대</a></h3>
+              <span class="news-meta">충청투데이 · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9SRmJDRzRlMEhwUC1WZEhZVENRbWY4d3FCWkE5NG9Lb0o4VDB3SGNIeWVBLWNnOVg1bDI2ZlFxdUFlSDE0N2FlVkpPX1hrcWFWa2s1WnVXU0ZtaTRVY0l4NEtyUm1waFF2MzlvWlZn0gFwQVVfeXFMTTFwTFNnc0xmNERuMzRHNFhVamxGcXNoSS1UWFJDUlVHUW8zd1lOcktuSnlXWDRNOWF4blBIRE05cGFhT0lmOE43dTJEVENORm9yaTY3S1gxdTBsV2xrbEJ2UFlsU2dhUnhNWDRDVzNNNw?oc=5" target="_blank" rel="noopener">전북 교육기관 개인정보 줄유출···2년 전 '전북대 해킹' 잊었나</a></h3>
+              <span class="news-meta">전라일보 · 2026-11-19</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBYQU9oQmh5bXhLUVNUWFpWZ0pPRHlLZHNMY0s0c0FNeWdiclk4X2ZLbTNDUjdRbm0zVVBRVXJiSC1XR2NQbmdkdG9CcldmR3hoNTRvT2hjRllTTnNXSWsxMTFmaGtFdUloU3FR?oc=5" target="_blank" rel="noopener">저축은행 직원 개인정보 유출…중앙회, 직원 사칭 주의 당부</a></h3>
               <span class="news-meta">뉴스저널리즘 · 2026-11-19</span>
@@ -5938,6 +6022,10 @@
               <span class="news-meta">노컷뉴스 · 2026-11-17</span>
             </article>
             <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wQ1hkQjJvMnIxbWdqR2FxbGRqVzV1Z3RMTVpkbGJwNVlaUzlNbjZLTjFjSGFNVVJtWEV4UGw2bm1WVHB5RGM3aEhrT1V3WnVjdFpXcW16Zll1UkxrelE?oc=5" target="_blank" rel="noopener">정부 행정 메일 300여 개 해킹...기밀 유출 가능성도</a></h3>
+              <span class="news-meta">YTN · 2026-11-17</span>
+            </article>
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTFB0V1VKeTg5cW9VVWtDWkdTRDZXeFRwdlhlQWw5WWZnQ2lvMzBHWlNYdFR1QWlKdUh3aVBtZUttNm5tY2pIc1k4?oc=5" target="_blank" rel="noopener">[공동기자회견] AI 해킹 시대, 금융권 개인정보 유출 사태 규탄 및 대책 촉구 기자회견</a></h3>
               <span class="news-meta">경제정의실천시민연합 · 2026-11-16</span>
             </article>
@@ -5953,8 +6041,50 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">248건 · November 16–19, 2026</p>
+            <p class="col-note">255건 · November 16–19, 2026</p>
 
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/19/sticky-note-on-monitor-provided-keys-to-the-companys-kingdom/5310908" target="_blank" rel="noopener">모니터에 붙인 메모지, 회사 전산망의 열쇠를 내줬다</a></h3>
+              <span class="news-orig">Sticky note on monitor provided keys to the company's kingdom</span>
+              <p class="news-sum">모니터에 붙여둔 메모지가 회사 시스템 접근의 열쇠가 됐다는 일화다.</p>
+              <span class="news-meta">The Register security · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/" target="_blank" rel="noopener">GTA 6 사칭 사기, 구글 비밀번호·돈·암호화폐 지갑 노린다</a></h3>
+              <span class="news-orig">GTA 6 scams are after your Google password, money, and crypto wallet</span>
+              <p class="news-sum">GTA 6를 미끼로 한 사기 행각이 구글 비밀번호와 돈, 암호화폐 지갑을 노리고 있다는 소식이다.</p>
+              <span class="news-meta">Help Net Security · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/19/ukraine-ransomware-gang-arrests-fake-it-support-calls/" target="_blank" rel="noopener">우크라이나, IT 지원 사칭해 4,050만 달러 갈취한 랜섬웨어 조직 핵심 일원 체포</a></h3>
+              <span class="news-orig">Ukraine arrests key members of ransomware gang that posed as IT support to extort $40.5 million</span>
+              <p class="news-sum">우크라이나 당국이 IT 지원을 사칭해 4,050만 달러를 갈취한 랜섬웨어 조직의 핵심 일원을 체포했다.</p>
+              <span class="news-meta">Help Net Security · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9160-1" target="_blank" rel="noopener">USN-9160-1: Linux 커널(Azure) 취약점</a></h3>
+              <span class="news-orig">USN-9160-1: Linux kernel (Azure) vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 Linux 커널(Azure)의 취약점에 대해 발행한 보안 공지</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html" target="_blank" rel="noopener">해커들, N-able 클라우드 서버 침해…3개 지역에서 이메일 보안 관리 중단</a></h3>
+              <span class="news-orig">Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions</span>
+              <p class="news-sum">해커들이 N-able 클라우드 서버를 침해해 3개 지역에서 이메일 보안 관리가 중단됐다.</p>
+              <span class="news-meta">The Hacker News · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html" target="_blank" rel="noopener">NGINX2Root: AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로 발견</a></h3>
+              <span class="news-orig">nginx2root:AI Discovers Five Critical nginx Flaws and a Path to Root</span>
+              <p class="news-sum">AI가 5건의 치명적 nginx 취약점과 루트 권한으로 이어지는 경로를 발견했다는 소식이다.</p>
+              <span class="news-meta">Security Affairs · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html" target="_blank" rel="noopener">CISA, 랜섬웨어·암호화폐 채굴·LLMjacking 공격과 연계된 악용 취약점 4건 경고</a></h3>
+              <span class="news-orig">CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks</span>
+              <p class="news-sum">CISA가 랜섬웨어, 암호화폐 채굴, LLMjacking 공격과 연계돼 악용되고 있는 취약점 4건을 경고했다.</p>
+              <span class="news-meta">The Hacker News · 2026-11-19</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.malwarebytes.com/blog/news/2026/11/scattered-spiders-phishing-and-sim-swap-tactics-led-to-six-year-sentence" target="_blank" rel="noopener">Scattered Spider의 피싱·SIM 스왑 수법, 6년형 선고로 이어져</a></h3>
               <span class="news-orig">Scattered Spider's phishing and SIM-swap tactics led to six-year sentence</span>
