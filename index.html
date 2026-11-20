@@ -228,14 +228,14 @@
         <p class="mast-date">2026년 11월 19일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <p class="mast-sub">11월 16~20일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 19일 23:52 KST · 랜섬웨어 유출 현황은 11월 19일 19:45 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 20일 09:52 KST · 랜섬웨어 유출 현황은 11월 19일 19:45 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>19건</b> · CVE·취약점 <b>82건</b> (CVSS 9.0 이상 47건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>19건</b> · CVE·취약점 <b>93건</b> (CVSS 9.0 이상 47건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -245,11 +245,314 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 705건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 758건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:43</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVEllblFRVTVkRFh6b1NhbDFlbG05U004MFNqd1dNYW0wZl9TanpCTW5OSWtKV3dyNGc2eldRQlA1UC1SR0JlVFNUM1FuazRRd1dyamhxdFA3TVBoVkQyM0loR01UWmFvVlNrOE5qSWVWNmdzaTNhNlJIQTZ4emlJUlhtSWlHcUlwUnJXN1ZR?oc=5" target="_blank" rel="noopener">AI 해킹으로 불안한데…PHP서 또 치명적 취약점 발견</a></h3>
+            <span class="feed-src">국제신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 15:53</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFB6T0RYb21BSVZQMXJ1NmRiUnJ0djRlcFpJTG9HWkZvYW0yM1l1RzlKTFJNU29wQllpWnZrUDZNWDUwcTRjeGs4b253bzhWeFZaWi1lYTZLREJNRU9HUWRSTzFLUzBvemROVUplLWZxb9IBc0FVX3lxTE5CTnE4UXkyRWQzUFp4QkZPdzZSaGhGc2pMbmg1algwajIxTE1xS3R4MzVMY3RERktWQ0JuU0NiNGZyLTNMV05FaF9jZjZ5SkFHT1NId253RklBcDk4NjJwVy0yWU44VWQ0ZUN6Q3I3UzdYUkU?oc=5" target="_blank" rel="noopener">다우오피스, 해킹 이어 업데이트 악성코드까지 ‘비상’</a></h3>
+            <span class="feed-src">시사저널</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 13:57</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFA3U2VrSTM4YzdhV1RhQmgzSzlWSWpqcjBITVB0eVFsaXY0RnRmNE5zUzBHeDlhNUlEdl8taW1ZZGRxeXN2Mmx5WEdnV015Rko4ZVdESGViRmRxMEJfNFhodmlBMGNNNUcwX2lfRUNR0gFyQVVfeXFMTTlST2ItTno2dlUxTklzS2Y1eTRucGlhM0JIR3paeXpvMFI3emlmUjFpM2VUdnZhbmxaWWZ4ZUNzbzdNdmtIRGJhaHdZa3BPUTMwTTlSYjhXZERhemNEUWNFaVZ1X25yc0NhXzlyUFYwRXd3?oc=5" target="_blank" rel="noopener">과기정통부·KISA, OpenJDK 보안 취약점 긴급 경고… 기업·기관 보안 업데이트 권고</a></h3>
+            <span class="feed-src">테크데일리</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 13:22</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE10RnZCNi1pTVRlX2FVNGhJMExOZXczd0pJSjBUcy1hRWpnWWlKVUtOS1M1bDFxWjhRRmlpWlNXM1BvTFpfc2hlbV9lX3djWlkxaFBnUUdWWVVxTEN6c05r?oc=5" target="_blank" rel="noopener">과기정통부, 자바(Java) 보안 취약점 관련 긴급 점검 및 보안조치 당부</a></h3>
+            <span class="feed-src">헬로티</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 09:56</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBlREI0Z045MHE0ZE1kd0JyZkRCY1NGYi1lc2luMGVtNXNtUlU0YTA5WjU3QVdUc1hHSm9QQl82aW8yY0RGRUdXT2FpUlhuRE5vWUZBS1hqd1BxdWx5ajNzN3ZNZy1sYTlZ?oc=5" target="_blank" rel="noopener">공공 시스템 71% 쓰는 ‘자바’서 보안 취약점 발견…정부 긴급 점검 권고</a></h3>
+            <span class="feed-src">CEO스코어데일리</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 09:47</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9IdG44Zk85eTJ6VHNHdHhLLU9XN1FDbjNucTB3X3F5TnljaUg2SkhKQVFyenRKLV9ycV80Q3B0T3VGU2Vjd1M3LW92X3NZVUQ4Rkpma1dZLUtBY0V6Y2NiaElhTXI4OV9HYTF1R19yUlbSAXBBVV95cUxPSHRuOGZPOXkyelRzR3R4Sy1PVzdRQ24zbnEwd19xeU55Y2lINkpISkFRcnp0Si1fcnFfNENwdE91RlNlY3dTNy1vdl9zWVVEOEZKZmtXWS1LQWNFemNjYmhJYU1yODlfR2ExdUdfclJW?oc=5" target="_blank" rel="noopener">자바(JAVA) '치명적 취약점' 발견…정부, 긴급 보안 업데이트 권고</a></h3>
+            <span class="feed-src">엠에스투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 08:56</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjMnhWUlVUWl9WQW0yWFBJZ2tBQm1FUWt0TncxNkkyOUZfWjNDdjNUdWgtb1RJNzdlMDVDcVgwZ3lEQzVJc0VaZ3BMbDlEZExVSmg5MEtXZEZxMUc0ejlSMEpR?oc=5" target="_blank" rel="noopener">[T나는 보안] 공공정보 71% '자바'서도 치명적 취약점…정부 긴급 점검 권고</a></h3>
+            <span class="feed-src">티제이비</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 08:01</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE82TVhySDdfamZBZHVvR052azRid05CLVhGR1hhT0Z0eERidkxaNzdIUGQzWXhiNW5fUjBWSTRzQ3FyWWVZNUNRTnFFT3JyUDA0aEJCMjFR?oc=5" target="_blank" rel="noopener">PHP 이어 ‘자바’서도 치명적 취약점…정부 “신속 보안 조치” 당부</a></h3>
+            <span class="feed-src">중앙일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 07:57</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFA0VUJrc05fSHEwcnJKZEVwSmVRd19QcVZYeXZWZDgtWjU1OE1wR3ZuMTJfMVNiQWNPNkQzdVlLamRuY3pLSjJQdUoyV0dzT0VCdXpya1dsT19KQmphZ2xHSktpQ2lHbjY3ZDA5TdIBbEFVX3lxTFA0VUJrc05fSHEwcnJKZEVwSmVRd19QcVZYeXZWZDgtWjU1OE1wR3ZuMTJfMVNiQWNPNkQzdVlLamRuY3pLSjJQdUoyV0dzT0VCdXpya1dsT19KQmphZ2xHSktpQ2lHbjY3ZDA5TQ?oc=5" target="_blank" rel="noopener">정부 "자바서도 치명적 보안 취약점 발견...긴급 업데이트 권고" - 머니투데이</a></h3>
+            <span class="feed-src">머니투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:35</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261120046100051" target="_blank" rel="noopener">해양교통안전공단, 내년부터 항만보안 전문인력 양성</a></h3>
+            <span class="feed-src">Yonhap news</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 00:48</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE05eVhVY0x1SDY1TXlzT0p2V1dITFFOcl9uSGdQRXJaTVZJT29tUW82UHFEV21XM0o0ZEFKbzdMZlE0MURodDNtbzhtNExDNWFkLTBOVm9n0gFUQVVfeXFMTWRMNWpINmVFUXZPOEhBd1F2ZDRLLU9hSlpmZ1BPRWZwV0lnSXdBOFV5N3diOEtham1jUnJ6YVU1YmdYWl9GYzkxSk9lMlgzVlhicS1u?oc=5" target="_blank" rel="noopener">PHP 보안 취약점 또 무더기 발견… “최신 보안 업뎃을”</a></h3>
+            <span class="feed-src">세계일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 11:03</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFB3MlAtR2tDYVZnMGd3X1dmQ2hyVllseGlYd210R3VlVFhXU29aRVBBWVNuNW5NMm9IcUxZMzlENkdPWFVnUmVYTWMyY0piRGFybUVfSlRVYjNoRkVJTGZGNXd5T3VQWU1vTUE2Rkx3UnhiTXR2QWp1dHFoeHk4YzA?oc=5" target="_blank" rel="noopener">미국 사이버 보안국도 자바 취약점 경고..."즉각 패치 적용" 권고</a></h3>
+            <span class="feed-src">YTN 사이언스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 18:59</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UempZSzBFTHA2TUIyNU8zTTJTNmdBTXFCdXVzb013RjZXX1BMQlRQbTZrSEVzSFpYbFpSbE9CNFF5SWNST0Rha1pfenNIUEs5WUtHcUJuZ0JDRDRJNmc2QQ?oc=5" target="_blank" rel="noopener">개인정보위, Java 보안 취약점 관련 개인정보 대량 유출 예방조치 당부</a></h3>
+            <span class="feed-src">한국방송뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 11:01</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxORWM4MlR6QUZzekJKS2xTU0ZPd1hyR0lWZ1NYUjJGNmIxZWFIMm8xaXFWaDdnYVFNVWJobEltYzlVeWxtb1A0WldIQ2drME12QnRSMmh5a2IzTHQwM1JOTFFVMVVpd2U2X3JNbHhUTzJxWk9UYmdNQzBaZFVhc2tsSlBvQkw?oc=5" target="_blank" rel="noopener">정부, 자바 보안 취약점 관련 보안조치 당부</a></h3>
+            <span class="feed-src">YTN 사이언스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 09:53</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTVNTQ2g0eTFJZzRRWjItYXZKZHZEQXluMUYyYVY1THJxZTFZNy0xUGZHdXlEdDdRRmlvaWptVW9jcnF2dkNYMjczZ3RHOGNPVUJKQWZEUXFoSkhITzJNdVQtbUFBQ0g3UnVfUHEzSdIBc0FVX3lxTE1NU2FMWDdnanU5dGpwXzJHWkN3UDVid1ZhbXp2UjhXZGplSDVfdkVZdjJaNlJUZ2o4LTFNb0FsdHpzWkhyWklyQVdHZDZjLVlxU0dNd09WaXc2NV82bVBzMUdUQzdkMExNMnpqTWU1VWQ4cnM?oc=5" target="_blank" rel="noopener">과기정통부·KISA, 자바 보안 취약점 발견으로 조치 당부</a></h3>
+            <span class="feed-src">뉴스웍스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/17 17:31</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1kWHo0WE5RSUotQUgzS1NEakUyaFpxYkYxZEZidTdHUHByd0o3OUdtZ0ttbXEzTXo1TVFXY0I0ZzEydDVNQzBSbFZIMC1aalF5VHhUXzI3QWl5d19xWThLWFhVNUx6dw?oc=5" target="_blank" rel="noopener">리눅스 커널서 11년 숨어 있던 고위험 취약점 '노이지TCP' 발견</a></h3>
+            <span class="feed-src">디일렉</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 06:36</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://www.cybersecuritydive.com/news/chinese-espionage-zero-day-flaw-vmware-vcenter/875273/" target="_blank" rel="noopener">중국 스파이 그룹, VMware vCenter 중대 결함 노려</a></h3>
+            <span class="feed-orig">Chinese espionage group targets critical flaw in VMware vCenter</span>
+            <p class="feed-sum">중국 스파이 그룹이 VMware vCenter의 중대한 결함을 노리고 있다는 보도다.</p>
+            <span class="feed-src">Cybersecurity Dive</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 08:32</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE4tN19iZXdLXzBQdVppMS1rX1lUOC1oeThja2UtdzFmdktjbjU2N0FnM0dvRXQybXV4QVowSjRhclE3b0M4NjFlbFNBQzBYamUwekJIZ3pJaVJmT2wyalRJT2tIbUZQSFlLRkhiRktFTXR2TVk?oc=5" target="_blank" rel="noopener">"엔비디아 자료 훔쳤다"…랜섬웨어 조직, 공개 위협</a></h3>
+            <span class="feed-src">디지털투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 08:02</span>
+            <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300351" target="_blank" rel="noopener">보안 사각지대 된 공급망…협력사 해킹이 본사 침투로 이어져</a></h3>
+            <span class="feed-src">Datanet</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:47</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9hZDNwMUdJXzIyeUpJbTdQYWJ1QmlEWGtIamphTWpOOTBPLUVKT29abzZlb2psSjNiSlltSFQxOWUySFREbmd6Q3pUSFRlTDRPWTN4RGRqT0tUWUM2MGpfQmhWbExUNXNEUnMyUHRVVjfSAXRBVV95cUxNUklPWjBWQ3llTVJuTFdlVndNSmpkeDMzbXFTSmlMdGlmeXBkUjF1bUdjZWVlZnVkcFdZM0FNem0wZE1TT1hpVDBHMG1mOU9pWDUyUEV0bkZqWEJEZEZ6UlZMOGQzQjNjZGRJZ2RLLVk4S3JDSw?oc=5" target="_blank" rel="noopener">비자·마스터카드·JP모건 고객 정보 유출… 외부업체 해킹</a></h3>
+            <span class="feed-src">IT조선</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 03:47</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZX3RjZk50SmkxWVBtU0o3aWh4Nl9DM052b2NWRzh2OWdHTTVJNjhRTEJvNTV5aU9vTEJxa3ZoN2dhQjJOalZMbzNPYkxWZGFGdlVDVl9PencyYmtack9FVV9ZSDE?oc=5" target="_blank" rel="noopener">JP모건체이스, 협력업체 해킹 공식 발표…일부 고객 정보 노출 가능성</a></h3>
+            <span class="feed-src">라디오코리아</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 20:49</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQV1FGQTJJb0ViS1h1a0hVWmU0c3ZYTTlhMkVKZlp4dXlsRHNTSFhaenRIWmNyU0xtR2NuMFpQRHZ5QTkwZ1VHWnJ2MFVNekczbF9TS3dSYWJQajhmWldHUW40OTRuX2c0RGt0NEhlZHoxTlNOSjBpZUlOVWNFQS1tTnlVb2pNQQ?oc=5" target="_blank" rel="noopener">지역대 잇단 해킹…영남대도 구성원 개인정보 유출</a></h3>
+            <span class="feed-src">Tbc.co.kr</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/18 10:24</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SS1lEWTd0cGs1TVVnRUR5TzV5TzY5ZnRXd19QclpHUmN2alJOSV9Na2xYaUR6eFh0RjVtcWtib3dIRVA1Zk9ENjRUNmJ0RTNEUGRaSVNEQTUwV3BVTndLddIBeEFVX3lxTE5udGp6Mm5qU3lnQkN0VEVka0ZVc3VNRWk4WlBwXzM1X3JpUnk0QkNIaU1XQjBjZnREdmhZc3BUOVkwNjRtYWcyemstZld5bXExWnRNQmdZSDdVY2ZzVGNsV0piZ2tsbWJnQ2ZKQk02RE1WTW51ZGE2SQ?oc=5" target="_blank" rel="noopener">[단독]'노란우산' 정보유출 눈덩이…"36만명이상 추정"(종합)</a></h3>
+            <span class="feed-src">뉴시스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/16 13:46</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVVG9KNnJ1ZS1rR3ZqVE41b1BrSElMM21PMFZqWDZCR0lMaVlaX2RDTzNkUGplRXhqN3lIZzRGQlU4Rndxb1JTX0lsel9MNTlRb05oUVJwZ3Z2UdIBX0FVX3lxTE1NZUFYQlFacnBpeTJ1WXE5WndaeWlfc0xlZEVOdFM2ZGt2YWhjZTA2U0k3dEdFUExXQWUxd000Q28tczZndlJZVTlQTTMzbkh2T3ZwSEp2UmZlZU9SSXFv?oc=5" target="_blank" rel="noopener">강원대 산학협력단 연구통합관리시스템 해킹으로 개인정보 유출</a></h3>
+            <span class="feed-src">경향신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 08:15</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Rc2VlZGVOQUpudVpjRlFmaE85Q19wNHBZV2lZZ1B0dUwtZ1MxVFU3aU9qSkxGUDJCRktTNWdKa1BTcUlLZ0dEemR4MURqdzVKMEFRQw?oc=5" target="_blank" rel="noopener">시티은행 "AI 에이전트 해킹 피해는 고객 책임"…약관 개정</a></h3>
+            <span class="feed-src">AI 매터스</span>
+          </article>
+                    <article class="feed-item">
+            <span class="feed-time">11/20 08:03</span>
+            <h3><a href="https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/" target="_blank" rel="noopener">안드로이드 개발자 인증, 모든 설치 경로로 확대…파워 유저용 우회 창구도 마련</a></h3>
+            <span class="feed-orig">Android developer verification will reach every install source, with a side door for power users</span>
+            <p class="feed-sum">안드로이드 개발자 인증이 모든 설치 경로로 확대되며 파워 유저를 위한 우회 창구가 마련된다는 소식</p>
+            <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 08:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBJVndTVWZRalJsTmctcXZRY2hmOW1fSXRnUHZQbWMwZnpoOXBicHRlRGIwUHE2WHZZdExhRGJLbmxYX01QemhsZTZmWXozWXN6SG1CckxvemVCbmozRlVvcDJ3QjdWVFVPNFNr?oc=5" target="_blank" rel="noopener">금융권 IT자산 관리 의무 강화되나…대형 금융사 보안 사각지대 줄인다</a></h3>
+            <span class="feed-src">라이센스뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:49</span>
+            <h3><a href="https://github.com/advisories/GHSA-r7hm-rjvg-xx7j" target="_blank" rel="noopener">CVE-2026-129302 — Guard Core: 내장 탐지 패턴의 2차 ReDoS로 단일 요청에 이벤트 루프 동결</a></h3>
+            <span class="feed-orig">CVE-2026-129302 — Guard Core: Quadratic ReDoS in built-in detection pattern freezes the event loop with a single request</span>
+            <p class="feed-sum">Guard Core의 내장 탐지 패턴에서 2차 정규식 서비스 거부 취약점이 발견돼 단일 요청으로 이벤트 루프가 멈출 수 있다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:48</span>
+            <h3><a href="https://github.com/advisories/GHSA-m932-63jc-4jqq" target="_blank" rel="noopener">CVE-2026-130007 — k8s-mcp-server: 기본 SSE/HTTP 전송 인증 누락으로 미인증 쿠버네티스 도구 실행 가능</a></h3>
+            <span class="feed-orig">CVE-2026-130007 — k8s-mcp-server: Missing authentication on default SSE/HTTP transport allows unauthenticated Kubernetes tool execution</span>
+            <p class="feed-sum">k8s-mcp-server의 기본 SSE/HTTP 전송에 인증이 없어 미인증 상태에서 쿠버네티스 도구를 실행할 수 있다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:48</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://github.com/advisories/GHSA-3mgh-93r5-r7jf" target="_blank" rel="noopener">CVE-2026-83816 — CodeWhale: exec_shell 분류기가 fd/rg/git grep 실행 플래그를 자동 승인해 은밀한 RCE 가능</a></h3>
+            <span class="feed-orig">CVE-2026-83816 — CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE</span>
+            <p class="feed-sum">CodeWhale의 exec_shell 분류기가 fd·rg·git grep 실행 플래그를 자동 승인해 은밀한 원격 코드 실행이 가능하다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:47</span>
+            <h3><a href="https://github.com/advisories/GHSA-8hp3-xxrg-v9c8" target="_blank" rel="noopener">CVE-2026-83817 — CodeWhale: auto_approve 기본값 true로 작업 경로 강화 수정 우회, 은밀한 반복 에이전트 실행</a></h3>
+            <span class="feed-orig">CVE-2026-83817 — CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution</span>
+            <p class="feed-sum">CodeWhale 자동화의 auto_approve 기본값이 true여서 작업 경로 강화 수정을 우회하고 에이전트가 은밀히 반복 실행될 수 있다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:46</span>
+            <h3><a href="https://github.com/advisories/GHSA-vwhp-8p66-mq4f" target="_blank" rel="noopener">CVE-2026-95839 — containerd: 잘못된 다이제스트의 이미지로 데몬 충돌 유발</a></h3>
+            <span class="feed-orig">CVE-2026-95839 — containerd image-triggered daemon crash via malformed digest in subject-annotated descriptor</span>
+            <p class="feed-sum">containerd에서 잘못된 다이제스트가 포함된 이미지로 데몬이 충돌할 수 있다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:45</span>
+            <h3><a href="https://github.com/advisories/GHSA-qx49-fqc8-xw99" target="_blank" rel="noopener">CVE-2026-115563 — Model Context Protocol Python SDK: OAuth 클라이언트가 MCP 서버가 선택한 인가 서버로 자격증명 전송 가능</a></h3>
+            <span class="feed-orig">CVE-2026-115563 — Model Context Protocol Python SDK: OAuth client could send credentials to an authorization server chosen by the MCP server</span>
+            <p class="feed-sum">MCP Python SDK에서 OAuth 클라이언트가 MCP 서버가 지정한 인가 서버로 자격증명을 보낼 수 있다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:44</span>
+            <h3><a href="https://github.com/advisories/GHSA-phmp-hrw4-r36r" target="_blank" rel="noopener">CVE-2026-97698 — Mistune: 빈 라벨 링크의 무제한 괄호 스캔으로 parse_link_href 2차 시간 DoS</a></h3>
+            <span class="feed-orig">CVE-2026-97698 — Mistune: Quadratic-time DoS in parse_link_href via unbounded parenthesis scan on empty-label links</span>
+            <p class="feed-sum">Mistune의 parse_link_href에서 빈 라벨 링크의 무제한 괄호 스캔으로 2차 시간 서비스 거부가 발생한다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:44</span>
+            <h3><a href="https://github.com/advisories/GHSA-ww7q-mxrj-5ffg" target="_blank" rel="noopener">CVE-2026-97699 — Mistune: 인라인 이미지 파싱의 2차 시간 DoS, 이미지 아님 가드 우회</a></h3>
+            <span class="feed-orig">CVE-2026-97699 — Mistune: Quadratic-time DoS in inline image parsing (precedence_scan) bypasses not-is-image guards</span>
+            <p class="feed-sum">Mistune의 인라인 이미지 파싱에서 이미지 아님 가드를 우회하는 2차 시간 서비스 거부가 발생한다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:41</span>
+            <h3><a href="https://github.com/advisories/GHSA-w6x2-f5m4-xw82" target="_blank" rel="noopener">CVE-2026-121716 — fzf: fzf-tmux에서 검증되지 않은 레이아웃 크기의 bash 산술 확장으로 임의 명령 실행</a></h3>
+            <span class="feed-orig">CVE-2026-121716 — fzf: Arbitrary command execution via bash arithmetic expansion on unvalidated layout size in fzf-tmux (-l/-u attached value)</span>
+            <p class="feed-sum">fzf-tmux에서 검증되지 않은 레이아웃 크기의 bash 산술 확장으로 임의 명령을 실행할 수 있다는 공지</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:41</span>
+            <h3><a href="https://securityboulevard.com/2026/11/state-of-database-devops-2025-ai-pressure-security-gaps-visibility-gains/" target="_blank" rel="noopener">2025년 데이터베이스 데브옵스 현황: AI 압박, 보안 격차와 가시성 개선</a></h3>
+            <span class="feed-orig">State of Database DevOps 2025: AI Pressure, Security Gaps & Visibility Gains</span>
+            <p class="feed-sum">2025년 데이터베이스 데브옵스 현황을 AI 압박, 보안 격차, 가시성 개선 관점에서 정리한 글</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:41</span>
+            <h3><a href="https://securityboulevard.com/2026/11/open-source-security-risks-owasps-top-5-oss-vulnerabilities-guide/" target="_blank" rel="noopener">오픈소스 보안 위험: OWASP 상위 5대 오픈소스 취약점 가이드</a></h3>
+            <span class="feed-orig">Open Source Security Risks: OWASP’s Top 5 OSS Vulnerabilities Guide</span>
+            <p class="feed-sum">OWASP의 상위 5대 오픈소스 취약점을 정리한 오픈소스 보안 위험 가이드</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:40</span>
+            <h3><a href="https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering" target="_blank" rel="noopener">Qwen 사고로 본 자가 호스팅 AI 모델의 더 강한 통제 필요성</a></h3>
+            <span class="feed-orig">Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering</span>
+            <p class="feed-sum">Qwen 관련 사고를 통해 자가 호스팅 AI 모델에 더 강한 통제가 필요하다는 분석</p>
+            <span class="feed-src">Dark Reading</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:07</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOUVNfZGNYT3NaWlFfWndxMTVyd0k3S3lUTnpSSTY3UXlOOFZ1LXNmRjJyY2dxNVY0UFNxUkdqSHFwbS00WWlIcFVYZUd5ZHNrYzFQU1hFYVdVS1g1SVd4ODFnOVNkNUXSAWtBVV95cUxOUUgtRFNxUWxwZWktT0d2Z0k0VmpUU3ZVYU5LTHc4LWVQVnhJWTM3c0RlY3h3NVdUQ09ITngweXdhMlBqNmVEbkFLekZIMnlnRUJvWjdBejZSU1VLZ2ZIUkNqc3kxVUFlazJiUQ?oc=5" target="_blank" rel="noopener">KG에듀원 해킹에 저축은행 직원 개인정보 유출…금융사기 주의보</a></h3>
+            <span class="feed-src">민주신문</span>
+          </article>
+<article class="feed-item">
+            <span class="feed-time">11/20 07:31</span>
+            <h3><a href="https://aws.amazon.com/blogs/security/your-aws-security-identity-and-governance-guide-to-reinvent-2026/" target="_blank" rel="noopener">AWS 보안·ID·거버넌스 re:Invent 2026 가이드</a></h3>
+            <span class="feed-orig">Your AWS Security, Identity, and Governance guide to re:Invent 2026</span>
+            <p class="feed-sum">AWS re:Invent 2026의 보안·ID·거버넌스 관련 내용을 안내하는 글이다.</p>
+            <span class="feed-src">AWS Security Blog</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:25</span>
+            <h3><a href="https://github.com/advisories/GHSA-q433-mp6c-8v4f" target="_blank" rel="noopener">CVE-2026-130008 — sqlite-mcp: 읽기 전용 모드 우회 — statement chaining 및 describe_table SQL 인젝션</a></h3>
+            <span class="feed-orig">CVE-2026-130008 — sqlite-mcp: Read-only mode bypass via statement chaining and SQL injection in describe_table</span>
+            <p class="feed-sum">sqlite-mcp의 읽기 전용 모드를 우회해 describe_table에서 SQL 인젝션이 가능한 취약점이다.</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:25</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/" target="_blank" rel="noopener">해커들, SBC Medical Group 고객 160만 명의 데이터 탈취</a></h3>
+            <span class="feed-orig">Hackers steal data of 1.6 million SBC Medical Group customers</span>
+            <p class="feed-sum">해커들이 SBC Medical Group 고객 160만 명의 데이터를 훔쳤다는 소식이다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:18</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE05X0t4RWZJOERfRUdpTklUd2d6RnFDcF9HWDdXYWNhckN2UHpRWTg1SVJLNWJDUW8tVVVzNS1tc05nUkQ5SnZWRnFma3AtWGhra1JfeGsxQTJsUFFJVHhrRTE3Nlo3MzNmZXNUOHZMRWNrcjg?oc=5" target="_blank" rel="noopener">JP모건·비자·마스터카드, 협력업체 해킹으로 일부 고객 정보 노출</a></h3>
+            <span class="feed-src">디지털투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:26</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/" target="_blank" rel="noopener">VMware, 9월부터 공격에 악용된 vCenter 제로데이 패치</a></h3>
+            <span class="feed-orig">VMware patches vCenter zero-day exploited in attacks since September</span>
+            <p class="feed-sum">VMware가 9월부터 공격에 악용돼 온 vCenter 제로데이를 패치했다는 소식이다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:20</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yaThYOFJGeTRFUloxSzZLQjV2RVRfNE9zUUZfT3pLTkp2aTFFRXRTbVZKQm9hWWl1bnRQT0FWdGF6Ym1KckRBTnhhQ1NWVGVRbTVaaEpNQVBLdlZmZ1JLYw?oc=5" target="_blank" rel="noopener">세계 기업 시스템에 보안 비상… AI가 자바 치명적 취약점 발견</a></h3>
+            <span class="feed-src">시큐리티팩트</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/19 13:11</span>
+            <h3><span class="feed-tag hot">속보</span><span class="feed-tag">nginx</span><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1LRWtBNVFLcmphSFB5cFVXMVktWk51Q056WmlIUWpPNDgtV3E3cE16eWdPZHdZYWYzQnN1bTNSSjlSWml5dUMwRmhHX2ZyZGM3ZVE?oc=5" target="_blank" rel="noopener">세계 웹사이트 30% 쓰는 엔진엑스 '보안 비상'…정부 긴급 권고(종합)</a></h3>
+            <span class="feed-src">매일경제 마켓</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:31</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE41YUpqb05WbE4xSjQ4VGZ4M1JFSEp3cjdnbktLdzY0NkZGOGF0ZWZQanRXSXVGWkhfRXRTMjFiX1JFTHRSNkVVS2R5TlF6NUFZSnVyQlE5RlZ0N1lrTkVxZ9IBeEFVX3lxTE00YXVlNnM5TWZ5ZjE1LTNvT2Z3cmVjVlVKdXI2UUQzLTRtZzJUV19VZUtSVFhGSkpwYldtN1NDVnpTblFNSzBleVFZajVpdmh4eWRKNG9maXpvc3RBclAySWhjQ09zOVduR2hMVEJzYjJKS3p5bGhsLQ?oc=5" target="_blank" rel="noopener">63억弗 해킹 피해 바이낸스, 탈취 자산 회수 나서…아부다비 법원 명령 확보</a></h3>
+            <span class="feed-src">뉴시스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:26</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209632" target="_blank" rel="noopener">정부기관 개인정보 유출, 감독 소홀한 기관장도 문책…최소 징계 ‘감봉’ 추진</a></h3>
+            <span class="feed-src">Dailysecu</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:26</span>
+            <h3><a href="https://www.etnews.com/20261120000041" target="_blank" rel="noopener">인젠트, 공공솔루션마켓서 공공기관 AI 보안 전략 제시</a></h3>
+            <span class="feed-src">etnews AI/SW</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:23</span>
+            <h3><a href="https://github.com/advisories/GHSA-mc8w-wjhw-45x5" target="_blank" rel="noopener">CVE-2026-114516 — Etherpad: 인증 전 임의 파일 읽기</a></h3>
+            <span class="feed-orig">CVE-2026-114516 — Etherpad: Pre-auth arbitrary file read</span>
+            <p class="feed-sum">Etherpad에서 인증 없이 임의 파일을 읽을 수 있는 취약점이 보고됐다.</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 07:45</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBwOFhXWEZrdnBqd3EwakE1b0dqTU1WQVVIQ1p2cTBuWmNBc0lYdUtEVmh4blRtV3BwTDF5aUtKdGNFMGR2RXo4VU5ycFRRVWVfUUprM3kxdU9oV1F6SWNETXFSS3NEMF96V3ZMWHhFX19wWTZDdGRtYmQ2SdIBgAFBVV95cUxNdHFVZnp0RElwWnlfZUt2VlhXRl94YWpnUTBDMk9DVXV4WmpBMnIyZzg1dEh6UHFwZnBJcXpoVGYzOEJNU3pMclZCQU5GYjFRRl83Q0ZPTkdWbGF0NW9felhSOGpjNmtzMVh0UlQwS1Zfc2lFWDlZN1JJenlSMWN6bA?oc=5" target="_blank" rel="noopener">정부기관 개인정보 유출 땐 기관장도 징계 … 최저 수위 감봉으로 상향</a></h3>
+            <span class="feed-src">뉴데일리 경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 03:56</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBlYS1KcGZDVmZXQkpBZWNhZVFWNVY4eUVnSEM0aVlseHlaUXZvLXZwUHluS1llSlRjNzZrX3UzcW9PQUZSdzFNeVBpRVl4VlAtRjA2MDRrQ0dJN3JkRlA3b2ZtOWc4WjAyZU5uNzRIanBzUmtoYWc?oc=5" target="_blank" rel="noopener">UCLA 성폭력 피해 신고자 개인정보 유출 논란</a></h3>
+            <span class="feed-src">미주조선일보</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/20 06:43</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html" target="_blank" rel="noopener">Chaotic Eclipse, 새로운 윈도우 제로데이 취약점 'FastUnlock' 공개</a></h3>
@@ -4420,9 +4723,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>14</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>381</b><span>국내 동향 — 11/16~20 보도</span></div>
-        <div class="stat"><b>323</b><span>해외 동향 — 11/16~20 보도</span></div>
-        <div class="stat"><b>82</b><span>CVE·취약점 — CVSS 9.0 이상 47건 포함</span></div>
+        <div class="stat"><b>415</b><span>국내 동향 — 11/16~20 보도</span></div>
+        <div class="stat"><b>342</b><span>해외 동향 — 11/16~20 보도</span></div>
+        <div class="stat"><b>93</b><span>CVE·취약점 — CVSS 9.0 이상 47건 포함</span></div>
         <div class="stat"><b>76</b><span>다크웹 유출 — 11/19 19:45 확인 기준 24시간 건수</span></div>
       </div>
 
@@ -4678,7 +4981,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13">
           <h3>NGINX2Root — nginx 치명적 취약점 5건 (CVE-2026-123007)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
-          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다. 동아일보는 11월 19일 전 세계 웹사이트의 30%가 사용하는 엔진엑스에서 치명적 보안 취약점 5건이 발견됐다고 보도했다. 이투데이는 11월 19일 티오리가 웹 서버 엔진엑스에서 치명적 취약점을 발견해 원격으로 악성 코드를 실행할 수 있다고 보도했다. KBS 뉴스는 11월 19일 웹서버 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 발견했다고 보도했다. 아이티데일리는 11월 19일 엔진엑스에서도 고위험 취약점이 발견돼 한국 웹사이트 58%가 영향권에 있다고 보도했다. Security Affairs는 11월 19일 AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로를 발견했다고 보도했다. F5는 11월 19일 PoC 익스플로잇이 공개되자 NGINX2Root 치명적 결함에 대한 패치를 발표했다. The Cyber Express는 11월 19일 CVE-2026-123633과 CVE-2026-123007이 인증 없는 원격 코드 실행을 가능하게 한다고 보도했다. HackRead는 11월 19일 F5가 NGINX HTTP/2 취약점 2건을 패치했으며, 이 중 1건은 2015년부터 존재해 온 취약점이라고 보도했다. 경향신문은 11월 19일 세계 웹 30%가 쓰는 서버 SW 엔진엑스에서 보안 취약점 5건이 발견됐다고 보도했다. 서울경제는 11월 19일 티오리가 세계적 웹서버 엔진엑스에서 해킹 위험 5건을 발견했다고 전했다. 서울이코노미뉴스는 11월 19일 엔진엑스에서 11년 된 치명적 결함이 발견됐고 AI가 취약점 4건을 탐지했다고 보도했다. Sysdig는 11월 19일 NGINX의 RCE 취약점 5건과 리눅스 커널을 통한 루트 권한 탈취 경로, 탐지 방법을 정리한 글을 게시했다. CrowdStrike는 11월 19일 Falcon 플랫폼으로 NGINX2Root를 식별하고 보호하는 방법을 정리한 글을 게시했다.</p>
+          <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다. 동아일보는 11월 19일 전 세계 웹사이트의 30%가 사용하는 엔진엑스에서 치명적 보안 취약점 5건이 발견됐다고 보도했다. 이투데이는 11월 19일 티오리가 웹 서버 엔진엑스에서 치명적 취약점을 발견해 원격으로 악성 코드를 실행할 수 있다고 보도했다. KBS 뉴스는 11월 19일 웹서버 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 발견했다고 보도했다. 아이티데일리는 11월 19일 엔진엑스에서도 고위험 취약점이 발견돼 한국 웹사이트 58%가 영향권에 있다고 보도했다. Security Affairs는 11월 19일 AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로를 발견했다고 보도했다. F5는 11월 19일 PoC 익스플로잇이 공개되자 NGINX2Root 치명적 결함에 대한 패치를 발표했다. The Cyber Express는 11월 19일 CVE-2026-123633과 CVE-2026-123007이 인증 없는 원격 코드 실행을 가능하게 한다고 보도했다. HackRead는 11월 19일 F5가 NGINX HTTP/2 취약점 2건을 패치했으며, 이 중 1건은 2015년부터 존재해 온 취약점이라고 보도했다. 경향신문은 11월 19일 세계 웹 30%가 쓰는 서버 SW 엔진엑스에서 보안 취약점 5건이 발견됐다고 보도했다. 서울경제는 11월 19일 티오리가 세계적 웹서버 엔진엑스에서 해킹 위험 5건을 발견했다고 전했다. 서울이코노미뉴스는 11월 19일 엔진엑스에서 11년 된 치명적 결함이 발견됐고 AI가 취약점 4건을 탐지했다고 보도했다. Sysdig는 11월 19일 NGINX의 RCE 취약점 5건과 리눅스 커널을 통한 루트 권한 탈취 경로, 탐지 방법을 정리한 글을 게시했다. CrowdStrike는 11월 19일 Falcon 플랫폼으로 NGINX2Root를 식별하고 보호하는 방법을 정리한 글을 게시했다. 매일경제는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 종합 보도했다.</p>
           <a class="src-link" href="https://blog.qualys.com/product-tech/patch-management/2026/11/18/nginx2root-five-nginx-flaws-led-by-cve-2026-123007-how-to-find-mitigate-and-patch-now" target="_blank" rel="noopener">Qualys — NGINX2Root: Five nginx Flaws, Led by CVE-2026-123007</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityboulevard.com/2026/11/nginx2root-cve-2026-123007-and-four-more-unauthenticated-remote-code-execution-in-nginx/" target="_blank" rel="noopener">Security Boulevard — NGINX2Root (CVE-2026-123007 and four more)</a>
@@ -4740,6 +5043,8 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMibEFVX3lxTE43ZTNLTFFlQmQwWDZybmRLWDZOa19EQ2JmLUZQeHRjUlZmcmZiT0VRQXROZFdiZFg4TV9kbU9fdUFrdlJmT045SHF4ZE05YWcwR1hUdmhTc01QUVFjXzFlLVVkeFVmODVHcG53dg?oc=5" target="_blank" rel="noopener">스마트비즈 — 웹서버 '엔진엑스'서 치명적 보안 취약점 발견···11년 된 결함도 확인</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.crowdstrike.com/en-us/blog/crowdstrike-helps-protect-against-nginx2root-cve-2026-123007/" target="_blank" rel="noopener">CrowdStrike — NGINX2Root: Identify and Protect with the CrowdStrike Falcon Platform</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1LRWtBNVFLcmphSFB5cFVXMVktWk51Q056WmlIUWpPNDgtV3E3cE16eWdPZHdZYWYzQnN1bTNSSjlSWml5dUMwRmhHX2ZyZGM3ZVE?oc=5" target="_blank" rel="noopener">매일경제 — 세계 웹사이트 30% 쓰는 엔진엑스 '보안 비상'…정부 긴급 권고(종합)</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-14" aria-labelledby="tab-14">
@@ -4855,14 +5160,14 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 82건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 35건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 93건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 45건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 82건</button>
-          <button data-filter="new" aria-pressed="false">11/16~19 신규 보고</button>
+          <button data-filter="all" aria-pressed="true">전체 93건</button>
+          <button data-filter="new" aria-pressed="false">11/16~20 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
         <div class="cve-list" id="cveList">
@@ -5245,6 +5550,22 @@
           <article class="cve-row" data-kind="new">
             <div class="score crit">GHSA<small>GitHub Advisory</small></div>
             <div class="cve-main">
+              <h3><a href="https://github.com/advisories/GHSA-mc8w-wjhw-45x5" target="_blank" rel="noopener"><span class="mono">CVE-2026-114516</span></a> · Etherpad: 인증 전 임의 파일 읽기</h3>
+              <p>Etherpad에서 인증 없이 임의 파일을 읽을 수 있는 취약점. GitHub Advisory 기준 심각도 critical. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-130008</span> · sqlite-mcp</h3>
+              <p>읽기 전용 모드 우회 — statement chaining 및 describe_table SQL 인젝션.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
               <h3><span class="mono">CVE-2026-69157</span> · Atomic Server</h3>
               <p>인증 없는 /setup 초대로 Drive 전체 쓰기 권한 획득.</p>
             </div>
@@ -5353,6 +5674,78 @@
               <p>서명 검증 우회. GitHub Advisory로 공개.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-129302</span> · Guard Core</h3>
+              <p>내장 탐지 패턴의 2차 ReDoS로 단일 요청에 이벤트 루프 동결.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-130007</span> · k8s-mcp-server</h3>
+              <p>기본 SSE/HTTP 전송 인증 누락으로 미인증 쿠버네티스 도구 실행.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-83816</span> · CodeWhale</h3>
+              <p>exec_shell 분류기가 실행 플래그를 자동 승인해 은밀한 RCE.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-83817</span> · CodeWhale</h3>
+              <p>auto_approve 기본값 true로 강화 수정 우회, 은밀한 반복 실행.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-95839</span> · containerd</h3>
+              <p>잘못된 다이제스트가 포함된 이미지로 데몬 충돌.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-115563</span> · Model Context Protocol Python SDK</h3>
+              <p>OAuth 클라이언트가 서버가 선택한 인가 서버로 자격증명 전송.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-97698</span> · Mistune</h3>
+              <p>parse_link_href의 무제한 괄호 스캔으로 2차 시간 DoS.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-97699</span> · Mistune</h3>
+              <p>인라인 이미지 파싱의 2차 시간 DoS, 가드 우회.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><span class="mono">CVE-2026-121716</span> · fzf</h3>
+              <p>fzf-tmux의 bash 산술 확장으로 임의 명령 실행.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score high">USN<small>Ubuntu Security Notice</small></div>
@@ -5533,15 +5926,152 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 381건 · 해외 323건 · 2026년 11월 16~20일 보도</p>
+          <p>국내 415건 · 해외 342건 · 2026년 11월 16~20일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">381건 · 2026년 11월 16~20일 보도</p>
+            <p class="col-note">415건 · 2026년 11월 16~20일 보도</p>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVEllblFRVTVkRFh6b1NhbDFlbG05U004MFNqd1dNYW0wZl9TanpCTW5OSWtKV3dyNGc2eldRQlA1UC1SR0JlVFNUM1FuazRRd1dyamhxdFA3TVBoVkQyM0loR01UWmFvVlNrOE5qSWVWNmdzaTNhNlJIQTZ4emlJUlhtSWlHcUlwUnJXN1ZR?oc=5" target="_blank" rel="noopener">AI 해킹으로 불안한데…PHP서 또 치명적 취약점 발견</a></h3>
+              <span class="news-meta">국제신문 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261120046100051" target="_blank" rel="noopener">해양교통안전공단, 내년부터 항만보안 전문인력 양성</a></h3>
+              <span class="news-meta">Yonhap news · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE05eVhVY0x1SDY1TXlzT0p2V1dITFFOcl9uSGdQRXJaTVZJT29tUW82UHFEV21XM0o0ZEFKbzdMZlE0MURodDNtbzhtNExDNWFkLTBOVm9n0gFUQVVfeXFMTWRMNWpINmVFUXZPOEhBd1F2ZDRLLU9hSlpmZ1BPRWZwV0lnSXdBOFV5N3diOEtham1jUnJ6YVU1YmdYWl9GYzkxSk9lMlgzVlhicS1u?oc=5" target="_blank" rel="noopener">PHP 보안 취약점 또 무더기 발견… “최신 보안 업뎃을”</a></h3>
+              <span class="news-meta">세계일보 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFB6T0RYb21BSVZQMXJ1NmRiUnJ0djRlcFpJTG9HWkZvYW0yM1l1RzlKTFJNU29wQllpWnZrUDZNWDUwcTRjeGs4b253bzhWeFZaWi1lYTZLREJNRU9HUWRSTzFLUzBvemROVUplLWZxb9IBc0FVX3lxTE5CTnE4UXkyRWQzUFp4QkZPdzZSaGhGc2pMbmg1algwajIxTE1xS3R4MzVMY3RERktWQ0JuU0NiNGZyLTNMV05FaF9jZjZ5SkFHT1NId253RklBcDk4NjJwVy0yWU44VWQ0ZUN6Q3I3UzdYUkU?oc=5" target="_blank" rel="noopener">다우오피스, 해킹 이어 업데이트 악성코드까지 ‘비상’</a></h3>
+              <span class="news-meta">시사저널 · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFB3MlAtR2tDYVZnMGd3X1dmQ2hyVllseGlYd210R3VlVFhXU29aRVBBWVNuNW5NMm9IcUxZMzlENkdPWFVnUmVYTWMyY0piRGFybUVfSlRVYjNoRkVJTGZGNXd5T3VQWU1vTUE2Rkx3UnhiTXR2QWp1dHFoeHk4YzA?oc=5" target="_blank" rel="noopener">미국 사이버 보안국도 자바 취약점 경고..."즉각 패치 적용" 권고</a></h3>
+              <span class="news-meta">YTN 사이언스 · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UempZSzBFTHA2TUIyNU8zTTJTNmdBTXFCdXVzb013RjZXX1BMQlRQbTZrSEVzSFpYbFpSbE9CNFF5SWNST0Rha1pfenNIUEs5WUtHcUJuZ0JDRDRJNmc2QQ?oc=5" target="_blank" rel="noopener">개인정보위, Java 보안 취약점 관련 개인정보 대량 유출 예방조치 당부</a></h3>
+              <span class="news-meta">한국방송뉴스 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFA3U2VrSTM4YzdhV1RhQmgzSzlWSWpqcjBITVB0eVFsaXY0RnRmNE5zUzBHeDlhNUlEdl8taW1ZZGRxeXN2Mmx5WEdnV015Rko4ZVdESGViRmRxMEJfNFhodmlBMGNNNUcwX2lfRUNR0gFyQVVfeXFMTTlST2ItTno2dlUxTklzS2Y1eTRucGlhM0JIR3paeXpvMFI3emlmUjFpM2VUdnZhbmxaWWZ4ZUNzbzdNdmtIRGJhaHdZa3BPUTMwTTlSYjhXZERhemNEUWNFaVZ1X25yc0NhXzlyUFYwRXd3?oc=5" target="_blank" rel="noopener">과기정통부·KISA, OpenJDK 보안 취약점 긴급 경고… 기업·기관 보안 업데이트 권고</a></h3>
+              <span class="news-meta">테크데일리 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE10RnZCNi1pTVRlX2FVNGhJMExOZXczd0pJSjBUcy1hRWpnWWlKVUtOS1M1bDFxWjhRRmlpWlNXM1BvTFpfc2hlbV9lX3djWlkxaFBnUUdWWVVxTEN6c05r?oc=5" target="_blank" rel="noopener">과기정통부, 자바(Java) 보안 취약점 관련 긴급 점검 및 보안조치 당부</a></h3>
+              <span class="news-meta">헬로티 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxORWM4MlR6QUZzekJKS2xTU0ZPd1hyR0lWZ1NYUjJGNmIxZWFIMm8xaXFWaDdnYVFNVWJobEltYzlVeWxtb1A0WldIQ2drME12QnRSMmh5a2IzTHQwM1JOTFFVMVVpd2U2X3JNbHhUTzJxWk9UYmdNQzBaZFVhc2tsSlBvQkw?oc=5" target="_blank" rel="noopener">정부, 자바 보안 취약점 관련 보안조치 당부</a></h3>
+              <span class="news-meta">YTN 사이언스 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBlREI0Z045MHE0ZE1kd0JyZkRCY1NGYi1lc2luMGVtNXNtUlU0YTA5WjU3QVdUc1hHSm9QQl82aW8yY0RGRUdXT2FpUlhuRE5vWUZBS1hqd1BxdWx5ajNzN3ZNZy1sYTlZ?oc=5" target="_blank" rel="noopener">공공 시스템 71% 쓰는 ‘자바’서 보안 취약점 발견…정부 긴급 점검 권고</a></h3>
+              <span class="news-meta">CEO스코어데일리 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5wTVNTQ2g0eTFJZzRRWjItYXZKZHZEQXluMUYyYVY1THJxZTFZNy0xUGZHdXlEdDdRRmlvaWptVW9jcnF2dkNYMjczZ3RHOGNPVUJKQWZEUXFoSkhITzJNdVQtbUFBQ0g3UnVfUHEzSdIBc0FVX3lxTE1NU2FMWDdnanU5dGpwXzJHWkN3UDVid1ZhbXp2UjhXZGplSDVfdkVZdjJaNlJUZ2o4LTFNb0FsdHpzWkhyWklyQVdHZDZjLVlxU0dNd09WaXc2NV82bVBzMUdUQzdkMExNMnpqTWU1VWQ4cnM?oc=5" target="_blank" rel="noopener">과기정통부·KISA, 자바 보안 취약점 발견으로 조치 당부</a></h3>
+              <span class="news-meta">뉴스웍스 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9IdG44Zk85eTJ6VHNHdHhLLU9XN1FDbjNucTB3X3F5TnljaUg2SkhKQVFyenRKLV9ycV80Q3B0T3VGU2Vjd1M3LW92X3NZVUQ4Rkpma1dZLUtBY0V6Y2NiaElhTXI4OV9HYTF1R19yUlbSAXBBVV95cUxPSHRuOGZPOXkyelRzR3R4Sy1PVzdRQ24zbnEwd19xeU55Y2lINkpISkFRcnp0Si1fcnFfNENwdE91RlNlY3dTNy1vdl9zWVVEOEZKZmtXWS1LQWNFemNjYmhJYU1yODlfR2ExdUdfclJW?oc=5" target="_blank" rel="noopener">자바(JAVA) '치명적 취약점' 발견…정부, 긴급 보안 업데이트 권고</a></h3>
+              <span class="news-meta">엠에스투데이 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjMnhWUlVUWl9WQW0yWFBJZ2tBQm1FUWt0TncxNkkyOUZfWjNDdjNUdWgtb1RJNzdlMDVDcVgwZ3lEQzVJc0VaZ3BMbDlEZExVSmg5MEtXZEZxMUc0ejlSMEpR?oc=5" target="_blank" rel="noopener">[T나는 보안] 공공정보 71% '자바'서도 치명적 취약점…정부 긴급 점검 권고</a></h3>
+              <span class="news-meta">티제이비 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE82TVhySDdfamZBZHVvR052azRid05CLVhGR1hhT0Z0eERidkxaNzdIUGQzWXhiNW5fUjBWSTRzQ3FyWWVZNUNRTnFFT3JyUDA0aEJCMjFR?oc=5" target="_blank" rel="noopener">PHP 이어 ‘자바’서도 치명적 취약점…정부 “신속 보안 조치” 당부</a></h3>
+              <span class="news-meta">중앙일보 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFA0VUJrc05fSHEwcnJKZEVwSmVRd19QcVZYeXZWZDgtWjU1OE1wR3ZuMTJfMVNiQWNPNkQzdVlLamRuY3pLSjJQdUoyV0dzT0VCdXpya1dsT19KQmphZ2xHSktpQ2lHbjY3ZDA5TdIBbEFVX3lxTFA0VUJrc05fSHEwcnJKZEVwSmVRd19QcVZYeXZWZDgtWjU1OE1wR3ZuMTJfMVNiQWNPNkQzdVlLamRuY3pLSjJQdUoyV0dzT0VCdXpya1dsT19KQmphZ2xHSktpQ2lHbjY3ZDA5TQ?oc=5" target="_blank" rel="noopener">정부 "자바서도 치명적 보안 취약점 발견...긴급 업데이트 권고" - 머니투데이</a></h3>
+              <span class="news-meta">머니투데이 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE1kWHo0WE5RSUotQUgzS1NEakUyaFpxYkYxZEZidTdHUHByd0o3OUdtZ0ttbXEzTXo1TVFXY0I0ZzEydDVNQzBSbFZIMC1aalF5VHhUXzI3QWl5d19xWThLWFhVNUx6dw?oc=5" target="_blank" rel="noopener">리눅스 커널서 11년 숨어 있던 고위험 취약점 '노이지TCP' 발견</a></h3>
+              <span class="news-meta">디일렉 · 2026-11-17</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE41YUpqb05WbE4xSjQ4VGZ4M1JFSEp3cjdnbktLdzY0NkZGOGF0ZWZQanRXSXVGWkhfRXRTMjFiX1JFTHRSNkVVS2R5TlF6NUFZSnVyQlE5RlZ0N1lrTkVxZ9IBeEFVX3lxTE00YXVlNnM5TWZ5ZjE1LTNvT2Z3cmVjVlVKdXI2UUQzLTRtZzJUV19VZUtSVFhGSkpwYldtN1NDVnpTblFNSzBleVFZajVpdmh4eWRKNG9maXpvc3RBclAySWhjQ09zOVduR2hMVEJzYjJKS3p5bGhsLQ?oc=5" target="_blank" rel="noopener">63억弗 해킹 피해 바이낸스, 탈취 자산 회수 나서…아부다비 법원 명령 확보</a></h3>
+              <span class="news-meta">뉴시스 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209632" target="_blank" rel="noopener">정부기관 개인정보 유출, 감독 소홀한 기관장도 문책…최소 징계 ‘감봉’ 추진</a></h3>
+              <span class="news-meta">Dailysecu · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.etnews.com/20261120000041" target="_blank" rel="noopener">인젠트, 공공솔루션마켓서 공공기관 AI 보안 전략 제시</a></h3>
+              <span class="news-meta">etnews AI/SW · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE0yaThYOFJGeTRFUloxSzZLQjV2RVRfNE9zUUZfT3pLTkp2aTFFRXRTbVZKQm9hWWl1bnRQT0FWdGF6Ym1KckRBTnhhQ1NWVGVRbTVaaEpNQVBLdlZmZ1JLYw?oc=5" target="_blank" rel="noopener">세계 기업 시스템에 보안 비상… AI가 자바 치명적 취약점 발견</a></h3>
+              <span class="news-meta">시큐리티팩트 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBwOFhXWEZrdnBqd3EwakE1b0dqTU1WQVVIQ1p2cTBuWmNBc0lYdUtEVmh4blRtV3BwTDF5aUtKdGNFMGR2RXo4VU5ycFRRVWVfUUprM3kxdU9oV1F6SWNETXFSS3NEMF96V3ZMWHhFX19wWTZDdGRtYmQ2SdIBgAFBVV95cUxNdHFVZnp0RElwWnlfZUt2VlhXRl94YWpnUTBDMk9DVXV4WmpBMnIyZzg1dEh6UHFwZnBJcXpoVGYzOEJNU3pMclZCQU5GYjFRRl83Q0ZPTkdWbGF0NW9felhSOGpjNmtzMVh0UlQwS1Zfc2lFWDlZN1JJenlSMWN6bA?oc=5" target="_blank" rel="noopener">정부기관 개인정보 유출 땐 기관장도 징계 … 최저 수위 감봉으로 상향</a></h3>
+              <span class="news-meta">뉴데일리 경제 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFBlYS1KcGZDVmZXQkpBZWNhZVFWNVY4eUVnSEM0aVlseHlaUXZvLXZwUHluS1llSlRjNzZrX3UzcW9PQUZSdzFNeVBpRVl4VlAtRjA2MDRrQ0dJN3JkRlA3b2ZtOWc4WjAyZU5uNzRIanBzUmtoYWc?oc=5" target="_blank" rel="noopener">UCLA 성폭력 피해 신고자 개인정보 유출 논란</a></h3>
+              <span class="news-meta">미주조선일보 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1LRWtBNVFLcmphSFB5cFVXMVktWk51Q056WmlIUWpPNDgtV3E3cE16eWdPZHdZYWYzQnN1bTNSSjlSWml5dUMwRmhHX2ZyZGM3ZVE?oc=5" target="_blank" rel="noopener">세계 웹사이트 30% 쓰는 엔진엑스 '보안 비상'…정부 긴급 권고(종합)</a></h3>
+              <span class="news-meta">매일경제 마켓 · 2026-11-19</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE4tN19iZXdLXzBQdVppMS1rX1lUOC1oeThja2UtdzFmdktjbjU2N0FnM0dvRXQybXV4QVowSjRhclE3b0M4NjFlbFNBQzBYamUwekJIZ3pJaVJmT2wyalRJT2tIbUZQSFlLRkhiRktFTXR2TVk?oc=5" target="_blank" rel="noopener">"엔비디아 자료 훔쳤다"…랜섬웨어 조직, 공개 위협</a></h3>
+              <span class="news-meta">디지털투데이 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.datanet.co.kr/news/articleView.html?idxno=300351" target="_blank" rel="noopener">보안 사각지대 된 공급망…협력사 해킹이 본사 침투로 이어져</a></h3>
+              <span class="news-meta">Datanet · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9hZDNwMUdJXzIyeUpJbTdQYWJ1QmlEWGtIamphTWpOOTBPLUVKT29abzZlb2psSjNiSlltSFQxOWUySFREbmd6Q3pUSFRlTDRPWTN4RGRqT0tUWUM2MGpfQmhWbExUNXNEUnMyUHRVVjfSAXRBVV95cUxNUklPWjBWQ3llTVJuTFdlVndNSmpkeDMzbXFTSmlMdGlmeXBkUjF1bUdjZWVlZnVkcFdZM0FNem0wZE1TT1hpVDBHMG1mOU9pWDUyUEV0bkZqWEJEZEZ6UlZMOGQzQjNjZGRJZ2RLLVk4S3JDSw?oc=5" target="_blank" rel="noopener">비자·마스터카드·JP모건 고객 정보 유출… 외부업체 해킹</a></h3>
+              <span class="news-meta">IT조선 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ZX3RjZk50SmkxWVBtU0o3aWh4Nl9DM052b2NWRzh2OWdHTTVJNjhRTEJvNTV5aU9vTEJxa3ZoN2dhQjJOalZMbzNPYkxWZGFGdlVDVl9PencyYmtack9FVV9ZSDE?oc=5" target="_blank" rel="noopener">JP모건체이스, 협력업체 해킹 공식 발표…일부 고객 정보 노출 가능성</a></h3>
+              <span class="news-meta">라디오코리아 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxQV1FGQTJJb0ViS1h1a0hVWmU0c3ZYTTlhMkVKZlp4dXlsRHNTSFhaenRIWmNyU0xtR2NuMFpQRHZ5QTkwZ1VHWnJ2MFVNekczbF9TS3dSYWJQajhmWldHUW40OTRuX2c0RGt0NEhlZHoxTlNOSjBpZUlOVWNFQS1tTnlVb2pNQQ?oc=5" target="_blank" rel="noopener">지역대 잇단 해킹…영남대도 구성원 개인정보 유출</a></h3>
+              <span class="news-meta">Tbc.co.kr · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SS1lEWTd0cGs1TVVnRUR5TzV5TzY5ZnRXd19QclpHUmN2alJOSV9Na2xYaUR6eFh0RjVtcWtib3dIRVA1Zk9ENjRUNmJ0RTNEUGRaSVNEQTUwV3BVTndLddIBeEFVX3lxTE5udGp6Mm5qU3lnQkN0VEVka0ZVc3VNRWk4WlBwXzM1X3JpUnk0QkNIaU1XQjBjZnREdmhZc3BUOVkwNjRtYWcyemstZld5bXExWnRNQmdZSDdVY2ZzVGNsV0piZ2tsbWJnQ2ZKQk02RE1WTW51ZGE2SQ?oc=5" target="_blank" rel="noopener">[단독]'노란우산' 정보유출 눈덩이…"36만명이상 추정"(종합)</a></h3>
+              <span class="news-meta">뉴시스 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVVG9KNnJ1ZS1rR3ZqVE41b1BrSElMM21PMFZqWDZCR0lMaVlaX2RDTzNkUGplRXhqN3lIZzRGQlU4Rndxb1JTX0lsel9MNTlRb05oUVJwZ3Z2UdIBX0FVX3lxTE1NZUFYQlFacnBpeTJ1WXE5WndaeWlfc0xlZEVOdFM2ZGt2YWhjZTA2U0k3dEdFUExXQWUxd000Q28tczZndlJZVTlQTTMzbkh2T3ZwSEp2UmZlZU9SSXFv?oc=5" target="_blank" rel="noopener">강원대 산학협력단 연구통합관리시스템 해킹으로 개인정보 유출</a></h3>
+              <span class="news-meta">경향신문 · 2026-11-16</span>
+            </article>
 
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Rc2VlZGVOQUpudVpjRlFmaE85Q19wNHBZV2lZZ1B0dUwtZ1MxVFU3aU9qSkxGUDJCRktTNWdKa1BTcUlLZ0dEemR4MURqdzVKMEFRQw?oc=5" target="_blank" rel="noopener">시티은행 "AI 에이전트 해킹 피해는 고객 책임"…약관 개정</a></h3>
+              <span class="news-meta">AI 매터스 · 2026-11-20</span>
+            </article>
+
+                        <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBJVndTVWZRalJsTmctcXZRY2hmOW1fSXRnUHZQbWMwZnpoOXBicHRlRGIwUHE2WHZZdExhRGJLbmxYX01QemhsZTZmWXozWXN6SG1CckxvemVCbmozRlVvcDJ3QjdWVFVPNFNr?oc=5" target="_blank" rel="noopener">금융권 IT자산 관리 의무 강화되나…대형 금융사 보안 사각지대 줄인다</a></h3>
+              <span class="news-meta">라이센스뉴스 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOUVNfZGNYT3NaWlFfWndxMTVyd0k3S3lUTnpSSTY3UXlOOFZ1LXNmRjJyY2dxNVY0UFNxUkdqSHFwbS00WWlIcFVYZUd5ZHNrYzFQU1hFYVdVS1g1SVd4ODFnOVNkNUXSAWtBVV95cUxOUUgtRFNxUWxwZWktT0d2Z0k0VmpUU3ZVYU5LTHc4LWVQVnhJWTM3c0RlY3h3NVdUQ09ITngweXdhMlBqNmVEbkFLekZIMnlnRUJvWjdBejZSU1VLZ2ZIUkNqc3kxVUFlazJiUQ?oc=5" target="_blank" rel="noopener">KG에듀원 해킹에 저축은행 직원 개인정보 유출…금융사기 주의보</a></h3>
+              <span class="news-meta">민주신문 · 2026-11-19</span>
+            </article>
+<article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE05X0t4RWZJOERfRUdpTklUd2d6RnFDcF9HWDdXYWNhckN2UHpRWTg1SVJLNWJDUW8tVVVzNS1tc05nUkQ5SnZWRnFma3AtWGhra1JfeGsxQTJsUFFJVHhrRTE3Nlo3MzNmZXNUOHZMRWNrcjg?oc=5" target="_blank" rel="noopener">JP모건·비자·마스터카드, 협력업체 해킹으로 일부 고객 정보 노출</a></h3>
+              <span class="news-meta">디지털투데이 · 2026-11-20</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGNDhqQ2IwbUpvWnJjc1VwTDQ1VlUtNm1sbkxFdWJSYnMxdDlnaVBmNlZ0akZkVHZuWWwzeS15VlFEVElqU093LWFzcFJNX1pVQkthaXR0R1N4NWVnVlRyY9IBeEFVX3lxTE8xMS1XR2xZQ1BWT3RmZ3VLbk43YlNmakFWZC1MU3V0ZzEtOVlYa1lHNERtRnFVaUZVejk1dEo3aVBQZEh2RDAzbW5jdElSWV8xeXBOV1FIMjFiRGEtdXBZTmlmRHJsSHVHNmtkTkhpcnJPU2RNNXNfYQ?oc=5" target="_blank" rel="noopener">'PHP' 취약점 한 달 만에 또 나왔다…7개 치명적 결함 포함</a></h3>
               <span class="news-meta">뉴시스 · 2026-11-20</span>
@@ -7072,8 +7602,125 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">323건 · November 16–20, 2026</p>
+            <p class="col-note">342건 · November 16–20, 2026</p>
 
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/" target="_blank" rel="noopener">VMware, 9월부터 공격에 악용된 vCenter 제로데이 패치</a></h3>
+              <span class="news-orig">VMware patches vCenter zero-day exploited in attacks since September</span>
+              <p class="news-sum">VMware가 9월부터 공격에 악용돼 온 vCenter 제로데이를 패치했다는 소식이다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-20</span>
+            </article>
+
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-mc8w-wjhw-45x5" target="_blank" rel="noopener">CVE-2026-114516 — Etherpad: 인증 전 임의 파일 읽기 취약점</a></h3>
+              <span class="news-orig">CVE-2026-114516 — Etherpad: Pre-auth arbitrary file read</span>
+              <p class="news-sum">Etherpad에서 인증 없이 임의 파일을 읽을 수 있는 취약점이 발견됐다.</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+
+            <article class="news-item">
+              <h3><a href="https://www.cybersecuritydive.com/news/chinese-espionage-zero-day-flaw-vmware-vcenter/875273/" target="_blank" rel="noopener">중국 스파이 그룹, VMware vCenter 중대 결함 노려</a></h3>
+              <span class="news-orig">Chinese espionage group targets critical flaw in VMware vCenter</span>
+              <p class="news-sum">중국 스파이 그룹이 VMware vCenter의 중대한 결함을 노리고 있다는 보도다.</p>
+              <span class="news-meta">Cybersecurity Dive · 2026-11-20</span>
+            </article>
+
+                        <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/" target="_blank" rel="noopener">안드로이드 개발자 인증, 모든 설치 경로로 확대…파워 유저용 우회 창구도 마련</a></h3>
+              <span class="news-orig">Android developer verification will reach every install source, with a side door for power users</span>
+              <p class="news-sum">안드로이드 개발자 인증이 모든 설치 경로로 확대되며 파워 유저를 위한 우회 창구가 마련된다는 소식</p>
+              <span class="news-meta">Help Net Security · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-r7hm-rjvg-xx7j" target="_blank" rel="noopener">CVE-2026-129302 — Guard Core: 내장 탐지 패턴의 2차 ReDoS로 단일 요청에 이벤트 루프 동결</a></h3>
+              <span class="news-orig">CVE-2026-129302 — Guard Core: Quadratic ReDoS in built-in detection pattern freezes the event loop with a single request</span>
+              <p class="news-sum">Guard Core의 내장 탐지 패턴에서 2차 정규식 서비스 거부 취약점이 발견돼 단일 요청으로 이벤트 루프가 멈출 수 있다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-m932-63jc-4jqq" target="_blank" rel="noopener">CVE-2026-130007 — k8s-mcp-server: 기본 SSE/HTTP 전송 인증 누락으로 미인증 쿠버네티스 도구 실행 가능</a></h3>
+              <span class="news-orig">CVE-2026-130007 — k8s-mcp-server: Missing authentication on default SSE/HTTP transport allows unauthenticated Kubernetes tool execution</span>
+              <p class="news-sum">k8s-mcp-server의 기본 SSE/HTTP 전송에 인증이 없어 미인증 상태에서 쿠버네티스 도구를 실행할 수 있다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-3mgh-93r5-r7jf" target="_blank" rel="noopener">CVE-2026-83816 — CodeWhale: exec_shell 분류기가 fd/rg/git grep 실행 플래그를 자동 승인해 은밀한 RCE 가능</a></h3>
+              <span class="news-orig">CVE-2026-83816 — CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE</span>
+              <p class="news-sum">CodeWhale의 exec_shell 분류기가 fd·rg·git grep 실행 플래그를 자동 승인해 은밀한 원격 코드 실행이 가능하다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-8hp3-xxrg-v9c8" target="_blank" rel="noopener">CVE-2026-83817 — CodeWhale: auto_approve 기본값 true로 작업 경로 강화 수정 우회, 은밀한 반복 에이전트 실행</a></h3>
+              <span class="news-orig">CVE-2026-83817 — CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution</span>
+              <p class="news-sum">CodeWhale 자동화의 auto_approve 기본값이 true여서 작업 경로 강화 수정을 우회하고 에이전트가 은밀히 반복 실행될 수 있다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-vwhp-8p66-mq4f" target="_blank" rel="noopener">CVE-2026-95839 — containerd: 잘못된 다이제스트의 이미지로 데몬 충돌 유발</a></h3>
+              <span class="news-orig">CVE-2026-95839 — containerd image-triggered daemon crash via malformed digest in subject-annotated descriptor</span>
+              <p class="news-sum">containerd에서 잘못된 다이제스트가 포함된 이미지로 데몬이 충돌할 수 있다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-qx49-fqc8-xw99" target="_blank" rel="noopener">CVE-2026-115563 — Model Context Protocol Python SDK: OAuth 클라이언트가 MCP 서버가 선택한 인가 서버로 자격증명 전송 가능</a></h3>
+              <span class="news-orig">CVE-2026-115563 — Model Context Protocol Python SDK: OAuth client could send credentials to an authorization server chosen by the MCP server</span>
+              <p class="news-sum">MCP Python SDK에서 OAuth 클라이언트가 MCP 서버가 지정한 인가 서버로 자격증명을 보낼 수 있다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-phmp-hrw4-r36r" target="_blank" rel="noopener">CVE-2026-97698 — Mistune: 빈 라벨 링크의 무제한 괄호 스캔으로 parse_link_href 2차 시간 DoS</a></h3>
+              <span class="news-orig">CVE-2026-97698 — Mistune: Quadratic-time DoS in parse_link_href via unbounded parenthesis scan on empty-label links</span>
+              <p class="news-sum">Mistune의 parse_link_href에서 빈 라벨 링크의 무제한 괄호 스캔으로 2차 시간 서비스 거부가 발생한다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-ww7q-mxrj-5ffg" target="_blank" rel="noopener">CVE-2026-97699 — Mistune: 인라인 이미지 파싱의 2차 시간 DoS, 이미지 아님 가드 우회</a></h3>
+              <span class="news-orig">CVE-2026-97699 — Mistune: Quadratic-time DoS in inline image parsing (precedence_scan) bypasses not-is-image guards</span>
+              <p class="news-sum">Mistune의 인라인 이미지 파싱에서 이미지 아님 가드를 우회하는 2차 시간 서비스 거부가 발생한다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-w6x2-f5m4-xw82" target="_blank" rel="noopener">CVE-2026-121716 — fzf: fzf-tmux에서 검증되지 않은 레이아웃 크기의 bash 산술 확장으로 임의 명령 실행</a></h3>
+              <span class="news-orig">CVE-2026-121716 — fzf: Arbitrary command execution via bash arithmetic expansion on unvalidated layout size in fzf-tmux (-l/-u attached value)</span>
+              <p class="news-sum">fzf-tmux에서 검증되지 않은 레이아웃 크기의 bash 산술 확장으로 임의 명령을 실행할 수 있다는 공지</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/state-of-database-devops-2025-ai-pressure-security-gaps-visibility-gains/" target="_blank" rel="noopener">2025년 데이터베이스 데브옵스 현황: AI 압박, 보안 격차와 가시성 개선</a></h3>
+              <span class="news-orig">State of Database DevOps 2025: AI Pressure, Security Gaps & Visibility Gains</span>
+              <p class="news-sum">2025년 데이터베이스 데브옵스 현황을 AI 압박, 보안 격차, 가시성 개선 관점에서 정리한 글</p>
+              <span class="news-meta">Security Boulevard · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/open-source-security-risks-owasps-top-5-oss-vulnerabilities-guide/" target="_blank" rel="noopener">오픈소스 보안 위험: OWASP 상위 5대 오픈소스 취약점 가이드</a></h3>
+              <span class="news-orig">Open Source Security Risks: OWASP’s Top 5 OSS Vulnerabilities Guide</span>
+              <p class="news-sum">OWASP의 상위 5대 오픈소스 취약점을 정리한 오픈소스 보안 위험 가이드</p>
+              <span class="news-meta">Security Boulevard · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering" target="_blank" rel="noopener">Qwen 사고로 본 자가 호스팅 AI 모델의 더 강한 통제 필요성</a></h3>
+              <span class="news-orig">Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering</span>
+              <p class="news-sum">Qwen 관련 사고를 통해 자가 호스팅 AI 모델에 더 강한 통제가 필요하다는 분석</p>
+              <span class="news-meta">Dark Reading · 2026-11-20</span>
+            </article>
+<article class="news-item">
+              <h3><a href="https://aws.amazon.com/blogs/security/your-aws-security-identity-and-governance-guide-to-reinvent-2026/" target="_blank" rel="noopener">AWS 보안·ID·거버넌스 re:Invent 2026 가이드</a></h3>
+              <span class="news-orig">Your AWS Security, Identity, and Governance guide to re:Invent 2026</span>
+              <p class="news-sum">AWS re:Invent 2026의 보안·ID·거버넌스 관련 내용을 안내하는 글이다.</p>
+              <span class="news-meta">AWS Security Blog · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://github.com/advisories/GHSA-q433-mp6c-8v4f" target="_blank" rel="noopener">CVE-2026-130008 — sqlite-mcp: 읽기 전용 모드 우회 — statement chaining 및 describe_table SQL 인젝션</a></h3>
+              <span class="news-orig">CVE-2026-130008 — sqlite-mcp: Read-only mode bypass via statement chaining and SQL injection in describe_table</span>
+              <p class="news-sum">sqlite-mcp의 읽기 전용 모드를 우회해 describe_table에서 SQL 인젝션이 가능한 취약점이다.</p>
+              <span class="news-meta">GitHub Advisories · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/" target="_blank" rel="noopener">해커들, SBC Medical Group 고객 160만 명의 데이터 탈취</a></h3>
+              <span class="news-orig">Hackers steal data of 1.6 million SBC Medical Group customers</span>
+              <p class="news-sum">해커들이 SBC Medical Group 고객 160만 명의 데이터를 훔쳤다는 소식이다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-20</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html" target="_blank" rel="noopener">Chaotic Eclipse, 새로운 윈도우 제로데이 취약점 'FastUnlock' 공개</a></h3>
               <span class="news-orig">Chaotic Eclipse Releases FastUnlock, a New Windows Zero-Day Vulnerability</span>
