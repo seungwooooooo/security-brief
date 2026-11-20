@@ -228,14 +228,14 @@
         <p class="mast-date">2026년 11월 19일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <p class="mast-sub">11월 16~20일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다.</p>
-        <p class="mast-meta">수집 기준 2026년 11월 20일 09:52 KST · 랜섬웨어 유출 현황은 11월 19일 19:45 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 20일 10:07 KST · 랜섬웨어 유출 현황은 11월 19일 19:45 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>19건</b> · CVE·취약점 <b>93건</b> (CVSS 9.0 이상 47건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>19건</b> · CVE·취약점 <b>94건</b> (CVSS 9.0 이상 47건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -245,15 +245,74 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 758건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 769건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
           <article class="feed-item">
+            <span class="feed-time">11/20 10:00</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261120048800002" target="_blank" rel="noopener">금감원, 가상자산업권도 보안점검 당부…"취약점 방치 엄정대응"</a></h3>
+            <span class="feed-src">Yonhap news</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 10:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBVaTh3Tk80R0NrcWdyc3UxTHpKYlFXbTJ4WFZvZ24zYklUXzQtOUV1aFVuNGFXSEduMVNFdHMyUFpTMmpoR2JCbkhIc0tLRmlHMXFrcWlhWlZXLW9jNmx2ZHN6WjZKZw?oc=5" target="_blank" rel="noopener">금감원 "취약점 방치로 코인 해킹 땐 엄정 대응"…원점 점검 당부</a></h3>
+            <span class="feed-src">뉴스1</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 10:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mMWFMaHFUaDdmY0x6aDI4Ql85ZzZiUF94akZ6SDV3dU5DWWRST2dKaDNiNEphMzZ4VW95ZXNzeWg1a1JPLUJ2YmxCMmEyenJxUElaQU9jekhIQdIBWEFVX3lxTE5ySDhPdVh0NlBITnM5MW1yTk1TWGN6eHdRZDBSYTRqZzZyd1pvLXp6bG1ZaEQ3WlNvdENKSHRIZ3cyMk9vSXJ1Z09JbXJZYWVHSzBQVHBTNDk?oc=5" target="_blank" rel="noopener">금감원, 가상자산사업자 28곳 보안 점검 강화…취약점 방치 시 엄정 책임</a></h3>
+            <span class="feed-src">아주경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 10:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1QeVloWHozdGVlOGdZNnZ6WXVubmM0SkYxYmpFdnVBeTlYWTVXM214QkhHRHNlN3lSSXNDajNQSzZabnQyZGdXQ0JlaGlfWUVqWVJZam5lN3dMTktocDB0LWRjRnMtaVExVVZ2N2lLSFU?oc=5" target="_blank" rel="noopener">금감원, 'AI 해킹' 대비 가상자산 CISO 소집…"철저한 대비 필요 시점"</a></h3>
+            <span class="feed-src">연합인포맥스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 10:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JVXRTRnZFTl9SVE1IaGJBYzB2LTZ6VFdGYmJRRDdqSmpuZlM5T3FtWmgzeUhxVFNHamtLek0wb2JnZEtfUHZrWkRRb0o4cWVob0ZnOVVVc1gzM1U1YWVMOA?oc=5" target="_blank" rel="noopener">"취약점 방치하면 책임 물을 것" 금감원, 가상자산업계에 해킹 대비 주문</a></h3>
+            <span class="feed-src">아시아경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 10:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPMW9PemZpb2lFcXNsaWFLd2YxdVNBeDZ5SlVSc0JQM2pZWEh5MFRwWGxYSlUteC1wU0FWQUcyallIRWg3aU94QkdQcDVxZy11aFNHdUxPUEVjQ1FpeUpPTVBCN0JJSF9vZ1R5SnpuQjNTYkhXZjBfWDMxMHd0Q0UwOA?oc=5" target="_blank" rel="noopener">금감원, 가상자산업계에 보안 점검 강화 당부…AI 해킹 대응 총력</a></h3>
+            <span class="feed-src">이데일리</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:57</span>
+            <h3><a href="https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193" target="_blank" rel="noopener">VMware와 KVM 결함에 주의 필요 — 자바·PHP 패치와 함께 대응해야</a></h3>
+            <span class="feed-orig">Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else</span>
+            <p class="feed-sum">VMware와 KVM 결함에 주의가 필요하다는 소식이다. 자바·PHP 패치와 함께 대응해야 한다고 전한다.</p>
+            <span class="feed-src">The Register security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:56</span>
+            <h3><span class="feed-tag">메타엠</span><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE01UXVHa3k3NFFIUnlENURtaFpsdjNHblNjWHJJS0lPQjJNRzdxSzZhVUJZZS05M3NmNUwyeGdMdDdZLUZoam5uMnhnRHEwTUJURTJmZU52MA?oc=5" target="_blank" rel="noopener">200개 기업 고객상담 대행 메타엠 해킹 일파만파…기존 유출 10개사에서 피해 더 커지나</a></h3>
+            <span class="feed-src">헤럴드경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:55</span>
+            <h3><a href="https://www.etnews.com/20261120000061" target="_blank" rel="noopener">아이티아이즈, KHISC 2026 참가 “병원 랜섬웨어 확산 방지 해법 제시”</a></h3>
+            <span class="feed-src">etnews AI/SW</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:45</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9177-1" target="_blank" rel="noopener">USN-9177-1: PyJWT 취약점</a></h3>
+            <span class="feed-orig">USN-9177-1: PyJWT vulnerability</span>
+            <p class="feed-sum">Ubuntu 보안 공지 USN-9177-1이 PyJWT 취약점을 다룬다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/20 09:43</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVEllblFRVTVkRFh6b1NhbDFlbG05U004MFNqd1dNYW0wZl9TanpCTW5OSWtKV3dyNGc2eldRQlA1UC1SR0JlVFNUM1FuazRRd1dyamhxdFA3TVBoVkQyM0loR01UWmFvVlNrOE5qSWVWNmdzaTNhNlJIQTZ4emlJUlhtSWlHcUlwUnJXN1ZR?oc=5" target="_blank" rel="noopener">AI 해킹으로 불안한데…PHP서 또 치명적 취약점 발견</a></h3>
             <span class="feed-src">국제신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 09:41</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5KRlM5WW9EN204dXNrVEVuVy02X0lnanFrc016SnJlUXkzZDM4czVuS3NURmFMblVJdjlSb19YZjQtbUV3TVpvMXBkd3Z0N1BVei1QT2otdFczOUN0amR5N9IBeEFVX3lxTE1ocDJubHAxcDhEUS04TDU2NVRFcm1vcDJEdGY3T0lMazNsZW9WQTdnYnB1aFNVUEdaNW5QUUczVEpqSVdYa0dMQm1JVjZVSGw0OXdPTF8tY2FsYlBNQkhPWmlTbUkxMGxCQk4wWTRGeGFUdmNRbk1meA?oc=5" target="_blank" rel="noopener">금감원, 케이뱅크 정기검사 착수…해킹 대응체계 집중 점검 전망</a></h3>
+            <span class="feed-src">뉴시스</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/19 15:53</span>
@@ -4723,9 +4782,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>14</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>415</b><span>국내 동향 — 11/16~20 보도</span></div>
-        <div class="stat"><b>342</b><span>해외 동향 — 11/16~20 보도</span></div>
-        <div class="stat"><b>93</b><span>CVE·취약점 — CVSS 9.0 이상 47건 포함</span></div>
+        <div class="stat"><b>424</b><span>국내 동향 — 11/16~20 보도</span></div>
+        <div class="stat"><b>344</b><span>해외 동향 — 11/16~20 보도</span></div>
+        <div class="stat"><b>94</b><span>CVE·취약점 — CVSS 9.0 이상 47건 포함</span></div>
         <div class="stat"><b>76</b><span>다크웹 유출 — 11/19 19:45 확인 기준 24시간 건수</span></div>
       </div>
 
@@ -4773,9 +4832,11 @@
 
         <div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2">
           <h3>AI 콜센터 위탁업체 ‘메타엠’ 공급망 침해 — 코인원·번개장터·메가커피</h3>
-          <div class="status-row"><span class="chip ongoing">진행 중 · 추가 공지 가능</span><span class="chip">최근 동향 2026-11-17</span></div>
+          <div class="status-row"><span class="chip ongoing">진행 중 · 추가 공지 가능</span><span class="chip">최근 동향 2026-11-20</span></div>
           <p>메타엠 이용사는 약 150곳. 11월 12일 공격, 13일 03:44 KISA 신고 이후 확인된 유출 공지는 코인원, 번개장터(전화번호 49건, 11/16 최종), 메가커피(상담 고객 전화번호 30건, 11/17) 순입니다. 성명·결제 정보 유출은 확인되지 않았지만, 다른 위탁사의 추가 공지가 이어질 수 있습니다.</p>
           <a class="src-link" href="https://www.yna.co.kr/view/AKR20261117139700030?section=issue/all" target="_blank" rel="noopener">연합뉴스 — 메가커피 고객센터 위탁업체 해킹</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE01UXVHa3k3NFFIUnlENURtaFpsdjNHblNjWHJJS0lPQjJNRzdxSzZhVUJZZS05M3NmNUwyeGdMdDdZLUZoam5uMnhnRHEwTUJURTJmZU52MA?oc=5" target="_blank" rel="noopener">헤럴드경제 — 200개 기업 고객상담 대행 메타엠 해킹 일파만파</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3">
@@ -5160,13 +5221,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 93건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 45건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 94건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 47건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 93건</button>
+          <button data-filter="all" aria-pressed="true">전체 94건</button>
           <button data-filter="new" aria-pressed="false">11/16~20 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -5915,6 +5976,14 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
           </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9177-1" target="_blank" rel="noopener"><span class="mono">USN-9177-1</span></a> · PyJWT vulnerability</h3>
+              <p>PyJWT vulnerability — Ubuntu 보안 공지. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
 
         </div>
         <p class="note">Oracle 2026년 11월 CPU(11/17)와 Java4Shell·N-able 묶음은 11월 16~17일 <strong>처음 공개·보고</strong>된 항목입니다. 나머지는 11월 10~12일 공개분이 KISA 권고·CISA KEV 등재로 이번 주 다시 부상한 것으로, 공개일을 함께 표기했습니다.</p>
@@ -5926,17 +5995,53 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 415건 · 해외 342건 · 2026년 11월 16~20일 보도</p>
+          <p>국내 424건 · 해외 344건 · 2026년 11월 16~20일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">415건 · 2026년 11월 16~20일 보도</p>
+            <p class="col-note">424건 · 2026년 11월 16~20일 보도</p>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261120048800002" target="_blank" rel="noopener">금감원, 가상자산업권도 보안점검 당부…"취약점 방치 엄정대응"</a></h3>
+              <span class="news-meta">Yonhap news · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBVaTh3Tk80R0NrcWdyc3UxTHpKYlFXbTJ4WFZvZ24zYklUXzQtOUV1aFVuNGFXSEduMVNFdHMyUFpTMmpoR2JCbkhIc0tLRmlHMXFrcWlhWlZXLW9jNmx2ZHN6WjZKZw?oc=5" target="_blank" rel="noopener">금감원 "취약점 방치로 코인 해킹 땐 엄정 대응"…원점 점검 당부</a></h3>
+              <span class="news-meta">뉴스1 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mMWFMaHFUaDdmY0x6aDI4Ql85ZzZiUF94akZ6SDV3dU5DWWRST2dKaDNiNEphMzZ4VW95ZXNzeWg1a1JPLUJ2YmxCMmEyenJxUElaQU9jekhIQdIBWEFVX3lxTE5ySDhPdVh0NlBITnM5MW1yTk1TWGN6eHdRZDBSYTRqZzZyd1pvLXp6bG1ZaEQ3WlNvdENKSHRIZ3cyMk9vSXJ1Z09JbXJZYWVHSzBQVHBTNDk?oc=5" target="_blank" rel="noopener">금감원, 가상자산사업자 28곳 보안 점검 강화…취약점 방치 시 엄정 책임</a></h3>
+              <span class="news-meta">아주경제 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1QeVloWHozdGVlOGdZNnZ6WXVubmM0SkYxYmpFdnVBeTlYWTVXM214QkhHRHNlN3lSSXNDajNQSzZabnQyZGdXQ0JlaGlfWUVqWVJZam5lN3dMTktocDB0LWRjRnMtaVExVVZ2N2lLSFU?oc=5" target="_blank" rel="noopener">금감원, 'AI 해킹' 대비 가상자산 CISO 소집…"철저한 대비 필요 시점"</a></h3>
+              <span class="news-meta">연합인포맥스 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JVXRTRnZFTl9SVE1IaGJBYzB2LTZ6VFdGYmJRRDdqSmpuZlM5T3FtWmgzeUhxVFNHamtLek0wb2JnZEtfUHZrWkRRb0o4cWVob0ZnOVVVc1gzM1U1YWVMOA?oc=5" target="_blank" rel="noopener">"취약점 방치하면 책임 물을 것" 금감원, 가상자산업계에 해킹 대비 주문</a></h3>
+              <span class="news-meta">아시아경제 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPMW9PemZpb2lFcXNsaWFLd2YxdVNBeDZ5SlVSc0JQM2pZWEh5MFRwWGxYSlUteC1wU0FWQUcyallIRWg3aU94QkdQcDVxZy11aFNHdUxPUEVjQ1FpeUpPTVBCN0JJSF9vZ1R5SnpuQjNTYkhXZjBfWDMxMHd0Q0UwOA?oc=5" target="_blank" rel="noopener">금감원, 가상자산업계에 보안 점검 강화 당부…AI 해킹 대응 총력</a></h3>
+              <span class="news-meta">이데일리 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE01UXVHa3k3NFFIUnlENURtaFpsdjNHblNjWHJJS0lPQjJNRzdxSzZhVUJZZS05M3NmNUwyeGdMdDdZLUZoam5uMnhnRHEwTUJURTJmZU52MA?oc=5" target="_blank" rel="noopener">200개 기업 고객상담 대행 메타엠 해킹 일파만파…기존 유출 10개사에서 피해 더 커지나</a></h3>
+              <span class="news-meta">헤럴드경제 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.etnews.com/20261120000061" target="_blank" rel="noopener">아이티아이즈, KHISC 2026 참가 “병원 랜섬웨어 확산 방지 해법 제시”</a></h3>
+              <span class="news-meta">etnews AI/SW · 2026-11-20</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVEllblFRVTVkRFh6b1NhbDFlbG05U004MFNqd1dNYW0wZl9TanpCTW5OSWtKV3dyNGc2eldRQlA1UC1SR0JlVFNUM1FuazRRd1dyamhxdFA3TVBoVkQyM0loR01UWmFvVlNrOE5qSWVWNmdzaTNhNlJIQTZ4emlJUlhtSWlHcUlwUnJXN1ZR?oc=5" target="_blank" rel="noopener">AI 해킹으로 불안한데…PHP서 또 치명적 취약점 발견</a></h3>
               <span class="news-meta">국제신문 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5KRlM5WW9EN204dXNrVEVuVy02X0lnanFrc016SnJlUXkzZDM4czVuS3NURmFMblVJdjlSb19YZjQtbUV3TVpvMXBkd3Z0N1BVei1QT2otdFczOUN0amR5N9IBeEFVX3lxTE1ocDJubHAxcDhEUS04TDU2NVRFcm1vcDJEdGY3T0lMazNsZW9WQTdnYnB1aFNVUEdaNW5QUUczVEpqSVdYa0dMQm1JVjZVSGw0OXdPTF8tY2FsYlBNQkhPWmlTbUkxMGxCQk4wWTRGeGFUdmNRbk1meA?oc=5" target="_blank" rel="noopener">금감원, 케이뱅크 정기검사 착수…해킹 대응체계 집중 점검 전망</a></h3>
+              <span class="news-meta">뉴시스 · 2026-11-20</span>
             </article>
             <article class="news-item">
               <h3><a href="https://www.yna.co.kr/view/AKR20261120046100051" target="_blank" rel="noopener">해양교통안전공단, 내년부터 항만보안 전문인력 양성</a></h3>
@@ -7602,7 +7707,21 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">342건 · November 16–20, 2026</p>
+            <p class="col-note">344건 · November 16–20, 2026</p>
+
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193" target="_blank" rel="noopener">VMware와 KVM 결함에 주의 필요 — 자바·PHP 패치와 함께 대응해야</a></h3>
+              <span class="news-orig">Flaws in VMware and KVM need attention, if you have time while fixing Java, PHP, and everything else</span>
+              <p class="news-sum">VMware와 KVM 결함에 주의가 필요하다는 소식이다. 자바·PHP 패치와 함께 대응해야 한다고 전한다.</p>
+              <span class="news-meta">The Register security · 2026-11-20</span>
+            </article>
+
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9177-1" target="_blank" rel="noopener">USN-9177-1: PyJWT 취약점</a></h3>
+              <span class="news-orig">USN-9177-1: PyJWT vulnerability</span>
+              <p class="news-sum">Ubuntu 보안 공지 USN-9177-1이 PyJWT 취약점을 다룬다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-20</span>
+            </article>
 
             <article class="news-item">
               <h3><a href="https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/" target="_blank" rel="noopener">VMware, 9월부터 공격에 악용된 vCenter 제로데이 패치</a></h3>
