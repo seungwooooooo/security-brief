@@ -68,21 +68,22 @@
       .stat span { display: block; font-size: clamp(13px, 1.2vw, 14px); color: var(--ink-2); line-height: 1.55; }
 
       /* ---------- Sections ---------- */
-      section { margin-top: clamp(56px, 8vw, 96px); }
-      .sec-head { margin-bottom: clamp(22px, 3.5vw, 40px); }
+      section { margin-top: clamp(44px, 6vw, 72px); }
+      .sec-head { margin-bottom: clamp(16px, 2.5vw, 28px); }
       .sec-head h2 { margin: 0; font-size: clamp(23px, 3.2vw, 30px); font-weight: 700; letter-spacing: -.025em; line-height: 1.25; }
       .sec-head p { margin: 10px 0 0; font-size: clamp(13.5px, 1.2vw, 14px); color: var(--ink-3); line-height: 1.7; }
 
       /* ---------- Live feed — fluid columns that grow with the viewport ---------- */
       .feed { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); column-gap: clamp(24px, 4vw, 48px); border-top: 1px solid var(--line); }
-      .feed-item { padding: clamp(20px, 2.8vw, 28px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
-      .feed-time { display: block; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; margin-bottom: 6px; }
-      .feed-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 600; line-height: 1.55; letter-spacing: -.01em; }
+      .feed-item { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 8px; padding: clamp(12px, 1.8vw, 16px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .feed-time { font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+      .feed-item h3 { order: 2; flex: 1 1 100%; margin: 3px 0 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 600; line-height: 1.45; letter-spacing: -.01em; }
       .feed-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
       .feed-item h3 a:hover { color: var(--link); text-decoration: none; }
-      .feed-src { display: block; font-size: 13px; color: var(--ink-3); margin-top: 6px; }
-      .feed-orig { display: block; font-size: 13px; color: var(--ink-3); line-height: 1.6; margin-top: 4px; }
-      .feed-sum { margin: 5px 0 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
+      .feed-src { order: 1; font-size: 13px; color: var(--ink-3); }
+      .feed-src::before { content: "·"; margin-right: 8px; }
+      .feed-orig { order: 3; flex: 1 1 100%; font-size: 13px; color: var(--ink-3); line-height: 1.5; margin-top: 3px; }
+      .feed-sum { order: 4; flex: 1 1 100%; margin: 4px 0 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
       .feed-tag { font-weight: 600; color: var(--red); margin-right: 8px; }
       .feed-tag:not(.hot) { color: var(--ink-2); }
 
@@ -108,12 +109,12 @@
 
       /* ---------- KISA — fluid grid, same component at every width ---------- */
       .kisa-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); column-gap: clamp(24px, 4vw, 48px); border-top: 1px solid var(--line); }
-      .kisa-item { padding: clamp(22px, 3vw, 32px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
-      .kisa-date { display: block; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; margin-bottom: 6px; }
-      .kisa-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 700; letter-spacing: -.01em; line-height: 1.5; }
+      .kisa-item { padding: clamp(14px, 2vw, 18px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .kisa-date { display: block; font-size: 13px; color: var(--ink-3); font-variant-numeric: tabular-nums; margin-bottom: 4px; }
+      .kisa-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 700; letter-spacing: -.01em; line-height: 1.45; }
       .kisa-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
       .kisa-item h3 a:hover { color: var(--link); text-decoration: none; }
-      .kisa-body { color: var(--ink-2); font-size: clamp(15px, 1.4vw, 15.5px); line-height: 1.85; margin-top: 8px; }
+      .kisa-body { color: var(--ink-2); font-size: clamp(15px, 1.4vw, 15.5px); line-height: 1.65; margin-top: 6px; }
       .kisa-body .fix { color: var(--ink); font-weight: 500; }
       .note { margin-top: 28px; font-size: 13.5px; color: var(--ink-3); line-height: 1.8; }
       .note strong { color: var(--ink-2); font-weight: 600; }
@@ -126,33 +127,33 @@
 
       /* ---------- CVE — fluid grid ---------- */
       .cve-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); column-gap: clamp(24px, 4vw, 48px); border-top: 1px solid var(--line); }
-      .cve-row { padding: clamp(22px, 3vw, 32px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .cve-row { padding: clamp(14px, 2vw, 18px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
       .cve-row.hidden { display: none; }
-      .score { font-size: 15px; font-weight: 700; color: var(--red); font-variant-numeric: tabular-nums; margin-bottom: 6px; }
+      .score { font-size: 15px; font-weight: 700; color: var(--red); font-variant-numeric: tabular-nums; margin-bottom: 4px; }
       .score small { font-weight: 500; color: var(--ink-3); margin-left: 6px; font-size: 12px; }
       .score.high { color: var(--ink); }
-      .cve-main h3 { margin: 0; font-size: clamp(16px, 1.6vw, 17.5px); font-weight: 700; letter-spacing: -.01em; line-height: 1.55; }
+      .cve-main h3 { margin: 0; font-size: clamp(16px, 1.6vw, 17.5px); font-weight: 700; letter-spacing: -.01em; line-height: 1.45; }
       .cve-main h3 .mono { color: var(--link); font-weight: 600; font-size: 15px; overflow-wrap: anywhere; }
-      .cve-main p { margin: 8px 0 0; font-size: clamp(15px, 1.4vw, 15.5px); color: var(--ink-2); line-height: 1.85; }
-      .cve-tags { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; }
+      .cve-main p { margin: 6px 0 0; font-size: clamp(15px, 1.4vw, 15.5px); color: var(--ink-2); line-height: 1.65; }
+      .cve-tags { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; }
       .tag { font-size: 13px; color: var(--ink-3); }
       .tag.new, .tag.kev { color: var(--red); font-weight: 600; }
       .tag.warn { color: var(--ink-2); font-weight: 600; }
 
       /* ---------- News — two columns flow side-by-side when there's room, stack when there isn't ---------- */
-      .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(40px, 6vw, 72px) clamp(32px, 5vw, 64px); align-items: start; }
+      .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(28px, 4vw, 48px) clamp(32px, 5vw, 64px); align-items: start; }
       .news-col { min-width: 0; }
       .news-col h2 { font-size: clamp(23px, 3vw, 28px); font-weight: 700; letter-spacing: -.025em; margin: 0; line-height: 1.25; }
       .news-col .col-note { font-size: 14px; color: var(--ink-3); margin: 10px 0 16px; }
-      .news-item { padding: clamp(22px, 3vw, 32px) 0; border-bottom: 1px solid var(--line); }
+      .news-item { padding: clamp(12px, 1.8vw, 16px) 0; border-bottom: 1px solid var(--line); }
       .news-item:first-of-type { border-top: 1px solid var(--line); }
-      .news-item h3 { margin: 0 0 8px; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 700; line-height: 1.55; letter-spacing: -.01em; }
+      .news-item h3 { margin: 0 0 5px; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 700; line-height: 1.45; letter-spacing: -.01em; }
       .news-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
       .news-item h3 a:hover { color: var(--link); text-decoration: none; }
-      .news-item p { margin: 0 0 10px; font-size: clamp(15px, 1.4vw, 15.5px); color: var(--ink-2); line-height: 1.85; }
+      .news-item p { margin: 0 0 6px; font-size: clamp(15px, 1.4vw, 15.5px); color: var(--ink-2); line-height: 1.6; }
       .news-meta { font-size: 13px; color: var(--ink-3); }
-      .news-orig { display: block; font-size: 13px; color: var(--ink-3); line-height: 1.6; margin-bottom: 6px; }
-      .news-item p.news-sum { margin: 0 0 10px; font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
+      .news-orig { display: block; font-size: 13px; color: var(--ink-3); line-height: 1.5; margin-bottom: 4px; }
+      .news-item p.news-sum { margin: 0 0 6px; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
 
       /* ---------- Leak — one fluid table at every width: type & padding scale, columns wrap ---------- */
       .leak-summary { display: flex; flex-wrap: wrap; gap: 6px clamp(18px, 3vw, 28px); margin-bottom: clamp(22px, 3vw, 32px); font-size: clamp(13.5px, 1.3vw, 14.5px); color: var(--ink-2); }
@@ -160,7 +161,7 @@
       .leak-table { width: 100%; border-collapse: collapse; font-size: clamp(13.5px, 1.3vw, 15px); table-layout: auto; }
       .leak-table th { text-align: left; font-size: 12.5px; color: var(--ink-3); font-weight: 500; padding: 0 clamp(8px, 1.5vw, 16px) 12px 0; border-bottom: 1px solid var(--line); line-height: 1.5; }
       .leak-table th:last-child, .leak-table td:last-child { padding-right: 0; }
-      .leak-table td { padding: clamp(14px, 2vw, 20px) clamp(8px, 1.5vw, 16px) clamp(14px, 2vw, 20px) 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-2); line-height: 1.6; overflow-wrap: anywhere; }
+      .leak-table td { padding: clamp(10px, 1.5vw, 14px) clamp(8px, 1.5vw, 16px) clamp(10px, 1.5vw, 14px) 0; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-2); line-height: 1.6; overflow-wrap: anywhere; }
       .leak-table tr.hidden { display: none; }
       .leak-table .victim { font-weight: 600; color: var(--ink); }
       .leak-table .grp { font-family: var(--mono); font-size: 13.5px; color: var(--ink); }
@@ -189,8 +190,8 @@
       .archive-empty { color: var(--ink-2); font-size: 16px; line-height: 1.85; padding: 8px 0; max-width: 760px; }
       .archive-empty strong { color: var(--ink); }
       .archive-list { border-top: 1px solid var(--line); }
-      .archive-item { padding: clamp(20px, 2.8vw, 28px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
-      .archive-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 600; line-height: 1.55; letter-spacing: -.01em; }
+      .archive-item { padding: clamp(12px, 1.8vw, 16px) 0; border-bottom: 1px solid var(--line); min-width: 0; }
+      .archive-item h3 { margin: 0; font-size: clamp(16.5px, 1.6vw, 18px); font-weight: 600; line-height: 1.45; letter-spacing: -.01em; }
       .archive-item h3 a { color: var(--ink); display: block; padding: 4px 0; margin: -4px 0; }
       .archive-item h3 a:hover { color: var(--link); text-decoration: none; }
       .archive-desc { margin: 6px 0 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.65; }
@@ -227,7 +228,7 @@
       <header class="masthead">
         <p class="mast-date">2026년 11월 21일 토요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
-        <p class="mast-sub">11월 16~21일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다. 오늘은 PHP 치명적 취약점에 대한 정부 긴급 업데이트 권고와 금감원의 가상자산사업자 보안점검 주문이 이어졌고, 브로드컴이 v센터 최고 등급 인증 우회 결함에 긴급 업데이트를 권고했다. 여기에 비자·마스터카드·JP모건체이스 고객 정보 일부 유출과 금감원의 케이뱅크 정기검사 돌입, PHP 취약점 17건 속보 추가 보도가 더해졌다. 금융소비자뉴스는 PHP 치명적 취약점에 대한 KISA 긴급 업데이트 권고를 다시 전했고, Ubuntu는 nginx 보안 공지 USN-9182-1을 발행했으며, 데일리시큐는 다크웹에 한전 개인정보·입찰자료 확보 주장이 올라왔다고 단독 보도했다. 전북 교육기관 해킹이 이어져 전주대에서 주민번호 2만 5천 건이 유출됐고, 부산대·동의대 해킹으로 개인정보가 유출됐으며, 원주시는 개인정보 1,957건 유출에도 관련 자체감사가 5년간 0건인 것으로 나타났다. 금융소비자뉴스는 AI 해킹에 비상이 걸린 가상자산업계에 대해 금감원이 보안 부실 책임을 경고했다고 보도했다. 오늘은 PHP 취약점 재발에 대한 KISA 긴급 업데이트 권고와 금감원의 가상자산사업자 보안 점검·책임 경고, 체이스 해킹 비상 보도가 이어졌다. 중국 연계 해커가 VMware vCenter 제로데이를 악용해 관리자 권한을 탈취했다는 보도가 나왔고, PHP 취약점에 대한 정부 긴급 업데이트 권고와 금감원의 가상자산업계 외부접점 전수점검이 이어졌다. 컬리에서 큐레이터 1만699명의 개인정보가 유출됐고 일부 주민번호가 포함된 것으로 확인됐으며, ARMORY CASTLE가 두 번째 제로데이 취약점을 연계해 VMware vCenter를 장악했다는 보도가 나왔다. 오늘 저녁에는 N-able이 서비스 장애의 원인이 사이버 공격이라고 밝혔고, Gladys Assistant에서 CVSS 9.1·9.0 취약점 2건이 새로 공개됐으며, PHP 취약점 재발에 정부가 긴급 업데이트를 다시 권고했고, 금감원은 가상자산사업자의 보안 부실에 책임을 묻겠다고 밝혔다. 컬리 큐레이터 개인정보 유출과 관련해서는 최대 15만원 보상과 일부 주민번호 포함 사실이 추가로 보도됐다. 오늘 저녁에는 컬리 큐레이터 개인정보 유출과 관련한 추가 보도가 이어졌고 일부 주민번호·계좌번호 포함 사실과 피해액 전액 보상 방침이 전해졌으며, 중소벤처기업부 민간 AI 솔루션 기업 개인정보 유출과 JP모건·비자·마스터카드 협력업체 보안 사고 확인 소식이 나왔고, F5 BIG-IP 인증 없는 원격 코드 실행 위험과 PHP 세션 취약점 3건 수정 소식도 더해졌다. 오늘 저녁에는 VM웨어와 리눅스 KVM에서 잇단 치명적 보안 결함이 발견됐다는 속보가 전해졌고, 런던교통공사 오이스터 포토카드 고객 26만 5천 명 정보 유출 보도와 컬리 큐레이터 개인정보 유출 관련 추가 보도가 이어졌다. 오늘 저녁에는 Ruby가 원격 코드 실행으로 이어질 수 있는 Ruby2Shell 취약점을 패치했다는 속보가 전해졌고, JP모건체이스가 해커들의 고객 1만 6천 명 데이터 탈취를 확인했으며, 컬리 큐레이터 개인정보 유출 관련 추가 보도와 벡터코리아의 자동차 해킹·방어 경진대회 지원 소식이 더해졌다. 오늘 저녁에는 컬리 큐레이터 개인정보 유출 관련 추가 보도와 금감원의 가상자산사업자 보안 점검 주문이 이어졌고, JP모건이 제3자 침해로 고객 데이터 유출을 확인했으며, Windows 11 패스키 버그 소식이 전해졌다. 오늘 저녁에는 컬리 큐레이터 개인정보 유출과 관련해 주민번호·계좌번호까지 포함됐다는 사실과 피해액 전액 보상 방침이 추가로 보도됐고, 유럽 냉장고를 마비시킨 해킹 소식과 시중은행 해킹 피해 속출 소식, The Cyber Express 주간 라운드업의 Java4Shell 언급이 전해졌다. 오늘 저녁에는 컬리 개인정보 유출에 대한 김슬아 대표의 사과 보도와 AI 해킹 고도화에 따른 사이버 보험 청구 급증 소식이 나왔고, 해외에서는 메일 폭탄 공격을 이용한 IT 헬프데스크 사칭 사기와 자율형 침투 테스트·취약점 스캐닝 비교, 400년 된 크립텍스 관련 글이 전해졌다. 오늘 저녁에는 컬리 개인정보 유출 관련 추가 보도 5건과 대규모 장애·AI 패치 논쟁에 대한 업계 반응을 모은 SecurityWeek 피드백 프라이데이 글이 더해졌다. 미국에서는 잇단 주요 인프라 장애 속에 백악관 국가사이버국장이 해임됐고, 사기 차단과 피해자 조기 경고를 위한 센터가 새로 출범했다. 오늘 밤에는 금융권 해킹 사고에 대한 상시 보안 관리 주문과 Tenable의 PHP2Shell 유사 취약점 대비를 위한 공공 부문 노출 관리 제언, NIST 800-171 Rev 3 전환 대응 소식이 더해졌다. 오늘 밤에는 Tegsoft 컨택센터의 CVSS 10.0 파일 업로드 취약점과 BuddyBoss Addons 워드프레스 플러그인의 CVSS 9.8 인증 우회 취약점이 새로 공개됐고, AI 솔루션 기업 아미쿠스렉스의 개인정보 유출 보도와 비트코인 지갑 취약점 경고, 랜섬웨어 피해 복구에 평균 20일이 걸린다는 보고서 소식이 더해졌다. 오늘 새벽에는 중국 연계 'Armory Castle'의 VMware vCenter 제로데이 악용 보도가 추가로 나왔고, 컬리 큐레이터 개인정보 유출 관련 더리포트 보도와 AI의 산업 공격 워크플로 활용 분석이 더해졌다. 자바에서도 고위험 취약점이 확인돼 정부가 긴급 점검을 권고했다. 오늘 아침에는 컬리 해킹으로 1만701명의 개인정보가 유출되고 일부 주민등록번호·계좌번호까지 탈취됐다는 보도가 나왔고, 자바 취약점에 대한 과기정통부의 긴급 보안조치 당부와 미 사이버보안국의 즉시 패치 권고가 이어졌으며, CVE-2026-129289 등 PHP 치명적 취약점에 대한 워드펜스 분석과 Com 조직의 보이싱 해킹 내막, 연쇄 해킹에 놀란 은행권의 화이트해커 확보 경쟁 소식이 더해졌다. 오늘 아침에는 유럽 당국이 AI 안경의 몰래 촬영·해킹 위험을 경고했다는 소식과 AWS가 기존 세션 권한을 축소하는 STS GetScopedCredentials 기능을 소개한 글이 더해졌다. 오늘 아침에는 Budibase의 미인증 전역 관리자 생성 취약점 등 신규 CVE 4건이 공개됐고, Viettel이 랜섬웨어 증가에 따른 24시간 모니터링과 침투 테스트의 중요성을 강조했다는 소식이 더해졌다. 오늘 아침에는 F5가 BIG-IP의 추가 중대한 보안 결함을 수정하기 위해 서두르고 있다는 속보가 전해졌고, 지역화폐·노란우산 개인정보 유출 피해 최소화에 총력을 기울이고 있다는 보도가 더해졌다. 오늘 아침에는 컬리 해킹 피해 보상 관련 추가 보도 2건과 ‘RansomwareHelp’ CTO 전신사기 기소 소식, PHP2Shell 여파로 PHP 결함 18건이 추가로 확인됐다는 속보가 더해졌다.</p>
+        <p class="mast-sub">11월 16~21일 발표된 실제 보안 뉴스를 모았습니다. 오늘의 중심은 원격 코드 실행이 주장되는 Java 취약점 ‘Java4Shell’(RCE 여부는 논란 중), 국내 대학 28곳 연쇄 해킹, 그리고 CNN·BBC까지 번진 Optimizely 공급망 공격과 nginx 취약점 5건 ‘NGINX2Root’, PHP 치명적 결함 ‘PHP2Shell’ 대응 소식입니다. 오늘은 PHP 치명적 취약점에 대한 정부 긴급 업데이트 권고와 금감원의 가상자산사업자 보안점검 주문이 이어졌고, 브로드컴이 v센터 최고 등급 인증 우회 결함에 긴급 업데이트를 권고했다. 여기에 비자·마스터카드·JP모건체이스 고객 정보 일부 유출과 금감원의 케이뱅크 정기검사 돌입, PHP 취약점 17건 속보 추가 보도가 더해졌다. 금융소비자뉴스는 PHP 치명적 취약점에 대한 KISA 긴급 업데이트 권고를 다시 전했고, Ubuntu는 nginx 보안 공지 USN-9182-1을 발행했으며, 데일리시큐는 다크웹에 한전 개인정보·입찰자료 확보 주장이 올라왔다고 단독 보도했다. 전북 교육기관 해킹이 이어져 전주대에서 주민번호 2만 5천 건이 유출됐고, 부산대·동의대 해킹으로 개인정보가 유출됐으며, 원주시는 개인정보 1,957건 유출에도 관련 자체감사가 5년간 0건인 것으로 나타났다. 금융소비자뉴스는 AI 해킹에 비상이 걸린 가상자산업계에 대해 금감원이 보안 부실 책임을 경고했다고 보도했다. 오늘은 PHP 취약점 재발에 대한 KISA 긴급 업데이트 권고와 금감원의 가상자산사업자 보안 점검·책임 경고, 체이스 해킹 비상 보도가 이어졌다. 중국 연계 해커가 VMware vCenter 제로데이를 악용해 관리자 권한을 탈취했다는 보도가 나왔고, PHP 취약점에 대한 정부 긴급 업데이트 권고와 금감원의 가상자산업계 외부접점 전수점검이 이어졌다. 컬리에서 큐레이터 1만699명의 개인정보가 유출됐고 일부 주민번호가 포함된 것으로 확인됐으며, ARMORY CASTLE가 두 번째 제로데이 취약점을 연계해 VMware vCenter를 장악했다는 보도가 나왔다. 오늘 저녁에는 N-able이 서비스 장애의 원인이 사이버 공격이라고 밝혔고, Gladys Assistant에서 CVSS 9.1·9.0 취약점 2건이 새로 공개됐으며, PHP 취약점 재발에 정부가 긴급 업데이트를 다시 권고했고, 금감원은 가상자산사업자의 보안 부실에 책임을 묻겠다고 밝혔다. 컬리 큐레이터 개인정보 유출과 관련해서는 최대 15만원 보상과 일부 주민번호 포함 사실이 추가로 보도됐다. 오늘 저녁에는 컬리 큐레이터 개인정보 유출과 관련한 추가 보도가 이어졌고 일부 주민번호·계좌번호 포함 사실과 피해액 전액 보상 방침이 전해졌으며, 중소벤처기업부 민간 AI 솔루션 기업 개인정보 유출과 JP모건·비자·마스터카드 협력업체 보안 사고 확인 소식이 나왔고, F5 BIG-IP 인증 없는 원격 코드 실행 위험과 PHP 세션 취약점 3건 수정 소식도 더해졌다. 오늘 저녁에는 VM웨어와 리눅스 KVM에서 잇단 치명적 보안 결함이 발견됐다는 속보가 전해졌고, 런던교통공사 오이스터 포토카드 고객 26만 5천 명 정보 유출 보도와 컬리 큐레이터 개인정보 유출 관련 추가 보도가 이어졌다. 오늘 저녁에는 Ruby가 원격 코드 실행으로 이어질 수 있는 Ruby2Shell 취약점을 패치했다는 속보가 전해졌고, JP모건체이스가 해커들의 고객 1만 6천 명 데이터 탈취를 확인했으며, 컬리 큐레이터 개인정보 유출 관련 추가 보도와 벡터코리아의 자동차 해킹·방어 경진대회 지원 소식이 더해졌다. 오늘 저녁에는 컬리 큐레이터 개인정보 유출 관련 추가 보도와 금감원의 가상자산사업자 보안 점검 주문이 이어졌고, JP모건이 제3자 침해로 고객 데이터 유출을 확인했으며, Windows 11 패스키 버그 소식이 전해졌다. 오늘 저녁에는 컬리 큐레이터 개인정보 유출과 관련해 주민번호·계좌번호까지 포함됐다는 사실과 피해액 전액 보상 방침이 추가로 보도됐고, 유럽 냉장고를 마비시킨 해킹 소식과 시중은행 해킹 피해 속출 소식, The Cyber Express 주간 라운드업의 Java4Shell 언급이 전해졌다. 오늘 저녁에는 컬리 개인정보 유출에 대한 김슬아 대표의 사과 보도와 AI 해킹 고도화에 따른 사이버 보험 청구 급증 소식이 나왔고, 해외에서는 메일 폭탄 공격을 이용한 IT 헬프데스크 사칭 사기와 자율형 침투 테스트·취약점 스캐닝 비교, 400년 된 크립텍스 관련 글이 전해졌다. 오늘 저녁에는 컬리 개인정보 유출 관련 추가 보도 5건과 대규모 장애·AI 패치 논쟁에 대한 업계 반응을 모은 SecurityWeek 피드백 프라이데이 글이 더해졌다. 미국에서는 잇단 주요 인프라 장애 속에 백악관 국가사이버국장이 해임됐고, 사기 차단과 피해자 조기 경고를 위한 센터가 새로 출범했다. 오늘 밤에는 금융권 해킹 사고에 대한 상시 보안 관리 주문과 Tenable의 PHP2Shell 유사 취약점 대비를 위한 공공 부문 노출 관리 제언, NIST 800-171 Rev 3 전환 대응 소식이 더해졌다. 오늘 밤에는 Tegsoft 컨택센터의 CVSS 10.0 파일 업로드 취약점과 BuddyBoss Addons 워드프레스 플러그인의 CVSS 9.8 인증 우회 취약점이 새로 공개됐고, AI 솔루션 기업 아미쿠스렉스의 개인정보 유출 보도와 비트코인 지갑 취약점 경고, 랜섬웨어 피해 복구에 평균 20일이 걸린다는 보고서 소식이 더해졌다. 오늘 새벽에는 중국 연계 'Armory Castle'의 VMware vCenter 제로데이 악용 보도가 추가로 나왔고, 컬리 큐레이터 개인정보 유출 관련 더리포트 보도와 AI의 산업 공격 워크플로 활용 분석이 더해졌다. 자바에서도 고위험 취약점이 확인돼 정부가 긴급 점검을 권고했다. 오늘 아침에는 컬리 해킹으로 1만701명의 개인정보가 유출되고 일부 주민등록번호·계좌번호까지 탈취됐다는 보도가 나왔고, 자바 취약점에 대한 과기정통부의 긴급 보안조치 당부와 미 사이버보안국의 즉시 패치 권고가 이어졌으며, CVE-2026-129289 등 PHP 치명적 취약점에 대한 워드펜스 분석과 Com 조직의 보이싱 해킹 내막, 연쇄 해킹에 놀란 은행권의 화이트해커 확보 경쟁 소식이 더해졌다. 오늘 아침에는 유럽 당국이 AI 안경의 몰래 촬영·해킹 위험을 경고했다는 소식과 AWS가 기존 세션 권한을 축소하는 STS GetScopedCredentials 기능을 소개한 글이 더해졌다. 오늘 아침에는 Budibase의 미인증 전역 관리자 생성 취약점 등 신규 CVE 4건이 공개됐고, Viettel이 랜섬웨어 증가에 따른 24시간 모니터링과 침투 테스트의 중요성을 강조했다는 소식이 더해졌다. 오늘 아침에는 F5가 BIG-IP의 추가 중대한 보안 결함을 수정하기 위해 서두르고 있다는 속보가 전해졌고, 지역화폐·노란우산 개인정보 유출 피해 최소화에 총력을 기울이고 있다는 보도가 더해졌다. 오늘 아침에는 컬리 해킹 피해 보상 관련 추가 보도 2건과 ‘RansomwareHelp’ CTO 전신사기 기소 소식, PHP2Shell 여파로 PHP 결함 18건이 추가로 확인됐다는 속보가 더해졌다. 오늘 오전에는 PHP에서 또 치명적 취약점이 무더기로 발견됐다는 속보와 정부의 자바 보안조치 당부, 바이비트 해킹 자금 3,000만 달러 교환 보도, Signal의 모바일 OS AI 에이전트 데이터 수집 제한 글이 더해졌다. 오늘 오전에는 PHP 치명적 취약점 무더기 발견 속보, 정부 자바 보안조치 당부, 바이비트 해킹 자금 교환 보도, 비자·마스터카드·JP모건 협력업체 해킹 보도, 컬리 전액 보상 약속 보도와 모바일 운영체제에서 AI 에이전트의 데이터 수집을 제한하는 방안을 다룬 글이 더해졌다. 오늘 오전에는 AI가 찾은 보안 취약점을 고치려다 미 NSA 내부망이 사흘간 장애를 겪었다는 보도와 홍콩이 코인 해킹 추적에 AI를 활용한다는 소식, 컬리 큐레이터 개인정보 유출에 대한 김슬아 대표의 사과 보도가 더해졌다.</p>
         <p class="mast-meta">수집 기준 2026년 11월 21일 09:16 KST · 랜섬웨어 유출 현황은 11월 20일 19:40 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
@@ -245,11 +246,31 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 1199건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 1208건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/21 10:45</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iUnVEUFBDLW9XZHZ6WW04TmFNc252cGZIdHlRbkduWXRYbVF6dW8tU084QkxROTNIZnhremhQdVBhaHlvZDM5RDNTU2lKQllHR3BRR2tB?oc=5" target="_blank" rel="noopener">AI가 찾은 보안 취약점 고치려다…美 NSA 내부망 사흘간 장애</a></h3>
+            <span class="feed-src">헤럴드경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 08:58</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hMC1JeVFWLTJpS05wVm5nUnRmTnJJRGt1b1lZWXVPdHRQNEhxbWhCY1FBSFFKbXlxc1dlREZFamg1a0lKbDBqZDNRVk1zYU8yQy1lRmhlbkZUZHZQQkxuaFpn?oc=5" target="_blank" rel="noopener">PHP서 또 치명적 취약점 무더기 발견…웹사이트 보안 위협</a></h3>
+            <span class="feed-src">티제이비</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/21 10:21</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFB0WGpoTmF1UXpSOGwxV2VON0ZNeS1YbUhydWRFT0tyUm1oTHVEdkNLb1cwVnJUY3FqOUVwTnlIVWZPT3VHTWR1WXFXOUN1WXptR3RoTFg5clZWQ0xxX2I2bGtjbk5KYUwtSkxkMQ?oc=5" target="_blank" rel="noopener">컬리 개인정보 1만여건 유출…김슬아 대표 전액 보상 약속</a></h3>
+            <span class="feed-src">스페셜경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 21:37</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lSzRCaHkyMVdKdHRvVUJhZTh6cUVsdnhkMXpSU3JJdXA5bFJVWHVfWkpKczFLRzZtUFlxNGFKQ3lsZ25LaEtBd2huSWNHM3czR1Mw?oc=5" target="_blank" rel="noopener">비자·매스터카드·JP모건 협력업체 해킹</a></h3>
+            <span class="feed-src">캐나다 한국일보</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/21 09:39</span>
             <h3><span class="feed-tag hot">속보</span><span class="feed-tag">PHP2Shell</span><a href="https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html" target="_blank" rel="noopener">PHP2Shell 여파: PHP 결함 18건 추가로 기업 웹 관리자들 경계 태세</a></h3>
@@ -363,11 +384,21 @@
             <span class="feed-src">The Register security</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/21 08:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE93ZXB6d21JQ2ZHcXc3QXg5Z0lvaURDS25zQmdWR2VwaEJpbUlKWnBxUnhJVEZVVFlxTm15ZU91ZmFiTG9URUkxaVByS24tRk9rVS1CczFzZUxKSGFXSURSV0hJMVFlQQ?oc=5" target="_blank" rel="noopener">코인 해킹에 ‘AI 카드’ 꺼낸 홍콩…코인 지갑·은행 계좌 함께 추적</a></h3>
+            <span class="feed-src">뉴스1</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/21 07:21</span>
             <h3><a href="https://securityaffairs.com/203622/security/cve-2026-23871-whatsapp-bug-helped-scammers-make-messages-look-legitimate.html" target="_blank" rel="noopener">CVE-2026-23871 — WhatsApp 버그가 사기 메시지를 진짜처럼 보이게 도왔다</a></h3>
             <span class="feed-orig">CVE-2026-23871: WhatsApp Bug Helped Scammers Make Messages Look Legitimate</span>
             <p class="feed-sum">WhatsApp의 버그 때문에 사기꾼이 보낸 메시지가 정당한 것처럼 보이게 됐다는 내용이다.</p>
             <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/21 01:22</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5wVDhqQXJNdEpGT2RaUmpadlBCZ0NTMkVKQTBZcFlhRGE5Rk1wakRpSFFaakJwYlp6S2hMazBYbkFmYzQycnVGUk9YWS1YdldGTzhnYW1n?oc=5" target="_blank" rel="noopener">FBI 지목 뒤에도 바이비트 해킹 자금 3,000만 달러가 스카이 PSM 거쳐 교환됐다</a></h3>
+            <span class="feed-src">위키트리</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/21 00:44</span>
@@ -390,6 +421,11 @@
             <span class="feed-time">11/20 17:48</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LVzhBNS1CQUs3a2ltVmJsd1J6cl9Eb2pEaV9IaEkySV93ME5pZ20tN3k5Q1dlSm5BXzNmMV9uVzcyd0huRU9MZm1HanZSY0N4eTBSSEFDa0k?oc=5" target="_blank" rel="noopener">컬리 “큐레이터 1만699명 개인정보 유출…주민번호·사업자등록번호 포함”</a></h3>
             <span class="feed-src">국민일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 17:20</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBlRG1FcENoSldhR1BvM2RaUXE0amlTWWxYcnptajR2NjZhZTNDLVBDNVBLR21DeWFycTZObW9sUFlQNWNuckRXSEZlbWJZUC1RVVI2akc5SlJmVm5CcVByZXdVX0RHTmxwWkV0cW1CcmbSAXRBVV95cUxPV2M3eElWYTQ0YmZVVTI1aGZMT21yVVZkelFhTklEenVocnRCYXhVOExqSEJPVnZiVzNrajd1cWpnLXJNS3dzU012ajBkSk1oZkl1cGxQZ2pSU1BtMGRVdXVFSGszSzdqdHN6ZzJ1NFNvWk4tUg?oc=5" target="_blank" rel="noopener">컬리, 큐레이터 1만699명 개인정보 유출...김슬아 대표 사과</a></h3>
+            <span class="feed-src">우먼타임스</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/21 07:31</span>
@@ -587,6 +623,13 @@
             <span class="feed-orig">U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline</span>
             <p class="feed-sum">미 농무부가 보안 침해에 대응하는 가운데 IT 직원들이 여러 시스템을 오프라인으로 전환했다는 소식이다.</p>
             <span class="feed-src">DataBreaches.Net</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/20 18:42</span>
+            <h3><a href="https://signal.org/blog/protecting-your-privacy/" target="_blank" rel="noopener">모바일 운영체제 플랫폼에서 AI 에이전트의 데이터 수집을 제한하기</a></h3>
+            <span class="feed-orig">Restricting AI agents in mobile operating systems platforms from capturing data</span>
+            <p class="feed-sum">모바일 운영체제에서 AI 에이전트가 데이터를 수집하지 못하도록 제한하는 방안에 대한 글이다.</p>
+            <span class="feed-src">Hacker News</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/20 18:35</span>
@@ -882,14 +925,14 @@
             <p class="feed-sum">Microsoft가 개인용·관리되지 않는 PC에 Windows 11 26H2를 자동으로 설치하기 시작했다는 소식이다.</p>
             <span class="feed-src">BleepingComputer</span>
           </article>
-                    <article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 21:04</span>
             <h3><a href="https://www.schneier.com/blog/archives/2026/11/opening-a-400-year-old-cryptex.html" target="_blank" rel="noopener">400년 된 크립텍스 열기</a></h3>
             <span class="feed-orig">Opening a 400-Year-Old Cryptex</span>
             <p class="feed-sum">400년 된 크립텍스(암호 자물쇠)를 여는 과정을 다룬 글이다.</p>
             <span class="feed-src">Schneier on Security</span>
           </article>
-          <article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 20:55</span>
             <h3><a href="https://www.infosecurity-magazine.com/news/mail-bombing-attacks-it-helpdesk/" target="_blank" rel="noopener">메일 폭탄 공격이 IT 헬프데스크 사칭 사기를 부추긴다</a></h3>
             <span class="feed-orig">Mail Bombing Attacks Fuel IT Helpdesk Impersonation Scams</span>
@@ -932,12 +975,12 @@
             <p class="feed-sum">대규모 장애 이후 트럼프 대통령이 사이버 국장을 해임했다는 소식이다.</p>
             <span class="feed-src">Security Affairs</span>
           </article>
-<article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 14:37</span>
             <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1qY244LXVRcWhVNXpnSGt3Q3pNdktzS1NZRUQ4Q3BDVDZxWmZzcW9IdVBiQ0FIckMzUmdrdDR3TWdxN253aTZtYkE5aVJNYTF2dEFrNUM2VHZZVUtlMWhtZVhkY3NRYnM4RTNNcEFn?oc=5" target="_blank" rel="noopener">시중은행 해킹 피해 속출, 인뱅은 무사…“영업 압박이 보안 구멍 키워”</a></h3>
             <span class="feed-src">아시아투데이</span>
           </article>
-          <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 20:36</span>
             <h3><a href="https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/" target="_blank" rel="noopener">SBC 메디컬 그룹 데이터 유출, 200만 명 이상 영향</a></h3>
             <span class="feed-orig">SBC Medical Group Data Breach Impacts Over 2 Million</span>
@@ -2347,12 +2390,12 @@
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147408" target="_blank" rel="noopener">유락, 중동 AI 디지털 포렌식’ 사업 확대... ‘사이섹 오만 2026’ 참가</a></h3>
             <span class="feed-src">Boannews</span>
           </article>
-                    <article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 11:00</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBPUXBZMXZXWDYzZVIyb2RidHdrUU1VdURtdGF3MksySXo5RzBUbTZtdmUycHktZnNISHdKZEJuV25KRlBHSEJQWmJEX2hOTVNFOUdlX0VxXzBPc3RCM1lWMdIBeEFVX3lxTFBPTzdtc1BhMWQtNzJGcTI0TjU3RGQzbTRNOHZqQlRHSUpWWi1MR2FWN2VGZUpyRTkwcUxidHFxT3AzUFIyMDRBbVVWcXM0cE1KLVc0TjkzNVNzZjNGZ01jWVNUc0p6bEpta0cwdV9xZ3NwX0hrRTQyXw?oc=5" target="_blank" rel="noopener">PHP, 한 달 만에 또 보안 경고…이번엔 어떤 취약점 나왔나</a></h3>
             <span class="feed-src">뉴시스</span>
           </article>
-          <article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 11:00</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE90T01JSVVyWEpPUXBCREhMWDFHTHFScnFyV3l2QzM1VXBHendVdm1HZDAzZU9iU3hmd3licmRWNEwwcHlBTG5IOGp4Qy14ZVM3cWdpOTNYTFdYcHVBQU9Gbg?oc=5" target="_blank" rel="noopener">금감원, 가상자산업계도 보안점검 당부…취약점 방치 엄정대응</a></h3>
             <span class="feed-src">증권일보</span>
@@ -2381,27 +2424,27 @@
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9nYkhneS1zekxKM2V2ei14WDdXem5pXzlQa0hMdHZxcXFQV0FLbGVpSGw4MFdTN0Fzcm1IdnVSb19lU0Y2V0xwSXhZZkVtUTZ1b2xEblE3YmxTYVdxUlF6dTJBMEJNUERsRUE?oc=5" target="_blank" rel="noopener">PHP서 또 ‘치명적’ 취약점 발견… 정부, 긴급 업데이트 권고(종합)</a></h3>
             <span class="feed-src">천지일보</span>
           </article>
-<article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 10:53</span>
             <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFB2ZVRjSEQ1NDI0VnNRbTI5RDl0cF9Ma2w0dVdmcWpMTFBqNmRjemo0aXlGS09ncFJnS19yZEw5OEQ3RzJSUDdBV1NwN0YzNUZ0cWtLVUhzQjVSOUpXNEFVbnVjTWZwQUdpazBrQnVn?oc=5" target="_blank" rel="noopener">[종합] 전주대 개인정보 18만여 건 유출…2만5000여 건에 주민등록번호</a></h3>
             <span class="feed-src">국제뉴스</span>
           </article>
-                    <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 10:53</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261120066500009" target="_blank" rel="noopener">JP모건·비자·마스터카드 협력업체 해킹…“고객정보 일부 유출”</a></h3>
             <span class="feed-src">Yonhap news</span>
           </article>
-<article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 10:53</span>
             <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9YTmR1TTRWVVRSZDJSV2xVSlVvRURodG9STWV5T0huNjEzVDUwRWtJbDFBSjVGLVpQT19jZHM5VnVMRnZBbFRUWjdHMEhWWDBYbzdLeTJYeThLdEpJakJ4TGloVFlDWHdpZXk1RE1B?oc=5" target="_blank" rel="noopener">공무원 개인정보 무단 유출, 최소 징계 ‘견책→감봉’ 추진</a></h3>
             <span class="feed-src">간호사신문</span>
           </article>
-                    <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 10:53</span>
             <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5HeTBZWV9wQW0zdmNqZHNVNlYzQUtxVjNIamRrektHVTRJNmd5UldmREc5SE8ycFd5QkRybGZCeURkRTFDdWEwRUpoVVFtcmdQTVJVaHZQZ1RmRkdPQ25nZlZSS0lIalhubFZpelh3?oc=5" target="_blank" rel="noopener">금감원, 가상자산사업자 28곳에 AI 해킹 경고…취약점 방치로 사고 나면 책임</a></h3>
             <span class="feed-src">알파경제</span>
           </article>
-          <article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 10:52</span>
             <h3><a href="https://www.cybersecuritydive.com/news/jpmorgan-visa-customer-data-leaked-third-party-hacks/875333/" target="_blank" rel="noopener">JP모건·비자, 제3자 협력업체 해킹으로 고객 데이터 탈취 확인</a></h3>
             <span class="feed-orig">JPMorgan, Visa confirm customer data taken in third-party vendor hacks</span>
@@ -2413,39 +2456,39 @@
             <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5LTTNxczlJSk1IXzBhREZpb0U4OWdhMnVCak5wbmVBOUVTd0NIRU0yZXA1V0dEc1Q1TUdiWUdpTHdDNC1QSld0ajEwclNOVDViRjBJUnRIbmRyQVAxVTJ1Y1ZObkI5VmY2YXJpUg?oc=5" target="_blank" rel="noopener">금감원, 가상자산사업자 28곳에 AI 해킹 경고…취약점 방치로 사고 나면 책임</a></h3>
             <span class="feed-src">메디컬투데이</span>
           </article>
-                    <article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 10:31</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBvZjRIamR1RzhGdV92ZXJDUE5aM2hmTnI0dEpUN0JnaVpKRGN0R0ZCdjJ3VEtINUl6RkUtWURJVFBKTDhURkxWa0ZzQ0ZBeXpBQWVQN1Y0Qm16Y0Z4eTRTMGkwM3lTM3M?oc=5" target="_blank" rel="noopener">'보안 업데이트' 촉구...개발 언어 'PHP'서 치명적 결함 재발</a></h3>
             <span class="feed-src">청년일보</span>
           </article>
-<article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 10:24</span>
             <h3><a href="https://arcticwolf.com/resources/blog/windows-event-log-cleared-think-outside-the-box/" target="_blank" rel="noopener">Windows 이벤트 로그가 지워졌다고? 틀 밖에서 생각하라</a></h3>
             <span class="feed-orig">Windows Event Log Cleared? Think Outside the Box</span>
             <p class="feed-sum">Windows 이벤트 로그 삭제 여부를 판단할 때 기존 틀을 벗어나 살펴봐야 한다는 분석이다.</p>
             <span class="feed-src">Arctic Wolf</span>
           </article>
-                    <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 10:22</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE00MVpheDFuYUJVa3FYbloweEQwQnBSb2o1cGZmMm84MWtyUmg5SmcyYzA0bnhiM3hISEtCVVhZOXhwMkoyZ1FrMmNaS1ViOEhmTUk5N0NLWFRfUFNSY0x4MEZQMm42TVdN?oc=5" target="_blank" rel="noopener">PHP서 또 치명적 보안 취약점…웹사이트 해킹 경고, 관리자 권한 탈취 우려</a></h3>
             <span class="feed-src">CBC뉴스</span>
           </article>
-<article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 10:20</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5sRHY2MVF2V0h6SE1jbGNkZVVMNXVwQl9qRnBNMlo0YXNQSlFTM21SMGhUaHkyMmRSQ2taR095dzdqVnZIR2Vzc1RLVHBLbHVpRzNVOXgyQW5sQ0RnWHhxcg?oc=5" target="_blank" rel="noopener">AI 해킹에 비상 걸린 가상자산업계…금감원 “보안 취약점 방치 시 엄정 책임”</a></h3>
             <span class="feed-src">마이데일리</span>
           </article>
-          <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 10:18</span>
             <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5TdmZaeVFCWmg5OHJIZlM5RTJ4RkxNTC02NGtCTkpETTJjUzN3dE5zOXd5eUQ3Z0pZUGd3VzFkc3NUYmliVTRoc1lMRkZZZlNBOVUya2FMMUZGTTlDVlFJQ3BWWEFwOUR3YUd5THEtelJDUTg?oc=5" target="_blank" rel="noopener">바이낸스, ADGM 법원 명령 확보…해킹 탈취 자산 본격 회수</a></h3>
             <span class="feed-src">마켓인</span>
           </article>
-                    <article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 10:18</span>
             <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE0zeng4YzNieHRjV1pvbEU0NXF2dW9nMUNWNWZDZER1cm5fZi0waFVxcGNMUWU5UWJZdzN6cWVVSUlfTldCQ0tSVGhNaGNwNGtqYTEzZnRTRFEtWGxEekJmTDJoYUZ0ZTdGNnFTWXlXWW8?oc=5" target="_blank" rel="noopener">PHP서 새 보안 취약점 발견…일본 국세청·‘우마무스메’ 일부 서비스 중단 예고 By 알파경제 alphabiz</a></h3>
             <span class="feed-src">Investing.com 한국어</span>
           </article>
-          <article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 10:18</span>
             <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQS2k3eEdwWnB2SjVSZVJPbzRMd3hncFpvd1p2b0U2QS00d2dEUEV4MHprR3ZaUTlVV3hTV2FhM0trdWtMcHVHOUxFVzFFSjdVSnhrQUV5X3RId0h0bE9xdnFLM3pJOWFDMzBNRkgyazdzMDZSTk5yczM1Zk5qcGRpVQ?oc=5" target="_blank" rel="noopener">바이낸스, ADGM 법원 명령 확보…해킹 탈취 자산 본격 회수</a></h3>
             <span class="feed-src">이데일리</span>
@@ -2455,12 +2498,12 @@
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE10ZUdURHlaM09hZ1ZrWXc0SnVQcHlCcFpPU1JOVWJTNTdCSUdQMXFRdDdUalhyUnhnRnIwUi0wazFzd2FOMzZUb09jUy1NcW81ZzJLcEZfVldiY2tjLU5VMWNzWllpTFFBOWRrVg?oc=5" target="_blank" rel="noopener">프로그래밍 언어 'PHP'서 한 달 만에 또 대규모 보안 결함…치명적 취약점 7개 포함</a></h3>
             <span class="feed-src">와이드경제</span>
           </article>
-<article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 10:14</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBCRDlPZW1KdTZmUEllVnBldFJ3VDRCNmY2VzMtel85YllaTnU3ejBERFB4ajQxbXNfZlJDRkVlUXpUYkttODJkY3BsdXd4R0E0Q19aTlVrNzYxT1gxcXc?oc=5" target="_blank" rel="noopener">펜타시큐리티, ‘Java4Shell’ 취약점 대응...보안 정책 반영</a></h3>
             <span class="feed-src">뉴스투데이</span>
           </article>
-          <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 10:13</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE1MUDBycEJBcU4xZ1lhZUtQZkRmNWFnZVlEQWZHNFRGMm5CWWRXY1JMdDhwSWY2YTJzLVdYSkxNUm5Nd0pTb2pEUUMxU0dNdkRpNkxMSWpkVkRndUtWQmI5Z1N0YXBnS0VWOVZGUg?oc=5" target="_blank" rel="noopener">PHP서 또 치명적 취약점 발견...최신 보안 업데이트 적용 권고</a></h3>
             <span class="feed-src">생생비즈플러스</span>
@@ -2480,19 +2523,19 @@
             <h3><a href="https://www.yna.co.kr/view/AKR20261120052600002" target="_blank" rel="noopener">바이낸스 "해킹 자산 회수 법원 명령 확보"</a></h3>
             <span class="feed-src">Yonhap news</span>
           </article>
-                    <article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 10:10</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE54MVB1V1ZXOWM2ckdIY0pxWGN4RkhzT1RKdG9FY3R6QW1KM1F5SkZqSGFEaVhnNVR3c3Z0cXpsWkttTkpnLTQ4NVlnZXZzdFR1eEE?oc=5" target="_blank" rel="noopener">바이낸스 "해킹 자산 회수 법원 명령 확보"</a></h3>
             <span class="feed-src">매일경제 마켓</span>
           </article>
-<article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 10:07</span>
             <h3><a href="https://cyberscoop.com/sean-cairncross-out-national-cyber-director/" target="_blank" rel="noopener">션 케언크로스, 국가 사이버 국장직에서 물러나</a></h3>
             <span class="feed-orig">Sean Cairncross out as national cyber director</span>
             <p class="feed-sum">미국 국가 사이버 국장 션 케언크로스가 자리에서 물러났다는 소식이다.</p>
             <span class="feed-src">CyberScoop</span>
           </article>
-          <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 10:06</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE90RGJWUG5BTkZIcUFMVnJhTnRsRWNoS29weG1xd0U2ekFoc1lwWGRoM2ZZR3pEc2ZTNVRaRVdCSXBSR3M3cXptRWdOZWhmSms?oc=5" target="_blank" rel="noopener">PHP서 또 치명적 취약점 7건 발견…보안 업데이트 배포</a></h3>
             <span class="feed-src">바이라인네트워크</span>
@@ -2581,19 +2624,19 @@
             <h3><a href="https://www.etnews.com/20261120000061" target="_blank" rel="noopener">아이티아이즈, KHISC 2026 참가 “병원 랜섬웨어 확산 방지 해법 제시”</a></h3>
             <span class="feed-src">etnews AI/SW</span>
           </article>
-                    <article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 09:54</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147390" target="_blank" rel="noopener">보이스루 ‘자메이크’, 비인가 접근으로 일부 회원정보 유출… 경로 차단·개별 통지</a></h3>
             <span class="feed-src">Boannews</span>
           </article>
-<article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 09:45</span>
             <h3><a href="https://ubuntu.com/security/notices/USN-9177-1" target="_blank" rel="noopener">USN-9177-1: PyJWT 취약점</a></h3>
             <span class="feed-orig">USN-9177-1: PyJWT vulnerability</span>
             <p class="feed-sum">Ubuntu 보안 공지 USN-9177-1이 PyJWT 취약점을 다룬다.</p>
             <span class="feed-src">Ubuntu Security Notices</span>
           </article>
-          <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 09:43</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVEllblFRVTVkRFh6b1NhbDFlbG05U004MFNqd1dNYW0wZl9TanpCTW5OSWtKV3dyNGc2eldRQlA1UC1SR0JlVFNUM1FuazRRd1dyamhxdFA3TVBoVkQyM0loR01UWmFvVlNrOE5qSWVWNmdzaTNhNlJIQTZ4emlJUlhtSWlHcUlwUnJXN1ZR?oc=5" target="_blank" rel="noopener">AI 해킹으로 불안한데…PHP서 또 치명적 취약점 발견</a></h3>
             <span class="feed-src">국제신문</span>
@@ -2774,14 +2817,14 @@
             <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Rc2VlZGVOQUpudVpjRlFmaE85Q19wNHBZV2lZZ1B0dUwtZ1MxVFU3aU9qSkxGUDJCRktTNWdKa1BTcUlLZ0dEemR4MURqdzVKMEFRQw?oc=5" target="_blank" rel="noopener">시티은행 "AI 에이전트 해킹 피해는 고객 책임"…약관 개정</a></h3>
             <span class="feed-src">AI 매터스</span>
           </article>
-                    <article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 08:03</span>
             <h3><a href="https://www.helpnetsecurity.com/2026/11/20/android-developer-verification-power-users/" target="_blank" rel="noopener">안드로이드 개발자 인증, 모든 설치 경로로 확대…파워 유저용 우회 창구도 마련</a></h3>
             <span class="feed-orig">Android developer verification will reach every install source, with a side door for power users</span>
             <p class="feed-sum">안드로이드 개발자 인증이 모든 설치 경로로 확대되며 파워 유저를 위한 우회 창구가 마련된다는 소식</p>
             <span class="feed-src">Help Net Security</span>
           </article>
-          <article class="feed-item">
+                    <article class="feed-item">
             <span class="feed-time">11/20 08:00</span>
             <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBJVndTVWZRalJsTmctcXZRY2hmOW1fSXRnUHZQbWMwZnpoOXBicHRlRGIwUHE2WHZZdExhRGJLbmxYX01QemhsZTZmWXozWXN6SG1CckxvemVCbmozRlVvcDJ3QjdWVFVPNFNr?oc=5" target="_blank" rel="noopener">금융권 IT자산 관리 의무 강화되나…대형 금융사 보안 사각지대 줄인다</a></h3>
             <span class="feed-src">라이센스뉴스</span>
@@ -2875,14 +2918,14 @@
             <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOUVNfZGNYT3NaWlFfWndxMTVyd0k3S3lUTnpSSTY3UXlOOFZ1LXNmRjJyY2dxNVY0UFNxUkdqSHFwbS00WWlIcFVYZUd5ZHNrYzFQU1hFYVdVS1g1SVd4ODFnOVNkNUXSAWtBVV95cUxOUUgtRFNxUWxwZWktT0d2Z0k0VmpUU3ZVYU5LTHc4LWVQVnhJWTM3c0RlY3h3NVdUQ09ITngweXdhMlBqNmVEbkFLekZIMnlnRUJvWjdBejZSU1VLZ2ZIUkNqc3kxVUFlazJiUQ?oc=5" target="_blank" rel="noopener">KG에듀원 해킹에 저축은행 직원 개인정보 유출…금융사기 주의보</a></h3>
             <span class="feed-src">민주신문</span>
           </article>
-<article class="feed-item">
+          <article class="feed-item">
             <span class="feed-time">11/20 07:31</span>
             <h3><a href="https://aws.amazon.com/blogs/security/your-aws-security-identity-and-governance-guide-to-reinvent-2026/" target="_blank" rel="noopener">AWS 보안·ID·거버넌스 re:Invent 2026 가이드</a></h3>
             <span class="feed-orig">Your AWS Security, Identity, and Governance guide to re:Invent 2026</span>
             <p class="feed-sum">AWS re:Invent 2026의 보안·ID·거버넌스 관련 내용을 안내하는 글이다.</p>
             <span class="feed-src">AWS Security Blog</span>
           </article>
-          <article class="feed-item">
+<article class="feed-item">
             <span class="feed-time">11/20 07:25</span>
             <h3><a href="https://github.com/advisories/GHSA-q433-mp6c-8v4f" target="_blank" rel="noopener">CVE-2026-130008 — sqlite-mcp: 읽기 전용 모드 우회 — statement chaining 및 describe_table SQL 인젝션</a></h3>
             <span class="feed-orig">CVE-2026-130008 — sqlite-mcp: Read-only mode bypass via statement chaining and SQL injection in describe_table</span>
@@ -6215,6 +6258,11 @@
             <span class="feed-src">보안뉴스</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/18 11:01</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBOYzF2MWNRQnI4QzBaaC1OdUVsazdlOGxXdVRsWlFCYzBFMTVjX0JXRFo5Z3Vxd1RKOXVzRFRjUTVuYnNuSnlaTUxDUmg3cFdaYXY3TG8wZWtmM3Awc3puaHJEUEtBVWtCU2ZIenRnS0MxeGEwdzBsWk1XWURncTg?oc=5" target="_blank" rel="noopener">정부, 자바 보안 취약점 관련 보안조치 당부</a></h3>
+            <span class="feed-src">YTN 사이언스</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/18 11:00</span>
             <h3><a href="https://www.yna.co.kr/view/AKR20261118069800017" target="_blank" rel="noopener">기업도 모르는 '숨은 AI'까지…AI스페라, 보안 사각지대 찾는다</a></h3>
             <span class="feed-src">연합뉴스</span>
@@ -7204,8 +7252,8 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>18</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>719</b><span>국내 동향 — 11/16~21 보도</span></div>
-        <div class="stat"><b>480</b><span>해외 동향 — 11/16~21 보도</span></div>
+        <div class="stat"><b>727</b><span>국내 동향 — 11/16~21 보도</span></div>
+        <div class="stat"><b>481</b><span>해외 동향 — 11/16~21 보도</span></div>
         <div class="stat"><b>117</b><span>CVE·취약점 — CVSS 9.0 이상 57건 포함</span></div>
         <div class="stat"><b>84</b><span>다크웹 유출 — 11/20 19:40 확인 기준 24시간 건수</span></div>
       </div>
@@ -7590,7 +7638,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-15" aria-labelledby="tab-15">
           <h3>PHP 언어 치명적 취약점 — 정부 긴급 업데이트 권고</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-21</span></div>
-          <p>PHP 언어에서 치명적 취약점이 다수 발견돼 정부(국가안보실·관계 부처)가 긴급 보안 업데이트를 권고했습니다. 보도별 집계는 엇갈려 <strong>치명적 취약점 7건</strong>이라는 보도와 <strong>전체 17건</strong>이라는 보도가 함께 나왔고, 웹사이트 해킹과 관리자 권한 탈취 우려가 제기됐습니다. 대규모 보안 결함이 한 달 만에 재발한 데다 전 세계 웹사이트의 약 <strong>68%</strong>가 PHP를 사용하고 있어 영향 범위가 넓을 수 있습니다. Tenable은 11월 20일 공공 부문이 PHP2Shell 같은 취약점에 대비하는 데 노출 관리가 도움이 된다고 전했다. CSO Online은 11월 21일 PHP2Shell 여파로 기업 웹 관리자들을 경계하게 하는 PHP 결함 18건이 추가로 나왔다고 전했다.</p>
+          <p>PHP 언어에서 치명적 취약점이 다수 발견돼 정부(국가안보실·관계 부처)가 긴급 보안 업데이트를 권고했습니다. 보도별 집계는 엇갈려 <strong>치명적 취약점 7건</strong>이라는 보도와 <strong>전체 17건</strong>이라는 보도가 함께 나왔고, 웹사이트 해킹과 관리자 권한 탈취 우려가 제기됐습니다. 대규모 보안 결함이 한 달 만에 재발한 데다 전 세계 웹사이트의 약 <strong>68%</strong>가 PHP를 사용하고 있어 영향 범위가 넓을 수 있습니다. Tenable은 11월 20일 공공 부문이 PHP2Shell 같은 취약점에 대비하는 데 노출 관리가 도움이 된다고 전했다. CSO Online은 11월 21일 PHP2Shell 여파로 기업 웹 관리자들을 경계하게 하는 PHP 결함 18건이 추가로 나왔다고 전했다. 티제이비는 11월 20일 PHP에서 또 치명적 취약점이 무더기로 발견돼 웹사이트 보안 위협이 커졌다고 전했다.</p>
           <a class="src-link" href="https://www.yna.co.kr/view/AKR20261119185551017" target="_blank" rel="noopener">연합뉴스 — PHP서 또 치명적 취약점…정부, 긴급 업데이트 권고(종합)</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE00MVpheDFuYUJVa3FYbloweEQwQnBSb2o1cGZmMm84MWtyUmg5SmcyYzA0bnhiM3hISEtCVVhZOXhwMkoyZ1FrMmNaS1ViOEhmTUk5N0NLWFRfUFNSY0x4MEZQMm42TVdN?oc=5" target="_blank" rel="noopener">CBC뉴스 — PHP서 또 치명적 보안 취약점…웹사이트 해킹 경고, 관리자 권한 탈취 우려</a>
@@ -7612,6 +7660,8 @@
           <a class="src-link" href="https://www.tenable.com/blog/public-sector-exposure-management-php2shell" target="_blank" rel="noopener">Tenable — 공공 부문의 PHP2Shell 유사 취약점 대비를 위한 노출 관리</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html" target="_blank" rel="noopener">CSO Online — PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hMC1JeVFWLTJpS05wVm5nUnRmTnJJRGt1b1lZWXVPdHRQNEhxbWhCY1FBSFFKbXlxc1dlREZFamg1a0lKbDBqZDNRVk1zYU8yQy1lRmhlbkZUZHZQQkxuaFpn?oc=5" target="_blank" rel="noopener">티제이비 — PHP서 또 치명적 취약점 무더기 발견…웹사이트 보안 위협</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-16" aria-labelledby="tab-16">
@@ -7631,6 +7681,8 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9OdE1iMl80ckdHcHVZNXhCOGs5MGF6RGo5SEY2MXVnaUFRVzVzcFVXa1duMUkybFhUV3NBMmVkb3hqaDNXYkdJaFh4cjk2RzBlc1BEZVVOMFcySWZNQTkwcnZLTVBRVTlG?oc=5" target="_blank" rel="noopener">공감신문 — 컬리 큐레이터 개인정보 유출 사건, 1만명 피해 규모 충격</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1XSHBvNWd3SVFIYzJOVktrX0daOGpoV09WY20wOWhtS2RHVVBjRWtuNkJYdE9mR3F6YWo4MjllQlotRXJOM0NvMHd0S1Y4WFR5YTlwVHhZUEFzT2hWYldCNzhmenNMdTZYcTlV?oc=5" target="_blank" rel="noopener">애드뉴스인천 — 컬리 해킹으로 1만699명 개인정보 유출…최대 15만원 보상</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMibEFVX3lxTFB0WGpoTmF1UXpSOGwxV2VON0ZNeS1YbUhydWRFT0tyUm1oTHVEdkNLb1cwVnJUY3FqOUVwTnlIVWZPT3VHTWR1WXFXOUN1WXptR3RoTFg5clZWQ0xxX2I2bGtjbk5KYUwtSkxkMQ?oc=5" target="_blank" rel="noopener">스페셜경제 — 컬리 개인정보 1만여건 유출…김슬아 대표 전액 보상 약속</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-17" aria-labelledby="tab-17">
@@ -7644,6 +7696,8 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTE11M2RwZzdUczVGZ09KYlZkUE5QbzV3S01lMmZGYjRTbl9rc19HSmJjazg1Sk1OUlNvU0RMNEE3aGtNR2dMZ284Mm9VeDdNeVQ5T0N4LXczUkVKUk1iQzlrSDUzeTh0eVRBYVhuRnhUc3HSAXRBVV95cUxOTF9jRHF5YVFuQVRUMWdabjhIaEhERDdaYU1vRWZsdG5LMUpyQjV0NU91M1dBQjRoQ0VCNENkLTRJS2R1ekhsdWMyNGhhTmx2eVB6d3NFa0ZhN3VpZmVuUk02SDYtdDBtMXBsOVNfUndmVEswcA?oc=5" target="_blank" rel="noopener">연합인포맥스 — JP모건체이스·비자·마스터카드, 외부 협력업체 해킹당해…주가 하락</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.etnews.com/20261120000015" target="_blank" rel="noopener">전자신문 — 비자·마스터카드·JP모건 고객정보 유출…협력사 뚫렸다</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lSzRCaHkyMVdKdHRvVUJhZTh6cUVsdnhkMXpSU3JJdXA5bFJVWHVfWkpKczFLRzZtUFlxNGFKQ3lsZ25LaEtBd2huSWNHM3czR1Mw?oc=5" target="_blank" rel="noopener">캐나다 한국일보 — 비자·매스터카드·JP모건 협력업체 해킹</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-18" aria-labelledby="tab-18">
@@ -8731,14 +8785,30 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 719건 · 해외 480건 · 2026년 11월 16~21일 보도</p>
+          <p>국내 727건 · 해외 481건 · 2026년 11월 16~21일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">719건 · 2026년 11월 16~21일 보도</p>
+            <p class="col-note">727건 · 2026년 11월 16~21일 보도</p>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9iUnVEUFBDLW9XZHZ6WW04TmFNc252cGZIdHlRbkduWXRYbVF6dW8tU084QkxROTNIZnhremhQdVBhaHlvZDM5RDNTU2lKQllHR3BRR2tB?oc=5" target="_blank" rel="noopener">AI가 찾은 보안 취약점 고치려다…美 NSA 내부망 사흘간 장애</a></h3>
+              <span class="news-meta">헤럴드경제 · 2026-11-21</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE93ZXB6d21JQ2ZHcXc3QXg5Z0lvaURDS25zQmdWR2VwaEJpbUlKWnBxUnhJVEZVVFlxTm15ZU91ZmFiTG9URUkxaVByS24tRk9rVS1CczFzZUxKSGFXSURSV0hJMVFlQQ?oc=5" target="_blank" rel="noopener">코인 해킹에 ‘AI 카드’ 꺼낸 홍콩…코인 지갑·은행 계좌 함께 추적</a></h3>
+              <span class="news-meta">뉴스1 · 2026-11-21</span>
+            </article>
+            <article class="news-item">
+              <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE5hMC1JeVFWLTJpS05wVm5nUnRmTnJJRGt1b1lZWXVPdHRQNEhxbWhCY1FBSFFKbXlxc1dlREZFamg1a0lKbDBqZDNRVk1zYU8yQy1lRmhlbkZUZHZQQkxuaFpn?oc=5" target="_blank" rel="noopener">PHP서 또 치명적 취약점 무더기 발견…웹사이트 보안 위협</a></h3>
+              <span class="news-meta">티제이비 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFB0WGpoTmF1UXpSOGwxV2VON0ZNeS1YbUhydWRFT0tyUm1oTHVEdkNLb1cwVnJUY3FqOUVwTnlIVWZPT3VHTWR1WXFXOUN1WXptR3RoTFg5clZWQ0xxX2I2bGtjbk5KYUwtSkxkMQ?oc=5" target="_blank" rel="noopener">컬리 개인정보 1만여건 유출…김슬아 대표 전액 보상 약속</a></h3>
+              <span class="news-meta">스페셜경제 · 2026-11-21</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5lVTZpMnkxMFIxX3Q5Mkx3MTJXalZkNXlzQmZpaEoySXZ6UVgydTBWYkdfQVVscU1yQk15ekVxVmhNZjhGNjNBRVNPR2tlclotZi03WVk3Zks5MXppZHhmeA?oc=5" target="_blank" rel="noopener">컬리, 1만여명 개인정보 유출…"피해액 전액 보상"</a></h3>
               <span class="news-meta">뉴스토마토 · 2026-11-21</span>
@@ -8768,6 +8838,10 @@
               <span class="news-meta">Vietnam.vn · 2026-11-21</span>
             </article>
             <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE5wVDhqQXJNdEpGT2RaUmpadlBCZ0NTMkVKQTBZcFlhRGE5Rk1wakRpSFFaakJwYlp6S2hMazBYbkFmYzQycnVGUk9YWS1YdldGTzhnYW1n?oc=5" target="_blank" rel="noopener">FBI 지목 뒤에도 바이비트 해킹 자금 3,000만 달러가 스카이 PSM 거쳐 교환됐다</a></h3>
+              <span class="news-meta">위키트리 · 2026-11-21</span>
+            </article>
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1iOW1ncnR5ZWdBSUJVbFZKRDZySElqUWxwcUM1VlFiWTVwRzV1TUw4cFVKVEFSTzFpaXNveElKdlltU1RMeV9mUlhlbF9USzFwOTdPaVlHeElvdkFJMHpiN29vUjhZZ05MV1lRTHRn0gFuQVVfeXFMTWI5bWdydHllZ0FJQlVsVkpENnJISWpRbHBxQzVWUWJZNXBHNXVNTDhwVUpUQVJPMWlpc294SUp2WW1TVEx5X2ZSWGVsX1RLMXA5N09pWUd4SW92QUkwemI3b29SOFlnTkxXWVFMdGc?oc=5" target="_blank" rel="noopener">컬리서 1만7000명 개인정보 유출…주민번호·계좌번호까지 털렸다</a></h3>
               <span class="news-meta">주간조선 · 2026-11-21</span>
             </article>
@@ -8778,6 +8852,10 @@
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LVzhBNS1CQUs3a2ltVmJsd1J6cl9Eb2pEaV9IaEkySV93ME5pZ20tN3k5Q1dlSm5BXzNmMV9uVzcyd0huRU9MZm1HanZSY0N4eTBSSEFDa0k?oc=5" target="_blank" rel="noopener">컬리 “큐레이터 1만699명 개인정보 유출…주민번호·사업자등록번호 포함”</a></h3>
               <span class="news-meta">국민일보 · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBlRG1FcENoSldhR1BvM2RaUXE0amlTWWxYcnptajR2NjZhZTNDLVBDNVBLR21DeWFycTZObW9sUFlQNWNuckRXSEZlbWJZUC1RVVI2akc5SlJmVm5CcVByZXdVX0RHTmxwWkV0cW1CcmbSAXRBVV95cUxPV2M3eElWYTQ0YmZVVTI1aGZMT21yVVZkelFhTklEenVocnRCYXhVOExqSEJPVnZiVzNrajd1cWpnLXJNS3dzU012ajBkSk1oZkl1cGxQZ2pSU1BtMGRVdXVFSGszSzdqdHN6ZzJ1NFNvWk4tUg?oc=5" target="_blank" rel="noopener">컬리, 큐레이터 1만699명 개인정보 유출...김슬아 대표 사과</a></h3>
+              <span class="news-meta">우먼타임스 · 2026-11-20</span>
             </article>
             <article class="news-item">
               <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBiTmxGaUVGeENlQy1fUFpkWjBJMHBvRzk2emQ5cDN1ellkQUtQdlZPOHFZbXE4TjE0T19ZOTV6Ui1rZWxWczF0WGVSMXZtUk0xRWZIcC1xOTNraVJWOVJGaDZQZjU?oc=5" target="_blank" rel="noopener">브로드컴, VM웨어 v센터 인증 우회 취약점 긴급 패치</a></h3>
@@ -8806,6 +8884,10 @@
             <article class="news-item">
               <h3><a href="https://www.yna.co.kr/view/AKR20261119149900017" target="_blank" rel="noopener">[AI돋보기] 해킹에 커닝까지…AI의 역습에 한국 사회 비상</a></h3>
               <span class="news-meta">연합뉴스 · 2026-11-21</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lSzRCaHkyMVdKdHRvVUJhZTh6cUVsdnhkMXpSU3JJdXA5bFJVWHVfWkpKczFLRzZtUFlxNGFKQ3lsZ25LaEtBd2huSWNHM3czR1Mw?oc=5" target="_blank" rel="noopener">비자·매스터카드·JP모건 협력업체 해킹</a></h3>
+              <span class="news-meta">캐나다 한국일보 · 2026-11-20</span>
             </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE14NHQtZWJvU3Z6MlJ4a2hSbEFDYkRJME1lRURRNUpjZVduVndwUlBuSzY4X2Y1c0xfRmkwTEprVWktdURuTWRZc0V4dWlja1RIQ0ZlRHNvVlNoYV9vMUsw?oc=5" target="_blank" rel="noopener">중소벤처기업부, 민간 AI 솔루션 기업 A사 개인정보 유출...유출 대상에 2차 모두의 창업 참가자 818명 포함</a></h3>
@@ -9743,31 +9825,31 @@
               <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFA0MlRlYXBZblVIdE5oSjJTZmxBVUk5NE5aLVp1c0NjODBmaGhtdHVPZWd4V2lsdWh4M1RIN3E5ZDN3b1ZKQmZOeVZyNkttdVM1OGQ5aWxPRFVwOWZPRnZFcnNJZ21IbFVnd1BfTw?oc=5" target="_blank" rel="noopener">컬리 개인정보 유출 파장.. 피해 범위 따라 최대 15만원 보상 > 뉴스</a></h3>
               <span class="news-meta">지데일리 · 2026-11-20</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9nYkhneS1zekxKM2V2ei14WDdXem5pXzlQa0hMdHZxcXFQV0FLbGVpSGw4MFdTN0Fzcm1IdnVSb19lU0Y2V0xwSXhZZkVtUTZ1b2xEblE3YmxTYVdxUlF6dTJBMEJNUERsRUE?oc=5" target="_blank" rel="noopener">PHP서 또 ‘치명적’ 취약점 발견… 정부, 긴급 업데이트 권고(종합)</a></h3>
               <span class="news-meta">천지일보 · 2026-11-20</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFB2ZVRjSEQ1NDI0VnNRbTI5RDl0cF9Ma2w0dVdmcWpMTFBqNmRjemo0aXlGS09ncFJnS19yZEw5OEQ3RzJSUDdBV1NwN0YzNUZ0cWtLVUhzQjVSOUpXNEFVbnVjTWZwQUdpazBrQnVn?oc=5" target="_blank" rel="noopener">[종합] 전주대 개인정보 18만여 건 유출…2만5000여 건에 주민등록번호</a></h3>
               <span class="news-meta">국제뉴스 · 2026-11-20</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://www.yna.co.kr/view/AKR20261120066500009" target="_blank" rel="noopener">JP모건·비자·마스터카드 협력업체 해킹…“고객정보 일부 유출”</a></h3>
               <span class="news-meta">Yonhap news · 2026-11-20</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9YTmR1TTRWVVRSZDJSV2xVSlVvRURodG9STWV5T0huNjEzVDUwRWtJbDFBSjVGLVpQT19jZHM5VnVMRnZBbFRUWjdHMEhWWDBYbzdLeTJYeThLdEpJakJ4TGloVFlDWHdpZXk1RE1B?oc=5" target="_blank" rel="noopener">공무원 개인정보 무단 유출, 최소 징계 ‘견책→감봉’ 추진</a></h3>
               <span class="news-meta">간호사신문 · 2026-11-20</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5HeTBZWV9wQW0zdmNqZHNVNlYzQUtxVjNIamRrektHVTRJNmd5UldmREc5SE8ycFd5QkRybGZCeURkRTFDdWEwRUpoVVFtcmdQTVJVaHZQZ1RmRkdPQ25nZlZSS0lIalhubFZpelh3?oc=5" target="_blank" rel="noopener">금감원, 가상자산사업자 28곳에 AI 해킹 경고…취약점 방치로 사고 나면 책임</a></h3>
               <span class="news-meta">알파경제 · 2026-11-20</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5LTTNxczlJSk1IXzBhREZpb0U4OWdhMnVCak5wbmVBOUVTd0NIRU0yZXA1V0dEc1Q1TUdiWUdpTHdDNC1QSld0ajEwclNOVDViRjBJUnRIbmRyQVAxVTJ1Y1ZObkI5VmY2YXJpUg?oc=5" target="_blank" rel="noopener">금감원, 가상자산사업자 28곳에 AI 해킹 경고…취약점 방치로 사고 나면 책임</a></h3>
               <span class="news-meta">메디컬투데이 · 2026-11-20</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBvZjRIamR1RzhGdV92ZXJDUE5aM2hmTnI0dEpUN0JnaVpKRGN0R0ZCdjJ3VEtINUl6RkUtWURJVFBKTDhURkxWa0ZzQ0ZBeXpBQWVQN1Y0Qm16Y0Z4eTRTMGkwM3lTM3M?oc=5" target="_blank" rel="noopener">'보안 업데이트' 촉구...개발 언어 'PHP'서 치명적 결함 재발</a></h3>
               <span class="news-meta">청년일보 · 2026-11-20</span>
             </article>
@@ -9775,7 +9857,7 @@
               <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE00MVpheDFuYUJVa3FYbloweEQwQnBSb2o1cGZmMm84MWtyUmg5SmcyYzA0bnhiM3hISEtCVVhZOXhwMkoyZ1FrMmNaS1ViOEhmTUk5N0NLWFRfUFNSY0x4MEZQMm42TVdN?oc=5" target="_blank" rel="noopener">PHP서 또 치명적 보안 취약점…웹사이트 해킹 경고, 관리자 권한 탈취 우려</a></h3>
               <span class="news-meta">CBC뉴스 · 2026-11-20</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE5sRHY2MVF2V0h6SE1jbGNkZVVMNXVwQl9qRnBNMlo0YXNQSlFTM21SMGhUaHkyMmRSQ2taR095dzdqVnZIR2Vzc1RLVHBLbHVpRzNVOXgyQW5sQ0RnWHhxcg?oc=5" target="_blank" rel="noopener">AI 해킹에 비상 걸린 가상자산업계…금감원 “보안 취약점 방치 시 엄정 책임”</a></h3>
               <span class="news-meta">마이데일리 · 2026-11-20</span>
             </article>
@@ -9787,11 +9869,11 @@
               <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQS2k3eEdwWnB2SjVSZVJPbzRMd3hncFpvd1p2b0U2QS00d2dEUEV4MHprR3ZaUTlVV3hTV2FhM0trdWtMcHVHOUxFVzFFSjdVSnhrQUV5X3RId0h0bE9xdnFLM3pJOWFDMzBNRkgyazdzMDZSTk5yczM1Zk5qcGRpVQ?oc=5" target="_blank" rel="noopener">바이낸스, ADGM 법원 명령 확보…해킹 탈취 자산 본격 회수</a></h3>
               <span class="news-meta">이데일리 · 2026-11-20</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE10ZUdURHlaM09hZ1ZrWXc0SnVQcHlCcFpPU1JOVWJTNTdCSUdQMXFRdDdUalhyUnhnRnIwUi0wazFzd2FOMzZUb09jUy1NcW81ZzJLcEZfVldiY2tjLU5VMWNzWllpTFFBOWRrVg?oc=5" target="_blank" rel="noopener">프로그래밍 언어 'PHP'서 한 달 만에 또 대규모 보안 결함…치명적 취약점 7개 포함</a></h3>
               <span class="news-meta">와이드경제 · 2026-11-20</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBCRDlPZW1KdTZmUEllVnBldFJ3VDRCNmY2VzMtel85YllaTnU3ejBERFB4ajQxbXNfZlJDRkVlUXpUYkttODJkY3BsdXd4R0E0Q19aTlVrNzYxT1gxcXc?oc=5" target="_blank" rel="noopener">펜타시큐리티, ‘Java4Shell’ 취약점 대응...보안 정책 반영</a></h3>
               <span class="news-meta">뉴스투데이 · 2026-11-20</span>
             </article>
@@ -9811,11 +9893,11 @@
               <h3><a href="https://www.yna.co.kr/view/AKR20261120052600002" target="_blank" rel="noopener">바이낸스 "해킹 자산 회수 법원 명령 확보"</a></h3>
               <span class="news-meta">Yonhap news · 2026-11-20</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE54MVB1V1ZXOWM2ckdIY0pxWGN4RkhzT1RKdG9FY3R6QW1KM1F5SkZqSGFEaVhnNVR3c3Z0cXpsWkttTkpnLTQ4NVlnZXZzdFR1eEE?oc=5" target="_blank" rel="noopener">바이낸스 "해킹 자산 회수 법원 명령 확보"</a></h3>
               <span class="news-meta">매일경제 마켓 · 2026-11-20</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE90RGJWUG5BTkZIcUFMVnJhTnRsRWNoS29weG1xd0U2ekFoc1lwWGRoM2ZZR3pEc2ZTNVRaRVdCSXBSR3M3cXptRWdOZWhmSms?oc=5" target="_blank" rel="noopener">PHP서 또 치명적 취약점 7건 발견…보안 업데이트 배포</a></h3>
               <span class="news-meta">바이라인네트워크 · 2026-11-20</span>
             </article>
@@ -9883,11 +9965,11 @@
               <h3><a href="https://www.etnews.com/20261120000061" target="_blank" rel="noopener">아이티아이즈, KHISC 2026 참가 “병원 랜섬웨어 확산 방지 해법 제시”</a></h3>
               <span class="news-meta">etnews AI/SW · 2026-11-20</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147390" target="_blank" rel="noopener">보이스루 ‘자메이크’, 비인가 접근으로 일부 회원정보 유출… 경로 차단·개별 통지</a></h3>
               <span class="news-meta">Boannews · 2026-11-20</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxNVEllblFRVTVkRFh6b1NhbDFlbG05U004MFNqd1dNYW0wZl9TanpCTW5OSWtKV3dyNGc2eldRQlA1UC1SR0JlVFNUM1FuazRRd1dyamhxdFA3TVBoVkQyM0loR01UWmFvVlNrOE5qSWVWNmdzaTNhNlJIQTZ4emlJUlhtSWlHcUlwUnJXN1ZR?oc=5" target="_blank" rel="noopener">AI 해킹으로 불안한데…PHP서 또 치명적 취약점 발견</a></h3>
               <span class="news-meta">국제신문 · 2026-11-20</span>
             </article>
@@ -10027,25 +10109,25 @@
               <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVVG9KNnJ1ZS1rR3ZqVE41b1BrSElMM21PMFZqWDZCR0lMaVlaX2RDTzNkUGplRXhqN3lIZzRGQlU4Rndxb1JTX0lsel9MNTlRb05oUVJwZ3Z2UdIBX0FVX3lxTE1NZUFYQlFacnBpeTJ1WXE5WndaeWlfc0xlZEVOdFM2ZGt2YWhjZTA2U0k3dEdFUExXQWUxd000Q28tczZndlJZVTlQTTMzbkh2T3ZwSEp2UmZlZU9SSXFv?oc=5" target="_blank" rel="noopener">강원대 산학협력단 연구통합관리시스템 해킹으로 개인정보 유출</a></h3>
               <span class="news-meta">경향신문 · 2026-11-16</span>
             </article>
-
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5Rc2VlZGVOQUpudVpjRlFmaE85Q19wNHBZV2lZZ1B0dUwtZ1MxVFU3aU9qSkxGUDJCRktTNWdKa1BTcUlLZ0dEemR4MURqdzVKMEFRQw?oc=5" target="_blank" rel="noopener">시티은행 "AI 에이전트 해킹 피해는 고객 책임"…약관 개정</a></h3>
               <span class="news-meta">AI 매터스 · 2026-11-20</span>
             </article>
 
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBJVndTVWZRalJsTmctcXZRY2hmOW1fSXRnUHZQbWMwZnpoOXBicHRlRGIwUHE2WHZZdExhRGJLbmxYX01QemhsZTZmWXozWXN6SG1CckxvemVCbmozRlVvcDJ3QjdWVFVPNFNr?oc=5" target="_blank" rel="noopener">금융권 IT자산 관리 의무 강화되나…대형 금융사 보안 사각지대 줄인다</a></h3>
               <span class="news-meta">라이센스뉴스 · 2026-11-20</span>
             </article>
-            <article class="news-item">
+
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOUVNfZGNYT3NaWlFfWndxMTVyd0k3S3lUTnpSSTY3UXlOOFZ1LXNmRjJyY2dxNVY0UFNxUkdqSHFwbS00WWlIcFVYZUd5ZHNrYzFQU1hFYVdVS1g1SVd4ODFnOVNkNUXSAWtBVV95cUxOUUgtRFNxUWxwZWktT0d2Z0k0VmpUU3ZVYU5LTHc4LWVQVnhJWTM3c0RlY3h3NVdUQ09ITngweXdhMlBqNmVEbkFLekZIMnlnRUJvWjdBejZSU1VLZ2ZIUkNqc3kxVUFlazJiUQ?oc=5" target="_blank" rel="noopener">KG에듀원 해킹에 저축은행 직원 개인정보 유출…금융사기 주의보</a></h3>
               <span class="news-meta">민주신문 · 2026-11-19</span>
             </article>
-<article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE05X0t4RWZJOERfRUdpTklUd2d6RnFDcF9HWDdXYWNhckN2UHpRWTg1SVJLNWJDUW8tVVVzNS1tc05nUkQ5SnZWRnFma3AtWGhra1JfeGsxQTJsUFFJVHhrRTE3Nlo3MzNmZXNUOHZMRWNrcjg?oc=5" target="_blank" rel="noopener">JP모건·비자·마스터카드, 협력업체 해킹으로 일부 고객 정보 노출</a></h3>
               <span class="news-meta">디지털투데이 · 2026-11-20</span>
             </article>
-            <article class="news-item">
+<article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGNDhqQ2IwbUpvWnJjc1VwTDQ1VlUtNm1sbkxFdWJSYnMxdDlnaVBmNlZ0akZkVHZuWWwzeS15VlFEVElqU093LWFzcFJNX1pVQkthaXR0R1N4NWVnVlRyY9IBeEFVX3lxTE8xMS1XR2xZQ1BWT3RmZ3VLbk43YlNmakFWZC1MU3V0ZzEtOVlYa1lHNERtRnFVaUZVejk1dEo3aVBQZEh2RDAzbW5jdElSWV8xeXBOV1FIMjFiRGEtdXBZTmlmRHJsSHVHNmtkTkhpcnJPU2RNNXNfYQ?oc=5" target="_blank" rel="noopener">'PHP' 취약점 한 달 만에 또 나왔다…7개 치명적 결함 포함</a></h3>
               <span class="news-meta">뉴시스 · 2026-11-20</span>
             </article>
@@ -10109,11 +10191,11 @@
               <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9SUU1UOWNpWkRsQ2ppZG1FN0dRUlNnV2xrOUVaV0puQUlDVXQ2VWpEVlM4YkU2emxYdU1SWUNQWnhlLUF1Rk40YVJLZm44QWFJUko1MVF2dFQwanVheFBTMmxlZ0JKTlFNbnBiTlBB?oc=5" target="_blank" rel="noopener">‘자바’에서도 보안 취약점 발견…정부 “보안 업데이트 권고”</a></h3>
               <span class="news-meta">아시아투데이 · 2026-11-18</span>
             </article>
-
             <article class="news-item">
               <h3><a href="https://www.boho.or.kr/kr/bbs/view.do?searchCnd=&amp;bbsId=B0000133&amp;searchWrd=&amp;menuNo=205020&amp;pageIndex=1&amp;categoryCode=&amp;nttId=72318" target="_blank" rel="noopener">PHP 제품 보안 업데이트 권고</a></h3>
               <span class="news-meta">KISA(보호나라) · 2026-11-19</span>
             </article>
+
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9zOE5PUHVST3Q3XzU0M3dtUGVUTXhpblJReTRtVTVDS3FPRFlSaEw2OGxtY0cwSElBUDdVWWJxMkpvS0FuYW9lUl9BckdWMDBB?oc=5" target="_blank" rel="noopener">기반 프로그램 ‘자바’서도 보안취약점 발견</a></h3>
               <span class="news-meta">문화일보 · 2026-11-18</span>
@@ -10210,11 +10292,11 @@
               <h3><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE10dWplVTQ0UmJhVnkzRXRlR0ZhRkVza1VMOGdLaE9uUjdPOUpSWXk2dHo1UmxlQ1dVaTFNY29vU3oxXzhoSjlWcTB2a2RIYmtfRWpwbHFZZnZyX0V1R2NTZm9VOWdEdVJsLV9udlhpYmczYU1q?oc=5" target="_blank" rel="noopener">美 잇따른 전산 마비, 해킹 아니라 'AI발 졸속 패치 대란'</a></h3>
               <span class="news-meta">MBC 뉴스 · 2026-11-19</span>
             </article>
-
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13NEN3Umk3MGRUbGRxRVh1bHRBdDZJMjR1V084LUZCZVBRMU1vOFVDSVphVXY4MWZuN21hci03OWZtY2tmM2p1MXc0QnlNRXFYdDVuQ2tXQ1g0OFVzVHAwZjJoUWdjQ0E?oc=5" target="_blank" rel="noopener">30시간 동안 통신 두절… 대형 유조선 노린 해킹의 공포</a></h3>
               <span class="news-meta">현대해양 · 2026-11-19</span>
             </article>
+
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNZ1E0YzBPNUVGem5oLU9EYlhPQjZtYmlHT09kYXMtMDVxSHNQVzMyb0sxS3pwdFhyVExQVEh4TUEtdl9WcEFqSTkxaGpuQU5ZTGJKN21CWGh5Zk10N1dXbDdjdTdXeWp1WjdubGR4MFN4alJVOGgzcE5wdUZLOHVYeA?oc=5" target="_blank" rel="noopener">연쇄 해킹에 놀란 은행권, ‘화이트해커' 모시기 경쟁</a></h3>
               <span class="news-meta">이데일리 · 2026-11-19</span>
@@ -10315,11 +10397,11 @@
               <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1WVm1Wc1JOOVdTNk53ZTdwcXN1S1BsdzM4ZDU5cmdVdi1DVTlid0dnT0tuNlFXRjhZaUtNb01IZ3JNN1U3b2Fra3VBdGZ1RHU3ZFFBenlaZEdDd2o1ZEt2c3FqbEF4RGg5YUtmMlRR?oc=5" target="_blank" rel="noopener">“해킹 터지고 막으면 늦는다” 사이버보안 ‘사후 대응’ 탈피 시급</a></h3>
               <span class="news-meta">충청투데이 · 2026-11-19</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xa1dBYzRwYlFnYUs0Q2s1MElLX3A1ZmdCQXJ4RE05RUFEMFl1NUlUYW13bFQ2aXNuXzYzUzFYc2E3aWZHbkFfQl9EMkg2UQ?oc=5" target="_blank" rel="noopener">AI로 취약점 미리 찾아 해킹공격 사전 차단을</a></h3>
               <span class="news-meta">매일경제 · 2026-11-19</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBzNXRFNDk5TnhEdE1BWFVaSnZVNUp6M2VEUHpHWThQeFBqLTROVXB0eHRzZjdqSDJtTHloaVVvOWp5REVNZmdrb0pSMFEwalZSR0FKWWxmN21JVWRzTXZ5eG1ielBjZ29ldmc?oc=5" target="_blank" rel="noopener">저축은행 교육관리 사이트 해킹으로 직원 개인정보 유출</a></h3>
               <span class="news-meta">서울파이낸스 · 2026-11-19</span>
             </article>
@@ -10871,11 +10953,11 @@
               <h3><a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nRWF6YURoZG9TRHdJY3M0eGowY2RtMTdMcjZDRzNlUllMa3cwZlEwazllMFVmTE90bVk5c0pYLUUxOVdNS19NV0lNaloxenE4bzJFS3M5YWdiVnhGWnc?oc=5" target="_blank" rel="noopener">개인정보위, Java 보안 취약점 관련 개인정보 대량 유출 예방조치 당부</a></h3>
               <span class="news-meta">한국방송뉴스 · 2026-11-18</span>
             </article>
-                        <article class="news-item">
+            <article class="news-item">
               <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147377" target="_blank" rel="noopener">포티게이트 계정 500여건 쥔 해커, 접속권 팔고 악성코드 갖춰</a></h3>
               <span class="news-meta">보안뉴스 · 2026-11-19</span>
             </article>
-            <article class="news-item">
+                        <article class="news-item">
               <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209614" target="_blank" rel="noopener">레드햇-IBM, 마이크로소프트 마켓플레이스에 '라이트웰 네트워크' 출시</a></h3>
               <span class="news-meta">데일리시큐 · 2026-11-19</span>
             </article>
@@ -11380,6 +11462,10 @@
               <span class="news-meta">보안뉴스 · 2026-11-18</span>
             </article>
             <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTFBOYzF2MWNRQnI4QzBaaC1OdUVsazdlOGxXdVRsWlFCYzBFMTVjX0JXRFo5Z3Vxd1RKOXVzRFRjUTVuYnNuSnlaTUxDUmg3cFdaYXY3TG8wZWtmM3Awc3puaHJEUEtBVWtCU2ZIenRnS0MxeGEwdzBsWk1XWURncTg?oc=5" target="_blank" rel="noopener">정부, 자바 보안 취약점 관련 보안조치 당부</a></h3>
+              <span class="news-meta">YTN 사이언스 · 2026-11-18</span>
+            </article>
+            <article class="news-item">
               <h3><a href="https://www.yna.co.kr/view/AKR20261118069800017" target="_blank" rel="noopener">기업도 모르는 '숨은 AI'까지…AI스페라, 보안 사각지대 찾는다</a></h3>
               <span class="news-meta">연합뉴스 · 2026-11-18</span>
             </article>
@@ -11623,7 +11709,7 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">480건 · November 16–21, 2026</p>
+            <p class="col-note">481건 · November 16–21, 2026</p>
             <article class="news-item">
               <h3><span class="feed-tag hot">속보</span><span class="feed-tag">PHP2Shell</span><a href="https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html" target="_blank" rel="noopener">PHP2Shell 여파: PHP 결함 18건 추가로 기업 웹 관리자들 경계 태세</a></h3>
               <span class="news-orig">PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert</span>
@@ -11827,6 +11913,12 @@
               <span class="news-orig">U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline</span>
               <p class="news-sum">미 농무부가 보안 침해에 대응하는 가운데 IT 직원들이 여러 시스템을 오프라인으로 전환했다는 소식이다.</p>
               <span class="news-meta">DataBreaches.Net · 2026-11-20</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://signal.org/blog/protecting-your-privacy/" target="_blank" rel="noopener">모바일 운영체제 플랫폼에서 AI 에이전트의 데이터 수집을 제한하기</a></h3>
+              <span class="news-orig">Restricting AI agents in mobile operating systems platforms from capturing data</span>
+              <p class="news-sum">모바일 운영체제에서 AI 에이전트가 데이터를 수집하지 못하도록 제한하는 방안에 대한 글이다.</p>
+              <span class="news-meta">Hacker News · 2026-11-20</span>
             </article>
             <article class="news-item">
               <h3><a href="https://www.darkreading.com/cybersecurity-operations/security-words-matter" target="_blank" rel="noopener">보안에서는 도구만큼 말도 중요하다, 어쩌면 그 이상으로</a></h3>
