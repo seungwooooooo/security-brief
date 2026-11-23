@@ -233,22 +233,22 @@
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
           <li>한전 해킹 — 152만 명 개인정보 유출, 정부 초동대응반 투입</li>
+          <li>Microsoft·Azure 치명적 취약점 10건 — CVSS 9.0 이상, 최고 10.0</li>
           <li>삼성증권 해킹 — 고객 8,241명 개인정보 유출</li>
           <li>CVE-2026-135208 — Kerberos Agent 인증 우회, CVSS 9.8</li>
           <li>Cisco 치명적 원격 코드 실행 결함 — 실제 공격 진행 중</li>
+          <li>한국 랜섬웨어 피해 175% 증가 — 100대 기업 46% 위험 등급</li>
           <li>EU 집행위 대규모 해킹 — 중국 연계 조직 의혹</li>
-          <li>CrowdStrike, Zscaler 439억 달러 인수 합의</li>
           <li>N-able 치명적 결함 패치 — Mail Assure 공격 후 공개</li>
-          <li>WordPress WP connect 플러그인 6종 공급망 침해·백도어</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 24일 07:10 KST · 랜섬웨어 유출 현황은 11월 23일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 24일 07:25 KST · 랜섬웨어 유출 현황은 11월 23일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>21건</b> · CVE·취약점 <b>136건</b> (CVSS 9.0 이상 62건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>21건</b> · CVE·취약점 <b>146건</b> (CVSS 9.0 이상 72건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -258,11 +258,81 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 2259건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 2274건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:22</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-70305" target="_blank" rel="noopener">CVE-2026-70305 (CVSS 9.6) — Azure Portal 크로스 사이트 스크립팅, 스푸핑 가능</a></h3>
+            <span class="feed-orig">CVE-2026-70305 (CVSS 9.6) — Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.</span>
+            <p class="feed-sum">Azure Portal의 크로스 사이트 스크립팅(XSS) 취약점으로, 미인증 공격자가 네트워크를 통해 스푸핑을 수행할 수 있다(CVSS 9.6).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:22</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-70193" target="_blank" rel="noopener">CVE-2026-70193 (CVSS 9.9) — Microsoft Office SharePoint 경로 순회, 코드 실행 가능</a></h3>
+            <span class="feed-orig">CVE-2026-70193 (CVSS 9.9) — Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.</span>
+            <p class="feed-sum">Microsoft Office SharePoint의 경로 순회(path traversal) 취약점으로, 권한 있는 공격자가 네트워크를 통해 코드를 실행할 수 있다(CVSS 9.9).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:22</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-69899" target="_blank" rel="noopener">CVE-2026-69899 (CVSS 9.1) — Azure DevTest Labs 스푸핑을 통한 인증 우회</a></h3>
+            <span class="feed-orig">CVE-2026-69899 (CVSS 9.1) — Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.</span>
+            <p class="feed-sum">Azure DevTest Labs의 스푸핑을 통한 인증 우회 취약점으로, 미인증 공격자가 네트워크를 통해 스푸핑을 수행할 수 있다(CVSS 9.1).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:20</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-62841" target="_blank" rel="noopener">CVE-2026-62841 (CVSS 10.0) — Azure Event Grid 부적절한 인증, 권한 상승 가능</a></h3>
+            <span class="feed-orig">CVE-2026-62841 (CVSS 10.0) — Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.</span>
+            <p class="feed-sum">Azure Event Grid의 부적절한 인증 취약점으로, 미인증 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 10.0).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:20</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50691" target="_blank" rel="noopener">CVE-2026-50691 (CVSS 9.9) — M365 Copilot 부적절한 인가, 권한 상승 가능</a></h3>
+            <span class="feed-orig">CVE-2026-50691 (CVSS 9.9) — Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.</span>
+            <p class="feed-sum">M365 Copilot의 부적절한 인가 취약점으로, 권한 있는 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.9).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:19</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118286" target="_blank" rel="noopener">CVE-2026-118286 (CVSS 9.1) — Azure Site Recovery 부적절한 접근 제어, 권한 상승 가능</a></h3>
+            <span class="feed-orig">CVE-2026-118286 (CVSS 9.1) — Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.</span>
+            <p class="feed-sum">Azure Site Recovery의 부적절한 접근 제어 취약점으로, 미인증 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.1).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:19</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118285" target="_blank" rel="noopener">CVE-2026-118285 (CVSS 9.6) — Azure Machine Learning SSRF, 권한 상승 가능</a></h3>
+            <span class="feed-orig">CVE-2026-118285 (CVSS 9.6) — Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.</span>
+            <p class="feed-sum">Azure Machine Learning의 서버 측 요청 위조(SSRF) 취약점으로, 권한 있는 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.6).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:19</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-113824" target="_blank" rel="noopener">CVE-2026-113824 (CVSS 9.1) — Microsoft Clarity 사용자 제어 키를 통한 인가 우회, 권한 상승 가능</a></h3>
+            <span class="feed-orig">CVE-2026-113824 (CVSS 9.1) — Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.</span>
+            <p class="feed-sum">Microsoft Clarity의 사용자 제어 키를 통한 인가 우회 취약점으로, 미인증 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.1).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:18</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109490" target="_blank" rel="noopener">CVE-2026-109490 (CVSS 9.3) — Authentication Methods Portal Extension 크로스 사이트 스크립팅</a></h3>
+            <span class="feed-orig">CVE-2026-109490 (CVSS 9.3) — Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension</span>
+            <p class="feed-sum">Authentication Methods Portal Extension의 웹 페이지 생성 시 입력 중화 미흡(XSS) 취약점(CVSS 9.3).</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:18</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109480" target="_blank" rel="noopener">CVE-2026-109480 (CVSS 9.6) — Profile Data Roaming Service SSRF, 권한 상승 가능</a></h3>
+            <span class="feed-orig">CVE-2026-109480 (CVSS 9.6) — Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.</span>
+            <p class="feed-sum">Profile Data Roaming Service(PDRS)의 서버 측 요청 위조(SSRF) 취약점으로, 권한 있는 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.6).</p>
+            <span class="feed-src">NVD</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/24 06:17</span>
             <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9OOXA4YVBYaGJldmhUVGdGeFVqYUwzTlhWOE5UV1R4N0xMZDczTE1ZRkpZell4djlLeElULVJkRGRveV9meWNldGNINW9NWURpMnlv?oc=5" target="_blank" rel="noopener">한전 152만 명 개인정보 유출 비상, 정부 초동대응반 즉각 투입한다</a></h3>
@@ -302,6 +372,16 @@
             <span class="feed-src">더트래커</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/24 07:17</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBPTHFuMlNFenhPLU5fLVlmRzNKelhGRm1HcU5PcHgtRlEwU0NKay0xVGpwYXlrRmhTcmhEdVV5UEtOdUNlWldVX0NJaVFCM19zRElHOTdXSjQ1SU5XVU9VSE9pNmVhZ2tvWlVNSnlwb01GcEU?oc=5" target="_blank" rel="noopener">글로벌 보안 업계, AI 해킹 확산 속 잇단 대형 M&A....점점 '규모의 경쟁'</a></h3>
+            <span class="feed-src">디지털투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:10</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwTG04eUgyUlRIMWlhVFgzLVhxdGNRNm5IaE5PbjRMR3RNcjVva0dkclRtM2d4Vy04VmNrcWtzQlYyUlVWV2dqSm5kSXdKQ2pncEx2UHB0TzQ3Y3NsM2ZjRg?oc=5" target="_blank" rel="noopener">해킹 늘자 보안 수요도 쑥…안랩, 내년 영업익 38% 증가 전망[클릭 e종목]</a></h3>
+            <span class="feed-src">아시아경제</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/24 07:06</span>
             <h3><a href="https://github.com/advisories/GHSA-j44m-77cc-p3cc" target="_blank" rel="noopener">CVE-2026-63492 — AVideo API, 이스케이프되지 않은 FFmpeg 프로세스 키워드를 통한 OS 명령어 삽입 취약점</a></h3>
             <span class="feed-orig">CVE-2026-63492 — AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword</span>
@@ -314,6 +394,13 @@
             <span class="feed-orig">How Aurora Adaptive Threat Protection Detects and Stops ClickFix Attacks</span>
             <p class="feed-sum">Arctic Wolf의 Aurora 적응형 위협 방어가 ClickFix 공격을 탐지하고 차단하는 방법을 소개하는 영상이다.</p>
             <span class="feed-src">Arctic Wolf</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 07:02</span>
+            <h3><a href="https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure" target="_blank" rel="noopener">산업용 시리얼 게이트웨이가 보안 취약점을 그대로 드러내고 있다</a></h3>
+            <span class="feed-orig">Industrial Serial Gateways Broadcast That They're Insecure</span>
+            <p class="feed-sum">산업용 시리얼 게이트웨이가 안전하지 않음을 그대로 노출하고 있다는 소식이다.</p>
+            <span class="feed-src">Dark Reading</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/24 07:02</span>
@@ -3562,6 +3649,13 @@
             <span class="feed-src">데일리한국</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/23 09:00</span>
+            <h3><a href="https://www.recordedfuture.com/blog/what-are-threat-intelligence-feeds" target="_blank" rel="noopener">위협 인텔리전스 피드란 무엇인가</a></h3>
+            <span class="feed-orig">What are threat intelligence feeds?</span>
+            <p class="feed-sum">위협 인텔리전스 피드가 무엇인지 설명하는 글이다.</p>
+            <span class="feed-src">Recorded Future</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/23 08:59</span>
             <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1VMmVTQzM0RC1fNmNlYTlZLWJGbDFlWUxxM3lMVm5JWGlLcmRiWHJpa1kzcjFYajJPOW81dE1WVEdoaC1YbUxzbHE4c1E3RTFMcVRiRFhVc19ScXE3WW4xR1NuQTlSdzdoMG1GWm5n?oc=5" target="_blank" rel="noopener">집주소·카드번호·전기료까지 털렸다…한전 152만명 개인정보 유출</a></h3>
             <span class="feed-src">더스쿠프</span>
@@ -4373,6 +4467,11 @@
           <article class="feed-item">
             <span class="feed-time">11/22 18:31</span>
             <h3><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1TX1ZtNHpFRWs3azhFOVNvNkk2X0RSSGo3RGtad3lTX3lpUFRGUnFFRG90dlpJalA3emJUQUxLZXQ0YzN5bHJlRXFPa2hwcTNwLTlObFMxS3NFc0Z5NTBENWd2dXoyVnVWbHJRQnNFUElMQllqVHFKSFU1WQ?oc=5" target="_blank" rel="noopener">한국 랜섬웨어 피해 175% 늘고, 100대 기업 46% 위험 등급</a></h3>
+            <span class="feed-src">서울신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/22 18:31</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFA3UHZualhudHB3XzhsM2FuRUhCMXdsNVl1UzhLWHcwODA0OVBqcnEtLVFIcE9COFVIYW45bjE3NFZXc0xMMkJjYkFHMk1qZmdJOHlCcktIWQ?oc=5" target="_blank" rel="noopener">“한국 랜섬웨어 피해 175% 늘고, 100대 기업 46% 위험 등급”</a></h3>
             <span class="feed-src">서울신문</span>
           </article>
           <article class="feed-item">
@@ -13014,10 +13113,10 @@
 
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
-        <div class="stat"><b>15</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>1534</b><span>국내 동향 — 11/16~24 보도</span></div>
-        <div class="stat"><b>725</b><span>해외 동향 — 11/16~24 보도</span></div>
-        <div class="stat"><b>136</b><span>CVE·취약점 — CVSS 9.0 이상 62건 포함</span></div>
+        <div class="stat"><b>16</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
+        <div class="stat"><b>1537</b><span>국내 동향 — 11/16~24 보도</span></div>
+        <div class="stat"><b>727</b><span>해외 동향 — 11/16~24 보도</span></div>
+        <div class="stat"><b>146</b><span>CVE·취약점 — CVSS 9.0 이상 72건 포함</span></div>
         <div class="stat"><b>55</b><span>다크웹 유출 — 11/23 19:39 확인 기준 24시간 건수</span></div>
       </div>
 
@@ -13025,7 +13124,7 @@
       <section aria-labelledby="h-incidents" id="sec-incidents">
         <div class="sec-head">
           <h2 id="h-incidents"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-incidents"><span>핵심 이슈</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>진행 중인 대형 사건 15건 · 탭을 눌러 사건별 현황을 확인하세요</p>
+          <p>진행 중인 대형 사건 16건 · 탭을 눌러 사건별 현황을 확인하세요</p>
         </div>
         <div class="sec-body" id="body-incidents">
           <div class="sec-inner">
@@ -13045,6 +13144,7 @@
           <button class="tab-btn" role="tab" id="tab-13" aria-controls="panel-13" aria-selected="false">컬리 큐레이터 개인정보 유출</button>
           <button class="tab-btn" role="tab" id="tab-14" aria-controls="panel-14" aria-selected="false">JP모건·비자·마스터카드 협력업체 해킹</button>
           <button class="tab-btn" role="tab" id="tab-15" aria-controls="panel-15" aria-selected="false">VMware vCenter 제로데이</button>
+          <button class="tab-btn" role="tab" id="tab-16" aria-controls="panel-16" aria-selected="false">Microsoft·Azure 치명적 취약점 10건</button>
         </div>
 
         <div class="tab-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
@@ -13546,6 +13646,30 @@
           &nbsp;·&nbsp;
           <a class="src-link" href="https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html" target="_blank" rel="noopener">The Hacker News — 해커들, VMware·Cisco·Apache 중대 취약점 악용…스파이 공격 정황 포착</a>
         </div>
+        <div class="tab-panel" role="tabpanel" id="panel-16" aria-labelledby="tab-16">
+          <h3>Microsoft·Azure 치명적 취약점 10건 — CVSS 9.0 이상</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
+          <p>NVD에 Microsoft·Azure 제품군의 CVSS 9.0 이상 취약점 10건이 새로 공개됐다. Azure Event Grid 부적절한 인증(CVE-2026-62841, CVSS 10.0), M365 Copilot 부적절한 인가(CVE-2026-50691, 9.9), SharePoint 경로 순회(CVE-2026-70193, 9.9), Azure Portal·Azure Machine Learning·Profile Data Roaming Service의 SSRF·XSS 계열, Microsoft Clarity·Azure Site Recovery·Azure DevTest Labs의 인가·인증 우회 등이 포함되며, 대부분 네트워크를 통한 권한 상승 또는 스푸핑이 가능하다고 설명됐다.</p>
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-62841" target="_blank" rel="noopener">NVD — CVE-2026-62841</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-50691" target="_blank" rel="noopener">NVD — CVE-2026-50691</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-70193" target="_blank" rel="noopener">NVD — CVE-2026-70193</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-109480" target="_blank" rel="noopener">NVD — CVE-2026-109480</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-118285" target="_blank" rel="noopener">NVD — CVE-2026-118285</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-70305" target="_blank" rel="noopener">NVD — CVE-2026-70305</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-109490" target="_blank" rel="noopener">NVD — CVE-2026-109490</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-113824" target="_blank" rel="noopener">NVD — CVE-2026-113824</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-118286" target="_blank" rel="noopener">NVD — CVE-2026-118286</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-69899" target="_blank" rel="noopener">NVD — CVE-2026-69899</a>
+        </div>
 
           </div>
         </div>
@@ -13661,13 +13785,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 136건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 74건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 146건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 74건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 136건</button>
+          <button data-filter="all" aria-pressed="true">전체 146건</button>
           <button data-filter="new" aria-pressed="false">11/16~22 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -13753,6 +13877,14 @@
             <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
           </article>
           <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-62841" target="_blank" rel="noopener"><span class="mono">CVE-2026-62841</span></a> · Azure Event Grid</h3>
+              <p>Azure Event Grid의 부적절한 인증 취약점으로, 미인증 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 10.0).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
             <div class="score crit">9.9<small>CVSS</small></div>
             <div class="cve-main">
               <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133680" target="_blank" rel="noopener"><span class="mono">CVE-2026-133680</span></a> · D-Link DCS-935L</h3>
@@ -13807,6 +13939,22 @@
               <p>DrayTek Vigor2960 1.5.1.6 이하, doWebBackup 함수 취약점.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50691" target="_blank" rel="noopener"><span class="mono">CVE-2026-50691</span></a> · M365 Copilot</h3>
+              <p>M365 Copilot의 부적절한 인가 취약점으로, 권한 있는 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-70193" target="_blank" rel="noopener"><span class="mono">CVE-2026-70193</span></a> · Microsoft Office SharePoint</h3>
+              <p>Microsoft Office SharePoint의 경로 순회(path traversal) 취약점으로, 권한 있는 공격자가 네트워크를 통해 코드를 실행할 수 있다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">9.8<small>CVSS</small></div>
@@ -13992,6 +14140,30 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
           </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.6<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109480" target="_blank" rel="noopener"><span class="mono">CVE-2026-109480</span></a> · Profile Data Roaming Service (PDRS)</h3>
+              <p>Profile Data Roaming Service(PDRS)의 서버 측 요청 위조(SSRF) 취약점으로, 권한 있는 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.6).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.6<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118285" target="_blank" rel="noopener"><span class="mono">CVE-2026-118285</span></a> · Azure Machine Learning</h3>
+              <p>Azure Machine Learning의 서버 측 요청 위조(SSRF) 취약점으로, 권한 있는 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.6).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.6<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-70305" target="_blank" rel="noopener"><span class="mono">CVE-2026-70305</span></a> · Azure Portal</h3>
+              <p>Azure Portal의 크로스 사이트 스크립팅(XSS) 취약점으로, 미인증 공격자가 네트워크를 통해 스푸핑을 수행할 수 있다(CVSS 9.6).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
           <article class="cve-row" data-kind="surfaced">
             <div class="score crit">9.5<small>CVSS v4.0</small></div>
             <div class="cve-main">
@@ -14065,6 +14237,14 @@
             <div class="cve-tags"><span class="tag new">신규 · 11/17</span></div>
           </article>
           <article class="cve-row" data-kind="new">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-109490" target="_blank" rel="noopener"><span class="mono">CVE-2026-109490</span></a> · Authentication Methods Portal Extension</h3>
+              <p>Authentication Methods Portal Extension의 웹 페이지 생성 시 입력 중화 미흡(XSS) 취약점(CVSS 9.3).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
             <div class="score crit">9.2<small>CVSS v4.0</small></div>
             <div class="cve-main">
               <h3><span class="mono">CVE-2026-114938</span> · OpenJDK / Oracle Java SE — ‘Java4Shell’</h3>
@@ -14127,6 +14307,30 @@
               <p>Gladys Assistant 4.71.0 이하 버전의 백업 컴포넌트 gateway.downloadBackup.js에서 발견된 취약점(CVSS 9.1).</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-113824" target="_blank" rel="noopener"><span class="mono">CVE-2026-113824</span></a> · Microsoft Clarity</h3>
+              <p>Microsoft Clarity의 사용자 제어 키를 통한 인가 우회 취약점으로, 미인증 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-118286" target="_blank" rel="noopener"><span class="mono">CVE-2026-118286</span></a> · Azure Site Recovery</h3>
+              <p>Azure Site Recovery의 부적절한 접근 제어 취약점으로, 미인증 공격자가 네트워크를 통해 권한을 상승시킬 수 있다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-69899" target="_blank" rel="noopener"><span class="mono">CVE-2026-69899</span></a> · Azure DevTest Labs</h3>
+              <p>Azure DevTest Labs의 스푸핑을 통한 인증 우회 취약점으로, 미인증 공격자가 네트워크를 통해 스푸핑을 수행할 수 있다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
           <article class="cve-row" data-kind="surfaced">
             <div class="score high">9.0<small>CVSS v4.0</small></div>
@@ -14771,14 +14975,22 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 1534건 · 해외 725건 · 2026년 11월 16~24일 보도</p>
+          <p>국내 1537건 · 해외 727건 · 2026년 11월 16~24일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">1534건 · 2026년 11월 16~24일 보도</p>
+            <p class="col-note">1537건 · 2026년 11월 16~24일 보도</p>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBPTHFuMlNFenhPLU5fLVlmRzNKelhGRm1HcU5PcHgtRlEwU0NKay0xVGpwYXlrRmhTcmhEdVV5UEtOdUNlWldVX0NJaVFCM19zRElHOTdXSjQ1SU5XVU9VSE9pNmVhZ2tvWlVNSnlwb01GcEU?oc=5" target="_blank" rel="noopener">글로벌 보안 업계, AI 해킹 확산 속 잇단 대형 M&A....점점 '규모의 경쟁'</a></h3>
+              <span class="news-meta">디지털투데이 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwTG04eUgyUlRIMWlhVFgzLVhxdGNRNm5IaE5PbjRMR3RNcjVva0dkclRtM2d4Vy04VmNrcWtzQlYyUlVWV2dqSm5kSXdKQ2pncEx2UHB0TzQ3Y3NsM2ZjRg?oc=5" target="_blank" rel="noopener">해킹 늘자 보안 수요도 쑥…안랩, 내년 영업익 38% 증가 전망[클릭 e종목]</a></h3>
+              <span class="news-meta">아시아경제 · 2026-11-24</span>
+            </article>
             <article class="news-item">
               <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE9OOXA4YVBYaGJldmhUVGdGeFVqYUwzTlhWOE5UV1R4N0xMZDczTE1ZRkpZell4djlLeElULVJkRGRveV9meWNldGNINW9NWURpMnlv?oc=5" target="_blank" rel="noopener">한전 152만 명 개인정보 유출 비상, 정부 초동대응반 즉각 투입한다</a></h3>
               <span class="news-meta">유스연합 · 2026-11-24</span>
@@ -16825,6 +17037,10 @@
             </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5EYnFtUEhhWE12UVBzVktWMkJlN1JCWU9RVl9ZZjh6MTZiUkc0M3RnaHBQaGdtZ0ZFOF9aUGVwVGp1RDNjWFNLYnFfNXVTS0xRc3FwdDZLRm5LclpXT1NSWkZ5eDVCZkl3R09lSWhJUjI1eFE?oc=5" target="_blank" rel="noopener">한국 랜섬웨어 피해 175% 늘고, 100대 기업 46% 위험 등급</a></h3>
+              <span class="news-meta">서울신문 · 2026-11-22</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFA3UHZualhudHB3XzhsM2FuRUhCMXdsNVl1UzhLWHcwODA0OVBqcnEtLVFIcE9COFVIYW45bjE3NFZXc0xMMkJjYkFHMk1qZmdJOHlCcktIWQ?oc=5" target="_blank" rel="noopener">“한국 랜섬웨어 피해 175% 늘고, 100대 기업 46% 위험 등급”</a></h3>
               <span class="news-meta">서울신문 · 2026-11-22</span>
             </article>
             <article class="news-item">
@@ -20926,7 +21142,7 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">725건 · November 16–24, 2026</p>
+            <p class="col-note">727건 · November 16–24, 2026</p>
             <article class="news-item">
               <h3><a href="https://github.com/advisories/GHSA-j44m-77cc-p3cc" target="_blank" rel="noopener">CVE-2026-63492 — AVideo API, 이스케이프되지 않은 FFmpeg 프로세스 키워드를 통한 OS 명령어 삽입 취약점</a></h3>
               <span class="news-orig">CVE-2026-63492 — AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword</span>
@@ -20938,6 +21154,12 @@
               <span class="news-orig">How Aurora Adaptive Threat Protection Detects and Stops ClickFix Attacks</span>
               <p class="news-sum">Arctic Wolf의 Aurora 적응형 위협 방어가 ClickFix 공격을 탐지하고 차단하는 방법을 소개하는 영상이다.</p>
               <span class="news-meta">Arctic Wolf · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure" target="_blank" rel="noopener">산업용 시리얼 게이트웨이가 보안 취약점을 그대로 드러내고 있다</a></h3>
+              <span class="news-orig">Industrial Serial Gateways Broadcast That They're Insecure</span>
+              <p class="news-sum">산업용 시리얼 게이트웨이가 안전하지 않음을 그대로 노출하고 있다는 소식이다.</p>
+              <span class="news-meta">Dark Reading · 2026-11-24</span>
             </article>
             <article class="news-item">
               <h3><a href="https://securityboulevard.com/2026/11/more-cyberattacks-hit-government-agencies-and-essential-services/" target="_blank" rel="noopener">정부 기관과 필수 서비스를 겨냥한 사이버공격 잇따라</a></h3>
@@ -21850,6 +22072,12 @@
               <span class="news-orig">Hackers breach Austrian Foreign Ministry website, access diplomats' contact details</span>
               <p class="news-sum">해커가 오스트리아 외무부 웹사이트를 침해해 외교관들의 연락처 정보에 접근했다.</p>
               <span class="news-meta">The Record · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.recordedfuture.com/blog/what-are-threat-intelligence-feeds" target="_blank" rel="noopener">위협 인텔리전스 피드란 무엇인가</a></h3>
+              <span class="news-orig">What are threat intelligence feeds?</span>
+              <p class="news-sum">위협 인텔리전스 피드가 무엇인지 설명하는 글이다.</p>
+              <span class="news-meta">Recorded Future · 2026-11-23</span>
             </article>
             <article class="news-item">
               <h3><a href="https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20" target="_blank" rel="noopener">GL.iNet 보안 공지 2026-11-20</a></h3>
