@@ -234,21 +234,21 @@
         <ul class="mast-sub">
           <li>한전 해킹 — 고객·조달 이용자 152만명 개인정보 유출, 개인정보위 조사 착수</li>
           <li>삼성증권 해킹 — 고객 8,241명 개인정보 유출, 증권업계 네 번째 사고</li>
+          <li>HD현대로보틱스 해킹 — 홈페이지 가입자 개인정보 최대 10개 항목 유출</li>
           <li>홈서비스 ‘미소’ 개인정보 유출 — 2만 8천 명, 주소·예약정보 등</li>
           <li>컬리 해킹 범위 확대 — 임직원 정보까지 유출</li>
-          <li>빗썸에 381조 원 해킹 코인 유입 — 이상 거래 감지 ‘구멍’ 지적</li>
+          <li>Synology DSM 치명적 취약점 CVE-2026-120382 (CVSS 9.8) 신규 공개 (속보)</li>
           <li>CISA, Cisco Expressway 치명적 RCE 실제 공격 악용 경고 — KEV 등재 (속보)</li>
           <li>PHP 치명적 취약점 7건 — 전 세계 웹사이트 해킹 비상</li>
-          <li>VMware vCenter 치명적 제로데이 — 중국 연계 해커조직 실제 공격, 구글 9월부터 악용 확인</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 23일 17:09 KST · 랜섬웨어 유출 현황은 11월 22일 19:47 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 23일 17:24 KST · 랜섬웨어 유출 현황은 11월 22일 19:47 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>21건</b> · CVE·취약점 <b>121건</b> (CVSS 9.0 이상 61건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>21건</b> · CVE·취약점 <b>122건</b> (CVSS 9.0 이상 62건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -258,11 +258,62 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 2020건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 2029건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/23 17:17</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120382" target="_blank" rel="noopener">Synology DiskStation Manager OAuth API 명령어 인자 구분자 중화 미흡 취약점 (CVE-2026-120382, CVSS 9.8)</a></h3>
+            <span class="feed-orig">CVE-2026-120382 (CVSS 9.8) — An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1</span>
+            <p class="feed-sum">Synology DSM의 OAuth API에서 명령어 인자 구분자를 제대로 중화하지 못해 발생하는 취약점으로, CVSS 9.8의 치명적 등급이 부여됐다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 17:17</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261123149500002" target="_blank" rel="noopener">금융위, 롯데카드에 10억원 과징금…유출위험 공시 불충분 판단</a></h3>
+            <span class="feed-src">Yonhap news</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 17:14</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5udG1hMmd0WVh5cVRzaGZiNXdZbE9YQkR3QnV6ZUJyTUp3dEZtLTdtRXc5SFhfMUExQWRVZmxLY09ZWk50TzU2TUNfR0hFejZvT2E2aUlpMDJPVl9GLTJDQVhvSjk?oc=5" target="_blank" rel="noopener">HD현대로보틱스, 홈페이지 가입자 개인정보 유출…“경위·범위 파악 중”</a></h3>
+            <span class="feed-src">매일일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 17:11</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwMUZWNEtpMnE2emN5RVl3MDFuNUFueWVVNjhrRkxDWTFjVl9wMGlidTlQc0xDVWRkTmZuNUNFcTFVdVdIV0VTXzVwSVJLOFVyci1ja3ZSVGF2TUJwbW1v?oc=5" target="_blank" rel="noopener">OpenJDK ‘Java4Shell’ 취약점 공격…에버스핀 보안 솔루션서 차단 확인</a></h3>
+            <span class="feed-src">헬로티</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 17:10</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9yaXdwVnRmZVUtejBsMnQ4UUNoTWRGRTNFaWlhYXNlX1VuZkdxdVQxZlVvWHFIcjFEVlB0Sjc1QU5FdnJrdVg2TENyOU9aY2pVMFFLOHFIeEo?oc=5" target="_blank" rel="noopener">한전, 개인정보 유출… 한 달 만에 또 보안 사고</a></h3>
+            <span class="feed-src">대구광역일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 17:08</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE82QjdKT09XNG5ncFl5a19JeHg1R3VPT2hHR2JHaUlfLV9sVTFqaERXbENsMXFjRFR0TTMtd053WklrNlV0R3dvLQ?oc=5" target="_blank" rel="noopener">HD현대로보틱스 홈페이지 해킹⋯가입자 개인정보 최대 10개 항목 유출</a></h3>
+            <span class="feed-src">아이뉴스24</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 17:06</span>
+            <h3><a href="https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/" target="_blank" rel="noopener">BADBOX 3.0에 감염된 TV 박스, 소유자의 가정용 인터넷을 임대해 사용</a></h3>
+            <span class="feed-orig">Infected TV boxes in BADBOX 3.0 rent out their owners' home internet</span>
+            <p class="feed-sum">BADBOX 3.0에 감염된 TV 박스가 소유자의 가정용 인터넷을 외부에 임대하는 데 악용되고 있다.</p>
+            <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 16:44</span>
+            <h3><a href="https://securityaffairs.com/203767/malware/badbox-3-0-exposed-massive-botnet-hides-ad-fraud-inside-android-tv-boxes.html" target="_blank" rel="noopener">BADBOX 3.0 실체 드러나 — 안드로이드 TV 박스에 숨은 대규모 봇넷, 광고 사기 자행</a></h3>
+            <span class="feed-orig">BADBOX 3.0 Exposed: Massive Botnet Hides Ad Fraud Inside Android TV Boxes</span>
+            <p class="feed-sum">안드로이드 TV 박스에 숨어 광고 사기를 벌이는 대규모 봇넷 BADBOX 3.0의 실체가 드러났다.</p>
+            <span class="feed-src">Security Affairs</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 16:42</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB3S2RKVWxuaFJrZG1MaklhNzFsa0hsYXlnSkxWaTBQRzZGZVJ0amN1X0tQX0JWZGtWUktMREJuYXJiMDhlMElWalAwYTEyU3FRdEZYV0tqTTN3WjR6Z2M2ZnBkaW8tYnMtbWQ0VDR1TUVRbk5JZkHSAWZBVV95cUxPSXg1WGVUYUpKaDhNb19pVXRPVEk2TEd4TF9jR1RSMGRIbDhXX3FlTGU4REtJZThUNW9XWjl5akdOQ2Fiby1NTlhmckRyMFczd3dJQ3BiT2ZxZWtrV05aZEd4QVhUaEE?oc=5" target="_blank" rel="noopener">삼성증권 고객 8241명 정보 유출…“VOC에 의견 접수한 고객 타깃”</a></h3>
+            <span class="feed-src">동아일보</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/23 16:15</span>
             <h3><a href="https://zdnet.co.kr/view/?no=20261123155012" target="_blank" rel="noopener">한국트러스트연합 창립총회..."보안, 혼자 해결 못해"</a></h3>
@@ -11540,9 +11591,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>16</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>1435</b><span>국내 동향 — 11/16~23 보도</span></div>
-        <div class="stat"><b>585</b><span>해외 동향 — 11/16~23 보도</span></div>
-        <div class="stat"><b>121</b><span>CVE·취약점 — CVSS 9.0 이상 61건 포함</span></div>
+        <div class="stat"><b>1441</b><span>국내 동향 — 11/16~23 보도</span></div>
+        <div class="stat"><b>588</b><span>해외 동향 — 11/16~23 보도</span></div>
+        <div class="stat"><b>122</b><span>CVE·취약점 — CVSS 9.0 이상 62건 포함</span></div>
         <div class="stat"><b>25</b><span>다크웹 유출 — 11/22 19:47 확인 기준 24시간 건수</span></div>
       </div>
 
@@ -11784,8 +11835,8 @@
 
         <div class="tab-panel" role="tabpanel" id="panel-10" aria-labelledby="tab-10">
           <h3>Java4Shell — OpenJDK 원격 코드 실행 주장 (CVE-2026-114938)</h3>
-          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-20</span></div>
-          <p><strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. Cisco Talos도 11월 18일 관련 분석 글을 게시했습니다. 단, 일부 분석가는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. The Hacker News는 11월 18일 Java4Shell이 Java 17 이상 AVX-512 VBMI 서버에서 Jira·Jenkins·Keycloak의 사전 인증 원격 코드 실행을 가능하게 한다고 보도했다. SecurityWeek는 Java4Shell이 다수 엔터프라이즈 애플리케이션을 탈취 위험에 빠뜨린다고 보도했고, 에버스핀은 에버세이프 웹으로 Java4Shell을 차단한다고 밝혔다. 펜타시큐리티도 Java4Shell 방어 지원을 위해 웹방화벽 탐지 규칙을 제공한다고 밝혔다. The Record는 11월 18일 CISA가 Java4Shell 경고를 발령했으며, AI가 발견한 이 Java 버그가 Fortune 500 대다수 기업에 영향을 미친다고 보도했다. CISA는 11월 18일 Java4Shell 취약점의 즉시 패치를 촉구했다. Security Affairs는 11월 18일 Java4Shell 취약점을 ‘65자에서 원격 코드 실행으로’ 이어지는 구조로 분석했고, Help Net Security는 같은 날 실제 악용이 까다로우며 특정 CPU 조건에 달려 있다고 전했다. Malwarebytes는 11월 18일 이 결함을 치명적이지만 영향 범위가 좁은 취약점으로 평가했다. 11월 19일에는 엔키화이트햇이 Java4Shell 점검 도구를 배포했고, 데이터넷은 공공 시스템의 71%가 자바 기반이라며 보안 기업들의 무료 점검 도구 배포를 전했다. 11월 19일 데일리시큐 보도에 따르면 엔키화이트햇이 Java4Shell 내부 점검 도구를 배포했다. Security Boulevard는 11월 19일 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell)을 다룬 글을 게시했다. SANS ISC와 Elastic, Sysdig, SentinelOne, Orca Security, Aqua Security의 Java4Shell 분석·대응 기사도 새로 들어왔다. 동아일보는 11월 19일 '자바' 취약점 확인에 따라 청와대에서 민관군 긴급 대책회의가 열렸다고 보도했고, 뉴스웍스는 개보위가 Java4Shell 관련 유출 예방을 당부했다고 전했다. 11월 19일 GeekNews는 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell, CVE-2026-114938)을 다뤘다. 뉴스센터코리아는 11월 18일 자바 취약점 'Java4Shell' 공개 소식을 전하며 정부가 개인정보 유출을 막기 위한 긴급 점검을 당부했다고 보도했다. 11월 19일 보안뉴스는 조직 내 자바 취약점 여부를 확인할 수 있는 자바4셸 탐지 도구를 소개했고, KBS는 PHP에 이어 자바까지 취약점이 이어지며 공공 전산망에 비상이 걸렸다고 보도했다. 11월 19일 개인정보보호위원회는 ‘자바4셸’ 예방조치를 당부하며 미조치 시 대규모 유출사고가 우려된다고 밝혔다. 11월 19일 SecurityWeek는 Java4Shell 취약점에 대한 실제 악용 시도가 시작됐으며, 각 벤더가 긴급 권고문을 잇따라 내놓고 있다고 보도했다. 11월 20일에는 펜타시큐리티가 Java4Shell 취약점 대응과 보안 정책 반영을 밝혔다는 보도가 나왔다. ASEC(안랩)는 11월 20일 고속 Base64 처리 로직의 허점을 노린 JDK 취약점(CVE-2026-114938) 분석을 게시했다. 11월 20일 The Cyber Express 주간 라운드업은 Java4Shell이 기업용 애플리케이션을 위협하고 있다고 다시 정리했다.</p>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-23</span></div>
+          <p><strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. Cisco Talos도 11월 18일 관련 분석 글을 게시했습니다. 단, 일부 분석가는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. The Hacker News는 11월 18일 Java4Shell이 Java 17 이상 AVX-512 VBMI 서버에서 Jira·Jenkins·Keycloak의 사전 인증 원격 코드 실행을 가능하게 한다고 보도했다. SecurityWeek는 Java4Shell이 다수 엔터프라이즈 애플리케이션을 탈취 위험에 빠뜨린다고 보도했고, 에버스핀은 에버세이프 웹으로 Java4Shell을 차단한다고 밝혔다. 펜타시큐리티도 Java4Shell 방어 지원을 위해 웹방화벽 탐지 규칙을 제공한다고 밝혔다. The Record는 11월 18일 CISA가 Java4Shell 경고를 발령했으며, AI가 발견한 이 Java 버그가 Fortune 500 대다수 기업에 영향을 미친다고 보도했다. CISA는 11월 18일 Java4Shell 취약점의 즉시 패치를 촉구했다. Security Affairs는 11월 18일 Java4Shell 취약점을 ‘65자에서 원격 코드 실행으로’ 이어지는 구조로 분석했고, Help Net Security는 같은 날 실제 악용이 까다로우며 특정 CPU 조건에 달려 있다고 전했다. Malwarebytes는 11월 18일 이 결함을 치명적이지만 영향 범위가 좁은 취약점으로 평가했다. 11월 19일에는 엔키화이트햇이 Java4Shell 점검 도구를 배포했고, 데이터넷은 공공 시스템의 71%가 자바 기반이라며 보안 기업들의 무료 점검 도구 배포를 전했다. 11월 19일 데일리시큐 보도에 따르면 엔키화이트햇이 Java4Shell 내부 점검 도구를 배포했다. Security Boulevard는 11월 19일 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell)을 다룬 글을 게시했다. SANS ISC와 Elastic, Sysdig, SentinelOne, Orca Security, Aqua Security의 Java4Shell 분석·대응 기사도 새로 들어왔다. 동아일보는 11월 19일 '자바' 취약점 확인에 따라 청와대에서 민관군 긴급 대책회의가 열렸다고 보도했고, 뉴스웍스는 개보위가 Java4Shell 관련 유출 예방을 당부했다고 전했다. 11월 19일 GeekNews는 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell, CVE-2026-114938)을 다뤘다. 뉴스센터코리아는 11월 18일 자바 취약점 'Java4Shell' 공개 소식을 전하며 정부가 개인정보 유출을 막기 위한 긴급 점검을 당부했다고 보도했다. 11월 19일 보안뉴스는 조직 내 자바 취약점 여부를 확인할 수 있는 자바4셸 탐지 도구를 소개했고, KBS는 PHP에 이어 자바까지 취약점이 이어지며 공공 전산망에 비상이 걸렸다고 보도했다. 11월 19일 개인정보보호위원회는 ‘자바4셸’ 예방조치를 당부하며 미조치 시 대규모 유출사고가 우려된다고 밝혔다. 11월 19일 SecurityWeek는 Java4Shell 취약점에 대한 실제 악용 시도가 시작됐으며, 각 벤더가 긴급 권고문을 잇따라 내놓고 있다고 보도했다. 11월 20일에는 펜타시큐리티가 Java4Shell 취약점 대응과 보안 정책 반영을 밝혔다는 보도가 나왔다. ASEC(안랩)는 11월 20일 고속 Base64 처리 로직의 허점을 노린 JDK 취약점(CVE-2026-114938) 분석을 게시했다. 11월 20일 The Cyber Express 주간 라운드업은 Java4Shell이 기업용 애플리케이션을 위협하고 있다고 다시 정리했다. 11월 23일 헬로티 보도에 따르면 OpenJDK ‘Java4Shell’ 취약점 공격이 발생했으며, 에버스핀 보안 솔루션에서 차단이 확인됐다.</p>
           <a class="src-link" href="https://blog.talosintelligence.com/java4shell/" target="_blank" rel="noopener">Cisco Talos — CVE-2026-114938: Critical vulnerability in OpenJDK JAVA</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.tenable.com/blog/java4shell-cve-2026-114938-frequently-asked-questions-about-openjdk-rce-vulnerability" target="_blank" rel="noopener">Tenable — Java4Shell (CVE-2026-114938) FAQ</a>
@@ -11878,6 +11929,8 @@
           <a class="src-link" href="https://thecyberexpress.com/weekly-roundup-openai-lawsuit-java4shell-flaw/" target="_blank" rel="noopener">The Cyber Express — Weekly Cyber Roundup: Java4Shell Threatens Enterprise Apps</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/" target="_blank" rel="noopener">Help Net Security — Week in review: Java4Shell proves tricky to exploit, malware planted via Optimizely hits 178 orgs</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwMUZWNEtpMnE2emN5RVl3MDFuNUFueWVVNjhrRkxDWTFjVl9wMGlidTlQc0xDVWRkTmZuNUNFcTFVdVdIV0VTXzVwSVJLOFVyci1ja3ZSVGF2TUJwbW1v?oc=5" target="_blank" rel="noopener">헬로티 — OpenJDK ‘Java4Shell’ 취약점 공격…에버스핀 보안 솔루션서 차단 확인</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-11" aria-labelledby="tab-11">
@@ -12178,13 +12231,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 121건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 63건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 122건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 63건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 121건</button>
+          <button data-filter="all" aria-pressed="true">전체 122건</button>
           <button data-filter="new" aria-pressed="false">11/16~22 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -12316,6 +12369,14 @@
               <p>DrayTek Vigor2960 1.5.1.6 이하, doWebBackup 함수 취약점.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/18</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120382" target="_blank" rel="noopener"><span class="mono">CVE-2026-120382</span></a> · Synology DiskStation Manager (DSM)</h3>
+              <p>Synology DSM OAuth API의 명령어 인자 구분자 중화 미흡 취약점(CVSS 9.8).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/23</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">9.8<small>CVSS</small></div>
@@ -13168,14 +13229,38 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 1435건 · 해외 585건 · 2026년 11월 16~23일 보도</p>
+          <p>국내 1441건 · 해외 588건 · 2026년 11월 16~23일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">1435건 · 2026년 11월 16~23일 보도</p>
+            <p class="col-note">1441건 · 2026년 11월 16~23일 보도</p>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261123149500002" target="_blank" rel="noopener">금융위, 롯데카드에 10억원 과징금…유출위험 공시 불충분 판단</a></h3>
+              <span class="news-meta">Yonhap news · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5udG1hMmd0WVh5cVRzaGZiNXdZbE9YQkR3QnV6ZUJyTUp3dEZtLTdtRXc5SFhfMUExQWRVZmxLY09ZWk50TzU2TUNfR0hFejZvT2E2aUlpMDJPVl9GLTJDQVhvSjk?oc=5" target="_blank" rel="noopener">HD현대로보틱스, 홈페이지 가입자 개인정보 유출…“경위·범위 파악 중”</a></h3>
+              <span class="news-meta">매일일보 · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwMUZWNEtpMnE2emN5RVl3MDFuNUFueWVVNjhrRkxDWTFjVl9wMGlidTlQc0xDVWRkTmZuNUNFcTFVdVdIV0VTXzVwSVJLOFVyci1ja3ZSVGF2TUJwbW1v?oc=5" target="_blank" rel="noopener">OpenJDK ‘Java4Shell’ 취약점 공격…에버스핀 보안 솔루션서 차단 확인</a></h3>
+              <span class="news-meta">헬로티 · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9yaXdwVnRmZVUtejBsMnQ4UUNoTWRGRTNFaWlhYXNlX1VuZkdxdVQxZlVvWHFIcjFEVlB0Sjc1QU5FdnJrdVg2TENyOU9aY2pVMFFLOHFIeEo?oc=5" target="_blank" rel="noopener">한전, 개인정보 유출… 한 달 만에 또 보안 사고</a></h3>
+              <span class="news-meta">대구광역일보 · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE82QjdKT09XNG5ncFl5a19JeHg1R3VPT2hHR2JHaUlfLV9sVTFqaERXbENsMXFjRFR0TTMtd053WklrNlV0R3dvLQ?oc=5" target="_blank" rel="noopener">HD현대로보틱스 홈페이지 해킹⋯가입자 개인정보 최대 10개 항목 유출</a></h3>
+              <span class="news-meta">아이뉴스24 · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTFB3S2RKVWxuaFJrZG1MaklhNzFsa0hsYXlnSkxWaTBQRzZGZVJ0amN1X0tQX0JWZGtWUktMREJuYXJiMDhlMElWalAwYTEyU3FRdEZYV0tqTTN3WjR6Z2M2ZnBkaW8tYnMtbWQ0VDR1TUVRbk5JZkHSAWZBVV95cUxPSXg1WGVUYUpKaDhNb19pVXRPVEk2TEd4TF9jR1RSMGRIbDhXX3FlTGU4REtJZThUNW9XWjl5akdOQ2Fiby1NTlhmckRyMFczd3dJQ3BiT2ZxZWtrV05aZEd4QVhUaEE?oc=5" target="_blank" rel="noopener">삼성증권 고객 8241명 정보 유출…“VOC에 의견 접수한 고객 타깃”</a></h3>
+              <span class="news-meta">동아일보 · 2026-11-23</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://zdnet.co.kr/view/?no=20261123155012" target="_blank" rel="noopener">한국트러스트연합 창립총회..."보안, 혼자 해결 못해"</a></h3>
               <span class="news-meta">ZDNet Korea · 2026-11-23</span>
@@ -18931,7 +19016,25 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">585건 · November 16–23, 2026</p>
+            <p class="col-note">588건 · November 16–23, 2026</p>
+            <article class="news-item">
+              <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-120382" target="_blank" rel="noopener">Synology DiskStation Manager OAuth API 명령어 인자 구분자 중화 미흡 취약점 (CVE-2026-120382, CVSS 9.8)</a></h3>
+              <span class="news-orig">CVE-2026-120382 (CVSS 9.8) — An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1</span>
+              <p class="news-sum">Synology DSM의 OAuth API에서 명령어 인자 구분자를 제대로 중화하지 못해 발생하는 취약점으로, CVSS 9.8의 치명적 등급이 부여됐다.</p>
+              <span class="news-meta">NVD · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/23/badbox-3-0-ad-fraud-operation/" target="_blank" rel="noopener">BADBOX 3.0에 감염된 TV 박스, 소유자의 가정용 인터넷을 임대해 사용</a></h3>
+              <span class="news-orig">Infected TV boxes in BADBOX 3.0 rent out their owners' home internet</span>
+              <p class="news-sum">BADBOX 3.0에 감염된 TV 박스가 소유자의 가정용 인터넷을 외부에 임대하는 데 악용되고 있다.</p>
+              <span class="news-meta">Help Net Security · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityaffairs.com/203767/malware/badbox-3-0-exposed-massive-botnet-hides-ad-fraud-inside-android-tv-boxes.html" target="_blank" rel="noopener">BADBOX 3.0 실체 드러나 — 안드로이드 TV 박스에 숨은 대규모 봇넷, 광고 사기 자행</a></h3>
+              <span class="news-orig">BADBOX 3.0 Exposed: Massive Botnet Hides Ad Fraud Inside Android TV Boxes</span>
+              <p class="news-sum">안드로이드 TV 박스에 숨어 광고 사기를 벌이는 대규모 봇넷 BADBOX 3.0의 실체가 드러났다.</p>
+              <span class="news-meta">Security Affairs · 2026-11-23</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.malwarebytes.com/blog/news/2026/11/a-week-in-security-november-16-november-22" target="_blank" rel="noopener">한 주간의 보안 소식 (11월 16일~11월 22일)</a></h3>
               <span class="news-orig">A week in security (November 16 – November 22)</span>
