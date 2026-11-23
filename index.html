@@ -232,16 +232,16 @@
         <p class="mast-date">2026년 11월 23일 월요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
+          <li>WPIDE CVE-2026-124251 — CSRF 우회로 미인증 원격 코드 실행, WordPress 플러그인 취약점 (속보)</li>
           <li>CVE-2026-121613 — CVSS 9.8 인증·인가 누락, 미인증 원격 명령 실행 가능 (속보)</li>
           <li>한전 해킹 — 152만명 개인정보 유출, 개인정보위 조사 착수</li>
           <li>삼성증권 해킹 — 고객 8,241명 개인정보 유출, 증권업계 네 번째 사고</li>
           <li>금융위, 롯데카드에 10억 과징금 — 해킹 위험 미공시</li>
           <li>Microsoft Entra Connect Health 취약점 악용 — 테넌트 데이터 접근</li>
           <li>중국 연계 해커, AI 에이전트로 제로데이 찾아 대학 서버 장악</li>
-          <li>불가리아 정부 대규모 침해 — 5년간 미발견 스파이 활동</li>
           <li>ASP.NET Anti-CSRF 라이브러리 치명적 결함 악용, 미인증 원격 코드 실행 (속보)</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 23일 19:54 KST · 랜섬웨어 유출 현황은 11월 23일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 23일 20:09 KST · 랜섬웨어 유출 현황은 11월 23일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
@@ -258,11 +258,32 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 2086건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 2090건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/23 20:00</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://cyberscoop.com/wpide-csrf-vulnerability-cve-2026-124251/" target="_blank" rel="noopener">WPIDE 3.6.4 이하 — CSRF 논스 우회로 미인증 원격 코드 실행 가능 (CVE-2026-124251)</a></h3>
+            <span class="feed-orig">WPIDE ≤ 3.6.4 — CSRF Nonce Bypass Leading to Unauthenticated RCE (CVE-2026-124251)</span>
+            <p class="feed-sum">WordPress 파일 편집 플러그인 WPIDE 3.6.4 이하 버전에서 CSRF 논스 우회 취약점으로 미인증 원격 코드 실행이 가능한 것으로 알려졌다.</p>
+            <span class="feed-src">CyberScoop</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 20:00</span>
+            <h3><a href="https://cyberscoop.com/finding-software-vulnerability-with-ai-wordpress-patchstack/" target="_blank" rel="noopener">소프트웨어 취약점을 찾아본 적 없던 기자, AI 도움으로 6시간 만에 취약점 발견</a></h3>
+            <span class="feed-orig">I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.</span>
+            <p class="feed-sum">취약점 사냥 경험이 없던 기자가 AI의 도움을 받아 6시간 만에 소프트웨어 취약점을 찾아낸 경험을 다룬 기사다.</p>
+            <span class="feed-src">CyberScoop</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 20:00</span>
+            <h3><a href="https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/" target="_blank" rel="noopener">미 주정부들, Grok 딥페이크 문제로 SpaceX 제소</a></h3>
+            <span class="feed-orig">States Sue SpaceX Over Grok Deepfakes</span>
+            <p class="feed-sum">미국 주정부들이 Grok 딥페이크 문제를 이유로 SpaceX를 제소했다.</p>
+            <span class="feed-src">Wired security</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/23 19:49</span>
             <h3><a href="https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/" target="_blank" rel="noopener">오픈소스 AI 침투 테스트 프레임워크 Cairn, 실제 공격에서 계속 발견돼</a></h3>
@@ -305,6 +326,11 @@
             <span class="feed-orig">CVE-2026-121613 (CVSS 9.8) — Missing authentication and authorization on an exposed interface allows an unauthenticated remote attacker to send arbitrary commands to the affected component,</span>
             <p class="feed-sum">노출된 인터페이스의 인증·인가 누락으로 미인증 원격 공격자가 임의 명령을 보낼 수 있는 취약점으로, CVSS 9.8의 높은 심각도를 받았다.</p>
             <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/23 19:11</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9qbkdCZVgzUWlJSi1KWi1wQmJwRXlhbFVyRWxab292R0hyMk5VUjBKRTdtaXJrYXZVdzRqM2RzeENyUHczQ2tiWWY1NFFoWE5MSWlzT05ZdW1CNTlick1NNXI0Z00?oc=5" target="_blank" rel="noopener">롯데카드, 해킹 위험 공시 미흡…과징금 10억2000만원</a></h3>
+            <span class="feed-src">PRESS9</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/23 19:03</span>
@@ -11918,8 +11944,8 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>16</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>1477</b><span>국내 동향 — 11/16~23 보도</span></div>
-        <div class="stat"><b>609</b><span>해외 동향 — 11/16~23 보도</span></div>
+        <div class="stat"><b>1478</b><span>국내 동향 — 11/16~23 보도</span></div>
+        <div class="stat"><b>612</b><span>해외 동향 — 11/16~23 보도</span></div>
         <div class="stat"><b>124</b><span>CVE·취약점 — CVSS 9.0 이상 61건 포함</span></div>
         <div class="stat"><b>55</b><span>다크웹 유출 — 11/23 19:39 확인 기준 24시간 건수</span></div>
       </div>
@@ -13572,14 +13598,14 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 1477건 · 해외 609건 · 2026년 11월 16~23일 보도</p>
+          <p>국내 1478건 · 해외 612건 · 2026년 11월 16~23일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-            <p class="col-note">1477건 · 2026년 11월 16~23일 보도</p>
+            <p class="col-note">1478건 · 2026년 11월 16~23일 보도</p>
             <article class="news-item">
               <h3><a href="https://zdnet.co.kr/view/?no=20261123192147" target="_blank" rel="noopener">30년된 '보안 컨퍼런스'...CONCERT, 올해도 다음달 3일 개최</a></h3>
               <span class="news-meta">ZDNet Korea · 2026-11-23</span>
@@ -13591,6 +13617,10 @@
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqSkJZOE9ISTZuQWtncGF5WW95YlFJcV81UjdhZ0RqcU8xT1JSZXpGazRvVTFteEREeDVLcGRTSWh4ZWtKcDlPRkxaWWFvcFp6bG1ZNGZSRHZMbms?oc=5" target="_blank" rel="noopener">[포토뉴스] 개인정보 유출 관련 한전 대국민 사과문</a></h3>
               <span class="news-meta">강원일보 · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9qbkdCZVgzUWlJSi1KWi1wQmJwRXlhbFVyRWxab292R0hyMk5VUjBKRTdtaXJrYXZVdzRqM2RzeENyUHczQ2tiWWY1NFFoWE5MSWlzT05ZdW1CNTlick1NNXI0Z00?oc=5" target="_blank" rel="noopener">롯데카드, 해킹 위험 공시 미흡…과징금 10억2000만원</a></h3>
+              <span class="news-meta">PRESS9 · 2026-11-23</span>
             </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBsZlUwLWhXVDJyb2hLRm5uM3RyY0ZlcXA4TWY4ejFTR0YzOWREd3l2LS1iN3g5TG1nVkllMDNzTFlwT1IwZlU1MWFvQm1HUUVLVk1GV1lYd0RtNlhneDctU0lldmxhSU1YU012clB5TdIBc0FVX3lxTE1tQ2VRM3ZfUXBLS1hua1FiNFRaeDRZWGNZOUc3SU45RmdoVDNtWmxZM2daLWZ1X3NWYS1jbkFSVWlhNnBsN3B4UFAySlVCMG5wUFhLcmp0M3BZTWViNGg5LXAzWXVieGtwdmdNYi1nTjVLY2c?oc=5" target="_blank" rel="noopener">금융위, '해킹 위험 부실 공시' 롯데카드에 과징금 10억 부과</a></h3>
@@ -19503,7 +19533,25 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-            <p class="col-note">609건 · November 16–23, 2026</p>
+            <p class="col-note">612건 · November 16–23, 2026</p>
+            <article class="news-item">
+              <h3><span class="feed-tag hot">속보</span><a href="https://cyberscoop.com/wpide-csrf-vulnerability-cve-2026-124251/" target="_blank" rel="noopener">WPIDE 3.6.4 이하 — CSRF 논스 우회로 미인증 원격 코드 실행 가능 (CVE-2026-124251)</a></h3>
+              <span class="news-orig">WPIDE ≤ 3.6.4 — CSRF Nonce Bypass Leading to Unauthenticated RCE (CVE-2026-124251)</span>
+              <p class="news-sum">WordPress 파일 편집 플러그인 WPIDE 3.6.4 이하 버전에서 CSRF 논스 우회 취약점으로 미인증 원격 코드 실행이 가능한 것으로 알려졌다.</p>
+              <span class="news-meta">CyberScoop · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cyberscoop.com/finding-software-vulnerability-with-ai-wordpress-patchstack/" target="_blank" rel="noopener">소프트웨어 취약점을 찾아본 적 없던 기자, AI 도움으로 6시간 만에 취약점 발견</a></h3>
+              <span class="news-orig">I’ve never hunted for a software vulnerability before. AI helped me find one in six hours.</span>
+              <p class="news-sum">취약점 사냥 경험이 없던 기자가 AI의 도움을 받아 6시간 만에 소프트웨어 취약점을 찾아낸 경험을 다룬 기사다.</p>
+              <span class="news-meta">CyberScoop · 2026-11-23</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/" target="_blank" rel="noopener">미 주정부들, Grok 딥페이크 문제로 SpaceX 제소</a></h3>
+              <span class="news-orig">States Sue SpaceX Over Grok Deepfakes</span>
+              <p class="news-sum">미국 주정부들이 Grok 딥페이크 문제를 이유로 SpaceX를 제소했다.</p>
+              <span class="news-meta">Wired security · 2026-11-23</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.helpnetsecurity.com/2026/11/23/cairn-ai-agents-autonomous-attacks/" target="_blank" rel="noopener">오픈소스 AI 침투 테스트 프레임워크 Cairn, 실제 공격에서 계속 발견돼</a></h3>
               <span class="news-orig">Open-source AI pentesting framework Cairn keeps turning up in real-world attacks</span>
