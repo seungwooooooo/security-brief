@@ -230,26 +230,26 @@
 
       <!-- ===================== Masthead ===================== -->
       <header class="masthead">
-        <p class="mast-date">2026년 11월 24일 화요일 · KST</p>
+        <p class="mast-date">2026년 11월 25일 수요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
-          <li>VMware vCenter 치명적 9.8 인증 우회 — 제로데이 악용 이후 또 발견</li>
-          <li>Check Point 보안 관리 서버 해킹 — AI 활용 캠페인으로 침해 확인</li>
-          <li>35억 건 계정정보 유출 — 무관한 DB 2건서 사용자명·비밀번호·문서 노출</li>
-          <li>한전 개인정보 유출 — 152만 명, 주민등록번호·카드번호 등 민감정보 포함</li>
-          <li>바이낸스 해킹자금 11억달러 몰수 소송 — 미 법무부, 北 해킹 자금 환수 추진</li>
+          <li>Check Point 보안 관리 서버 해킹 — AI 활용 캠페인으로 22개 조직 침해 확인</li>
+          <li>Adobe Campaign Classic·Experience Manager 코드 주입 등 CVSS 9.9 취약점 다수 공개</li>
+          <li>Panabit·Volans 방화벽 CVSS 10.0 취약점 공개</li>
           <li>하나저축은행 해킹 — 고객 552명 개인정보 유출, 저축은행 5곳째</li>
-          <li>가상자산 금융회사급 규제 추진 — 해킹 피해 무과실 배상</li>
+          <li>국립순천대학교 해킹 — 구 향림통시스템 개인정보 유출 정황</li>
+          <li>일본 게이오그룹 랜섬웨어 — 개인정보 1100만명분 유출 우려</li>
+          <li>CIA·국가정보국 해킹 피해 — 美 정보당국 보안 우려 고조</li>
           <li>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 24일 23:39 KST · 랜섬웨어 유출 현황은 11월 24일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 25일 06:09 KST · 랜섬웨어 유출 현황은 11월 24일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>24건</b> · CVE·취약점 <b>160건</b> (CVSS 9.0 이상 75건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>24건</b> · CVE·취약점 <b>194건</b> (CVSS 9.0 이상 99건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -259,11 +259,694 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 2663건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 2768건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:53</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://securityboulevard.com/2026/11/microsoft-fixes-azure-flaws-exploited-by-bad-actors-to-steal-secrets/" target="_blank" rel="noopener">Microsoft, 악성 행위자가 비밀 탈취에 악용한 Azure 결함 수정</a></h3>
+            <span class="feed-orig">Microsoft Fixes Azure Flaws Exploited by Bad Actors to Steal Secrets</span>
+            <p class="feed-sum">Microsoft가 악성 행위자가 비밀 탈취에 악용한 Azure 결함을 수정했다.</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-112732" target="_blank" rel="noopener">Microsoft Office Visio 더블 프리 취약점(CVSS 9.8)</a></h3>
+            <span class="feed-orig">CVE-2026-112732 (CVSS 9.8) — Double free in Microsoft Office Visio allows an unauthorized attacker to execute code over a network.</span>
+            <p class="feed-sum">권한 없는 공격자가 네트워크를 통해 코드를 실행할 수 있는 더블 프리 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136411" target="_blank" rel="noopener">BusyBox tftpd 절대 경로 순회 취약점(CVSS 9.8)</a></h3>
+            <span class="feed-orig">CVE-2026-136411 (CVSS 9.8) — BusyBox through 1.38.0 contains an absolute path traversal vulnerability in tftpd that allows unauthenticated remote attackers to access files outside any inten</span>
+            <p class="feed-sum">인증 없는 원격 공격자가 의도된 범위를 벗어난 파일에 접근할 수 있는 경로 순회 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136410" target="_blank" rel="noopener">Thymeleaf 표현식 모드 우회 취약점(CVSS 9.0)</a></h3>
+            <span class="feed-orig">CVE-2026-136410 (CVSS 9.0) — Thymeleaf before 3.1.6.RELEASE contains a restricted expression mode bypass vulnerability that allows unauthenticated remote attackers to perform forbidden acti</span>
+            <p class="feed-sum">인증 없는 원격 공격자가 금지된 행위를 수행할 수 있는 제한 표현식 모드 우회 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136404" target="_blank" rel="noopener">ntop n2n 슈퍼노드 스택 버퍼 오버플로 취약점(CVSS 9.8)</a></h3>
+            <span class="feed-orig">CVE-2026-136404 (CVSS 9.8) — ntop n2n supernode 3.0 through 3.1.1 contains a stack-based buffer overflow vulnerability that allows remote unauthenticated attackers to leak memory and execut</span>
+            <p class="feed-sum">인증 없는 원격 공격자가 메모리를 유출하고 코드를 실행할 수 있는 스택 버퍼 오버플로 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135797" target="_blank" rel="noopener">Volans NGFW 차세대 방화벽 취약점(CVSS 10.0)</a></h3>
+            <span class="feed-orig">CVE-2026-135797 (CVSS 10.0) — A vulnerability was identified in Volans NGFW Next-Generation Firewall r5.1. Impacted is the function exec of the file sslvpn/sslvpn_client.php of the component</span>
+            <p class="feed-sum">sslvpn_client.php의 exec 함수에서 발견된 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135796" target="_blank" rel="noopener">Volans NGFW 차세대 방화벽 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-135796 (CVSS 9.9) — A vulnerability was determined in Volans NGFW Next-Generation Firewall r5.1. This issue affects the function exec/system of the file modules/assets/port_serve_s</span>
+            <p class="feed-sum">port_serve 관련 파일의 exec/system 함수에서 발견된 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135794" target="_blank" rel="noopener">Panabit 스마트 애플리케이션 게이트웨이 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-135794 (CVSS 9.9) — A vulnerability was determined in Panabit Smart Application Gateway TANGr7p10. The affected element is the function add_crontab of the file admin/cgi-bin/sac/aj</span>
+            <p class="feed-sum">add_crontab 함수에서 발견된 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132877" target="_blank" rel="noopener">Adobe Experience Manager 코드 주입 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-132877 (CVSS 9.9) — Adobe Experience Manager is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution</span>
+            <p class="feed-sum">코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:33</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNVW13dDQ3WFhKRTFnbTl6QzdnUXFJX1lJTHhUclBBdmdpdHlJSU5IelFVZmxqd2g5emo4VFVZelZTcVBVdk5DMk1aMlJfelMyY2x6SlNidWYyejJuXzV6QVc5ZG1ucGkyU2UwYS1zby1zalVnWXFFUzJRZzN4UnZTdHN2bUNsVGV4TjFhSVluYklMUQ?oc=5" target="_blank" rel="noopener">22개 조직의 Check Point 서버를 침해한 사이버 공격 캠페인</a></h3>
+            <span class="feed-src">GeekNews</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:19</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135792" target="_blank" rel="noopener">Panabit 스마트 애플리케이션 게이트웨이 취약점(CVSS 10.0)</a></h3>
+            <span class="feed-orig">CVE-2026-135792 (CVSS 10.0) — A vulnerability has been found in Panabit Smart Application Gateway TANGr7p10. This issue affects the function send_email_authcode of the file user.cgi of the c</span>
+            <p class="feed-sum">user.cgi의 send_email_authcode 함수에서 발견된 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:19</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135791" target="_blank" rel="noopener">Panabit 스마트 애플리케이션 게이트웨이 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-135791 (CVSS 9.9) — A flaw has been found in Panabit Smart Application Gateway TANGr7p10. This vulnerability affects the function edit_data_pie of the file /cgi-bin/flowcontrol/aja</span>
+            <p class="feed-sum">flowcontrol ajax 파일의 edit_data_pie 함수에서 발견된 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125718" target="_blank" rel="noopener">Adobe Campaign Classic SQL 인젝션 취약점(CVSS 9.1)</a></h3>
+            <span class="feed-orig">CVE-2026-125718 (CVSS 9.1) — Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could res</span>
+            <p class="feed-sum">SQL 명령에 쓰이는 특수 문자 중화 부적절로 인한 SQL 인젝션 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125717" target="_blank" rel="noopener">Adobe Campaign Classic SQL 인젝션 취약점(CVSS 9.6)</a></h3>
+            <span class="feed-orig">CVE-2026-125717 (CVSS 9.6) — Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could res</span>
+            <p class="feed-sum">SQL 명령에 쓰이는 특수 문자 중화 부적절로 인한 SQL 인젝션 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125716" target="_blank" rel="noopener">Adobe Campaign Classic 반사형 XSS 취약점(CVSS 9.3)</a></h3>
+            <span class="feed-orig">CVE-2026-125716 (CVSS 9.3) — Adobe Campaign Classic (ACC) is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicio</span>
+            <p class="feed-sum">악성 스크립트 주입이 가능한 반사형 XSS 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123987" target="_blank" rel="noopener">Adobe Campaign Classic 코드 주입 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-123987 (CVSS 9.9) — Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execu</span>
+            <p class="feed-sum">코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123986" target="_blank" rel="noopener">Adobe Campaign Classic 코드 주입 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-123986 (CVSS 9.9) — Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execu</span>
+            <p class="feed-sum">코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123723" target="_blank" rel="noopener">Adobe Campaign Classic 코드 주입 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-123723 (CVSS 9.9) — Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execu</span>
+            <p class="feed-sum">코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123342" target="_blank" rel="noopener">Adobe Campaign Classic 코드 주입 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-123342 (CVSS 9.9) — Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execu</span>
+            <p class="feed-sum">코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82316" target="_blank" rel="noopener">SolarWinds Serv-U TOCTOU 취약점(CVSS 9.1)</a></h3>
+            <span class="feed-orig">CVE-2026-82316 (CVSS 9.1) — SolarWinds Serv-U is affected by a Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be able to a</span>
+            <p class="feed-sum">도메인 관리자 이상 권한 사용자가 악용할 수 있는 TOCTOU 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82315" target="_blank" rel="noopener">SolarWinds Serv-U TOCTOU 취약점(CVSS 9.1)</a></h3>
+            <span class="feed-orig">CVE-2026-82315 (CVSS 9.1) — SolarWinds Serv-U is affected by another Time-of-Check to Time-of-Use (TOCTOU) vulnerability. A user with domain administrator or higher privileges may be abl</span>
+            <p class="feed-sum">도메인 관리자 이상 권한 사용자가 악용할 수 있는 TOCTOU 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136184" target="_blank" rel="noopener">compose-farm 크로스사이트 WebSocket 하이재킹·CSRF 취약점(CVSS 9.6)</a></h3>
+            <span class="feed-orig">CVE-2026-136184 (CVSS 9.6) — compose-farm 0.19.0 before 1.22.0 contains a cross-site WebSocket hijacking and cross-site request forgery vulnerability because its unauthenticated web UI perf</span>
+            <p class="feed-sum">인증 없는 웹 UI를 통한 크로스사이트 WebSocket 하이재킹 및 CSRF 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135790" target="_blank" rel="noopener">Panabit 스마트 애플리케이션 게이트웨이 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-135790 (CVSS 9.9) — A vulnerability was detected in Panabit Smart Application Gateway TANGr7p10. This affects an unknown part of the file /cgi-bin/dashboard/ajax_chart_dump. The ma</span>
+            <p class="feed-sum">대시보드 ajax_chart_dump 파일에서 발견된 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135789" target="_blank" rel="noopener">D-Link R95 101B06 취약점(CVSS 9.1)</a></h3>
+            <span class="feed-orig">CVE-2026-135789 (CVSS 9.1) — A security vulnerability has been detected in D-Link R95 101B06. Affected by this issue is the function GetBluetoothAdapterSettings/GetBluetoothBloodPressure/Ge</span>
+            <p class="feed-sum">GetBluetoothAdapterSettings 등 기능에서 발견된 보안 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135788" target="_blank" rel="noopener">D-Link DIR-X1860 4.5.2 취약점(CVSS 9.9)</a></h3>
+            <span class="feed-orig">CVE-2026-135788 (CVSS 9.9) — A weakness has been identified in D-Link DIR-X1860 4.5.2. Affected by this vulnerability is an unknown functionality of the file /usr/sbin/anweb. Executing a ma</span>
+            <p class="feed-sum">/usr/sbin/anweb의 알 수 없는 기능에서 발견된 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><span class="feed-tag hot">BREAKING</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123167" target="_blank" rel="noopener">SolarWinds Serv-U 권한 상승 취약점(CVSS 9.1)</a></h3>
+            <span class="feed-orig">CVE-2026-123167 (CVSS 9.1) — SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise woul</span>
+            <p class="feed-sum">도메인 관리자가 접근해서는 안 될 파일에 접근할 수 있는 권한 상승 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:32</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/" target="_blank" rel="noopener">VMware, 치명적 ESX·vCenter 취약점 패치 업데이트</a></h3>
+            <span class="feed-orig">VMware Updates Patch Critical ESX, vCenter Vulnerabilities</span>
+            <p class="feed-sum">VMware가 ESX와 vCenter의 치명적 취약점 패치를 업데이트했다.</p>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:32</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign" target="_blank" rel="noopener">Check Point 보안 관리 서버 대상 활발한 침입 캠페인</a></h3>
+            <span class="feed-orig">Active intrusion campaign against Check Point security management servers</span>
+            <p class="feed-sum">Check Point 보안 관리 서버를 노린 활발한 침입 캠페인이 진행 중이다.</p>
+            <span class="feed-src">Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:15</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/" target="_blank" rel="noopener">해커들, 22개 조직의 Check Point 서버 침해</a></h3>
+            <span class="feed-orig">Hackers compromise Check Point Servers in 22 organizations</span>
+            <p class="feed-sum">해커들이 22개 조직의 Check Point 서버를 침해했다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:50</span>
+            <h3><span class="feed-tag hot">속보</span><a href="https://www.cybersecuritydive.com/news/ai-enabled-campaign-targets-check-point-security-management-servers/875622/" target="_blank" rel="noopener">AI 활용 캠페인, Check Point 보안 관리 서버 노려</a></h3>
+            <span class="feed-orig">AI-enabled campaign targets Check Point Security Management servers</span>
+            <p class="feed-sum">AI를 활용한 캠페인이 Check Point 보안 관리 서버를 노리고 있다.</p>
+            <span class="feed-src">Cybersecurity Dive</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 06:09</span>
+            <h3><a href="https://techcrunch.com/2026/11/24/dozens-of-oil-and-shipping-tankers-hacked-in-recent-weeks-per-report/" target="_blank" rel="noopener">최근 수주간 수십 척의 석유·해운 유조선 해킹됐다는 보고</a></h3>
+            <span class="feed-orig">Dozens of oil and shipping tankers hacked in recent weeks, per report</span>
+            <p class="feed-sum">최근 수주간 수십 척의 유조선이 해킹됐다는 보고가 나왔다.</p>
+            <span class="feed-src">TechCrunch security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 06:01</span>
+            <h3><a href="https://github.com/advisories/GHSA-c4hm-4h84-2cf3" target="_blank" rel="noopener">CVE-2026-59726 — ruflo MCP 브리지 인증 없는 원격 코드 실행</a></h3>
+            <span class="feed-orig">CVE-2026-59726 — ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments</span>
+            <p class="feed-sum">기본 Docker Compose 배포에서 인증 없는 원격 코드 실행이 가능한 취약점이다.</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 06:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1PckhQaUhsX2ZMSDNzQ0lReE9sczNfMXZjMGlGU0Y4SVZCZ2t3bUwzQXptSktleEJzRTRJd3hPaVQ3NVhjWVZSZUN0alJkT3V3X0prNFUxU3dYOEs3QmNQUnl3?oc=5" target="_blank" rel="noopener">[사설] 경기도교육청 개인정보 관리 ‘구멍'</a></h3>
+            <span class="feed-src">경기신문</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:53</span>
+            <h3><a href="https://github.com/advisories/GHSA-g9x9-q7qj-6mv5" target="_blank" rel="noopener">CVE-2026-63305 — AVideo API FFmpeg 프로세스 OS 명령 주입</a></h3>
+            <span class="feed-orig">CVE-2026-63305 — AVideo API FFmpeg process permits OS command injection via notifyCode/callback</span>
+            <p class="feed-sum">notifyCode/callback을 통한 OS 명령 주입이 가능한 취약점이다.</p>
+            <span class="feed-src">GitHub Advisories</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:52</span>
+            <h3><a href="https://therecord.media/mycolorado-app-down-data-breach" target="_blank" rel="noopener">콜로라도, 사이버공격으로 myColorado 앱 중단…15만 명 데이터 도난 경고</a></h3>
+            <span class="feed-orig">Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen</span>
+            <p class="feed-sum">콜로라도주 사이버공격으로 myColorado 앱이 중단되고 15만 명의 데이터 도난이 경고됐다.</p>
+            <span class="feed-src">The Record</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:30</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WNXhqSkY4Z1k0M05QSTR5dUZfMEh6elhhWkpBTUNCcjFndEZjVTNRbTNDMUpmdXZleWRIN1NhdGF4Z040TWRKeGlpMEFwcVNPdFJiMFNYS1J3SkJoNVpzLVRXSDlVWEU?oc=5" target="_blank" rel="noopener">中 해킹 조직, 기업 내부망 뚫고 '서버 관리자 권한' 탈취 정황</a></h3>
+            <span class="feed-src">뉴스1</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:21</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/" target="_blank" rel="noopener">신종 갈취 조직 '인셉션', 대규모 보이스피싱 캠페인 개시</a></h3>
+            <span class="feed-orig">New Inception extortion gang launches large-scale vishing campaign</span>
+            <p class="feed-sum">신생 갈취 조직이 대규모 보이스피싱 캠페인을 벌이고 있다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:15</span>
+            <h3><a href="https://www.theregister.com/security/2026/11/24/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/5311978" target="_blank" rel="noopener">'우리는 ShinyHunters가 아니다' — ShinyHunters처럼 보이고 행동하는 범죄 해킹 조직</a></h3>
+            <span class="feed-orig">'We are not ShinyHunters,' says criminal hacking crew that looks and acts just like ShinyHunters</span>
+            <p class="feed-sum">ShinyHunters와 흡사한 범죄 조직이 자신들은 ShinyHunters가 아니라고 주장한다.</p>
+            <span class="feed-src">The Register security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:12</span>
+            <h3><a href="https://www.yna.co.kr/view/AKR20261125007400072" target="_blank" rel="noopener">"CIA·국가정보국 해킹 피해"…美정보당국 보안우려 고조</a></h3>
+            <span class="feed-src">Yonhap news</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:12</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPOEx4NnpYdjd1U1FYRDk0VzhST1U0QWVVVjRFYnF2VWRRb1JjQ2dpNjg2cGpjWWxXRnl4ZkEzaGtQbnNnUlZsMW5JQnpfVVNCRmRLUTg1bzNicnBlTDNZSVE0MG54NHBON0xUeFdEZEV5Z3NBMHdJN1hFREVKdDU4Yw?oc=5" target="_blank" rel="noopener">＂CIA·국가정보국 해킹 피해＂…美정보당국 보안우려 고조</a></h3>
+            <span class="feed-src">한국경제TV</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 05:01</span>
+            <h3><a href="https://aws.amazon.com/blogs/security/delegate-user-access-to-ai-agents-with-amazon-cognito-token-exchange/" target="_blank" rel="noopener">Amazon Cognito 토큰 교환으로 AI 에이전트에 사용자 접근 위임</a></h3>
+            <span class="feed-orig">Delegate user access to AI agents with Amazon Cognito token exchange</span>
+            <p class="feed-sum">Cognito 토큰 교환으로 AI 에이전트에 사용자 접근을 위임하는 방법이다.</p>
+            <span class="feed-src">AWS Security Blog</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:30</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE03RE9KYmo4bUotT2tFMlNqbWRGc1g0dFpwZXptVjJfcFlqMUhVdnJldEV2SXF1VkEza01SUE8xeU5vQXBxaXQ5Z3pOVlUwNDcyb080SlBBQjJUSkdabzk5SFJUa0p2VlVzQmdXRmxVYUNCakHSAWZBVV95cUxQa3MwYms3MVlKcUllUEdjU1hydUk4WEtTYklUZVVFeG56djdKWjZaWF9DSi1vTTd3VTBaZVo3RS0zMlZmOGQxMnBEcUx2V0dyNnBlY2NMdTdmTUZ3QklsZURwcS1qVEE?oc=5" target="_blank" rel="noopener">美 은행들, AI비서 해킹 대비 ‘킬 스위치’ 검토</a></h3>
+            <span class="feed-src">동아일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:30</span>
+            <h3><a href="https://therecord.media/california-privacy-agency-kemp" target="_blank" rel="noopener">캘리포니아 개인정보 보호국장 Kemp, 2년 임기 마치고 퇴임</a></h3>
+            <span class="feed-orig">California privacy agency director Kemp to leave after two-year tenure</span>
+            <p class="feed-sum">캘리포니아 개인정보 보호기관장이 2년 임기를 마치고 떠난다.</p>
+            <span class="feed-src">The Record</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 04:23</span>
+            <h3><a href="https://grafana.com/grafana/download" target="_blank" rel="noopener">Grafana 12.4.16·13.0.14·13.1.11·13.2.7·13.3.2 (다수 CVE)</a></h3>
+            <span class="feed-orig">Grafana 12.4.16, 13.0.14, 13.1.11, 13.2.7 and 13.3.2 (multiple CVEs)</span>
+            <p class="feed-sum">Grafana 여러 버전이 다수 CVE 패치를 담은 업데이트를 냈다.</p>
+            <span class="feed-src">Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:59</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/" target="_blank" rel="noopener">Turnitin, 고객 대면 시스템 영향 사이버공격 공개</a></h3>
+            <span class="feed-orig">Turnitin discloses cyberattack affecting customer-facing systems</span>
+            <p class="feed-sum">Turnitin이 고객 대면 시스템에 영향을 준 사이버공격을 공개했다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:32</span>
+            <h3><a href="https://aws.amazon.com/blogs/security/aws-completed-its-second-iso-iec-420012023-surveillance-audit/" target="_blank" rel="noopener">AWS, 두 번째 ISO/IEC 42001:2023 사후 심사 완료</a></h3>
+            <span class="feed-orig">AWS completed its second ISO/IEC 42001:2023 surveillance audit</span>
+            <p class="feed-sum">AWS가 ISO/IEC 42001 두 번째 사후 심사를 마쳤다.</p>
+            <span class="feed-src">AWS Security Blog</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:28</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE13cEx1aVdINlUwc2owak8yUnR1cFVIT3RvakUwblIydkcyV3BTM2dOUlhfZFBodXgybXVvdWtheThqZ3lZQWxjUjlYUUdxaS1Hc0F6NUFqMUZYU2JSSGRCMDAyNFFwQQ?oc=5" target="_blank" rel="noopener">[종목 브리핑] 아이티센피엔에스, AI 취약점 진단부터 운영 대응까지</a></h3>
+            <span class="feed-src">비건뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:28</span>
+            <h3><a href="https://securityboulevard.com/2026/11/u-s-investigates-irans-possible-role-in-cyberattacks-on-energy-tankers/" target="_blank" rel="noopener">미국, 에너지 유조선 사이버공격에 이란 개입 가능성 조사</a></h3>
+            <span class="feed-orig">U.S. Investigates Iran’s Possible Role in Cyberattacks on Energy Tankers</span>
+            <p class="feed-sum">미국이 에너지 유조선 사이버공격에 이란이 개입했는지 조사하고 있다.</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:05</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209707" target="_blank" rel="noopener">하나저축은행 해킹…고객 552명 주민등록번호 등 개인신용정보 유출 확인</a></h3>
+            <span class="feed-src">Dailysecu</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 03:02</span>
+            <h3><a href="https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/" target="_blank" rel="noopener">영국, AI 주도 사이버공격이 수년간의 취약한 보안을 드러낸다고 경고</a></h3>
+            <span class="feed-orig">UK warns AI-driven cyberattacks are exposing years of weak security</span>
+            <p class="feed-sum">영국이 AI 주도 사이버공격이 오랜 보안 취약점을 드러내고 있다고 경고했다.</p>
+            <span class="feed-src">TechCrunch security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:56</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209706" target="_blank" rel="noopener">국립순천대학교 해킹…구 향림통시스템 개인정보 유출 정황 확인</a></h3>
+            <span class="feed-src">Dailysecu</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:49</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/" target="_blank" rel="noopener">Radware, 고객 클라우드 접근 키 노출 침해 공개</a></h3>
+            <span class="feed-orig">Radware discloses breach exposing customer cloud access keys</span>
+            <p class="feed-sum">Radware가 고객 클라우드 접근 키가 노출된 침해를 공개했다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:49</span>
+            <h3><a href="https://therecord.media/idscan-data-breach-warning-congressional-letter" target="_blank" rel="noopener">의원들, 9월 해킹 이후 신원확인 기업들에 보안 강화 경고</a></h3>
+            <span class="feed-orig">Lawmakers warn ID verification companies to bolster security after September hack</span>
+            <p class="feed-sum">의원들이 9월 해킹 이후 신원확인 기업들에 보안 강화를 촉구했다.</p>
+            <span class="feed-src">The Record</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:48</span>
+            <h3><a href="https://cyberscoop.com/kash-patel-fbi-ncic-database-hack/" target="_blank" rel="noopener">Patel, FBI 범죄정보 DB 해킹에 진행 중 조사 이유로 언급 거부</a></h3>
+            <span class="feed-orig">Patel mum on FBI crime info database hack, citing ongoing investigation</span>
+            <p class="feed-sum">FBI 국장이 범죄정보 데이터베이스 해킹에 대해 진행 중인 조사라며 언급을 거부했다.</p>
+            <span class="feed-src">CyberScoop</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:48</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9PR0hBeEVVNEgzTWxqSTB3NTYxUGRub2RpYXpBU0ZpM0VTLXBMbnZrTUQwc0lPNlNILTBHWWE5Ym9DcTZpZEtqZmlQYkdiTHYyaFNqcnNfTzJDU0dNckRMdkR2aVBjdEs2?oc=5" target="_blank" rel="noopener">'해킹 위협 고도화' 반도체 첨단기술 기업 보안전담 인력 0명... 공급망 뚫리면 다 털린다</a></h3>
+            <span class="feed-src">공정뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:39</span>
+            <h3><a href="https://securityboulevard.com/2026/11/national-security-concerns-escalate-as-nvidia-reinstates-ceo-jensen-huang/" target="_blank" rel="noopener">국가안보 우려 고조 속 NVIDIA, Jensen Huang CEO 복직</a></h3>
+            <span class="feed-orig">National Security Concerns Escalate as NVIDIA Reinstates CEO Jensen Huang</span>
+            <p class="feed-sum">국가안보 우려가 커지는 가운데 NVIDIA가 Jensen Huang CEO를 복직시켰다.</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:38</span>
+            <h3><a href="https://aws.amazon.com/blogs/security/aws-achieves-spains-national-limited-distribution-difusion-limitada-and-nato-restricted-accreditation-in-the-aws-europe-spain-region/" target="_blank" rel="noopener">AWS, 스페인 국가 제한배포·NATO 제한 등급 인증 획득</a></h3>
+            <span class="feed-orig">AWS achieves Spain’s national Limited Distribution (Difusión Limitada) and NATO Restricted accreditation in the AWS Europe (Spain) Region</span>
+            <p class="feed-sum">AWS가 스페인 국가 제한배포와 NATO 제한 등급 인증을 받았다.</p>
+            <span class="feed-src">AWS Security Blog</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:34</span>
+            <h3><a href="https://databreaches.net/2026/11/24/gingko-bioworks-holdings-issued-a-statement-on-october-8-about-a-data-breach-getting-an-update-from-them-has-been-difficult/" target="_blank" rel="noopener">Gingko Bioworks, 10월 8일 데이터 유출 성명 이후 업데이트 얻기 어려워</a></h3>
+            <span class="feed-orig">Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.</span>
+            <p class="feed-sum">Gingko Bioworks의 10월 8일 유출 성명 이후 후속 업데이트가 나오지 않고 있다.</p>
+            <span class="feed-src">DataBreaches.Net</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:30</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kNDJiZy1uTTZzaG0xQUtkbFhvY1I2X2EwNlNrYVc2MHBsR0VMeGFWNjVOZjBHQjBkNVk3eW5pSGlXZ0M0R0xkTmN1WTdHYmZGNkHSAVNBVV95cUxQdkQzN09qYkZpUGxfaGZpLWtCZlQ2VHBHblJSVU9TbUpmY2NlSi1kbHpuY2lGQjJac1NyUWxobFkxbG5EVFlGSXBBQmpYeVFUTVJjMA?oc=5" target="_blank" rel="noopener">첫날 5조 원 판 ‘GTA 6’, 비공식 PC판 뚫렸다…해킹 파일을 AI로 변조</a></h3>
+            <span class="feed-src">서울경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:27</span>
+            <h3><a href="https://cyberscoop.com/uk-ncsc-ai-assisted-cyberattacks/" target="_blank" rel="noopener">영국 사이버 기관·위협 기업들, AI 활용 해킹 증가 추적</a></h3>
+            <span class="feed-orig">UK cyber agency, threat companies tracking rise in AI-assisted hacks</span>
+            <p class="feed-sum">영국 사이버 기관과 위협 기업들이 AI 활용 해킹 증가를 추적하고 있다.</p>
+            <span class="feed-src">CyberScoop</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:18</span>
+            <h3><a href="https://www.cybersecuritydive.com/news/ai-vulnerability-openai-cisco-shirudo-linux/875644/" target="_blank" rel="noopener">OpenAI·Cisco, AI 에이전트가 취약점 악용을 안전하게 차단하는 도구 공개</a></h3>
+            <span class="feed-orig">OpenAI, Cisco debut tool that lets AI agents safely block vulnerability exploitation</span>
+            <p class="feed-sum">OpenAI와 Cisco가 AI 에이전트가 취약점 악용을 차단하는 도구를 공개했다.</p>
+            <span class="feed-src">Cybersecurity Dive</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:17</span>
+            <h3><a href="https://www.wordfence.com/blog/2026/11/machine-generated-fake-plugin-turns-wordpress-sites-into-javascript-delivery-points/" target="_blank" rel="noopener">기계 생성 가짜 플러그인, WordPress 사이트를 JavaScript 배포 지점으로 전환</a></h3>
+            <span class="feed-orig">Machine-Generated Fake Plugin Turns WordPress Sites Into JavaScript Delivery Points</span>
+            <p class="feed-sum">기계 생성 가짜 플러그인이 WordPress 사이트를 JavaScript 배포 지점으로 바꾼다.</p>
+            <span class="feed-src">Wordfence</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:17</span>
+            <h3><a href="https://securityboulevard.com/2026/11/enabling-holistic-cyber-resilience-in-the-cloud/" target="_blank" rel="noopener">클라우드에서의 총체적 사이버 회복탄력성 구현</a></h3>
+            <span class="feed-orig">Enabling Holistic Cyber Resilience in the Cloud</span>
+            <p class="feed-sum">클라우드 환경의 총체적 사이버 회복탄력성 구현 방법을 다뤘다.</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:08</span>
+            <h3><a href="https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure" target="_blank" rel="noopener">봇, 노출된 AWS 키를 8초 만에 테스트</a></h3>
+            <span class="feed-orig">A bot tested an AWS key within 8 seconds of exposure</span>
+            <p class="feed-sum">노출된 AWS 키가 8초 만에 봇에 의해 테스트됐다.</p>
+            <span class="feed-src">Malwarebytes</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:07</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209705" target="_blank" rel="noopener">[전문가 칼럼-11] API는 달라졌는데, 취약점은 왜 낯익을까 ①</a></h3>
+            <span class="feed-src">Dailysecu</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 02:00</span>
+            <h3><a href="https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922" target="_blank" rel="noopener">AI 코딩 에이전트·브라우저·Mac 도구, 6분 만에 금융회사 접근 키 발견</a></h3>
+            <span class="feed-orig">An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes</span>
+            <p class="feed-sum">AI 코딩 에이전트 등이 6분 만에 금융회사 접근 키를 찾아냈다.</p>
+            <span class="feed-src">The Register security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:54</span>
+            <h3><a href="https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html" target="_blank" rel="noopener">이란 연계 Volant Manticore, IPFS 기반 KuboShell 백도어로 스파이 활동</a></h3>
+            <span class="feed-orig">Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns</span>
+            <p class="feed-sum">이란 연계 조직이 IPFS 기반 백도어를 이용한 스파이 캠페인을 벌이고 있다.</p>
+            <span class="feed-src">The Hacker News</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:50</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0S1M5LUNMVVpiRW1wb0Zra2Z1UVRlQ1BVekJUY01zU3hzampaTDZXSnZnNXk4TVRSajMzX0ZfY2ZIMW5mVldTSXBsTnROZm00Q3lmdHBjY3JnQV85Nk10SjNfQ1dEdUxH?oc=5" target="_blank" rel="noopener">디지털자산업자, 해킹·전산장애 시 무과실 배상…매매·중개·보관업 인가제 도입</a></h3>
+            <span class="feed-src">CBC뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:39</span>
+            <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209704" target="_blank" rel="noopener">[이슈] 한전 해킹 뒤 ‘취약점 방치’ 제보 확인해보니…신고 건은 패치, 정부 취약점 신고제에 ‘패치 데드라인’ 도입 시급</a></h3>
+            <span class="feed-src">Dailysecu</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:30</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/" target="_blank" rel="noopener">ShinyHunters, FBI 체포 이후 복귀 주장…구 PGP 키로 증명</a></h3>
+            <span class="feed-orig">ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof</span>
+            <p class="feed-sum">ShinyHunters가 FBI 체포 이후 복귀를 주장하며 과거 PGP 키를 증거로 제시했다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:30</span>
+            <h3><a href="https://www.infosecurity-magazine.com/news/inception-extortion-sso-vishing/" target="_blank" rel="noopener">신종 갈취 브랜드 '인셉션', SSO 비싱 캠페인과 연계</a></h3>
+            <span class="feed-orig">New Inception Extortion Brand Tied to SSO Vishing Campaign</span>
+            <p class="feed-sum">신생 갈취 브랜드가 SSO 보이스피싱 캠페인과 연결됐다.</p>
+            <span class="feed-src">Infosecurity Magazine</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:30</span>
+            <h3><a href="https://securityboulevard.com/2026/11/ai-agents-a-practical-guide-and-the-chapters-to-read-first/" target="_blank" rel="noopener">AI 에이전트: 실용 가이드와 먼저 읽을 장</a></h3>
+            <span class="feed-orig">AI Agents: A Practical Guide, and the Chapters to Read First</span>
+            <p class="feed-sum">AI 에이전트 실용 가이드와 먼저 읽을 장을 소개했다.</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:22</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/" target="_blank" rel="noopener">유럽연합 집행위원회, EU 아카데미 침해로 데이터 도난 확인</a></h3>
+            <span class="feed-orig">European Commission confirms data theft in EU Academy breach</span>
+            <p class="feed-sum">EU 집행위가 EU 아카데미 침해에서 데이터가 도난당한 것을 확인했다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:17</span>
+            <h3><a href="https://arcticwolf.com/resources/technical-videos/how-swarmview-provides-transparency-around-ai-driven-investigations-and-trustworthy-results/" target="_blank" rel="noopener">SwarmView가 AI 주도 조사 투명성과 신뢰할 결과를 제공하는 방법</a></h3>
+            <span class="feed-orig">How SwarmView Provides Transparency Around AI-driven Investigations and Trustworthy Results</span>
+            <p class="feed-sum">SwarmView가 AI 주도 조사의 투명성과 신뢰할 결과를 제공하는 방법을 소개했다.</p>
+            <span class="feed-src">Arctic Wolf</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 01:00</span>
+            <h3><a href="https://therecord.media/carnegie-endowment-data-breach" target="_blank" rel="noopener">카네기국제평화재단, 제3자 침해로 기부 정보 유출</a></h3>
+            <span class="feed-orig">Carnegie Endowment for International Peace says third-party breach leaked donation info</span>
+            <p class="feed-sum">카네기 재단이 제3자 침해로 기부자 정보가 유출됐다고 밝혔다.</p>
+            <span class="feed-src">The Record</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:53</span>
+            <h3><a href="https://securityboulevard.com/2026/11/quantifying-ot-and-ics-cyber-risk-kovrr/" target="_blank" rel="noopener">OT·ICS 사이버 리스크 정량화 | Kovrr</a></h3>
+            <span class="feed-orig">Quantifying OT and ICS Cyber Risk | Kovrr</span>
+            <p class="feed-sum">OT·ICS 사이버 리스크를 정량화하는 방법을 다뤘다.</p>
+            <span class="feed-src">Security Boulevard</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:28</span>
+            <h3><a href="https://zdnet.co.kr/view/?no=20261125002602" target="_blank" rel="noopener">국정원, 국가배후 해킹조직 정보 수집 확대 추진</a></h3>
+            <span class="feed-src">ZDNet Korea</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:15</span>
+            <h3><a href="https://zdnet.co.kr/view/?no=20261125000013" target="_blank" rel="noopener">일본 게이오그룹, 랜섬웨어에 당했다…개인정보 1100만명분 유출 우려</a></h3>
+            <span class="feed-src">ZDNet Korea</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:10</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/" target="_blank" rel="noopener">경찰, 방문 730만 건 불법 스트리밍 서비스 57곳 차단</a></h3>
+            <span class="feed-orig">Police disrupt 57 illegal streaming services with 7.3 million visits</span>
+            <p class="feed-sum">경찰이 730만 회 방문을 기록한 불법 스트리밍 서비스 57곳을 차단했다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:01</span>
+            <h3><a href="https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/" target="_blank" rel="noopener">취약점 노이즈에서 회복탄력성으로: AI 시대 보안 재고</a></h3>
+            <span class="feed-orig">From Vulnerability Noise to Resilience: Rethinking Security in the AI Era</span>
+            <p class="feed-sum">AI 시대 보안 접근법을 다시 생각하자는 기고다.</p>
+            <span class="feed-src">BleepingComputer</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:00</span>
+            <h3><a href="https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/" target="_blank" rel="noopener">에이전틱 AI 공격의 최근 동향과 전술</a></h3>
+            <span class="feed-orig">Recent Trends and Tactics of Agentic AI Attacks</span>
+            <p class="feed-sum">자율 AI 에이전트 공격의 최근 동향과 전술을 분석했다.</p>
+            <span class="feed-src">Palo Alto Unit42</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiggJBVV95cUxQa0o5UWFlZkUyeUFnY3JwUndTNWthMUY4NTlXazZCX05mckNqc2hKVEJtZGlZb2ZXU2FodWJzd0IzNnhYZ19ZSWl5azNBZDNidG55QjdZdGtsSkZwOVhxNjFuNG5oNkd6SU13WktERXN3SmN3eG1qaHlsNnVYOHppY3RqUGRrXzFiMXViVTdicU1vYjljdnF3RTZPaTdqUzM1U0FiczUzaHU5MC1RUG1nZ0pmZXlEdzNYdEIzaGxvSUZjY0NnTW91VXluYmItcGNvdE9LOHFjU21pMTdCQ0t4X2VOeGdwSHBnSmt3OFdLbFlNWkRlQ1ZNdjRFMmVfdHdnVlE?oc=5" target="_blank" rel="noopener">에너지 운반선 최대 50척 해킹·폭파 위협…美, 이란 소행 의심</a></h3>
+            <span class="feed-src">데일리안</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:00</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBDbWNPNnpBQTZjeXRhY1E2aGJJQjRrdkJvQU5LYkNFR0ZUVFFIVFl3NHVFeUtmSV9IeUVoUVJjRmNJNDZSc0dfdWFNc1hfWmQ5ZXlZM3ZXZ3JQMzJQbU9MOWl6SnR2TnIwRmc?oc=5" target="_blank" rel="noopener">자율형 AI 해킹, 가짜 공격 경로로 무력화...공격 우회율 87%</a></h3>
+            <span class="feed-src">지티티코리아</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:00</span>
+            <h3><a href="https://therecord.media/cisa-nable-cybersecurity-bug" target="_blank" rel="noopener">CISA, N-able 버그 악용 경고…회사는 이메일 플랫폼 복구 중</a></h3>
+            <span class="feed-orig">CISA warns of exploited N-able bug as company restores email platform</span>
+            <p class="feed-sum">CISA가 악용 중인 N-able 버그를 경고했고 회사는 이메일 플랫폼을 복구하고 있다.</p>
+            <span class="feed-src">The Record</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 23:49</span>
+            <h3><a href="https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/" target="_blank" rel="noopener">유럽연합 집행위원회, 사이버공격 조사에서 데이터 유출 발견</a></h3>
+            <span class="feed-orig">European Commission Uncovers Data Breach in Cyberattack Investigation</span>
+            <p class="feed-sum">EU 집행위 조사에서 사이버공격으로 인한 데이터 유출이 확인됐다.</p>
+            <span class="feed-src">SecurityWeek</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 23:41</span>
+            <h3><a href="https://www.cybersecuritydive.com/news/food-agriculture-cybersecurity-usda-fda-gao-report/875596/" target="_blank" rel="noopener">GAO, 식품 분야 사이버 위협 방어 지원 기회 놓치는 연방기관 지적</a></h3>
+            <span class="feed-orig">Federal agencies missing opportunities to help protect food sector from cyber threats, GAO says</span>
+            <p class="feed-sum">GAO가 식품 분야 사이버 위협 방어를 도울 기회를 놓치고 있다고 연방기관을 지적했다.</p>
+            <span class="feed-src">Cybersecurity Dive</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 23:10</span>
+            <h3><a href="https://zdnet.co.kr/view/?no=20261124182254" target="_blank" rel="noopener">민주당, 연이은 해킹 사고에 '과기혁신특위 보안분과' 첫발</a></h3>
+            <span class="feed-src">ZDNet Korea</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 21:02</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFA3MUVZTDdMYlpjdTNMNUhIYmd1Ym85ZEozNkItVWhyUmFaeUxpRVRraHJEdXNoSnZya1pvdVd6R0Q1UUduVTI2R1pyQkhPM1JrbE9heXRsek5hZGxIRFA3LUEwWUt0ODJSRU1JQQ?oc=5" target="_blank" rel="noopener">하나저축은행 해킹 피해…고객 552명 정보 유출</a></h3>
+            <span class="feed-src">뉴시안</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 21:00</span>
+            <h3><a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02" target="_blank" rel="noopener">Schneider Electric EcoStruxure Power Build Rapsody 소프트웨어(CISA ICS 권고)</a></h3>
+            <span class="feed-orig">Schneider Electric EcoStruxure Power Build Rapsody software</span>
+            <p class="feed-sum">CISA ICS 권고 대상인 Schneider Electric 소프트웨어의 취약점이다.</p>
+            <span class="feed-src">CISA</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 21:00</span>
+            <h3><a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03" target="_blank" rel="noopener">Danfoss AK-SM 8xxA 시리즈(CISA ICS 권고)</a></h3>
+            <span class="feed-orig">Danfoss AK-SM 8xxA Series</span>
+            <p class="feed-sum">CISA ICS 권고 대상인 Danfoss AK-SM 8xxA 시리즈의 취약점이다.</p>
+            <span class="feed-src">CISA</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 21:00</span>
+            <h3><a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01" target="_blank" rel="noopener">AutomationDirect C-More EA9 프로그래밍 소프트웨어(CISA ICS 권고)</a></h3>
+            <span class="feed-orig">AutomationDirect C-More EA9 Programming Software</span>
+            <p class="feed-sum">CISA ICS 권고 대상인 AutomationDirect C-More EA9 프로그래밍 소프트웨어의 취약점이다.</p>
+            <span class="feed-src">CISA</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 19:56</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9YLWUybFQ2eWdvWGRmNS14SlJFdkp2YllzQXJCQWlPRkZKTU9JN3VpTTdVeDdLeWVXWnZScFljWVFqaS1jWUkzRFAyRWFYY3JlY3FoZnlfUGZEeXRPMDdBa2xoQ21pdlNHLUN4cmt2MA?oc=5" target="_blank" rel="noopener">[경고등 켜진 개인정보] 잇따르는 유출 일상화…생활 속 보안수칙 지켜야</a></h3>
+            <span class="feed-src">중부일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 19:47</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9QTVRqbzBJTU9fNXpjWS1QZ1oxRmFBQzQta0RQZlVQOTdlSXppdDF3OHhyVFdSRHVXb083ZFdTTkt3MjdiYzFrN3hqTkVSS0I3UGZHQXNfa2ptT1ludWhoYjloOGdzc0ZRUTJOQTl3?oc=5" target="_blank" rel="noopener">하나저축은행 해킹 '고객 552명' 정보 유출</a></h3>
+            <span class="feed-src">세이프머니</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:35</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1aZkI5Uk9zTEg1QzN6b0RsVTVCN2Fia1BrTHpTWmVzbDZXV2JLSkNocVBSY3kxbmZFSzlTZ2tiZ2N2blBVV2JQa3pQemlnUy1BZnfSAVNBVV95cUxOQnlNNmZEbWYxeUUxVjB2RUhWeWpNTjlyRkc5ZWl3T3dxS19lODRUVml6ajk1d2JTZjBnX25tVFRQZUhUNTZpVmQzOGdNQndRMmduOA?oc=5" target="_blank" rel="noopener">하나저축은행, 고객 552명 개인정보 유출</a></h3>
+            <span class="feed-src">서울경제</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:00</span>
+            <h3><a href="https://www.crowdstrike.com/en-us/blog/reprioritizing-automated-leads-crowdstrike-signal/" target="_blank" rel="noopener">CrowdStrike Signal로 자동화 리드 우선순위 재조정</a></h3>
+            <span class="feed-orig">Reprioritizing Automated Leads with CrowdStrike Signal</span>
+            <p class="feed-sum">CrowdStrike Signal로 자동화 리드를 우선순위대로 재조정하는 방법을 소개했다.</p>
+            <span class="feed-src">CrowdStrike</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 16:16</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03SzktZ0s2LW5YQ1M5YXRoRXFnR3V3cUFMMlNzaXFnZGFEd3p3bXVYMk42MGU0S0xvcXppd0JKX1NuV3ZPMG5kMFZNNk9naldyNjJCRGV0ZUxTQjJncVEtRDIwMHY2NDQ?oc=5" target="_blank" rel="noopener">한화에어로, 창원에 해킹 원천 차단 '군 전용 AI 센터'···2028년 가동 목표</a></h3>
+            <span class="feed-src">팍스경제TV</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 15:03</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFAxTUtlZG0wU3ZPaGNOLXVnc0kyTzN0TjNYLTVnLVdUdzNtdzNzS0pxZ2YzdElWb3BXcTZZZjV5TUFlZEFiZHZaNUUxNklJSmFVbFY3VWtaTHpzSlBHV0VkY0pualp1bDF4b0tlUmI5R0lKVEIw0gF0QVVfeXFMUDUxMEloQWNjaU55ZFBUcmVtRE9lSHpNWTJfUWxwLXRKTVJfelEtZUpOLTN1ODRRczBVcmZzang2aFdzODBTek9wZXhhTncxZFdRcGgxWWJQUWk3WVptYnlOR2pkaU1fTjJnY2lYZEJQaXEtdFU?oc=5" target="_blank" rel="noopener">해킹 발생한 디지털자산업자에 무과실 손해배상책임·징벌적 과징금 물린다</a></h3>
+            <span class="feed-src">MBC 뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 15:00</span>
+            <h3><a href="https://cofense.com/blog/automation-you-can-explain-why-ai-driven-phishing-defense-needs-human-oversight" target="_blank" rel="noopener">설명 가능한 자동화: AI 주도 피싱 방어가 인간 감독을 필요로 하는 이유</a></h3>
+            <span class="feed-orig">Automation You Can Explain: Why AI-Driven Phishing Defense Needs Human Oversight</span>
+            <p class="feed-sum">AI 주도 피싱 방어가 인간 감독을 필요로 하는 이유를 설명했다.</p>
+            <span class="feed-src">Cofense</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 13:37</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE84LXpFRnI5YXdhanp6c0E4Z2s1ZEZyUEVKZnRmNDhuVUl5WHZUQkxvbURuWlNRM2w1bEtBanBPemtyNmZUWDJEeTZ0cFF6b25BWTJNSzYya0NBem8?oc=5" target="_blank" rel="noopener">VOA “미 법무부, 북 바이낸스 해킹 자금 1조5천억 원 몰수 소송”</a></h3>
+            <span class="feed-src">KBS 뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 13:17</span>
+            <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135736" target="_blank" rel="noopener">FFmpeg 힙 영역 초과 읽기·쓰기 취약점(CVSS 8.1)</a></h3>
+            <span class="feed-orig">CVE-2026-135736 (CVSS 8.1) — FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by send</span>
+            <p class="feed-sum">FFmpeg 9.1 이전 버전의 vf_deband.c에서 힙 메모리를 손상시킬 수 있는 취약점이다.</p>
+            <span class="feed-src">NVD</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 13:00</span>
+            <h3><a href="https://snyk.io/blog/secure-ai-coding-agents-nvidia-openshell/" target="_blank" rel="noopener">NVIDIA OpenShell 속 Evo 에이전틱 개발 보안과 Evo 의존성 방화벽</a></h3>
+            <span class="feed-orig">Evo Agentic Development Security and Evo Dependency Firewall Inside NVIDIA OpenShell</span>
+            <p class="feed-sum">NVIDIA OpenShell에서 에이전틱 개발 보안과 의존성 방화벽을 소개했다.</p>
+            <span class="feed-src">Snyk Blog</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 09:00</span>
+            <h3><a href="https://www.recordedfuture.com/blog/cyber-threats-space-race" target="_blank" rel="noopener">우주 경쟁 2.0 뒤의 사이버 위협</a></h3>
+            <span class="feed-orig">The Cyber Threats Behind Space Race 2.0</span>
+            <p class="feed-sum">새로운 우주 경쟁 뒤에 있는 사이버 위협을 다뤘다.</p>
+            <span class="feed-src">Recorded Future</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24</span>
+            <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Optimizely Web Experimentation 취약점(CISA KEV 등재)</a></h3>
+            <span class="feed-orig">CVE-2026-132224 — Optimizely Web Experimentation</span>
+            <p class="feed-sum">CISA KEV에 등재된 Optimizely Web Experimentation 취약점이다.</p>
+            <span class="feed-src">CISA KEV</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24</span>
+            <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Idunno AntiCsrf 취약점(CISA KEV 등재)</a></h3>
+            <span class="feed-orig">CVE-2026-131914 — Idunno AntiCsrf</span>
+            <p class="feed-sum">CISA KEV에 등재된 Idunno AntiCsrf 취약점이다.</p>
+            <span class="feed-src">CISA KEV</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24</span>
+            <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Drupal Core 취약점(CISA KEV 등재)</a></h3>
+            <span class="feed-orig">CVE-2026-132165 — Drupal Core</span>
+            <p class="feed-sum">CISA KEV에 등재된 Drupal Core 취약점이다.</p>
+            <span class="feed-src">CISA KEV</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/23</span>
             <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE8tTGs0T1BEajZuWVlQM0lPeHluNkt5dW0za3VzeVowRUtET1ZlX1c4MXc5anFMX3poUVFXbnR2VkdZLUFwSmNNdnU3Zk5GeVJkNmNoZU9IZXdDRUhaVmRhS0tOVE5GRHdaRHZTZVJmakHSAXRBVV95cUxNeXg2eGVCbE85c0FneldMSDEwVFFwbEZmQm13dmtHVlZQWERqRHpNb3Q1WTJQMjhQUlBmMGVxdjFmOFVBOFBlQUpUQ2Flc21nc3I5eEludWVXNnNaWndyYjdxTkxUbndfZUYyOUcwemF2WmJXMQ?oc=5" target="_blank" rel="noopener">아이티센피엔에스, AI 모델·에이전트로 보안 사업 확대</a></h3>
@@ -15258,9 +15941,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>19</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>1822</b><span>국내 동향 — 11/16~24 보도</span></div>
-        <div class="stat"><b>825</b><span>해외 동향 — 11/16~24 보도</span></div>
-        <div class="stat"><b>160</b><span>CVE·취약점 — CVSS 9.0 이상 75건 포함</span></div>
+        <div class="stat"><b>1848</b><span>국내 동향 — 11/16~25 보도</span></div>
+        <div class="stat"><b>870</b><span>해외 동향 — 11/16~25 보도</span></div>
+        <div class="stat"><b>194</b><span>CVE·취약점 — CVSS 9.0 이상 99건 포함</span></div>
         <div class="stat"><b>32</b><span>다크웹 유출 — 11/24 19:39 확인 기준 24시간 건수</span></div>
       </div>
 
@@ -15278,20 +15961,20 @@
           <button class="tab-btn" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false">FBI 범죄정보망(NCIC) 해킹 의혹</button>
           <button class="tab-btn" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false">국내 대학 rERP 연쇄 해킹</button>
           <button class="tab-btn" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false">Optimizely 공급망 공격</button>
-          <button class="tab-btn" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false">N-able N-central 공격</button>
-          <button class="tab-btn" role="tab" id="tab-7" aria-controls="panel-7" aria-selected="false">국내 금융권 해킹 대응</button>
-          <button class="tab-btn" role="tab" id="tab-8" aria-controls="panel-8" aria-selected="false">Check Point PHP2Shell</button>
-          <button class="tab-btn" role="tab" id="tab-9" aria-controls="panel-9" aria-selected="false">Java4Shell — OpenJDK 원격 코드 실행</button>
-          <button class="tab-btn" role="tab" id="tab-10" aria-controls="panel-10" aria-selected="false">NGINX2Root — nginx 취약점 5건</button>
-          <button class="tab-btn" role="tab" id="tab-11" aria-controls="panel-11" aria-selected="false">Apache Roller·Axis 취약점 실제 공격 악용</button>
-          <button class="tab-btn" role="tab" id="tab-12" aria-controls="panel-12" aria-selected="false">PHP 언어 치명적 취약점</button>
-          <button class="tab-btn" role="tab" id="tab-13" aria-controls="panel-13" aria-selected="false">컬리 큐레이터 개인정보 유출</button>
-          <button class="tab-btn" role="tab" id="tab-14" aria-controls="panel-14" aria-selected="false">JP모건·비자·마스터카드 협력업체 해킹</button>
-          <button class="tab-btn" role="tab" id="tab-15" aria-controls="panel-15" aria-selected="false">VMware vCenter 제로데이</button>
-          <button class="tab-btn" role="tab" id="tab-16" aria-controls="panel-16" aria-selected="false">Microsoft·Azure 치명적 취약점 10건</button>
-          <button class="tab-btn" role="tab" id="tab-17" aria-controls="panel-17" aria-selected="false">N-able MailAssure·MONAI Label 제로데이 악용</button>
-          <button class="tab-btn" role="tab" id="tab-18" aria-controls="panel-18" aria-selected="false">Azure API Management 결함 악용</button>
-          <button class="tab-btn" role="tab" id="tab-19" aria-controls="panel-19" aria-selected="false">Check Point 보안 관리 서버 해킹</button>
+          <button class="tab-btn" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false">국내 금융권 해킹 대응</button>
+          <button class="tab-btn" role="tab" id="tab-7" aria-controls="panel-7" aria-selected="false">Check Point PHP2Shell</button>
+          <button class="tab-btn" role="tab" id="tab-8" aria-controls="panel-8" aria-selected="false">Java4Shell — OpenJDK 원격 코드 실행</button>
+          <button class="tab-btn" role="tab" id="tab-9" aria-controls="panel-9" aria-selected="false">NGINX2Root — nginx 취약점 5건</button>
+          <button class="tab-btn" role="tab" id="tab-10" aria-controls="panel-10" aria-selected="false">Apache Roller·Axis 취약점 실제 공격 악용</button>
+          <button class="tab-btn" role="tab" id="tab-11" aria-controls="panel-11" aria-selected="false">PHP 언어 치명적 취약점</button>
+          <button class="tab-btn" role="tab" id="tab-12" aria-controls="panel-12" aria-selected="false">컬리 큐레이터 개인정보 유출</button>
+          <button class="tab-btn" role="tab" id="tab-13" aria-controls="panel-13" aria-selected="false">JP모건·비자·마스터카드 협력업체 해킹</button>
+          <button class="tab-btn" role="tab" id="tab-14" aria-controls="panel-14" aria-selected="false">VMware vCenter 제로데이</button>
+          <button class="tab-btn" role="tab" id="tab-15" aria-controls="panel-15" aria-selected="false">Microsoft·Azure 치명적 취약점 10건</button>
+          <button class="tab-btn" role="tab" id="tab-16" aria-controls="panel-16" aria-selected="false">N-able MailAssure·MONAI Label 제로데이 악용</button>
+          <button class="tab-btn" role="tab" id="tab-17" aria-controls="panel-17" aria-selected="false">Azure API Management 결함 악용</button>
+          <button class="tab-btn" role="tab" id="tab-18" aria-controls="panel-18" aria-selected="false">Check Point 보안 관리 서버 해킹</button>
+          <button class="tab-btn" role="tab" id="tab-19" aria-controls="panel-19" aria-selected="false">EU 집행위 대규모 해킹</button>
         </div>
 
         <div class="tab-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
@@ -15426,28 +16109,9 @@
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6">
-          <h3>N-able N-central ‘4EverAble2Shell’ — 실제 공격 진행 중</h3>
-          <div class="status-row"><span class="chip ongoing">실제 공격 중 · 패치 진행</span><span class="chip">최근 동향 2026-11-24</span></div>
-          <p>Apache Axis 취약점 <strong>CVE-2026-90436 (9.8)</strong>의 PoC 공개 몇 시간 만에 공격자들이 코인 마이너를 심기 시작했습니다. N-able은 11월 16일 Hotfix 3로 신규 취약점 17건(CVE-2026-129271~129287)을 패치하고 레거시 API를 영구 차단했습니다. Rapid7은 11월 13일 Atlassian Confluence 대상 익스플로잇도 탐지했습니다. 11월 19일에는 The Hacker News가 해커들이 N-able 클라우드 서버를 침해해 3개 지역에서 이메일 보안 관리가 중단됐다고 보도했다. 11월 20일에는 N-able이 서비스 장애의 원인이 사이버 공격이었다고 밝혔다고 SecurityWeek가 보도했다. 11월 20일에는 BleepingComputer가 N-able의 최근 보안 침해가 대규모 서비스 장애로 이어졌다고 보도했다. 11월 23일에는 N-able이 침해 조사 과정에서 발견된 치명적인 Mail Assure 취약점을 공개했다고 The Hacker News가 보도했다. 11월 23일에는 SecurityWeek가 N-able이 Mail Assure 사이버공격 이후 공개된 치명적 결함을 패치했다고 보도했다. 11월 24일에는 The Hacker News가 해커들이 N-able MailAssure 결함을 실제로 악용하고 있으며, AI 에이전트가 MONAI Label 제로데이를 악용하고 있다고 보도했다.</p>
-          <a class="src-link" href="https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html" target="_blank" rel="noopener">The Hacker News — N-able patches 17 flaws</a>
-          &nbsp;·&nbsp;
-          <a class="src-link" href="https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html" target="_blank" rel="noopener">The Hacker News — Hackers Breach N-able Cloud Server</a>
-          &nbsp;·&nbsp;
-          <a class="src-link" href="https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/" target="_blank" rel="noopener">SecurityWeek — N-able Blames Service Disruption on Cyberattack</a>
-          &nbsp;·&nbsp;
-          <a class="src-link" href="https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/" target="_blank" rel="noopener">BleepingComputer — N-able says breach led to major service outage</a>
-          &nbsp;·&nbsp;
-          <a class="src-link" href="https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html" target="_blank" rel="noopener">The Hacker News — N-able discloses critical Mail Assure vulnerability</a>
-          &nbsp;·&nbsp;
-          <a class="src-link" href="https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/" target="_blank" rel="noopener">SecurityWeek — N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack</a>
-          &nbsp;·&nbsp;
-          <a class="src-link" href="https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html" target="_blank" rel="noopener">The Hacker News — Hackers Exploit N-able MailAssure Flaw</a>
-        </div>
-
-        <div class="tab-panel" role="tabpanel" id="panel-7" aria-labelledby="tab-7">
           <h3>국내 금융권 연쇄 해킹 — 금감원, 274개사 소집 점검</h3>
           <div class="status-row"><span class="chip reg">규제 대응 진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
-          <p>9월 이후 금융회사 19곳·20건·피해 11만 건 이상이 누적되자 금융감독원이 11월 17일 전자금융업자 227개사·온투업자 47개사의 CISO와 보안 담당자를 소집해 점검했습니다. 스푼(약 1만8천 명 유출), 줌펀드(예치금 약 3억 원 유출) 사례가 언급됐고, 시민단체 5곳도 같은 날 보안체계 점검을 촉구했습니다. 11월 20일에는 금감원이 가상자산사업자 28곳에 보안 점검을 주문하고 AI 해킹 대비를 당부했으며, 취약점을 방치해 사고가 발생하면 엄정히 책임을 묻겠다고 밝혔다. 11월 22일에는 예별손해보험도 외부 수탁업체(보험금 청구) 해킹으로 과거 피보험자 <strong>66명</strong>의 주민번호 등 개인정보가 유출된 사실이 알려지며, 해킹 피해 보험사가 <strong>4곳</strong>으로 확대됐다. 11월 23일에는 삼성증권도 '고객의 소리' 민원창구 해킹으로 고객 8,241명의 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 웰컴페이먼츠와 NHN KCP·KIS정보통신 등 국내 PG사에서도 잇단 해킹으로 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 롯데카드가 해킹 사고 공시 의무 위반으로 과징금 10억2,000만원을 부과받았고, 가상자산 지갑 디센트도 해킹 후폭풍으로 앱 지갑 서비스를 접고 이용자 자산 이전을 안내했다. 11월 24일에는 해킹 금융사에 매출 3% 과징금을 부과하는 전금법 개정안이 국회 정무위 1소위를 통과했고, 줌펀드는 해킹 피해액 3.3억원을 전액 복구하고 내달 초 홈페이지를 재개한다고 밝혔다.</p>
+          <p>9월 이후 금융회사 19곳·20건·피해 11만 건 이상이 누적되자 금융감독원이 11월 17일 전자금융업자 227개사·온투업자 47개사의 CISO와 보안 담당자를 소집해 점검했습니다. 스푼(약 1만8천 명 유출), 줌펀드(예치금 약 3억 원 유출) 사례가 언급됐고, 시민단체 5곳도 같은 날 보안체계 점검을 촉구했습니다. 11월 20일에는 금감원이 가상자산사업자 28곳에 보안 점검을 주문하고 AI 해킹 대비를 당부했으며, 취약점을 방치해 사고가 발생하면 엄정히 책임을 묻겠다고 밝혔다. 11월 22일에는 예별손해보험도 외부 수탁업체(보험금 청구) 해킹으로 과거 피보험자 <strong>66명</strong>의 주민번호 등 개인정보가 유출된 사실이 알려지며, 해킹 피해 보험사가 <strong>4곳</strong>으로 확대됐다. 11월 23일에는 삼성증권도 '고객의 소리' 민원창구 해킹으로 고객 8,241명의 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 웰컴페이먼츠와 NHN KCP·KIS정보통신 등 국내 PG사에서도 잇단 해킹으로 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 롯데카드가 해킹 사고 공시 의무 위반으로 과징금 10억2,000만원을 부과받았고, 가상자산 지갑 디센트도 해킹 후폭풍으로 앱 지갑 서비스를 접고 이용자 자산 이전을 안내했다. 11월 24일에는 해킹 금융사에 매출 3% 과징금을 부과하는 전금법 개정안이 국회 정무위 1소위를 통과했고, 줌펀드는 해킹 피해액 3.3억원을 전액 복구하고 내달 초 홈페이지를 재개한다고 밝혔다. 11월 24일에는 하나저축은행 해킹으로 고객 <strong>552명</strong>의 개인정보가 유출된 사실이 알려졌고 추가 피해 여부를 조사 중이며, 두 달 사이 해킹 피해를 입은 저축은행이 <strong>5곳</strong>으로 늘었다.</p>
           <a class="src-link" href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">노컷뉴스 — 금감원 274개사 소집 점검</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTE92SUxZSm9EeHQzcWJSMTlncllVbk05RFgwdFVFXy1XdmVJYzRDUEhvbmdXNEtuem5GTjVTVzV1LWtETFdxcVB5d2c4NU9ucEkwb1I1Um9TVVd6RnRhLXF2ZWlEcnZNWkpZMEdyNEdZRmE?oc=5" target="_blank" rel="noopener">신아일보 — 금감원, 가상자산 사업자에 '보안 강화' 주문…취약점 방치 시 책임 묻는다</a>
@@ -15479,9 +16143,15 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBTaHFxZkF1UERiNGZJdllrVDBRV2JYU1JHb1RqM0pqd21vOVREWHVBMU9zd0FBa2ZIYzM4b18tbkFIRUxxRjhXU2NJRHBEXy1YaDJGZ1hMUWRsbGJHZFJFMTdsamJtN1ZmaHNVddIBckFVX3lxTFBMOGxzRVVrcmpBaS00N3FndVZrYkdyWWZiVVd4SF9GXzVGbV9Fc0xzZ2FJRFUzNk9hZ1dsT0s4TUQ3WkJEQWdGcE9udjl0eUh2WmlfWFJ0M2xZSmNjNk1nUk9VLXZLbWxwMlpOcV9KX0FWUQ?oc=5" target="_blank" rel="noopener">머니투데이 — [속보]해킹 금융사 매출 3% 과징금…전금법 개정안, 정무 1소위 통과</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kU1RtdmtuOXpoWXN6UHBFNHJ4NlFsNlpib0pBWE0zUjZLbnllSlV4VUhDeGpSM0psWUh1NTVqUF9uNEpTMjRXaklLZk1vWG9MaFRhV2NfQVdOUdIBWEFVX3lxTE9YLWxFS0U2S0h3Tk9qeUdjMk9SejVNQ3ZTUmhSazlpZXg5NmM0Rmw2QS1sNU54YWhsdENoRTFhUkFHTlExWFpYSDk3b0dlbnVpUGZOcHRQaC0?oc=5" target="_blank" rel="noopener">아주경제 — [단독] 줌펀드, 해킹 피해액 3.3억원 전액 복구…내달 초 홈페이지 재개</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1BeS15dmZtb0cyTnNnbjlnN3Q3LU85d0NVSzAtZnBfSlN1T0Vub3hZOTQtdmJTSnFyekJPbXFZUmhhdk9KazFYZHpjZk9mNGRmTHJWRElnTTlRNnlKVUdrSUNJWUNyN0Q3VTB3Tkotc9IBc0FVX3lxTE9zbDVNLTZJRGNBRzlUclpWQlBNR3N0ekJSOFd6bjlHazdUM3hYYnBBcG53VFpBMmNoaXp2RjFPQm1qNFhMa3EtblFiR3JmLVRWT25LeUhCaFphZ25ESXVlaHdGWlo0YU1KRHl4ZjRYMHlvODQ?oc=5" target="_blank" rel="noopener">뉴스웍스 — 하나저축은행 해킹, 고객 552명 개인정보 유출</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQQjk4MkNEUUFFV3dSc0x6ZEZPWXU3TDFqSlhFdHRyTVRKNzVSNGlhcl9Rc0FZMDFxRmJkNmZjeVJKRVdWRGVyWVpkN2JrQnBFUlNCVDlicW9ESWxXTmczX0NReUoxY0xJcVMyWENqTTFNUlplbklzbFRPZ0hOc2RFdg?oc=5" target="_blank" rel="noopener">이데일리 — 하나저축은행 해킹…두 달 새 저축은행 5곳 피해</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTE85TDlGWmhXNmhPYmczLWlHTzNWSDBtdEhpc1lGckdVWE16UGY3blNjTk5aU0lWbFdPSU1DX1dNOWpXTEZqck5Pay1FT0VDNVF1U0pGbG1FTXF1QkNDRkFNMUxDcHZ2cmRGMmV4OWpPT1DSAXRBVV95cUxPWXBBMDc5Q0RqOE9mczU0anluYU9rOWE1TndwMXhEN3BGaXp6M3dzWTZfZ3NSOWozZmtpU2tScG5qa0pvZ1VkZVZuYzQyeGV6eHUzNklKc0plZmJTWHBwRVJKWVFKTUtKREluUXVWZ1RJQ3NjaQ?oc=5" target="_blank" rel="noopener">주간한국 — 하나저축은행 해킹, 고객 552명 개인정보 유출…추가 피해 조사 중</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-8" aria-labelledby="tab-8">
+        <div class="tab-panel" role="tabpanel" id="panel-7" aria-labelledby="tab-7">
           <h3>Check Point 방화벽 ‘PHP2Shell’ 체인 — KEV 마감 경과</h3>
           <div class="status-row"><span class="chip ongoing">패치·침해 점검 중</span><span class="chip">최근 동향 2026-11-23</span></div>
           <p>Gaia DynamicCLI 권한 누락 취약점 CVE-2026-123039가 PHP2Shell(CVE-2026-109618/109619, 9.2)과 연계돼 루트 권한 탈취로 이어지는 체인입니다. 10월 30일~11월 4일 미패치 게이트웨이 수십 대가 실제 공격을 받았고, CISA KEV 적용 마감(11월 16일)이 이미 지났습니다. 데이터넷은 11월 19일 PHP2Shell에 이어 자바포셸(Java4Shell)까지 이어지는 흐름을 짚으며, AI가 촉발한 ‘제로데이 양산 시대’를 다룬 후속 분석을 보도했습니다. 데일리시큐는 11월 19일 GS네오텍이 '시큐리티 렌즈'를 활용해 PHP2Shell 등 고위험 취약점에 선제 대응한다고 보도했고, 이티뉴스도 GS네오텍의 선제적 클라우드 방어 체계 제시를 전했다. The Hacker News는 11월 19일 PHP가 지원되는 모든 버전의 치명적 보안 결함을 경고하고 당일 수정판 배포를 예고했다고 전했으며, 디지털투데이는 미 NSA 내부망 장애가 AI가 찾은 PHP 취약점의 긴급 패치 때문이라고 보도했다. 데이터넷은 11월 19일 GS네오텍이 고위험 CVE 확산을 막기 위한 선제적 클라우드 방어 체계를 제시했다고 보도했고, 디지털데일리는 PHP 취약점에 빨간불이 켜진 가운데 GS네오텍이 '시큐리티 렌즈' 기반 클라우드 방어를 제시했다고 전했다. SecurityWeek는 11월 19일 PHP가 또 다른 RCE 취약점을 패치하기 위한 긴급 보안 업데이트를 준비 중이라고 전했다. 매일경제는 11월 19일 PHP 취약점으로 클라우드 보안 비상이 걸린 가운데 GS네오텍이 대응책을 제시했다고 보도했다. 연합뉴스는 11월 20일 정부가 PHP 치명적 취약점에 대해 긴급 업데이트를 권고했다고 보도했다. 같은 날 생생비즈플러스는 PHP에서 또 다른 치명적 취약점이 발견돼 최신 보안 업데이트 적용을 권고한다고 전했고, CWN은 치명적 보안 취약점 7건이 추가로 확인됐다고, 스페셜타임스는 전 세계 웹사이트의 68%가 쓰는 PHP에서 치명적 보안 취약점 17건이 발견됐다며 정부가 긴급 업데이트를 권고했다고 각각 보도했다. 천지일보도 11월 20일 PHP에서 또 치명적 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. 보안뉴스는 11월 20일 ‘PHP2셸’ 후속 ‘PHP애프터셸’이 등장해 상위 버전의 재패치가 필요하다고 보도했다. 바이라인네트워크도 11월 20일 PHP에서 치명적 취약점 7건이 추가로 발견돼 보안 업데이트가 배포됐다고 보도했다. 안랩 ASEC은 11월 19일 PHP2Shell 발표 이후 또 다른 PHP 취약점이 나왔다고 전했다. SecurityWeek는 11월 23일 phpAfterShell 취약점이 PHP2Shell의 공격 경로를 되살린다고 보도했다.</p>
@@ -15526,7 +16196,7 @@
           <a class="src-link" href="https://www.securityweek.com/phpaftershell-vulnerability-revives-php2shells-attack-path/" target="_blank" rel="noopener">SecurityWeek — phpAfterShell Vulnerability Revives PHP2Shell's Attack Path</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-9" aria-labelledby="tab-9">
+        <div class="tab-panel" role="tabpanel" id="panel-8" aria-labelledby="tab-8">
           <h3>Java4Shell — OpenJDK 원격 코드 실행 주장 (CVE-2026-114938)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-23</span></div>
           <p><strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. Cisco Talos도 11월 18일 관련 분석 글을 게시했습니다. 단, 일부 분석가는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. The Hacker News는 11월 18일 Java4Shell이 Java 17 이상 AVX-512 VBMI 서버에서 Jira·Jenkins·Keycloak의 사전 인증 원격 코드 실행을 가능하게 한다고 보도했다. SecurityWeek는 Java4Shell이 다수 엔터프라이즈 애플리케이션을 탈취 위험에 빠뜨린다고 보도했고, 에버스핀은 에버세이프 웹으로 Java4Shell을 차단한다고 밝혔다. 펜타시큐리티도 Java4Shell 방어 지원을 위해 웹방화벽 탐지 규칙을 제공한다고 밝혔다. The Record는 11월 18일 CISA가 Java4Shell 경고를 발령했으며, AI가 발견한 이 Java 버그가 Fortune 500 대다수 기업에 영향을 미친다고 보도했다. CISA는 11월 18일 Java4Shell 취약점의 즉시 패치를 촉구했다. Security Affairs는 11월 18일 Java4Shell 취약점을 ‘65자에서 원격 코드 실행으로’ 이어지는 구조로 분석했고, Help Net Security는 같은 날 실제 악용이 까다로우며 특정 CPU 조건에 달려 있다고 전했다. Malwarebytes는 11월 18일 이 결함을 치명적이지만 영향 범위가 좁은 취약점으로 평가했다. 11월 19일에는 엔키화이트햇이 Java4Shell 점검 도구를 배포했고, 데이터넷은 공공 시스템의 71%가 자바 기반이라며 보안 기업들의 무료 점검 도구 배포를 전했다. 11월 19일 데일리시큐 보도에 따르면 엔키화이트햇이 Java4Shell 내부 점검 도구를 배포했다. Security Boulevard는 11월 19일 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell)을 다룬 글을 게시했다. SANS ISC와 Elastic, Sysdig, SentinelOne, Orca Security, Aqua Security의 Java4Shell 분석·대응 기사도 새로 들어왔다. 동아일보는 11월 19일 '자바' 취약점 확인에 따라 청와대에서 민관군 긴급 대책회의가 열렸다고 보도했고, 뉴스웍스는 개보위가 Java4Shell 관련 유출 예방을 당부했다고 전했다. 11월 19일 GeekNews는 OpenJDK Base64 디코더의 사전 인증 원격 코드 실행 취약점(Java4Shell, CVE-2026-114938)을 다뤘다. 뉴스센터코리아는 11월 18일 자바 취약점 'Java4Shell' 공개 소식을 전하며 정부가 개인정보 유출을 막기 위한 긴급 점검을 당부했다고 보도했다. 11월 19일 보안뉴스는 조직 내 자바 취약점 여부를 확인할 수 있는 자바4셸 탐지 도구를 소개했고, KBS는 PHP에 이어 자바까지 취약점이 이어지며 공공 전산망에 비상이 걸렸다고 보도했다. 11월 19일 개인정보보호위원회는 ‘자바4셸’ 예방조치를 당부하며 미조치 시 대규모 유출사고가 우려된다고 밝혔다. 11월 19일 SecurityWeek는 Java4Shell 취약점에 대한 실제 악용 시도가 시작됐으며, 각 벤더가 긴급 권고문을 잇따라 내놓고 있다고 보도했다. 11월 20일에는 펜타시큐리티가 Java4Shell 취약점 대응과 보안 정책 반영을 밝혔다는 보도가 나왔다. ASEC(안랩)는 11월 20일 고속 Base64 처리 로직의 허점을 노린 JDK 취약점(CVE-2026-114938) 분석을 게시했다. 11월 20일 The Cyber Express 주간 라운드업은 Java4Shell이 기업용 애플리케이션을 위협하고 있다고 다시 정리했다. 11월 23일 헬로티 보도에 따르면 OpenJDK ‘Java4Shell’ 취약점 공격이 발생했으며, 에버스핀 보안 솔루션에서 차단이 확인됐다. 11월 23일 The Hacker News 주간 요약은 VMware 0-Day·NGINX2Root·Ruby2Shell과 함께 Java4Shell을 한 주의 주요 셸 취약점으로 다시 정리했다.</p>
@@ -15628,7 +16298,7 @@
           <a class="src-link" href="https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html" target="_blank" rel="noopener">The Hacker News — Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-10" aria-labelledby="tab-10">
+        <div class="tab-panel" role="tabpanel" id="panel-9" aria-labelledby="tab-9">
           <h3>NGINX2Root — nginx 치명적 취약점 5건 (CVE-2026-123007)</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-20</span></div>
           <p>nginx 웹 서버의 치명적 취약점 5건(일명 NGINX2Root)으로, 대표 CVE는 <strong class="mono">CVE-2026-123007</strong>이며 인증 없는 원격 코드 실행이 가능하다고 보고됐다. 티오리가 AI 자율 발굴로 취약점을 찾아낸 것으로 전해지며, Qualys는 탐지·완화·패치 방법을 정리했다. Security Boulevard는 11월 19일 5건의 취약점에 대한 자주 묻는 질문(FAQ)을 게시했다. 보안뉴스는 11월 19일 엔진엑스에서 11년 묵은 치명적 취약점이 AI에 의해 90분 만에 발견됐다고 보도했다. Imperva와 Orca Security, Aqua Security도 NGINX HTTP/2 취약점(CVE-2026-123007 포함) 관련 분석·대응 글을 새로 게시했다. 연합뉴스는 11월 19일 정부가 엔진엑스 보안 비상과 관련해 긴급 권고를 냈다고 보도했다. 한국일보는 11월 19일 웹사이트 30%가 쓰는 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 찾았다고 보도했고, 콕스뉴스는 11년 숨은 취약점을 AI가 찾아냈다고 전했다. 뉴스웍스는 티오리의 nginx 취약점 발견 소식도 전했다. 데이터넷은 11월 19일 PHP·자바에 이어 엔진엑스에서도 취약점이 쏟아지고 있다고 전했다. SBS는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 보도했고, 뉴시스는 KISA가 엔진엑스 취약점 발견에 따른 업데이트를 권고했다고 전했다. M이코노미뉴스도 11월 19일 NGINX에서 치명적 보안 취약점이 발견돼 정부가 긴급 업데이트를 권고했다고 보도했다. Ubuntu는 11월 19일 nginx 취약점에 대한 보안 공지 USN-9159-1을 발행했다. 동아일보는 11월 19일 전 세계 웹사이트의 30%가 사용하는 엔진엑스에서 치명적 보안 취약점 5건이 발견됐다고 보도했다. 이투데이는 11월 19일 티오리가 웹 서버 엔진엑스에서 치명적 취약점을 발견해 원격으로 악성 코드를 실행할 수 있다고 보도했다. KBS 뉴스는 11월 19일 웹서버 엔진엑스에서 치명적 취약점 5건이 발견됐고 4건은 AI가 발견했다고 보도했다. 아이티데일리는 11월 19일 엔진엑스에서도 고위험 취약점이 발견돼 한국 웹사이트 58%가 영향권에 있다고 보도했다. Security Affairs는 11월 19일 AI가 5건의 치명적 nginx 취약점과 루트 권한 탈취 경로를 발견했다고 보도했다. F5는 11월 19일 PoC 익스플로잇이 공개되자 NGINX2Root 치명적 결함에 대한 패치를 발표했다. The Cyber Express는 11월 19일 CVE-2026-123633과 CVE-2026-123007이 인증 없는 원격 코드 실행을 가능하게 한다고 보도했다. HackRead는 11월 19일 F5가 NGINX HTTP/2 취약점 2건을 패치했으며, 이 중 1건은 2015년부터 존재해 온 취약점이라고 보도했다. 경향신문은 11월 19일 세계 웹 30%가 쓰는 서버 SW 엔진엑스에서 보안 취약점 5건이 발견됐다고 보도했다. 서울경제는 11월 19일 티오리가 세계적 웹서버 엔진엑스에서 해킹 위험 5건을 발견했다고 전했다. 서울이코노미뉴스는 11월 19일 엔진엑스에서 11년 된 치명적 결함이 발견됐고 AI가 취약점 4건을 탐지했다고 보도했다. Sysdig는 11월 19일 NGINX의 RCE 취약점 5건과 리눅스 커널을 통한 루트 권한 탈취 경로, 탐지 방법을 정리한 글을 게시했다. CrowdStrike는 11월 19일 Falcon 플랫폼으로 NGINX2Root를 식별하고 보호하는 방법을 정리한 글을 게시했다. 매일경제는 11월 19일 세계 웹사이트 30%가 쓰는 엔진엑스에 보안 비상이 걸렸고 정부가 긴급 권고를 냈다고 종합 보도했다. Ubuntu는 11월 20일 nginx 취약점에 대한 보안 공지 USN-9182-1을 발행했다.</p>
@@ -15701,7 +16371,7 @@
           <a class="src-link" href="https://ubuntu.com/security/notices/USN-9182-1" target="_blank" rel="noopener">Ubuntu Security Notices — USN-9182-1: nginx vulnerabilities</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-11" aria-labelledby="tab-11">
+        <div class="tab-panel" role="tabpanel" id="panel-10" aria-labelledby="tab-10">
           <h3>Apache Roller·Axis 치명적 취약점 — 실제 공격 악용</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-19</span></div>
           <p>Apache Roller와 Axis의 치명적 취약점이 실제 공격에 악용되고 있다고 SecurityWeek가 11월 19일 보도했다. The Hacker News는 11월 19일 인증 없이 악용 가능한 Apache Roller의 치명적 원격 코드 실행 취약점(CVE-2026-129448, CVSS 9.8)이 실제 공격에 사용되고 있다고 전했다.</p>
@@ -15710,7 +16380,7 @@
           <a class="src-link" href="https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html" target="_blank" rel="noopener">The Hacker News — Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-12" aria-labelledby="tab-12">
+        <div class="tab-panel" role="tabpanel" id="panel-11" aria-labelledby="tab-11">
           <h3>PHP 언어 치명적 취약점 — 정부 긴급 업데이트 권고</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-23</span></div>
           <p>PHP 언어에서 치명적 취약점이 다수 발견돼 정부(국가안보실·관계 부처)가 긴급 보안 업데이트를 권고했습니다. 보도별 집계는 엇갈려 <strong>치명적 취약점 7건</strong>이라는 보도와 <strong>전체 17건</strong>이라는 보도가 함께 나왔고, 웹사이트 해킹과 관리자 권한 탈취 우려가 제기됐습니다. 대규모 보안 결함이 한 달 만에 재발한 데다 전 세계 웹사이트의 약 <strong>68%</strong>가 PHP를 사용하고 있어 영향 범위가 넓을 수 있습니다. Tenable은 11월 20일 공공 부문이 PHP2Shell 같은 취약점에 대비하는 데 노출 관리가 도움이 된다고 전했다. CSO Online은 11월 21일 PHP2Shell 여파로 기업 웹 관리자들을 경계하게 하는 PHP 결함 18건이 추가로 나왔다고 전했다. 티제이비는 11월 20일 PHP에서 또 치명적 취약점이 무더기로 발견돼 웹사이트 보안 위협이 커졌다고 전했다. PHP 재단은 11월 20일 원격 코드 실행이 가능한 버그를 포함한 치명적 취약점 7건의 수정판을 배포했다.</p>
@@ -15743,7 +16413,7 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE96VW9SUzFId0dVR25mSnUtZS1xMy1FaWhUdUpQbHpLMy1MVmNZREU2V3RfclpOR0tJd3JwUkN1dUJ2cDNZb2pTZVVVSEpTb1hGbDBPMEtzSjlhSFlUcjZkWWtaRzBKenRJODM4WXZaaw?oc=5" target="_blank" rel="noopener">진일보 | 전남일보 — 웹사이트 서버 뚫릴 수도…PHP서 치명적 보안 취약점 7건 발견</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13">
+        <div class="tab-panel" role="tabpanel" id="panel-12" aria-labelledby="tab-12">
           <h3>컬리 큐레이터 개인정보 유출 — 1만699명, 일부 주민번호·계좌번호 포함</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-23</span></div>
           <p>컬리는 2026년 11월 20일 큐레이터 <strong>1만699명</strong>의 개인정보 유출을 공지했습니다. 유출 항목에는 일부 <strong>주민번호·계좌번호</strong>가 포함됐고, 컬리는 피해액 전액 보상과 최대 15만원 보상을 약속했으며 대표가 사과했습니다. 같은 날 오후에만 국내 언론 60곳 이상이 보도한 대형 국내 개인정보 유출 사건입니다. 11월 22일 연합인포맥스는 유출 규모를 <strong>1만701명</strong>으로 전하며 일부 주민번호가 포함됐다고 보도했습니다. 11월 23일에는 큐레이터에 이어 임직원 199명과 고객 2명의 개인정보가 추가로 유출된 사실이 확인됐습니다.</p>
@@ -15772,7 +16442,7 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BOFNUSkp2Sk1pWFloU3U5RUVYWTlidmdkRUx3MVgxLWVxN2ZSak84TnZHdF95dk9SNGpPZy1raHJrZTB0X3BYYi1HdXIzVGJ4RTFDVWQzYmJlZw?oc=5" target="_blank" rel="noopener">브릿지경제 — 컬리 개인정보 유출 피해 추가 확인…임직원 199명·고객 2명 정보 노출</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-14" aria-labelledby="tab-14">
+        <div class="tab-panel" role="tabpanel" id="panel-13" aria-labelledby="tab-13">
           <h3>JP모건·비자·마스터카드 협력업체 해킹 — 고객 정보 유출</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-23</span></div>
           <p>2026년 11월 20일 JP모건체이스·비자·마스터카드의 <strong>외부 협력업체</strong>가 해킹당해 수천 명의 고객 정보가 유출됐습니다. <strong>랜섬웨어 조직</strong> 소행으로 보도됐고, 세 회사 주가가 하락했습니다.</p>
@@ -15791,7 +16461,7 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMib0FVX3lxTE90ZkpHOWFlTzFUQ1N1YTM3dy1XMWhDcFZwWk5LWktJTUJxckdzZ1ZtR0RPRjczV3p4SFBabnN0WV9hNFJNcUNHUUFsRTI3aHBtZlhsVFRRMjIxeUhGbUlSR0VQekpkQUVkYTc5N2VvVQ?oc=5" target="_blank" rel="noopener">이코노미사이언스 — JP모건·비자·마스터카드 해킹 파장…고객정보 유출에 외주 보안관리 도마</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-15" aria-labelledby="tab-15">
+        <div class="tab-panel" role="tabpanel" id="panel-14" aria-labelledby="tab-14">
           <h3>VMware vCenter 제로데이 — 중국 연계 'Armory Castle' 공격</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-21</span></div>
           <p>VMware vCenter의 제로데이 취약점(CVE-2026-123890)이 9월부터 실제 공격에 악용된 것으로 확인됐고, VMware는 패치를 배포했습니다. 중국 연계 해커 그룹 'Armory Castle'이 두 번째 제로데이 취약점을 연계해 vCenter를 장악한 정황이 보도됐고, 11월 21일에는 Dark Reading이 같은 그룹의 vCenter 제로데이 공세를 추가로 전했습니다. The Hacker News는 11월 20일 네트워크 공격자가 인증을 우회할 수 있는 VMware vCenter의 치명적 제로데이 취약점을 추가로 전했다. 이어 11월 21일에는 VMware·Cisco·Apache의 중대 취약점이 스파이 공격에 악용되고 있다는 정황이 추가로 포착됐다.</p>
@@ -15811,7 +16481,7 @@
           &nbsp;·&nbsp;
           <a class="src-link" href="https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html" target="_blank" rel="noopener">The Hacker News — 해커들, VMware·Cisco·Apache 중대 취약점 악용…스파이 공격 정황 포착</a>
         </div>
-        <div class="tab-panel" role="tabpanel" id="panel-16" aria-labelledby="tab-16">
+        <div class="tab-panel" role="tabpanel" id="panel-15" aria-labelledby="tab-15">
           <h3>Microsoft·Azure 치명적 취약점 10건 — CVSS 9.0 이상</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
           <p>NVD에 Microsoft·Azure 제품군의 CVSS 9.0 이상 취약점 10건이 새로 공개됐다. Azure Event Grid 부적절한 인증(CVE-2026-62841, CVSS 10.0), M365 Copilot 부적절한 인가(CVE-2026-50691, 9.9), SharePoint 경로 순회(CVE-2026-70193, 9.9), Azure Portal·Azure Machine Learning·Profile Data Roaming Service의 SSRF·XSS 계열, Microsoft Clarity·Azure Site Recovery·Azure DevTest Labs의 인가·인증 우회 등이 포함되며, 대부분 네트워크를 통한 권한 상승 또는 스푸핑이 가능하다고 설명됐다. 11월 24일에는 Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 공지 USN-9191-1·USN-9168-4·USN-9170-4를 새로 발표했다.</p>
@@ -15835,18 +16505,20 @@
           &nbsp;·&nbsp;
           <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-69899" target="_blank" rel="noopener">NVD — CVE-2026-69899</a>
         </div>
-        <div class="tab-panel" role="tabpanel" id="panel-17" aria-labelledby="tab-17">
+        <div class="tab-panel" role="tabpanel" id="panel-16" aria-labelledby="tab-16">
           <h3>N-able MailAssure·MONAI Label 제로데이 악용</h3>
-          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-25</span></div>
           <p>해커들이 <strong>N-able MailAssure</strong> 결함을 실제로 악용하고 있고, AI 에이전트가 <strong>MONAI Label</strong> 제로데이를 악용하고 있다는 The Hacker News 보도(11/24)가 나왔다. 두 취약점은 오늘 오전 CISA KEV에 신규 등재된 <strong>CVE-2026-134624</strong>(N-able MailAssure)와 <strong>CVE-2026-133968</strong>(Project MONAI MONAI Label)이다. 기존 ‘N-able N-central 공격’과는 다른 제품군의 사건이다. 11월 24일 미국 CISA가 N-able MailAssure와 Project MONAI 취약점을 실제 악용 취약점(KEV) 목록에 등재했다.</p>
           <a class="src-link" href="https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html" target="_blank" rel="noopener">The Hacker News — Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityaffairs.com/203882/hacking/u-s-cisa-adds-n-able-mailassure-and-project-monai-flaws-to-its-known-exploited-vulnerabilities-catalog.html" target="_blank" rel="noopener">Security Affairs — U.S. CISA adds N-able MailAssure and Project MONAI flaws to its Known Exploited Vulnerabilities catalog</a>
+                  &nbsp;·&nbsp;
+          <a class="src-link" href="https://therecord.media/cisa-nable-cybersecurity-bug" target="_blank" rel="noopener">The Record — CISA warns of exploited N-able bug as company restores email platform</a>
         </div>
 
-        <div class="tab-panel" role="tabpanel" id="panel-18" aria-labelledby="tab-18">
+        <div class="tab-panel" role="tabpanel" id="panel-17" aria-labelledby="tab-17">
           <h3>Azure API Management 결함 악용 — 고객 비밀정보 노린 공격, Microsoft 패치</h3>
-          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-25</span></div>
           <p>Azure API Management의 결함이 악용돼 고객의 API 자격증명과 비밀정보를 노리는 공격이 확인됐다. 노르웨이 에너지 기업 Equinor와 Skagerak Energi가 공격을 받았고, 노르웨이 당국은 에너지 기업 사이버 공격의 배후로 Azure API Management 중대 결함을 지목했다. 11월 24일 Microsoft는 Azure API Management 클래식의 결함을 패치했다. Microsoft가 공격자들이 이 결함을 악용해 비밀정보를 탈취했다고 경고했다. 같은 날 Help Net Security도 Azure API Management 취약점이 악용돼 고객의 비밀정보가 탈취됐으며 Microsoft가 경고했다고 보도했다.</p>
           <a class="src-link" href="https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html" target="_blank" rel="noopener">The Hacker News — Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets</a>
           &nbsp;·&nbsp;
@@ -15861,13 +16533,38 @@
           <a class="src-link" href="https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html" target="_blank" rel="noopener">CSO Online — Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.helpnetsecurity.com/2026/11/24/azure-apim-vulnerability-credential-theft/" target="_blank" rel="noopener">Help Net Security — Azure API Management vulnerability exploited to steal customers' secrets</a>
+                  &nbsp;·&nbsp;
+          <a class="src-link" href="https://securityboulevard.com/2026/11/microsoft-fixes-azure-flaws-exploited-by-bad-actors-to-steal-secrets/" target="_blank" rel="noopener">Security Boulevard — Microsoft Fixes Azure Flaws Exploited by Bad Actors to Steal Secrets</a>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-18" aria-labelledby="tab-18">
+          <h3>Check Point 보안 관리 서버 해킹 — AI 활용 캠페인으로 침해</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-25</span></div>
+          <p>체크포인트의 보안 관리 서버가 AI를 활용한 캠페인으로 해킹당한 것으로 확인됐다. SecurityWeek가 11월 24일 보도했다.</p>
+          <a class="src-link" href="https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/" target="_blank" rel="noopener">SecurityWeek — Check Point Security Management Servers Hacked in AI-Assisted Campaign</a>
+                  &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNVW13dDQ3WFhKRTFnbTl6QzdnUXFJX1lJTHhUclBBdmdpdHlJSU5IelFVZmxqd2g5emo4VFVZelZTcVBVdk5DMk1aMlJfelMyY2x6SlNidWYyejJuXzV6QVc5ZG1ucGkyU2UwYS1zby1zalVnWXFFUzJRZzN4UnZTdHN2bUNsVGV4TjFhSVluYklMUQ?oc=5" target="_blank" rel="noopener">GeekNews — 22개 조직의 Check Point 서버를 침해한 사이버 공격 캠페인</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign" target="_blank" rel="noopener">GreyNoise — Active intrusion campaign against Check Point security management servers</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/" target="_blank" rel="noopener">BleepingComputer — Hackers compromise Check Point Servers in 22 organizations</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.cybersecuritydive.com/news/ai-enabled-campaign-targets-check-point-security-management-servers/875622/" target="_blank" rel="noopener">Cybersecurity Dive — AI-enabled campaign targets Check Point Security Management servers</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-19" aria-labelledby="tab-19">
-          <h3>Check Point 보안 관리 서버 해킹 — AI 활용 캠페인으로 침해</h3>
-          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
-          <p>체크포인트의 보안 관리 서버가 AI를 활용한 캠페인으로 해킹당한 것으로 확인됐다. SecurityWeek가 11월 24일 보도했다.</p>
-          <a class="src-link" href="https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/" target="_blank" rel="noopener">SecurityWeek — Check Point Security Management Servers Hacked in AI-Assisted Campaign</a>
+          <h3>EU 집행위 대규모 해킹 — 중국 연계 조직 의혹</h3>
+          <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-23</span></div>
+          <p>EU 집행위 대규모 해킹 배후로 중국 연계 해킹 조직이 의심되며 개인정보 유출까지 발생했다는 보도가 나왔다.</p>
+          <a class="src-link" href="https://www.yna.co.kr/view/AKR20261123172800098" target="_blank" rel="noopener">연합뉴스 — EU 집행위 대규모 해킹, 중국 연계 조직 의심…개인정보 유출</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1lUHBBcFZSczhZdlRGb2xMZTNKQXZmNVhCZUlyOWx0VXU4V2p3SnF0T3pWTlNQMDgxU2kwMTZZQldza09HYXl2NDZqbm9EVThMRWdvOFdqb041ekpBclBFMWV2TmRlWU1hWlE?oc=5" target="_blank" rel="noopener">SBS — EU 집행위 해킹, 중국 연계 조직 의혹</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE81Y1F3WHN0cy0zemlXWUxHa3Y2NE0tZm9TUkRNNE83cWtfcmxCS3k4Y0g1dUtFZjN6MFdGMkZ6akc3ekN5WDN6WURteWxmLXRTRnFDa1Y0UmhBWXM?oc=5" target="_blank" rel="noopener">KBS — EU 집행위 대규모 해킹 배후 중국 연계 조직 의심</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE55UE9QMWFYQzJyT3JIbFRacmQ4V0luZHowQVItenJ2T0FKUHVHdlMtejdXTVI5eXVpOWlzQ2YzYkVDS0VNMzRCbTExbEhraFRMMDFkU1hLYlJyRF83YTNYMw?oc=5" target="_blank" rel="noopener">KBC광주방송 — EU 집행위 해킹, 중국 연계 조직 의혹</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oZDdjUjlrYWo3bWVzS1dlc3pTTUhVTkNDc3YzVUlDQjc2Y2NvR0hFWTRjVjZ6dUQ2SWxIaTV0amx1eDlqLTVfMlJTZnVQcEMxLUtra2lqVkZ3Ujg?oc=5" target="_blank" rel="noopener">에너지경제신문 — EU 집행위 대규모 해킹, 중국 연계 조직 의심</a>
         </div>
 
           </div>
@@ -15996,14 +16693,14 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 160건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 85건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 194건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 94건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 160건</button>
-          <button data-filter="new" aria-pressed="false">11/16~22 신규 보고</button>
+          <button data-filter="all" aria-pressed="true">전체 194건</button>
+          <button data-filter="new" aria-pressed="false">11/16~25 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
         <div class="cve-list" id="cveList">
@@ -16096,6 +16793,22 @@
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
           <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135792" target="_blank" rel="noopener"><span class="mono">CVE-2026-135792</span></a> · Panabit Smart Application Gateway</h3>
+              <p>user.cgi의 send_email_authcode 함수에서 발견된 취약점이다(CVSS 10.0).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">10<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135797" target="_blank" rel="noopener"><span class="mono">CVE-2026-135797</span></a> · Volans NGFW</h3>
+              <p>sslvpn_client.php의 exec 함수에서 발견된 취약점이다(CVSS 10.0).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
             <div class="score crit">9.9<small>CVSS</small></div>
             <div class="cve-main">
               <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133680" target="_blank" rel="noopener"><span class="mono">CVE-2026-133680</span></a> · D-Link DCS-935L</h3>
@@ -16166,6 +16879,86 @@
               <p>Microsoft Office SharePoint의 경로 순회(path traversal) 취약점으로, 권한 있는 공격자가 네트워크를 통해 코드를 실행할 수 있다(CVSS 9.9).</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135788" target="_blank" rel="noopener"><span class="mono">CVE-2026-135788</span></a> · D-Link DIR-X1860</h3>
+              <p>/usr/sbin/anweb의 알 수 없는 기능에서 발견된 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135790" target="_blank" rel="noopener"><span class="mono">CVE-2026-135790</span></a> · Panabit Smart Application Gateway</h3>
+              <p>대시보드 ajax_chart_dump 파일에서 발견된 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123342" target="_blank" rel="noopener"><span class="mono">CVE-2026-123342</span></a> · Adobe Campaign Classic</h3>
+              <p>코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123723" target="_blank" rel="noopener"><span class="mono">CVE-2026-123723</span></a> · Adobe Campaign Classic</h3>
+              <p>코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123986" target="_blank" rel="noopener"><span class="mono">CVE-2026-123986</span></a> · Adobe Campaign Classic</h3>
+              <p>코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123987" target="_blank" rel="noopener"><span class="mono">CVE-2026-123987</span></a> · Adobe Campaign Classic</h3>
+              <p>코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135791" target="_blank" rel="noopener"><span class="mono">CVE-2026-135791</span></a> · Panabit Smart Application Gateway</h3>
+              <p>flowcontrol ajax 파일의 edit_data_pie 함수에서 발견된 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-132877" target="_blank" rel="noopener"><span class="mono">CVE-2026-132877</span></a> · Adobe Experience Manager</h3>
+              <p>코드 생성 제어 부적절로 임의 코드 실행이 가능한 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135794" target="_blank" rel="noopener"><span class="mono">CVE-2026-135794</span></a> · Panabit Smart Application Gateway</h3>
+              <p>add_crontab 함수에서 발견된 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135796" target="_blank" rel="noopener"><span class="mono">CVE-2026-135796</span></a> · Volans NGFW</h3>
+              <p>port_serve 관련 파일의 exec/system 함수에서 발견된 취약점이다(CVSS 9.9).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">9.8<small>CVSS</small></div>
@@ -16327,7 +17120,7 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/19</span></div>
           </article>
-                    <article class="cve-row" data-kind="new">
+          <article class="cve-row" data-kind="new">
             <div class="score crit">9.8<small>CVSS</small></div>
             <div class="cve-main">
               <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135202" target="_blank" rel="noopener"><span class="mono">CVE-2026-135202</span></a> · WP connect WordPress 플러그인 여러 종</h3>
@@ -16343,7 +17136,31 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
-<article class="cve-row" data-kind="new">
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136404" target="_blank" rel="noopener"><span class="mono">CVE-2026-136404</span></a> · ntop n2n</h3>
+              <p>인증 없는 원격 공격자가 메모리를 유출하고 코드를 실행할 수 있는 스택 버퍼 오버플로 취약점이다(CVSS 9.8).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136411" target="_blank" rel="noopener"><span class="mono">CVE-2026-136411</span></a> · BusyBox</h3>
+              <p>인증 없는 원격 공격자가 의도된 범위를 벗어난 파일에 접근할 수 있는 경로 순회 취약점이다(CVSS 9.8).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.8<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-112732" target="_blank" rel="noopener"><span class="mono">CVE-2026-112732</span></a> · Microsoft Office Visio</h3>
+              <p>권한 없는 공격자가 네트워크를 통해 코드를 실행할 수 있는 더블 프리 취약점이다(CVSS 9.8).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
             <div class="score crit">9.6<small>CVSS</small></div>
             <div class="cve-main">
               <h3><span class="mono">CVE-2026-130680</span> · SiYuan</h3>
@@ -16390,6 +17207,22 @@
               <p>Azure Portal의 크로스 사이트 스크립팅(XSS) 취약점으로, 미인증 공격자가 네트워크를 통해 스푸핑을 수행할 수 있다(CVSS 9.6).</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.6<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136184" target="_blank" rel="noopener"><span class="mono">CVE-2026-136184</span></a> · compose-farm</h3>
+              <p>인증 없는 웹 UI를 통한 크로스사이트 WebSocket 하이재킹 및 CSRF 취약점이다(CVSS 9.6).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.6<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125717" target="_blank" rel="noopener"><span class="mono">CVE-2026-125717</span></a> · Adobe Campaign Classic</h3>
+              <p>SQL 명령에 쓰이는 특수 문자 중화 부적절로 인한 SQL 인젝션 취약점이다(CVSS 9.6).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
           </article>
           <article class="cve-row" data-kind="surfaced">
             <div class="score crit">9.5<small>CVSS v4.0</small></div>
@@ -16470,6 +17303,14 @@
               <p>Authentication Methods Portal Extension의 웹 페이지 생성 시 입력 중화 미흡(XSS) 취약점(CVSS 9.3).</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.3<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125716" target="_blank" rel="noopener"><span class="mono">CVE-2026-125716</span></a> · Adobe Campaign Classic</h3>
+              <p>악성 스크립트 주입이 가능한 반사형 XSS 취약점이다(CVSS 9.3).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">9.2<small>CVSS v4.0</small></div>
@@ -16567,6 +17408,46 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-123167" target="_blank" rel="noopener"><span class="mono">CVE-2026-123167</span></a> · SolarWinds Serv-U</h3>
+              <p>도메인 관리자가 접근해서는 안 될 파일에 접근할 수 있는 권한 상승 취약점이다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135789" target="_blank" rel="noopener"><span class="mono">CVE-2026-135789</span></a> · D-Link R95</h3>
+              <p>GetBluetoothAdapterSettings 등 기능에서 발견된 보안 취약점이다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82315" target="_blank" rel="noopener"><span class="mono">CVE-2026-82315</span></a> · SolarWinds Serv-U</h3>
+              <p>도메인 관리자 이상 권한 사용자가 악용할 수 있는 TOCTOU 취약점이다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82316" target="_blank" rel="noopener"><span class="mono">CVE-2026-82316</span></a> · SolarWinds Serv-U</h3>
+              <p>도메인 관리자 이상 권한 사용자가 악용할 수 있는 TOCTOU 취약점이다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score crit">9.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-125718" target="_blank" rel="noopener"><span class="mono">CVE-2026-125718</span></a> · Adobe Campaign Classic</h3>
+              <p>SQL 명령에 쓰이는 특수 문자 중화 부적절로 인한 SQL 인젝션 취약점이다(CVSS 9.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
           <article class="cve-row" data-kind="surfaced">
             <div class="score high">9.0<small>CVSS v4.0</small></div>
             <div class="cve-main">
@@ -16606,6 +17487,22 @@
               <p>Gladys Assistant 4.71.0 이하 버전의 게이트웨이 백업 다운로드 파일(server/lib/gateway/gateway.downloadBackup.js)에서 발견된 보안 결함(CVSS 9.0).</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/20</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">9<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136410" target="_blank" rel="noopener"><span class="mono">CVE-2026-136410</span></a> · Thymeleaf</h3>
+              <p>인증 없는 원격 공격자가 금지된 행위를 수행할 수 있는 제한 표현식 모드 우회 취약점이다(CVSS 9.0).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">8.1<small>CVSS</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-135736" target="_blank" rel="noopener"><span class="mono">CVE-2026-135736</span></a> · FFmpeg</h3>
+              <p>FFmpeg 9.1 이전 버전의 vf_deband.c에서 힙 메모리를 손상시킬 수 있는 취약점이다(CVSS 8.1).</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">GHSA<small>GitHub Advisory</small></div>
@@ -17296,6 +18193,82 @@
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><a href="https://github.com/advisories/GHSA-c4hm-4h84-2cf3" target="_blank" rel="noopener"><span class="mono">CVE-2026-59726</span></a> · ruflo</h3>
+              <p>기본 Docker Compose 배포에서 인증 없는 원격 코드 실행이 가능한 취약점이다. GitHub Advisory 기준이며, CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
+            <div class="cve-main">
+              <h3><a href="https://github.com/advisories/GHSA-g9x9-q7qj-6mv5" target="_blank" rel="noopener"><span class="mono">CVE-2026-63305</span></a> · AVideo</h3>
+              <p>notifyCode/callback을 통한 OS 명령 주입이 가능한 취약점이다. GitHub Advisory 기준이며, CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">Wordfence<small>Wordfence Intelligence</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.wordfence.com/blog/2026/11/machine-generated-fake-plugin-turns-wordpress-sites-into-javascript-delivery-points/" target="_blank" rel="noopener">기계 생성 가짜 플러그인, WordPress 사이트를 JavaScript 배포 지점으로 전환</a></h3>
+              <span class="cve-orig">Machine-Generated Fake Plugin Turns WordPress Sites Into JavaScript Delivery Points</span>
+              <p>기계 생성 가짜 플러그인이 WordPress 사이트를 JavaScript 배포 지점으로 바꾼다. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">CISA<small>ICS Advisory</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02" target="_blank" rel="noopener">Schneider Electric EcoStruxure Power Build Rapsody 소프트웨어(CISA ICS 권고)</a></h3>
+              <span class="cve-orig">Schneider Electric EcoStruxure Power Build Rapsody software</span>
+              <p>CISA ICS 권고 대상인 Schneider Electric 소프트웨어의 취약점이다. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">CISA<small>ICS Advisory</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03" target="_blank" rel="noopener">Danfoss AK-SM 8xxA 시리즈(CISA ICS 권고)</a></h3>
+              <span class="cve-orig">Danfoss AK-SM 8xxA Series</span>
+              <p>CISA ICS 권고 대상인 Danfoss AK-SM 8xxA 시리즈의 취약점이다. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">CISA<small>ICS Advisory</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01" target="_blank" rel="noopener">AutomationDirect C-More EA9 프로그래밍 소프트웨어(CISA ICS 권고)</a></h3>
+              <span class="cve-orig">AutomationDirect C-More EA9 Programming Software</span>
+              <p>CISA ICS 권고 대상인 AutomationDirect C-More EA9 프로그래밍 소프트웨어의 취약점이다. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener"><span class="mono">CVE-2026-132224</span></a> · Optimizely Web Experimentation</h3>
+              <p>Optimizely Web Experimentation — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener"><span class="mono">CVE-2026-131914</span></a> · Idunno AntiCsrf</h3>
+              <p>Idunno AntiCsrf — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener"><span class="mono">CVE-2026-132165</span></a> · Drupal Core</h3>
+              <p>Drupal Core — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/24</span></div>
+          </article>
 
         </div>
         <p class="note">Oracle 2026년 11월 CPU(11/17)와 Java4Shell·N-able 묶음은 11월 16~17일 <strong>처음 공개·보고</strong>된 항목입니다. 나머지는 11월 10~12일 공개분이 KISA 권고·CISA KEV 등재로 이번 주 다시 부상한 것으로, 공개일을 함께 표기했습니다.</p>
@@ -17307,14 +18280,118 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 1822건 · 해외 825건 · 2026년 11월 16~24일 보도</p>
+          <p>국내 1848건 · 해외 870건 · 2026년 11월 16~25일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-                        <p class="col-note">1822건 · 2026년 11월 16~24일 보도</p>
+                        <p class="col-note">1848건 · 2026년 11월 16~25일 보도</p>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1PckhQaUhsX2ZMSDNzQ0lReE9sczNfMXZjMGlGU0Y4SVZCZ2t3bUwzQXptSktleEJzRTRJd3hPaVQ3NVhjWVZSZUN0alJkT3V3X0prNFUxU3dYOEs3QmNQUnl3?oc=5" target="_blank" rel="noopener">[사설] 경기도교육청 개인정보 관리 ‘구멍'</a></h3>
+              <span class="news-meta">경기신문 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5WNXhqSkY4Z1k0M05QSTR5dUZfMEh6elhhWkpBTUNCcjFndEZjVTNRbTNDMUpmdXZleWRIN1NhdGF4Z040TWRKeGlpMEFwcVNPdFJiMFNYS1J3SkJoNVpzLVRXSDlVWEU?oc=5" target="_blank" rel="noopener">中 해킹 조직, 기업 내부망 뚫고 '서버 관리자 권한' 탈취 정황</a></h3>
+              <span class="news-meta">뉴스1 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.yna.co.kr/view/AKR20261125007400072" target="_blank" rel="noopener">"CIA·국가정보국 해킹 피해"…美정보당국 보안우려 고조</a></h3>
+              <span class="news-meta">Yonhap news · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPOEx4NnpYdjd1U1FYRDk0VzhST1U0QWVVVjRFYnF2VWRRb1JjQ2dpNjg2cGpjWWxXRnl4ZkEzaGtQbnNnUlZsMW5JQnpfVVNCRmRLUTg1bzNicnBlTDNZSVE0MG54NHBON0xUeFdEZEV5Z3NBMHdJN1hFREVKdDU4Yw?oc=5" target="_blank" rel="noopener">＂CIA·국가정보국 해킹 피해＂…美정보당국 보안우려 고조</a></h3>
+              <span class="news-meta">한국경제TV · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE03RE9KYmo4bUotT2tFMlNqbWRGc1g0dFpwZXptVjJfcFlqMUhVdnJldEV2SXF1VkEza01SUE8xeU5vQXBxaXQ5Z3pOVlUwNDcyb080SlBBQjJUSkdabzk5SFJUa0p2VlVzQmdXRmxVYUNCakHSAWZBVV95cUxQa3MwYms3MVlKcUllUEdjU1hydUk4WEtTYklUZVVFeG56djdKWjZaWF9DSi1vTTd3VTBaZVo3RS0zMlZmOGQxMnBEcUx2V0dyNnBlY2NMdTdmTUZ3QklsZURwcS1qVEE?oc=5" target="_blank" rel="noopener">美 은행들, AI비서 해킹 대비 ‘킬 스위치’ 검토</a></h3>
+              <span class="news-meta">동아일보 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNVW13dDQ3WFhKRTFnbTl6QzdnUXFJX1lJTHhUclBBdmdpdHlJSU5IelFVZmxqd2g5emo4VFVZelZTcVBVdk5DMk1aMlJfelMyY2x6SlNidWYyejJuXzV6QVc5ZG1ucGkyU2UwYS1zby1zalVnWXFFUzJRZzN4UnZTdHN2bUNsVGV4TjFhSVluYklMUQ?oc=5" target="_blank" rel="noopener">22개 조직의 Check Point 서버를 침해한 사이버 공격 캠페인</a></h3>
+              <span class="news-meta">GeekNews · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE13cEx1aVdINlUwc2owak8yUnR1cFVIT3RvakUwblIydkcyV3BTM2dOUlhfZFBodXgybXVvdWtheThqZ3lZQWxjUjlYUUdxaS1Hc0F6NUFqMUZYU2JSSGRCMDAyNFFwQQ?oc=5" target="_blank" rel="noopener">[종목 브리핑] 아이티센피엔에스, AI 취약점 진단부터 운영 대응까지</a></h3>
+              <span class="news-meta">비건뉴스 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209707" target="_blank" rel="noopener">하나저축은행 해킹…고객 552명 주민등록번호 등 개인신용정보 유출 확인</a></h3>
+              <span class="news-meta">Dailysecu · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209706" target="_blank" rel="noopener">국립순천대학교 해킹…구 향림통시스템 개인정보 유출 정황 확인</a></h3>
+              <span class="news-meta">Dailysecu · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9PR0hBeEVVNEgzTWxqSTB3NTYxUGRub2RpYXpBU0ZpM0VTLXBMbnZrTUQwc0lPNlNILTBHWWE5Ym9DcTZpZEtqZmlQYkdiTHYyaFNqcnNfTzJDU0dNckRMdkR2aVBjdEs2?oc=5" target="_blank" rel="noopener">'해킹 위협 고도화' 반도체 첨단기술 기업 보안전담 인력 0명... 공급망 뚫리면 다 털린다</a></h3>
+              <span class="news-meta">공정뉴스 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kNDJiZy1uTTZzaG0xQUtkbFhvY1I2X2EwNlNrYVc2MHBsR0VMeGFWNjVOZjBHQjBkNVk3eW5pSGlXZ0M0R0xkTmN1WTdHYmZGNkHSAVNBVV95cUxQdkQzN09qYkZpUGxfaGZpLWtCZlQ2VHBHblJSVU9TbUpmY2NlSi1kbHpuY2lGQjJac1NyUWxobFkxbG5EVFlGSXBBQmpYeVFUTVJjMA?oc=5" target="_blank" rel="noopener">첫날 5조 원 판 ‘GTA 6’, 비공식 PC판 뚫렸다…해킹 파일을 AI로 변조</a></h3>
+              <span class="news-meta">서울경제 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209705" target="_blank" rel="noopener">[전문가 칼럼-11] API는 달라졌는데, 취약점은 왜 낯익을까 ①</a></h3>
+              <span class="news-meta">Dailysecu · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0S1M5LUNMVVpiRW1wb0Zra2Z1UVRlQ1BVekJUY01zU3hzampaTDZXSnZnNXk4TVRSajMzX0ZfY2ZIMW5mVldTSXBsTnROZm00Q3lmdHBjY3JnQV85Nk10SjNfQ1dEdUxH?oc=5" target="_blank" rel="noopener">디지털자산업자, 해킹·전산장애 시 무과실 배상…매매·중개·보관업 인가제 도입</a></h3>
+              <span class="news-meta">CBC뉴스 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209704" target="_blank" rel="noopener">[이슈] 한전 해킹 뒤 ‘취약점 방치’ 제보 확인해보니…신고 건은 패치, 정부 취약점 신고제에 ‘패치 데드라인’ 도입 시급</a></h3>
+              <span class="news-meta">Dailysecu · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://zdnet.co.kr/view/?no=20261125002602" target="_blank" rel="noopener">국정원, 국가배후 해킹조직 정보 수집 확대 추진</a></h3>
+              <span class="news-meta">ZDNet Korea · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://zdnet.co.kr/view/?no=20261125000013" target="_blank" rel="noopener">일본 게이오그룹, 랜섬웨어에 당했다…개인정보 1100만명분 유출 우려</a></h3>
+              <span class="news-meta">ZDNet Korea · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiggJBVV95cUxQa0o5UWFlZkUyeUFnY3JwUndTNWthMUY4NTlXazZCX05mckNqc2hKVEJtZGlZb2ZXU2FodWJzd0IzNnhYZ19ZSWl5azNBZDNidG55QjdZdGtsSkZwOVhxNjFuNG5oNkd6SU13WktERXN3SmN3eG1qaHlsNnVYOHppY3RqUGRrXzFiMXViVTdicU1vYjljdnF3RTZPaTdqUzM1U0FiczUzaHU5MC1RUG1nZ0pmZXlEdzNYdEIzaGxvSUZjY0NnTW91VXluYmItcGNvdE9LOHFjU21pMTdCQ0t4X2VOeGdwSHBnSmt3OFdLbFlNWkRlQ1ZNdjRFMmVfdHdnVlE?oc=5" target="_blank" rel="noopener">에너지 운반선 최대 50척 해킹·폭파 위협…美, 이란 소행 의심</a></h3>
+              <span class="news-meta">데일리안 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBDbWNPNnpBQTZjeXRhY1E2aGJJQjRrdkJvQU5LYkNFR0ZUVFFIVFl3NHVFeUtmSV9IeUVoUVJjRmNJNDZSc0dfdWFNc1hfWmQ5ZXlZM3ZXZ3JQMzJQbU9MOWl6SnR2TnIwRmc?oc=5" target="_blank" rel="noopener">자율형 AI 해킹, 가짜 공격 경로로 무력화...공격 우회율 87%</a></h3>
+              <span class="news-meta">지티티코리아 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://zdnet.co.kr/view/?no=20261124182254" target="_blank" rel="noopener">민주당, 연이은 해킹 사고에 '과기혁신특위 보안분과' 첫발</a></h3>
+              <span class="news-meta">ZDNet Korea · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFA3MUVZTDdMYlpjdTNMNUhIYmd1Ym85ZEozNkItVWhyUmFaeUxpRVRraHJEdXNoSnZya1pvdVd6R0Q1UUduVTI2R1pyQkhPM1JrbE9heXRsek5hZGxIRFA3LUEwWUt0ODJSRU1JQQ?oc=5" target="_blank" rel="noopener">하나저축은행 해킹 피해…고객 552명 정보 유출</a></h3>
+              <span class="news-meta">뉴시안 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9YLWUybFQ2eWdvWGRmNS14SlJFdkp2YllzQXJCQWlPRkZKTU9JN3VpTTdVeDdLeWVXWnZScFljWVFqaS1jWUkzRFAyRWFYY3JlY3FoZnlfUGZEeXRPMDdBa2xoQ21pdlNHLUN4cmt2MA?oc=5" target="_blank" rel="noopener">[경고등 켜진 개인정보] 잇따르는 유출 일상화…생활 속 보안수칙 지켜야</a></h3>
+              <span class="news-meta">중부일보 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9QTVRqbzBJTU9fNXpjWS1QZ1oxRmFBQzQta0RQZlVQOTdlSXppdDF3OHhyVFdSRHVXb083ZFdTTkt3MjdiYzFrN3hqTkVSS0I3UGZHQXNfa2ptT1ludWhoYjloOGdzc0ZRUTJOQTl3?oc=5" target="_blank" rel="noopener">하나저축은행 해킹 '고객 552명' 정보 유출</a></h3>
+              <span class="news-meta">세이프머니 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1aZkI5Uk9zTEg1QzN6b0RsVTVCN2Fia1BrTHpTWmVzbDZXV2JLSkNocVBSY3kxbmZFSzlTZ2tiZ2N2blBVV2JQa3pQemlnUy1BZnfSAVNBVV95cUxOQnlNNmZEbWYxeUUxVjB2RUhWeWpNTjlyRkc5ZWl3T3dxS19lODRUVml6ajk1d2JTZjBnX25tVFRQZUhUNTZpVmQzOGdNQndRMmduOA?oc=5" target="_blank" rel="noopener">하나저축은행, 고객 552명 개인정보 유출</a></h3>
+              <span class="news-meta">서울경제 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03SzktZ0s2LW5YQ1M5YXRoRXFnR3V3cUFMMlNzaXFnZGFEd3p3bXVYMk42MGU0S0xvcXppd0JKX1NuV3ZPMG5kMFZNNk9naldyNjJCRGV0ZUxTQjJncVEtRDIwMHY2NDQ?oc=5" target="_blank" rel="noopener">한화에어로, 창원에 해킹 원천 차단 '군 전용 AI 센터'···2028년 가동 목표</a></h3>
+              <span class="news-meta">팍스경제TV · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFAxTUtlZG0wU3ZPaGNOLXVnc0kyTzN0TjNYLTVnLVdUdzNtdzNzS0pxZ2YzdElWb3BXcTZZZjV5TUFlZEFiZHZaNUUxNklJSmFVbFY3VWtaTHpzSlBHV0VkY0pualp1bDF4b0tlUmI5R0lKVEIw0gF0QVVfeXFMUDUxMEloQWNjaU55ZFBUcmVtRE9lSHpNWTJfUWxwLXRKTVJfelEtZUpOLTN1ODRRczBVcmZzang2aFdzODBTek9wZXhhTncxZFdRcGgxWWJQUWk3WVptYnlOR2pkaU1fTjJnY2lYZEJQaXEtdFU?oc=5" target="_blank" rel="noopener">해킹 발생한 디지털자산업자에 무과실 손해배상책임·징벌적 과징금 물린다</a></h3>
+              <span class="news-meta">MBC 뉴스 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE84LXpFRnI5YXdhanp6c0E4Z2s1ZEZyUEVKZnRmNDhuVUl5WHZUQkxvbURuWlNRM2w1bEtBanBPemtyNmZUWDJEeTZ0cFF6b25BWTJNSzYya0NBem8?oc=5" target="_blank" rel="noopener">VOA “미 법무부, 북 바이낸스 해킹 자금 1조5천억 원 몰수 소송”</a></h3>
+              <span class="news-meta">KBS 뉴스 · 2026-11-24</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://www.yna.co.kr/view/AKR20261124181300079" target="_blank" rel="noopener">이스라엘, 가자지구 공습해 하마스 고위 보안관리 사살</a></h3>
               <span class="news-meta">연합뉴스 · 2026-11-24</span>
@@ -24614,7 +25691,277 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-                        <p class="col-note">825건 · November 16–24, 2026</p>
+                        <p class="col-note">870건 · November 16–25, 2026</p>
+            <article class="news-item">
+              <h3><a href="https://techcrunch.com/2026/11/24/dozens-of-oil-and-shipping-tankers-hacked-in-recent-weeks-per-report/" target="_blank" rel="noopener">최근 수주간 수십 척의 석유·해운 유조선 해킹됐다는 보고</a></h3>
+              <span class="news-orig">Dozens of oil and shipping tankers hacked in recent weeks, per report</span>
+              <p class="news-sum">최근 수주간 수십 척의 유조선이 해킹됐다는 보고가 나왔다.</p>
+              <span class="news-meta">TechCrunch security · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/microsoft-fixes-azure-flaws-exploited-by-bad-actors-to-steal-secrets/" target="_blank" rel="noopener">Microsoft, 악성 행위자가 비밀 탈취에 악용한 Azure 결함 수정</a></h3>
+              <span class="news-orig">Microsoft Fixes Azure Flaws Exploited by Bad Actors to Steal Secrets</span>
+              <p class="news-sum">Microsoft가 악성 행위자가 비밀 탈취에 악용한 Azure 결함을 수정했다.</p>
+              <span class="news-meta">Security Boulevard · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/mycolorado-app-down-data-breach" target="_blank" rel="noopener">콜로라도, 사이버공격으로 myColorado 앱 중단…15만 명 데이터 도난 경고</a></h3>
+              <span class="news-orig">Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen</span>
+              <p class="news-sum">콜로라도주 사이버공격으로 myColorado 앱이 중단되고 15만 명의 데이터 도난이 경고됐다.</p>
+              <span class="news-meta">The Record · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/" target="_blank" rel="noopener">신종 갈취 조직 '인셉션', 대규모 보이스피싱 캠페인 개시</a></h3>
+              <span class="news-orig">New Inception extortion gang launches large-scale vishing campaign</span>
+              <p class="news-sum">신생 갈취 조직이 대규모 보이스피싱 캠페인을 벌이고 있다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/24/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/5311978" target="_blank" rel="noopener">'우리는 ShinyHunters가 아니다' — ShinyHunters처럼 보이고 행동하는 범죄 해킹 조직</a></h3>
+              <span class="news-orig">'We are not ShinyHunters,' says criminal hacking crew that looks and acts just like ShinyHunters</span>
+              <p class="news-sum">ShinyHunters와 흡사한 범죄 조직이 자신들은 ShinyHunters가 아니라고 주장한다.</p>
+              <span class="news-meta">The Register security · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://aws.amazon.com/blogs/security/delegate-user-access-to-ai-agents-with-amazon-cognito-token-exchange/" target="_blank" rel="noopener">Amazon Cognito 토큰 교환으로 AI 에이전트에 사용자 접근 위임</a></h3>
+              <span class="news-orig">Delegate user access to AI agents with Amazon Cognito token exchange</span>
+              <p class="news-sum">Cognito 토큰 교환으로 AI 에이전트에 사용자 접근을 위임하는 방법이다.</p>
+              <span class="news-meta">AWS Security Blog · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/california-privacy-agency-kemp" target="_blank" rel="noopener">캘리포니아 개인정보 보호국장 Kemp, 2년 임기 마치고 퇴임</a></h3>
+              <span class="news-orig">California privacy agency director Kemp to leave after two-year tenure</span>
+              <p class="news-sum">캘리포니아 개인정보 보호기관장이 2년 임기를 마치고 떠난다.</p>
+              <span class="news-meta">The Record · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://grafana.com/grafana/download" target="_blank" rel="noopener">Grafana 12.4.16·13.0.14·13.1.11·13.2.7·13.3.2 (다수 CVE)</a></h3>
+              <span class="news-orig">Grafana 12.4.16, 13.0.14, 13.1.11, 13.2.7 and 13.3.2 (multiple CVEs)</span>
+              <p class="news-sum">Grafana 여러 버전이 다수 CVE 패치를 담은 업데이트를 냈다.</p>
+              <span class="news-meta">Hacker News · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/" target="_blank" rel="noopener">Turnitin, 고객 대면 시스템 영향 사이버공격 공개</a></h3>
+              <span class="news-orig">Turnitin discloses cyberattack affecting customer-facing systems</span>
+              <p class="news-sum">Turnitin이 고객 대면 시스템에 영향을 준 사이버공격을 공개했다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://aws.amazon.com/blogs/security/aws-completed-its-second-iso-iec-420012023-surveillance-audit/" target="_blank" rel="noopener">AWS, 두 번째 ISO/IEC 42001:2023 사후 심사 완료</a></h3>
+              <span class="news-orig">AWS completed its second ISO/IEC 42001:2023 surveillance audit</span>
+              <p class="news-sum">AWS가 ISO/IEC 42001 두 번째 사후 심사를 마쳤다.</p>
+              <span class="news-meta">AWS Security Blog · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/u-s-investigates-irans-possible-role-in-cyberattacks-on-energy-tankers/" target="_blank" rel="noopener">미국, 에너지 유조선 사이버공격에 이란 개입 가능성 조사</a></h3>
+              <span class="news-orig">U.S. Investigates Iran’s Possible Role in Cyberattacks on Energy Tankers</span>
+              <p class="news-sum">미국이 에너지 유조선 사이버공격에 이란이 개입했는지 조사하고 있다.</p>
+              <span class="news-meta">Security Boulevard · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/" target="_blank" rel="noopener">영국, AI 주도 사이버공격이 수년간의 취약한 보안을 드러낸다고 경고</a></h3>
+              <span class="news-orig">UK warns AI-driven cyberattacks are exposing years of weak security</span>
+              <p class="news-sum">영국이 AI 주도 사이버공격이 오랜 보안 취약점을 드러내고 있다고 경고했다.</p>
+              <span class="news-meta">TechCrunch security · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/" target="_blank" rel="noopener">Radware, 고객 클라우드 접근 키 노출 침해 공개</a></h3>
+              <span class="news-orig">Radware discloses breach exposing customer cloud access keys</span>
+              <p class="news-sum">Radware가 고객 클라우드 접근 키가 노출된 침해를 공개했다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/idscan-data-breach-warning-congressional-letter" target="_blank" rel="noopener">의원들, 9월 해킹 이후 신원확인 기업들에 보안 강화 경고</a></h3>
+              <span class="news-orig">Lawmakers warn ID verification companies to bolster security after September hack</span>
+              <p class="news-sum">의원들이 9월 해킹 이후 신원확인 기업들에 보안 강화를 촉구했다.</p>
+              <span class="news-meta">The Record · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cyberscoop.com/kash-patel-fbi-ncic-database-hack/" target="_blank" rel="noopener">Patel, FBI 범죄정보 DB 해킹에 진행 중 조사 이유로 언급 거부</a></h3>
+              <span class="news-orig">Patel mum on FBI crime info database hack, citing ongoing investigation</span>
+              <p class="news-sum">FBI 국장이 범죄정보 데이터베이스 해킹에 대해 진행 중인 조사라며 언급을 거부했다.</p>
+              <span class="news-meta">CyberScoop · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/national-security-concerns-escalate-as-nvidia-reinstates-ceo-jensen-huang/" target="_blank" rel="noopener">국가안보 우려 고조 속 NVIDIA, Jensen Huang CEO 복직</a></h3>
+              <span class="news-orig">National Security Concerns Escalate as NVIDIA Reinstates CEO Jensen Huang</span>
+              <p class="news-sum">국가안보 우려가 커지는 가운데 NVIDIA가 Jensen Huang CEO를 복직시켰다.</p>
+              <span class="news-meta">Security Boulevard · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://aws.amazon.com/blogs/security/aws-achieves-spains-national-limited-distribution-difusion-limitada-and-nato-restricted-accreditation-in-the-aws-europe-spain-region/" target="_blank" rel="noopener">AWS, 스페인 국가 제한배포·NATO 제한 등급 인증 획득</a></h3>
+              <span class="news-orig">AWS achieves Spain’s national Limited Distribution (Difusión Limitada) and NATO Restricted accreditation in the AWS Europe (Spain) Region</span>
+              <p class="news-sum">AWS가 스페인 국가 제한배포와 NATO 제한 등급 인증을 받았다.</p>
+              <span class="news-meta">AWS Security Blog · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://databreaches.net/2026/11/24/gingko-bioworks-holdings-issued-a-statement-on-october-8-about-a-data-breach-getting-an-update-from-them-has-been-difficult/" target="_blank" rel="noopener">Gingko Bioworks, 10월 8일 데이터 유출 성명 이후 업데이트 얻기 어려워</a></h3>
+              <span class="news-orig">Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.</span>
+              <p class="news-sum">Gingko Bioworks의 10월 8일 유출 성명 이후 후속 업데이트가 나오지 않고 있다.</p>
+              <span class="news-meta">DataBreaches.Net · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cyberscoop.com/uk-ncsc-ai-assisted-cyberattacks/" target="_blank" rel="noopener">영국 사이버 기관·위협 기업들, AI 활용 해킹 증가 추적</a></h3>
+              <span class="news-orig">UK cyber agency, threat companies tracking rise in AI-assisted hacks</span>
+              <p class="news-sum">영국 사이버 기관과 위협 기업들이 AI 활용 해킹 증가를 추적하고 있다.</p>
+              <span class="news-meta">CyberScoop · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.cybersecuritydive.com/news/ai-vulnerability-openai-cisco-shirudo-linux/875644/" target="_blank" rel="noopener">OpenAI·Cisco, AI 에이전트가 취약점 악용을 안전하게 차단하는 도구 공개</a></h3>
+              <span class="news-orig">OpenAI, Cisco debut tool that lets AI agents safely block vulnerability exploitation</span>
+              <p class="news-sum">OpenAI와 Cisco가 AI 에이전트가 취약점 악용을 차단하는 도구를 공개했다.</p>
+              <span class="news-meta">Cybersecurity Dive · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/enabling-holistic-cyber-resilience-in-the-cloud/" target="_blank" rel="noopener">클라우드에서의 총체적 사이버 회복탄력성 구현</a></h3>
+              <span class="news-orig">Enabling Holistic Cyber Resilience in the Cloud</span>
+              <p class="news-sum">클라우드 환경의 총체적 사이버 회복탄력성 구현 방법을 다뤘다.</p>
+              <span class="news-meta">Security Boulevard · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.malwarebytes.com/blog/ai/2026/11/a-bot-tested-an-aws-key-within-8-seconds-of-exposure" target="_blank" rel="noopener">봇, 노출된 AWS 키를 8초 만에 테스트</a></h3>
+              <span class="news-orig">A bot tested an AWS key within 8 seconds of exposure</span>
+              <p class="news-sum">노출된 AWS 키가 8초 만에 봇에 의해 테스트됐다.</p>
+              <span class="news-meta">Malwarebytes · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.theregister.com/security/2026/11/24/an-ai-coding-agent-a-browser-and-a-mac-tool-found-a-financial-firms-access-key-in-under-6-minutes/5311922" target="_blank" rel="noopener">AI 코딩 에이전트·브라우저·Mac 도구, 6분 만에 금융회사 접근 키 발견</a></h3>
+              <span class="news-orig">An AI coding agent, a browser, and a Mac tool found a financial firm's access key in under 6 minutes</span>
+              <p class="news-sum">AI 코딩 에이전트 등이 6분 만에 금융회사 접근 키를 찾아냈다.</p>
+              <span class="news-meta">The Register security · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html" target="_blank" rel="noopener">이란 연계 Volant Manticore, IPFS 기반 KuboShell 백도어로 스파이 활동</a></h3>
+              <span class="news-orig">Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns</span>
+              <p class="news-sum">이란 연계 조직이 IPFS 기반 백도어를 이용한 스파이 캠페인을 벌이고 있다.</p>
+              <span class="news-meta">The Hacker News · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/" target="_blank" rel="noopener">VMware, 치명적 ESX·vCenter 취약점 패치 업데이트</a></h3>
+              <span class="news-orig">VMware Updates Patch Critical ESX, vCenter Vulnerabilities</span>
+              <p class="news-sum">VMware가 ESX와 vCenter의 치명적 취약점 패치를 업데이트했다.</p>
+              <span class="news-meta">SecurityWeek · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign" target="_blank" rel="noopener">Check Point 보안 관리 서버 대상 활발한 침입 캠페인</a></h3>
+              <span class="news-orig">Active intrusion campaign against Check Point security management servers</span>
+              <p class="news-sum">Check Point 보안 관리 서버를 노린 활발한 침입 캠페인이 진행 중이다.</p>
+              <span class="news-meta">Hacker News · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/" target="_blank" rel="noopener">ShinyHunters, FBI 체포 이후 복귀 주장…구 PGP 키로 증명</a></h3>
+              <span class="news-orig">ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof</span>
+              <p class="news-sum">ShinyHunters가 FBI 체포 이후 복귀를 주장하며 과거 PGP 키를 증거로 제시했다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.infosecurity-magazine.com/news/inception-extortion-sso-vishing/" target="_blank" rel="noopener">신종 갈취 브랜드 '인셉션', SSO 비싱 캠페인과 연계</a></h3>
+              <span class="news-orig">New Inception Extortion Brand Tied to SSO Vishing Campaign</span>
+              <p class="news-sum">신생 갈취 브랜드가 SSO 보이스피싱 캠페인과 연결됐다.</p>
+              <span class="news-meta">Infosecurity Magazine · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/ai-agents-a-practical-guide-and-the-chapters-to-read-first/" target="_blank" rel="noopener">AI 에이전트: 실용 가이드와 먼저 읽을 장</a></h3>
+              <span class="news-orig">AI Agents: A Practical Guide, and the Chapters to Read First</span>
+              <p class="news-sum">AI 에이전트 실용 가이드와 먼저 읽을 장을 소개했다.</p>
+              <span class="news-meta">Security Boulevard · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/" target="_blank" rel="noopener">유럽연합 집행위원회, EU 아카데미 침해로 데이터 도난 확인</a></h3>
+              <span class="news-orig">European Commission confirms data theft in EU Academy breach</span>
+              <p class="news-sum">EU 집행위가 EU 아카데미 침해에서 데이터가 도난당한 것을 확인했다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://arcticwolf.com/resources/technical-videos/how-swarmview-provides-transparency-around-ai-driven-investigations-and-trustworthy-results/" target="_blank" rel="noopener">SwarmView가 AI 주도 조사 투명성과 신뢰할 결과를 제공하는 방법</a></h3>
+              <span class="news-orig">How SwarmView Provides Transparency Around AI-driven Investigations and Trustworthy Results</span>
+              <p class="news-sum">SwarmView가 AI 주도 조사의 투명성과 신뢰할 결과를 제공하는 방법을 소개했다.</p>
+              <span class="news-meta">Arctic Wolf · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/" target="_blank" rel="noopener">해커들, 22개 조직의 Check Point 서버 침해</a></h3>
+              <span class="news-orig">Hackers compromise Check Point Servers in 22 organizations</span>
+              <p class="news-sum">해커들이 22개 조직의 Check Point 서버를 침해했다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/carnegie-endowment-data-breach" target="_blank" rel="noopener">카네기국제평화재단, 제3자 침해로 기부 정보 유출</a></h3>
+              <span class="news-orig">Carnegie Endowment for International Peace says third-party breach leaked donation info</span>
+              <p class="news-sum">카네기 재단이 제3자 침해로 기부자 정보가 유출됐다고 밝혔다.</p>
+              <span class="news-meta">The Record · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://securityboulevard.com/2026/11/quantifying-ot-and-ics-cyber-risk-kovrr/" target="_blank" rel="noopener">OT·ICS 사이버 리스크 정량화 | Kovrr</a></h3>
+              <span class="news-orig">Quantifying OT and ICS Cyber Risk | Kovrr</span>
+              <p class="news-sum">OT·ICS 사이버 리스크를 정량화하는 방법을 다뤘다.</p>
+              <span class="news-meta">Security Boulevard · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.cybersecuritydive.com/news/ai-enabled-campaign-targets-check-point-security-management-servers/875622/" target="_blank" rel="noopener">AI 활용 캠페인, Check Point 보안 관리 서버 노려</a></h3>
+              <span class="news-orig">AI-enabled campaign targets Check Point Security Management servers</span>
+              <p class="news-sum">AI를 활용한 캠페인이 Check Point 보안 관리 서버를 노리고 있다.</p>
+              <span class="news-meta">Cybersecurity Dive · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/" target="_blank" rel="noopener">경찰, 방문 730만 건 불법 스트리밍 서비스 57곳 차단</a></h3>
+              <span class="news-orig">Police disrupt 57 illegal streaming services with 7.3 million visits</span>
+              <p class="news-sum">경찰이 730만 회 방문을 기록한 불법 스트리밍 서비스 57곳을 차단했다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/" target="_blank" rel="noopener">취약점 노이즈에서 회복탄력성으로: AI 시대 보안 재고</a></h3>
+              <span class="news-orig">From Vulnerability Noise to Resilience: Rethinking Security in the AI Era</span>
+              <p class="news-sum">AI 시대 보안 접근법을 다시 생각하자는 기고다.</p>
+              <span class="news-meta">BleepingComputer · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/" target="_blank" rel="noopener">에이전틱 AI 공격의 최근 동향과 전술</a></h3>
+              <span class="news-orig">Recent Trends and Tactics of Agentic AI Attacks</span>
+              <p class="news-sum">자율 AI 에이전트 공격의 최근 동향과 전술을 분석했다.</p>
+              <span class="news-meta">Palo Alto Unit42 · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/cisa-nable-cybersecurity-bug" target="_blank" rel="noopener">CISA, N-able 버그 악용 경고…회사는 이메일 플랫폼 복구 중</a></h3>
+              <span class="news-orig">CISA warns of exploited N-able bug as company restores email platform</span>
+              <p class="news-sum">CISA가 악용 중인 N-able 버그를 경고했고 회사는 이메일 플랫폼을 복구하고 있다.</p>
+              <span class="news-meta">The Record · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/" target="_blank" rel="noopener">유럽연합 집행위원회, 사이버공격 조사에서 데이터 유출 발견</a></h3>
+              <span class="news-orig">European Commission Uncovers Data Breach in Cyberattack Investigation</span>
+              <p class="news-sum">EU 집행위 조사에서 사이버공격으로 인한 데이터 유출이 확인됐다.</p>
+              <span class="news-meta">SecurityWeek · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.cybersecuritydive.com/news/food-agriculture-cybersecurity-usda-fda-gao-report/875596/" target="_blank" rel="noopener">GAO, 식품 분야 사이버 위협 방어 지원 기회 놓치는 연방기관 지적</a></h3>
+              <span class="news-orig">Federal agencies missing opportunities to help protect food sector from cyber threats, GAO says</span>
+              <p class="news-sum">GAO가 식품 분야 사이버 위협 방어를 도울 기회를 놓치고 있다고 연방기관을 지적했다.</p>
+              <span class="news-meta">Cybersecurity Dive · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.crowdstrike.com/en-us/blog/reprioritizing-automated-leads-crowdstrike-signal/" target="_blank" rel="noopener">CrowdStrike Signal로 자동화 리드 우선순위 재조정</a></h3>
+              <span class="news-orig">Reprioritizing Automated Leads with CrowdStrike Signal</span>
+              <p class="news-sum">CrowdStrike Signal로 자동화 리드를 우선순위대로 재조정하는 방법을 소개했다.</p>
+              <span class="news-meta">CrowdStrike · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://cofense.com/blog/automation-you-can-explain-why-ai-driven-phishing-defense-needs-human-oversight" target="_blank" rel="noopener">설명 가능한 자동화: AI 주도 피싱 방어가 인간 감독을 필요로 하는 이유</a></h3>
+              <span class="news-orig">Automation You Can Explain: Why AI-Driven Phishing Defense Needs Human Oversight</span>
+              <p class="news-sum">AI 주도 피싱 방어가 인간 감독을 필요로 하는 이유를 설명했다.</p>
+              <span class="news-meta">Cofense · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://snyk.io/blog/secure-ai-coding-agents-nvidia-openshell/" target="_blank" rel="noopener">NVIDIA OpenShell 속 Evo 에이전틱 개발 보안과 Evo 의존성 방화벽</a></h3>
+              <span class="news-orig">Evo Agentic Development Security and Evo Dependency Firewall Inside NVIDIA OpenShell</span>
+              <p class="news-sum">NVIDIA OpenShell에서 에이전틱 개발 보안과 의존성 방화벽을 소개했다.</p>
+              <span class="news-meta">Snyk Blog · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.recordedfuture.com/blog/cyber-threats-space-race" target="_blank" rel="noopener">우주 경쟁 2.0 뒤의 사이버 위협</a></h3>
+              <span class="news-orig">The Cyber Threats Behind Space Race 2.0</span>
+              <p class="news-sum">새로운 우주 경쟁 뒤에 있는 사이버 위협을 다뤘다.</p>
+              <span class="news-meta">Recorded Future · 2026-11-24</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://securityboulevard.com/2026/11/can-your-defenses-stop-ai-powered-attacks-test-them-with-safebreach/" target="_blank" rel="noopener">AI 기반 공격, 당신의 방어 체계가 막을 수 있을까? SafeBreach로 검증하기</a></h3>
               <span class="news-orig">Can Your Defenses Stop AI-Powered Attacks? Test Them With SafeBreach.</span>
@@ -29634,6 +30981,10 @@
         <div class="sec-body collapsed" id="body-archive" hidden>
           <div class="sec-inner">
             <div class="archive-list">
+              <article class="archive-item">
+                <h3><a href="archive/2026-11-24.html">2026년 11월 24일 화요일 브리핑</a></h3>
+                <p class="archive-desc">피드 2663건 · KISA 보안공지 24건 · CVE 160건 · 핵심 이슈 19건</p>
+              </article>
               <article class="archive-item">
                 <h3><a href="archive/2026-11-23.html">2026년 11월 23일 월요일 브리핑</a></h3>
                 <p class="archive-desc">실시간 뉴스 2157건 · KISA 보안공지 21건 · CVE 124건 · 핵심 이슈 16건 · 피드 86개</p>
