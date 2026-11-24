@@ -138,6 +138,7 @@
       .cve-main h3 { margin: 0; font-size: clamp(16px, 1.6vw, 17.5px); font-weight: 700; letter-spacing: -.01em; line-height: 1.45; }
       .cve-main h3 .mono { color: var(--link); font-weight: 600; font-size: 15px; overflow-wrap: anywhere; }
       .cve-main p { margin: 6px 0 0; font-size: clamp(15px, 1.4vw, 15.5px); color: var(--ink-2); line-height: 1.65; }
+      .cve-orig { display: block; font-size: 13px; color: var(--ink-3); line-height: 1.5; margin-top: 3px; }
       .cve-tags { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; }
       .tag { font-size: 13px; color: var(--ink-3); }
       .tag.new, .tag.kev { color: var(--red); font-weight: 600; }
@@ -233,7 +234,7 @@
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
           <li>한전 해킹 — 152만 명 개인정보 유출, 다크웹에 유출 정보 등장</li>
-          <li>개인정보위 사칭 악성메일 유포 — "첨부파일 열지 마세요", 3개 매체 주의보</li>
+          <li>개인정보위 사칭 악성메일 확산 — 연합뉴스·뉴시스·이데일리·파이낸셜뉴스·뉴스1·MTN·디지털투데이 등 다수 매체 주의보</li>
           <li>국내 겨냥 랜섬웨어 조직 11개→24개 급증 — 포티넷, 10개월 피해 이미 작년 2.4배</li>
           <li>삼성증권 개인정보 유출 8,241명 — 금융소비자연맹, 2차 피해 방지·배상 대책 촉구</li>
           <li>MG손보 가교보험사 개인정보 유출 — KISA·개인정보위 신고</li>
@@ -241,14 +242,14 @@
           <li>가상자산 해킹 무과실 배상 추진 — 디지털자산법 정부안, 거래소 지분 20% 제한·ICO 허용도 포함</li>
           <li>신종 AI 해킹 장터 '고질라AI' 주의보 — 공격코드 무제한 생성</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 24일 17:39 KST · 랜섬웨어 유출 현황은 11월 23일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 24일 18:09 KST · 랜섬웨어 유출 현황은 11월 23일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>24건</b> · CVE·취약점 <b>149건</b> (CVSS 9.0 이상 73건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>24건</b> · CVE·취약점 <b>158건</b> (CVSS 9.0 이상 73건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -258,11 +259,116 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 2507건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 2527건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+          <article class="feed-item">
+            <span class="feed-time">11/24 18:02</span>
+            <h3><a href="https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/" target="_blank" rel="noopener">Claude Ship, 코드 리뷰의 양쪽에 AI를 앉히다</a></h3>
+            <span class="feed-orig">Claude Ship gives AI a seat on both sides of code review</span>
+            <p class="feed-sum">Anthropic의 Claude Ship이 코드 리뷰의 양쪽 모두에 AI를 활용한다는 소식.</p>
+            <span class="feed-src">Help Net Security</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:59</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9ZRllsOWhseEpRbi1JcXo1Z2xxVVlnTG9YSW5XN0RZS3lCdUVqTXVpczZaSFF5b3IzaG9ZR01Rc2pGejdfYkRaRWFvcUFRSXZVYldIZnpiYURmNC1Xc01HOHp4YkVqQy0xQi05azVBeE9XcW8?oc=5" target="_blank" rel="noopener">개인정보위 직원 사칭 개인정보 유출 통지 악성메일 주의보</a></h3>
+            <span class="feed-src">디지털투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:57</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1HWWV2d2o4eVBmNGJpNGRUdXkzRVlqNXhyMkl0V0FLRXZ3VXV5LVdmdTB4VGxPM05oSjZMTERpTi1YVi1CSkp1WFdSODZWVXRpSUZoZldpZzNOVFN3NHpF?oc=5" target="_blank" rel="noopener">잇단 개인정보 유출에 불안감 노렸다...개인정보위 사칭 메일까지 등장</a></h3>
+            <span class="feed-src">MTN 머니투데이방송</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:52</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5GMDRJVUpBS2NqeGFUV0JKNVhEYmh0dnlBdlNnd1FrUGZHZU1GaGhWUzU4LUYyX0swVkE2dTVkVFpWUk40TzBNVTRyMS1MbTZpN3BCMmxUeXpmRzVTUzdQVjFTaHJJdlJzSWJjag?oc=5" target="_blank" rel="noopener">[취재후일담] 잇따른 개인정보 유출, 불안은 국민 몫</a></h3>
+            <span class="feed-src">아시아투데이</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:49</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pNGxKdTd4N1VVS1ZobnNNU1NGbjc3V1FGMzlfbEtUelNGbzUtbEU0XzE4MzdlRjZKbW9HRTIyZF9sLTlFbC1peDcyTVUyS09jNWFrQlNhNTlHZw?oc=5" target="_blank" rel="noopener">"개인정보 유출됐습니다"…개인정보위 사칭 악성메일 주의보</a></h3>
+            <span class="feed-src">파이낸셜뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:42</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9192-1" target="_blank" rel="noopener">USN-9192-1: 리눅스 커널(NVIDIA) 취약점</a></h3>
+            <span class="feed-orig">USN-9192-1: Linux kernel (NVIDIA) vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 NVIDIA용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:42</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9191-1" target="_blank" rel="noopener">USN-9191-1: 리눅스 커널(Azure) 취약점</a></h3>
+            <span class="feed-orig">USN-9191-1: Linux kernel (Azure) vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:41</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9190-1" target="_blank" rel="noopener">USN-9190-1: 리눅스 커널 취약점</a></h3>
+            <span class="feed-orig">USN-9190-1: Linux kernel vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:41</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9173-3" target="_blank" rel="noopener">USN-9173-3: 리눅스 커널(NVIDIA) 취약점</a></h3>
+            <span class="feed-orig">USN-9173-3: Linux kernel (NVIDIA) vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 NVIDIA용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:40</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQb2NCLUctUnNPZW5sTjMxU21oMkhuMmNrdEphV0x5YUxhRFVZamt6Z2tOQ1h5OU5yY0ExT2oycXRqbkptaFZEM2M0NjdyOUtTbGExeHlJMF9ET2VEU3F6QlZkaUZnLTlndWpIMkdrRDk4WkIzM1pRN0xsV2tPTXZFM29n0gGWAUFVX3lxTFBMbGx3TzEyaGxnbE1oWG16Nk9mN29KZlA1aVpOZUQyTW5EMUpabG1mc0loZUxCeS1Gak1tVHFVUGVOdll0ZDhXYktfVHNURVF1ZGoyN2N3Y1JZOEFRWUowY0NKa0h0eVVfSmRXRWc1SUVFVkQyMGtKZzRUd0NvMTRRdThnMUpsRmhSN1FUWnRocVRoNFFpZw?oc=5" target="_blank" rel="noopener">포티넷 "韓 노리는 랜섬웨어 조직 1년 새 두 배↑… 'AI 기억' 겨냥한 공격 본격화"</a></h3>
+            <span class="feed-src">Chosunbiz</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:40</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9174-2" target="_blank" rel="noopener">USN-9174-2: 리눅스 커널(Low Latency NVIDIA) 취약점</a></h3>
+            <span class="feed-orig">USN-9174-2: Linux kernel (Low Latency NVIDIA) vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 Low Latency NVIDIA용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:40</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9167-3" target="_blank" rel="noopener">USN-9167-3: 리눅스 커널 취약점</a></h3>
+            <span class="feed-orig">USN-9167-3: Linux kernel vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:40</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9168-4" target="_blank" rel="noopener">USN-9168-4: 리눅스 커널(Azure) 취약점</a></h3>
+            <span class="feed-orig">USN-9168-4: Linux kernel (Azure) vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:40</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9170-4" target="_blank" rel="noopener">USN-9170-4: 리눅스 커널(Azure) 취약점</a></h3>
+            <span class="feed-orig">USN-9170-4: Linux kernel (Azure) vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:40</span>
+            <h3><a href="https://ubuntu.com/security/notices/USN-9165-2" target="_blank" rel="noopener">USN-9165-2: 리눅스 커널 취약점</a></h3>
+            <span class="feed-orig">USN-9165-2: Linux kernel vulnerabilities</span>
+            <p class="feed-sum">Ubuntu가 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            <span class="feed-src">Ubuntu Security Notices</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:36</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1FOWczcVZ2Njh1dmZ0SDg2OG5BcGJTU2JqeElXRlZxRUFIZHV6R1RjcEN1eXRuVnFWZS1uVWg4eWl2VmpxME1TT29fYUcyemVTZzA1LXBNRTFUWE0xaTUxWkpQZ215VkNfSGc?oc=5" target="_blank" rel="noopener">금융당국, 디지털자산기본법 발표… '무과실 해킹 피해'에도 배상 책임</a></h3>
+            <span class="feed-src">천지일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24 17:36</span>
+            <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsRnkwYTFlWEUxVndabFRNWC1lS0JURHBGZ0hwR0tITEt2dE5lc2trMHMzTG9rRFE5VXRxVWlBNGtLRlgzVWtGWU80ejVWUHFZaWtyZC10MVRHb1cyMUVOS0dOaXVLMjQ?oc=5" target="_blank" rel="noopener">"개인정보 유출됐습니다"…개인정보위 사칭 악성메일 주의</a></h3>
+            <span class="feed-src">뉴스1</span>
+          </article>
           <article class="feed-item">
             <span class="feed-time">11/24 17:28</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKSXJ5YTF1QWlXc1htUm04Z2tmNzFadGhvQlh3RzkxSnljbFQxeHBVcDdoYmpkTTBXUkRCaUg5cEw3SjdXVTgyV3VON2lFdGY4QmNwajVLekFQNGZjakltY9IBeEFVX3lxTE90eWl2WFpFUm9WMldkUEhRc3RnenduNk9KaUdUcEtyRFdOdFhuZU9yOGx3ZXp6RjQzMUhDejhKcXJMVmZyMXZXdEwxNHdxVUFzRENnQ2llX1gya2hsanJ5eXF1eEJ5bWFZa3VaT1BuTlp0Y09sODhlQQ?oc=5" target="_blank" rel="noopener">"개인정보 유출됐으니 확인하세요"…개인정보위 사칭 악성메일 주의보</a></h3>
@@ -289,6 +395,11 @@
             <span class="feed-src">Yonhap news</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/24 17:16</span>
+            <h3><a href="https://zdnet.co.kr/view/?no=20261124170239" target="_blank" rel="noopener">레드펜소프트, 통합 취약점 관리 플랫폼에 네트워크 장비 점검 기능 추가</a></h3>
+            <span class="feed-src">ZDNet Korea</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/24 17:12</span>
             <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147499" target="_blank" rel="noopener">포티넷 “10개월 만에 피해 규모 이미 작년 2.4배... 랜섬웨어 먹잇감 된 한국 기업”</a></h3>
             <span class="feed-src">Boannews</span>
@@ -304,6 +415,11 @@
             <span class="feed-src">더퍼블릭</span>
           </article>
           <article class="feed-item">
+            <span class="feed-time">11/24 17:02</span>
+            <h3><a href="https://zdnet.co.kr/view/?no=20261124163948" target="_blank" rel="noopener">슈프리마, '글로벌 톱 50' 보안 기업 선정</a></h3>
+            <span class="feed-src">ZDNet Korea</span>
+          </article>
+          <article class="feed-item">
             <span class="feed-time">11/24 16:57</span>
             <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBoemNLTEtDRmY4WTBoLW52QWVZQVNTZzJDbXRIdFZqbVFBUlVGaXgwRmRkTkd0UXc1bkNReExmT3ZwQ01fQmtXcXU4SDZFX0ZDanNtWjM1X01qUU8yZ01UUk5xdk5sRlpBU1FFcDZn?oc=5" target="_blank" rel="noopener">금융위, 코인거래소 지분 20% 제한…해킹 시 매출 10% 과징금</a></h3>
             <span class="feed-src">알파경제</span>
@@ -312,6 +428,13 @@
             <span class="feed-time">11/24 16:56</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4TFBrTmxrckRZQ2VkWVRZb2FTTnJEWkw3WGJPOXF2RGRfZ3hLUDZNSzE2cTBtMnBVSTdCV2FjN3FzRzdGQy1sZXFfRQ?oc=5" target="_blank" rel="noopener">국내 겨냥 랜섬웨어 조직 11개서 24개로 급증 : 테크/과학</a></h3>
             <span class="feed-src">재경일보</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/24</span>
+            <h3><a href="https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license" target="_blank" rel="noopener">‘GTA VI’ 해커, 징역 7년 선고받고 당일 석방</a></h3>
+            <span class="feed-orig">‘Grand Theft Auto VI’ hacker sentenced to seven years, released the same day</span>
+            <p class="feed-sum">GTA VI 해킹 사건의 해커가 징역 7년을 선고받고 같은 날 석방됐다는 소식.</p>
+            <span class="feed-src">The Record</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/24</span>
@@ -14333,9 +14456,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>17</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>1738</b><span>국내 동향 — 11/16~24 보도</span></div>
-        <div class="stat"><b>755</b><span>해외 동향 — 11/16~24 보도</span></div>
-        <div class="stat"><b>149</b><span>CVE·취약점 — CVSS 9.0 이상 73건 포함</span></div>
+        <div class="stat"><b>1747</b><span>국내 동향 — 11/16~24 보도</span></div>
+        <div class="stat"><b>766</b><span>해외 동향 — 11/16~24 보도</span></div>
+        <div class="stat"><b>158</b><span>CVE·취약점 — CVSS 9.0 이상 73건 포함</span></div>
         <div class="stat"><b>55</b><span>다크웹 유출 — 11/23 19:39 확인 기준 24시간 건수</span></div>
       </div>
 
@@ -14887,7 +15010,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-16" aria-labelledby="tab-16">
           <h3>Microsoft·Azure 치명적 취약점 10건 — CVSS 9.0 이상</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
-          <p>NVD에 Microsoft·Azure 제품군의 CVSS 9.0 이상 취약점 10건이 새로 공개됐다. Azure Event Grid 부적절한 인증(CVE-2026-62841, CVSS 10.0), M365 Copilot 부적절한 인가(CVE-2026-50691, 9.9), SharePoint 경로 순회(CVE-2026-70193, 9.9), Azure Portal·Azure Machine Learning·Profile Data Roaming Service의 SSRF·XSS 계열, Microsoft Clarity·Azure Site Recovery·Azure DevTest Labs의 인가·인증 우회 등이 포함되며, 대부분 네트워크를 통한 권한 상승 또는 스푸핑이 가능하다고 설명됐다.</p>
+          <p>NVD에 Microsoft·Azure 제품군의 CVSS 9.0 이상 취약점 10건이 새로 공개됐다. Azure Event Grid 부적절한 인증(CVE-2026-62841, CVSS 10.0), M365 Copilot 부적절한 인가(CVE-2026-50691, 9.9), SharePoint 경로 순회(CVE-2026-70193, 9.9), Azure Portal·Azure Machine Learning·Profile Data Roaming Service의 SSRF·XSS 계열, Microsoft Clarity·Azure Site Recovery·Azure DevTest Labs의 인가·인증 우회 등이 포함되며, 대부분 네트워크를 통한 권한 상승 또는 스푸핑이 가능하다고 설명됐다. 11월 24일에는 Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 공지 USN-9191-1·USN-9168-4·USN-9170-4를 새로 발표했다.</p>
           <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-62841" target="_blank" rel="noopener">NVD — CVE-2026-62841</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://nvd.nist.gov/vuln/detail/CVE-2026-50691" target="_blank" rel="noopener">NVD — CVE-2026-50691</a>
@@ -15041,13 +15164,13 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 149건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 76건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 158건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 85건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 149건</button>
+          <button data-filter="all" aria-pressed="true">전체 158건</button>
           <button data-filter="new" aria-pressed="false">11/16~22 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
@@ -16229,6 +16352,87 @@
             <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
           </article>
           <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9192-1" target="_blank" rel="noopener"><span class="mono">USN-9192-1</span></a> · 리눅스 커널(NVIDIA) 취약점</h3>
+              <span class="cve-orig">USN-9192-1: Linux kernel (NVIDIA) vulnerabilities</span>
+              <p>Ubuntu가 NVIDIA용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9191-1" target="_blank" rel="noopener"><span class="mono">USN-9191-1</span></a> · 리눅스 커널(Azure) 취약점</h3>
+              <span class="cve-orig">USN-9191-1: Linux kernel (Azure) vulnerabilities</span>
+              <p>Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9190-1" target="_blank" rel="noopener"><span class="mono">USN-9190-1</span></a> · 리눅스 커널 취약점</h3>
+              <span class="cve-orig">USN-9190-1: Linux kernel vulnerabilities</span>
+              <p>Ubuntu가 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9173-3" target="_blank" rel="noopener"><span class="mono">USN-9173-3</span></a> · 리눅스 커널(NVIDIA) 취약점</h3>
+              <span class="cve-orig">USN-9173-3: Linux kernel (NVIDIA) vulnerabilities</span>
+              <p>Ubuntu가 NVIDIA용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9174-2" target="_blank" rel="noopener"><span class="mono">USN-9174-2</span></a> · 리눅스 커널(Low Latency NVIDIA) 취약점</h3>
+              <span class="cve-orig">USN-9174-2: Linux kernel (Low Latency NVIDIA) vulnerabilities</span>
+              <p>Ubuntu가 Low Latency NVIDIA용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9167-3" target="_blank" rel="noopener"><span class="mono">USN-9167-3</span></a> · 리눅스 커널 취약점</h3>
+              <span class="cve-orig">USN-9167-3: Linux kernel vulnerabilities</span>
+              <p>Ubuntu가 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9168-4" target="_blank" rel="noopener"><span class="mono">USN-9168-4</span></a> · 리눅스 커널(Azure) 취약점</h3>
+              <span class="cve-orig">USN-9168-4: Linux kernel (Azure) vulnerabilities</span>
+              <p>Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9170-4" target="_blank" rel="noopener"><span class="mono">USN-9170-4</span></a> · 리눅스 커널(Azure) 취약점</h3>
+              <span class="cve-orig">USN-9170-4: Linux kernel (Azure) vulnerabilities</span>
+              <p>Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">USN<small>Ubuntu Security Notice</small></div>
+            <div class="cve-main">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9165-2" target="_blank" rel="noopener"><span class="mono">USN-9165-2</span></a> · 리눅스 커널 취약점</h3>
+              <span class="cve-orig">USN-9165-2: Linux kernel vulnerabilities</span>
+              <p>Ubuntu가 리눅스 커널 취약점에 대한 보안 업데이트 공지를 발표했다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/24</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
             <div class="score high">Chrome<small>Chrome Releases</small></div>
             <div class="cve-main">
               <h3><a href="http://chromereleases.googleblog.com/feeds/6966685901742843455/comments/default" target="_blank" rel="noopener">Chrome Stable for iOS Update</a></h3>
@@ -16255,14 +16459,50 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 1738건 · 해외 755건 · 2026년 11월 16~24일 보도</p>
+          <p>국내 1747건 · 해외 766건 · 2026년 11월 16~24일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-                        <p class="col-note">1738건 · 2026년 11월 16~24일 보도</p>
+                        <p class="col-note">1747건 · 2026년 11월 16~24일 보도</p>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE9ZRllsOWhseEpRbi1JcXo1Z2xxVVlnTG9YSW5XN0RZS3lCdUVqTXVpczZaSFF5b3IzaG9ZR01Rc2pGejdfYkRaRWFvcUFRSXZVYldIZnpiYURmNC1Xc01HOHp4YkVqQy0xQi05azVBeE9XcW8?oc=5" target="_blank" rel="noopener">개인정보위 직원 사칭 개인정보 유출 통지 악성메일 주의보</a></h3>
+              <span class="news-meta">디지털투데이 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1HWWV2d2o4eVBmNGJpNGRUdXkzRVlqNXhyMkl0V0FLRXZ3VXV5LVdmdTB4VGxPM05oSjZMTERpTi1YVi1CSkp1WFdSODZWVXRpSUZoZldpZzNOVFN3NHpF?oc=5" target="_blank" rel="noopener">잇단 개인정보 유출에 불안감 노렸다...개인정보위 사칭 메일까지 등장</a></h3>
+              <span class="news-meta">MTN 머니투데이방송 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5GMDRJVUpBS2NqeGFUV0JKNVhEYmh0dnlBdlNnd1FrUGZHZU1GaGhWUzU4LUYyX0swVkE2dTVkVFpWUk40TzBNVTRyMS1MbTZpN3BCMmxUeXpmRzVTUzdQVjFTaHJJdlJzSWJjag?oc=5" target="_blank" rel="noopener">[취재후일담] 잇따른 개인정보 유출, 불안은 국민 몫</a></h3>
+              <span class="news-meta">아시아투데이 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pNGxKdTd4N1VVS1ZobnNNU1NGbjc3V1FGMzlfbEtUelNGbzUtbEU0XzE4MzdlRjZKbW9HRTIyZF9sLTlFbC1peDcyTVUyS09jNWFrQlNhNTlHZw?oc=5" target="_blank" rel="noopener">"개인정보 유출됐습니다"…개인정보위 사칭 악성메일 주의보</a></h3>
+              <span class="news-meta">파이낸셜뉴스 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQb2NCLUctUnNPZW5sTjMxU21oMkhuMmNrdEphV0x5YUxhRFVZamt6Z2tOQ1h5OU5yY0ExT2oycXRqbkptaFZEM2M0NjdyOUtTbGExeHlJMF9ET2VEU3F6QlZkaUZnLTlndWpIMkdrRDk4WkIzM1pRN0xsV2tPTXZFM29n0gGWAUFVX3lxTFBMbGx3TzEyaGxnbE1oWG16Nk9mN29KZlA1aVpOZUQyTW5EMUpabG1mc0loZUxCeS1Gak1tVHFVUGVOdll0ZDhXYktfVHNURVF1ZGoyN2N3Y1JZOEFRWUowY0NKa0h0eVVfSmRXRWc1SUVFVkQyMGtKZzRUd0NvMTRRdThnMUpsRmhSN1FUWnRocVRoNFFpZw?oc=5" target="_blank" rel="noopener">포티넷 "韓 노리는 랜섬웨어 조직 1년 새 두 배↑… 'AI 기억' 겨냥한 공격 본격화"</a></h3>
+              <span class="news-meta">Chosunbiz · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1FOWczcVZ2Njh1dmZ0SDg2OG5BcGJTU2JqeElXRlZxRUFIZHV6R1RjcEN1eXRuVnFWZS1uVWg4eWl2VmpxME1TT29fYUcyemVTZzA1LXBNRTFUWE0xaTUxWkpQZ215VkNfSGc?oc=5" target="_blank" rel="noopener">금융당국, 디지털자산기본법 발표… '무과실 해킹 피해'에도 배상 책임</a></h3>
+              <span class="news-meta">천지일보 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsRnkwYTFlWEUxVndabFRNWC1lS0JURHBGZ0hwR0tITEt2dE5lc2trMHMzTG9rRFE5VXRxVWlBNGtLRlgzVWtGWU80ejVWUHFZaWtyZC10MVRHb1cyMUVOS0dOaXVLMjQ?oc=5" target="_blank" rel="noopener">"개인정보 유출됐습니다"…개인정보위 사칭 악성메일 주의</a></h3>
+              <span class="news-meta">뉴스1 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://zdnet.co.kr/view/?no=20261124163948" target="_blank" rel="noopener">슈프리마, '글로벌 톱 50' 보안 기업 선정</a></h3>
+              <span class="news-meta">ZDNet Korea · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://zdnet.co.kr/view/?no=20261124170239" target="_blank" rel="noopener">레드펜소프트, 통합 취약점 관리 플랫폼에 네트워크 장비 점검 기능 추가</a></h3>
+              <span class="news-meta">ZDNet Korea · 2026-11-24</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKSXJ5YTF1QWlXc1htUm04Z2tmNzFadGhvQlh3RzkxSnljbFQxeHBVcDdoYmpkTTBXUkRCaUg5cEw3SjdXVTgyV3VON2lFdGY4QmNwajVLekFQNGZjakltY9IBeEFVX3lxTE90eWl2WFpFUm9WMldkUEhRc3RnenduNk9KaUdUcEtyRFdOdFhuZU9yOGx3ZXp6RjQzMUhDejhKcXJMVmZyMXZXdEwxNHdxVUFzRENnQ2llX1gya2hsanJ5eXF1eEJ5bWFZa3VaT1BuTlp0Y09sODhlQQ?oc=5" target="_blank" rel="noopener">"개인정보 유출됐으니 확인하세요"…개인정보위 사칭 악성메일 주의보</a></h3>
               <span class="news-meta">뉴시스 · 2026-11-24</span>
@@ -16286,18 +16526,6 @@
             <article class="news-item">
               <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147499" target="_blank" rel="noopener">포티넷 “10개월 만에 피해 규모 이미 작년 2.4배... 랜섬웨어 먹잇감 된 한국 기업”</a></h3>
               <span class="news-meta">Boannews · 2026-11-24</span>
-            </article>
-            <article class="news-item">
-              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147498" target="_blank" rel="noopener">그린아이티코리아, AI 시험 부정행위 대응 비접촉 금속탐지기 ‘MDET’ 공급 확대</a></h3>
-              <span class="news-meta">Boannews · 2026-11-24</span>
-            </article>
-            <article class="news-item">
-              <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNU3gyaXNRMWZOMThQeDNlWXAyZE40SkxSRk1xUGRZTkNnbTBXSE8tUUNvbkRfVzNtOFhpWUd1Q3ZEbzF0Wk15QTRhODg0SS1qb0xDeVYtOWdZSUl1c19PaHRmZFZSWmpHMVNGUHd1NEptN1pPRlZlVTY4QTFrenZ4VtIBlAFBVV95cUxNRXlnbWRsUmVqYjFQQWlKeHVZeWJobVJocW96RFRBalBVWU9yTVpXRXU1NG9ERl9JejZ5bkNLMW9Ua2cxcjJ0V2E5VlNOTWpWYkh5dlJzZ0hJVmI4Z2dWdnk0ajdseG00dGQ1T2tUTldlRkhhUHJIR3VnVlZnV3NCbWtUekRKcmdnVmp6OXZJQjhPdXp3?oc=5" target="_blank" rel="noopener">가상 자산 업자, 해킹 사고 땐 최대 매출 10% 과징금</a></h3>
-              <span class="news-meta">Chosunbiz · 2026-11-24</span>
-            </article>
-            <article class="news-item">
-              <h3><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KZ2l2SWZuUGlrN0JHOVMtazFWN25GcEowbHA2dHl1MGJlVXVIdkhrOTZsYkxHalJKVmwteWhvYjQ5X3kxN1MxcmpZNFVyVU4wOFhV?oc=5" target="_blank" rel="noopener">갤럭시 S25·S24에도 11월 보안 업데이트… 취약점 179건 수정</a></h3>
-              <span class="news-meta">유스연합 · 2026-11-24</span>
             </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9OaFZNX1RLX2hiY2Q1TERWRVlzWUdfTkNTZmtpeU5OdjdHc19BYXF2Z1MxZ1VBUjVJTWlMbzNrY01QMWw3OFlRYS1fbGVQYWFVU3hmTXlvYkZDV2o3NHJoY014UVI?oc=5" target="_blank" rel="noopener">"공격코드 무제한 생성"…신종 AI 해킹 장터 `고질라AI` 주의보</a></h3>
@@ -16386,6 +16614,10 @@
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTFBmYndpT29mRlN2RkdtWUhzbk5JSHVCUW9mMjkyeC0tVTVySkR3aWpyaVZwbUpsMDRIYjU4Q3ZuQXo0VThkNWlIMmxmZkd1ek43RllqUENLS2F4VVpVeXhWNV9vbHpyNjBtMzY40gFwQVVfeXFMTnhPTzlxeXBSaTVId1dyZW0tMndibzB2cEhIWV9yWkJKSWMxcHVzZFotNU52SUNDeWxPc3RGRHQzbHFkaW1MSWJqRG52TXBENTZIMTRsalMxNG8yYmFabXVITUQ1TDJibG9CNVM1d0FmRQ?oc=5" target="_blank" rel="noopener">[우보세]피해자만 회초리 맞는 정보유출 사태 - 머니투데이</a></h3>
               <span class="news-meta">머니투데이 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147498" target="_blank" rel="noopener">그린아이티코리아, AI 시험 부정행위 대응 비접촉 금속탐지기 ‘MDET’ 공급 확대</a></h3>
+              <span class="news-meta">Boannews · 2026-11-24</span>
             </article>
             <article class="news-item">
               <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209698" target="_blank" rel="noopener">오케스트로, 가상화 전환 웨비나 개최...'CONTRABASS Lite' 공개</a></h3>
@@ -16546,6 +16778,10 @@
                         <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE1VdGhCcXpMc1dQd1VEY1FZREExXzd3elFiLWNkdjZteGt6MHoxLVN4RWZta1lZejFJcmpzSkhibmliM3J4WWdsdFJSaDh2Ujd1ZmpHMVliRUdYUE9PRHpGVVBMekFMSGU1UTdua29ENW1kUQ?oc=5" target="_blank" rel="noopener">美 법무부, 北 바이낸스 해킹 자금 중 1.5조원 규모 USDC 몰수 청구</a></h3>
               <span class="news-meta">인더스트리뉴스 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNU3gyaXNRMWZOMThQeDNlWXAyZE40SkxSRk1xUGRZTkNnbTBXSE8tUUNvbkRfVzNtOFhpWUd1Q3ZEbzF0Wk15QTRhODg0SS1qb0xDeVYtOWdZSUl1c19PaHRmZFZSWmpHMVNGUHd1NEptN1pPRlZlVTY4QTFrenZ4VtIBlAFBVV95cUxNRXlnbWRsUmVqYjFQQWlKeHVZeWJobVJocW96RFRBalBVWU9yTVpXRXU1NG9ERl9JejZ5bkNLMW9Ua2cxcjJ0V2E5VlNOTWpWYkh5dlJzZ0hJVmI4Z2dWdnk0ajdseG00dGQ1T2tUTldlRkhhUHJIR3VnVlZnV3NCbWtUekRKcmdnVmp6OXZJQjhPdXp3?oc=5" target="_blank" rel="noopener">가상 자산 업자, 해킹 사고 땐 최대 매출 10% 과징금</a></h3>
+              <span class="news-meta">Chosunbiz · 2026-11-24</span>
             </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE1nMEVDeDh5TTY2WFRSaHM0T0VMNE9Ed0pueU02ZUVYMnp1aE00cldMUFZ3enNvc3NXWjhMQnN4LUlmRFJFRHFBaU5lcDJSMVJaa2pyWEFSd1dJQmRIQ1NWcDc4dlNyNGNvRTM4?oc=5" target="_blank" rel="noopener">가상자산거래소 해킹땐 최대 1000억대 과징금…무과실 배상도</a></h3>
@@ -16839,6 +17075,10 @@
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBYaENSM1NlRVVsVFdhWkpWU3J0VTNNRFdVd1hSNDR5RVAwSGh1RGVIbjBYUXBWWlk3eW1xWF9DYjBHQktGNl9mMlFfLWxpQnZzZDFGUjRvOFRBaVRQRmtWQUFVR1RNOHhja2h2RtIBcEFVX3lxTFBTbWl0alZfdVcwc2VOZk01bXJPYzdBQnZlYkpoS1hVd2pZLWpTOTZzUnIxVFBUTXBmN1pkQlNfR1JvRU9xRXlUSjQ4Zk9TVnpUeVRqVjJvcUw5WVMyd2kwd3BIb1BodEhpQWU4bUtXUUc?oc=5" target="_blank" rel="noopener">광양시, 개인정보 유출 대응 직원 보안교육</a></h3>
               <span class="news-meta">남도일보 · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE5KZ2l2SWZuUGlrN0JHOVMtazFWN25GcEowbHA2dHl1MGJlVXVIdkhrOTZsYkxHalJKVmwteWhvYjQ5X3kxN1MxcmpZNFVyVU4wOFhV?oc=5" target="_blank" rel="noopener">갤럭시 S25·S24에도 11월 보안 업데이트… 취약점 179건 수정</a></h3>
+              <span class="news-meta">유스연합 · 2026-11-24</span>
             </article>
             <article class="news-item">
               <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9yUmFxX0t2bUhwNEZPS1B2ZFhRbmNJdC1MRFpWZUZzeUdxX0VSV2hkaE9CNTVyQlRyUWxkdzRTOUVZSmtyRXluTlZCZGR3dVVVN090YTE0RWdPdHZ2?oc=5" target="_blank" rel="noopener">'양자 해킹' 현실화 전 암호부터 교체…코스닥 보안株 수주 성적표</a></h3>
@@ -23227,7 +23467,19 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-                        <p class="col-note">755건 · November 16–24, 2026</p>
+                        <p class="col-note">766건 · November 16–24, 2026</p>
+            <article class="news-item">
+              <h3><a href="https://www.helpnetsecurity.com/2026/11/24/anthropic-claude-ship-beta/" target="_blank" rel="noopener">Claude Ship, 코드 리뷰의 양쪽에 AI를 앉히다</a></h3>
+              <span class="news-orig">Claude Ship gives AI a seat on both sides of code review</span>
+              <p class="news-sum">Anthropic의 Claude Ship이 코드 리뷰의 양쪽 모두에 AI를 활용한다는 소식.</p>
+              <span class="news-meta">Help Net Security · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license" target="_blank" rel="noopener">‘GTA VI’ 해커, 징역 7년 선고받고 당일 석방</a></h3>
+              <span class="news-orig">‘Grand Theft Auto VI’ hacker sentenced to seven years, released the same day</span>
+              <p class="news-sum">GTA VI 해킹 사건의 해커가 징역 7년을 선고받고 같은 날 석방됐다는 소식.</p>
+              <span class="news-meta">The Record · 2026-11-24</span>
+            </article>
             <article class="news-item">
               <h3><a href="https://thecyberexpress.com/nvidia-cyberattack-data-breach-the-gentlemen/" target="_blank" rel="noopener">엔비디아, 랜섬웨어 조직 협박 이후 제3자 침해 가능성 조사 중</a></h3>
               <span class="news-orig">NVIDIA Investigates Possible Third-Party Breach After Ransomware Group Threat</span>
@@ -23368,6 +23620,60 @@
               <span class="news-orig">Cybersecurity jobs available right now: November 24, 2026</span>
               <p class="news-sum">2026년 11월 24일 기준 현재 채용 중인 사이버보안 직무 정보를 모은 기사입니다.</p>
               <span class="news-meta">Help Net Security · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9192-1" target="_blank" rel="noopener">USN-9192-1: 리눅스 커널(NVIDIA) 취약점</a></h3>
+              <span class="news-orig">USN-9192-1: Linux kernel (NVIDIA) vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 NVIDIA용 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9191-1" target="_blank" rel="noopener">USN-9191-1: 리눅스 커널(Azure) 취약점</a></h3>
+              <span class="news-orig">USN-9191-1: Linux kernel (Azure) vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9190-1" target="_blank" rel="noopener">USN-9190-1: 리눅스 커널 취약점</a></h3>
+              <span class="news-orig">USN-9190-1: Linux kernel vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9173-3" target="_blank" rel="noopener">USN-9173-3: 리눅스 커널(NVIDIA) 취약점</a></h3>
+              <span class="news-orig">USN-9173-3: Linux kernel (NVIDIA) vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 NVIDIA용 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9174-2" target="_blank" rel="noopener">USN-9174-2: 리눅스 커널(Low Latency NVIDIA) 취약점</a></h3>
+              <span class="news-orig">USN-9174-2: Linux kernel (Low Latency NVIDIA) vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 Low Latency NVIDIA용 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9167-3" target="_blank" rel="noopener">USN-9167-3: 리눅스 커널 취약점</a></h3>
+              <span class="news-orig">USN-9167-3: Linux kernel vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9168-4" target="_blank" rel="noopener">USN-9168-4: 리눅스 커널(Azure) 취약점</a></h3>
+              <span class="news-orig">USN-9168-4: Linux kernel (Azure) vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9170-4" target="_blank" rel="noopener">USN-9170-4: 리눅스 커널(Azure) 취약점</a></h3>
+              <span class="news-orig">USN-9170-4: Linux kernel (Azure) vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 Azure용 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://ubuntu.com/security/notices/USN-9165-2" target="_blank" rel="noopener">USN-9165-2: 리눅스 커널 취약점</a></h3>
+              <span class="news-orig">USN-9165-2: Linux kernel vulnerabilities</span>
+              <p class="news-sum">Ubuntu가 리눅스 커널 취약점에 대한 보안 공지를 발행했다.</p>
+              <span class="news-meta">Ubuntu Security Notices · 2026-11-24</span>
             </article>
             <article class="news-item">
               <h3><a href="https://ubuntu.com/security/notices/USN-9189-1" target="_blank" rel="noopener">USN-9189-1: Qt5Compat 취약점</a></h3>
