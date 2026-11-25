@@ -233,14 +233,14 @@
         <p class="mast-date">2026년 11월 26일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
-          <li>D-Link R32 CVSS 10.0 취약점 — CVE-2026-136823, 9.9 2건에 이어 추가 공개</li>
-          <li>홍콩 정부 티켓 예매 시스템 해킹 — 사이버 보안 비상</li>
-          <li>美 재무부 FinCEN 사이버 사건 — 일부 시스템 오프라인 전환</li>
-          <li>빗썸 해킹 피해 확대 — 침해 기간 1시간→15일, 피해자 7,159명 넘어</li>
-          <li>1Password 해킹 — 직원 GitHub 계정 경유해 고객 계정 데이터 복사, 볼트는 무영향</li>
-          <li>Palo Alto Fragnesia 취약점, PAN-OS 공격에 악용 — PHP2Shell과 연계</li>
+          <li>D-Link R32 CVSS 10.0 취약점(CVE-2026-136823) — 9.9 2건에 이어 추가 발견</li>
           <li>CISA KEV 8건 추가 — Danfoss AK-SM 800A·Mitel MiCollab</li>
-          <li>한국투자저축은행 8만6433명 유출 — 저축은행 피해 6곳으로 확대</li>
+          <li>Palo Alto Fragnesia 취약점, PAN-OS 공격에 악용 — PHP2Shell과 연계</li>
+          <li>1Password 해킹 — 직원 GitHub 계정 경유해 고객 계정 데이터 복사, 볼트는 무영향</li>
+          <li>빗썸 해킹 피해 확대 — 침해 기간 1시간→15일, 피해자 7,159명 넘어</li>
+          <li>홍콩 정부 티켓 예매 시스템 해킹 — 사이버 보안 '비상'</li>
+          <li>美 재무부 FinCEN 해킹 — '이란 자금' 추적 기관 피해, 일부 시스템 중단</li>
+          <li>TastyIgniter 원격 코드 실행 취약점 2건 — 미디어 업로드·메일 템플릿 경유</li>
         </ul>
         <p class="mast-meta">수집 기준 2026년 11월 26일 07:54 KST · 랜섬웨어 유출 현황은 11월 26일 07:54 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
@@ -259,7 +259,7 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 3380건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 3384건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
@@ -271,43 +271,82 @@
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
-                      <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE04cE44cmh6RHYwTXN0SW1uZ0V5SGNqeTVneG4tMlowbkNMQzM3azFuMEJWOVpncnhnN1ZPV1lCQzVzTjhGOFdna3FLMXdkRERIb29iUHRGSFV3NGhfZnR6cDVKWDgwWVJSZURr?oc=5" target="_blank" rel="noopener">구미시, 버스정보시스템 보안 긴급 점검…30일까지 보안 패치 완료</a></h3>
-                      <span class="feed-src">미디어디펜스</span>
-                    </article>
-                    <article class="feed-item">
-                      <span class="feed-time">11/26</span>
-                      <h3><span class="feed-tag hot">속보</span><a href="https://github.com/advisories/GHSA-7wwv-x6mc-pxqx" target="_blank" rel="noopener">CVE-2026-69179 — TastyIgniter, 미디어 매니저 무제한 파일 업로드 경유 원격 코드 실행(RCE)</a></h3>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://github.com/advisories/GHSA-7wwv-x6mc-pxqx" target="_blank" rel="noopener">CVE-2026-69179 — TastyIgniter, 미디어 매니저 무제한 파일 업로드 경유 원격 코드 실행</a></h3>
                       <span class="feed-orig">CVE-2026-69179 — TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager</span>
-                      <p class="feed-sum">TastyIgniter 미디어 매니저의 무제한 파일 업로드를 통한 원격 코드 실행 취약점이다.</p>
+                      <p class="feed-sum">TastyIgniter 미디어 매니저의 파일 업로드 제한 미비로 원격 코드 실행이 가능한 취약점.</p>
                       <span class="feed-src">GitHub Advisories</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
-                      <h3><span class="feed-tag hot">속보</span><a href="https://github.com/advisories/GHSA-743w-g9pf-8p94" target="_blank" rel="noopener">CVE-2026-69178 — TastyIgniter, 메일 템플릿 에디터 서버 측 템플릿 주입 경유 원격 코드 실행</a></h3>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://github.com/advisories/GHSA-743w-g9pf-8p94" target="_blank" rel="noopener">CVE-2026-69178 — TastyIgniter, 메일 템플릿 편집기 서버 측 템플릿 인젝션 경유 원격 코드 실행</a></h3>
                       <span class="feed-orig">CVE-2026-69178 — TastyIgniter mail template editor allows remote code execution via server-side template injection</span>
-                      <p class="feed-sum">TastyIgniter 메일 템플릿 에디터의 서버 측 템플릿 주입을 통한 원격 코드 실행 취약점이다.</p>
+                      <p class="feed-sum">TastyIgniter 메일 템플릿 편집기의 서버 측 템플릿 인젝션을 통한 원격 코드 실행 취약점.</p>
                       <span class="feed-src">GitHub Advisories</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
-                      <h3><span class="feed-tag hot">속보</span><a href="https://github.com/advisories/GHSA-rj59-9f77-mvg5" target="_blank" rel="noopener">CVE-2026-69181 — TastyIgniter, Media Upload 경로 순회(Path Traversal) 허용</a></h3>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136823" target="_blank" rel="noopener">CVE-2026-136823 — D-Link R32 1.10B02, CVSS 10.0 취약점</a></h3>
+                      <span class="feed-orig">CVE-2026-136823 (CVSS 10.0) — A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint.</span>
+                      <p class="feed-sum">D-Link R32 공유기 1.10B02의 /usr/bin/httpd 파일에서 발견된 CVSS 10.0 취약점.</p>
+                      <span class="feed-src">NVD</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://aws.amazon.com/blogs/security/icymi-october-2026-aws-security/" target="_blank" rel="noopener">놓쳤다면: 2026년 10월 AWS 보안 소식 모음</a></h3>
+                      <span class="feed-orig">ICYMI: October 2026 @AWS Security</span>
+                      <p class="feed-sum">2026년 10월 AWS 보안 관련 주요 소식을 정리한 월간 요약.</p>
+                      <span class="feed-src">AWS Security Blog</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/" target="_blank" rel="noopener">블랙프라이데이 사이버 위협 — 2부: 소매업체</a></h3>
+                      <span class="feed-orig">Black Friday Cyber Threats — Part Two: Retailers</span>
+                      <p class="feed-sum">블랙프라이데이 시즌에 소매업체를 노리는 사이버 위협을 다룬 글.</p>
+                      <span class="feed-src">Arctic Wolf</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://www.etnews.com/20261126000049" target="_blank" rel="noopener">AI 에이전트 활용 사이버 공격 확산…이탈리아·스위스 피해 확인</a></h3>
+                      <span class="feed-src">etnews AI/SW</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://github.com/advisories/GHSA-rj59-9f77-mvg5" target="_blank" rel="noopener">CVE-2026-69181 — TastyIgniter, 미디어 업로드 경로 탐색 허용</a></h3>
                       <span class="feed-orig">CVE-2026-69181 — TastyIgniter permits Path Traversal in Media Upload</span>
-                      <p class="feed-sum">TastyIgniter Media Upload에서 경로 순회가 가능하다는 권고이다.</p>
+                      <p class="feed-sum">TastyIgniter 미디어 업로드에서 경로 탐색이 가능한 취약점.</p>
                       <span class="feed-src">GitHub Advisories</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
                       <h3><a href="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-one-consumers/" target="_blank" rel="noopener">블랙프라이데이 사이버 위협 — 1부: 소비자</a></h3>
                       <span class="feed-orig">Black Friday Cyber Threats — Part One: Consumers</span>
-                      <p class="feed-sum">블랙프라이데이 기간 소비자를 노린 사이버 위협을 다룬 글이다.</p>
+                      <p class="feed-sum">블랙프라이데이 쇼핑 시즌에 소비자를 노리는 사이버 위협을 다룬 글.</p>
                       <span class="feed-src">Arctic Wolf</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
-                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136823" target="_blank" rel="noopener">CVE-2026-136823 (CVSS 10.0) — D-Link R32 1.10B02, /usr/bin/httpd flupl self Endpoint 결함</a></h3>
-                      <span class="feed-orig">CVE-2026-136823 (CVSS 10.0) — A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a</span>
-                      <p class="feed-sum">D-Link R32 1.10B02의 /usr/bin/httpd 파일 flupl self Endpoint 컴포넌트에서 발견된 취약점(CVSS 10.0).</p>
-                      <span class="feed-src">NVD</span>
+                      <h3><a href="https://www.etnews.com/20261126000048" target="_blank" rel="noopener">美 금융범죄단속기관도 해킹 피해…일부 시스템 가동 중단</a></h3>
+                      <span class="feed-src">etnews AI/SW</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xU2tCYU5DOFg0ZXFmb3dsejdWYW5nWXZRa3pvbWtfajl2eHFrZm02RXI3MXloUktPcWh1OGNrOUljaE9mR1paRFZrUmtyamVBOTdFOTBR?oc=5" target="_blank" rel="noopener">‘이란 자금’ 추적 美재무부 기관 해킹…사이버공격 배후 누구?</a></h3>
+                      <span class="feed-src">중앙일보</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE04cE44cmh6RHYwTXN0SW1uZ0V5SGNqeTVneG4tMlowbkNMQzM3azFuMEJWOVpncnhnN1ZPV1lCQzVzTjhGOFdna3FLMXdkRERIb29iUHRGSFV3NGhfZnR6cDVKWDgwWVJSZURr?oc=5" target="_blank" rel="noopener">구미시, 버스정보시스템 보안 긴급 점검…30일까지 보안 패치 완료</a></h3>
+                      <span class="feed-src">미디어디펜스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://zdnet.co.kr/view/?no=20261126072658" target="_blank" rel="noopener">내년 정보보호 공시 의무화...과기정통부, 전국 순회 설명회 개최</a></h3>
+                      <span class="feed-src">ZDNet Korea</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE90Z2hjTFA5MjdCcXI3UVlRX2E3QXZGRFRFYXAxNTZPQnF1LXh5OENvaFZoT1JFYzN5NVhrMVpabF9UY1VZRThMZkdaa01sT01RMEFCZFJhRmlKZ0JpTm4weGNzdE96cWxJaVRNRzhXQkRtZkxfVlppVDR6eEQ?oc=5" target="_blank" rel="noopener">실적·슈퍼SOL 성과에도 해킹 치명타···정상혁 행장, 연임 가능할까 [진옥동 2기 신한금융 인사]</a></h3>
+                      <span class="feed-src">한국금융신문</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
@@ -318,21 +357,6 @@
                       <span class="feed-time">11/26</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE9udkdyVFU1b2RMOXlLS192MU1CaGd2b21fYTNtVlNqOXE0T0sycjhfS0k4THVZcF81bE1xMFBCOVlGeEUweFFHbFVJM3ZGUGNZalpqclhqNmIzREpWYS02V1pBTHBjTUoycVNwTFV3dEtidlBmWjc1YjZn0gF6QVVfeXFMTVUxVkJPRHlMVWZpSFJlVUo2TTVRRlVLZVBjMFFxYnFzX3VDRWhTTXdlVlJQd1BzZWxtX2hRekt6TFdkaVhEM3prTlEtdFV2d1NqNngxUjFha01DT0g0elVkbmo5OGE3SlZ3Q0p3X0VwUUFZc3h2RXQ2ZUE?oc=5" target="_blank" rel="noopener">[뉴스픽] 빗썸, 해킹 피해 추가 확인‥보름 동안 몰라</a></h3>
                       <span class="feed-src">MBC 뉴스</span>
-                    </article>
-                    <article class="feed-item">
-                      <span class="feed-time">11/26</span>
-                      <h3><a href="https://zdnet.co.kr/view/?no=20261126072658" target="_blank" rel="noopener">내년 정보보호 공시 의무화...과기정통부, 전국 순회 설명회 개최</a></h3>
-                      <span class="feed-src">ZDNet Korea</span>
-                    </article>
-                    <article class="feed-item">
-                      <span class="feed-time">11/26</span>
-                      <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xU2tCYU5DOFg0ZXFmb3dsejdWYW5nWXZRa3pvbWtfajl2eHFrZm02RXI3MXloUktPcWh1OGNrOUljaE9mR1paRFZrUmtyamVBOTdFOTBR?oc=5" target="_blank" rel="noopener">‘이란 자금’ 추적 美재무부 기관 해킹…사이버공격 배후 누구?</a></h3>
-                      <span class="feed-src">중앙일보</span>
-                    </article>
-                    <article class="feed-item">
-                      <span class="feed-time">11/26</span>
-                      <h3><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE90Z2hjTFA5MjdCcXI3UVlRX2E3QXZGRFRFYXAxNTZPQnF1LXh5OENvaFZoT1JFYzN5NVhrMVpabF9UY1VZRThMZkdaa01sT01RMEFCZFJhRmlKZ0JpTm4weGNzdE96cWxJaVRNRzhXQkRtZkxfVlppVDR6eEQ?oc=5" target="_blank" rel="noopener">실적·슈퍼SOL 성과에도 해킹 치명타···정상혁 행장, 연임 가능할까 [진옥동 2기 신한금융 인사]</a></h3>
-                      <span class="feed-src">한국금융신문</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
@@ -19361,8 +19385,8 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>20</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>2278</b><span>국내 동향 — 11/16~26 보도</span></div>
-        <div class="stat"><b>1024</b><span>해외 동향 — 11/16~26 보도</span></div>
+        <div class="stat"><b>2280</b><span>국내 동향 — 11/16~26 보도</span></div>
+        <div class="stat"><b>1023</b><span>해외 동향 — 11/16~26 보도</span></div>
         <div class="stat"><b>235</b><span>CVE·취약점 — CVSS 9.0 이상 112건 포함</span></div>
         <div class="stat"><b>58</b><span>다크웹 유출 — 11/25 19:39 확인 기준 24시간 건수</span></div>
       </div>
@@ -20191,34 +20215,34 @@
         </div>
         <div class="cve-list" id="cveList">
           <article class="cve-row" data-kind="new">
-            <div class="score crit">10</div>
+            <div class="score crit">10<small>CVSS</small></div>
             <div class="cve-main">
               <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136823" target="_blank" rel="noopener"><span class="mono">CVE-2026-136823</span></a> · D-Link R32</h3>
-              <p>D-Link R32 1.10B02의 /usr/bin/httpd 파일 flupl self Endpoint 컴포넌트에서 발견된 취약점(CVSS 10.0).</p>
+              <p>D-Link R32 1.10B02의 /usr/bin/httpd 파일 flupl self 엔드포인트에서 발견된 취약점(CVSS 10.0).</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/26</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">GHSA<small>GitHub Advisory</small></div>
             <div class="cve-main">
-              <h3><a href="https://github.com/advisories/GHSA-7wwv-x6mc-pxqx" target="_blank" rel="noopener"><span class="mono">CVE-2026-69179</span></a> · TastyIgniter: 미디어 매니저 무제한 파일 업로드 경유 원격 코드 실행</h3>
-              <p>TastyIgniter 미디어 매니저의 무제한 파일 업로드를 통한 원격 코드 실행 취약점. GitHub Advisory 기준 심각도 critical. CVSS 점수는 표기되지 않았습니다.</p>
+              <h3><a href="https://github.com/advisories/GHSA-7wwv-x6mc-pxqx" target="_blank" rel="noopener"><span class="mono">CVE-2026-69179</span></a> · TastyIgniter</h3>
+              <p>TastyIgniter 미디어 매니저의 무제한 파일 업로드를 통한 원격 코드 실행 취약점.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/26</span></div>
           </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">GHSA<small>GitHub Advisory</small></div>
             <div class="cve-main">
-              <h3><a href="https://github.com/advisories/GHSA-743w-g9pf-8p94" target="_blank" rel="noopener"><span class="mono">CVE-2026-69178</span></a> · TastyIgniter: 메일 템플릿 에디터 서버 측 템플릿 주입 경유 원격 코드 실행</h3>
-              <p>TastyIgniter 메일 템플릿 에디터의 서버 측 템플릿 주입을 통한 원격 코드 실행 취약점. GitHub Advisory 기준 심각도 critical. CVSS 점수는 표기되지 않았습니다.</p>
+              <h3><a href="https://github.com/advisories/GHSA-743w-g9pf-8p94" target="_blank" rel="noopener"><span class="mono">CVE-2026-69178</span></a> · TastyIgniter</h3>
+              <p>TastyIgniter 메일 템플릿 편집기의 서버 측 템플릿 인젝션을 통한 원격 코드 실행 취약점.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/26</span></div>
           </article>
           <article class="cve-row" data-kind="new">
-            <div class="score crit">GHSA<small>GitHub Advisory</small></div>
+            <div class="score high">GHSA<small>GitHub Advisory</small></div>
             <div class="cve-main">
-              <h3><a href="https://github.com/advisories/GHSA-rj59-9f77-mvg5" target="_blank" rel="noopener"><span class="mono">CVE-2026-69181</span></a> · TastyIgniter: Media Upload 경로 순회(Path Traversal) 허용</h3>
-              <p>TastyIgniter Media Upload에서 경로 순회가 가능하다는 권고이다. CVSS 점수는 표기되지 않았습니다.</p>
+              <h3><a href="https://github.com/advisories/GHSA-rj59-9f77-mvg5" target="_blank" rel="noopener"><span class="mono">CVE-2026-69181</span></a> · TastyIgniter</h3>
+              <p>TastyIgniter 미디어 업로드에서 경로 탐색이 가능한 취약점.</p>
             </div>
             <div class="cve-tags"><span class="tag new">신규 · 11/26</span></div>
           </article>
@@ -22095,33 +22119,41 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 2278건 · 해외 1024건 · 2026년 11월 16~26일 보도</p>
+          <p>국내 2280건 · 해외 1023건 · 2026년 11월 16~26일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-                        <p class="col-note">2278건 · 2026년 11월 16~26일 보도</p>
+                        <p class="col-note">2280건 · 2026년 11월 16~26일 보도</p>
                         <article class="news-item">
-                          <h3><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPRkkwMGs1N0JvT0xJXzJMbDlqQ2l4NmRzV1dISnV5SHhJdnF0eE1NRDdIdDM4aTJGVGY2SW5QVl9ROVFlWXpuT3c4OW9MSjBua2k3cGlySV9oUmlsYlU1dGxKUThyNk0yNzF5NU9KQzAtRm5RVmV3a081RjByZVFJZQ?oc=5" target="_blank" rel="noopener">홍콩도 사이버 보안 '비상'…정부 티켓 예매 시스템 해킹</a></h3>
+                          <h3><span class="feed-tag hot">속보</span><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPRkkwMGs1N0JvT0xJXzJMbDlqQ2l4NmRzV1dISnV5SHhJdnF0eE1NRDdIdDM4aTJGVGY2SW5QVl9ROVFlWXpuT3c4OW9MSjBua2k3cGlySV9oUmlsYlU1dGxKUThyNk0yNzF5NU9KQzAtRm5RVmV3a081RjByZVFJZQ?oc=5" target="_blank" rel="noopener">홍콩도 사이버 보안 '비상'…정부 티켓 예매 시스템 해킹</a></h3>
                           <span class="news-meta">이데일리 · 2026-11-26</span>
                         </article>
                         <article class="news-item">
-                          <h3><a href="https://zdnet.co.kr/view/?no=20261126072658" target="_blank" rel="noopener">내년 정보보호 공시 의무화...과기정통부, 전국 순회 설명회 개최</a></h3>
-                          <span class="news-meta">ZDNet Korea · 2026-11-26</span>
+                          <h3><a href="https://www.etnews.com/20261126000049" target="_blank" rel="noopener">AI 에이전트 활용 사이버 공격 확산…이탈리아·스위스 피해 확인</a></h3>
+                          <span class="news-meta">etnews AI/SW · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.etnews.com/20261126000048" target="_blank" rel="noopener">美 금융범죄단속기관도 해킹 피해…일부 시스템 가동 중단</a></h3>
+                          <span class="news-meta">etnews AI/SW · 2026-11-26</span>
                         </article>
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xU2tCYU5DOFg0ZXFmb3dsejdWYW5nWXZRa3pvbWtfajl2eHFrZm02RXI3MXloUktPcWh1OGNrOUljaE9mR1paRFZrUmtyamVBOTdFOTBR?oc=5" target="_blank" rel="noopener">‘이란 자금’ 추적 美재무부 기관 해킹…사이버공격 배후 누구?</a></h3>
                           <span class="news-meta">중앙일보 · 2026-11-26</span>
                         </article>
                         <article class="news-item">
-                          <h3><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE90Z2hjTFA5MjdCcXI3UVlRX2E3QXZGRFRFYXAxNTZPQnF1LXh5OENvaFZoT1JFYzN5NVhrMVpabF9UY1VZRThMZkdaa01sT01RMEFCZFJhRmlKZ0JpTm4weGNzdE96cWxJaVRNRzhXQkRtZkxfVlppVDR6eEQ?oc=5" target="_blank" rel="noopener">실적·슈퍼SOL 성과에도 해킹 치명타···정상혁 행장, 연임 가능할까 [진옥동 2기 신한금융 인사]</a></h3>
-                          <span class="news-meta">한국금융신문 · 2026-11-26</span>
-                        </article>
-                        <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE04cE44cmh6RHYwTXN0SW1uZ0V5SGNqeTVneG4tMlowbkNMQzM3azFuMEJWOVpncnhnN1ZPV1lCQzVzTjhGOFdna3FLMXdkRERIb29iUHRGSFV3NGhfZnR6cDVKWDgwWVJSZURr?oc=5" target="_blank" rel="noopener">구미시, 버스정보시스템 보안 긴급 점검…30일까지 보안 패치 완료</a></h3>
                           <span class="news-meta">미디어디펜스 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://zdnet.co.kr/view/?no=20261126072658" target="_blank" rel="noopener">내년 정보보호 공시 의무화...과기정통부, 전국 순회 설명회 개최</a></h3>
+                          <span class="news-meta">ZDNet Korea · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE90Z2hjTFA5MjdCcXI3UVlRX2E3QXZGRFRFYXAxNTZPQnF1LXh5OENvaFZoT1JFYzN5NVhrMVpabF9UY1VZRThMZkdaa01sT01RMEFCZFJhRmlKZ0JpTm4weGNzdE96cWxJaVRNRzhXQkRtZkxfVlppVDR6eEQ?oc=5" target="_blank" rel="noopener">실적·슈퍼SOL 성과에도 해킹 치명타···정상혁 행장, 연임 가능할까 [진옥동 2기 신한금융 인사]</a></h3>
+                          <span class="news-meta">한국금융신문 · 2026-11-26</span>
                         </article>
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE5mUlhxcnRfY1EzUnVDakFnZFNCck9JekQzdFQ0Yndodm9kM2MwT2FHOHdZTTctdzdNc0tjRmtRZVZoVmk4RThNRGZTTHlxRlQzbnB4QkU1TG5fbk9yWkFZMlhqVXBkazVCZHc?oc=5" target="_blank" rel="noopener">[기자수첩] AI 해킹·악용에 ‘책임 추궁’ 넘어 제도·속도 정비해야</a></h3>
@@ -31227,30 +31259,24 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-                        <p class="col-note">1024건 · November 16–26, 2026</p>
+                        <p class="col-note">1023건 · November 16–26, 2026</p>
                         <article class="news-item">
-                          <h3><a href="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-one-consumers/" target="_blank" rel="noopener">블랙프라이데이 사이버 위협 — 1부: 소비자</a></h3>
-                          <span class="news-orig">Black Friday Cyber Threats — Part One: Consumers</span>
-                          <p class="news-sum">블랙프라이데이 기간 소비자를 노린 사이버 위협을 다룬 글이다.</p>
+                          <h3><a href="https://aws.amazon.com/blogs/security/icymi-october-2026-aws-security/" target="_blank" rel="noopener">놓쳤다면: 2026년 10월 AWS 보안 소식 모음</a></h3>
+                          <span class="news-orig">ICYMI: October 2026 @AWS Security</span>
+                          <p class="news-sum">2026년 10월 AWS 보안 관련 주요 소식을 정리한 월간 요약.</p>
+                          <span class="news-meta">AWS Security Blog · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-two-retailers/" target="_blank" rel="noopener">블랙프라이데이 사이버 위협 — 2부: 소매업체</a></h3>
+                          <span class="news-orig">Black Friday Cyber Threats — Part Two: Retailers</span>
+                          <p class="news-sum">블랙프라이데이 시즌에 소매업체를 노리는 사이버 위협을 다룬 글.</p>
                           <span class="news-meta">Arctic Wolf · 2026-11-26</span>
                         </article>
                         <article class="news-item">
-                          <h3><a href="https://github.com/advisories/GHSA-7wwv-x6mc-pxqx" target="_blank" rel="noopener">CVE-2026-69179 — TastyIgniter, 미디어 매니저 무제한 파일 업로드 경유 원격 코드 실행(RCE)</a></h3>
-                          <span class="news-orig">CVE-2026-69179 — TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager</span>
-                          <p class="news-sum">TastyIgniter 미디어 매니저의 무제한 파일 업로드를 통한 원격 코드 실행 취약점이다.</p>
-                          <span class="news-meta">GitHub Advisories · 2026-11-26</span>
-                        </article>
-                        <article class="news-item">
-                          <h3><a href="https://github.com/advisories/GHSA-743w-g9pf-8p94" target="_blank" rel="noopener">CVE-2026-69178 — TastyIgniter, 메일 템플릿 에디터 서버 측 템플릿 주입 경유 원격 코드 실행</a></h3>
-                          <span class="news-orig">CVE-2026-69178 — TastyIgniter mail template editor allows remote code execution via server-side template injection</span>
-                          <p class="news-sum">TastyIgniter 메일 템플릿 에디터의 서버 측 템플릿 주입을 통한 원격 코드 실행 취약점이다.</p>
-                          <span class="news-meta">GitHub Advisories · 2026-11-26</span>
-                        </article>
-                        <article class="news-item">
-                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136823" target="_blank" rel="noopener">CVE-2026-136823 (CVSS 10.0) — D-Link R32 1.10B02, /usr/bin/httpd flupl self Endpoint 결함</a></h3>
-                          <span class="news-orig">CVE-2026-136823 (CVSS 10.0) — A vulnerability was found in D-Link R32 1.10B02. This affects an unknown function of the file /usr/bin/httpd of the component flupl self Endpoint. Performing a</span>
-                          <p class="news-sum">D-Link R32 1.10B02의 /usr/bin/httpd 파일 flupl self Endpoint 컴포넌트에서 발견된 취약점(CVSS 10.0).</p>
-                          <span class="news-meta">NVD · 2026-11-26</span>
+                          <h3><a href="https://arcticwolf.com/resources/blog/black-friday-cyber-threats-part-one-consumers/" target="_blank" rel="noopener">블랙프라이데이 사이버 위협 — 1부: 소비자</a></h3>
+                          <span class="news-orig">Black Friday Cyber Threats — Part One: Consumers</span>
+                          <p class="news-sum">블랙프라이데이 쇼핑 시즌에 소비자를 노리는 사이버 위협을 다룬 글.</p>
+                          <span class="news-meta">Arctic Wolf · 2026-11-26</span>
                         </article>
                         <article class="news-item">
                           <h3><a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/" target="_blank" rel="noopener">Palo Alto Networks, PAN-OS 공격에 악용된 Fragnesia 결함 경고</a></h3>
