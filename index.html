@@ -233,16 +233,16 @@
         <p class="mast-date">2026년 11월 25일 수요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
-          <li>노출된 데이터베이스 2곳서 35억 건 넘는 기록 발견 — 공개 상태로 방치</li>
-          <li>CISA KEV에 Drupal·Optimizely 취약점 등재 — 실제 악용 확인</li>
-          <li>빗썸 해킹 피해 확대 — 그룹웨어 후속 점검서 개인정보 추가 유출</li>
+          <li>통신 인프라 공격 — Cisco·Fortinet 등 네트워크 장비 악용해 핵심 통신 침투 시도</li>
+          <li>GeoServer 취약점 2건 악용 — 미인증 RCE 체인 경고</li>
+          <li>Drupal 설치 프로그램 치명적 결함 실제 공격 중 — CVE-2026-132165</li>
+          <li>빗썸 해킹 피해 확대 — 침해 기간 1시간→15일, 피해자 7,159명 넘어</li>
           <li>한국투자저축은행 8만6433명 유출 — 저축은행 피해 6곳으로 확대</li>
-          <li>Microsoft Entra Connect Health 경유 고객 데이터 접근 확인</li>
-          <li>美 재무부 FinCEN 사이버 사건 — 일부 시스템 무단 접근 확인</li>
+          <li>美 재무부 FinCEN 사이버 사건 — 일부 시스템 오프라인 전환</li>
+          <li>노출된 데이터베이스 2곳서 35억 건 넘는 기록 발견 — 공개 상태로 방치</li>
           <li>GT13 — AI 활용 해커, 22개 조직 Check Point 서버 침해</li>
-          <li>佛 슈퍼마켓 해킹 배후로 이란 혁명수비대 지목 — 佛 정보기관</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 25일 21:39 KST · 랜섬웨어 유출 현황은 11월 25일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 25일 23:24 KST · 랜섬웨어 유출 현황은 11월 25일 19:39 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
@@ -259,11 +259,203 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 3216건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 3255건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 23:20</span>
+                      <h3><a href="https://techcrunch.com/2026/11/25/todoist-confirms-6-of-customers-details-were-stolen-in-data-breach/" target="_blank" rel="noopener">Todoist, 고객 정보 6% 유출 확인…데이터 유출 인정</a></h3>
+                      <span class="feed-orig">Todoist confirms 6% of customers’ details were stolen in data breach</span>
+                      <p class="feed-sum">Todoist가 데이터 유출로 고객 정보의 6%가 도난당했다고 확인했다고 전함.</p>
+                      <span class="feed-src">TechCrunch security</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 23:15</span>
+                      <h3><a href="https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/" target="_blank" rel="noopener">ShinyHunters 복귀 주장, 신생 Inception 그룹은 연관성 부인</a></h3>
+                      <span class="feed-orig">ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties</span>
+                      <p class="feed-sum">해킹 그룹 ShinyHunters가 복귀를 주장한 가운데 신생 그룹 Inception이 연관성을 부인했다고 전함.</p>
+                      <span class="feed-src">SecurityWeek</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:43</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5tTkFQNmtUVUdwS1RySGdDYzh1SGdqdEJNYXBqNkFRTG5hOXVROXJTN3BaMVhBc0lYcjQ4ZXgxR0hucVcyY3NhVmlsUTF0djZ4bDZBOHpNak5QaGYwVTdyTEVCLVJ6Z3NYcmFqZEFJd1ZmZndt?oc=5" target="_blank" rel="noopener">한전 “고객정보 유출, 2차피해 끝까지 막는다”…최대 1000만원 금융사기 보상보험 제공</a></h3>
+                      <span class="feed-src">부산일보</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:00</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kUzR5WW9EM1ZGMDF6anFRUzZtUlhDUDBVRlM2ZHdqdXJETmZwOFA5Y3p0YnlHWlF2N2xFcUdJS0k1aVNRZmNKQmJrLXdBZWQ0bGJjS1hrT07SAVRBVV95cUxNTnA4SFp2blJKZXZCWk4wVDZ1dXZKM25ibUdxandQbXE3enhfbUU4dzJUdXIzbS01aElqV196ZWtKdzU3VEJDdlFhYlJER0pDMkYtSWU?oc=5" target="_blank" rel="noopener">日 개인정보 유출에 호신용품 불티…온라인선 ‘일본도 자위론’까지</a></h3>
+                      <span class="feed-src">세계일보</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:00</span>
+                      <h3><a href="https://securityboulevard.com/2026/11/ai-code-security-best-practices/" target="_blank" rel="noopener">AI 코드 보안 모범 사례</a></h3>
+                      <span class="feed-orig">AI Code Security Best Practices</span>
+                      <p class="feed-sum">AI로 코드를 작성할 때 지켜야 할 보안 모범 사례를 소개함.</p>
+                      <span class="feed-src">Security Boulevard</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 19:55</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://securityboulevard.com/2026/11/telecom-infrastructure-under-attack-how-hackers-exploit-cisco-fortinet-and-network-devices-to-infiltrate-critical-communications/" target="_blank" rel="noopener">통신 인프라 공격 — 해커, Cisco·Fortinet 등 네트워크 장비 악용해 핵심 통신 침투</a></h3>
+                      <span class="feed-orig">Telecom Infrastructure Under Attack: How Hackers Exploit Cisco, Fortinet, and Network Devices to Infiltrate Critical Communications</span>
+                      <p class="feed-sum">해커들이 Cisco, Fortinet 등 네트워크 장비를 악용해 핵심 통신망에 침투하고 있다고 전함.</p>
+                      <span class="feed-src">Security Boulevard</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 23:00</span>
+                      <h3><a href="https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing" target="_blank" rel="noopener">중남미, 항만·파이프라인·제조업 겨냥 사이버공격 잇따라</a></h3>
+                      <span class="feed-orig">Latin America Sees Cyberattacks on Ports, Pipelines &amp; Manufacturing</span>
+                      <p class="feed-sum">중남미에서 항만, 파이프라인, 제조업을 겨냥한 사이버공격이 잇따르고 있다고 전함.</p>
+                      <span class="feed-src">Dark Reading</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:48</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBnYXctMzR6bXRnRGc1SWpMajZ6cmZ3YVRWaGZ1R3lPaEs5aVYxTE56YjJvRjJfRnZrcFl5VUVBSG9XQjhfSHdvdGFpSkc1d3g0dzBGdkdiSkJqTWlBQVpxS0NDLUlialJ0S3c?oc=5" target="_blank" rel="noopener">해킹보다 무서운 보안 경쟁…멈춰서는 디지털 경제</a></h3>
+                      <span class="feed-src">OBC 뉴스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:39</span>
+                      <h3><a href="https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/" target="_blank" rel="noopener">미 재무부 FinCEN, 사이버 사건 이후 시스템 연결 해제</a></h3>
+                      <span class="feed-orig">US Treasury’s FinCEN Disconnects Systems Following Cyber Incident</span>
+                      <p class="feed-sum">미 재무부 FinCEN이 사이버 사건 이후 시스템을 연결 해제했다</p>
+                      <span class="feed-src">SecurityWeek</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:38</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YT2k5QV9XX1lKc2lSWlAtUGZxNktEcG9tUDVhQjdIM0UzYkN6YU1uSnlBbVN6eWgxaThkc01zNkx3QTVpUHh3YTZ5aG9sbndmTHNaZGEwdk00VkNmY1k0ZUZ3YU8?oc=5" target="_blank" rel="noopener">빗썸 개인정보 유출 추가 확인…침해 기간 1시간서 15일로 늘어</a></h3>
+                      <span class="feed-src">매일일보</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:26</span>
+                      <h3><a href="https://databreaches.net/2026/11/25/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/" target="_blank" rel="noopener">‘우린 ShinyHunters가 아니다’ — ShinyHunters와 똑같이 행동하는 범죄 해킹 조직</a></h3>
+                      <span class="feed-orig">‘We are not ShinyHunters,’ says criminal hacking crew that looks and acts just like ShinyHunters</span>
+                      <p class="feed-sum">ShinyHunters와 똑같이 보이고 행동하는 범죄 해킹 조직이 자신들은 ShinyHunters가 아니라고 주장했다</p>
+                      <span class="feed-src">DataBreaches.Net</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:37</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/" target="_blank" rel="noopener">Drupal 설치 프로그램 치명적 결함, 실제 공격 진행 중 (CVE-2026-132165)</a></h3>
+                      <span class="feed-orig">Critical Drupal installer flaw under active attack (CVE-2026-132165)</span>
+                      <p class="feed-sum">Drupal 설치 프로그램의 치명적 결함이 실제 공격에 악용되고 있다.</p>
+                      <span class="feed-src">Help Net Security</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:37</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE12SjFvTFpKMXZrb3NSTHNCeTZxa3ppeGl4eHFTYUdKaVFBR0FBeEQ1YkszYXBsbE82WVhWWG8zM3AtRWQ5UUJVdDJtUHNZdUg0TnkwZHFKSWFDc1k0Y1pLQU9hZzlQYld4VDYzcnhqcTZHUQ?oc=5" target="_blank" rel="noopener">악성코드의 종류…바이러스와 랜섬웨어 무엇이 어떻게 다른가</a></h3>
+                      <span class="feed-src">스페셜타임스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:30</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9PUFA3cmxhVkM2bEdZZE4wa1p2NklEMGMzSFVscE8zTlpBWVlJaGFpYVNGUGZfcFhCaGdqZzRLN2pzQWF5dUJqdU1sbHVyRk90elpTMWxadTJBUW5kRkltRU9sY0JhR3ZWNWg0?oc=5" target="_blank" rel="noopener">한국투자저축은행, 해킹으로 8만 6천 명 개인정보 유출… 저축은행 '역대 최대'</a></h3>
+                      <span class="feed-src">서울뉴스통신</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:30</span>
+                      <h3><a href="https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/" target="_blank" rel="noopener">CISO가 말하는 기업 예산 없이 실질적인 보안 프로그램 구축하기</a></h3>
+                      <span class="feed-orig">Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget</span>
+                      <p class="feed-sum">기업 수준의 예산 없이도 실질적인 보안 프로그램을 구축하는 방법을 CISO가 직접 설명하는 인터뷰.</p>
+                      <span class="feed-src">SecurityWeek</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:30</span>
+                      <h3><a href="https://therecord.media/guadeloupe-ransomware-hospital-cyber" target="_blank" rel="noopener">과들루프 병원 랜섬웨어 공격 의심 — 암 치료·수술 중단</a></h3>
+                      <span class="feed-orig">Suspected ransomware attack disrupts cancer treatments, surgeries at Guadeloupe hospital</span>
+                      <p class="feed-sum">과들루프의 한 병원이 랜섬웨어 공격으로 의심되는 사건을 당해 암 치료와 수술이 중단됐다.</p>
+                      <span class="feed-src">The Record</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:16</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBHNnh4XzlVbUlZZk56eURmNzFJNGExbXlyX3cwWnNxWFZGbHhCNTVGRHRoTUx5S3VmamVFcXpwZDNnSV9CLXF4cGZUajN2dWk0YXEyamxQbjdWQ3REc3dXV1Nlc3lhNV84dUVpVHRjM1_SAXRBVV95cUxQR3hOaDBweDlGdVhtVWxxTWxKRmQyU1NxMHByOVBibUxxNkdOXzVLcW9aTHNWS3ZxTmFLaEU0eEZOcnVBcVlrRjBPNDBNU3NpN1JUMVc5bFRCZXRkTzI1aHJ4aHpudV82NDZPeU10M2haSEhONA?oc=5" target="_blank" rel="noopener">한국투자저축은행, 고객정보 8만6433명 유출…업권 역대 최대</a></h3>
+                      <span class="feed-src">산경투데이</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:15</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9DNWJ3dkF1UEpwTVZwMkJEajA2dTF1ZjRMdmgyVndYeEtReXo4cEZLazBkMDBpX1c3X1FUcTVDUXMzNDRTV2xJOGhhVmRueXlydk1ZbmpYWmdJdlVmdHRKVDZuSGpWd3ZNNWdz?oc=5" target="_blank" rel="noopener">빗썸 개인정보 유출 사고 파장 확대… 무단 침입 기간 15일로 확인</a></h3>
+                      <span class="feed-src">서울뉴스통신</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:13</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBZUzJ4bmZJUE1HTmdlczRoQkd0UXRuVmN5d2h3QUlGSmFOcHE0dWNyaHExMkxvc2pZU0pLcy1DNWNaQWN6M2RJZTQ2Qjh3X2lpcVNYWDNVSG1lZzFTYW9vamRRaU1Mdm1IcExueFVXZ9IBc0FVX3lxTFBEV3BvWXNVNDdvNmZIdzd6VTJwcm1TWVhuM1JOQ09peVNZZ0Q4aGhZQ0l2cXlYc29hVFBNdUZDcTFyUC1nUjUzOGZ6ejRiMGxUbU1kNGR5MElfcDlkMmY2ZlVEc1NpOElOX2xEQkF0ZGpmS0k?oc=5" target="_blank" rel="noopener">한국투자저축은행 고객 8만 6611명 정보유출…두 차례 공격</a></h3>
+                      <span class="feed-src">대전일보</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html" target="_blank" rel="noopener">Check Point 보안 관리 서버, 글로벌 사이버 공격 캠페인에 피격</a></h3>
+                      <span class="feed-orig">Check Point security management servers hit in global cyberattack campaign</span>
+                      <p class="feed-sum">전 세계적인 사이버 공격 캠페인으로 Check Point 보안 관리 서버가 공격받았다는 내용이다.</p>
+                      <span class="feed-src">CSO Online</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:06</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBYdmY2NFk3NkdQMUxuNHB3WEN2dklhOEJWQnBjcl82WmMtUko4X1hHTTU4SGJpTnRCUWdxUTBjNGNzVnBzR19NRjR0d1ZZTDAxOGJScC1uWjA5TjBJMmhxQm9pSEQwbkZvUXc?oc=5" target="_blank" rel="noopener">빗썸 해킹 ‘1시간→보름’…피해자 7,159명 넘고 민감정보도 유출</a></h3>
+                      <span class="feed-src">www.sisaworld.kr</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:03</span>
+                      <h3><a href="https://cyberscoop.com/fincen-investigates-cybersecurity-incident-systems-offline/" target="_blank" rel="noopener">미 재무부 FinCEN, 사이버 사건 조사…일부 시스템 오프라인 전환</a></h3>
+                      <span class="feed-orig">FinCEN investigates cybersecurity incident, takes systems offline</span>
+                      <p class="feed-sum">미 재무부 금융범죄단속네트워크(FinCEN)가 사이버 사건을 조사 중이며 일부 시스템을 오프라인으로 전환했다는 내용이다.</p>
+                      <span class="feed-src">CyberScoop</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 22:00</span>
+                      <h3><a href="https://orca.security/resources/blog/how-ai-app-builders-leak-their-own-credentials/" target="_blank" rel="noopener">AI 앱 빌더가 스스로 자격증명을 유출하는 방식</a></h3>
+                      <span class="feed-orig">How AI App Builders Leak Their Own Credentials</span>
+                      <p class="feed-sum">AI 앱 빌더가 자체 자격증명을 유출하는 방식을 다룬 글이다.</p>
+                      <span class="feed-src">Orca Security</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:50</span>
+                      <h3><a href="https://securityaffairs.com/203978/security/electrolux-smart-boilers-in-ukraine-connect-to-russian-servers-raising-privacy-concerns.html" target="_blank" rel="noopener">우크라이나 일렉트로룩스 스마트 보일러, 러시아 서버에 접속…개인정보 우려</a></h3>
+                      <span class="feed-orig">Electrolux Smart Boilers in Ukraine Connect to Russian Servers, Raising Privacy Concerns</span>
+                      <p class="feed-sum">우크라이나의 일렉트로룩스 스마트 보일러가 러시아 서버에 접속하는 것으로 나타나 개인정보 우려가 제기됐다는 보도.</p>
+                      <span class="feed-src">Security Affairs</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:48</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html" target="_blank" rel="noopener">해커, GeoServer 취약점 2건 악용…미인증 RCE 체인 경고</a></h3>
+                      <span class="feed-orig">Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains</span>
+                      <p class="feed-sum">해커들이 GeoServer 취약점 2건을 악용하고 있으며 연구진은 인증 없이 원격코드실행이 가능한 공격 체인을 경고했다는 소식.</p>
+                      <span class="feed-src">The Hacker News</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:38</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1PLS13eWV3X0xBWWhCT2hLMkYwMnlPaGZKeERiT0lIZFpSMzBWRDVUby1tc3Zla09EalRRcmtBaWJuX1NldW1sUDF2dk1CcUNadVNJUExuVDI2R2xNWHhVcm1DZDB5SjdjSG5nbXFGdXMzb0U?oc=5" target="_blank" rel="noopener">빗썸 해킹 피해 규모 더 커졌다...보름 넘게 침해 사실 몰라</a></h3>
+                      <span class="feed-src">디지털투데이</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:38</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5MS0RadmM3cEJDdDMwanRnb1VkMlpuRnVUd2dfcUo2LURRZm5TdldIQmFMMk1EV1RkbE94a0JXdldCN0NaS2VYa3lHVHZWemNHZ1pqMWZzTnAyYlZ3TXo0MFJrUV82aS1xNlFrSlF1dE0?oc=5" target="_blank" rel="noopener">빗썸 해킹, 한 시간이라더니 보름간 이어져…추가 피해도 확인</a></h3>
+                      <span class="feed-src">연합인포맥스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:38</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5ZcDBZM2VHYVNkZWZjclZhLU8yRW5OZzVUNG02aTc4dXBySElUVWFJVWVlbkVNYV96alcyck5jdWNIVTg5bFpIc0RRUlFnd3dUaVd2eE9wV0ljaV85MHRLcl85bjRheTdOY25WVnRtXzBrZw?oc=5" target="_blank" rel="noopener">빗썸 해킹, 한 시간이라더니 보름간 이어져…추가 피해도 확인</a></h3>
+                      <span class="feed-src">KB Think</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:35</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5TZnNDVzV1OTNYWkYxZWVxcXBJcnd2Ump2bm5SWlRBY3QtN2drMFp2MGJmMkNPRzg3MlZLSVdCU3hYZjJ0U1RWYkwybW1SR2J1NG9rRFJ2Nk1yU0ZMejVpSF9XX29kWmhja2k4OEdjeW8?oc=5" target="_blank" rel="noopener">한국투자저축은행, 해킹에 고객 8만6천여명 개인정보 유출</a></h3>
+                      <span class="feed-src">연합인포맥스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:32</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBhM3NqNVJ1RW10N1BKZE9fTmt6ZVY0NjFtOUhuMDFTZjF1Yy1jeGExcVQ3NERqbnB5bWQ2ZW93TU9wRzQ4eHhUXzZqd2xhdEpiNFRLS0NpZUlmS1FOekhSclJ3VDBGUHdrQzVVbHc5Unl6aVHSAXdBVV95cUxOckY5c1QtM2dYWk9MdnFmYWExZlNuRVFjeVAweXVNTUQzQW0xMWNUNlVNU0VsbWdld2FOQW5FQjQ2YzNVc0hLZ2ozOC1SUTRPWkwxaFVrLUY5R0hWU1BfV3BYSWtwaFptLW9RSUUtU1NKOHM5YmZ3UQ?oc=5" target="_blank" rel="noopener">빗썸, 해킹 사고 기간 1시간이라더니…2주 동안 털렸다</a></h3>
+                      <span class="feed-src">인사이트코리아</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:30</span>
+                      <h3><a href="https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html" target="_blank" rel="noopener">미 재무부 금융범죄단속기관, 사이버 침해 후 일부 시스템 오프라인 전환</a></h3>
+                      <span class="feed-orig">U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion</span>
+                      <p class="feed-sum">미 재무부 산하 금융범죄단속기관이 사이버 침해 이후 일부 시스템을 오프라인으로 전환했다는 소식.</p>
+                      <span class="feed-src">The Hacker News</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:22</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9SQjBVdEtUNnY1NDFkMXRvbHc3MFpiYzZFSmV3R0ZfaXBqeFpQTEJfZGNZdkE4NTk3bnZIbG5Jb3VKVGxxUFF3aWNqTmZhaEkwOXZIOVpmX2VhakJpLTlYS0lwMWRWMFJWUmJhRk1Za9IBc0FVX3lxTE1KY2F6bWc0NUtnbkRKWWQyMHdkVGhIVjBuNGRjVEQxdGktWXZtcFN6eElOd2J6eVpyeFVwWXJFWkhoeW5la1NjN0c5TUlJSldVUEc5NFpFSHEzWWZPUGFWeWdCeW1xUFlTTVJZZzhTTWpFUjA?oc=5" target="_blank" rel="noopener">빗썸 정보유출 피해 늘어…해킹 보름 넘게 파악 못 해</a></h3>
+                      <span class="feed-src">대전일보</span>
+                    </article>
                     <article class="feed-item">
                       <span class="feed-time">11/25 21:34</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JNzl2ZzJwOFd3YzNBaHlpX1l4b0xyNG5fTWcxMF9Ha0t1UkYyci11Ynp0SmFUcjlNUHk4MzJPRkVQMFYxbU9NcUpTUVMwa0Fmdk54MXA3X0VMUQ?oc=5" target="_blank" rel="noopener">"집 주소 유출됐다"…불안감에 호신용품 쓸어담는 일본</a></h3>
@@ -304,6 +496,11 @@
                       <span class="feed-time">11/25 21:10</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DdmdUTUNkTzUzUWhJY2hMWXdXMGpMQy03cVp3M0kwYUVfMU5weU9WZ25MLW5uSGZsYThRa2l2QVpma3E1NTRFd3B0bmczN1RQRzdBX0lGSXppdw?oc=5" target="_blank" rel="noopener">빗썸 해킹 피해 더 컸다…보름 넘게 뚫리고도 몰랐다</a></h3>
                       <span class="feed-src">파이낸셜뉴스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 21:09</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE82eUx3a01XY3VsQ2hPcDdQblZuV1YwTVpDVmtDZGZqbmFTQlJMQnhOcTJ5TFh6ZWNEc3NNZTFDOEVKalUteHFaX3JhaUQwb0N3TnY1SEllYWs?oc=5" target="_blank" rel="noopener">빗썸, 해킹 피해 추가 확인… 보름 넘게 개인정보 샜다</a></h3>
+                      <span class="feed-src">블록미디어</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/25 20:45</span>
@@ -481,6 +678,11 @@
                       <span class="feed-time">11/25 20:09</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1BWjFhTEJ3RjFZYmVCUDNjeXJDTnZsbnY4ZGhHUTh4NkthYVhvTF93RFRYZE1ScnlDUTMxbFFEUVlleF9pOTNkaXpJVWtSbUl4RG50VGdEQlR0NEhGdmpyQlhWZGVMVlhQdmc?oc=5" target="_blank" rel="noopener">빗썸 해킹 피해 규모 확대…유출 인원·기간 모두 당초 발표보다 커져</a></h3>
                       <span class="feed-src">서울파이낸스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 20:07</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1HZVJCdlBscHpCUF8wNWt0b25JSnBUVVJVNll3Vy1uV19lVGJtSXZDQXRyR2tkbVVnUUZvU180c1B1V0JUWlFDdVVMZEhjU2FXUFBDSHVxWVBVTUJJZlB6MjVmZDI2enBaRHBEVDZwOGLSAXRBVV95cUxQbUhWN3JZRTZwSUVQQzFOS24wX0VobHd2UElicmwwVHFienh2MHpNRzNxTzZWZ0JHMG1rYzNXeGpIUnFhcGV6cWdPTzZhUVMtTDFtWGhqeGpIVldGMTc0d2dnZDdka002ZzJVejBrOVBhTWctWg?oc=5" target="_blank" rel="noopener">빗썸, 해킹 15일간 몰랐다…유출 피해 다시 늘어</a></h3>
+                      <span class="feed-src">주간한국</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/25 20:06</span>
@@ -950,6 +1152,13 @@
                       <span class="feed-src">SecurityWeek</span>
                     </article>
                     <article class="feed-item">
+                      <span class="feed-time">11/25 17:00</span>
+                      <h3><a href="https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-isoc/" target="_blank" rel="noopener">크라우드스트라이크, 에이전틱 SOC 전환 가속</a></h3>
+                      <span class="feed-orig">CrowdStrike Accelerates the Shift to the Agentic SOC</span>
+                      <p class="feed-sum">크라우드스트라이크가 에이전트 기반 SOC(보안운영센터)로의 전환을 가속하고 있다.</p>
+                      <span class="feed-src">CrowdStrike</span>
+                    </article>
+                    <article class="feed-item">
                       <span class="feed-time">11/25 16:59</span>
                       <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209738" target="_blank" rel="noopener">에버스핀, MTD 기반 에버세이프 웹으로 대학가 AI 자동화 공격 대응 점검</a></h3>
                       <span class="feed-src">Dailysecu</span>
@@ -963,6 +1172,11 @@
                       <span class="feed-time">11/25 16:58</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1DQU5yM01jMUswOFZtdE1rUG1acHVNa1lwdEFNdmpPZ0F2c3BfU0lrelZKb1ZJSGhpYkpIdDU5eXBTaW5tQ21VX1FxaFVYT1UycV9yRlVPUFBRZnVCeGo2WGlOSFVGQ0Np?oc=5" target="_blank" rel="noopener">한국투자저축은행, 고객 8만6433명 개인정보 유출</a></h3>
                       <span class="feed-src">www.fetv.co.kr</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 16:57</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqeGxYU1c3MlVkZVBSQ0lPWWNSSkdsWGxrSXNiN1BKU2lzVi1ZWFlRWFdxZHdUUWNyNXg2em9oOGtYMTJacUxFaFVUaFZLWW52?oc=5" target="_blank" rel="noopener">테더, 해킹 피해자에 동결자금 최대 20% 수수료 요구 의혹</a></h3>
+                      <span class="feed-src">블루밍비트</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/25 16:50</span>
@@ -1271,6 +1485,11 @@
                       <span class="feed-orig">WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live</span>
                       <p class="feed-sum">백도어가 심긴 WP Connect 플러그인 6개가 악성 버전으로 배포되기 전에 워드프레스가 차단했다는 소식.</p>
                       <span class="feed-src">The Hacker News</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 15:20</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOanltYXNXYk9qYXpOZ3Y0U0R3TUpBVElaVnl4Z3FkclBEcFQtMlliT2NGRDhyODBMaGZHT2N0dHh2b0RxeXZRbUQxMW4zU0Y1Znd2VWJpSFZxejBCOGoxRFEyVlRjZUdNMjVoY0NxRHBndVd3OEhzR056c3Jxd2FHNlhITmw3UU81?oc=5" target="_blank" rel="noopener">‘통학차량 정보유출’ 전북교육청, 26억여원 투입해 보안망 전면 개편</a></h3>
+                      <span class="feed-src">전북도민일보</span>
                     </article>
                     <article class="feed-item">
                       <span class="feed-time">11/25 15:20</span>
@@ -1718,6 +1937,11 @@
                       <span class="feed-time">11/25 11:20</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1pVEtTcEJQSUZvTVlMZ2FkVzNVa19rZElRM3dfVUZ4TlJXZTI1QUtORDMzZFVtNTExZkppSkhiVElNQ21rZjRPV3FzbmR0VGZ3MHExc3NIalhIRVlXaG5N?oc=5" target="_blank" rel="noopener">통학차량 개인정보 유출… 전북교육청, 보안 강화에 26억 투입</a></h3>
                       <span class="feed-src">완주신문</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25 11:20</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5RUDNlODB4V2FZZWxjVGlybGJ2MTM4SlJhYVBDWGc5MVA1QlMtZ3hXY1d6cHhleUJXZVNkUDZqWEVBQS1PZFVNRVctOTc0bzRnMlBYX19IUWFWdHZWa0dEaU1MaVk3TkFlLWlNSQ?oc=5" target="_blank" rel="noopener">바이낸스, 글로벌 보안기업 3곳과 보안체계 점검 … 이용자 자산 보호 강화</a></h3>
+                      <span class="feed-src">워크투데이</span>
                     </article>
 <article class="feed-item">
                       <span class="feed-time">11/25 11:19</span>
@@ -3080,6 +3304,13 @@
             <span class="feed-time">11/25 00:49</span>
             <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBNS1JwY1FHZnRkcUFJcG9xeTVVZmJKcHBrUWpKOWtmUjVySVlQNEF0YzZDR1BKb2Fpd3NFTHRkUWRPM2N3MDR3bG1KZGZoN1NHc1E?oc=5" target="_blank" rel="noopener">정보 유출된 한전 고객, 금융사기 당하면 최대 1천만원 보상</a></h3>
             <span class="feed-src">노컷뉴스</span>
+          </article>
+          <article class="feed-item">
+            <span class="feed-time">11/25 00:46</span>
+            <h3><a href="https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data" target="_blank" rel="noopener">사우스이스턴 대학교, 데이터 관리 정착기</a></h3>
+            <span class="feed-orig">How Southeastern University Got a Handle on Its Data</span>
+            <p class="feed-sum">사우스이스턴 대학교가 데이터 관리를 정착시킨 과정을 다룬 글.</p>
+            <span class="feed-src">Dark Reading</span>
           </article>
           <article class="feed-item">
             <span class="feed-time">11/25 00:45</span>
@@ -18343,8 +18574,8 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>20</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>2213</b><span>국내 동향 — 11/16~25 보도</span></div>
-        <div class="stat"><b>945</b><span>해외 동향 — 11/16~25 보도</span></div>
+        <div class="stat"><b>2234</b><span>국내 동향 — 11/16~25 보도</span></div>
+        <div class="stat"><b>963</b><span>해외 동향 — 11/16~25 보도</span></div>
         <div class="stat"><b>203</b><span>CVE·취약점 — CVSS 9.0 이상 107건 포함</span></div>
         <div class="stat"><b>58</b><span>다크웹 유출 — 11/25 19:39 확인 기준 24시간 건수</span></div>
       </div>
@@ -18445,7 +18676,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3">
           <h3>美 정보기관 잇단 해킹 — FBI NCIC에 이어 CIA·국가정보국까지</h3>
           <div class="status-row"><span class="chip ongoing">진행 중 · 조사 중</span><span class="chip">최근 동향 2026-11-25</span></div>
-          <p>2026년 11월 21일, FBI 전국 범죄정보망(NCIC) 해킹 정황이 보도됐고 미 수사당국이 조사에 착수했습니다. 수배·영장 정보 변조 우려가 제기됐고, 미 농무부도 해킹 피해를 입은 것으로 보도됐습니다. 9월 FBI 채용시스템 해킹에 이어 두 달 만에 두 번째 FBI 해킹 의혹입니다. 11월 22일 새벽에는 트럼프 대통령이 FBI 데이터베이스 해킹 보도에 대해 '좋지 않다'고 밝혔고, 기술 장애 속에 사이버국장이 해임됐다는 보도가 이어졌다. 국내 언론에서는 트럼프 대통령이 해킹 피해를 두고 "긍정적으로 보자"고 발언한 것으로 전해졌고, 기술 장애 속에 사이버국장이 해임됐다는 보도도 나왔다. 11월 23일에는 Malwarebytes도 FBI 범죄 데이터베이스 해킹 의혹을 보도했다. 11월 25일에는 피해가 FBI를 넘어 정보기관 전반으로 확대됐습니다. 서울신문이 'FBI 이어 CIA도 뚫렸다…美 정보기관 잇단 해킹'을 전한 데 이어, 전자신문은 CIA와 국가정보국도 해킹 피해를 입어 잇단 사이버 공격에 안보 비상이 걸렸다고 속보로 보도했고, YTN은 CIA도 뚫리는 등 미 국가 시스템이 해킹에 속수무책이었다고 전했다. 11월 25일 저녁 세계일보가 미 정보기관 잇단 해킹으로 보안 비상이라고 전했고, 미 재무부도 연방기관 해킹 보도와 관련해 사이버 사건 조사에 착수했다고 Infosecurity Magazine이 보도했다. 11월 25일에는 미 재무부 금융범죄단속망(FinCEN)이 '사이버 사건'에 일부 시스템에 대한 무단 접근이 포함된다고 밝혔다고 DataBreaches.Net이 전했다.</p>
+          <p>2026년 11월 21일, FBI 전국 범죄정보망(NCIC) 해킹 정황이 보도됐고 미 수사당국이 조사에 착수했습니다. 수배·영장 정보 변조 우려가 제기됐고, 미 농무부도 해킹 피해를 입은 것으로 보도됐습니다. 9월 FBI 채용시스템 해킹에 이어 두 달 만에 두 번째 FBI 해킹 의혹입니다. 11월 22일 새벽에는 트럼프 대통령이 FBI 데이터베이스 해킹 보도에 대해 '좋지 않다'고 밝혔고, 기술 장애 속에 사이버국장이 해임됐다는 보도가 이어졌다. 국내 언론에서는 트럼프 대통령이 해킹 피해를 두고 "긍정적으로 보자"고 발언한 것으로 전해졌고, 기술 장애 속에 사이버국장이 해임됐다는 보도도 나왔다. 11월 23일에는 Malwarebytes도 FBI 범죄 데이터베이스 해킹 의혹을 보도했다. 11월 25일에는 피해가 FBI를 넘어 정보기관 전반으로 확대됐습니다. 서울신문이 'FBI 이어 CIA도 뚫렸다…美 정보기관 잇단 해킹'을 전한 데 이어, 전자신문은 CIA와 국가정보국도 해킹 피해를 입어 잇단 사이버 공격에 안보 비상이 걸렸다고 속보로 보도했고, YTN은 CIA도 뚫리는 등 미 국가 시스템이 해킹에 속수무책이었다고 전했다. 11월 25일 저녁 세계일보가 미 정보기관 잇단 해킹으로 보안 비상이라고 전했고, 미 재무부도 연방기관 해킹 보도와 관련해 사이버 사건 조사에 착수했다고 Infosecurity Magazine이 보도했다. 11월 25일에는 미 재무부 금융범죄단속망(FinCEN)이 '사이버 사건'에 일부 시스템에 대한 무단 접근이 포함된다고 밝혔다고 DataBreaches.Net이 전했다. 11월 25일에는 FinCEN이 사이버 침해 이후 일부 시스템을 오프라인으로 전환했다고 The Hacker News 등이 전했다.</p>
           <a class="src-link" href="https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/" target="_blank" rel="noopener">BleepingComputer — FBI reportedly hacked again, this time targeting nationwide police database</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.yna.co.kr/view/AKR20261121033500009" target="_blank" rel="noopener">연합뉴스 — 美 FBI 범죄정보망 해킹 의혹</a>
@@ -18481,6 +18712,8 @@
           <a class="src-link" href="https://www.infosecurity-magazine.com/news/us-treasury-cyber-incident/" target="_blank" rel="noopener">Infosecurity Magazine — US Treasury Investigates Cyber Incident Amid Reported Federal Agency Breaches</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://databreaches.net/2026/11/25/treasurys-fincen-says-cybersecurity-incident-includes-unauthorized-access-of-some-systems/" target="_blank" rel="noopener">DataBreaches.Net — Treasury’s FinCEN says ‘cybersecurity incident’ includes ‘unauthorized access’ of some systems</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html" target="_blank" rel="noopener">The Hacker News — U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-4" aria-labelledby="tab-4">
@@ -18533,8 +18766,8 @@
 
         <div class="tab-panel" role="tabpanel" id="panel-6" aria-labelledby="tab-6">
           <h3>국내 금융권 연쇄 해킹 — 금감원, 274개사 소집 점검</h3>
-          <div class="status-row"><span class="chip reg">규제 대응 진행 중</span><span class="chip">최근 동향 2026-11-24</span></div>
-          <p>9월 이후 금융회사 19곳·20건·피해 11만 건 이상이 누적되자 금융감독원이 11월 17일 전자금융업자 227개사·온투업자 47개사의 CISO와 보안 담당자를 소집해 점검했습니다. 스푼(약 1만8천 명 유출), 줌펀드(예치금 약 3억 원 유출) 사례가 언급됐고, 시민단체 5곳도 같은 날 보안체계 점검을 촉구했습니다. 11월 20일에는 금감원이 가상자산사업자 28곳에 보안 점검을 주문하고 AI 해킹 대비를 당부했으며, 취약점을 방치해 사고가 발생하면 엄정히 책임을 묻겠다고 밝혔다. 11월 22일에는 예별손해보험도 외부 수탁업체(보험금 청구) 해킹으로 과거 피보험자 <strong>66명</strong>의 주민번호 등 개인정보가 유출된 사실이 알려지며, 해킹 피해 보험사가 <strong>4곳</strong>으로 확대됐다. 11월 23일에는 삼성증권도 '고객의 소리' 민원창구 해킹으로 고객 8,241명의 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 웰컴페이먼츠와 NHN KCP·KIS정보통신 등 국내 PG사에서도 잇단 해킹으로 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 롯데카드가 해킹 사고 공시 의무 위반으로 과징금 10억2,000만원을 부과받았고, 가상자산 지갑 디센트도 해킹 후폭풍으로 앱 지갑 서비스를 접고 이용자 자산 이전을 안내했다. 11월 24일에는 해킹 금융사에 매출 3% 과징금을 부과하는 전금법 개정안이 국회 정무위 1소위를 통과했고, 줌펀드는 해킹 피해액 3.3억원을 전액 복구하고 내달 초 홈페이지를 재개한다고 밝혔다. 11월 24일에는 하나저축은행 해킹으로 고객 <strong>552명</strong>의 개인정보가 유출된 사실이 알려졌고 추가 피해 여부를 조사 중이며, 두 달 사이 해킹 피해를 입은 저축은행이 <strong>5곳</strong>으로 늘었다.</p>
+          <div class="status-row"><span class="chip reg">규제 대응 진행 중</span><span class="chip">최근 동향 2026-11-25</span></div>
+          <p>9월 이후 금융회사 19곳·20건·피해 11만 건 이상이 누적되자 금융감독원이 11월 17일 전자금융업자 227개사·온투업자 47개사의 CISO와 보안 담당자를 소집해 점검했습니다. 스푼(약 1만8천 명 유출), 줌펀드(예치금 약 3억 원 유출) 사례가 언급됐고, 시민단체 5곳도 같은 날 보안체계 점검을 촉구했습니다. 11월 20일에는 금감원이 가상자산사업자 28곳에 보안 점검을 주문하고 AI 해킹 대비를 당부했으며, 취약점을 방치해 사고가 발생하면 엄정히 책임을 묻겠다고 밝혔다. 11월 22일에는 예별손해보험도 외부 수탁업체(보험금 청구) 해킹으로 과거 피보험자 <strong>66명</strong>의 주민번호 등 개인정보가 유출된 사실이 알려지며, 해킹 피해 보험사가 <strong>4곳</strong>으로 확대됐다. 11월 23일에는 삼성증권도 '고객의 소리' 민원창구 해킹으로 고객 8,241명의 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 웰컴페이먼츠와 NHN KCP·KIS정보통신 등 국내 PG사에서도 잇단 해킹으로 개인정보가 유출된 사실이 알려졌습니다. 11월 24일에는 롯데카드가 해킹 사고 공시 의무 위반으로 과징금 10억2,000만원을 부과받았고, 가상자산 지갑 디센트도 해킹 후폭풍으로 앱 지갑 서비스를 접고 이용자 자산 이전을 안내했다. 11월 24일에는 해킹 금융사에 매출 3% 과징금을 부과하는 전금법 개정안이 국회 정무위 1소위를 통과했고, 줌펀드는 해킹 피해액 3.3억원을 전액 복구하고 내달 초 홈페이지를 재개한다고 밝혔다. 11월 24일에는 하나저축은행 해킹으로 고객 <strong>552명</strong>의 개인정보가 유출된 사실이 알려졌고 추가 피해 여부를 조사 중이며, 두 달 사이 해킹 피해를 입은 저축은행이 <strong>5곳</strong>으로 늘었다. 11월 25일에는 빗썸 해킹 피해가 추가로 확인돼 침해 기간이 당초 1시간에서 15일(보름)로 늘어났고 피해자가 7,159명을 넘었으며 민감정보 유출도 확인됐다. 같은 날 한국투자저축은행에서도 고객 8만6433명의 개인정보가 유출된 사실이 알려지며 저축은행 해킹 피해가 6곳으로 확대됐고, 대전일보는 두 차례에 걸친 공격이었다고 전했다.</p>
           <a class="src-link" href="https://m.nocutnews.co.kr/news/6607910" target="_blank" rel="noopener">노컷뉴스 — 금감원 274개사 소집 점검</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTE92SUxZSm9EeHQzcWJSMTlncllVbk05RFgwdFVFXy1XdmVJYzRDUEhvbmdXNEtuem5GTjVTVzV1LWtETFdxcVB5d2c4NU9ucEkwb1I1Um9TVVd6RnRhLXF2ZWlEcnZNWkpZMEdyNEdZRmE?oc=5" target="_blank" rel="noopener">신아일보 — 금감원, 가상자산 사업자에 '보안 강화' 주문…취약점 방치 시 책임 묻는다</a>
@@ -18572,6 +18805,12 @@
           <a class="src-link" href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQQjk4MkNEUUFFV3dSc0x6ZEZPWXU3TDFqSlhFdHRyTVRKNzVSNGlhcl9Rc0FZMDFxRmJkNmZjeVJKRVdWRGVyWVpkN2JrQnBFUlNCVDlicW9ESWxXTmczX0NReUoxY0xJcVMyWENqTTFNUlplbklzbFRPZ0hOc2RFdg?oc=5" target="_blank" rel="noopener">이데일리 — 하나저축은행 해킹…두 달 새 저축은행 5곳 피해</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTE85TDlGWmhXNmhPYmczLWlHTzNWSDBtdEhpc1lGckdVWE16UGY3blNjTk5aU0lWbFdPSU1DX1dNOWpXTEZqck5Pay1FT0VDNVF1U0pGbG1FTXF1QkNDRkFNMUxDcHZ2cmRGMmV4OWpPT1DSAXRBVV95cUxPWXBBMDc5Q0RqOE9mczU0anluYU9rOWE1TndwMXhEN3BGaXp6M3dzWTZfZ3NSOWozZmtpU2tScG5qa0pvZ1VkZVZuYzQyeGV6eHUzNklKc0plZmJTWHBwRVJKWVFKTUtKREluUXVWZ1RJQ3NjaQ?oc=5" target="_blank" rel="noopener">주간한국 — 하나저축은행 해킹, 고객 552명 개인정보 유출…추가 피해 조사 중</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YT2k5QV9XX1lKc2lSWlAtUGZxNktEcG9tUDVhQjdIM0UzYkN6YU1uSnlBbVN6eWgxaThkc01zNkx3QTVpUHh3YTZ5aG9sbndmTHNaZGEwdk00VkNmY1k0ZUZ3YU8?oc=5" target="_blank" rel="noopener">매일일보 — 빗썸 개인정보 유출 추가 확인…침해 기간 1시간서 15일로 늘어</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBHNnh4XzlVbUlZZk56eURmNzFJNGExbXlyX3cwWnNxWFZGbHhCNTVGRHRoTUx5S3VmamVFcXpwZDNnSV9CLXF4cGZUajN2dWk0YXEyamxQbjdWQ3REc3dXV1Nlc3lhNV84dUVpVHRjM1_SAXRBVV95cUxQR3hOaDBweDlGdVhtVWxxTWxKRmQyU1NxMHByOVBibUxxNkdOXzVLcW9aTHNWS3ZxTmFLaEU0eEZOcnVBcVlrRjBPNDBNU3NpN1JUMVc5bFRCZXRkTzI1aHJ4aHpudV82NDZPeU10M2haSEhONA?oc=5" target="_blank" rel="noopener">산경투데이 — 한국투자저축은행, 고객정보 8만6433명 유출…업권 역대 최대</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBZUzJ4bmZJUE1HTmdlczRoQkd0UXRuVmN5d2h3QUlGSmFOcHE0dWNyaHExMkxvc2pZU0pLcy1DNWNaQWN6M2RJZTQ2Qjh3X2lpcVNYWDNVSG1lZzFTYW9vamRRaU1Mdm1IcExueFVXZ9IBc0FVX3lxTFBEV3BvWXNVNDdvNmZIdzd6VTJwcm1TWVhuM1JOQ09peVNZZ0Q4aGhZQ0l2cXlYc29hVFBNdUZDcTFyUC1nUjUzOGZ6ejRiMGxUbU1kNGR5MElfcDlkMmY2ZlVEc1NpOElOX2xEQkF0ZGpmS0k?oc=5" target="_blank" rel="noopener">대전일보 — 한국투자저축은행 고객 8만 6611명 정보유출…두 차례 공격</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-7" aria-labelledby="tab-7">
@@ -18963,7 +19202,7 @@
         <div class="tab-panel" role="tabpanel" id="panel-18" aria-labelledby="tab-18">
           <h3>Check Point 보안 관리 서버 해킹 — AI 활용 캠페인으로 침해</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-25</span></div>
-          <p>체크포인트의 보안 관리 서버가 AI를 활용한 캠페인으로 해킹당한 것으로 확인됐다. SecurityWeek가 11월 24일 보도했다. 11월 25일 데이터넷은 체크포인트 보안관리 서버를 겨냥한 AI 자동화 공격이 확산 중이며 한국에서도 피해가 확인됐다고 보도했다. 같은 날 The Hacker News는 침해된 관리 서버가 24대에 이르며 AI 기반 공격 캠페인으로 의심된다고 보도했다. Security Affairs는 11월 25일 이 캠페인을 GT13으로 명명하며 AI를 활용한 해커들이 Check Point 서버를 통해 22개 조직을 노렸다고 보도했다.</p>
+          <p>체크포인트의 보안 관리 서버가 AI를 활용한 캠페인으로 해킹당한 것으로 확인됐다. SecurityWeek가 11월 24일 보도했다. 11월 25일 데이터넷은 체크포인트 보안관리 서버를 겨냥한 AI 자동화 공격이 확산 중이며 한국에서도 피해가 확인됐다고 보도했다. 같은 날 The Hacker News는 침해된 관리 서버가 24대에 이르며 AI 기반 공격 캠페인으로 의심된다고 보도했다. Security Affairs는 11월 25일 이 캠페인을 GT13으로 명명하며 AI를 활용한 해커들이 Check Point 서버를 통해 22개 조직을 노렸다고 보도했다. 같은 날 CSO Online은 전 세계적인 사이버 공격 캠페인으로 Check Point 보안 관리 서버가 공격받았다고 보도했다. CSO 보도 기준, Check Point 보안 관리 서버를 겨냥한 글로벌 사이버 공격 캠페인이 확인됨. 11월 25일 CSO Online은 Check Point 보안 관리 서버가 전 세계적인 사이버공격 캠페인에 피격됐다고 보도했다.</p>
           <a class="src-link" href="https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/" target="_blank" rel="noopener">SecurityWeek — Check Point Security Management Servers Hacked in AI-Assisted Campaign</a>
                   &nbsp;·&nbsp;
           <a class="src-link" href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNVW13dDQ3WFhKRTFnbTl6QzdnUXFJX1lJTHhUclBBdmdpdHlJSU5IelFVZmxqd2g5emo4VFVZelZTcVBVdk5DMk1aMlJfelMyY2x6SlNidWYyejJuXzV6QVc5ZG1ucGkyU2UwYS1zby1zalVnWXFFUzJRZzN4UnZTdHN2bUNsVGV4TjFhSVluYklMUQ?oc=5" target="_blank" rel="noopener">GeekNews — 22개 조직의 Check Point 서버를 침해한 사이버 공격 캠페인</a>
@@ -18977,6 +19216,8 @@
           <a class="src-link" href="https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html" target="_blank" rel="noopener">The Hacker News — Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://securityaffairs.com/203946/hacking/gt13-ai-assisted-hackers-target-22-organizations-through-check-point-servers.html" target="_blank" rel="noopener">Security Affairs — GT13: AI-Assisted Hackers Target 22 Organizations Through Check Point Servers</a>
+          &nbsp;·&nbsp;
+          <a class="src-link" href="https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html" target="_blank" rel="noopener">CSO Online — Check Point security management servers hit in global cyberattack campaign</a>
         </div>
 
         <div class="tab-panel" role="tabpanel" id="panel-19" aria-labelledby="tab-19">
@@ -18997,7 +19238,9 @@
         <div class="tab-panel" role="tabpanel" id="panel-20" aria-labelledby="tab-20">
           <h3>Drupal RCE 취약점 악용 — Fail2Install 익스플로잇 공개, 실제 악용 진행 중</h3>
           <div class="status-row"><span class="chip ongoing">진행 중</span><span class="chip">최근 동향 2026-11-25</span></div>
-          <p>11월 19일 Drupal이 심각한 설치 프로그램 RCE 취약점(<span class="mono">CVE-2026-132165</span>)을 패치했고, 이 취약점은 11월 24일 CISA KEV에 등재됐습니다. 11월 25일에는 Anthropic 스캐너가 발견한 취약점이 공격에 악용되고 있다는 SecurityWeek 보도와, 해커들이 해당 RCE 취약점을 악용해 사이트를 탈취 중이라는 BleepingComputer 보도가 나왔습니다. 이어 The Hacker News는 Fail2Install 익스플로잇의 세부 내용이 공개됐으며 실제 악용이 진행 중이라고 속보로 전했습니다.</p>
+          <p>11월 19일 Drupal이 심각한 설치 프로그램 RCE 취약점(<span class="mono">CVE-2026-132165</span>)을 패치했고, 이 취약점은 11월 24일 CISA KEV에 등재됐습니다. 11월 25일에는 Anthropic 스캐너가 발견한 취약점이 공격에 악용되고 있다는 SecurityWeek 보도와, 해커들이 해당 RCE 취약점을 악용해 사이트를 탈취 중이라는 BleepingComputer 보도가 나왔습니다. 이어 The Hacker News는 Fail2Install 익스플로잇의 세부 내용이 공개됐으며 실제 악용이 진행 중이라고 속보로 전했습니다. Help Net Security도 11월 25일 Drupal 설치 프로그램의 치명적 결함 CVE-2026-132165가 실제 공격에 악용되고 있다고 속보로 전했습니다.</p>
+          <a class="src-link" href="https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/" target="_blank" rel="noopener">Help Net Security — Critical Drupal installer flaw under active attack (CVE-2026-132165)</a>
+          &nbsp;·&nbsp;
           <a class="src-link" href="https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html" target="_blank" rel="noopener">The Hacker News — Drupal Fail2Install 익스플로잇 세부 내용 공개, 심각한 RCE 취약점 실제 악용 직면</a>
           &nbsp;·&nbsp;
           <a class="src-link" href="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/" target="_blank" rel="noopener">BleepingComputer — 해커들, 심각한 Drupal RCE 취약점 악용해 사이트 탈취 중</a>
@@ -20800,14 +21043,78 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 2213건 · 해외 945건 · 2026년 11월 16~25일 보도</p>
+          <p>국내 2234건 · 해외 963건 · 2026년 11월 16~25일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-                        <p class="col-note">2213건 · 2026년 11월 16~25일 보도</p>
+                        <p class="col-note">2234건 · 2026년 11월 16~25일 보도</p>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5tTkFQNmtUVUdwS1RySGdDYzh1SGdqdEJNYXBqNkFRTG5hOXVROXJTN3BaMVhBc0lYcjQ4ZXgxR0hucVcyY3NhVmlsUTF0djZ4bDZBOHpNak5QaGYwVTdyTEVCLVJ6Z3NYcmFqZEFJd1ZmZndt?oc=5" target="_blank" rel="noopener">한전 “고객정보 유출, 2차피해 끝까지 막는다”…최대 1000만원 금융사기 보상보험 제공</a></h3>
+                          <span class="news-meta">부산일보 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kUzR5WW9EM1ZGMDF6anFRUzZtUlhDUDBVRlM2ZHdqdXJETmZwOFA5Y3p0YnlHWlF2N2xFcUdJS0k1aVNRZmNKQmJrLXdBZWQ0bGJjS1hrT07SAVRBVV95cUxNTnA4SFp2blJKZXZCWk4wVDZ1dXZKM25ibUdxandQbXE3enhfbUU4dzJUdXIzbS01aElqV196ZWtKdzU3VEJDdlFhYlJER0pDMkYtSWU?oc=5" target="_blank" rel="noopener">日 개인정보 유출에 호신용품 불티…온라인선 ‘일본도 자위론’까지</a></h3>
+                          <span class="news-meta">세계일보 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBnYXctMzR6bXRnRGc1SWpMajZ6cmZ3YVRWaGZ1R3lPaEs5aVYxTE56YjJvRjJfRnZrcFl5VUVBSG9XQjhfSHdvdGFpSkc1d3g0dzBGdkdiSkJqTWlBQVpxS0NDLUlialJ0S3c?oc=5" target="_blank" rel="noopener">해킹보다 무서운 보안 경쟁…멈춰서는 디지털 경제</a></h3>
+                          <span class="news-meta">OBC 뉴스 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE9YT2k5QV9XX1lKc2lSWlAtUGZxNktEcG9tUDVhQjdIM0UzYkN6YU1uSnlBbVN6eWgxaThkc01zNkx3QTVpUHh3YTZ5aG9sbndmTHNaZGEwdk00VkNmY1k0ZUZ3YU8?oc=5" target="_blank" rel="noopener">빗썸 개인정보 유출 추가 확인…침해 기간 1시간서 15일로 늘어</a></h3>
+                          <span class="news-meta">매일일보 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE12SjFvTFpKMXZrb3NSTHNCeTZxa3ppeGl4eHFTYUdKaVFBR0FBeEQ1YkszYXBsbE82WVhWWG8zM3AtRWQ5UUJVdDJtUHNZdUg0TnkwZHFKSWFDc1k0Y1pLQU9hZzlQYld4VDYzcnhqcTZHUQ?oc=5" target="_blank" rel="noopener">악성코드의 종류…바이러스와 랜섬웨어 무엇이 어떻게 다른가</a></h3>
+                          <span class="news-meta">스페셜타임스 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9PUFA3cmxhVkM2bEdZZE4wa1p2NklEMGMzSFVscE8zTlpBWVlJaGFpYVNGUGZfcFhCaGdqZzRLN2pzQWF5dUJqdU1sbHVyRk90elpTMWxadTJBUW5kRkltRU9sY0JhR3ZWNWg0?oc=5" target="_blank" rel="noopener">한국투자저축은행, 해킹으로 8만 6천 명 개인정보 유출… 저축은행 '역대 최대'</a></h3>
+                          <span class="news-meta">서울뉴스통신 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFBHNnh4XzlVbUlZZk56eURmNzFJNGExbXlyX3cwWnNxWFZGbHhCNTVGRHRoTUx5S3VmamVFcXpwZDNnSV9CLXF4cGZUajN2dWk0YXEyamxQbjdWQ3REc3dXV1Nlc3lhNV84dUVpVHRjM1_SAXRBVV95cUxQR3hOaDBweDlGdVhtVWxxTWxKRmQyU1NxMHByOVBibUxxNkdOXzVLcW9aTHNWS3ZxTmFLaEU0eEZOcnVBcVlrRjBPNDBNU3NpN1JUMVc5bFRCZXRkTzI1aHJ4aHpudV82NDZPeU10M2haSEhONA?oc=5" target="_blank" rel="noopener">한국투자저축은행, 고객정보 8만6433명 유출…업권 역대 최대</a></h3>
+                          <span class="news-meta">산경투데이 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE9DNWJ3dkF1UEpwTVZwMkJEajA2dTF1ZjRMdmgyVndYeEtReXo4cEZLazBkMDBpX1c3X1FUcTVDUXMzNDRTV2xJOGhhVmRueXlydk1ZbmpYWmdJdlVmdHRKVDZuSGpWd3ZNNWdz?oc=5" target="_blank" rel="noopener">빗썸 개인정보 유출 사고 파장 확대… 무단 침입 기간 15일로 확인</a></h3>
+                          <span class="news-meta">서울뉴스통신 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBZUzJ4bmZJUE1HTmdlczRoQkd0UXRuVmN5d2h3QUlGSmFOcHE0dWNyaHExMkxvc2pZU0pLcy1DNWNaQWN6M2RJZTQ2Qjh3X2lpcVNYWDNVSG1lZzFTYW9vamRRaU1Mdm1IcExueFVXZ9IBc0FVX3lxTFBEV3BvWXNVNDdvNmZIdzd6VTJwcm1TWVhuM1JOQ09peVNZZ0Q4aGhZQ0l2cXlYc29hVFBNdUZDcTFyUC1nUjUzOGZ6ejRiMGxUbU1kNGR5MElfcDlkMmY2ZlVEc1NpOElOX2xEQkF0ZGpmS0k?oc=5" target="_blank" rel="noopener">한국투자저축은행 고객 8만 6611명 정보유출…두 차례 공격</a></h3>
+                          <span class="news-meta">대전일보 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBYdmY2NFk3NkdQMUxuNHB3WEN2dklhOEJWQnBjcl82WmMtUko4X1hHTTU4SGJpTnRCUWdxUTBjNGNzVnBzR19NRjR0d1ZZTDAxOGJScC1uWjA5TjBJMmhxQm9pSEQwbkZvUXc?oc=5" target="_blank" rel="noopener">빗썸 해킹 ‘1시간→보름’…피해자 7,159명 넘고 민감정보도 유출</a></h3>
+                          <span class="news-meta">www.sisaworld.kr · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE1PLS13eWV3X0xBWWhCT2hLMkYwMnlPaGZKeERiT0lIZFpSMzBWRDVUby1tc3Zla09EalRRcmtBaWJuX1NldW1sUDF2dk1CcUNadVNJUExuVDI2R2xNWHhVcm1DZDB5SjdjSG5nbXFGdXMzb0U?oc=5" target="_blank" rel="noopener">빗썸 해킹 피해 규모 더 커졌다...보름 넘게 침해 사실 몰라</a></h3>
+                          <span class="news-meta">디지털투데이 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5MS0RadmM3cEJDdDMwanRnb1VkMlpuRnVUd2dfcUo2LURRZm5TdldIQmFMMk1EV1RkbE94a0JXdldCN0NaS2VYa3lHVHZWemNHZ1pqMWZzTnAyYlZ3TXo0MFJrUV82aS1xNlFrSlF1dE0?oc=5" target="_blank" rel="noopener">빗썸 해킹, 한 시간이라더니 보름간 이어져…추가 피해도 확인</a></h3>
+                          <span class="news-meta">연합인포맥스 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE5ZcDBZM2VHYVNkZWZjclZhLU8yRW5OZzVUNG02aTc4dXBySElUVWFJVWVlbkVNYV96alcyck5jdWNIVTg5bFpIc0RRUlFnd3dUaVd2eE9wV0ljaV85MHRLcl85bjRheTdOY25WVnRtXzBrZw?oc=5" target="_blank" rel="noopener">빗썸 해킹, 한 시간이라더니 보름간 이어져…추가 피해도 확인</a></h3>
+                          <span class="news-meta">KB Think · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE5TZnNDVzV1OTNYWkYxZWVxcXBJcnd2Ump2bm5SWlRBY3QtN2drMFp2MGJmMkNPRzg3MlZLSVdCU3hYZjJ0U1RWYkwybW1SR2J1NG9rRFJ2Nk1yU0ZMejVpSF9XX29kWmhja2k4OEdjeW8?oc=5" target="_blank" rel="noopener">한국투자저축은행, 해킹에 고객 8만6천여명 개인정보 유출</a></h3>
+                          <span class="news-meta">연합인포맥스 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBhM3NqNVJ1RW10N1BKZE9fTmt6ZVY0NjFtOUhuMDFTZjF1Yy1jeGExcVQ3NERqbnB5bWQ2ZW93TU9wRzQ4eHhUXzZqd2xhdEpiNFRLS0NpZUlmS1FOekhSclJ3VDBGUHdrQzVVbHc5Unl6aVHSAXdBVV95cUxOckY5c1QtM2dYWk9MdnFmYWExZlNuRVFjeVAweXVNTUQzQW0xMWNUNlVNU0VsbWdld2FOQW5FQjQ2YzNVc0hLZ2ozOC1SUTRPWkwxaFVrLUY5R0hWU1BfV3BYSWtwaFptLW9RSUUtU1NKOHM5YmZ3UQ?oc=5" target="_blank" rel="noopener">빗썸, 해킹 사고 기간 1시간이라더니…2주 동안 털렸다</a></h3>
+                          <span class="news-meta">인사이트코리아 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9SQjBVdEtUNnY1NDFkMXRvbHc3MFpiYzZFSmV3R0ZfaXBqeFpQTEJfZGNZdkE4NTk3bnZIbG5Jb3VKVGxxUFF3aWNqTmZhaEkwOXZIOVpmX2VhakJpLTlYS0lwMWRWMFJWUmJhRk1Za9IBc0FVX3lxTE1KY2F6bWc0NUtnbkRKWWQyMHdkVGhIVjBuNGRjVEQxdGktWXZtcFN6eElOd2J6eVpyeFVwWXJFWkhoeW5la1NjN0c5TUlJSldVUEc5NFpFSHEzWWZPUGFWeWdCeW1xUFlTTVJZZzhTTWpFUjA?oc=5" target="_blank" rel="noopener">빗썸 정보유출 피해 늘어…해킹 보름 넘게 파악 못 해</a></h3>
+                          <span class="news-meta">대전일보 · 2026-11-25</span>
+                        </article>
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JNzl2ZzJwOFd3YzNBaHlpX1l4b0xyNG5fTWcxMF9Ha0t1UkYyci11Ynp0SmFUcjlNUHk4MzJPRkVQMFYxbU9NcUpTUVMwa0Fmdk54MXA3X0VMUQ?oc=5" target="_blank" rel="noopener">"집 주소 유출됐다"…불안감에 호신용품 쓸어담는 일본</a></h3>
                           <span class="news-meta">한국경제 · 2026-11-25</span>
@@ -20823,6 +21130,10 @@
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9DdmdUTUNkTzUzUWhJY2hMWXdXMGpMQy03cVp3M0kwYUVfMU5weU9WZ25MLW5uSGZsYThRa2l2QVpma3E1NTRFd3B0bmczN1RQRzdBX0lGSXppdw?oc=5" target="_blank" rel="noopener">빗썸 해킹 피해 더 컸다…보름 넘게 뚫리고도 몰랐다</a></h3>
                           <span class="news-meta">파이낸셜뉴스 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE82eUx3a01XY3VsQ2hPcDdQblZuV1YwTVpDVmtDZGZqbmFTQlJMQnhOcTJ5TFh6ZWNEc3NNZTFDOEVKalUteHFaX3JhaUQwb0N3TnY1SEllYWs?oc=5" target="_blank" rel="noopener">빗썸, 해킹 피해 추가 확인… 보름 넘게 개인정보 샜다</a></h3>
+                          <span class="news-meta">블록미디어 · 2026-11-25</span>
                         </article>
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1nV2ptd3ZtRWFsNE94cllpRXhOMmRNc3lybjllYkRjb0lLbVl3Sk9GMTVZYjFqcGEySXIxaFBUZERBQ2kweTdVa3c4YXFfd0YzMXc?oc=5" target="_blank" rel="noopener">빗썸, 그룹웨어 해킹 후속 점검서 개인정보 추가 유출 확인</a></h3>
@@ -20907,6 +21218,10 @@
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1BWjFhTEJ3RjFZYmVCUDNjeXJDTnZsbnY4ZGhHUTh4NkthYVhvTF93RFRYZE1ScnlDUTMxbFFEUVlleF9pOTNkaXpJVWtSbUl4RG50VGdEQlR0NEhGdmpyQlhWZGVMVlhQdmc?oc=5" target="_blank" rel="noopener">빗썸 해킹 피해 규모 확대…유출 인원·기간 모두 당초 발표보다 커져</a></h3>
                           <span class="news-meta">서울파이낸스 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1HZVJCdlBscHpCUF8wNWt0b25JSnBUVVJVNll3Vy1uV19lVGJtSXZDQXRyR2tkbVVnUUZvU180c1B1V0JUWlFDdVVMZEhjU2FXUFBDSHVxWVBVTUJJZlB6MjVmZDI2enBaRHBEVDZwOGLSAXRBVV95cUxQbUhWN3JZRTZwSUVQQzFOS24wX0VobHd2UElicmwwVHFienh2MHpNRzNxTzZWZ0JHMG1rYzNXeGpIUnFhcGV6cWdPTzZhUVMtTDFtWGhqeGpIVldGMTc0d2dnZDdka002ZzJVejBrOVBhTWctWg?oc=5" target="_blank" rel="noopener">빗썸, 해킹 15일간 몰랐다…유출 피해 다시 늘어</a></h3>
+                          <span class="news-meta">주간한국 · 2026-11-25</span>
                         </article>
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9wQlVuWEJvVzBfeDBBV2Q4LUlFX2dhVkNRNGFGQ3V4VmN4VmNnUFVFWnJwQ1dpS2c1U1BSRHlRRmNvWDZ2VXNjV3AwOUVBMXlzbjM0dnFEellEd9IBWEFVX3lxTFA3eU1VX2EyTWd4a2dyaldTbTI3Z0dWRXJGc0J6Yk1Rd19rZGlhTXZaMHdIWTNGTnpaeDRCN2M2MHpDOE9rU08zWGlNU0hDYUZPa1NtakNsTVo?oc=5" target="_blank" rel="noopener">빗썸, 보름 넘게 해킹 사실 몰라…개인정보 유출 7159명 넘어</a></h3>
@@ -21170,6 +21485,10 @@
                           <span class="news-meta">데일리시큐 · 2026-11-25</span>
                         </article>
                         <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqeGxYU1c3MlVkZVBSQ0lPWWNSSkdsWGxrSXNiN1BKU2lzVi1ZWFlRWFdxZHdUUWNyNXg2em9oOGtYMTJacUxFaFVUaFZLWW52?oc=5" target="_blank" rel="noopener">테더, 해킹 피해자에 동결자금 최대 20% 수수료 요구 의혹</a></h3>
+                          <span class="news-meta">블루밍비트 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFB1NmJCc19Icnk4aE1hMjNlX0R2Q3Jwb0FxUkVoU3hMMlRIOXpCSFc2ZmZwSUFmNG42X1ptY1ZRNG02NTJMTDVVclJxdWYxV2xKb2I3NE1FZGdGajRtYlZaYk5POFJZOUZfOTNnWA?oc=5" target="_blank" rel="noopener">개인정보 유출에 불안 커진 日…20~30대도 비밀번호 수첩 찾는다</a></h3>
                           <span class="news-meta">센머니 · 2026-11-25</span>
                         </article>
@@ -21374,6 +21693,10 @@
                           <span class="news-meta">데일리시큐 · 2026-11-25</span>
                         </article>
                         <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOanltYXNXYk9qYXpOZ3Y0U0R3TUpBVElaVnl4Z3FkclBEcFQtMlliT2NGRDhyODBMaGZHT2N0dHh2b0RxeXZRbUQxMW4zU0Y1Znd2VWJpSFZxejBCOGoxRFEyVlRjZUdNMjVoY0NxRHBndVd3OEhzR056c3Jxd2FHNlhITmw3UU81?oc=5" target="_blank" rel="noopener">‘통학차량 정보유출’ 전북교육청, 26억여원 투입해 보안망 전면 개편</a></h3>
+                          <span class="news-meta">전북도민일보 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
                           <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209715" target="_blank" rel="noopener">한국 노리는 랜섬웨어 조직 11개→24개…다크웹에 공개된 국내 피해 주장 2.4배 급증</a></h3>
                           <span class="news-meta">데일리시큐 · 2026-11-25</span>
                         </article>
@@ -21568,6 +21891,10 @@
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1pVEtTcEJQSUZvTVlMZ2FkVzNVa19rZElRM3dfVUZ4TlJXZTI1QUtORDMzZFVtNTExZkppSkhiVElNQ21rZjRPV3FzbmR0VGZ3MHExc3NIalhIRVlXaG5N?oc=5" target="_blank" rel="noopener">통학차량 개인정보 유출… 전북교육청, 보안 강화에 26억 투입</a></h3>
                           <span class="news-meta">완주신문 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5RUDNlODB4V2FZZWxjVGlybGJ2MTM4SlJhYVBDWGc5MVA1QlMtZ3hXY1d6cHhleUJXZVNkUDZqWEVBQS1PZFVNRVctOTc0bzRnMlBYX19IUWFWdHZWa0dEaU1MaVk3TkFlLWlNSQ?oc=5" target="_blank" rel="noopener">바이낸스, 글로벌 보안기업 3곳과 보안체계 점검 … 이용자 자산 보호 강화</a></h3>
+                          <span class="news-meta">워크투데이 · 2026-11-25</span>
                         </article>
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQTktXdWtzUHZndUp0NEdINXhyU05ONDB6V2FicWJ0Wl9PSkxTUEkxeFdjR0VSZ05WaENLQ096bmxRcE1EUmZvOGdQU0hKRmZOejlVRGpEMDdWazdBV0dMWklmX1VTSV9qRktOMXRLMEZXUzd3ajdWdlBMOWYweDF2OWI4QW5uNnJmNHpETw?oc=5" target="_blank" rel="noopener">하나저축은행 해킹 피해...고객 552명 개인정보 유출</a></h3>
@@ -29672,7 +29999,103 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-                        <p class="col-note">945건 · November 16–25, 2026</p>
+                        <p class="col-note">963건 · November 16–25, 2026</p>
+                        <article class="news-item">
+                          <h3><a href="https://techcrunch.com/2026/11/25/todoist-confirms-6-of-customers-details-were-stolen-in-data-breach/" target="_blank" rel="noopener">Todoist, 고객 정보 6% 유출 확인…데이터 유출 인정</a></h3>
+                          <span class="news-orig">Todoist confirms 6% of customers’ details were stolen in data breach</span>
+                          <p class="news-sum">Todoist가 데이터 유출로 고객 정보의 6%가 도난당했다고 확인했다고 전함.</p>
+                          <span class="news-meta">TechCrunch security · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/" target="_blank" rel="noopener">ShinyHunters 복귀 주장, 신생 Inception 그룹은 연관성 부인</a></h3>
+                          <span class="news-orig">ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties</span>
+                          <p class="news-sum">해킹 그룹 ShinyHunters가 복귀를 주장한 가운데 신생 그룹 Inception이 연관성을 부인했다고 전함.</p>
+                          <span class="news-meta">SecurityWeek · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://securityboulevard.com/2026/11/ai-code-security-best-practices/" target="_blank" rel="noopener">AI 코드 보안 모범 사례</a></h3>
+                          <span class="news-orig">AI Code Security Best Practices</span>
+                          <p class="news-sum">AI로 코드를 작성할 때 지켜야 할 보안 모범 사례를 소개함.</p>
+                          <span class="news-meta">Security Boulevard · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><span class="feed-tag hot">속보</span><a href="https://securityboulevard.com/2026/11/telecom-infrastructure-under-attack-how-hackers-exploit-cisco-fortinet-and-network-devices-to-infiltrate-critical-communications/" target="_blank" rel="noopener">통신 인프라 공격 — 해커, Cisco·Fortinet 등 네트워크 장비 악용해 핵심 통신 침투</a></h3>
+                          <span class="news-orig">Telecom Infrastructure Under Attack: How Hackers Exploit Cisco, Fortinet, and Network Devices to Infiltrate Critical Communications</span>
+                          <p class="news-sum">해커들이 Cisco, Fortinet 등 네트워크 장비를 악용해 핵심 통신망에 침투하고 있다고 전함.</p>
+                          <span class="news-meta">Security Boulevard · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing" target="_blank" rel="noopener">중남미, 항만·파이프라인·제조업 겨냥 사이버공격 잇따라</a></h3>
+                          <span class="news-orig">Latin America Sees Cyberattacks on Ports, Pipelines &amp; Manufacturing</span>
+                          <p class="news-sum">중남미에서 항만, 파이프라인, 제조업을 겨냥한 사이버공격이 잇따르고 있다고 전함.</p>
+                          <span class="news-meta">Dark Reading · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/" target="_blank" rel="noopener">미 재무부 FinCEN, 사이버 사건 이후 시스템 연결 해제</a></h3>
+                          <span class="news-orig">US Treasury’s FinCEN Disconnects Systems Following Cyber Incident</span>
+                          <p class="news-sum">미 재무부 FinCEN이 사이버 사건 이후 시스템을 연결 해제했다</p>
+                          <span class="news-meta">SecurityWeek · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://databreaches.net/2026/11/25/we-are-not-shinyhunters-says-criminal-hacking-crew-that-looks-and-acts-just-like-shinyhunters/" target="_blank" rel="noopener">‘우린 ShinyHunters가 아니다’ — ShinyHunters와 똑같이 행동하는 범죄 해킹 조직</a></h3>
+                          <span class="news-orig">‘We are not ShinyHunters,’ says criminal hacking crew that looks and acts just like ShinyHunters</span>
+                          <p class="news-sum">ShinyHunters와 똑같이 보이고 행동하는 범죄 해킹 조직이 자신들은 ShinyHunters가 아니라고 주장했다</p>
+                          <span class="news-meta">DataBreaches.Net · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><span class="feed-tag hot">속보</span><a href="https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/" target="_blank" rel="noopener">Drupal 설치 프로그램 치명적 결함, 실제 공격 진행 중 (CVE-2026-132165)</a></h3>
+                          <span class="news-orig">Critical Drupal installer flaw under active attack (CVE-2026-132165)</span>
+                          <p class="news-sum">Drupal 설치 프로그램의 치명적 결함이 실제 공격에 악용되고 있다.</p>
+                          <span class="news-meta">Help Net Security · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/" target="_blank" rel="noopener">CISO가 말하는 기업 예산 없이 실질적인 보안 프로그램 구축하기</a></h3>
+                          <span class="news-orig">Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget</span>
+                          <p class="news-sum">기업 수준의 예산 없이도 실질적인 보안 프로그램을 구축하는 방법을 CISO가 직접 설명하는 인터뷰.</p>
+                          <span class="news-meta">SecurityWeek · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://therecord.media/guadeloupe-ransomware-hospital-cyber" target="_blank" rel="noopener">과들루프 병원 랜섬웨어 공격 의심 — 암 치료·수술 중단</a></h3>
+                          <span class="news-orig">Suspected ransomware attack disrupts cancer treatments, surgeries at Guadeloupe hospital</span>
+                          <p class="news-sum">과들루프의 한 병원이 랜섬웨어 공격으로 의심되는 사건을 당해 암 치료와 수술이 중단됐다.</p>
+                          <span class="news-meta">The Record · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><span class="feed-tag hot">속보</span><a href="https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html" target="_blank" rel="noopener">Check Point 보안 관리 서버, 글로벌 사이버 공격 캠페인에 피격</a></h3>
+                          <span class="news-orig">Check Point security management servers hit in global cyberattack campaign</span>
+                          <p class="news-sum">전 세계적인 사이버 공격 캠페인으로 Check Point 보안 관리 서버가 공격받았다는 내용이다.</p>
+                          <span class="news-meta">CSO Online · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://cyberscoop.com/fincen-investigates-cybersecurity-incident-systems-offline/" target="_blank" rel="noopener">미 재무부 FinCEN, 사이버 사건 조사…일부 시스템 오프라인 전환</a></h3>
+                          <span class="news-orig">FinCEN investigates cybersecurity incident, takes systems offline</span>
+                          <p class="news-sum">미 재무부 금융범죄단속네트워크(FinCEN)가 사이버 사건을 조사 중이며 일부 시스템을 오프라인으로 전환했다는 내용이다.</p>
+                          <span class="news-meta">CyberScoop · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://orca.security/resources/blog/how-ai-app-builders-leak-their-own-credentials/" target="_blank" rel="noopener">AI 앱 빌더가 스스로 자격증명을 유출하는 방식</a></h3>
+                          <span class="news-orig">How AI App Builders Leak Their Own Credentials</span>
+                          <p class="news-sum">AI 앱 빌더가 자체 자격증명을 유출하는 방식을 다룬 글이다.</p>
+                          <span class="news-meta">Orca Security · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://securityaffairs.com/203978/security/electrolux-smart-boilers-in-ukraine-connect-to-russian-servers-raising-privacy-concerns.html" target="_blank" rel="noopener">우크라이나 일렉트로룩스 스마트 보일러, 러시아 서버에 접속…개인정보 우려</a></h3>
+                          <span class="news-orig">Electrolux Smart Boilers in Ukraine Connect to Russian Servers, Raising Privacy Concerns</span>
+                          <p class="news-sum">우크라이나의 일렉트로룩스 스마트 보일러가 러시아 서버에 접속하는 것으로 나타나 개인정보 우려가 제기됐다는 보도.</p>
+                          <span class="news-meta">Security Affairs · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><span class="feed-tag hot">속보</span><a href="https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html" target="_blank" rel="noopener">해커, GeoServer 취약점 2건 악용…미인증 RCE 체인 경고</a></h3>
+                          <span class="news-orig">Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains</span>
+                          <p class="news-sum">해커들이 GeoServer 취약점 2건을 악용하고 있으며 연구진은 인증 없이 원격코드실행이 가능한 공격 체인을 경고했다는 소식.</p>
+                          <span class="news-meta">The Hacker News · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html" target="_blank" rel="noopener">미 재무부 금융범죄단속기관, 사이버 침해 후 일부 시스템 오프라인 전환</a></h3>
+                          <span class="news-orig">U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion</span>
+                          <p class="news-sum">미 재무부 산하 금융범죄단속기관이 사이버 침해 이후 일부 시스템을 오프라인으로 전환했다는 소식.</p>
+                          <span class="news-meta">The Hacker News · 2026-11-25</span>
+                        </article>
                         <article class="news-item">
               <h3><a href="https://www.malwarebytes.com/blog/data-breaches/2026/11/two-exposed-databases-held-over-3-5-billion-records" target="_blank" rel="noopener">노출된 데이터베이스 2개에 35억 건 넘는 기록 확인</a></h3>
               <span class="news-orig">Two exposed databases held over 3.5 billion records</span>
@@ -29883,6 +30306,12 @@
               <span class="news-orig">Drupal Flaw Found by Anthropic Scanner Exploited in Attacks</span>
               <p class="news-sum">Anthropic 스캐너가 발견한 Drupal 취약점이 실제 공격에 악용되고 있다는 소식.</p>
               <span class="news-meta">SecurityWeek · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+              <h3><a href="https://www.crowdstrike.com/en-us/blog/crowdstrike-named-leader-2026-gartner-mq-isoc/" target="_blank" rel="noopener">크라우드스트라이크, 에이전틱 SOC 전환 가속</a></h3>
+              <span class="news-orig">CrowdStrike Accelerates the Shift to the Agentic SOC</span>
+              <p class="news-sum">크라우드스트라이크가 에이전트 기반 SOC(보안운영센터)로의 전환을 가속하고 있다.</p>
+              <span class="news-meta">CrowdStrike · 2026-11-25</span>
                         </article>
                         <article class="news-item">
               <h3><a href="https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/" target="_blank" rel="noopener">해커들, CIA 정보 분석 시스템 침해한 것으로 보도돼</a></h3>
@@ -30345,6 +30774,12 @@
               <span class="news-orig">CISA warns of exploited N-able bug as company restores email platform</span>
               <p class="news-sum">CISA가 악용 중인 N-able 버그를 경고했고 회사는 이메일 플랫폼을 복구하고 있다.</p>
               <span class="news-meta">The Record · 2026-11-25</span>
+            </article>
+            <article class="news-item">
+              <h3><a href="https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data" target="_blank" rel="noopener">사우스이스턴 대학교, 데이터 관리 정착기</a></h3>
+              <span class="news-orig">How Southeastern University Got a Handle on Its Data</span>
+              <p class="news-sum">사우스이스턴 대학교가 데이터 관리를 정착시킨 과정을 다룬 글.</p>
+              <span class="news-meta">Dark Reading · 2026-11-25</span>
             </article>
             <article class="news-item">
               <h3><a href="https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html" target="_blank" rel="noopener">해커들, GitHub SHA 고정 우회 방법 발견… 웨비나가 대응 방안 설명</a></h3>
