@@ -234,22 +234,22 @@
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
           <li>D-Link R32 CVSS 9.9 취약점 2건 — SetTimeSettings·SetDeviceSettings 결함</li>
+          <li>CISA KEV 8건 추가 — Danfoss AK-SM 800A·Mitel MiCollab</li>
+          <li>Palo Alto Fragnesia 취약점, PAN-OS 공격에 악용 — PHP2Shell과 연계</li>
           <li>1Password 해킹 — 직원 GitHub 계정 경유해 고객 계정 데이터 복사, 볼트는 무영향</li>
           <li>빗썸 해킹 피해 확대 — 침해 기간 1시간→15일, 피해자 7,159명 넘어</li>
-          <li>더존비즈온 해킹 한 달 — 피해 우려 기업·기관 50곳 넘어</li>
+          <li>Salt Typhoon, Artex AI 도구 사용 — Microsoft 확인</li>
           <li>美 재무부 FinCEN 사이버 사건 — 일부 시스템 오프라인 전환</li>
-          <li>스위스, 첫 AI 에이전트 사이버공격 확인 — 이탈리아도 경고</li>
           <li>한국투자저축은행 8만6433명 유출 — 저축은행 피해 6곳으로 확대</li>
-          <li>GeoServer 취약점 2건 악용 — 미인증 RCE 체인 경고</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 26일 06:24 KST · 랜섬웨어 유출 현황은 11월 26일 06:24 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 26일 07:09 KST · 랜섬웨어 유출 현황은 11월 26일 06:24 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
       <div class="alert" role="alert">
         <div class="alert-head">
           <span class="alert-tag">긴급 경보</span>
-          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>26건</b> · CVE·취약점 <b>222건</b> (CVSS 9.0 이상 111건 포함)</span>
+          <span class="alert-counts">이번 브리핑 KISA 보안공지 <b>26건</b> · CVE·취약점 <b>231건</b> (CVSS 9.0 이상 111건 포함)</span>
         </div>
         <h2>Java4Shell — 인증 없는 원격 코드 실행 주장, KISA 패치 권고 발령</h2>
         <p><strong>Java4Shell</strong> — <strong class="mono">CVE-2026-114938</strong> (CVSS <strong>9.2</strong>, v4.0) — OpenJDK 17.0.6 이상, AVX-512 환경에서 사전 인증 없이 원격 코드 실행이 가능하다는 보고가 11월 17일 나왔고, KISA는 11월 18일 Oracle 보안 업데이트 권고를 게시했습니다. 단, 일부 분석가(Upwind·Equixly)는 실제 영향이 RCE가 아닌 JVM 충돌 수준일 수 있다고 반박하고 있어 <strong>주장이 엇갈리는 상태</strong>입니다. 같은 날 CISA KEV에는 Puppet Enterprise <span class="mono">CVE-2026-115731</span> (9.4)이 등재됐습니다(연방기관 적용 마감 12월 1일).</p>
@@ -259,11 +259,151 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 3346건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 3368건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGSktXRWVCdFYtTUx2SkJ2TU5ROEFqVlZlTmtBc1lQRVBvc3FsbjQ4eFBkbm80Tl93UGRTSlllQlJtYlVNVXczUkRhZmNwRGhnS3F5UkYzYWhWZzJnQkxoMQ?oc=5" target="_blank" rel="noopener">美 금융범죄 단속기관도 해킹 피해…일부 시스템 가동 중단</a></h3>
+                      <span class="feed-src">아시아경제</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBheWo2UTUtNGU5MmhPM3pQSElXUF9hTnVmQ3ZXb09URHFPMk1qRXFzMDdPTVlwcFY5aGZLRkpUbVJQOUl5TmtBTjJn?oc=5" target="_blank" rel="noopener">비트코인 채굴 보상도 해킹당한다? 1초 만에 채굴 시설 1,000곳 공격</a></h3>
+                      <span class="feed-src">코인리더스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9fTTZPSV96OTJNTnVyNXlNeWJhT1FqeDZwTWJkOGxWNHVkMjN3ZFVfS05pVlM4WnBrWGpzN2hnQ3hyU0RKS0xibWZNU1ZSdmdsUVMzdVN0bDBYS2c1azZQenZIbU9tWnp2cmJrVlotOA?oc=5" target="_blank" rel="noopener">빗썸, 해킹 피해 추가 확인...보름 동안 해킹 사실 몰라</a></h3>
+                      <span class="feed-src">YTN</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5KbndGRHFhVkNlRzBDRlg1UERKT3o1aUlWMlFMdjlSWkdoZEFFcWRkS0NMOWxRdFNMZlpmbnRrYmUxa1hOV1lyTDZCSi1uY2JlRXhEa3BWNnNYcW03R3hlVFpIVGd5WURaWmdRSFNZX1c5MU1L?oc=5" target="_blank" rel="noopener">빗썸 해킹...보름간 피해 상황 몰라</a></h3>
+                      <span class="feed-src">파이낸셜포스트</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/" target="_blank" rel="noopener">Palo Alto Networks, PAN-OS 공격에 악용된 Fragnesia 결함 경고</a></h3>
+                      <span class="feed-orig">Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks</span>
+                      <p class="feed-sum">Palo Alto Networks가 PAN-OS 공격에 악용되고 있는 Fragnesia 취약점에 대해 경고했다.</p>
+                      <span class="feed-src">BleepingComputer</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/11/25/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/" target="_blank" rel="noopener">Microsoft, 2026 Gartner 이메일 보안 부문 리더 선정</a></h3>
+                      <span class="feed-orig">Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security</span>
+                      <p class="feed-sum">Microsoft가 2026년 Gartner 매직 쿼드런트 이메일 보안 부문 리더로 선정됐다.</p>
+                      <span class="feed-src">Microsoft Security Blog</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/" target="_blank" rel="noopener">1Password 고객 데이터 탈취 — 직원 GitHub 계정 침해 경유</a></h3>
+                      <span class="feed-orig">1Password customer data stolen after employee GitHub account breach</span>
+                      <p class="feed-sum">직원 GitHub 계정 침해로 1Password 고객 데이터가 탈취됐다.</p>
+                      <span class="feed-src">BleepingComputer</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25914" target="_blank" rel="noopener">Danfoss AK-SM 800A Series 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2023-25914 — Danfoss AK-SM 800A Series</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Danfoss AK-SM 800A Series 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25915" target="_blank" rel="noopener">Danfoss AK-SM 800A Series 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2023-25915 — Danfoss AK-SM 800A Series</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Danfoss AK-SM 800A Series 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41450" target="_blank" rel="noopener">Danfoss AK-SM 800A Series 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2025-41450 — Danfoss AK-SM 800A Series</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Danfoss AK-SM 800A Series 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133275" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2026-133275 — Mitel MiCollab</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133303" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2026-133303 — Mitel MiCollab</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133311" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2026-133311 — Mitel MiCollab</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133323" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2026-133323 — Mitel MiCollab</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 06:09</span>
+                      <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133324" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                      <span class="feed-orig">CVE-2026-133324 — Mitel MiCollab</span>
+                      <p class="feed-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                      <span class="feed-src">CISA KEV</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://www.wordfence.com/blog/2026/11/wordfence-intelligence-weekly-wordpress-vulnerability-report-november-16-2026-to-november-22-2026/" target="_blank" rel="noopener">Wordfence 주간 WordPress 취약점 보고서 (2026년 11월 16일~22일)</a></h3>
+                      <span class="feed-orig">Wordfence Intelligence Weekly WordPress Vulnerability Report (November 16, 2026 to November 22, 2026)</span>
+                      <p class="feed-sum">Wordfence가 11월 16~22일 주간의 WordPress 취약점을 정리한 보고서</p>
+                      <span class="feed-src">Wordfence</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool" target="_blank" rel="noopener">Microsoft: 중국 Salt Typhoon 해커들, Artex AI 도구 사용 중</a></h3>
+                      <span class="feed-orig">Microsoft: China’s Salt Typhoon hackers are using Artex</span>
+                      <p class="feed-sum">Microsoft가 중국 Salt Typhoon 해커들이 Artex AI 도구를 사용하고 있다고 밝혔다</p>
+                      <span class="feed-src">The Record</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://defang.io/blog/post/security-incident-november-2026/" target="_blank" rel="noopener">Defang 보안 사고 발생</a></h3>
+                      <span class="feed-orig">Defang Security Incident</span>
+                      <p class="feed-sum">Defang이 2026년 11월 보안 사고를 공개했다</p>
+                      <span class="feed-src">Hacker News</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://www.openwall.com/lists/oss-security/2026/11/25/9" target="_blank" rel="noopener">Ubuntu 보안 대응 속도 지연 논란</a></h3>
+                      <span class="feed-orig">Slow Ubuntu security response times</span>
+                      <p class="feed-sum">Ubuntu의 보안 대응 속도가 느리다는 지적이 oss-security 메일링리스트에 제기됐다</p>
+                      <span class="feed-src">Hacker News</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25</span>
+                      <h3><a href="https://www.yna.co.kr/view/AKR20261125147900017" target="_blank" rel="noopener">HNIX "제조·조선업 특화 AI전환 확대…산업 보안시장도 공략"</a></h3>
+                      <span class="feed-src">연합뉴스</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/25</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9ydllLU3VWSm95NUd1OTZ2SUFmTjNWNWZzYlNQbVpneXNmRnZjYWYzWTZEN2pPSXMzYUhXZUR1dDVhV3pWVF9nNGJsWGZwVmNjYzl6TjlQNHhQNW1yNjk3UV93REFtOUFmQ1lmTXZ3?oc=5" target="_blank" rel="noopener">빗썸, 해킹 보름간 몰랐다…유출 피해 추가 확인</a></h3>
+                      <span class="feed-src">세이프머니</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wWWs3S2ZlLWF0c25JODJWdkQ5MVEzS1ZuYkxzZkNLR19nVUJ3ZUZEb1Z4T3NyMDI2cUtyOVl3Vy1EcnJiWGlGczhjcDc0a0JweEJNRGxQbzRYT1l1enZuRVhHRjVVcnlV0gFrQVVfeXFMT2JsRFZVcTJhSnQzV0hGY19WLVhuU0d4a0R1a2x2MW8tdU1VamFERDM1M2ZHbFVMeTdIdjVDcG1zS3lQRWhRSjIzbXo0RHYyXzBtd2xVRFJDQjY0TzFKS0FzRFp4d1ZheTdtbGM?oc=5" target="_blank" rel="noopener">[논객 단상] “개인정보가 유출됐습니다...” 그래서?</a></h3>
+                      <span class="feed-src">논객닷컴</span>
+                    </article>
                     <article class="feed-item">
                       <span class="feed-time">11/26</span>
                       <h3><span class="feed-tag hot">속보</span><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-136821" target="_blank" rel="noopener">CVE-2026-136821 (CVSS 9.9) — D-Link R32 1.10B02, SetTimeSettings 함수 결함</a></h3>
@@ -19151,9 +19291,9 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>20</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>2264</b><span>국내 동향 — 11/16~26 보도</span></div>
-        <div class="stat"><b>1005</b><span>해외 동향 — 11/16~25 보도</span></div>
-        <div class="stat"><b>222</b><span>CVE·취약점 — CVSS 9.0 이상 111건 포함</span></div>
+        <div class="stat"><b>2271</b><span>국내 동향 — 11/16~26 보도</span></div>
+        <div class="stat"><b>1020</b><span>해외 동향 — 11/16~26 보도</span></div>
+        <div class="stat"><b>231</b><span>CVE·취약점 — CVSS 9.0 이상 111건 포함</span></div>
         <div class="stat"><b>58</b><span>다크웹 유출 — 11/25 19:39 확인 기준 24시간 건수</span></div>
       </div>
 
@@ -19969,17 +20109,89 @@
       <section aria-labelledby="h-cve" id="sec-cve">
         <div class="sec-head">
           <h2 id="h-cve"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-cve"><span>CVE 목록</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>CVSS 9.0 이상 중심 · 222건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 109건 포함</p>
+          <p>CVSS 9.0 이상 중심 · 231건 · 심각도 순 정렬 · 점수는 벤더·2차 출처 기준 · 점수 미표기 118건 포함</p>
         </div>
         <div class="sec-body collapsed" id="body-cve" hidden>
           <div class="sec-inner">
             <p class="note" style="margin:0 0 18px">Oracle 2026년 11월 Critical Patch Update는 총 640건의 CVE를 다룬다(Java4Shell 포함). 아래는 CVSS 9.0 이상 중 주요 항목이다. CVE-2026-131852(OwnTracks, CVSS 9.8 주장)는 NVD 상세 페이지에서 “CVE ID Not Found”로 확인돼 아직 NVD에 등재되지 않았으므로 목록에 넣지 않았다.</p>
         <div class="seg" role="group" aria-label="CVE 필터">
-          <button data-filter="all" aria-pressed="true">전체 222건</button>
+          <button data-filter="all" aria-pressed="true">전체 231건</button>
           <button data-filter="new" aria-pressed="false">11/16~26 신규 보고</button>
           <button data-filter="kev" aria-pressed="false">CISA KEV 등재</button>
         </div>
         <div class="cve-list" id="cveList">
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25914" target="_blank" rel="noopener"><span class="mono">CVE-2023-25914</span></a> · Danfoss AK-SM 800A Series</h3>
+              <p>Danfoss AK-SM 800A Series — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25915" target="_blank" rel="noopener"><span class="mono">CVE-2023-25915</span></a> · Danfoss AK-SM 800A Series</h3>
+              <p>Danfoss AK-SM 800A Series — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41450" target="_blank" rel="noopener"><span class="mono">CVE-2025-41450</span></a> · Danfoss AK-SM 800A Series</h3>
+              <p>Danfoss AK-SM 800A Series — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133275" target="_blank" rel="noopener"><span class="mono">CVE-2026-133275</span></a> · Mitel MiCollab</h3>
+              <p>Mitel MiCollab — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133303" target="_blank" rel="noopener"><span class="mono">CVE-2026-133303</span></a> · Mitel MiCollab</h3>
+              <p>Mitel MiCollab — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133311" target="_blank" rel="noopener"><span class="mono">CVE-2026-133311</span></a> · Mitel MiCollab</h3>
+              <p>Mitel MiCollab — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133323" target="_blank" rel="noopener"><span class="mono">CVE-2026-133323</span></a> · Mitel MiCollab</h3>
+              <p>Mitel MiCollab — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="kev new">
+            <div class="score crit">KEV<small>CISA KEV</small></div>
+            <div class="cve-main">
+              <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133324" target="_blank" rel="noopener"><span class="mono">CVE-2026-133324</span></a> · Mitel MiCollab</h3>
+              <p>Mitel MiCollab — CISA KEV에 실제 악용 확인 취약점으로 등재. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag kev">CISA KEV 등재</span><span class="tag new">신규 · 11/25</span></div>
+          </article>
+          <article class="cve-row" data-kind="new">
+            <div class="score high">Wordfence<small>Wordfence Intelligence</small></div>
+            <div class="cve-main">
+              <h3><a href="https://www.wordfence.com/blog/2026/11/wordfence-intelligence-weekly-wordpress-vulnerability-report-november-16-2026-to-november-22-2026/" target="_blank" rel="noopener">Wordfence Intelligence Weekly WordPress Vulnerability Report (November 16, 2026 to November 22, 2026)</a></h3>
+              <p>워드프레스 주간 취약점 보고서. CVSS 점수는 표기되지 않았습니다.</p>
+            </div>
+            <div class="cve-tags"><span class="tag new">신규 · 11/26</span></div>
+          </article>
           <article class="cve-row" data-kind="new">
             <div class="score crit">9.9<small>CVSS</small></div>
             <div class="cve-main">
@@ -21781,14 +21993,42 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 2264건 · 해외 1005건 · 2026년 11월 16~26일 보도</p>
+          <p>국내 2271건 · 해외 1020건 · 2026년 11월 16~26일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-                        <p class="col-note">2264건 · 2026년 11월 16~26일 보도</p>
+                        <p class="col-note">2271건 · 2026년 11월 16~26일 보도</p>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGSktXRWVCdFYtTUx2SkJ2TU5ROEFqVlZlTmtBc1lQRVBvc3FsbjQ4eFBkbm80Tl93UGRTSlllQlJtYlVNVXczUkRhZmNwRGhnS3F5UkYzYWhWZzJnQkxoMQ?oc=5" target="_blank" rel="noopener">美 금융범죄 단속기관도 해킹 피해…일부 시스템 가동 중단</a></h3>
+                          <span class="news-meta">아시아경제 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiSkFVX3lxTFBheWo2UTUtNGU5MmhPM3pQSElXUF9hTnVmQ3ZXb09URHFPMk1qRXFzMDdPTVlwcFY5aGZLRkpUbVJQOUl5TmtBTjJn?oc=5" target="_blank" rel="noopener">비트코인 채굴 보상도 해킹당한다? 1초 만에 채굴 시설 1,000곳 공격</a></h3>
+                          <span class="news-meta">코인리더스 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9fTTZPSV96OTJNTnVyNXlNeWJhT1FqeDZwTWJkOGxWNHVkMjN3ZFVfS05pVlM4WnBrWGpzN2hnQ3hyU0RKS0xibWZNU1ZSdmdsUVMzdVN0bDBYS2c1azZQenZIbU9tWnp2cmJrVlotOA?oc=5" target="_blank" rel="noopener">빗썸, 해킹 피해 추가 확인...보름 동안 해킹 사실 몰라</a></h3>
+                          <span class="news-meta">YTN · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5KbndGRHFhVkNlRzBDRlg1UERKT3o1aUlWMlFMdjlSWkdoZEFFcWRkS0NMOWxRdFNMZlpmbnRrYmUxa1hOV1lyTDZCSi1uY2JlRXhEa3BWNnNYcW03R3hlVFpIVGd5WURaWmdRSFNZX1c5MU1L?oc=5" target="_blank" rel="noopener">빗썸 해킹...보름간 피해 상황 몰라</a></h3>
+                          <span class="news-meta">파이낸셜포스트 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.yna.co.kr/view/AKR20261125147900017" target="_blank" rel="noopener">HNIX "제조·조선업 특화 AI전환 확대…산업 보안시장도 공략"</a></h3>
+                          <span class="news-meta">연합뉴스 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9ydllLU3VWSm95NUd1OTZ2SUFmTjNWNWZzYlNQbVpneXNmRnZjYWYzWTZEN2pPSXMzYUhXZUR1dDVhV3pWVF9nNGJsWGZwVmNjYzl6TjlQNHhQNW1yNjk3UV93REFtOUFmQ1lmTXZ3?oc=5" target="_blank" rel="noopener">빗썸, 해킹 보름간 몰랐다…유출 피해 추가 확인</a></h3>
+                          <span class="news-meta">세이프머니 · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wWWs3S2ZlLWF0c25JODJWdkQ5MVEzS1ZuYkxzZkNLR19nVUJ3ZUZEb1Z4T3NyMDI2cUtyOVl3Vy1EcnJiWGlGczhjcDc0a0JweEJNRGxQbzRYT1l1enZuRVhHRjVVcnlV0gFrQVVfeXFMT2JsRFZVcTJhSnQzV0hGY19WLVhuU0d4a0R1a2x2MW8tdU1VamFERDM1M2ZHbFVMeTdIdjVDcG1zS3lQRWhRSjIzbXo0RHYyXzBtd2xVRFJDQjY0TzFKS0FzRFp4d1ZheTdtbGM?oc=5" target="_blank" rel="noopener">[논객 단상] “개인정보가 유출됐습니다...” 그래서?</a></h3>
+                          <span class="news-meta">논객닷컴 · 2026-11-25</span>
+                        </article>
                         <article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE53bnFRQUpBZW5pX1JOQXBGdGg5dkVDc3ZkTnhVaVplNWtUQkRuVzFiVTJBcTIxN3l2YnYzYllPZzVoc29sSG1yVFF2cl90aXBLdzI00gFYQVVfeXFMTjdqMG16dEY1eHhsd3JabVRKVUQta09MVUVqcEhMajV2bGxWS2VLMlJuSjJheUVzTjg1cndmNWxiU1FKMWRrTV9wMzVWbGxBQ01YMFFIZVdiWA?oc=5" target="_blank" rel="noopener">빗썸, 해킹 피해 확대…보름간 개인정보 털렸다</a></h3>
                           <span class="news-meta">SBS Biz · 2026-11-26</span>
@@ -30857,7 +31097,97 @@
 
           <div class="news-col">
             <h2 id="h-global">해외 동향</h2>
-                        <p class="col-note">1005건 · November 16–25, 2026</p>
+                        <p class="col-note">1020건 · November 16–26, 2026</p>
+                        <article class="news-item">
+                          <h3><a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/" target="_blank" rel="noopener">Palo Alto Networks, PAN-OS 공격에 악용된 Fragnesia 결함 경고</a></h3>
+                          <span class="news-orig">Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks</span>
+                          <p class="news-sum">Palo Alto Networks가 PAN-OS 공격에 악용되고 있는 Fragnesia 취약점에 대해 경고했다.</p>
+                          <span class="news-meta">BleepingComputer · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.microsoft.com/en-us/security/blog/2026/11/25/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/" target="_blank" rel="noopener">Microsoft, 2026 Gartner 이메일 보안 부문 리더 선정</a></h3>
+                          <span class="news-orig">Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security</span>
+                          <p class="news-sum">Microsoft가 2026년 Gartner 매직 쿼드런트 이메일 보안 부문 리더로 선정됐다.</p>
+                          <span class="news-meta">Microsoft Security Blog · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/" target="_blank" rel="noopener">1Password 고객 데이터 탈취 — 직원 GitHub 계정 침해 경유</a></h3>
+                          <span class="news-orig">1Password customer data stolen after employee GitHub account breach</span>
+                          <p class="news-sum">직원 GitHub 계정 침해로 1Password 고객 데이터가 탈취됐다.</p>
+                          <span class="news-meta">BleepingComputer · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25914" target="_blank" rel="noopener">Danfoss AK-SM 800A Series 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2023-25914 — Danfoss AK-SM 800A Series</span>
+                          <p class="news-sum">CISA KEV에 등재된 Danfoss AK-SM 800A Series 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2023-25915" target="_blank" rel="noopener">Danfoss AK-SM 800A Series 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2023-25915 — Danfoss AK-SM 800A Series</span>
+                          <p class="news-sum">CISA KEV에 등재된 Danfoss AK-SM 800A Series 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-41450" target="_blank" rel="noopener">Danfoss AK-SM 800A Series 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2025-41450 — Danfoss AK-SM 800A Series</span>
+                          <p class="news-sum">CISA KEV에 등재된 Danfoss AK-SM 800A Series 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133275" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2026-133275 — Mitel MiCollab</span>
+                          <p class="news-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133303" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2026-133303 — Mitel MiCollab</span>
+                          <p class="news-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133311" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2026-133311 — Mitel MiCollab</span>
+                          <p class="news-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133323" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2026-133323 — Mitel MiCollab</span>
+                          <p class="news-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-133324" target="_blank" rel="noopener">Mitel MiCollab 취약점(CISA KEV 등재)</a></h3>
+                          <span class="news-orig">CVE-2026-133324 — Mitel MiCollab</span>
+                          <p class="news-sum">CISA KEV에 등재된 Mitel MiCollab 취약점이다.</p>
+                          <span class="news-meta">CISA KEV · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.wordfence.com/blog/2026/11/wordfence-intelligence-weekly-wordpress-vulnerability-report-november-16-2026-to-november-22-2026/" target="_blank" rel="noopener">Wordfence 주간 WordPress 취약점 보고서 (2026년 11월 16일~22일)</a></h3>
+                          <span class="news-orig">Wordfence Intelligence Weekly WordPress Vulnerability Report (November 16, 2026 to November 22, 2026)</span>
+                          <p class="news-sum">Wordfence가 11월 16~22일 주간의 WordPress 취약점을 정리한 보고서</p>
+                          <span class="news-meta">Wordfence · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool" target="_blank" rel="noopener">Microsoft: 중국 Salt Typhoon 해커들, Artex AI 도구 사용 중</a></h3>
+                          <span class="news-orig">Microsoft: China’s Salt Typhoon hackers are using Artex</span>
+                          <p class="news-sum">Microsoft가 중국 Salt Typhoon 해커들이 Artex AI 도구를 사용하고 있다고 밝혔다</p>
+                          <span class="news-meta">The Record · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://defang.io/blog/post/security-incident-november-2026/" target="_blank" rel="noopener">Defang 보안 사고 발생</a></h3>
+                          <span class="news-orig">Defang Security Incident</span>
+                          <p class="news-sum">Defang이 2026년 11월 보안 사고를 공개했다</p>
+                          <span class="news-meta">Hacker News · 2026-11-25</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.openwall.com/lists/oss-security/2026/11/25/9" target="_blank" rel="noopener">Ubuntu 보안 대응 속도 지연 논란</a></h3>
+                          <span class="news-orig">Slow Ubuntu security response times</span>
+                          <p class="news-sum">Ubuntu의 보안 대응 속도가 느리다는 지적이 oss-security 메일링리스트에 제기됐다</p>
+                          <span class="news-meta">Hacker News · 2026-11-25</span>
+                        </article>
                         <article class="news-item">
                           <h3><a href="https://1password.com/blog/update-on-nov-2026-security-incident" target="_blank" rel="noopener">1Password 보안 사고</a></h3>
                           <span class="news-orig">1Password Security Incident</span>
