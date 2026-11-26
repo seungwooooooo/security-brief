@@ -243,6 +243,8 @@ clock with 86 feeds (was ~70–130 s with 82), still well inside the
 |---|---|---|
 | ransomware.live (thrunt.me mirror) | https://thrunt.me/corpus/ransomware/ | HTML table (5,602 rows). Only victims discovered in the last 3 days are candidates. The official API is **down** (see below). |
 
+**Korea block (added 2026-11-26):** the leak section (#sec-leak) has a dedicated '한국 피해 조직 — 최근 30일' block: all mirror rows with country KR discovered in the last 30 days, plus blank-country victims confirmed Korean by domestic news coverage (Accuver, ABL Bio — everest, 2026-11-20). Workers rebuild it whenever the leak section is refreshed (see the hook prompt's KOREA LEAK BLOCK rule). The mirror's country field is incomplete — blank-country rows must never be attributed to Korea without domestic-news evidence. Counts as of 2026-11-26 16:28 KST: 한국 24시간 1건 · 7일 2건 · 30일 20건 (KR 18 + 확인 2).
+
 ## Dead / blocked feeds and coverage gaps
 
 | Source | Status | Gap / alternative |
