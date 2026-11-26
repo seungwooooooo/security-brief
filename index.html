@@ -190,6 +190,10 @@
       .sec-body.no-anim { transition: none; }
       .sec-inner { overflow: hidden; min-height: 0; }
 
+      .kr-block { margin: 4px 0 clamp(22px, 3vw, 30px); }
+      .kr-head { margin: 0 0 8px; font-size: clamp(17px, 2vw, 19px); font-weight: 700; letter-spacing: -.015em; line-height: 1.4; }
+      .kr-note { margin: 0 0 14px; font-size: clamp(13.5px, 1.3vw, 14.5px); color: var(--ink-2); line-height: 1.7; }
+
       /* ---------- Archive / sources / footer ---------- */
       .archive-empty { color: var(--ink-2); font-size: 16px; line-height: 1.85; padding: 8px 0; max-width: 760px; }
       .archive-empty strong { color: var(--ink); }
@@ -233,16 +237,16 @@
         <p class="mast-date">2026년 11월 26일 목요일 · KST</p>
         <h1>오늘의 보안 브리핑</h1>
         <ul class="mast-sub">
-          <li>KISA Drupal 보안 업데이트 권고 — Drupal 제품 패치 권고</li>
-          <li>미 CISA, Danfoss 등 KEV 추가 — HPE·Danfoss·Mitel·Vates 취약점 등재</li>
-          <li>쿠팡 개인정보 유출 1년 — 시민사회, 책임 회피 규탄</li>
+          <li>한전 개인정보 152만건 유출 — 두 달 연속, 국무조정실 복무점검 검토</li>
+          <li>다나와 외부 침해 추정 사고 — 서비스 중단</li>
           <li>한국투자저축은행 해킹 — 8만6,611명 유출, 저축은행권 최대</li>
           <li>빗썸 유출 추가 확인 — 침입 기간 15일로 확대</li>
-          <li>미 FinCEN 무단 접근 — 자금세탁 감시 기관 시스템 일부 오프라인</li>
-          <li>韓금융사 7곳 뚫은 '아르텍스' — 中 해킹 조직도 사용</li>
-          <li>패스오더 개인정보 유출 — 휴대폰 번호·프로필 이미지 유출</li>
+          <li>AWS "중국 연계 해커, AI로 제로데이 찾아 서버 장악"</li>
+          <li>쿠팡 개인정보 유출 1년 — 시민사회, 책임 회피 규탄</li>
+          <li>미 CISA, Danfoss 등 KEV 추가 — HPE·Danfoss·Mitel·Vates 취약점 등재</li>
+          <li>KISA Drupal 보안 업데이트 권고 — Drupal 제품 패치 권고</li>
         </ul>
-        <p class="mast-meta">수집 기준 2026년 11월 26일 15:55 KST · 랜섬웨어 유출 현황은 11월 26일 11:54 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
+        <p class="mast-meta">수집 기준 2026년 11월 26일 16:25 KST · 랜섬웨어 유출 현황은 11월 26일 11:54 KST 확인 · 모든 항목에 출처를 표기했습니다</p>
       </header>
 
       <!-- ===================== 1. 경고 배너 ===================== -->
@@ -259,12 +263,52 @@
       <section aria-labelledby="h-feed" id="sec-feed">
         <div class="sec-head">
           <h2 id="h-feed"><button class="sec-toggle" type="button" aria-expanded="true" aria-controls="body-feed"><span>실시간 뉴스</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>시간순 피드 · 3606건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
+          <p>시간순 피드 · 3618건 · 시각은 각 매체 표기 기준(KST), 시각이 확인되지 않은 항목은 날짜만 표기</p>
         </div>
         <div class="sec-body" id="body-feed">
           <div class="sec-inner">
             <div class="feed">
+                                        <article class="feed-item">
+                      <span class="feed-time">11/26 16:11</span>
+                      <h3><a href="https://www.yna.co.kr/view/AKR20261126135951004" target="_blank" rel="noopener">헌재 "외국인 정치활동 전면금지, 헌법불합치…표현의자유 침해"(종합)</a></h3>
+                      <span class="feed-src">Yonhap society</span>
+                    </article>
                     <article class="feed-item">
+                      <span class="feed-time">11/26 16:06</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9tdmQwTmxMbEgtUEF3LTVZYzVWOVBVbzJYNmhkZzd2cWN5MzZ2ZkhoWnRyTEpEVkgzX1AxZ2NoV0pGR21POTAwSEt5NHJjTGtWbGxxd3Q5TUZyVzA5?oc=5" target="_blank" rel="noopener">두 달 연속 개인정보 유출 한전…국무조정실, 복무점검 검토</a></h3>
+                      <span class="feed-src">티제이비</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 16:06</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5aU2N2QmtRWUx1VlMwMHRiMzVrc05rT1ZJbnkyOWowTlBLcTdGSWljNTJxV0VETnV5LXhVcWdTT0Z2NFNobktnX2VrQ2QxNldfN1dZSkVKaktKY1dV?oc=5" target="_blank" rel="noopener">성형 후기 8400건 조작…中해킹 계정 800개 쓴 병원·광고업체 52명 송치</a></h3>
+                      <span class="feed-src">뉴스핌</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 16:05</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZdGx0MDNLM1NQbHdMQldndm9YUmVpZk5mc3llRzdqT2I4Z0VOS09QX3RCWlZ1YklMbEJybjBxXzlHeVRsandfVlpGVmliaWZBaVd6U1NtTkl3ZXh4anFacGpoVU1ha2Z5dk82b2lR?oc=5" target="_blank" rel="noopener">한국투자저축은행, 8.6만명 개인정보 유출..."고객 50% 피해"</a></h3>
+                      <span class="feed-src">데일리브리프</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 16:00</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5MV0V2dTF3VU41eEFTV2dfZXNwWHluMzVwdmR5NGhab2Rnc2h3SUVKcVByT1l2ZV85OGl6czZ3VFFobktMUjBSY1c4OEJfTXdzc2t5MjBCY3BjNVRCZzg2eWlzRjQyZUQtTnhN0gFvQVVfeXFMTzdSdWNjSm9QWVZ6dmRQNFlUcVhReURIaVlDeU5OTjc0eEx0SENTN0JDWm1QS0F4Sl83NnFtZ2FTWmpqekFORHBYUU0za0NseHNjVnJmejFkeHYzeTRYekJZa19TYWNvZHNydEtFRjhn?oc=5" target="_blank" rel="noopener">한전 개인정보 152만건 유출…정부, '공직기강' 점검 검토</a></h3>
+                      <span class="feed-src">한국아이닷컴</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 15:56</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9tZHNzd3lTWi1jcGlYQ1J5Y1NiZ1V0ekVrTGJXcm03YmlqdTU4cm5ITl9xTFk5Y05yeTktVEFQZndlUmk0WTVHWFhrNDhGZ00?oc=5" target="_blank" rel="noopener">AWS “중국 연계 해커, AI로 제로데이 찾아 서버 장악”</a></h3>
+                      <span class="feed-src">바이라인네트워크</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 15:49</span>
+                      <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209757" target="_blank" rel="noopener">가비아, 중대형·소규모 병원 맞춤형 VDI로 의료기관 망분리 시장 공략</a></h3>
+                      <span class="feed-src">Dailysecu</span>
+                    </article>
+                    <article class="feed-item">
+                      <span class="feed-time">11/26 15:48</span>
+                      <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147579" target="_blank" rel="noopener">관악구, 범죄예방 환경개선 공로로 대통령표창 수상</a></h3>
+                      <span class="feed-src">Boannews</span>
+                    </article>
+<article class="feed-item">
                       <span class="feed-time">11/26 15:48</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WTkdIdC1UeW5nUnFLSGxsMkxhTW9STUo5blZISTBLNm5TdkE1YnAzTzluQndOZ0t0R2tsbmdNYnVCMmtKUjQ3ckxaS0t1bFpNU0xpNnM5SXY2UdIBX0FVX3lxTE5kelNJUGh5WXo1UG9TOXJtTlEwakd4TVh6TjVPME0wSXBHbUU0aXZ2aFhfVHg3Y3RxMFp5bFhua1B2dWxUVnlEMU9Sc01WMjZBRHJtazhvZmlUN1Z5UHow?oc=5" target="_blank" rel="noopener">쿠팡 개인정보 유출사고 1년···“반성 대신 책임 회피로 일관” 규탄</a></h3>
                       <span class="feed-src">경향신문</span>
@@ -291,7 +335,17 @@
                       <p class="feed-sum">신시사이저 패치를 주제로 한 웹 프로젝트 소개.</p>
                       <span class="feed-src">Hacker News</span>
                     </article>
+                                        <article class="feed-item">
+                      <span class="feed-time">11/26 15:39</span>
+                      <h3><a href="https://zdnet.co.kr/view/?no=20261126153610" target="_blank" rel="noopener">다나와, 외부 침해 추정 사고로 서비스 중단</a></h3>
+                      <span class="feed-src">ZDNet Korea</span>
+                    </article>
                     <article class="feed-item">
+                      <span class="feed-time">11/26 15:38</span>
+                      <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147541" target="_blank" rel="noopener">개인정보 유출 뒤 번지는 2차 피싱 위협... ‘디지털 보호’ 필요한 이유</a></h3>
+                      <span class="feed-src">Boannews</span>
+                    </article>
+<article class="feed-item">
                       <span class="feed-time">11/26 15:37</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5fNC1JT1duZzBrbVFud1c5LV9UWkVGUHdDaEltZ0Y1amNzVk5iMGxpN2hEWWhYbElRcmZYUEMzdGp0MmU3WDczN1ZqQ1NNM0M5RnBxd1d4OXNLaWZuOER6bkJwdGVEOTFI?oc=5" target="_blank" rel="noopener">한국투자저축은행도 뚫렸다···'업권 최대' 8.6만명 개인정보 유출</a></h3>
                       <span class="feed-src">뉴스웨이</span>
@@ -575,7 +629,12 @@
                       <h3><a href="https://www.yna.co.kr/view/AKR20261126118900083" target="_blank" rel="noopener">中, SNS 통한 외국 정보기관 간첩활동 공개…"연애·취업 위장"</a></h3>
                       <span class="feed-src">Yonhap news</span>
                     </article>
-                    <article class="feed-item">
+                                        <article class="feed-item">
+                      <span class="feed-time">11/26 14:16</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE42cjdlaHl3VTdRaEdfTEpvS0xUT0ZydkJfTDgyWTkxQU1SRlZHaGVzM0FhVXRRcWZfMjRJZkJ0UkFQOERUZXFKOU5yODhjOG1XeVFmWA?oc=5" target="_blank" rel="noopener">59분이라더니 보름 넘게 뚫려…준비금 감액한 빗썸, 개인정보 유출 피해 더 컸다</a></h3>
+                      <span class="feed-src">JTBC</span>
+                    </article>
+<article class="feed-item">
                       <span class="feed-time">11/26 14:16</span>
                       <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE1lU0xGX01hMUtVN3dLb1Niak5iZHhNcHZKZ1QzUktrSGZiTmQwRW90dmk4akIyUWFsWkJmTjdBdDRUbnhKNTJvVVRCZWl2N0VqQ1BETWpuOGsydWZTaFg4S0JSQmtZbHRGRDBDa3RWN01BZw?oc=5" target="_blank" rel="noopener">경남대 해킹 피해…정보 1천2백여 건 유출</a></h3>
                       <span class="feed-src">LG헬로비전</span>
@@ -585,7 +644,12 @@
                       <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE43V1p3cFpfdTZpb3lYdUUzLV9QdFVkSWNoeHg5dXhlTklxNXFHcWFqeXhMdFJsa0h1TmI3YUtCaU0ya2luNmdPNExXdlhheUZSbEE?oc=5" target="_blank" rel="noopener">금융사 해킹사고시 매출 3% 과징금…면책 조항이 막판 쟁점</a></h3>
                       <span class="feed-src">매일경제 마켓</span>
                     </article>
-                    <article class="feed-item">
+                                        <article class="feed-item">
+                      <span class="feed-time">11/26 14:14</span>
+                      <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBveWlOUlpwamJ3cGs2cEJHR3BXVl9TN0F2ZXl2bnhrQ2ZzUkR2eXVHUm1oeWtBeEdCQlJxdHlGTmx3NjNOX0VlRW9QS1puQU5fZl9Qdw?oc=5" target="_blank" rel="noopener">국무조정실, 개인정보 또 유출된 한전 ‘공직복무점검’ 검토…"위반사항 일벌백계"</a></h3>
+                      <span class="feed-src">JTBC</span>
+                    </article>
+<article class="feed-item">
                       <span class="feed-time">11/26 14:14</span>
                       <h3><a href="https://www.yna.co.kr/view/AKR20261126112600001" target="_blank" rel="noopener">국조실 "개인정보 유출 한전 복무점검 검토…위반사항 일벌백계"</a></h3>
                       <span class="feed-src">Yonhap news</span>
@@ -20533,10 +20597,10 @@
       <!-- ===================== 3. 지표 요약 ===================== -->
       <div class="stats" aria-label="지표 요약">
         <div class="stat"><b>21</b><span>핵심 이슈 — 진행 중인 대형 사건</span></div>
-        <div class="stat"><b>2481</b><span>국내 동향 — 11/16~26 보도</span></div>
+        <div class="stat"><b>2493</b><span>국내 동향 — 11/16~26 보도</span></div>
         <div class="stat"><b>1040</b><span>해외 동향 — 11/16~26 보도</span></div>
         <div class="stat"><b>238</b><span>CVE·취약점 — CVSS 9.0 이상 113건 포함</span></div>
-        <div class="stat"><b>70</b><span>다크웹 유출 — 11/26 10:26 확인 기준 24시간 건수</span></div>
+        <div class="stat"><b>75</b><span>다크웹 유출 — 11/26 16:28 확인 기준 24시간 건수</span></div>
       </div>
 
       <!-- ===================== 4. 핵심 이슈 ===================== -->
@@ -23327,15 +23391,47 @@
       <section aria-labelledby="h-trends" id="sec-trends">
         <div class="sec-head">
           <h2 id="h-trends"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-trends"><span>국내·해외 동향</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>국내 2481건 · 해외 1040건 · 2026년 11월 16~26일 보도</p>
+          <p>국내 2493건 · 해외 1040건 · 2026년 11월 16~26일 보도</p>
         </div>
         <div class="sec-body collapsed" id="body-trends" hidden>
           <div class="sec-inner">
             <div class="news-grid">
           <div class="news-col">
             <h2 id="h-domestic">국내 동향</h2>
-                        <p class="col-note">2481건 · 2026년 11월 16~26일 보도</p>
+                        <p class="col-note">2493건 · 2026년 11월 16~26일 보도</p>
+                                                <article class="news-item">
+                          <h3><a href="https://www.yna.co.kr/view/AKR20261126135951004" target="_blank" rel="noopener">헌재 "외국인 정치활동 전면금지, 헌법불합치…표현의자유 침해"(종합)</a></h3>
+                          <span class="news-meta">Yonhap society · 2026-11-26</span>
+                        </article>
                         <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9tdmQwTmxMbEgtUEF3LTVZYzVWOVBVbzJYNmhkZzd2cWN5MzZ2ZkhoWnRyTEpEVkgzX1AxZ2NoV0pGR21POTAwSEt5NHJjTGtWbGxxd3Q5TUZyVzA5?oc=5" target="_blank" rel="noopener">두 달 연속 개인정보 유출 한전…국무조정실, 복무점검 검토</a></h3>
+                          <span class="news-meta">티제이비 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE5aU2N2QmtRWUx1VlMwMHRiMzVrc05rT1ZJbnkyOWowTlBLcTdGSWljNTJxV0VETnV5LXhVcWdTT0Z2NFNobktnX2VrQ2QxNldfN1dZSkVKaktKY1dV?oc=5" target="_blank" rel="noopener">성형 후기 8400건 조작…中해킹 계정 800개 쓴 병원·광고업체 52명 송치</a></h3>
+                          <span class="news-meta">뉴스핌 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZdGx0MDNLM1NQbHdMQldndm9YUmVpZk5mc3llRzdqT2I4Z0VOS09QX3RCWlZ1YklMbEJybjBxXzlHeVRsandfVlpGVmliaWZBaVd6U1NtTkl3ZXh4anFacGpoVU1ha2Z5dk82b2lR?oc=5" target="_blank" rel="noopener">한국투자저축은행, 8.6만명 개인정보 유출..."고객 50% 피해"</a></h3>
+                          <span class="news-meta">데일리브리프 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5MV0V2dTF3VU41eEFTV2dfZXNwWHluMzVwdmR5NGhab2Rnc2h3SUVKcVByT1l2ZV85OGl6czZ3VFFobktMUjBSY1c4OEJfTXdzc2t5MjBCY3BjNVRCZzg2eWlzRjQyZUQtTnhN0gFvQVVfeXFMTzdSdWNjSm9QWVZ6dmRQNFlUcVhReURIaVlDeU5OTjc0eEx0SENTN0JDWm1QS0F4Sl83NnFtZ2FTWmpqekFORHBYUU0za0NseHNjVnJmejFkeHYzeTRYekJZa19TYWNvZHNydEtFRjhn?oc=5" target="_blank" rel="noopener">한전 개인정보 152만건 유출…정부, '공직기강' 점검 검토</a></h3>
+                          <span class="news-meta">한국아이닷컴 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE9tZHNzd3lTWi1jcGlYQ1J5Y1NiZ1V0ekVrTGJXcm03YmlqdTU4cm5ITl9xTFk5Y05yeTktVEFQZndlUmk0WTVHWFhrNDhGZ00?oc=5" target="_blank" rel="noopener">AWS “중국 연계 해커, AI로 제로데이 찾아 서버 장악”</a></h3>
+                          <span class="news-meta">바이라인네트워크 · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.dailysecu.com/news/articleView.html?idxno=209757" target="_blank" rel="noopener">가비아, 중대형·소규모 병원 맞춤형 VDI로 의료기관 망분리 시장 공략</a></h3>
+                          <span class="news-meta">Dailysecu · 2026-11-26</span>
+                        </article>
+                        <article class="news-item">
+                          <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147579" target="_blank" rel="noopener">관악구, 범죄예방 환경개선 공로로 대통령표창 수상</a></h3>
+                          <span class="news-meta">Boannews · 2026-11-26</span>
+                        </article>
+<article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WTkdIdC1UeW5nUnFLSGxsMkxhTW9STUo5blZISTBLNm5TdkE1YnAzTzluQndOZ0t0R2tsbmdNYnVCMmtKUjQ3ckxaS0t1bFpNU0xpNnM5SXY2UdIBX0FVX3lxTE5kelNJUGh5WXo1UG9TOXJtTlEwakd4TVh6TjVPME0wSXBHbUU0aXZ2aFhfVHg3Y3RxMFp5bFhua1B2dWxUVnlEMU9Sc01WMjZBRHJtazhvZmlUN1Z5UHow?oc=5" target="_blank" rel="noopener">쿠팡 개인정보 유출사고 1년···“반성 대신 책임 회피로 일관” 규탄</a></h3>
                           <span class="news-meta">경향신문 · 2026-11-26</span>
                         </article>
@@ -23351,7 +23447,15 @@
                           <h3><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTFBBNEVmZWFNcmZYbGRldndldWRiUkYtTG9SbjVFd1d1TVZSVVp3LUI2NkNtakNDc0VsMl9nZHBScXNKbWg0OVlIblRHY1gwQ0VBQmlVQU9lUmktS2RqcGlwNHBEUnlCTHc2bmdDZ9IBcEFVX3lxTE02SFd3MW9tSnNKZG0xZlZNTTU2ZGs5VGpxZUVPWXZxeDRnWFA2endlSlVKaDRsa0RLR2VrdEtZZ3RnMno3VkcwN0ZQZnY4NnJFa3d5OHpKc09HeWJSRUhzSy1sdjBIeFlOdnhQLTBvNUk?oc=5" target="_blank" rel="noopener">쿠팡 개인정보 유출 1년, 시민사회가 거대양당 비판에 나선 이유는</a></h3>
                           <span class="news-meta">미디어스 · 2026-11-26</span>
                         </article>
+                                                <article class="news-item">
+                          <h3><a href="https://zdnet.co.kr/view/?no=20261126153610" target="_blank" rel="noopener">다나와, 외부 침해 추정 사고로 서비스 중단</a></h3>
+                          <span class="news-meta">ZDNet Korea · 2026-11-26</span>
+                        </article>
                         <article class="news-item">
+                          <h3><a href="https://www.boannews.com/news/articleView.html?idxno=147541" target="_blank" rel="noopener">개인정보 유출 뒤 번지는 2차 피싱 위협... ‘디지털 보호’ 필요한 이유</a></h3>
+                          <span class="news-meta">Boannews · 2026-11-26</span>
+                        </article>
+<article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE5fNC1JT1duZzBrbVFud1c5LV9UWkVGUHdDaEltZ0Y1amNzVk5iMGxpN2hEWWhYbElRcmZYUEMzdGp0MmU3WDczN1ZqQ1NNM0M5RnBxd1d4OXNLaWZuOER6bkJwdGVEOTFI?oc=5" target="_blank" rel="noopener">한국투자저축은행도 뚫렸다···'업권 최대' 8.6만명 개인정보 유출</a></h3>
                           <span class="news-meta">뉴스웨이 · 2026-11-26</span>
                         </article>
@@ -23531,7 +23635,11 @@
                           <h3><a href="https://www.yna.co.kr/view/AKR20261126118900083" target="_blank" rel="noopener">中, SNS 통한 외국 정보기관 간첩활동 공개…"연애·취업 위장"</a></h3>
                           <span class="news-meta">Yonhap news · 2026-11-26</span>
                         </article>
-                        <article class="news-item">
+                                                <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE42cjdlaHl3VTdRaEdfTEpvS0xUT0ZydkJfTDgyWTkxQU1SRlZHaGVzM0FhVXRRcWZfMjRJZkJ0UkFQOERUZXFKOU5yODhjOG1XeVFmWA?oc=5" target="_blank" rel="noopener">59분이라더니 보름 넘게 뚫려…준비금 감액한 빗썸, 개인정보 유출 피해 더 컸다</a></h3>
+                          <span class="news-meta">JTBC · 2026-11-26</span>
+                        </article>
+<article class="news-item">
                           <h3><a href="https://news.google.com/rss/articles/CBMickFVX3lxTE1lU0xGX01hMUtVN3dLb1Niak5iZHhNcHZKZ1QzUktrSGZiTmQwRW90dmk4akIyUWFsWkJmTjdBdDRUbnhKNTJvVVRCZWl2N0VqQ1BETWpuOGsydWZTaFg4S0JSQmtZbHRGRDBDa3RWN01BZw?oc=5" target="_blank" rel="noopener">경남대 해킹 피해…정보 1천2백여 건 유출</a></h3>
                           <span class="news-meta">LG헬로비전 · 2026-11-26</span>
                         </article>
@@ -23539,7 +23647,11 @@
                           <h3><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE43V1p3cFpfdTZpb3lYdUUzLV9QdFVkSWNoeHg5dXhlTklxNXFHcWFqeXhMdFJsa0h1TmI3YUtCaU0ya2luNmdPNExXdlhheUZSbEE?oc=5" target="_blank" rel="noopener">금융사 해킹사고시 매출 3% 과징금…면책 조항이 막판 쟁점</a></h3>
                           <span class="news-meta">매일경제 마켓 · 2026-11-26</span>
                         </article>
-                        <article class="news-item">
+                                                <article class="news-item">
+                          <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFBveWlOUlpwamJ3cGs2cEJHR3BXVl9TN0F2ZXl2bnhrQ2ZzUkR2eXVHUm1oeWtBeEdCQlJxdHlGTmx3NjNOX0VlRW9QS1puQU5fZl9Qdw?oc=5" target="_blank" rel="noopener">국무조정실, 개인정보 또 유출된 한전 ‘공직복무점검’ 검토…"위반사항 일벌백계"</a></h3>
+                          <span class="news-meta">JTBC · 2026-11-26</span>
+                        </article>
+<article class="news-item">
                           <h3><a href="https://www.yna.co.kr/view/AKR20261126112600001" target="_blank" rel="noopener">국조실 "개인정보 유출 한전 복무점검 검토…위반사항 일벌백계"</a></h3>
                           <span class="news-meta">Yonhap news · 2026-11-26</span>
                         </article>
@@ -39525,16 +39637,50 @@
       <section aria-labelledby="h-leak" id="sec-leak">
         <div class="sec-head">
           <h2 id="h-leak"><button class="sec-toggle" type="button" aria-expanded="false" aria-controls="body-leak"><span>다크웹 유출</span><svg class="chev" viewBox="0 0 12 12" width="14" height="14" aria-hidden="true" focusable="false"><path d="M2.5 4.25 6 7.75l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
-          <p>랜섬웨어 유출 사이트 최신 15건 · ransomware.live · 2026년 11월 26일 11:39 KST 확인 · 11월 25~26일 발견</p>
+          <p>랜섬웨어 유출 사이트 최신 15건 · ransomware.live · 2026년 11월 26일 16:28 KST 확인 · 11월 25~26일 발견</p>
         </div>
         <div class="sec-body collapsed" id="body-leak" hidden>
           <div class="sec-inner">
             <div class="leak-summary">
-          <span>확인 시점 기준 24시간 <b>70건</b></span>
-          <span>7일 <b>350건</b></span>
-          <span>30일 <b>1,359건</b></span>
+          <span>확인 시점 기준 24시간 <b>75건</b></span>
+          <span>7일 <b>356건</b></span>
+          <span>30일 <b>1,443건</b></span>
           <span>활발한 그룹(7일): N0n <b>72</b> · SoulGroup <b>28</b> · safepay <b>19</b></span>
+          <span>한국 24시간 <b>1건</b> · 7일 <b>2건</b> · 30일 <b>20건</b></span>
         </div>
+        <div class="kr-block">
+          <h3 class="kr-head">한국 피해 조직 — 최근 30일 (10월 27일~11월 26일) · 20건</h3>
+          <p class="kr-note">11월 3일 OBSOFT 5건(조직명 비공개)과 11월 7~9일 metaencryptor 5건에 한국 피해가 집중돼 있어.</p>
+          <table class="leak-table">
+            <thead>
+              <tr><th scope="col">피해 조직</th><th scope="col">랜섬웨어 그룹</th><th scope="col">발견일</th></tr>
+            </thead>
+            <tbody>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Koh Young Technology (고영테크놀러지)</a></td><td data-label="그룹" class="grp">everest</td><td data-label="발견일" class="cc">11/26</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Samsung Group: 1TB Data Breach from Ransomware Attack</a></td><td data-label="그룹" class="grp">HYFLOCK</td><td data-label="발견일" class="cc">11/22</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Accuver (아큐버)</a></td><td data-label="그룹" class="grp">everest</td><td data-label="발견일" class="cc">11/20</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">ABL Bio (에이비엘바이오)</a></td><td data-label="그룹" class="grp">everest</td><td data-label="발견일" class="cc">11/20</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Samsung Electronics Co., Ltd.</a></td><td data-label="그룹" class="grp">N0n</td><td data-label="발견일" class="cc">11/14</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">PANAX Group</a></td><td data-label="그룹" class="grp">incransom</td><td data-label="발견일" class="cc">11/12</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">MiraeING Co.</a></td><td data-label="그룹" class="grp">Climax Inc</td><td data-label="발견일" class="cc">11/10</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">EMW</a></td><td data-label="그룹" class="grp">Climax Inc</td><td data-label="발견일" class="cc">11/10</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">JH Technology</a></td><td data-label="그룹" class="grp">metaencryptor</td><td data-label="발견일" class="cc">11/09</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Wooshin Systems</a></td><td data-label="그룹" class="grp">metaencryptor</td><td data-label="발견일" class="cc">11/07</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Hyundai E&amp;C</a></td><td data-label="그룹" class="grp">metaencryptor</td><td data-label="발견일" class="cc">11/07</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Daeah E&amp;C</a></td><td data-label="그룹" class="grp">metaencryptor</td><td data-label="발견일" class="cc">11/07</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">DAEWON Chemical</a></td><td data-label="그룹" class="grp">metaencryptor</td><td data-label="발견일" class="cc">11/07</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Company #142</a></td><td data-label="그룹" class="grp">N0n</td><td data-label="발견일" class="cc">11/07</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">SK Global Software</a></td><td data-label="그룹" class="grp">akira</td><td data-label="발견일" class="cc">11/03</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Company #5</a></td><td data-label="그룹" class="grp">OBSOFT</td><td data-label="발견일" class="cc">11/03</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Company #4</a></td><td data-label="그룹" class="grp">OBSOFT</td><td data-label="발견일" class="cc">11/03</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Company #3</a></td><td data-label="그룹" class="grp">OBSOFT</td><td data-label="발견일" class="cc">11/03</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Company #2</a></td><td data-label="그룹" class="grp">OBSOFT</td><td data-label="발견일" class="cc">11/03</td></tr>
+            <tr><td data-label="조직" class="victim"><a href="https://www.ransomware.live/" target="_blank" rel="noopener">Company #1</a></td><td data-label="그룹" class="grp">OBSOFT</td><td data-label="발견일" class="cc">11/03</td></tr>
+            </tbody>
+          </table>
+          <p class="note"><strong>주의:</strong> 위 목록은 랜섬웨어 그룹의 일방적 주장으로, 독립적으로 검증된 사실이 아닙니다. 국가 표기가 KR인 18건과 국가 미표기이나 국내 보도로 확인된 2건(Accuver·ABL Bio, everest·11/20)을 합한 것이며, 국가 미표기 행은 근거 없이 한국으로 단정하지 않았습니다. Samsung Group·Samsung Electronics 건도 그룹의 주장일 뿐 실제 유출 여부는 확인되지 않았습니다. OBSOFT의 Company #1~#5는 조직명이 공개되지 않은 피해 조직입니다.</p>
+        </div>
+
         <div class="seg" role="group" aria-label="국가별 필터">
           <button data-cc="all" aria-pressed="true">전체 15건</button>
           <button data-cc="US" aria-pressed="false">미국 8</button>
@@ -39546,7 +39692,7 @@
           <button data-cc="PS" aria-pressed="false">팔레스타인 1</button>
           <button data-cc="" aria-pressed="false">미상 1</button>
         </div>
-        <p class="note" style="margin:0 0 18px">최신 15건만 표시합니다(최근 24시간 전체 70건).</p>
+        <p class="note" style="margin:0 0 18px">최신 15건만 표시합니다(최근 24시간 전체 75건).</p>
         <table class="leak-table">
           <thead>
             <tr><th scope="col">피해 조직</th><th scope="col">분야</th><th scope="col">국가</th><th scope="col">랜섬웨어 그룹</th><th scope="col">발견일</th></tr>
