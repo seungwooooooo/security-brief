@@ -1,3 +1,14 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Wake/watcher working files — never committed.
+# A stray wake file committed on 2026-11-27 broke the Security Scan CI
+# (tracked-file allowlist) three times. git add -A must stay harmless.
+wake_add_*.json
+.wake_*
+watcher/wake_add_*.json
+watcher/new_items_*.json
+watcher/seen.json*
+watcher/check_feeds.py*
+audit_*.md
